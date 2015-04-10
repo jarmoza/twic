@@ -1,0 +1,4 @@
+
+class Mallet_Interpret:
+
+	
