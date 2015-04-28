@@ -1,0 +1,34 @@
+TWiC Clientside Codemap
+
+Key:
+
+"--" means "derives from"
+(n) just demarks a different class
+
+Namespace: ArmozaViz.TWiC
+
+Files:
+- twic.js - Master script that drives the visualization
+- twic_level.js - Contains all TWiC panel instances and attributes of a TWiC instance
+- twic_panel.js - Contains all TWiC_Panel class definitions
+- twic_shapes.js - Contains all TWiC D3 shapes and their class definitions
+- twic_data.js - Contains all data class definitions associated with TWiC D3 shapes
+
+Object Map:
+
+(1) TWiC Level
+contains (2) TWiC Panel(s)
+         -- (3) TWiC GraphView
+            -- (5) TWiC CorpusView
+               contains (11) TWiC CorpusCluster (corpus-level)
+            -- (6) TWiC CorpusClusterView
+               contains (11) TWiC CorpusCluster(s) (cluster-level)
+            -- (7) TWiC TextClusterView
+               contains (12) TWiC TextRectangle(s)
+            -- (8) TWiC TextView
+               contains (13) TWiC TopicTextHTML
+         -- (4) TWiC InformationView
+            -- (9) TWiC TopicBar
+               contains (14) TWiC TextLine(s)
+            -- (10) TWiC DocumentBar
+               contains (15) TWiC DocumentView(s)
