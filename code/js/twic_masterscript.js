@@ -14,6 +14,7 @@ TWiC_Document (topic words in context view, contains text/topic information)
 
 // TWiC_MasterScript
 
+
 // Construct the queue for ordering the script functionality
 var q = queue();
 
@@ -22,7 +23,7 @@ var topicColors = { };
 q.defer(function(callback) {
     d3.json("data/input/json/topic_colors.json", function(error, data) {
         topicColors = data.topics;
-        TWiC_Object.prototype.s_topicColors = data.topics;
+        TWIC.TWiC_Object.prototype.s_topicColors = data.topics;
         callback(null, topicColors);
     });
 });
@@ -42,7 +43,7 @@ var corpusMap = null;
 q.defer(function(callback) {
 	d3.json("data/input/json/twic_corpusmap.json", function(error, data) {
 		corpusMap = data;
-		TWiC_Level.prototype.s_corpusMap = corpusMap;
+		TWIC.TWiC_Level.prototype.s_corpusMap = corpusMap;
 		callback(null, corpusMap);
 	});
 });
@@ -131,10 +132,10 @@ q.await(function(){
 
 
 	// Create the TWiC topic bar
-	var topicBar = new TWiC_TopicBar([0,620], topics, topicColors);
+	var topicBar = new TWIC.TWiC_TopicBar([0,620], topics, topicColors);
 
 	// Create the Document Cluster viewbox
-	var dcv = new TWiC_InformationView([904,0], titles, topics, topicColors);
+	var dcv = new TWIC.TWiC_InformationView([904,0], titles, topics, topicColors);
 
 	/*var pos = getElementAbsolutePos(dcv);
     window.alert("Element's left: " + pos.x + " and top: " + pos.y);*/
@@ -209,7 +210,7 @@ q.await(function(){
 
 	// Create and load the level
     var levelName = "CorpusClusters";
-	var twic_level = new TWiC_Level(svg, level_location, dimensions, levelName,
+	var twic_level = new TWIC.TWiC_Level(svg, level_location, dimensions, levelName,
 									corpusMap["ideal_text"]);
 	twic_level.LoadLevel();
 	var levelGroup = d3.select("#twic_level_" + levelName);
@@ -230,7 +231,7 @@ q.await(function(){
 	for ( var index = 0; index < 100; index ++ ){
         var cluster_location = [0,0];
         //console.log(corpusMap["children"][index]["topics"]);
-		var twic_cluster = new TWiC_Cluster(levelGroup, cluster_location, 20, 10, topicColors,
+		var twic_cluster = new TWIC.TWiC_Cluster(levelGroup, cluster_location, 20, 10, topicColors,
 										    corpusMap["children"][index]["topics"],
 										    corpusMap["children"][index]["ideal_text"], index);
 		twic_cluster_json_list.push({
