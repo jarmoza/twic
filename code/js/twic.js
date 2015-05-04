@@ -1,8 +1,8 @@
 (function(){
 
     var twicLevel = TWiC.Level.prototype.Instance();
-    twicLevel.LoadJSON("/data/input/json/twic_corpusinfo.json",
-                       "/data/input/json/twic_corpusmap.json");
+    twicLevel.LoadJSON("data/input/json/twic_corpusinfo.json",
+                       "data/input/json/twic_corpusmap.json");
 
     // Once JSON has loaded, create and start the level
     twicLevel.m_queue.await(function(){
