@@ -15,7 +15,7 @@ var TWiC = (function(namespace){
 
     namespace.Panel.method("Initialize", function(){});
     namespace.Panel.method("Start", function(){});
-    namespace.Panel.method("Update", function(){});
+    namespace.Panel.method("Update", function(data){});
 
 
     // Base for TWiC graph view
@@ -365,6 +365,60 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.CorpusClusterView.method("Update", function(data){
+
+        /*for ( var index = 0; index < this.m_twicObjects.length; index++ ){
+
+            if ( this.m_twicObjects[index].m_clusterGroup
+                   .selectAll(".topic_circle")
+                   .filter(function(d){ return d.topicID == data.topicID; }.bind(data.topicID))
+                   .empty() ){
+                this.m_twicObjects[index].DarkenCluster();
+            }
+            else {
+                this.m_twicObjects[index].HighlightCluster(data.topicID);
+            }
+        }*/
+
+        if ( null != data ){
+            this.HighlightAllClustersWithTopic(data);
+        } else {
+            this.DarkenAllClusters();
+        }
+    });
+
+    namespace.CorpusClusterView.method("DarkenAllClusters", function(){
+
+        // Darken all clusters
+        this.m_svg.selectAll(".topic_circle")
+                  .style("fill", function(d){ return d.locolor; })
+                  .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+
+        // Set the
+    });
+
+    namespace.CorpusClusterView.method("HighlightAllClustersWithTopic", function(data){
+
+        // Color all circles that represent the given topic
+        var filteredCircles = this.m_svg.selectAll(".topic_circle")
+                                        .filter(function(d){ return d.topicID == data.topicID; })
+                                        .style("fill", data.color);
+
+        // Darken all circles that don't represent the given topic
+        this.m_svg.selectAll(".topic_circle")
+                  .filter(function(d){ return d.topicID != data.topicID; })
+                  .style("fill", function(d){ return d.locolor; })
+                  .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+
+        // Raise the opacity of all circles in the highlighted cluster
+        filteredCircles.each(function(d){
+            d3.select(this.parentNode)
+              .selectAll(".topic_circle")
+              .style("opacity", 1.0);
+          });
+    });
+
+
     namespace.CorpusClusterView.prototype.s_linkDistanceMod = 100;
     namespace.CorpusClusterView.prototype.s_scaleExtentLimits = [1, 16];
 
@@ -401,6 +455,9 @@ var TWiC = (function(namespace){
     namespace.TopicBar.inherits(namespace.InformationView);
 
     namespace.TopicBar.method("Initialize", function(p_levelDiv){
+
+        // No initial selected text
+        this.m_currentSelection = -1;
 
         this.m_div = p_levelDiv.append("div")
                                .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
@@ -463,7 +520,15 @@ var TWiC = (function(namespace){
                                          .attr("y", yPosition)
                                          .attr("dx", "0")
                                          .attr("dy", "0")
-                                         .attr("fill", this.m_level.m_topicColors[index]);
+                                         .attr("fill", this.m_level.m_topicColors[index])
+                                         .on("click", function(d){
+                                                update_data = {topicID:d.id, color:this.m_level.m_topicColors[d.id]};
+                                                this.HighlightText(update_data);
+                                                for ( var view_index = 0; view_index < this.m_linkedViews.length;
+                                                      view_index++ ){
+                                                    this.m_linkedViews[view_index].Update(update_data);
+                                                }
+                                             }.bind(this));
 
             var dy = textFlow(topicStrArray[index],
                               topicText[0][0],
@@ -474,7 +539,7 @@ var TWiC = (function(namespace){
 
             // More attributes added after svg text is added to the DOM
             // (done this way for drawing order/later highlighting)
-            highlightRect.datum({"dy":rectGrowth + dy + 5})
+            highlightRect.datum({"dy":rectGrowth + dy})
                          .attr("x", topicText.attr("x"))
                          .attr("y", parseInt(topicText.attr("y")) - parseInt(topicText.style("font-size")))
                          .attr("width", namespace.TopicBar.prototype.s_svgSize.width)
@@ -489,35 +554,58 @@ var TWiC = (function(namespace){
         this.m_svg.attr("height", rectGrowth);
     });
 
+
+    namespace.TopicBar.method("HighlightText", function(data){
+
+        // De-highlight current highlighted text if any selection
+        if ( -1 != this.m_currentSelection ) {
+            d3.select(".topic_wordlist#topic_" + this.m_currentSelection)
+              .attr("fill", function(d){ return this.m_level.m_topicColors[this.m_currentSelection]; }.bind(this));
+            d3.select(".topic_highlightrect#topic_" + this.m_currentSelection)
+              .attr("fill", this.m_div.style("background-color"))
+              .attr("opacity", "0");
+        }
+
+        // Highlight the newly selected topic
+        d3.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
+        d3.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
+        this.m_currentSelection = data.topicID;
+    });
+
     //namespace.TopicBar.method("HighlightTopicinPanel", function(data, highlight){
-    namespace.TopicBar.method("Update", function(data, highlight){
+    namespace.TopicBar.method("Update", function(data){
 
         // Highlight the topic word list and scroll to it
-        if ( highlight ) {
+        if ( null != data ) {
 
-              d3.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
-              d3.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
-              dy = d3.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
-              d3.select(".svg_twic_info").attr("viewBox","0 " + dy + " " +
-                                               //(parseInt(data.topicID) * namespace.TopicBar.prototype.s_textInfo.yIncrement) + " " +
-                                               namespace.TopicBar.prototype.s_svgSize.width + " " +
-                                               namespace.TopicBar.prototype.s_svgSize.height);
-              //d3.select("#twic_topicbar_svg").attr("scrollTop",parseInt(data.topicID) * 50);
+            d3.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
+            d3.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
+            dy = d3.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
+            d3.select(".svg_twic_info").attr("viewBox","0 " + dy + " " +
+                                             //(parseInt(data.topicID) * namespace.TopicBar.prototype.s_textInfo.yIncrement) + " " +
+                                             namespace.TopicBar.prototype.s_svgSize.width + " " +
+                                             namespace.TopicBar.prototype.s_svgSize.height);
+            //d3.select("#twic_topicbar_svg").attr("scrollTop",parseInt(data.topicID) * 50);
+
+            // Save the current highlighted topic ID
+            this.m_currentSelection = data.topicID;
         }
         // De-highlight all topic words lists and scroll back to the top of the topic bar
         else {
 
             d3.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
-            d3.selectAll(".topic_highlightrect").attr("fill", this.m_div.style("background-color")).attr("opacity","0");
+            d3.selectAll(".topic_highlightrect").attr("fill", this.m_div.style("background-color")).attr("opacity", "0");
             d3.select(".svg_twic_info").attr("viewBox","0 " + namespace.TopicBar.prototype.s_textInfo.yIncrement +
                                              " " + namespace.TopicBar.prototype.s_svgSize.width +
                                              " " + namespace.TopicBar.prototype.s_svgSize.height);
             //d3.select("#twic_topicbar_svg").attr("scrollTop","0");
+            // Reset the current selected topic to none
+            this.m_currentSelection = -1;
         }
     });
 
-    namespace.TopicBar.prototype.s_svgSize = { "width":1280, "height":300 };
-    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1340, "yIncrement":30, "fontSize":20 };
+    namespace.TopicBar.prototype.s_svgSize = { "width":1280, "height":165 };
+    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1405, "yIncrement":30, "fontSize":20 };
 
 
     // Shows individual cluster and text information tiles (TWiC.DocumentTiles)

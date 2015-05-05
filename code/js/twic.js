@@ -20,7 +20,7 @@
         infoViews.push(topicBar);
 
         // Document info bar setup
-        var docBar = new TWiC.DocumentBar({"x":1080, "y":0}, // Position
+        var docBar = new TWiC.DocumentBar({"x":1055, "y":0}, // Position
                                           {"width":225, "height":635}, // Size
                                           divName,  // Name
                                           twicLevel, []); // Level and linked view(s)
@@ -32,6 +32,9 @@
                                                            divName, // Name
                                                            twicLevel, [topicBar, docBar]); // Level and linked view(s)
         graphViews.push(corpusClusterView);
+
+        // Link the corpus cluster view to the topic bar as well
+        topicBar.m_linkedViews.push(corpusClusterView);
 
 
 

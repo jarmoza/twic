@@ -47,6 +47,7 @@ var TWiC = (function(namespace){
 
     namespace.ClusterCircle.prototype.s_colorHighlight = 0.50;
     namespace.ClusterCircle.prototype.s_colorLolight = -0.50;
+    namespace.ClusterCircle.prototype.s_unhighlightedOpacity = 0.3;
 
 
     namespace.ClusterCircle.method("Load", function(){ });
@@ -67,13 +68,9 @@ var TWiC = (function(namespace){
         this.m_clusterGroup = p_node.append("g")
                                     .attr("class", "group_twic_datashape_smoothzooming")
                                     .attr("id", "twic_clustercircle_" + this.m_level.m_objectCount)
-                                    //.on("mouseenter", function(d) { ClusterCircle.prototype.DarkenClusterColors(d); })
-                                    .on("mouseout", function(d){
-                                        this.ResetClusterColors(d);
-                                        for ( var index = 0; index < this.m_linkedViews.length; index++ ){
-                                            this.m_linkedViews[index].Update(d, false);
-                                        }
-                                        // this.HighlightTopicinPanel(d, false);
+                                    //.on("mouseenter", function(d) { ClusterCircle.prototype.DarkenCluster(d); })
+                                    .on("mouseout", function(){
+                                        //this.m_panel.Update(null);
                                     }.bind(this));
                                     //.on("click", this.ClickToZoom(this));
         this.m_level.m_objectCount += 1;
@@ -127,18 +124,24 @@ var TWiC = (function(namespace){
                                .attr("r", currentRadius)
                                //.style("fill", topicColors[this.topTopics[index][0]])
                                .style("fill", function(d){ return d.locolor; })
+                               .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity)
                                .on("mouseover", function(d){
-                                   this.HighlightTopicShapes(d, true);
-                                   for ( var index = 0; index < this.m_linkedViews.length; index++ ){
-                                       this.m_linkedViews[index].Update(d, true);
+                                   this.m_panel.Update(d);
+                                   for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                       this.m_panel.m_linkedViews[index].Update(d);
                                    }
-                                   // this.HighlightTopicinPanel(d, true);
                                }.bind(this))
                                .on("mouseout", function(d){
-                                   for ( var index = 0; index < this.m_linkedViews.length; index++ ){
-                                       this.m_linkedViews[index].Update(d, false);
+                                   this.m_panel.Update(null);
+                                   for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                       this.m_panel.m_linkedViews[index].Update(null);
                                    }
-                                   // this.HighlightTopicinPanel(d, false);
+                               }.bind(this))
+                               .on("click", function(d){
+                                   this.m_panel.Update(d);
+                                   for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                       this.m_panel.m_linkedViews[index].Update(d);
+                                   }
                                }.bind(this));
                                //.on("mouseout",  function(d){ ClusterCircle.prototype.HighlightTopicShapes(d, false); });
 
@@ -147,28 +150,36 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.ClusterCircle.method("ResetClusterColors", function(d){
+    namespace.ClusterCircle.method("HighlightCluster", function(p_topicID){
 
-        //d3.selectAll(".topic_circle").style("fill", function(d){ return d.color; });
-        this.m_clusterGroup.selectAll(".topic_circle").style("fill", function(d){ return d.locolor; });
+        this.m_clusterGroup.selectAll(".topic_circle")
+                           .filter(function(d){ return p_topicID == d.topicID; })
+                           .style("fill", function(d){ return d.color; })
+                           .style("opacity", 1.0);
+        this.m_clusterGroup.selectAll(".topic_circle")
+                           .filter(function(d){ return p_topicID != d.topicID; })
+                           .style("fill", function(d){ return d.locolor; })
+                           .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
     });
 
-    namespace.ClusterCircle.method("DarkenClusterColors", function(d){
+    namespace.ClusterCircle.method("DarkenCluster", function(){
 
-        this.m_clusterGroup.selectAll(".topic_circle").style("fill", function(d){ return d.locolor; });
+        this.m_clusterGroup.selectAll(".topic_circle")
+                           .style("fill", function(d){ return d.locolor; })
+                           .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
     });
 
     namespace.ClusterCircle.method("HighlightTopicShapes", function (data, highlight){
 
         // selectAll() + filter() yields multi-cluster coloring!!!
-        this.m_panel.m_svg
-          .selectAll(".topic_circle")
-          .filter(function(d){ return d.topicID == data.topicID; })
-          .style("fill", data.color);
-        this.m_panel.m_svg
-          .selectAll(".topic_circle")
-          .filter(function(d){ return d.topicID != data.topicID; })
-          .style("fill", function(d){ return d.locolor; });
+        var filteredCircles = this.m_panel.m_svg.selectAll(".topic_circle")
+                                                .filter(function(d){ return d.topicID == data.topicID; })
+                                                .style("fill", data.color);
+        this.m_panel.m_svg.selectAll(".topic_circle")
+                          .filter(function(d){ return d.topicID != data.topicID; })
+                          .style("fill", function(d){ return d.locolor; })
+                          .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+        filteredCircles.each(function(d){ d3.select(this.parentNode).selectAll(".topic_circle").style("opacity", 1); });
     });
 
 
