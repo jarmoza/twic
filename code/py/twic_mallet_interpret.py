@@ -554,7 +554,7 @@ class TWiC_MalletInterpret:
             topics_file.write(json.dumps(topics_json))
 
     @staticmethod
-    def Build_NewMalletJSONForClient(corpus_title, text_collection, tp_collection, topic_keys, color_list, output_dir):
+    def Build_CorpusInfoJSON(corpus_title, text_collection, tp_collection, topic_keys, color_list, output_dir):
 
         # Output JSON format
         # {
@@ -632,7 +632,7 @@ class TWiC_MalletInterpret:
         # FI_WordCount = 5
 
         # Output JSON
-        with open(output_dir + "malletcorpus_info_forvizclient.json", "w") as output_file:
+        with open(output_dir + "twic_corpusinfo.json", "w") as output_file:
             output_file.write(json.dumps(json_output))
 
     @staticmethod
@@ -704,6 +704,6 @@ class TWiC_MalletInterpret:
         TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir)
 
         # New JSON format for client side
-        TWiC_MalletInterpret.Build_NewMalletJSONForClient(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir)
+        TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir)
 
 
