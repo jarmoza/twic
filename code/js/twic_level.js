@@ -4,14 +4,18 @@ var TWiC = (function(namespace){
     namespace.Level = function(){
 
         this.m_queue = new queue();
+        this.m_coordinates = {x:0, y:0};
+        this.m_size = {width:0, height:0};
+        this.m_name = "";
+        this.m_levelDiv = null;
+        this.m_objectCount = 0;
+        this.m_graphViews = null;
+        this.m_infoViews = null;
+
         this.m_corpusMap = {};
         this.m_corpusInfo = {};
         this.m_topicWordLists = {};
         this.m_topicColors = {};
-        this.m_objectCount = 0;
-        this.m_graphViews = null;
-        this.m_infoViews = null;
-        this.m_levelDiv = null;
     };
     namespace.Level.prototype.s_twicLevels = [];
 
@@ -65,8 +69,11 @@ var TWiC = (function(namespace){
                             .style("position", "relative")
                             .style("left", this.m_coordinates.x)
                             .style("top", this.m_coordinates.y)
+                            .style("width", this.m_size.width)
+                            .style("height", this.m_size.height)
                             .style("max-width", this.m_size.width)
-                            .style("max-height", this.m_size.height);
+                            .style("max-height", this.m_size.height)
+                            .style("background-color", "gray");
 
         // Add and setup the graph div and svg elements
         for ( var index = 0; index < this.m_graphViews.length; index++ ){
@@ -83,12 +90,16 @@ var TWiC = (function(namespace){
 
     namespace.Level.method("Start", function(){
 
-      for ( var index = 0; index < this.m_graphViews.length; index++ ){
-          this.m_graphViews[index].Start();
-      }
-      for ( var index = 0; index < this.m_infoViews.length; index++ ){
-          this.m_infoViews[index].Start();
-      }
+        // Ensure all initialization work is finished before starting up TWiC views
+        this.m_queue.await(function(){
+
+            for ( var index = 0; index < this.m_graphViews.length; index++ ){
+              this.m_graphViews[index].Start();
+            }
+            for ( var index = 0; index < this.m_infoViews.length; index++ ){
+              this.m_infoViews[index].Start();
+            }
+        }.bind(this));
 
     });
 

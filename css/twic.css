@@ -13,12 +13,18 @@ body {
 .twic_panel {
   border-radius: 15px;
   position: absolute;
+  overflow: auto;
 }
 
 .div_twic_graph {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
+  float: left;
+}
+
+.svg_twic_graph {
+  position: absolute;
 }
 
 .rect_twic_graph {
@@ -30,10 +36,19 @@ body {
   pointer-events: all;
 }
 
+.div_twic_graph_corpusclusterview {
+  background-color: white;
+}
+
+.div_twic_graph_textclusterview {
+  background-color: white;
+}
+
 .div_twic_info {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
+  display:inline-block;
 }
 
 .div_twic_info_topicbar {
@@ -45,17 +60,110 @@ body {
   overflow: scroll;
 }
 
+.topic_highlightrect {
+  position: absolute;
+}
+
 .topic_wordlist {
   font-family: Archer;
   font-size: 20;
+  position: absolute;
 }
 
 .div_twic_info_docbar {
   background-color: #002240;
-  border-radius: 15px;
+  overflow: auto;
 }
 
-.svg_twic_info_docbar {
-
-  overflow: scroll;
+.rect_twic_graph_textclusterview {
+  fill: white;
 }
+
+.left_resizer {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left:-5px;
+    background: orange;
+    opacity: .5;
+    cursor: ew-resize;
+}
+
+.right_resizer {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    right:-5px;
+    background: orange;
+    opacity: .5;
+    cursor: ew-resize;
+}
+
+.top_resizer {
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top:-5px;
+    background: orange;
+    opacity: .5;
+    cursor: ns-resize;
+}
+
+.bottom_resizer {
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom:-5px;
+    background: orange;
+    opacity: .5;
+    cursor: ns-resize;
+}
+
+.se_resizer {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -5px;
+    right: -5px;
+    background: red;
+    opacity: .5;
+    cursor: nwse-resize;
+}
+
+.ne_resizer {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -5px;
+    right: -5px;
+    background: red;
+    opacity: .5;
+    cursor: nesw-resize;
+}
+
+.sw_resizer {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -5px;
+    left: -5px;
+    background: red;
+    opacity: .5;
+    cursor: nesw-resize;
+}
+
+.nw_resizer {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -5px;
+    left: -5px;
+    background: red;
+    opacity: .5;
+    cursor: nwse-resize;
+}
+
