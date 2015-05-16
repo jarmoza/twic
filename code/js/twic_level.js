@@ -21,6 +21,7 @@ var TWiC = (function(namespace){
 
     // Creating a Level instance also adds it to the TWiC level list
     namespace.Level.prototype.Instance = function(){
+
         var new_level = new namespace.Level();
         namespace.Level.prototype.s_twicLevels.push(new_level);
         return new_level;

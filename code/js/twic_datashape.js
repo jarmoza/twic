@@ -77,8 +77,9 @@ var TWiC = (function(namespace){
                                     }.bind(this))
                                     //.on("click", this.ClickToZoom(this));
                                     .on("click", function(){
-
                                         this.m_panel.ClickedClusterCircle(this);
+                                        console.log("Clicked on cluster " + this.m_name +
+                                            " with color " + this.m_level.m_topicColors[this.m_name]);
                                     }.bind(this));
         this.m_level.m_objectCount += 1;
 
@@ -124,7 +125,8 @@ var TWiC = (function(namespace){
                                .attr("cy", this.m_coordinates.y)
                                .attr("r", currentRadius)
                                //.style("fill", topicColors[this.topTopics[index][0]])
-                               .style("fill", function(d){ return d.locolor; })
+                               //.style("fill", function(d){ return d.locolor; }) - Original
+                               .style("fill", function(d){return d.color; })
                                .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity)
                                .on("mouseover", function(d){
                                    this.m_panel.Update(d);
@@ -141,15 +143,15 @@ var TWiC = (function(namespace){
                                            this.m_panel.m_linkedViews[index].panel.Update(null);
                                        }
                                    }
-                               }.bind(this))
-                               .on("click", function(d){
+                               }.bind(this));
+                               /*.on("click", function(d){
                                    this.m_panel.Update(d);
                                    for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
                                        if ( "click" == this.m_panel.m_linkedViews[index].update ) {
                                            this.m_panel.m_linkedViews[index].panel.Update(d);
                                        }
                                    }
-                               }.bind(this));
+                               }.bind(this));*/
 
             currentRadius -= radiusReduction;
         }
@@ -163,14 +165,14 @@ var TWiC = (function(namespace){
                            .style("opacity", 1.0);
         this.m_clusterGroup.selectAll(".topic_circle")
                            .filter(function(d){ return p_topicID != d.topicID; })
-                           .style("fill", function(d){ return d.locolor; })
+                           //.style("fill", function(d){ return d.locolor; }) - Original
                            .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
     });
 
     namespace.ClusterCircle.method("DarkenCluster", function(){
 
         this.m_clusterGroup.selectAll(".topic_circle")
-                           .style("fill", function(d){ return d.locolor; })
+                           //.style("fill", function(d){ return d.locolor; }) - Original
                            .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
     });
 
@@ -275,6 +277,9 @@ var TWiC = (function(namespace){
 
     namespace.TextRectangle.method("Draw", function () {
 
+        console.log("Drawing text rectangle with panel cluster index " + this.m_panel.m_clusterIndex +
+            " and color " + this.m_level.m_topicColors[this.m_panel.m_clusterIndex]);
+
         // Version of member variables for closure binding
         topicColors = this.m_level.m_topicColors;
         lines_and_colors = this.m_data.lines_and_colors;
@@ -312,7 +317,15 @@ var TWiC = (function(namespace){
                                  .attr("class", "node")
                                  .attr("id", file_id)
                                  .attr("filter", "url(#lightMe" + file_id + ")")
-                                 .style("position", "absolute");
+                                 .style("position", "absolute")
+                                 .on("click", function(){
+                                     for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                         if ( "click" == this.m_panel.m_linkedViews[index].update ) {
+
+                                             this.m_panel.m_linkedViews[index].panel.Update({json:this.m_data});
+                                         }
+                                     }
+                                 }.bind(this));
                                  /*.on("mouseover", function(){
                                      if ( !this.m_showingTip ) {
 
@@ -336,7 +349,7 @@ var TWiC = (function(namespace){
                                      }
                                  }.bind(this));*/
 
-        var node_lightChild = node.append("g").attr("id", file_id + "_child");
+        //var node_lightChild = node.append("g").attr("id", file_id + "_child");
 
         var filter = this.m_panel.m_clusterSvgGroup.append("svg:filter")
                                .attr("id", "lightMe" + file_id);
@@ -396,7 +409,7 @@ var TWiC = (function(namespace){
                          .attr("ry", namespace.TextRectangle.prototype.cornerRadius)
                          .style("stroke-width", namespace.TextRectangle.prototype.borderWidth)
                          //.style("border-style", "solid")
-                         .style("stroke", this.m_level.m_topicColors[0])
+                         .style("stroke", this.m_level.m_topicColors[this.m_panel.m_clusterIndex])
                          .style("fill", namespace.TextRectangle.prototype.fillColor)
                          .style("position", "absolute");
 
@@ -479,13 +492,19 @@ var TWiC = (function(namespace){
 
                                  var d = { topicID: this.m_data.lines_and_colors[d.l][1][d.w],
                                            color: this.m_level.m_topicColors[this.m_data.lines_and_colors[d.l][1][d.w]]};
-                                 for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                     this.m_panel.m_linkedViews[index].panel.Update(d);
+                                 if ( -1 != d.topicID ) {
+                                     for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                         if ( "mouseover" == this.m_panel.m_linkedViews[index].update ) {
+                                             this.m_panel.m_linkedViews[index].panel.Update(d);
+                                         }
+                                     }
                                  }
                              }.bind(this))
                              .on("mouseout", function(d){
                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                     this.m_panel.m_linkedViews[index].panel.Update(null);
+                                     if ( "mouseover" == this.m_panel.m_linkedViews[index].update ) {
+                                         this.m_panel.m_linkedViews[index].panel.Update(null);
+                                     }
                                  }
                              }.bind(this));
         }
