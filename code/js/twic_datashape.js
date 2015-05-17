@@ -37,8 +37,20 @@ var TWiC = (function(namespace){
         this.m_numberCircles = p_numberCircles;
         this.m_ideal_text = p_ideal_text;
         this.m_topTopics = [];
-        for ( var index = 0; index < this.m_numberCircles; index++ )
-            this.m_topTopics.push([p_topics[index][0], p_topics[index][1]]);
+        for ( var index = 0; index < this.m_numberCircles; index++ ){
+            this.m_topTopics.push([]);
+        }
+        for ( index in p_topics ) {
+
+            for ( var index2 = 0; index2 < this.m_numberCircles; index2++ ){
+
+                if ( p_topics[index][0] == index2 + 1 ) {
+                    this.m_topTopics[index2] = [index, p_topics[index][1]];
+                }
+            }
+        }
+        //for ( var index = 0; index < this.m_numberCircles; index++ )
+        //   this.m_topTopics.push([p_topics[index][0], p_topics[index][1]]);
         this.m_clusterGroup = null;
         this.m_linkedViews = p_linkedViews;
 
@@ -84,7 +96,7 @@ var TWiC = (function(namespace){
         this.m_level.m_objectCount += 1;
 
         // Add each topic circle, binding data to it
-        for ( var index = 0; index < this.m_numberCircles; index++ ){
+        for ( var index = this.m_numberCircles - 1; index >= 0; index-- ){
 
             var data = {
                 // Color
@@ -322,7 +334,7 @@ var TWiC = (function(namespace){
                                      for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
                                          if ( "click" == this.m_panel.m_linkedViews[index].update ) {
 
-                                             this.m_panel.m_linkedViews[index].panel.Update({json:this.m_data});
+                                             this.m_panel.m_linkedViews[index].panel.Update({json:this.m_data, clusterIndex: this.m_panel.m_clusterIndex});
                                          }
                                      }
                                  }.bind(this));

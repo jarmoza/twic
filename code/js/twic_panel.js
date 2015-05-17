@@ -420,6 +420,7 @@ var TWiC = (function(namespace){
 
         var twic_objects = [];
         var twic_cluster_json_list = [];
+        var halfDimensions = {width:this.m_size.width >> 1, height: this.m_size.height >> 1};
 
         // Distance to ideal normalization via corpus map JSON data
         var avg = 0.0;
@@ -429,9 +430,9 @@ var TWiC = (function(namespace){
 
         // Build all clusters
         var linkDilation = 80;
-        for ( var index = 0; index < this.m_level.m_corpusMap["children"].length; index ++ ){
+        for ( var index = 0; index < this.m_level.m_corpusMap["children"].length; index++ ){
 
-            var twic_cluster = new TWiC.ClusterCircle([0,0], 20, index, this.m_level, this, this.m_linkedViews, 10,
+            var twic_cluster = new TWiC.ClusterCircle([halfDimensions.width, halfDimensions.height], 20, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["children"][index]["topics"],
                                                       this.m_level.m_corpusMap["children"][index]["ideal_text"]);
             var twic_cluster_json = {
@@ -461,7 +462,7 @@ var TWiC = (function(namespace){
 
             if ( this.m_idealText == this.m_objectsJSON[index]["ideal_text"] ){
 
-                this.m_nodes.push({"index":index});
+                this.m_nodes.push({"index": index});
                 rootIndex = index;
                 this.m_rootIndex = rootIndex;
             }
@@ -498,7 +499,7 @@ var TWiC = (function(namespace){
                 }
             }
             var topTopic = [CorpusClusterView.prototype.s_corpusMap["topics"][topTopicID]];*/
-            this.m_twicObjects.push(new TWiC.ClusterCircle([0,0], 20, rootIndex, this.m_level, this, this.m_linkedViews,
+            this.m_twicObjects.push(new TWiC.ClusterCircle([halfDimensions.width, halfDimensions.height], 20, rootIndex, this.m_level, this, this.m_linkedViews,
                                                            topTopicCount, topTopics, this.m_level.m_corpusMap["ideal_text"]));
         }
 
@@ -825,7 +826,7 @@ var TWiC = (function(namespace){
                                               .attr("ry", this.m_div.style("border-radius"))
                                               .style("fill", "white");
 
-        this.m_clusterSvgGroup = this.m_svg.append("g");
+        this.m_clusterSvgGroup = this.m_svg.append("g").attr("id", "clustersvg_group");
 
         this.InitializeGraph();
     });
@@ -843,6 +844,7 @@ var TWiC = (function(namespace){
 
         // Build all clusters
         var linkDilation = 40;
+        var halfDimensions = {width:this.m_size.width >> 1, height: this.m_size.height >> 1};
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index ++ ){
 
             var textRectangle = new TWiC.TextRectangle({x:0,y:0}, {width:0,height:0},
@@ -930,6 +932,7 @@ var TWiC = (function(namespace){
                                "center":
             [this.m_twicObjects[index].m_coordinates.x + (this.m_twicObjects[index].m_size.width >> 1),
              this.m_twicObjects[index].m_coordinates.y + (this.m_twicObjects[index].m_size.height >> 1)] });
+            console.log("source " + index + " target " + rootIndex + " value " + this.m_objectsJSON[index]["distance2ideal"]);
             this.m_links.push({
                 "source":index,
                 "target":rootIndex,
@@ -1168,16 +1171,16 @@ var TWiC = (function(namespace){
 
         // Add a background rect to the svg group
         this.m_panelRect = this.m_svg.append("svg:rect")
-                                              .attr("class","rect_twic_graph_textview")
-                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
-                                              .attr("x", 0)//this.m_coordinates.x)
-                                              .attr("y", this.m_coordinates.y)
-                                              .attr("width", this.m_size.width)
-                                              .attr("height", this.m_size.height)
-                                              .attr("rx", this.m_div.style("border-radius"))
-                                              .attr("ry", this.m_div.style("border-radius"))
-                                              .attr("fill", "#002240")
-                                              .style("position", "absolute");
+                                             .attr("class","rect_twic_graph_textview")
+                                             .attr("id","rect_twic_graph_textview_" + this.m_name)
+                                             .attr("x", 0)//this.m_coordinates.x)
+                                             .attr("y", this.m_coordinates.y)
+                                             .attr("width", this.m_size.width)
+                                             .attr("height", this.m_size.height)
+                                             .attr("rx", this.m_div.style("border-radius"))
+                                             .attr("ry", this.m_div.style("border-radius"))
+                                             .attr("fill", "#002240")
+                                             .style("position", "absolute");
 
         // Load the JSON for this text
         this.Load();
@@ -1210,6 +1213,10 @@ var TWiC = (function(namespace){
 
     namespace.TextView.method("CreateHTMLFromJSON", function(data){
 
+        // Panel border reflects the color of the most prevalent topic
+        this.m_panelRect.style("stroke", this.m_level.m_topicColors[data.clusterIndex])
+                        .style("stroke-width", namespace.TextView.prototype.s_borderWidth);
+
         /*data.lines_and_colors
         data.title
         data.publication
@@ -1220,13 +1227,21 @@ var TWiC = (function(namespace){
 
         // Add div for text
         var textBody = this.m_groupOverlay.append("foreignObject").append("xhtml:body");
-        var titleDiv = textBody.append("div").attr("class", "title");
-        var publicationDiv = textBody.append("div").attr("class", "publication");
-        var textDiv = textBody.append("div").attr("class", "center");
+        var containerDiv = textBody.append("div").attr("class", "textview_container")
+                                                 .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
+                                                 .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
+                                                 .style("position", "relative")
+                                                 .style("overflow", "auto");
+                                                 //.style("border", namespace.TextView.prototype.s_borderWidth + "px")
+                                                 //.style("border-style", "solid")
+                                                 //.style("border-color", this.m_level.m_topicColors[data.clusterIndex]);
+        var titleDiv = containerDiv.append("div").attr("class", "title");
+        var publicationDiv = containerDiv.append("div").attr("class", "publication");
+        var textDiv = containerDiv.append("div").attr("class", "center");
         var lineTextAll = "";
 
-        titleDiv.html(data.json.title);
-        publicationDiv.html(data.json.publication);
+        titleDiv.html("<b>" + data.json.title + "</b>");
+        publicationDiv.html("<b>" + data.json.publication + "</b>");
 
         // Build the HTML text
         for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
@@ -1266,31 +1281,31 @@ var TWiC = (function(namespace){
                .style("margin", "0 auto !important")
                .style("display", "inline-block")
                .style("font-size", "18")
-               .style("width", this.m_size.width)
-               .style("max-width", this.m_size.width)
-               .style("height", this.m_size.height)
-               .style("max-height", this.m_size.height)
+               //.style("width", this.m_size.width)
+               //.style("max-width", this.m_size.width)
+               //.style("height", this.m_size.height)
+               //.style("max-height", this.m_size.height)
+               .style("max-width", "100%")
+               .style("max-height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
                .style("background-color", "#002240")
                .style("font-family", "Archer")
                .style("font-size", 20)
                .style("color", "#FAFAD2")
                .style("float", "left")
-               .style("text-align", "left")
-               .style("overflow", "auto");
+               .style("text-align", "left");
 
-        titleDiv.style("color", "#FAFAD2")
-                .style("width", this.m_size.width)
+        titleDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
+                .style("max-width", "100%")//this.m_size.width)
                 .style("font-size", "26")
                 .style("font-family", "Archer")
                 .style("top", "25px")
                 .style("left", "100px")
                 .style("margin", "0 auto !important")
                 .style("position", "absolute")
-                .style("float", "left")
-                .style("margin-bottom", "25px");
+                .style("float", "left");
 
-        publicationDiv.style("color", "#FAFAD2")
-                .style("width", this.m_size.width)
+        publicationDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
+                .style("max-width", "100%")
                 .style("font-size", "22")
                 .style("font-family", "Archer")
                 .style("top", "55px")
@@ -1375,6 +1390,8 @@ var TWiC = (function(namespace){
                       }
                   });
     });
+
+    namespace.TextView.prototype.s_borderWidth = 8;
 
 
     // Base for informational views
