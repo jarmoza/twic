@@ -27,17 +27,13 @@ body {
   position: absolute;
 }
 
-.rect_twic_graph {
-  fill: white;
-}
-
 .group_twic_graph_overlay {
   fill: none;
   pointer-events: all;
 }
 
 .div_twic_graph_corpusclusterview {
-  background-color: white;
+  background-color: #002240;
 }
 
 .div_twic_graph_textclusterview {

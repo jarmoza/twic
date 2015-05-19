@@ -29,7 +29,7 @@ var TWiC = (function(namespace){
 
 
     // ClusterCircle (inherits from DataShape)
-    namespace.ClusterCircle = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_ideal_text){
+    namespace.ClusterCircle = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_ideal_text, p_title){
 
         // namespace.DataShape.apply(this, arguments.slice(0,5));
         namespace.DataShape.apply(this, arguments);
@@ -37,6 +37,8 @@ var TWiC = (function(namespace){
         this.m_numberCircles = p_numberCircles;
         this.m_ideal_text = p_ideal_text;
         this.m_topTopics = [];
+        this.m_title = p_title;
+        this.m_radius = this.m_size;
         for ( var index = 0; index < this.m_numberCircles; index++ ){
             this.m_topTopics.push([]);
         }
@@ -88,10 +90,10 @@ var TWiC = (function(namespace){
                                         //this.m_panel.Update(null);
                                     }.bind(this))
                                     //.on("click", this.ClickToZoom(this));
-                                    .on("click", function(){
+                                    .on("dblclick", function(){
                                         this.m_panel.ClickedClusterCircle(this);
-                                        console.log("Clicked on cluster " + this.m_name +
-                                            " with color " + this.m_level.m_topicColors[this.m_name]);
+                                        //console.log("Clicked on cluster " + this.m_name +
+                                        //    " with color " + this.m_level.m_topicColors[this.m_name]);
                                     }.bind(this));
         this.m_level.m_objectCount += 1;
 
@@ -129,13 +131,26 @@ var TWiC = (function(namespace){
                                                  this.m_level.m_topicColors[this.m_topTopics[index][0]]);
             }
 
-            this.m_clusterGroup.append("circle")
-                               .datum(data)
+            if ( index > 0) {
+                var arc = d3.svg.arc().innerRadius(currentRadius - radiusReduction)
+                                      .outerRadius(currentRadius)
+                                      .startAngle(0)
+                                      .endAngle(2 * Math.PI);
+                var ring = this.m_clusterGroup.append("path")
+                                              .attr("d", arc)
+                                              .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," + this.m_coordinates.y.toString() + ")");
+            }
+            else {
+                var ring = this.m_clusterGroup.append("circle")
+                                              .attr("cx", this.m_coordinates.x)
+                                              .attr("cy", this.m_coordinates.y)
+                                              .attr("r", currentRadius);
+            }
+
+                               ring.datum(data)
                                .attr("class","topic_circle")
                                .attr("id", function(d){ return "topic-" + d.topicID; })
-                               .attr("cx", this.m_coordinates.x)
-                               .attr("cy", this.m_coordinates.y)
-                               .attr("r", currentRadius)
+
                                //.style("fill", topicColors[this.topTopics[index][0]])
                                //.style("fill", function(d){ return d.locolor; }) - Original
                                .style("fill", function(d){return d.color; })
@@ -167,6 +182,44 @@ var TWiC = (function(namespace){
 
             currentRadius -= radiusReduction;
         }
+
+        /*var fontSize = 14 + (0.2 * this.m_radius);
+
+        if ( this.m_title ){
+
+            var textTag = this.m_clusterGroup.append("text")
+                                           .attr("dx", "0")
+                                           .attr("dy", "0")
+                                           //.attr("fill", "#FAFAD2")
+                                           .attr("fill", this.m_level.m_topicColors[this.m_topTopics[0][0]])
+                                           .style("font-family", "Archer")
+                                           .style("font-size", fontSize)
+                                           .style("position", "relative");
+
+            var dy = textFlow(this.m_title,
+                              textTag[0][0],
+                              this.m_panel.m_svg.attr("width"),
+                              fontSize,
+                              namespace.TopicBar.prototype.s_textInfo.yIncrement, false);
+
+            textTag.selectAll("tspan")
+                   //.attr("x", this.m_coordinates.x - (1.75 * this.m_radius))
+                   //.attr("y", this.m_coordinates.y + this.m_radius + (0.25 * this.m_radius));
+                   .attr("x", this.m_coordinates.x)
+                   .attr("y", this.m_coordinates.y)
+                   .style("opacity", namespace.ClusterCircle.prototype.s_unhighlightedOpacity);
+        }*/
+
+       /*this.m_tip = d3.tip().attr("class", "d3-tip")
+                            .direction("s")
+                            .offset(-this.m_radius, this.m_radius + (0.2 * this.m_radius))
+                            .html("<font color=\"white\">" + this.m_title + "</font")
+                            .style("font-family", "Archer")
+                            .style("font-size", 14 + (0.2 * this.m_radius))
+                            .style("color", "#FAFAD2");
+       this.m_panel.m_svg.call(this.m_tip);
+       this.m_tip.show();*/
+
     });
 
     namespace.ClusterCircle.method("HighlightCluster", function(p_topicID){
@@ -186,6 +239,38 @@ var TWiC = (function(namespace){
         this.m_clusterGroup.selectAll(".topic_circle")
                            //.style("fill", function(d){ return d.locolor; }) - Original
                            .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+    });
+
+    namespace.ClusterCircle.method("AddTextTag", function(p_text, p_fontSize, p_color, p_position, p_opacity){
+
+        var textTag = this.m_clusterGroup.append("text")
+                                         .attr("dx", "0")
+                                         .attr("dy", "0")
+                                         .attr("fill", p_color)
+                                         .style("font-family", "Archer")
+                                         .style("font-size", p_fontSize)
+                                         .style("position", "relative");
+
+        var dy = textFlow(p_text,
+                          textTag[0][0],
+                          this.m_panel.m_svg.attr("width"),
+                          p_fontSize,
+                          namespace.TopicBar.prototype.s_textInfo.yIncrement, false);
+
+        textTag.selectAll("tspan")
+               .attr("x", p_position.x)
+               .attr("y", p_position.y)
+               .style("opacity", p_opacity);
+
+       /*this.m_tip = d3.tip().attr("class", "d3-tip")
+                            .direction("s")
+                            .offset(-this.m_radius, this.m_radius + (0.2 * this.m_radius))
+                            .html("<font color=\"white\">" + this.m_title + "</font")
+                            .style("font-family", "Archer")
+                            .style("font-size", 14 + (0.2 * this.m_radius))
+                            .style("color", "#FAFAD2");
+       this.m_panel.m_svg.call(this.m_tip);
+       this.m_tip.show();*/
     });
 
 
@@ -255,6 +340,8 @@ var TWiC = (function(namespace){
                 this.m_size["width"] = wordCountPixels;
             }
         }
+
+        this.m_radius = Math.sqrt(((this.m_size.width >> 1) * (this.m_size.width >> 1)) + ((this.m_size.height >> 1) * (this.m_size.height >> 1)));
 
         this.m_size["width"] += (4 * namespace.TextRectangle.prototype.spaceAroundText);
     });
@@ -525,7 +612,7 @@ var TWiC = (function(namespace){
     namespace.TextRectangle.method("BindDataToNode", function(p_node){
 
         p_node.center = [this.m_coordinates.x + (this.m_size.width >> 1), this.m_coordinates.y + (this.m_size.height >> 1)];
-        p_node.radius = this.m_size.width >> 1;
+        p_node.radius = Math.sqrt(((this.m_size.width >> 1) * (this.m_size.width >> 1)) + ((this.m_size.height >> 1) * (this.m_size.height >> 1)));
         p_node.parentDims = [parseInt(this.m_panel.m_svg.attr("width")), parseInt(this.m_panel.m_svg.attr("height"))];
     });
 

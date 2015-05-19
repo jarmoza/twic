@@ -16,11 +16,14 @@ var TWiC = (function(namespace){
         this.m_resizers = {};
         this.m_lastScrollLRPos = 0;
         this.m_lastScrollTBPos = 0;
+        this.m_paused = false;
     };
 
     namespace.Panel.method("Initialize", function(){});
     namespace.Panel.method("Start", function(){});
-    namespace.Panel.method("Update", function(data){});
+    namespace.Panel.method("Update", function(p_data){});
+    namespace.Panel.method("Pause", function(p_state){ this.m_paused = p_state; });
+    namespace.Panel.method("IsPaused", function(){ return this.m_paused; });
 
     namespace.Panel.method("GetViewBoxArray", function(element){
         return element.attr("viewBox").split(" ");
@@ -358,9 +361,120 @@ var TWiC = (function(namespace){
     namespace.CorpusView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
 
         namespace.GraphView.apply(this, arguments);
+
+        this.m_idealText = this.m_level.m_corpusMap["ideal_text"];
+        this.m_corpusCluster = null;
+        this.m_nodes = [];
     };
     namespace.CorpusView.inherits(namespace.GraphView);
 
+    namespace.CorpusView.method("Initialize", function(p_levelDiv){
+
+        this.m_div = p_levelDiv.append("div")
+                               .attr("class", "div_twic_graph_corpusview div_twic_graph twic_panel")
+                               .attr("id", "div_twic_graph_corpusview_" + this.m_name)
+                               .style("left", this.m_coordinates.x)
+                               .style("top", this.m_coordinates.y)
+                               .style("max-width", this.m_size.width)
+                               .style("max-height", this.m_size.height)
+                               .style("width", this.m_size.width)
+                               .style("height", this.m_size.height);
+
+        this.m_svg = this.m_div.append("svg")
+                               .attr("class", "svg_twic_graph")
+                               .attr("id", "svg_twic_graph_corpusview_" + this.m_name)
+                               .attr("x", this.m_coordinates.x)
+                               .attr("y", this.m_coordinates.y)
+                               .attr("width", this.m_size.width)
+                               .attr("height", this.m_size.height);
+
+        // Add group and rectangle for trapping mouse events in the graph
+        this.m_groupOverlay = this.m_svg.append("g")
+                                        .attr("class","group_twic_graph_corpusview_overlay")
+                                        .attr("id", "group_twic_graph_corpusview_overlay_" + this.m_name);
+
+        this.m_panelRect = this.m_groupOverlay.append("rect")
+                                              .attr("class","rect_twic_graph")
+                                              .attr("id","rect_twic_graph_corpusview_" + this.m_name)
+                                              .attr("x", this.m_coordinates.x)
+                                              .attr("y", this.m_coordinates.y)
+                                              .attr("rx", this.m_div.style("border-radius"))
+                                              .attr("ry", this.m_div.style("border-radius"))
+                                              .attr("width", this.m_size.width)
+                                              .attr("height", this.m_size.height)
+                                              .attr("fill", "#002240");
+
+        // Create the corpus TWiC bullseye
+        this.m_corpusCluster = new TWiC.ClusterCircle({x:this.m_size.width >> 1, y:this.m_size.height >> 1}, 200,
+                                                      this.m_level.m_corpusMap["name"], this.m_level, this, this.m_linkedViews, 10,
+                                                      this.m_level.m_corpusMap["topics"],
+                                                      this.m_idealText, this.m_level.m_corpusMap["name"]);
+    });
+
+    namespace.CorpusView.method("Start", function(p_levelDiv){
+
+        this.m_nodes.push({index:0,name:this.m_name});
+        var node = this.m_svg.selectAll(".node")
+                             .data(this.m_nodes)
+                             .enter()
+                             .append("g")
+                             .attr("class", "node")
+                             .attr("id", function(d){return "node_" + d.index;})
+                             .attr("x", this.m_corpusCluster.m_coordinates.x)
+                             .attr("y", this.m_corpusCluster.m_coordinates.y)
+                             .style("position", "absolute");
+
+        this.m_corpusCluster.AppendSVGandBindData(node, [this.m_name]);
+        this.DarkenAllTopicCircles();
+        this.m_corpusCluster.AddTextTag(this.m_corpusCluster.m_title, 14 + (0.2 * this.m_corpusCluster.m_radius),
+                                        "#FAFAD2",
+                                        {x:this.m_corpusCluster.m_coordinates.x - (1.75 * this.m_corpusCluster.m_radius),
+                                         y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.25 * this.m_corpusCluster.m_radius)},
+                                        1.0);
+
+    });
+
+    namespace.CorpusView.method("Update", function(data){
+
+        if ( null != data ){
+            this.HighlightTopicCircle(data);
+        } else {
+            this.DarkenAllTopicCircles();
+        }
+    });
+
+    namespace.CorpusView.method("ClickedClusterCircle", function(p_clusterRef){
+
+        for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+            if ( "click" == this.m_linkedViews[index].update ) {
+                this.m_linkedViews[index].panel.Update({topicID: p_clusterCircle.m_name})
+            }
+        }
+    });
+
+    namespace.CorpusView.method("DarkenAllTopicCircles", function(){
+
+        // Darken all clusters
+        this.m_svg.selectAll(".topic_circle")
+                  .style("fill", function(d){ return d.locolor; })
+                  .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
+
+    });
+
+    namespace.CorpusView.method("HighlightTopicCircle", function(data){
+
+         // Make the moused over topic circle opaque
+        var filteredCircles = this.m_svg.selectAll(".topic_circle")
+                                        .filter(function(d){ return d.topicID == data.topicID; })
+                                        .style("opacity", 1.0)
+                                        .style("fill", data.color);
+
+        // Make the rest of the circles translucent
+        this.m_svg.selectAll(".topic_circle")
+                  .filter(function(d){ return d.topicID != data.topicID; })
+                  .style("opacity", 1.0)
+                  .style("fill", function(d){ return d.locolor; });
+    });
 
     // Higher midlevel corpus bullseye cluster view (TWiC.CorpusCluster)
     namespace.CorpusClusterView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
@@ -389,7 +503,8 @@ var TWiC = (function(namespace){
                                .style("max-width", this.m_size.width)
                                .style("max-height", this.m_size.height)
                                .style("width", this.m_size.width)
-                               .style("height", this.m_size.height);
+                               .style("height", this.m_size.height)
+                               .style("position", "relative");
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -432,9 +547,10 @@ var TWiC = (function(namespace){
         var linkDilation = 80;
         for ( var index = 0; index < this.m_level.m_corpusMap["children"].length; index++ ){
 
-            var twic_cluster = new TWiC.ClusterCircle([halfDimensions.width, halfDimensions.height], 20, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
+            var twic_cluster = new TWiC.ClusterCircle({x:0, y:0}, 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["children"][index]["topics"],
-                                                      this.m_level.m_corpusMap["children"][index]["ideal_text"]);
+                                                      this.m_level.m_corpusMap["children"][index]["ideal_text"],
+                                                      index.toString());
             var twic_cluster_json = {
                 "name": this.m_level.m_corpusMap["children"][index]["name"],
                 "ideal_text": this.m_level.m_corpusMap["children"][index]["ideal_text"],
@@ -499,7 +615,7 @@ var TWiC = (function(namespace){
                 }
             }
             var topTopic = [CorpusClusterView.prototype.s_corpusMap["topics"][topTopicID]];*/
-            this.m_twicObjects.push(new TWiC.ClusterCircle([halfDimensions.width, halfDimensions.height], 20, rootIndex, this.m_level, this, this.m_linkedViews,
+            this.m_twicObjects.push(new TWiC.ClusterCircle({x:halfDimensions.width, y:halfDimensions.height}, 25, rootIndex, this.m_level, this, this.m_linkedViews,
                                                            topTopicCount, topTopics, this.m_level.m_corpusMap["ideal_text"]));
         }
 
@@ -542,9 +658,9 @@ var TWiC = (function(namespace){
                        .append("line")
                        .attr("class", "link")
                        //.style("stroke-width", function(d) { return Math.sqrt(d.value); })
-                       .style("stroke-width", 1)
-                       .style("stroke","lightgray");
-                       //.style("opacity", TWiC.ClusterCircle.s_unhighlightedOpacity);
+                       .style("stroke-width", 0.5)
+                       .style("stroke","lightgray")
+                       .style("opacity", TWiC.ClusterCircle.s_semihighlightedOpacity);
 
         // Bind TWiC object data to the node data
         for ( index = 0; index < this.m_twicObjects.length; index++ ) {
@@ -568,6 +684,7 @@ var TWiC = (function(namespace){
                              .enter()
                              .append("g")
                              .attr("class", "node")
+                             .style("position", "absolute")
                              //.attr("id", function(d){return "node_" + d.node_index;})
                              .attr("id", function(d){return "node_" + d.index;});
                              //.call(this.m_graph.drag);
@@ -589,6 +706,12 @@ var TWiC = (function(namespace){
                 //if ( this.m_twicObjects[index].nodeIndex == this.m_nodes[index2]["node_index"] ){
                 if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["index"] ){
                     this.m_twicObjects[index].AppendSVGandBindData(this.m_svg.select(".node#node_" + index2), this.m_nodes[index2]["children"]);
+                    //p_text, p_fontSize, p_color, p_position, p_opacity
+                    this.m_twicObjects[index].AddTextTag(index.toString(),
+                                                         20, this.m_level.m_topicColors[index],
+                                                         {x:this.m_twicObjects[index].m_coordinates.x - ((7 * index.toString().length) >> 1),
+                                                          y:this.m_twicObjects[index].m_coordinates.y + (1.6 * this.m_twicObjects[index].m_radius)},
+                                                         TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
                 }
             }
         }
@@ -603,47 +726,16 @@ var TWiC = (function(namespace){
                .style("position", "absolute");
         */
 
-
-
         // Add tick function for graph corresponding to object type
         setTimeout(function(){
 
             this.m_graph.start();
-
             for ( var index = 0; index < 1000; index++ ) {
                 this.Tick();
             }
-
             this.m_graph.stop();
-
             this.b_positionsCalculated = true;
-
-            //this.m_svg.attr("opacity", this.m_svg.style("opacity") + 0.001);
         }.bind(this), 10);
-
-        // Move nodes back into view
-
-        for ( var index = 0; index < this.m_twicObjects.length; index++ ){
-            if ( this.m_twicObjects[index].m_clusterGroup ){
-                //this.m_twicObjects[index].m_clusterGroup.attr("transform","translate(-100 -100)");
-            }
-        }
-
-
-
-    /*this.m_svg.transition()
-    .duration(750)
-    .delay(function(d, i) { return i * 5; })
-    .styleTween("width", function(d) {
-      var i = d3.interpolate(0, this.m_svg.attr("width"));
-      return function(t) { return this.m_svg.attr("width", i(t)); }.bind(this);
-    }.bind(this));*/
-
-
-        //this.m_svg.style("opacity", 1);
-
-        //twicLevel.m_graph.start();
-        //this.m_graph.on("tick", function() { twicLevel.Tick(twicLevel); });
     });
 
     namespace.CorpusClusterView.method("ScrollToZoom", function(p_twicLevel){
@@ -669,8 +761,12 @@ var TWiC = (function(namespace){
 
         if ( !this.b_positionsCalculated ){
 
-            nodes.attr("cx", function(d) { return d.x = Math.max(d.radius, Math.min(svgWidth - d.radius, d.x)); })
-                 .attr("cy", function(d) { return d.y = Math.max(d.radius, Math.min(svgHeight - d.radius, d.y)); });
+            nodes.attr("cx", function(d) {
+                     return d.x = Math.max(d.radius, Math.min(svgWidth - d.radius, d.x));
+                 })
+                 .attr("cy", function(d) {
+                     return d.y = Math.max(d.radius, Math.min(svgHeight - d.radius, d.y));
+                 });
 
             var q = d3.geom.quadtree(this.m_nodes);
             var i = 0;
@@ -678,10 +774,18 @@ var TWiC = (function(namespace){
 
             while (++i < n) { q.visit(namespace.GraphView.prototype.Collide(this.m_nodes[i])); }
 
-            links.attr("x1", function(d) { d.source.firstX = d.source.x; return d.source.x; })
-                 .attr("y1", function(d) { d.source.firstY = d.source.y; return d.source.y; })
-                 .attr("x2", function(d) { d.target.firstX = d.target.x; return d.target.x; })
-                 .attr("y2", function(d) { d.target.firstY = d.target.y; return d.target.y; });
+            links.attr("x1", function(d) {
+                     d.source.firstX = d.source.x; return d.source.x;
+                 })
+                 .attr("y1", function(d) {
+                     d.source.firstY = d.source.y; return d.source.y;
+                 })
+                 .attr("x2", function(d) {
+                     d.target.firstX = d.target.x; return d.target.x;
+                 })
+                 .attr("y2", function(d) {
+                     d.target.firstY = d.target.y; return d.target.y;
+                 });
 
             nodes.attr("transform", function(d) {
                 d.firstX = d.x;
@@ -690,12 +794,23 @@ var TWiC = (function(namespace){
             });
         }
         else{
-             links.attr("x1", function(d) { return d.source.firstX; })
-                  .attr("y1", function(d) { return d.source.firstY; })
-                  .attr("x2", function(d) { return d.target.firstX; })
-                  .attr("y2", function(d) { return d.target.firstY; });
 
-              nodes.attr("transform", function(d) { return "translate(" + d.firstX + "," + d.firstY + ")"; });
+            links.attr("x1", function(d) {
+                     return d.source.firstX;
+                 })
+                 .attr("y1", function(d) {
+                     return d.source.firstY;
+                 })
+                 .attr("x2", function(d) {
+                     return d.target.firstX;
+                 })
+                 .attr("y2", function(d) {
+                     return d.target.firstY;
+                 });
+
+            nodes.attr("transform", function(d) {
+                     return "translate(" + d.firstX + "," + d.firstY + ")";
+                 });
         }
     });
 
@@ -725,10 +840,10 @@ var TWiC = (function(namespace){
 
         // Darken all clusters
         this.m_svg.selectAll(".topic_circle")
-                  //.style("fill", function(d){ return d.locolor; }) - Original
-                  .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+                  .style("fill", function(d){ return d.locolor; })
+                  .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
 
-        // Set the
+        this.m_svg.selectAll("tspan").style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
     });
 
     namespace.CorpusClusterView.method("HighlightAllClustersWithTopic", function(data){
@@ -736,23 +851,26 @@ var TWiC = (function(namespace){
         // Color all circles that represent the given topic
         var filteredCircles = this.m_svg.selectAll(".topic_circle")
                                         .filter(function(d){ return d.topicID == data.topicID; })
-                                        //.style("fill", data.color) - Original
+                                        .style("fill", data.color)
                                         .style("opacity", 1.0);
 
         // Darken all circles that don't represent the given topic
         this.m_svg.selectAll(".topic_circle")
                   .filter(function(d){ return d.topicID != data.topicID; })
-                  //.style("fill", function(d){ return d.locolor; }) - Original
-                  .style("opacity", TWiC.ClusterCircle.prototype.s_unhighlightedOpacity);
+                  .style("fill", function(d){ return d.locolor; })
+                  .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
 
         // Raise the opacity of all circles in the highlighted cluster
         filteredCircles.each(function(d){
             d3.select(this.parentNode)
               .selectAll(".topic_circle")
               .filter(function(d){return d.topicID != data.topicID; })
-              .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
-              //.style("fill", function(d){return d.midcolor;}); - Original
-          });
+              .style("opacity", 1.0);
+
+            d3.select(this.parentNode)
+              .selectAll("tspan")
+              .style("opacity", 1.0);
+        });
     });
 
     namespace.CorpusClusterView.method("ClickedClusterCircle", function(p_clusterCircle){
@@ -928,11 +1046,12 @@ var TWiC = (function(namespace){
                 continue;
 
             //this.m_nodes.push({"node_index":index});
-            this.m_nodes.push({"index":index, "name":this.m_objectsJSON[index]["name"],
-                               "center":
+            var tempRadius = Math.sqrt(((this.m_twicObjects[index].m_size.width >> 1) * (this.m_twicObjects[index].m_size.width >> 1)) + ((this.m_twicObjects[index].m_size.height >> 1) * (this.m_twicObjects[index].m_size.height >> 1)));
+            this.m_nodes.push({"index":index, "name":this.m_objectsJSON[index]["name"]
+                               /*"center":
             [this.m_twicObjects[index].m_coordinates.x + (this.m_twicObjects[index].m_size.width >> 1),
-             this.m_twicObjects[index].m_coordinates.y + (this.m_twicObjects[index].m_size.height >> 1)] });
-            console.log("source " + index + " target " + rootIndex + " value " + this.m_objectsJSON[index]["distance2ideal"]);
+             this.m_twicObjects[index].m_coordinates.y + (this.m_twicObjects[index].m_size.height >> 1)]*/ });
+            //console.log("source " + index + " target " + rootIndex + " value " + this.m_objectsJSON[index]["distance2ideal"]);
             this.m_links.push({
                 "source":index,
                 "target":rootIndex,
@@ -1046,18 +1165,21 @@ var TWiC = (function(namespace){
         var nodes = this.m_svg.selectAll(".node"); // Perform visible/active test later
         var svgWidth = parseInt(this.m_svg.attr("width"));
         var svgHeight = parseInt(this.m_svg.attr("height"));
+        var tempRadius = Math.sqrt(((this.m_size.width >> 1) * (this.m_size.width >> 1)) + ((this.m_size.height >> 1) * (this.m_size.height >> 1)));
 
         this.m_nodes[this.m_rootIndex].x = svgWidth >> 1;
         this.m_nodes[this.m_rootIndex].y = svgHeight >> 1;
 
+
+
         if ( !this.b_positionsCalculated ){
 
-            nodes.attr("x", function(d) {
-                     return this.m_twicObjects[d.index].m_coordinates.x + (this.m_twicObjects[d.index].m_size.width >> 1);
-            }.bind(this))
+            nodes.attr("cx", function(d) {
+                     return d.x = Math.max(this.m_twicObjects[d.index].m_radius, Math.min(svgWidth - this.m_twicObjects[d.index].m_radius, d.x));
+                 }.bind(this))
                  .attr("cy", function(d) {
-                     return this.m_twicObjects[d.index].m_coordinates.y + (this.m_twicObjects[d.index].m_size.height >> 1);
-            }.bind(this));
+                     return d.y = Math.max(this.m_twicObjects[d.index].m_radius, Math.min(svgHeight - this.m_twicObjects[d.index].m_radius, d.y));
+                 }.bind(this));
 
             var q = d3.geom.quadtree(this.m_nodes);
             var i = 0;
@@ -1065,10 +1187,18 @@ var TWiC = (function(namespace){
 
             while (++i < n) { q.visit(namespace.GraphView.prototype.Collide(this.m_nodes[i])); }
 
-            links.attr("x1", function(d) { d.source.firstX = d.source.x; return d.source.x; })
-                 .attr("y1", function(d) { d.source.firstY = d.source.y; return d.source.y; })
-                 .attr("x2", function(d) { d.target.firstX = d.target.x; return d.target.x; })
-                 .attr("y2", function(d) { d.target.firstY = d.target.y; return d.target.y; });
+            links.attr("x1", function(d) {
+                     d.source.firstX = d.source.x; return d.source.x;
+                 })
+                 .attr("y1", function(d) {
+                     d.source.firstY = d.source.y; return d.source.y;
+                 })
+                 .attr("x2", function(d) {
+                     d.target.firstX = d.target.x; return d.target.x;
+                 })
+                 .attr("y2", function(d) {
+                     d.target.firstY = d.target.y; return d.target.y;
+                 });
 
             nodes.attr("transform", function(d) {
                 d.firstX = d.x;
@@ -1077,18 +1207,29 @@ var TWiC = (function(namespace){
             });
         }
         else{
-             links.attr("x1", function(d) { return d.source.firstX; })
-                  .attr("y1", function(d) { return d.source.firstY; })
-                  .attr("x2", function(d) { return d.target.firstX; })
-                  .attr("y2", function(d) { return d.target.firstY; });
 
-              nodes.attr("transform", function(d) { return "translate(" + d.firstX + "," + d.firstY + ")"; });
+            links.attr("x1", function(d) {
+                     return d.source.firstX;
+                 })
+                 .attr("y1", function(d) {
+                     return d.source.firstY;
+                 })
+                 .attr("x2", function(d) {
+                     return d.target.firstX;
+                 })
+                 .attr("y2", function(d) {
+                     return d.target.firstY;
+                 });
+
+            nodes.attr("transform", function(d) {
+                     return "translate(" + d.firstX + "," + d.firstY + ")";
+                 });
         }
     });
 
     namespace.TextClusterView.method("Update", function(data){
 
-        if ( data.topicID != this.m_clusterIndex ) {
+        if ( data.topicID != this.m_clusterIndex && this.m_level.m_corpusMap["children"][this.m_clusterIndex] ) {
 
             // Stop the force directed graph
             this.m_graph.stop();
@@ -1279,15 +1420,15 @@ var TWiC = (function(namespace){
                .style("float","left")
                .style("position", "absolute")
                .style("margin", "0 auto !important")
-               .style("display", "inline-block")
+               //.style("display", "inline-block")
                .style("font-size", "18")
                //.style("width", this.m_size.width)
                //.style("max-width", this.m_size.width)
                //.style("height", this.m_size.height)
                //.style("max-height", this.m_size.height)
                .style("max-width", "100%")
-               .style("max-height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
-               .style("background-color", "#002240")
+               //.style("max-height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
+               //.style("background-color", "#002240")
                .style("font-family", "Archer")
                .style("font-size", 20)
                .style("color", "#FAFAD2")
