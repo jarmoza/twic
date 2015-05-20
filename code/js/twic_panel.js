@@ -436,10 +436,12 @@ var TWiC = (function(namespace){
 
     namespace.CorpusView.method("Update", function(data){
 
-        if ( null != data ){
-            this.HighlightTopicCircle(data);
-        } else {
-            this.DarkenAllTopicCircles();
+        if ( !this.m_paused ) {
+            if ( null != data ){
+                this.HighlightTopicCircle(data);
+            } else {
+                this.DarkenAllTopicCircles();
+            }
         }
     });
 
@@ -816,23 +818,12 @@ var TWiC = (function(namespace){
 
     namespace.CorpusClusterView.method("Update", function(data){
 
-        /*for ( var index = 0; index < this.m_twicObjects.length; index++ ){
-
-            if ( this.m_twicObjects[index].m_clusterGroup
-                   .selectAll(".topic_circle")
-                   .filter(function(d){ return d.topicID == data.topicID; }.bind(data.topicID))
-                   .empty() ){
-                this.m_twicObjects[index].DarkenCluster();
+        if ( !this.m_paused ) {
+            if ( null != data ){
+                this.HighlightAllClustersWithTopic(data);
+            } else {
+                this.DarkenAllClusters();
             }
-            else {
-                this.m_twicObjects[index].HighlightCluster(data.topicID);
-            }
-        }*/
-
-        if ( null != data ){
-            this.HighlightAllClustersWithTopic(data);
-        } else {
-            this.DarkenAllClusters();
         }
     });
 
@@ -967,7 +958,7 @@ var TWiC = (function(namespace){
 
             var textRectangle = new TWiC.TextRectangle({x:0,y:0}, {width:0,height:0},
                                                        this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["name"], this.m_level,
-                                                       this, this.m_linkedViews);
+                                                       this, this.m_linkedViews, this.m_clusterIndex);
             // Load the individual JSON for this text
             textRectangle.Load();
 
@@ -1229,7 +1220,7 @@ var TWiC = (function(namespace){
 
     namespace.TextClusterView.method("Update", function(data){
 
-        if ( data.topicID != this.m_clusterIndex && this.m_level.m_corpusMap["children"][this.m_clusterIndex] ) {
+        if ( data && data.topicID != this.m_clusterIndex && this.m_level.m_corpusMap["children"][this.m_clusterIndex] ) {
 
             // Stop the force directed graph
             this.m_graph.stop();
@@ -1684,32 +1675,35 @@ var TWiC = (function(namespace){
 
     namespace.TopicBar.method("Update", function(data){
 
-        // Highlight the topic word list and scroll to it
-        if ( null != data ) {
+        if ( !this.m_paused ) {
 
-            this.m_svg.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
-            this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
-            dy = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
-            var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-            this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + dy + " " +
-                                             viewBoxArray[2] + " " +
-                                             viewBoxArray[3]);
+            // Highlight the topic word list and scroll to it
+            if ( null != data ) {
 
-            // Save the current highlighted topic ID
-            this.m_currentSelection = data.topicID;
-        }
-        // De-highlight all topic words lists and scroll back to the top of the topic bar
-        else {
+                this.m_svg.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
+                this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
+                dy = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
+                var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
+                this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + dy + " " +
+                                                 viewBoxArray[2] + " " +
+                                                 viewBoxArray[3]);
 
-            this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
-            this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_div.style("background-color")).attr("opacity", "0");
-            var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-            this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " +
-                                             viewBoxArray[2] + " " +
-                                             viewBoxArray[3]);
+                // Save the current highlighted topic ID
+                this.m_currentSelection = data.topicID;
+            }
+            // De-highlight all topic words lists and scroll back to the top of the topic bar
+            else {
 
-            // Reset the current selected topic to none
-            this.m_currentSelection = -1;
+                this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
+                this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_div.style("background-color")).attr("opacity", "0");
+                var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
+                this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " +
+                                                 viewBoxArray[2] + " " +
+                                                 viewBoxArray[3]);
+
+                // Reset the current selected topic to none
+                this.m_currentSelection = -1;
+            }
         }
     });
 
