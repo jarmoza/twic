@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My life closed twice before its close; 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1732">
+                <lg type="stanza">
+                    <l>My life closed twice before its close;</l>
+                    <l>It yet remains to see</l>
+                    <l>If Immortality <app type="revision"><lem>disclose</lem><rdg>disclose</rdg></app>
+unveil</l>
+                    <l>A third event to me,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So huge, so hopeless to conceive</l>
+                    <l>As these that twice befel.</l>
+                    <l>Parting is all we know of heaven,</l>
+                    <l>And all we need of hell.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

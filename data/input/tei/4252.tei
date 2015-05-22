@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DAWN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-17">
+                <lg type="stanza">
+                    <l>When night is almost done,</l>
+                    <l>And sunrise grows so near</l>
+                    <l>That we can touch the spaces,</l>
+                    <l>It 's time to smooth the hair</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And get the dimples ready,</l>
+                    <l>And wonder we could care</l>
+                    <l>For that old faded midnight</l>
+                    <l>That frightened but an hour.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

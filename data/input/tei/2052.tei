@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hope is a subtle glutton </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1493A">
+                <lg type="stanza">
+                    <l>Hope is a subtle<app type="division"><lem><lb/></lem></app>
+ Glutton - </l>
+                    <l>He feeds opon the<app type="division"><lem><lb/></lem></app>
+ Fair - </l>
+                    <l>And yet - inspected<app type="division"><lem><lb/></lem></app>
+ closely </l>
+                    <l>What Abstinence<app type="division"><lem><lb/></lem></app>
+ is there - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His is the<app type="division"><lem><lb/></lem></app>
+ Halcyon Table -</l>
+                    <l>That never seats<app type="division"><lem><lb/></lem></app>
+ but One - </l>
+                    <l>And whatsoever<app type="division"><lem><lb/></lem></app>
+ is consumed </l>
+                    <l>The same amount<app type="division"><lem><lb/></lem></app>
+ remain - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

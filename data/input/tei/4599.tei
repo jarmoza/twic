@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MARCH</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-83">
+                <lg type="stanza">
+                    <l>We like March, his shoes are purple,</l>
+                    <l>He is new and high;</l>
+                    <l>Makes he mud for dog and peddler,</l>
+                    <l>Makes he forest dry;</l>
+                    <l>Knows the adder's tongue his coming,</l>
+                    <l>And begets her spot.</l>
+                    <l>Stands the sun so close and mighty</l>
+                    <l>That our minds are hot.</l>
+                    <l>News is he of all the others;</l>
+                    <l>Bold it were to die</l>
+                    <l>With the blue-birds buccaneering</l>
+                    <l>On his British sky.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

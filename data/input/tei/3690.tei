@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It came at last but prompter Death 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1230">
+                <lg type="stanza">
+                    <l>It came at last but prompter Death</l>
+                    <l>Had occupied the House --</l>
+                    <l>His pallid Furniture arranged</l>
+                    <l>And his metallic Peace --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh faithful <app type="revision"><lem>Sleet</lem><rdg>Sleet</rdg></app>
+Frost that kept the Date</l>
+                    <l>Had Love as punctual been</l>
+                    <l>Delight had aggrandized the Gate</l>
+                    <l>And blocked the coming in.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

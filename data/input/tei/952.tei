@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No man can compass a despair </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F714A">
+                <lg type="stanza">
+                    <l>No Man can compass<app type="division"><lem><lb/></lem></app>
+ a Despair -</l>
+                    <l>As round a Goalless Road </l>
+                    <l>No faster than a mile<app type="division"><lem><lb/></lem></app>
+ at once </l>
+                    <l>The Traveller proceed - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unconscious of the Width -</l>
+                    <l>Unconscious that the Sun </l>
+                    <l>Be setting on His progress - </l>
+                    <l>So accurate the one </l>
+                </lg>
+                <lg type="stanza">
+                    <l>At estimating Pain - </l>
+                    <l>Whose own - has just begun -</l>
+                    <l>His ignorance - the Angel </l>
+                    <l>That pilot Him along - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Had we our senses
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1284">
+                <lg type="stanza">
+                    <l>Had we our senses</l>
+                    <l><app type="revision"><lem>The'</lem><rdg>The&#x27;</rdg></app>
+But perhaps 'tis well they're not at Home</l>
+                    <l>So intimate with Madness</l>
+                    <l><app type="revision"><lem>That's</lem><rdg>That&#x27;s</rdg></app>
+<app type="revision"><lem>'Tis</lem><rdg>&#x27;Tis</rdg></app>
+He's liable with them</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had we the eyes within our Head --</l>
+                    <l>How <app type="revision"><lem>prudent</lem><rdg>prudent</rdg></app>
+well that we are Blind --</l>
+                    <l>We could not look upon the <app type="revision"><lem>World</lem><rdg>World</rdg></app>
+Earth --</l>
+                    <l>So utterly unmoved --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

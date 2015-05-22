@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Safe in their alabaster chambers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F124D">
+                <lg type="stanza">
+                    <l>Springs - shake the Sills - </l>
+                    <l>But - the Echoes - stiffen - </l>
+                    <l>Hoar - is the Window - and<app type="division"><lem><lb/></lem></app>
+ numb - the Door - </l>
+                    <l>Tribes of Eclipse - in Tents<app type="division"><lem><lb/></lem></app>
+ of Marble - </l>
+                    <l>Staples of Ages - have<app type="division"><lem><lb/></lem></app>
+ buckled - there -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

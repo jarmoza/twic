@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Yellow was the outer Sky 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1676">
+                <lg type="stanza">
+                    <l>Of Yellow was the outer Sky</l>
+                    <l>In Yellower Yellow hewn</l>
+                    <l>Till Saffron in Vermillion slid</l>
+                    <l>Whose seam could not be shewn --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

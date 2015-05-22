@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The hallowing of Pain 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J772">
+                <lg type="stanza">
+                    <l>The hallowing of Pain</l>
+                    <l>Like hallowing of Heaven,</l>
+                    <l>Obtains at a corporeal cost --</l>
+                    <l>The Summit is not given</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Him who strives severe</l>
+                    <l>At <app type="revision"><lem>Bottom --</lem><rdg>Bottom --</rdg></app>
+<app type="revision"><lem>Centre</lem><rdg>Centre</rdg></app>
+middle of the Hill --</l>
+                    <l>But He who has achieved the <app type="revision"><lem>Crest --</lem><rdg>Crest --</rdg></app>
+Top --</l>
+                    <l>All -- is the price of All --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

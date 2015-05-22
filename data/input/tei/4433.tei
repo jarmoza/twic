@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SLEEPING FLOWERS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-83">
+                <lg type="stanza">
+                    <l>"Whose are the little beds," I asked,</l>
+                    <l>"Which in the valleys lie?"</l>
+                    <l>Some shook their heads, and others smiled,</l>
+                    <l>And no one made reply.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Perhaps they did not hear," I said;</l>
+                    <l>"I will inquire again.</l>
+                    <l>Whose are the beds, the tiny beds</l>
+                    <l>So thick upon the plain?"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"'T is daisy in the shortest;</l>
+                    <l>A little farther on,</l>
+                    <l>Nearest the door to wake the first,</l>
+                    <l>Little leontodon.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"'T is iris, sir, and aster,</l>
+                    <l>Anemone and bell,</l>
+                    <l>Batschia in the blanket red,</l>
+                    <l>And chubby daffodil."</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Meanwhile at many cradles</l>
+                    <l>Her busy foot she plied,</l>
+                    <l>Humming the quaintest lullaby</l>
+                    <l>That ever rocked a child.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Hush! Epigea wakens! </l>
+                    <l>The crocus stirs her lids,</l>
+                    <l>Rhodora's cheek is crimson, </l>
+                    <l>She's dreaming of the woods."</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then, turning from them, reverent,</l>
+                    <l>"Their bed-time 't is," she said;</l>
+                    <l>"The bumble-bees will wake them</l>
+                    <l>When April woods are red."</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

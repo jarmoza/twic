@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>By homely gifts and hindered words </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1611A">
+                <lg type="stanza">
+                    <l>By homely<app type="division"><lem><lb/></lem></app>
+ gifts and<app type="division"><lem><lb/></lem></app>
+ hindered words </l>
+                    <l>The human<app type="division"><lem><lb/></lem></app>
+ heart is told </l>
+                    <l>Of nothing - </l>
+                    <l>&quot;Nothing&quot; is<app type="division"><lem><lb/></lem></app>
+ the force </l>
+                    <l>That renovates<app type="division"><lem><lb/></lem></app>
+ the World -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

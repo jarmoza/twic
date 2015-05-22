@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Antiquated Tree 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1514">
+                <lg type="stanza">
+                    <l>An Antiquated Tree</l>
+                    <l>Is cherished of the Crow</l>
+                    <l>Because that Junior Foliage is disrespectful now</l>
+                    <l>To venerable Birds</l>
+                    <l>Whose Corporation Coat</l>
+                    <l>Would decorate Oblivion's</l>
+                    <l>Remotest Consulate.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

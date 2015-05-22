@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a June when corn is cut </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F811B">
+                <lg type="stanza">
+                    <l>There is a June when<app type="division"><lem><lb/></lem></app>
+ Corn is cut</l>
+                    <l>And Roses in the Seed - </l>
+                    <l>A Summer briefer than<app type="division"><lem><lb/></lem></app>
+ the first </l>
+                    <l>But tenderer indeed </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As should a Face<app type="division"><lem><lb/></lem></app>
+ supposed the Grave's</l>
+                    <l>Emerge a single Noon </l>
+                    <l>In the Vermillion that<app type="division"><lem><lb/></lem></app>
+ it wore </l>
+                    <l>Affect us, and return - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Two Seasons, it is said,<app type="division"><lem><lb/></lem></app>
+ exist - </l>
+                    <l>The Summer of the Just,</l>
+                    <l>And this of our's,<app type="division"><lem><lb/></lem></app>
+ diversified </l>
+                    <l>With Prospect - and<app type="division"><lem><lb/></lem></app>
+ with Frost -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>May not our Second<app type="division"><lem><lb/></lem></app>
+ with it's First </l>
+                    <l>So infinite compare </l>
+                    <l>That We but recollect<app type="division"><lem><lb/></lem></app>
+ the one</l>
+                    <l>The other to prefer?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It was too late for man </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F689A">
+                <lg type="stanza">
+                    <l>It was too late for Man -</l>
+                    <l>But early, yet, for God - </l>
+                    <l>Creation - impotent to help - </l>
+                    <l>But Prayer - remained -<app type="division"><lem><lb/></lem></app>
+ Our side - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How excellent the Heaven -</l>
+                    <l>When Earth - cannot be had - </l>
+                    <l>How hospitable - then - the<app type="division"><lem><lb/></lem></app>
+ face </l>
+                    <l>Of Our Old Neighbor - God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

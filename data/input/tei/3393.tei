@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Two Travellers perishing in Snow 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J933">
+                <lg type="stanza">
+                    <l>Two Travellers perishing in Snow</l>
+                    <l>The Forests as they froze</l>
+                    <l>Together heard them strengthening</l>
+                    <l>Each other with the <app type="revision"><lem>news</lem><rdg>news</rdg></app>
+words</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Heaven if Heaven -- must contain</l>
+                    <l>What Either left behind</l>
+                    <l>And then the cheer too solemn grew</l>
+                    <l>For language, and the wind</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Long steps across the features took</l>
+                    <l>That Love had touched that Morn</l>
+                    <l>With reverential Hyacinth --</l>
+                    <l>The taleless Days went on</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till Mystery impatient drew</l>
+                    <l>And those They left behind</l>
+                    <l>Led absent, were <app type="revision"><lem>obtained</lem><rdg>obtained</rdg></app>
+procured of Heaven</l>
+                    <l>As Those first furnished, said --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

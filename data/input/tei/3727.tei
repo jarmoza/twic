@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I saw that the Flake was on it 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1267">
+                <lg type="stanza">
+                    <l>I saw that the Flake was on it</l>
+                    <l>But plotted with Time to dispute --</l>
+                    <l>"Unchanged" I urged with a candor</l>
+                    <l>That cost me my honest Heart --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But "you" -- she returned with valor</l>
+                    <l>Sagacious of my mistake</l>
+                    <l>"Have altered -- Accept the pillage</l>
+                    <l>For the progress' sake" --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

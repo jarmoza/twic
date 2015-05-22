@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Would you like summer? Taste of ours. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J691">
+                <lg type="stanza">
+                    <l>Would you like summer? Taste of ours.</l>
+                    <l>Spices? Buy here!</l>
+                    <l>Ill! We have berries, for the parching!</l>
+                    <l>Weary! Furloughs of down!</l>
+                    <l>Perplexed! Estates of violet trouble ne'er looked on!</l>
+                    <l>Captive! We bring reprieve of roses!</l>
+                    <l>Fainting! Flasks of air!</l>
+                    <l>Even for Death, a fairy medicine.</l>
+                    <l>But, which is it, sir?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

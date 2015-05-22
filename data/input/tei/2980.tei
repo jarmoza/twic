@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I started Early -- Took my Dog -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J520">
+                <lg type="stanza">
+                    <l>I started Early -- Took my Dog --</l>
+                    <l>And visited the Sea --</l>
+                    <l>The Mermaids in the Basement</l>
+                    <l>Came out to look at me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Frigates -- in the Upper Floor</l>
+                    <l>Extended Hempen Hands --</l>
+                    <l>presuming Me to be a Mouse --</l>
+                    <l>Aground -- upon the Sands --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But no Man moved Me -- till the Tide</l>
+                    <l>Went past my simple Shoe --</l>
+                    <l>And past my Apron -- and my Belt</l>
+                    <l>And past my <app type="revision"><lem>Buckle</lem><rdg>Buckle</rdg></app>
+<app type="revision"><lem>Bosom</lem><rdg>Bosom</rdg></app>
+Boddice -- too --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And made as He would eat me up --</l>
+                    <l>As wholly as a Dew</l>
+                    <l>Upon a Dandelion's Sleeve --</l>
+                    <l>And then -- I started -- too --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And He -- He followed -- close behind --</l>
+                    <l>I felt His Silver Heel</l>
+                    <l>Upon my Ancle -- Then my Shoes</l>
+                    <l>Would overflow with Pearl --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Until We met the Solid Town --</l>
+                    <l>No <app type="revision"><lem>man --</lem><rdg>man --</rdg></app>
+One He seemed to know --</l>
+                    <l>And bowing -- with a Mighty look --</l>
+                    <l>At me -- The Sea withdrew --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

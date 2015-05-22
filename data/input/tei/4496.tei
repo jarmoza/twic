@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE JOURNEY</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-146">
+                <lg type="stanza">
+                    <l>Our journey had advanced;</l>
+                    <l>Our feet were almost come</l>
+                    <l>To that odd fork in Being's road,</l>
+                    <l>Eternity by term.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our pace took sudden awe,</l>
+                    <l>Our feet reluctant led.</l>
+                    <l>Before were cities, but between,</l>
+                    <l>The forest of the dead.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Retreat was out of hope, </l>
+                    <l>Behind, a sealed route,</l>
+                    <l>Eternity's white flag before,</l>
+                    <l>And God at every gate.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

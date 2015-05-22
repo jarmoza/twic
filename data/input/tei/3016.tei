@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Brain, within it&#x27;s Groove 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J556">
+                <lg type="stanza">
+                    <l>The Brain, within it's Groove</l>
+                    <l>Runs evenly -- and true --</l>
+                    <l>But let a Splinter swerve --</l>
+                    <l>'Twere easier for You --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To put <app type="revision"><lem>the Waters</lem><rdg>the Waters</rdg></app>
+a Current back --</l>
+                    <l>When Floods have slit the Hills --</l>
+                    <l>And scooped a Turnpike for Themselves --</l>
+                    <l>And trodden out the Mills --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

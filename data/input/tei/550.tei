@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It dont sound so terrible quite as it did </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F384A">
+                <lg type="stanza">
+                    <l>It dont sound so terrible -<app type="division"><lem><lb/></lem></app>
+ quite - as it did -</l>
+                    <l>I run it over - &quot;Dead&quot;, Brain -<app type="division"><lem><lb/></lem></app>
+ &quot;Dead&quot;.  </l>
+                    <l>Put it in Latin - left of my school - </l>
+                    <l>Seems it dont shriek so - under rule.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Turn it, a little - full in the face</l>
+                    <l>A Trouble looks bitterest - </l>
+                    <l>Shift it - just - </l>
+                    <l>Say &quot;When Tomorrow comes this<app type="division"><lem><lb/></lem></app>
+ way - </l>
+                    <l>I shall have waded down one Day&quot;.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I suppose it will interrupt me<app type="division"><lem><lb/></lem></app>
+ some</l>
+                    <l>Till I get accustomed - but<app type="division"><lem><lb/></lem></app>
+ then the Tomb </l>
+                    <l>Like other new Things - shows<app type="division"><lem><lb/></lem></app>
+ largest - then - </l>
+                    <l>And smaller, by Habit -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's shrewder then </l>
+                    <l>Put the Thought in<app type="division"><lem><lb/></lem></app>
+ advance - a Year -</l>
+                    <l>How like &quot;a fit&quot; - then -<app type="division"><lem><lb/></lem></app>
+ </l>
+                    <l>Murder - wear!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

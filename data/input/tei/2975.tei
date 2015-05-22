@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No Crowd that has occurred
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J515">
+                <lg type="stanza">
+                    <l>No Crowd that has occurred</l>
+                    <l>Exhibit -- I suppose</l>
+                    <l>That General Attendance</l>
+                    <l>That Resurrection -- does --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Circumference be full --</l>
+                    <l>The long <app type="revision"><lem>subjected</lem><rdg>subjected</rdg></app>
+restricted Grave</l>
+                    <l>Assert <app type="revision"><lem>His Primogeniture</lem><rdg>His Primogeniture</rdg></app>
+her Vital Privilege --</l>
+                    <l>The Dust -- <app type="revision"><lem>adjust --</lem><rdg>adjust --</rdg></app>
+connect -- and live --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>On Atoms -- features place --</l>
+                    <l>All Multitudes that were</l>
+                    <l>Efface in the Comparison --</l>
+                    <l>As Suns -- <app type="revision"><lem>annul</lem><rdg>annul</rdg></app>
+dissolve a star --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Solemnity -- prevail --</l>
+                    <l>It's Individual Doom</l>
+                    <l>Possess each separate Consciousness --</l>
+                    <l>August -- Absorbed, --  Numb --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Duplicate -- exist --</l>
+                    <l>What <app type="revision"><lem>scenery</lem><rdg>scenery</rdg></app>
+Parallel can be --</l>
+                    <l>Of the <app type="revision"><lem>stupendousness</lem><rdg>stupendousness</rdg></app>
+Significance of This --</l>
+                    <l>To Universe -- and Me?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

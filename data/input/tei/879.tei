@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A secret told </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F643A">
+                <lg type="stanza">
+                    <l>A Secret told -</l>
+                    <l>Ceases to be a Secret - then - </l>
+                    <l>A Secret - kept - </l>
+                    <l>That - can <app type="emendation"><lem>appal</lem><rdg>appall</rdg></app>
+ but One - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Better of it - continual<app type="division"><lem><lb/></lem></app>
+ be afraid -</l>
+                    <l>Than it - </l>
+                    <l>And Whom you told it<app type="division"><lem><lb/></lem></app>
+ to - beside - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

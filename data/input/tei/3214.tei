@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My Life had stood -- a Loaded Gun -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J754">
+                <lg type="stanza">
+                    <l>My Life had stood -- a Loaded Gun --</l>
+                    <l>In Corners -- till a Day</l>
+                    <l>The Owner passed -- identified --</l>
+                    <l>And carried Me away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And now We roam <app type="revision"><lem>the --</lem><rdg>the --</rdg></app>
+in Sovreign Woods --</l>
+                    <l>And now We hunt the Doe --</l>
+                    <l>And every time I speak for Him --</l>
+                    <l>The Mountains straight reply --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And do I smile, such cordial light</l>
+                    <l>Upon the Valley glow --</l>
+                    <l>It is as a Vesuvian face</l>
+                    <l>Had let it's pleasure through --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when at Night -- Our good Day done --</l>
+                    <l>I guard My Master's Head --</l>
+                    <l>'Tis better than the Eider -- Duck's</l>
+                    <l><app type="revision"><lem>low</lem><rdg>low</rdg></app>
+Deep Pillow -- to have shared --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To foe of His -- I'm deadly foe --</l>
+                    <l>None <app type="revision"><lem>harm</lem><rdg>harm</rdg></app>
+stir the second time --</l>
+                    <l>On whom I lay a Yellow Eye --</l>
+                    <l>Or an emphatic Thumb --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Though I than He -- may longer live</l>
+                    <l>He longer must -- than I --</l>
+                    <l>For I have but the <app type="revision"><lem>art</lem><rdg>art</rdg></app>
+power to kill,</l>
+                    <l>Without -- the power to die --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Somewhere opon the general earth </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1226A">
+                <lg type="stanza">
+                    <l>Somewhere opon<app type="division"><lem><lb/></lem></app>
+ the general Earth</l>
+                    <l>Itself exist Today - </l>
+                    <l>The Magic passive<app type="division"><lem><lb/></lem></app>
+ but extant </l>
+                    <l>That consecrated<app type="division"><lem><lb/></lem></app>
+ me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Indifferent Seasons<app type="division"><lem><lb/></lem></app>
+ doubtless play</l>
+                    <l>Where I for<app type="division"><lem><lb/></lem></app>
+ right to be - </l>
+                    <l>Would<add type="alternate" extent="pay">pawn -</add>
+ pay each<app type="division"><lem><lb/></lem></app>
+ Atom that I am </l>
+                    <l>But Immortality - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Reserving that<app type="division"><lem><lb/></lem></app>
+ but just to prove </l>
+                    <l>Another Date of<app type="division"><lem><lb/></lem></app>
+ Thee -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Oh God of<app type="division"><lem><lb/></lem></app>
+ Width, do not<app type="division"><lem><lb/></lem></app>
+ for us </l>
+                    <l><add type="alternate" extent="Curtail">contract</add>
+Curtail Eternity!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

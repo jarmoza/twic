@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The wind took up the northern things </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1152A">
+                <lg type="stanza">
+                    <l>The Wind took up the Northern Things </l>
+                    <l>And piled them in the South - </l>
+                    <l>Then<add type="alternate" extent="gave">bent - &amp;#x2022; bowed</add>
+ gave the East unto the West </l>
+                    <l>And opening<add type="alternate" extent="his">it&#x27;s</add>
+ his mouth </l>
+                    <l>The Four Divisions of the Earth</l>
+                    <l><add type="alternate" extent="Did make as to">Presumed as to</add>
+Did make as to devour </l>
+                    <l>While everything to corners slunk </l>
+                    <l>Behind the awful power - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Wind unto his Chamber went </l>
+                    <l>And nature ventured out -</l>
+                    <l>Her subjects scattered into place </l>
+                    <l>Her systems ranged about </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Again the smoke from Dwellings rose </l>
+                    <l>The Day abroad was heard </l>
+                    <l>How intimate, a Tempest past</l>
+                    <l>The Transport of the Bird - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

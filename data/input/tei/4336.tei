@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Two swimmers wrestled on the spar</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-101">
+                <lg type="stanza">
+                    <l>Two swimmers wrestled on the spar</l>
+                    <l>Until the morning sun,</l>
+                    <l>When one turned smiling to the land.</l>
+                    <l>O God, the other one!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The stray ships passing spied a face</l>
+                    <l>Upon the waters borne,</l>
+                    <l>With eyes in death still begging raised,</l>
+                    <l>And hands beseeching thrown.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

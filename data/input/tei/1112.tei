@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Unto me&quot;? I do not know you </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F825A">
+                <lg type="stanza">
+                    <l>&quot;Unto Me&quot;? I do not<app type="division"><lem><lb/></lem></app>
+ know you -</l>
+                    <l>Where may be your House?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;I am Jesus - Late of<app type="division"><lem><lb/></lem></app>
+ Judea - </l>
+                    <l>Now - of Paradise&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wagons - have you - to<app type="division"><lem><lb/></lem></app>
+ convey me?</l>
+                    <l>This is far from Thence - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Arms of Mine - sufficient<app type="division"><lem><lb/></lem></app>
+ Phaeton - </l>
+                    <l>Trust Omnipotence&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I am spotted - &quot;I am Pardon&quot; - </l>
+                    <l>I am small - &quot;The Least</l>
+                    <l>Is esteemed in Heaven the Chiefest - </l>
+                    <l>Occupy my House&quot; - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

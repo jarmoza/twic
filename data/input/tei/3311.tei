@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When the Astronomer stops seeking 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J851">
+                <lg type="stanza">
+                    <l>When the Astronomer stops seeking</l>
+                    <l>For his Pleiad's Face --</l>
+                    <l>When the lone British Lady</l>
+                    <l>Forsakes the Arctic Race</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When to his Covenant Needle</l>
+                    <l>The Sailor doubting turns --</l>
+                    <l>It will be amply early</l>
+                    <l>To ask what treason means.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

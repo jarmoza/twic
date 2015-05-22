@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To offer brave assistance </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F492A">
+                <lg type="stanza">
+                    <l>To offer brave assistance</l>
+                    <l>To Lives that stand alone - </l>
+                    <l>When One has <app type="emendation"><lem>faild</lem><rdg>failed</rdg></app>
+ to<app type="division"><lem><lb/></lem></app>
+ stop them - </l>
+                    <l>Is Human - but Divine </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To lend an ample Sinew</l>
+                    <l>Unto a Nameless Man - </l>
+                    <l>Whose Homely Benediction </l>
+                    <l>No other -<add type="alternate" extent="stopped">cared -</add>
+ stopped to earn - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

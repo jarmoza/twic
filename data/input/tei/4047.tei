@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He ate and drank the precious Words -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1587">
+                <lg type="stanza">
+                    <l>He ate and drank the precious Words --</l>
+                    <l>His Spirit grew robust --</l>
+                    <l>He knew no more that he was poor,</l>
+                    <l>Nor that his frame was Dust --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He danced along the dingy Days</l>
+                    <l>And this Bequest of Wings</l>
+                    <l>Was but a Book -- What Liberty</l>
+                    <l><app type="revision"><lem>The</lem><rdg>The</rdg></app>
+A loosened spirit brings --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The soul has bandaged moments </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F360A">
+                <lg type="stanza">
+                    <l>The Soul has Bandaged moments -</l>
+                    <l>When too appalled to stir - </l>
+                    <l>She feels some ghastly Fright<app type="division"><lem><lb/></lem></app>
+ come up </l>
+                    <l>And stop to look at her - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Salute her, with long fingers -</l>
+                    <l>Caress her freezing hair - </l>
+                    <l>Sip, Goblin, from the very lips </l>
+                    <l>The Lover - hovered - o'er - </l>
+                    <l>Unworthy, that a thought so<app type="division"><lem><lb/></lem></app>
+ mean </l>
+                    <l>Accost a Theme - so - fair -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The soul has moments of escape - </l>
+                    <l>When bursting all the doors - </l>
+                    <l>She dances like a Bomb, abroad, </l>
+                    <l>And swings opon the Hours, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As do the Bee - delirious borne -</l>
+                    <l>Long Dungeoned from his Rose -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Touch Liberty - then know no<app type="division"><lem><lb/></lem></app>
+ more - </l>
+                    <l>But Noone, and Paradi<add type="reading">s</add>
+e</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Soul's retaken moments - </l>
+                    <l>When, Felon led along,</l>
+                    <l>With<add type="alternate" extent="shackles">irons -</add>
+ shackles on the plumed<app type="division"><lem><lb/></lem></app>
+ feet, </l>
+                    <l>And<add type="alternate" extent="staples,">rivets -</add>
+ staples, in the song, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Horror welcomes her,<app type="division"><lem><lb/></lem></app>
+ again, </l>
+                    <l>These, are not brayed<app type="division"><lem><lb/></lem></app>
+ of Tongue - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

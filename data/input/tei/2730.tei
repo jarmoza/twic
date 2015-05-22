@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One Life of so much Consequence! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J270">
+                <lg type="stanza">
+                    <l>One Life of so much Consequence!</l>
+                    <l>Yet I -- for it -- would pay --</l>
+                    <l>My Soul's entire income --</l>
+                    <l>In ceaseless -- salary --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>One Pearl -- to me -- so signal --</l>
+                    <l>That I would instant dive --</l>
+                    <l>Although -- I knew -- to take it --</l>
+                    <l>Would cost me -- lust a life!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sea is full -- I know it!</l>
+                    <l>That -- does not blur my Gem!</l>
+                    <l>It bums -- distinct from all the row --</l>
+                    <l>Intact -- in Diadem!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The life is thick -- I know it!</l>
+                    <l>Yet -- not so dense a crowd --</l>
+                    <l>But Monarchs -- are perceptible --</l>
+                    <l>Far down the dustiest Road!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>5. to me -- so signal) of such proportion</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

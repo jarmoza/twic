@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The first Day&#x27;s Night had come -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J410">
+                <lg type="stanza">
+                    <l>The first Day's Night had come --</l>
+                    <l>And grateful that a thing</l>
+                    <l>So terrible -- had been endured --</l>
+                    <l>I told my Soul to sing --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She said her Strings were snapt --</l>
+                    <l>Her Bow -- to Atoms blown --</l>
+                    <l>And so to mend her -- gave me work</l>
+                    <l>Until another Morn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then -- a Day as huge</l>
+                    <l>As Yesterdays in pairs,</l>
+                    <l>Unrolled it's horror in my face --</l>
+                    <l>Until it blocked my eyes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Brain -- begun to laugh --</l>
+                    <l>I mumbled -- like a fool --</l>
+                    <l>And tho' 'tis Years ago -- that Day --</l>
+                    <l>My Brain keeps giggling -- still.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Something's odd -- within --</l>
+                    <l>That person that I was --</l>
+                    <l>And this One -- do not feel the same --</l>
+                    <l>Could it be Madness -- this?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

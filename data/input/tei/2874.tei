@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas like a Maelstrom, with a notch,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J414">
+                <lg type="stanza">
+                    <l>'Twas like a Maelstrom, with a notch,</l>
+                    <l>That nearer, every Day,</l>
+                    <l>Kept narrowing it's boiling Wheel</l>
+                    <l>Until the Agony</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Toyed coolly with the final inch</l>
+                    <l>Of your delirious Hem --</l>
+                    <l>And you dropt, lost,</l>
+                    <l>When something broke --</l>
+                    <l>And let you from a Dream --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if a Goblin with a Guage --</l>
+                    <l>Kept measuring the Hours --</l>
+                    <l>Until you felt your Second</l>
+                    <l>Weigh, helpless, in his Paws --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And not a Sinew -- stirred -- could help,</l>
+                    <l>And sense was setting numb --</l>
+                    <l>When God -- remembered -- and the Fiend</l>
+                    <l>Let go, then, Overcome</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if your Sentence stood -- pronounced --</l>
+                    <l>And you were frozen led</l>
+                    <l>From Dungeon's luxury of Doubt</l>
+                    <l>To Gibbets, and the Dead --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>And when the Film had stitched your eyes</l>
+                    <l>A Creature gasped "Repreive"!</l>
+                    <l>Which Anguish was the utterest -- then --</l>
+                    <l>To perish, or to live?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

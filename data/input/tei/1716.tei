@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The most triumphant bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1285C">
+                <lg type="stanza">
+                    <l>The most<app type="division"><lem><lb/></lem></app>
+ triumphant<app type="division"><lem><lb/></lem></app>
+ Bird I ever<app type="division"><lem><lb/></lem></app>
+ knew or met </l>
+                    <l>Embarked opon<app type="division"><lem><lb/></lem></app>
+ a Twig Today<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And till<app type="division"><lem><lb/></lem></app>
+ Dominion set </l>
+                    <l>I famish to<app type="division"><lem><lb/></lem></app>
+ behold so<app type="division"><lem><lb/></lem></app>
+ eminent a sight </l>
+                    <l>And sang<app type="division"><lem><lb/></lem></app>
+ for nothing<app type="division"><lem><lb/></lem></app>
+ scrutable</l>
+                    <l>But intimate<app type="division"><lem><lb/></lem></app>
+ Delight.  </l>
+                    <l>Retired, and<app type="division"><lem><lb/></lem></app>
+ resumed his<app type="division"><lem><lb/></lem></app>
+ transitive Estate - </l>
+                    <l>To what<app type="division"><lem><lb/></lem></app>
+ delicious Accident </l>
+                    <l>Does finest<app type="division"><lem><lb/></lem></app>
+ Glory fit!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

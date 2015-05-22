@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We talked with each other about each other 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1473">
+                <lg type="stanza">
+                    <l>We talked with each other about each other</l>
+                    <l>Though neither of us spoke --</l>
+                    <l>We were listening to the seconds Races</l>
+                    <l>And the Hoofs of the Clock --</l>
+                    <l>Pausing in Front of our Palsied Faces</l>
+                    <l>Time compassion took --</l>
+                    <l>Arks of Reprieve he offered to us --</l>
+                    <l>Ararats -- we took --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

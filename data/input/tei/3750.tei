@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The most pathetic thing I do 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1290">
+                <lg type="stanza">
+                    <l>The most pathetic thing I do</l>
+                    <l>Is play I hear from you --</l>
+                    <l>I make believe until my Heart</l>
+                    <l>Almost believes it too</l>
+                    <l>But when I break it with the news</l>
+                    <l>You knew <app type="revision"><lem>that</lem><rdg>that</rdg></app>
+it was not true</l>
+                    <l>I wish I had not broken it --</l>
+                    <l>Goliah -- so would you --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

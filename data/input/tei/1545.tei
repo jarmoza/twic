@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The suburbs of a secret </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1171A">
+                <lg type="stanza">
+                    <l>The Suburbs<app type="division"><lem><lb/></lem></app>
+ of a Secret </l>
+                    <l>A Strategist<app type="division"><lem><lb/></lem></app>
+ should keep - </l>
+                    <l>Better than<app type="division"><lem><lb/></lem></app>
+ on a Dream<app type="division"><lem><lb/></lem></app>
+ intrude </l>
+                    <l>To scrutinize<app type="division"><lem><lb/></lem></app>
+ the Sleep - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

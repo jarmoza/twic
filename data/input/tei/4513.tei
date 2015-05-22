@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SAVED</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-163">
+                <lg type="stanza">
+                    <l>Of tribulation these are they</l>
+                    <l>Denoted by the white;</l>
+                    <l>The spangled gowns, a lesser rank</l>
+                    <l>Of victors designate.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>All these did conquer; but the ones</l>
+                    <l>Who overcame most times</l>
+                    <l>Wear nothing commoner than snow,</l>
+                    <l>No ornament but palms.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Surrender is a sort unknown</l>
+                    <l>On this superior soil;</l>
+                    <l>Defeat, an outgrown anguish,</l>
+                    <l>Remembered as the mile</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our panting ankle barely gained</l>
+                    <l>When night devoured the road;</l>
+                    <l>But we stood whispering in the house,</l>
+                    <l>And all we said was "Saved"!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I made slow riches but my gain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F947A">
+                <lg type="stanza">
+                    <l>I made slow Riches<app type="division"><lem><lb/></lem></app>
+ but my Gain</l>
+                    <l>Was steady as the<app type="division"><lem><lb/></lem></app>
+ Sun </l>
+                    <l>And every Night, it<app type="division"><lem><lb/></lem></app>
+ numbered more </l>
+                    <l>Than the preceding One </l>
+                </lg>
+                <lg type="stanza">
+                    <l>All Days, I did not<app type="division"><lem><lb/></lem></app>
+ earn the same</l>
+                    <l>But my perceiveless Gain </l>
+                    <l>Inferred the less by Growing<app type="division"><lem><lb/></lem></app>
+ than </l>
+                    <l>The Sum that it had grown.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

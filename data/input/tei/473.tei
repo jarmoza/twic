@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There came a day at summer&#x27;s full </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F325A">
+                <lg type="stanza">
+                    <l>Sufficient troth - that she<app type="division"><lem><lb/></lem></app>
+ will rise - </l>
+                    <l>Deposed - at last - the<app type="division"><lem><lb/></lem></app>
+ Grave - </l>
+                    <l>To that <em>new</em> fondness - </l>
+                    <l>Justified - by Calvaries<app type="division"><lem><lb/></lem></app>
+ of love - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

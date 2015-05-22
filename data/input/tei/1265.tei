@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dying! To be afraid of thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F946B">
+                <lg type="stanza">
+                    <l>Dying - to be<app type="division"><lem><lb/></lem></app>
+ afraid of Thee - </l>
+                    <l>One must to thine<app type="division"><lem><lb/></lem></app>
+ Artillery </l>
+                    <l>Have left exposed<app type="division"><lem><lb/></lem></app>
+ a friend - </l>
+                    <l>Than thine old<app type="division"><lem><lb/></lem></app>
+ Arrow is a Shot </l>
+                    <l>Delivered straighter<app type="division"><lem><lb/></lem></app>
+ to the Heart</l>
+                    <l>The leaving<app type="division"><lem><lb/></lem></app>
+ Love behind -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not for itself, the<app type="division"><lem><lb/></lem></app>
+ Dust is shy.  </l>
+                    <l>But - Enemy -<app type="division"><lem><lb/></lem></app>
+ Beloved be - </l>
+                    <l>Thy Batteries<app type="division"><lem><lb/></lem></app>
+ divorce - </l>
+                    <l>Fight sternly in<app type="division"><lem><lb/></lem></app>
+ a dying eye</l>
+                    <l>Two Armies,<app type="division"><lem><lb/></lem></app>
+ Love and Certainty, </l>
+                    <l>And Love and<app type="division"><lem><lb/></lem></app>
+ the Reverse - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

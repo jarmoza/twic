@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Delight -- becomes pictorial --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J572">
+                <lg type="stanza">
+                    <l>Delight -- becomes pictorial --</l>
+                    <l>When viewed through Pain --</l>
+                    <l>More fair -- because impossible</l>
+                    <l>That any gain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Mountain -- at a given distance --</l>
+                    <l>In Amber -- lies --</l>
+                    <l><app type="revision"><lem>possessed</lem><rdg>possessed</rdg></app>
+Approached -- the Amber <app type="revision"><lem>moves --</lem><rdg>moves --</rdg></app>
+flits -- a little --</l>
+                    <l>And That's -- the Skies --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

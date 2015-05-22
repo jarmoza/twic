@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who occupies this House?
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J892">
+                <lg type="stanza">
+                    <l>Who occupies this House?</l>
+                    <l>A Stranger I must judge</l>
+                    <l>Since No one knows His Circumstance --</l>
+                    <l>'Tis well the name and age</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Are writ upon the Door</l>
+                    <l>Or I should fear to pause</l>
+                    <l>Where not so much as Honest Dog</l>
+                    <l>Approach encourages.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It seems a curious Town --</l>
+                    <l>Some Houses very old,</l>
+                    <l>Some -- newly raised this Afternoon,</l>
+                    <l>Were I compelled to build</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It should not be among</l>
+                    <l>Inhabitants so still</l>
+                    <l>But where the Birds assemble</l>
+                    <l>And Boys were possible.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Before Myself was born</l>
+                    <l>'Twas settled, so they say,</l>
+                    <l>A Territory for the Ghosts --</l>
+                    <l>And Squirrels, formerly.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Until a Pioneer, as</l>
+                    <l>Settlers often do</l>
+                    <l>Liking the quiet of the Place</l>
+                    <l>Attracted more unto --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And from a Settlement</l>
+                    <l>A Capitol has grown</l>
+                    <l>Distinguished for the gravity</l>
+                    <l>Of every Citizen.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Owner of this House</l>
+                    <l>A Stranger He must be --</l>
+                    <l>Eternity's Acquaintances</l>
+                    <l>Are mostly so -- to me.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

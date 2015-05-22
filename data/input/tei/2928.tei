@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Manner of it&#x27;s Death 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J468">
+                <lg type="stanza">
+                    <l>The Manner of it's Death</l>
+                    <l>When Certain it must die --</l>
+                    <l>'Tis deemed a privilege to choose --</l>
+                    <l>'Twas Major Andre's Way</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Choice of Life -- is past --</l>
+                    <l>There yet remains a Love</l>
+                    <l>It's little Fate to stipulate --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How small in those who live --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Miracle to teaze</l>
+                    <l>With Babble of the styles --</l>
+                    <l>How "they are Dying mostly -- now" --</l>
+                    <l>And Customs at "St. James"!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

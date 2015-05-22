@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bring me the sunset in a cup </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F140B">
+                <lg type="stanza">
+                    <l>Bring me the sunset in a cup -</l>
+                    <l>Reckon the morning's <app type="emendation"><lem>flagon&#x27;s</lem><rdg>flagons</rdg></app>
+ up </l>
+                    <l>And say how many Dew - </l>
+                    <l>Tell me how far the morning leaps - </l>
+                    <l>Tell me what time the weaver sleeps</l>
+                    <l>Who spun the breadths of blue!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Write me how many notes there be </l>
+                    <l>In the new Robin's extasy </l>
+                    <l>Among astonished boughs - </l>
+                    <l>How many trips the Tortoise makes -</l>
+                    <l>How many cups the Bee partakes, </l>
+                    <l>The Debauchee of Dews!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Also, Who laid the Rainbow's piers, </l>
+                    <l>Also, Who leads the docile spheres </l>
+                    <l>By withes of supple blue?</l>
+                    <l>Whose fingers string the stalactite - </l>
+                    <l>Who counts the wampum of the night </l>
+                    <l>To see that none is due?<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who built this little Alban House </l>
+                    <l>And shut the windows down so close</l>
+                    <l>My spirit cannot see?  </l>
+                    <l>Who'll let me out some gala day </l>
+                    <l>With implements to fly away, </l>
+                    <l>Passing Pomposity?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

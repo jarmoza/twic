@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What if I say I shall not wait! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J277">
+                <lg type="stanza">
+                    <l>What if I say I shall not wait!</l>
+                    <l>What if I burst the fleshly Gate --</l>
+                    <l>And pass escaped -- to thee!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What if I file this Mortal -- off --</l>
+                    <l>See where it hurt me -- That's enough --</l>
+                    <l>And step in Liberty!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They cannot take <app type="revision"><lem>us</lem><rdg>us</rdg></app>
+me -- any more!</l>
+                    <l>Dungeons <app type="revision"><lem>may</lem><rdg>may</rdg></app>
+can call -- and Guns implore</l>
+                    <l>Unmeaning -- now -- to me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As laughter -- was -- an hour ago --</l>
+                    <l>Or Laces -- or a Travelling Show --</l>
+                    <l>Or who died -- yesterday!</l>
+                    <l>6.step] wade</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

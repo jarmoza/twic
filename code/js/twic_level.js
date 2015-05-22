@@ -16,6 +16,11 @@ var TWiC = (function(namespace){
         this.m_corpusInfo = {};
         this.m_topicWordLists = {};
         this.m_topicColors = {};
+
+        // Fields for when transitions are in use
+        this.m_usingTransitions = false;
+        this.m_currentPanel = null;
+        this.m_panelList = [];
     };
     namespace.Level.prototype.s_twicLevels = [];
 
@@ -94,15 +99,35 @@ var TWiC = (function(namespace){
         // Ensure all initialization work is finished before starting up TWiC views
         this.m_queue.await(function(){
 
-            for ( var index = 0; index < this.m_graphViews.length; index++ ){
-              this.m_graphViews[index].Start();
-            }
-            for ( var index = 0; index < this.m_infoViews.length; index++ ){
-              this.m_infoViews[index].Start();
+            // Level starts based on whether or not transitions are being used
+            // NOTE (05/21/15): Non-transition behavior will open all graph panels currently,
+            // but should be changed to open new graph panels on double-click
+            if ( !this.IsUsingTransitions() ) {
+                for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                    this.m_graphViews[index].Start();
+                }
+                for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                    this.m_infoViews[index].Start();
+                }
+            } else {
+
+                // Start the first panel in the given panel list
+                if ( this.m_panelList.length ) {
+                    this.m_panelList[0].Start();
+                }
+
+                // Start up all listed info panels
+                for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                    this.m_infoViews[index].Start();
+                }
             }
         }.bind(this));
-
     });
+
+    namespace.Level.method("UseTransitions", function(p_state){ this.m_usingTransitions = p_state; });
+    namespace.Level.method("IsUsingTransitions", function(){ return this.m_usingTransitions; });
+
+    namespace.Level.method("PopulatePanelHierarchy", function(p_panelList){ this.m_panelList = p_panelList; });
 
     namespace.GetViewport = function(){
 

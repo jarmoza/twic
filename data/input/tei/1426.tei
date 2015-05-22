@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fate slew him but he did not drop </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1084A">
+                <lg type="stanza">
+                    <l>Fate slew Him, but He<app type="division"><lem><lb/></lem></app>
+ did not drop -</l>
+                    <l>She felled - He did<app type="division"><lem><lb/></lem></app>
+ not fall - </l>
+                    <l>Impaled Him on Her<app type="division"><lem><lb/></lem></app>
+ fiercest stakes - </l>
+                    <l>He neutralized them all - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She stung Him - sapped<app type="division"><lem><lb/></lem></app>
+ His firm Advance -</l>
+                    <l>But when Her Worst was<app type="division"><lem><lb/></lem></app>
+ done </l>
+                    <l>And He - unmoved regarded Her - </l>
+                    <l>Acknowledged Him a Man - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

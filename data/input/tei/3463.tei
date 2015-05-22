@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dying at my music! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1003">
+                <lg type="stanza">
+                    <l>Dying at my music!</l>
+                    <l>Bubble! Bubble!</l>
+                    <l>Hold me till the Octave's run!</l>
+                    <l>Quick! Burst the Windows!</l>
+                    <l>Ritardando!</l>
+                    <l>Phials left, and the Sun!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

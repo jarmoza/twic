@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Over and over, like a Tune -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J367">
+                <lg type="stanza">
+                    <l>Over and over, like a Tune --</l>
+                    <l>The Recollection plays --</l>
+                    <l>Drums off the Phantom Battlements</l>
+                    <l>Cornets of Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Snatches, from Baptized Generations --</l>
+                    <l>Cadences too grand</l>
+                    <l>But for the Justified Processions</l>
+                    <l>At the Lord's Right hand.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

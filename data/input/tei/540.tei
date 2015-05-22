@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>At least to pray is left - is left </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F377A">
+                <lg type="stanza">
+                    <l>At least - to pray - is left -<app type="division"><lem><lb/></lem></app>
+ is left -</l>
+                    <l>Oh Jesus - in the Air - </l>
+                    <l>I know not which thy chamber is - </l>
+                    <l>I'm knocking - everywhere - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thou<add type="alternate" extent="settest">stirrest -</add>
+ settest Earthquake in the South -</l>
+                    <l>And Maelstrom, in the Sea - </l>
+                    <l>Say, Jesus Christ of Nazareth - </l>
+                    <l>Hast thou no arm for Me?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

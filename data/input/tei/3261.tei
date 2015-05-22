@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I play at Riches -- to appease 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J801">
+                <lg type="stanza">
+                    <l>I play at Riches -- to appease</l>
+                    <l>The Clamoring for Gold --</l>
+                    <l>It kept me from a Thief, I think,</l>
+                    <l>For often, overbold</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With Want, and Opportunity --</l>
+                    <l>I <app type="revision"><lem>might</lem><rdg>might</rdg></app>
+could have done a Sin</l>
+                    <l>And been Myself that <app type="revision"><lem>distant</lem><rdg>distant</rdg></app>
+easy Thing</l>
+                    <l>An independant Man --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But often as my lot displays</l>
+                    <l>Too hungry to be borne</l>
+                    <l>I deem Myself what I would be --</l>
+                    <l>And <app type="revision"><lem>so much</lem><rdg>so much</rdg></app>
+novel Comforting</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Poverty and I derived --</l>
+                    <l>We question if the Man --</l>
+                    <l>Who own -- Esteem the Opulence --</l>
+                    <l>As We -- Who never Can --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Should ever these exploring Hands</l>
+                    <l>Chance Sovreign on a Mine --</l>
+                    <l>Or in the long -- uneven term</l>
+                    <l>To win, become <app type="revision"><lem>my</lem><rdg>my</rdg></app>
+their turn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>'Tis</lem><rdg>&#x27;Tis</rdg></app>
+How fitter <app type="revision"><lem>I shall he --</lem><rdg>I shall he --</rdg></app>
+they will be -- for Want --</l>
+                    <l>Enlightening so well --</l>
+                    <l>I know not which, Desire, or <app type="revision"><lem>Right --</lem><rdg>Right --</rdg></app>
+<app type="revision"><lem>sight</lem><rdg>sight</rdg></app>
+Grant --</l>
+                    <l>Be <app type="revision"><lem>chiefest</lem><rdg>chiefest</rdg></app>
+<app type="revision"><lem>utmost</lem><rdg>utmost</rdg></app>
+wholly beautiful --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

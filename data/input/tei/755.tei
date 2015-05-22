@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The one that could repeat the summer day </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F549B">
+                <lg type="stanza">
+                    <l>The One that could repeat<app type="division"><lem><lb/></lem></app>
+ the Summer Day -</l>
+                    <l>Were Greater than Itself -<app type="division"><lem><lb/></lem></app>
+ though He - </l>
+                    <l>Minutest of Mankind - should<app type="division"><lem><lb/></lem></app>
+ be - </l>
+                    <l>And He - could reproduce the Sun - </l>
+                    <l>At Period of Going down -</l>
+                    <l>The Lingering - and the<app type="division"><lem><lb/></lem></app>
+ Stain - I mean - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Orient - have been outgrown - </l>
+                    <l>And Occident - become Unknown - </l>
+                    <l>His Name - Remain - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

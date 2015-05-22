@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exultation is the going </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F143A">
+                <lg type="stanza">
+                    <l>Exultation is the going </l>
+                    <l>Of an inland soul to sea, </l>
+                    <l>Past the houses - past the headlands, </l>
+                    <l>Into deep Eternity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Bred as we, among the mountains,</l>
+                    <l>Can the sailor understand </l>
+                    <l>The divine intoxication </l>
+                    <l>Of the first league out from land?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

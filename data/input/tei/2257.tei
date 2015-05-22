@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The spirit lasts but in what mode </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1627A">
+                <lg type="stanza">
+                    <l>         alone</l>
+                    <l>But Arm in Arm with Touch, yet Touch </l>
+                    <l>Is not alone a Tune - </l>
+                    <l>The Spirit lurks within the Flesh </l>
+                    <l>Like Tides within<app type="division"><lem><lb/></lem></app>
+ the Sea</l>
+                    <l>That make the<app type="division"><lem><lb/></lem></app>
+ Water live - estranged </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

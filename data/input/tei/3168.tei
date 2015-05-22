@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I sometimes drop it, for a Quick -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J708">
+                <lg type="stanza">
+                    <l>I sometimes drop it, for a Quick --</l>
+                    <l>The Thought to be alive --</l>
+                    <l>Anonymous Delight to know --</l>
+                    <l>And Madder -- to concieve --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Consoles a Wo so monstrous</l>
+                    <l>That did it tear all Day,</l>
+                    <l>Without an instant's Respite --</l>
+                    <l>'Twould look too far -- to Die --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Delirium -- diverts the Wretch</l>
+                    <l>For Whom the Scaffold neighs --</l>
+                    <l>The Hammock's Motion lulls the Heads</l>
+                    <l>So close on Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Reef -- crawled easy from the Sea</l>
+                    <l>Eats off the Brittle Line --</l>
+                    <l>The Sailor does'nt know the Stroke --</l>
+                    <l>Until He's past the Pain --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

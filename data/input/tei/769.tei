@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Trust in the unexpected </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F561A">
+                <lg type="stanza">
+                    <l>Trust in the Unexpected -</l>
+                    <l>By this - was William Kidd </l>
+                    <l>Persuaded of the Buried Gold - </l>
+                    <l>As One had testified - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Through this - the old Philosopher -</l>
+                    <l>His Talismanic Stone </l>
+                    <l>Discerned - still witholden </l>
+                    <l>To effort undivine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas this - allured Columbus - </l>
+                    <l><add type="alternate" extent="When">till</add>
+When Genoa - withdrew</l>
+                    <l>Before an Apparition </l>
+                    <l><add type="alternate" extent="Baptized">to wit</add>
+Baptized America - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Same - afflicted Thomas - </l>
+                    <l>When Deity<add type="alternate" extent="assured">pronounced -</add>
+ assured </l>
+                    <l><add type="alternate" extent="">&#x27;Twas blesseder - the seeing not -</add>
+'Twas better - the perceiving not -</l>
+                    <l>Provided it believed - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The treason of an accent </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1388B">
+                <lg type="stanza">
+                    <l>The Treason<app type="division"><lem><lb/></lem></app>
+ of an Accent </l>
+                    <l>Might vilify<app type="division"><lem><lb/></lem></app>
+ the Joy - </l>
+                    <l>To breathe -<app type="division"><lem><lb/></lem></app>
+ corrode the<app type="division"><lem><lb/></lem></app>
+ rapture </l>
+                    <l>Of Sanctity<app type="division"><lem><lb/></lem></app>
+ to be - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

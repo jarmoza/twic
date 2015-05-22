@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Could hope inspect her basis </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1282A">
+                <lg type="stanza">
+                    <l>Could Hope inspect<app type="division"><lem><lb/></lem></app>
+ her Basis </l>
+                    <l>Her Craft were done - </l>
+                    <l><add type="alternate" extent="">Her Charter is fictitious</add>
+Has a fictitious<app type="division"><lem><lb/></lem></app>
+ Charter </l>
+                    <l>Or<add type="alternate" extent="it">she</add>
+ it has none - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Balked in the vastest<app type="division"><lem><lb/></lem></app>
+ instance</l>
+                    <l>But to renew - </l>
+                    <l>Felled by but one<app type="division"><lem><lb/></lem></app>
+ assassin - </l>
+                    <l>Prosperity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A faded boy in sallow clothes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1549A">
+                <lg type="stanza">
+                    <l>A faded Boy - in<app type="division"><lem><lb/></lem></app>
+ sallow Clothes </l>
+                    <l>Who drove a lonesome<app type="division"><lem><lb/></lem></app>
+ Cow </l>
+                    <l>To pastures of Oblivion - </l>
+                    <l>A statesman's Embryo - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Boys that whistled<app type="division"><lem><lb/></lem></app>
+ are extinct -</l>
+                    <l>The Cows that fed<app type="division"><lem><lb/></lem></app>
+ and thanked<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Remanded <app type="division"><lem><lb/></lem></app>
+to a Ballad's<app type="division"><lem><lb/></lem></app>
+ Barn </l>
+                    <l>Or Clover's<app type="division"><lem><lb/></lem></app>
+ Retrospect - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

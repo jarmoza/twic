@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The nearest dream recedes unrealized </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F304B">
+                <lg type="stanza">
+                    <l>The nearest Dream<app type="division"><lem><lb/></lem></app>
+ recedes - unrealized - </l>
+                    <l>The Heaven we chase - </l>
+                    <l>Like the June Bee -<app type="division"><lem><lb/></lem></app>
+ before the School Boy - </l>
+                    <l>Invites the Race - </l>
+                    <l>Stoops - to an easy<app type="division"><lem><lb/></lem></app>
+ Clover -</l>
+                    <l>Dips - evades - teazes -<app type="division"><lem><lb/></lem></app>
+ deploys - </l>
+                    <l>Then - to the Royal<app type="division"><lem><lb/></lem></app>
+ Clouds </l>
+                    <l>Lifts his light Pinnace -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Heedless of the Boy - </l>
+                    <l>Staring - bewildered -<app type="division"><lem><lb/></lem></app>
+ at the mocking sky -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Homesick for steadfast<app type="division"><lem><lb/></lem></app>
+ Honey - </l>
+                    <l>Ah - the Bee<app type="division"><lem><lb/></lem></app>
+ flies not </l>
+                    <l>That brews that<app type="division"><lem><lb/></lem></app>
+ rare variety!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

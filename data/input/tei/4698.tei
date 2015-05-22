@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The blunder is to estimate, --</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-16">
+                <lg type="stanza">
+                    <l>The blunder is to estimate, --</l>
+                    <l>"Eternity is Then,"</l>
+                    <l>We say, as of a station.</l>
+                    <l>Meanwhile he is so near,</l>
+                    <l>He joins me in my ramble,</l>
+                    <l>Divides abode with me,</l>
+                    <l>No friend have I that so persists</l>
+                    <l>As this Eternity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

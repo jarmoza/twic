@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>OLD-FASHIONED.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-93">
+                <lg type="stanza">
+                    <l>OLD-FASHIONED.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Arcturus is his other name, </l>
+                    <l>I'd rather call him star!</l>
+                    <l>It's so unkind of science</l>
+                    <l>To go and interfere!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I pull a flower from the woods, </l>
+                    <l>A monster with a glass</l>
+                    <l>Computes the stamens in a breath,</l>
+                    <l>And has her in a class.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whereas I took the butterfly</l>
+                    <l>Aforetime in my hat,</l>
+                    <l>He sits erect in cabinets,</l>
+                    <l>The clover-bells forgot.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What once was heaven, is zenith now.</l>
+                    <l>Where I proposed to go</l>
+                    <l>When time's brief masquerade was done,</l>
+                    <l>Is mapped, and charted too!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What if the poles should frisk about</l>
+                    <l>And stand upon their heads!</l>
+                    <l>I hope I 'm ready for the worst,</l>
+                    <l>Whatever prank betides!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Perhaps the kingdom of Heaven 's changed!</l>
+                    <l>I hope the children there</l>
+                    <l>Won't be new-fashioned when I come,</l>
+                    <l>And laugh at me, and stare!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I hope the father in the skies</l>
+                    <l>Will lift his little girl, </l>
+                    <l>Old-fashioned, naughty, everything, </l>
+                    <l>Over the stile of pearl!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

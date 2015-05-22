@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I had been hungry all the years </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F439A">
+                <lg type="stanza">
+                    <l>I had been hungry, all the<app type="division"><lem><lb/></lem></app>
+ Years -</l>
+                    <l>My Noon had Come - to dine - </l>
+                    <l>I trembling drew the Table near - </l>
+                    <l>And touched the Curious Wine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas this on Tables I had<app type="division"><lem><lb/></lem></app>
+ seen -</l>
+                    <l>When turning, hungry, Home </l>
+                    <l>I looked in Windows, for the<app type="division"><lem><lb/></lem></app>
+ Wealth </l>
+                    <l>I could not hope -<add type="alternate" extent="for Mine">to earn</add>
+ for Mine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I did not know the ample<app type="division"><lem><lb/></lem></app>
+ Bread - </l>
+                    <l>'Twas so unlike the Crumb</l>
+                    <l>The Birds and I, had often<app type="division"><lem><lb/></lem></app>
+ shared </l>
+                    <l>In Nature's - Dining Room -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Plenty hurt me - 'twas so<app type="division"><lem><lb/></lem></app>
+ new - </l>
+                    <l>Myself felt ill - and odd - </l>
+                    <l>As Berry - of a Mountain Bush -</l>
+                    <l>Transplanted - to the Road - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor was I hungry - so I found </l>
+                    <l>That Hunger - was a way </l>
+                    <l>Of<add type="alternate" extent="persons">Creatures -</add>
+ persons Outside Windows - </l>
+                    <l>The entering - takes away -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

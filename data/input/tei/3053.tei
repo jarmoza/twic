@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I think I was enchanted 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J593">
+                <lg type="stanza">
+                    <l>I think I was enchanted</l>
+                    <l>When first a <app type="revision"><lem>little Girl</lem><rdg>little Girl</rdg></app>
+sombre Girl --</l>
+                    <l>I read that Foreign Lady --</l>
+                    <l>The Dark -- felt beautiful --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And whether it was noon at night --</l>
+                    <l>Or only Heaven -- at Noon --</l>
+                    <l>For very Lunacy of Light</l>
+                    <l>I had not power to tell --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Bees -- became as Butterflies --</l>
+                    <l>The Butterflies -- as Swans --</l>
+                    <l>Approached -- and spurned the narrow Grass --</l>
+                    <l>And just the meanest Tunes</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Nature murmured to herself</l>
+                    <l>To keep herself in Cheer --</l>
+                    <l>I took for Giants -- practising</l>
+                    <l>Titanic Opera --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Days -- to Mighty Metres stept --</l>
+                    <l>The Homeliest -- adorned</l>
+                    <l>As if unto a <app type="revision"><lem>Sacrament</lem><rdg>Sacrament</rdg></app>
+Jubilee</l>
+                    <l>'Twere suddenly confirmed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could not have defined the change --</l>
+                    <l>Inversion of the Mind</l>
+                    <l>Like Sanctifying in the Soul --</l>
+                    <l>Is witnessed -- not explained --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas a Divine Insanity --</l>
+                    <l>The <app type="revision"><lem>Sorrow</lem><rdg>Sorrow</rdg></app>
+Danger to be Sane</l>
+                    <l>Should I again experience --</l>
+                    <l>'Tis Antidote to turn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Tomes of solid Witchcraft --</l>
+                    <l>Magicians be asleep --</l>
+                    <l>But Magic -- hath an Element</l>
+                    <l>Like Deity -- to keep --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

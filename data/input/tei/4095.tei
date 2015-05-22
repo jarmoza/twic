@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Jay his Castanet has struck 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1635">
+                <lg type="stanza">
+                    <l>The Jay his Castanet has struck</l>
+                    <l>Put on your <app type="revision"><lem>Bells.</lem><rdg>Bells.</rdg></app>
+muff for Winter</l>
+                    <l>The Tippet that ignores his voice</l>
+                    <l>Is impudent to nature</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Swarthy Days he is the <app type="revision"><lem>knell</lem><rdg>knell</rdg></app>
+close</l>
+                    <l>His Lotus is a chestnut</l>
+                    <l>The Cricket drops a sable line</l>
+                    <l>No more from yours at present</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

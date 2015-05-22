@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mind lives on the heart </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1384D">
+                <lg type="stanza">
+                    <l>The Mind<app type="division"><lem><lb/></lem></app>
+ lives on the<app type="division"><lem><lb/></lem></app>
+ Heart</l>
+                    <l>Like any<app type="division"><lem><lb/></lem></app>
+ Parasite - </l>
+                    <l>If that is<app type="division"><lem><lb/></lem></app>
+ full of Meat </l>
+                    <l>The Mind is<app type="division"><lem><lb/></lem></app>
+ fat - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But if the<app type="division"><lem><lb/></lem></app>
+ Heart omit -</l>
+                    <l>Emaciate the<app type="division"><lem><lb/></lem></app>
+ Wit - </l>
+                    <l>The Aliment<app type="division"><lem><lb/></lem></app>
+ of it </l>
+                    <l>So absolute.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

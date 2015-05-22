@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Superfluous were the sun </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1013A">
+                <lg type="stanza">
+                    <l>Superfluous were the Sun</l>
+                    <l>When Excellence be dead </l>
+                    <l>He were superfluous<app type="division"><lem><lb/></lem></app>
+ every Day </l>
+                    <l>For every Day be said </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That syllable whose<app type="division"><lem><lb/></lem></app>
+ Faith</l>
+                    <l>Just saves it from<app type="division"><lem><lb/></lem></app>
+ Despair </l>
+                    <l>And whose &quot;I'll meet<app type="division"><lem><lb/></lem></app>
+ You&quot; hesitates </l>
+                    <l>If Love inquire &quot;Where&quot;?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Opon His dateless Fame </l>
+                    <l>Our Periods may lie</l>
+                    <l>As Stars that drop<app type="division"><lem><lb/></lem></app>
+ anonymous </l>
+                    <l>From an abundant sky.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

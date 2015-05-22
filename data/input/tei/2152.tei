@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No autumn&#x27;s interceptive chill </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1563C">
+                <lg type="stanza">
+                    <l>No Autumn's <app type="emendation"><lem>inter - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ cepting</lem><rdg>intercepting</rdg></app>
+ Chill </l>
+                    <l>Appalls that Tropic<app type="division"><lem><lb/></lem></app>
+ Breast - </l>
+                    <l>But African<app type="division"><lem><lb/></lem></app>
+ Exuberance </l>
+                    <l>And Asiatic Rest.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis customary as we part </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F628A">
+                <lg type="stanza">
+                    <l>'Tis Customary as we part</l>
+                    <l>A Trinket - to confer - </l>
+                    <l>It helps to stimulate the faith </l>
+                    <l>When Lovers be afar - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis various - as the various taste -</l>
+                    <l>Clematis - journeying far - </l>
+                    <l>Presents me with a single Curl </l>
+                    <l>Of her Electric Hair - <published><publication>Poems</publication><date>1955--</date><pages>340</pages><variant></variant></published>, noting that clematis is also known as &quot;Traveler's Joy,&quot; suggested that the poem may have been &quot;composed to accompany a gift of a clematis blossom for a departing friend.&quot; </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

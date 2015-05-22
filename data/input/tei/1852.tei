@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Delight&#x27;s despair at setting </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1375A">
+                <lg type="stanza">
+                    <l>Delight's Despair<app type="division"><lem><lb/></lem></app>
+ at setting</l>
+                    <l>Is that Delight<app type="division"><lem><lb/></lem></app>
+ is less </l>
+                    <l>Than the<app type="division"><lem><lb/></lem></app>
+ sufficing Longing </l>
+                    <l>That so<app type="division"><lem><lb/></lem></app>
+ impoverish.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Enchantment's <app type="division"><lem><lb/></lem></app>
+Perihelion</l>
+                    <l>Mistaken oft<app type="division"><lem><lb/></lem></app>
+ has been </l>
+                    <l>For the<app type="division"><lem><lb/></lem></app>
+ Authentic orbit </l>
+                    <l>Of it's Anterior<app type="division"><lem><lb/></lem></app>
+ Sun.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

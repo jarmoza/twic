@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>High from the earth I heard a bird;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-89">
+                <lg type="stanza">
+                    <l>High from the earth I heard a bird;</l>
+                    <l>He trod upon the trees</l>
+                    <l>As he esteemed them trifles,</l>
+                    <l>And then he spied a breeze,</l>
+                    <l>And situated softly</l>
+                    <l>Upon a pile of wind</l>
+                    <l>Which in a perturbation</l>
+                    <l>Nature had left behind.</l>
+                    <l>A joyous-going fellow</l>
+                    <l>I gathered from his talk,</l>
+                    <l>Which both of benediction</l>
+                    <l>And badinage partook,</l>
+                    <l>Without apparent burden,</l>
+                    <l>I learned, in leafy wood</l>
+                    <l>He was the faithful father</l>
+                    <l>Of a dependent brood;</l>
+                    <l>And this untoward transport</l>
+                    <l>His remedy for care, </l>
+                    <l>A contrast to our respites.</l>
+                    <l>How different we are!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of tribulation these are they </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F328B">
+                <lg type="stanza">
+                    <l>Of Tribulation - these<app type="division"><lem><lb/></lem></app>
+ are They, </l>
+                    <l>Denoted by the White.  </l>
+                    <l>The Spangled Gowns, a<app type="division"><lem><lb/></lem></app>
+ lesser Rank </l>
+                    <l>Of Victors, designate - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>All these - did conquer -</l>
+                    <l>But the Ones who<app type="division"><lem><lb/></lem></app>
+ overcame most times - </l>
+                    <l>Wear nothing commoner<app type="division"><lem><lb/></lem></app>
+ than Snow - </l>
+                    <l>No Ornament - but Palms - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Surrender&quot; - is a sort unknown<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>On this superior soil -</l>
+                    <l>&quot;Defeat&quot;, an Outgrown<app type="division"><lem><lb/></lem></app>
+ Anguish, </l>
+                    <l>Remembered, as the Mile </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our panting Ancle<app type="division"><lem><lb/></lem></app>
+ barely passed, </l>
+                    <l>When Night devoured<app type="division"><lem><lb/></lem></app>
+ the Road - </l>
+                    <l>But we - stood - whispering<app type="division"><lem><lb/></lem></app>
+ in the House -</l>
+                    <l>And all we said -<app type="division"><lem><lb/></lem></app>
+ was Saved!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

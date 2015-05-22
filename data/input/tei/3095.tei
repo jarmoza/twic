@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I think the longest Hour of all 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J635">
+                <lg type="stanza">
+                    <l>I think the longest Hour of all</l>
+                    <l>Is when the Cars have come --</l>
+                    <l>And we are waiting for the Coach --</l>
+                    <l>It seems as though the Time</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>Affronted</lem><rdg>Affronted</rdg></app>
+Indignant -- that the joy was come --</l>
+                    <l>Did block the Gilded Hands --</l>
+                    <l>And would not let the Seconds by --</l>
+                    <l>But slowest instant -- ends --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Pendulum begins to count --</l>
+                    <l>Like little Scholars -- loud --</l>
+                    <l>The steps grow thicker -- in the Hall --</l>
+                    <l>The Heart begins to crowd --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then I -- my timid service done --</l>
+                    <l>Tho' service 'twas, of Love --</l>
+                    <l>Take up my little Violin --</l>
+                    <l>And further North -- remove.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

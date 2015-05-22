@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Day undressed -- Herself -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J716">
+                <lg type="stanza">
+                    <l>The Day undressed -- Herself --</l>
+                    <l>Her Garter -- was of Gold --</l>
+                    <l>Her Petticoat -- of Purple plain --</l>
+                    <l>Her Dimities -- as old</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Exactly -- as the World --</l>
+                    <l>And yet the newest Star --</l>
+                    <l>Enrolled upon the Hemisphere</l>
+                    <l>Be wrinkled -- much as Her --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too near to God -- to pray --</l>
+                    <l>Too near to Heaven -- to fear --</l>
+                    <l>The Lady of the Occident</l>
+                    <l>Retired without a care --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Candle so expire</l>
+                    <l>The flickering be seen</l>
+                    <l>On Ball of Mast in Bosporus --</l>
+                    <l>And Dome -- and Window Pane --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Given in marriage unto thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F818B">
+                <lg type="stanza">
+                    <l>Given in Marriage unto<app type="division"><lem><lb/></lem></app>
+ Thee</l>
+                    <l>Oh thou Celestial Host - </l>
+                    <l>Bride of the Father<app type="division"><lem><lb/></lem></app>
+ and the Son </l>
+                    <l>Bride of the Holy<app type="division"><lem><lb/></lem></app>
+ Ghost - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Other Betrothal shall<app type="division"><lem><lb/></lem></app>
+ dissolve -</l>
+                    <l>Wedlock of Will, decay - </l>
+                    <l>Only the Keeper of<app type="division"><lem><lb/></lem></app>
+ this Ring </l>
+                    <l>Conquer Mortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

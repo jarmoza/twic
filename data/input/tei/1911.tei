@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The bat is dun with wrinkled wings </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1408A">
+                <lg type="stanza">
+                    <l>The Bat is dun,<app type="division"><lem><lb/></lem></app>
+ with wrinkled Wings - </l>
+                    <l>Like fallow<app type="division"><lem><lb/></lem></app>
+ Article - </l>
+                    <l>And not a song<app type="division"><lem><lb/></lem></app>
+ pervade his Lips - </l>
+                    <l>Or none perceptible.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His small Umbrella<app type="division"><lem><lb/></lem></app>
+ quaintly halved</l>
+                    <l>Describing in the<app type="division"><lem><lb/></lem></app>
+ Air </l>
+                    <l>An Arc alike<app type="division"><lem><lb/></lem></app>
+ inscrutable </l>
+                    <l>Elate Philosopher.<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Deputed from<app type="division"><lem><lb/></lem></app>
+ what Firmament - </l>
+                    <l>Of what Astute<app type="division"><lem><lb/></lem></app>
+ Abode -</l>
+                    <l>Empowered with<app type="division"><lem><lb/></lem></app>
+ what malignity </l>
+                    <l>Auspiciously withheld - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To his adroit<app type="division"><lem><lb/></lem></app>
+ Creator </l>
+                    <l>Ascribe no less<app type="division"><lem><lb/></lem></app>
+ the praise - </l>
+                    <l>Beneficent, believe<app type="division"><lem><lb/></lem></app>
+ me,</l>
+                    <l>His eccentricities - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

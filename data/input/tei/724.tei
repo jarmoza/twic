@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It feels a shame to be alive </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F524A">
+                <lg type="stanza">
+                    <l>It feels a shame to be<app type="division"><lem><lb/></lem></app>
+ Alive -</l>
+                    <l>When Men so brave - are dead - </l>
+                    <l>One envies the Distinguished<app type="division"><lem><lb/></lem></app>
+ Dust - </l>
+                    <l>Permitted - such a Head - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Stone - that tells defending<app type="division"><lem><lb/></lem></app>
+ Whom</l>
+                    <l>This Spartan put away </l>
+                    <l>What little of Him we -<app type="division"><lem><lb/></lem></app>
+ possessed </l>
+                    <l>In Pawn for Liberty - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The price is great - Sublimely<app type="division"><lem><lb/></lem></app>
+ paid - </l>
+                    <l>Do we deserve - a Thing -</l>
+                    <l>That lives - like Dollars -<app type="division"><lem><lb/></lem></app>
+ must be piled </l>
+                    <l>Before we may obtain?<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Are we that wait - sufficient<app type="division"><lem><lb/></lem></app>
+ worth - </l>
+                    <l>That such Enormous Pearl </l>
+                    <l>As life - dissolved be - for<app type="division"><lem><lb/></lem></app>
+ Us -</l>
+                    <l>In Battle's - horrid Bowl?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It may be - a Renown<app type="division"><lem><lb/></lem></app>
+ to live - </l>
+                    <l>I think the Men who die - </l>
+                    <l>Those unsustained - Saviors - </l>
+                    <l>Present Divinity -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

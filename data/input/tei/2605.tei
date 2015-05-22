@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This heart that broke so long --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J145">
+                <lg type="stanza">
+                    <l>This heart that broke so long --</l>
+                    <l>These feet that never flagged --</l>
+                    <l>This faith that watched for star in vain,</l>
+                    <l>Give gently to the dead --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Hound cannot overtake she Hare</l>
+                    <l>That fluttered panting, here --</l>
+                    <l>Nor any schoolboy rob the nest</l>
+                    <l>Tenderness builded there.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

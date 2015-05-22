@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In Winter, in my room,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-70">
+                <lg type="stanza">
+                    <l>In Winter, in my room,</l>
+                    <l>I came upon a worm,</l>
+                    <l>Pink, lank, and warm.</l>
+                    <l>But as he was a worm</l>
+                    <l>And worms presume,</l>
+                    <l>Not quite with him at home --</l>
+                    <l>Secured him by a string</l>
+                    <l>To something neighboring,</l>
+                    <l>And went along.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A trifle afterward</l>
+                    <l>A thing occurred,</l>
+                    <l>I'd not believe it if I heard --</l>
+                    <l>But state with creeping blood;</l>
+                    <l>A snake, with mottles rare,</l>
+                    <l>Surveyed my chamber floor,</l>
+                    <l>In feature as the worm before,</l>
+                    <l>But ringed with power.</l>
+                    <l>The very string</l>
+                    <l>With which I tied him, too,</l>
+                    <l>When he was mean and new,</l>
+                    <l>That string was there.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I shrank -- "How fair you are!"</l>
+                    <l>Propitiation's claw --</l>
+                    <l>"Afraid," he hissed,</l>
+                    <l>"Of me?"</l>
+                    <l>"No cordiality?"</l>
+                    <l>He fathomed me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then, to a rhythm slim</l>
+                    <l>Secreted in his form,</l>
+                    <l>As patterns swim,</l>
+                    <l>Projected him.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That time I flew,</l>
+                    <l>Both eyes his way,</l>
+                    <l>Lest he pursue --</l>
+                    <l>Nor ever ceased to run,</l>
+                    <l>Till, in a distant town,</l>
+                    <l>Towns on from mine --</l>
+                    <l>I sat me down;</l>
+                    <l>This was a dream.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

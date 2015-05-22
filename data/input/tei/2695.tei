@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Court is far away --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J235">
+                <lg type="stanza">
+                    <l>The Court is far away --</l>
+                    <l>No Umpire -- have I --</l>
+                    <l>My Sovreign is offended --</l>
+                    <l>To gain his grace -- I'd die!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll seek his royal feet --</l>
+                    <l>I'll say -- Remember -- King --</l>
+                    <l>Thou shalt -- thyself -- one day -- a Child --</l>
+                    <l>Implore a larger -- thing --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Empire -- is of Czars --</l>
+                    <l>As small -- they say -- as I --</l>
+                    <l>Grant me -- that day -- the royalty --</l>
+                    <l>To intercede -- for Thee --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

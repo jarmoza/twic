@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The battle fought between the soul </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F629A">
+                <lg type="stanza">
+                    <l>The Battle fought between the Soul</l>
+                    <l>And No Man - is the One </l>
+                    <l>Of all the Battles prevalent - </l>
+                    <l>By far the Greater One - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>No News of it is had abroad -</l>
+                    <l>It's Bodiless Campaign </l>
+                    <l>Establishes, and terminates - </l>
+                    <l>Invisible - Unknown - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor History - record it - </l>
+                    <l>As Legions of a Night</l>
+                    <l>The Sunrise scatters - These<app type="division"><lem><lb/></lem></app>
+ endure - </l>
+                    <l><app type="emendation"><lem>Eanact</lem><rdg>Enact</rdg></app>
+ - and terminate - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

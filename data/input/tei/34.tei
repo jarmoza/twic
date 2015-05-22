@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If those I loved were lost </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F20A">
+                <lg type="stanza">
+                    <l>If those I loved<app type="division"><lem><lb/></lem></app>
+ were lost, </l>
+                    <l>the crier<add type="reading">&#x27;</add>
+s <del type="canceled" extent="would">would</del>
+<add type="alternate" extent="voice">note</add>
+voice would tell me -</l>
+                    <l>If those I loved were found, </l>
+                    <l>the bells of Ghent would ring, </l>
+                    <l>Did those I loved repose,</l>
+                    <l>the Daisy would impel me - </l>
+                    <l>Philip <del type="canceled" extent="questioned ">questioned <add type="overwrite" extent="w">eager,</add>
+</del>
+when bewildered -</l>
+                    <l><del type="canceled" extent=" / I, my riddle bring,"><del type="canceled" extent="w">w</del>
+ / I, my riddle bring,</del>
+bore his riddle in -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

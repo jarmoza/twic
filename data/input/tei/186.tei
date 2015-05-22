@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Safe in their alabaster chambers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F124F">
+                <lg type="stanza">
+                    <l>Safe in their <app type="emendation"><lem>Alabas - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ter</lem><rdg>Alabaster</rdg></app>
+ Chambers - </l>
+                    <l>Untouched by Morning - </l>
+                    <l>And untouched by noon - </l>
+                    <l>Sleep the meek <app type="emendation"><lem>mem - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ bers&lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ </lem><rdg>members</rdg></app>
+ of the Resurrection, </l>
+                    <l>Rafter of Satin and<app type="division"><lem><lb/></lem></app>
+ Roof of Stone -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Grand go the Years, </l>
+                    <l>In the Crescent above<app type="division"><lem><lb/></lem></app>
+ them - </l>
+                    <l>Worlds scoop their Arcs - </l>
+                    <l>And Firmaments - row -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Diadems - drop -</l>
+                    <l>And Doges - surrender - </l>
+                    <l>Soundless as Dots, </l>
+                    <l>On a Disc of Snow.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

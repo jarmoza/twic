@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet skepticism of the heart </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1438A">
+                <lg type="stanza">
+                    <l>Sweet skepticism<app type="division"><lem><lb/></lem></app>
+ of the Heart - </l>
+                    <l>That knows - and<app type="division"><lem><lb/></lem></app>
+ does not know - </l>
+                    <l>And tosses like<app type="division"><lem><lb/></lem></app>
+ a Fleet of Balm - </l>
+                    <l>Affronted by the<app type="division"><lem><lb/></lem></app>
+ snow - </l>
+                    <l>Invites and then<app type="division"><lem><lb/></lem></app>
+ retards the truth</l>
+                    <l>Lest Certainty<app type="division"><lem><lb/></lem></app>
+ be sere </l>
+                    <l>Compared with<app type="division"><lem><lb/></lem></app>
+ the delicious<app type="division"><lem><lb/></lem></app>
+ throe </l>
+                    <l>Of transport<app type="division"><lem><lb/></lem></app>
+ thrilled with Fear - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

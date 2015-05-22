@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No Notice gave She, but a Change -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J804">
+                <lg type="stanza">
+                    <l>No Notice gave She, but a Change --</l>
+                    <l>No Message, but a Sigh --</l>
+                    <l>For Whom, the Time did not <app type="revision"><lem>remain</lem><rdg>remain</rdg></app>
+suffice</l>
+                    <l>That She should specify.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She was not warm, though Summer shone</l>
+                    <l>Nor scrupulous of cold</l>
+                    <l>Though Rime by Rime, the steady Frost</l>
+                    <l>Upon Her <app type="revision"><lem>Petals --</lem><rdg>Petals --</rdg></app>
+<app type="revision"><lem>softness</lem><rdg>softness</rdg></app>
+Bosom piled --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of shrinking ways -- <app type="revision"><lem>Forebore her</lem><rdg>Forebore her</rdg></app>
+she did not fright</l>
+                    <l>Though all the Village looked --</l>
+                    <l>But held Her gravity aloft --</l>
+                    <l>And met the gaze -- direct --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when adjusted like a Seed</l>
+                    <l>In careful fitted Ground</l>
+                    <l>Unto the Everlasting Spring</l>
+                    <l>And hindered but a Mound</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her <app type="revision"><lem>straight --</lem><rdg>straight --</rdg></app>
+<app type="revision"><lem>good --</lem><rdg>good --</rdg></app>
+Warm return, if so she <app type="revision"><lem>signed</lem><rdg>signed</rdg></app>
+chose --</l>
+                    <l>And We -- imploring drew --</l>
+                    <l>Removed our invitation by</l>
+                    <l>As Some She never knew --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

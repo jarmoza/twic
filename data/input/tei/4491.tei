@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TRIUMPH</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-141">
+                <lg type="stanza">
+                    <l>Triumph may be of several kinds.</l>
+                    <l>There 's triumph in the room</l>
+                    <l>When that old imperator, Death,</l>
+                    <l>By faith is overcome.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>There 's triumph of the finer mind</l>
+                    <l>When truth, affronted long,</l>
+                    <l>Advances calm to her supreme,</l>
+                    <l>Her God her only throng.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A triumph when temptation's bribe</l>
+                    <l>Is slowly handed back,</l>
+                    <l>One eye upon the heaven renounced</l>
+                    <l>And one upon the rack.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Severer triumph, by himself</l>
+                    <l>Experienced, who can pass</l>
+                    <l>Acquitted from that naked bar,</l>
+                    <l>Jehovah's countenance!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Endow the Living -- with the Tears -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J521">
+                <lg type="stanza">
+                    <l>Endow the Living -- with the Tears --</l>
+                    <l>You <app type="revision"><lem>spend upon --</lem><rdg>spend upon --</rdg></app>
+squander on the Dead,</l>
+                    <l>And They were Men and Women -- now,</l>
+                    <l>Around Your Fireside</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Instead of Passive Creatures,</l>
+                    <l>Denied the Cherishing</l>
+                    <l>Till They -- the Cherishing deny --</l>
+                    <l>With Death's Etherial Scorn --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

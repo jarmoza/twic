@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bird must sing to earn the Crumb 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J880">
+                <lg type="stanza">
+                    <l>The Bird must sing to earn the Crumb</l>
+                    <l>What merit have the Tune</l>
+                    <l>No Breakfast if it guaranty</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Rose content may bloom</l>
+                    <l>To gain renown of Lady's Drawer</l>
+                    <l>But if the Lady come</l>
+                    <l>But once a Century, the Rose</l>
+                    <l>Superfluous become --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I showed her heights she never saw --</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-124">
+                <lg type="stanza">
+                    <l>I showed her heights she never saw --</l>
+                    <l>"Would'st climb?" I said,</l>
+                    <l>She said "Not so" --</l>
+                    <l>"With me?" I said, "With me?"</l>
+                    <l>I showed her secrets</l>
+                    <l>Morning's nest,</l>
+                    <l>The rope that Nights were put across --</l>
+                    <l>And now, "Would'st have me for a Guest?"</l>
+                    <l>She could not find her yes --</l>
+                    <l>And then, I brake my life, and Lo!</l>
+                    <l>A light for her, did solemn glow,</l>
+                    <l>The larger, as her face withdrew --</l>
+                    <l>And could she, further, "No?"</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

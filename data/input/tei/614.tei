@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I found the words to every thought </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F436A">
+                <lg type="stanza">
+                    <l>I found the words to every<app type="division"><lem><lb/></lem></app>
+ thought</l>
+                    <l>I ever had - but One - </l>
+                    <l>And that - defies Me - </l>
+                    <l>As a Hand did try to<app type="division"><lem><lb/></lem></app>
+ chalk the Sun </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Races - nurtured in<app type="division"><lem><lb/></lem></app>
+ the Dark -</l>
+                    <l>How would your Own - begin?  </l>
+                    <l>Can Blaze be<add type="alternate" extent="shown">done</add>
+ shown in<app type="division"><lem><lb/></lem></app>
+ Cochineal - </l>
+                    <l>Or Noon - in Mazarin?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

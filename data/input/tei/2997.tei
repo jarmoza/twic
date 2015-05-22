@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Me prove it now -- Whoever doubt 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J537">
+                <lg type="stanza">
+                    <l>Me prove it now -- <app type="revision"><lem>Whatever</lem><rdg>Whatever</rdg></app>
+Whoever doubt</l>
+                    <l>Me stop to prove it -- now --</l>
+                    <l><app type="revision"><lem>Come near</lem><rdg>Come near</rdg></app>
+Make haste -- the Scruple! Death be scant</l>
+                    <l>For Opportunity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to my feet --</l>
+                    <l>As yet -- My Heart be dry --</l>
+                    <l>Oh Lover -- Life could not convince --</l>
+                    <l>Might Death -- enable Thee</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to My Breast --</l>
+                    <l>Still -- still -- My Hands above</l>
+                    <l>Proclaim with their remaining Might --</l>
+                    <l>Dost recognize the Love?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to my Mouth --</l>
+                    <l>Remember -- when the Sea</l>
+                    <l>Swept by my searching eyes -- the last --</l>
+                    <l>Themselves were quick -- with Thee!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

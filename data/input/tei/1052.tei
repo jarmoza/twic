@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The wind begun to knead the grass </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F796A">
+                <lg type="stanza">
+                    <l>The Wind begun<app type="division"><lem><lb/></lem></app>
+ to knead the<app type="division"><lem><lb/></lem></app>
+ Grass - </l>
+                    <l>As Women do a<app type="division"><lem><lb/></lem></app>
+ Dough - </l>
+                    <l>He flung a<app type="division"><lem><lb/></lem></app>
+ Hand full at the<app type="division"><lem><lb/></lem></app>
+ Plain - </l>
+                    <l>A Hand full at<app type="division"><lem><lb/></lem></app>
+ the Sky - </l>
+                    <l>The Leaves unhooked<app type="division"><lem><pb/></lem></app>
+ themselves from Trees -</l>
+                    <l>And started all<app type="division"><lem><lb/></lem></app>
+ abroad - </l>
+                    <l>The Dust did<app type="division"><lem><lb/></lem></app>
+ scoop itself like<app type="division"><lem><lb/></lem></app>
+ Hands - </l>
+                    <l>And throw away<app type="division"><lem><lb/></lem></app>
+ the Road - </l>
+                    <l>The Wagons <app type="emendation"><lem>quick - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ened</lem><rdg>quickened</rdg></app>
+ on the Street - </l>
+                    <l>The Thunders gossiped<app type="division"><lem><lb/></lem></app>
+ low -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>The Lightning showed<app type="division"><lem><lb/></lem></app>
+ a Yellow Head - </l>
+                    <l>And then a livid<app type="division"><lem><lb/></lem></app>
+ Toe - </l>
+                    <l>The Birds put up<app type="division"><lem><lb/></lem></app>
+ the Bars to Nests - </l>
+                    <l>The Cattle flung<app type="division"><lem><lb/></lem></app>
+ to Barns - </l>
+                    <l>Then came one<app type="division"><lem><lb/></lem></app>
+ drop of Giant Rain -</l>
+                    <l>And then, as if<app type="division"><lem><lb/></lem></app>
+ the Hands<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>That held the<app type="division"><lem><lb/></lem></app>
+ Dams - had parted<app type="division"><lem><lb/></lem></app>
+ hold - </l>
+                    <l>The Waters Wrecked<app type="division"><lem><lb/></lem></app>
+ the Sky - </l>
+                    <l>But overlooked<app type="division"><lem><lb/></lem></app>
+ my Father's House - </l>
+                    <l>Just Quartering<app type="division"><lem><lb/></lem></app>
+ a Tree -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I think the longest hour of all </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F607A">
+                <lg type="stanza">
+                    <l>I think the longest<app type="division"><lem><lb/></lem></app>
+ Hour of all</l>
+                    <l>Is when the Cars have<app type="division"><lem><lb/></lem></app>
+ come - </l>
+                    <l>And we are waiting for<app type="division"><lem><lb/></lem></app>
+ the Coach - </l>
+                    <l>It seems as though the<app type="division"><lem><lb/></lem></app>
+ Time - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Indignant - that the Joy<app type="division"><lem><lb/></lem></app>
+ was come -</l>
+                    <l>Did block the Gilded Hands - </l>
+                    <l>And would not let the Seconds<app type="division"><lem><lb/></lem></app>
+ by - </l>
+                    <l>But slowest instant - ends - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Pendulum begins to count - </l>
+                    <l>Like little Scholars - loud -</l>
+                    <l>The steps grow thicker - in<app type="division"><lem><lb/></lem></app>
+ the Hall - </l>
+                    <l>The Heart begins to crowd -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then I - my timid service<app type="division"><lem><lb/></lem></app>
+ done - </l>
+                    <l>Tho' service 'twas, of Love - </l>
+                    <l>Take up my little Violin -</l>
+                    <l>And further North - remove - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

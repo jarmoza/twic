@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He put the belt around my life, </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-71">
+                <lg type="stanza">
+                    <l>He put the belt around my life, </l>
+                    <l>I heard the buckle snap,</l>
+                    <l>And turned away, imperial,</l>
+                    <l>My lifetime folding up</l>
+                    <l>Deliberate, as a duke would do</l>
+                    <l>A kingdom's title-deed, </l>
+                    <l>Henceforth a dedicated sort,</l>
+                    <l>A member of the cloud.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet not too far to come at call,</l>
+                    <l>And do the little toils</l>
+                    <l>That make the circuit of the rest,</l>
+                    <l>And deal occasional smiles</l>
+                    <l>To lives that stoop to notice mine</l>
+                    <l>And kindly ask it in, </l>
+                    <l>Whose invitation, knew you not</l>
+                    <l>For whom I must decline?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

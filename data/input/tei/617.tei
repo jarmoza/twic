@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The body grows without </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F438A">
+                <lg type="stanza">
+                    <l>The Body grows without -</l>
+                    <l>The more convenient way - </l>
+                    <l>That if the Spirit - like<app type="division"><lem><lb/></lem></app>
+ to hide </l>
+                    <l>It's<add type="alternate" extent="Temple">Closet</add>
+ Temple stands, alway, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ajar - secure - inviting -</l>
+                    <l>It never did betray </l>
+                    <l>The Soul that asked it's<app type="division"><lem><lb/></lem></app>
+ shelter </l>
+                    <l>In<add type="alternate" extent="solemn">timid -</add>
+ solemn honesty </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

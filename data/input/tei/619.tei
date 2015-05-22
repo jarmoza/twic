@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I years had been from home </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F440A">
+                <lg type="stanza">
+                    <l>I - Years - had been - from<app type="division"><lem><lb/></lem></app>
+ Home -</l>
+                    <l>And now - before the Door - </l>
+                    <l>I dared not open - lest a<app type="division"><lem><lb/></lem></app>
+ face </l>
+                    <l>I never saw before </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Stare vacant into mine -</l>
+                    <l>And ask my Business there - </l>
+                    <l>My Business - just a Life<app type="division"><lem><lb/></lem></app>
+ I left - </l>
+                    <l>Was such - still dwelling there?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I fumbled at my nerve - </l>
+                    <l>I scanned the Windows o'er -</l>
+                    <l>The Silence - like an Ocean<app type="division"><lem><lb/></lem></app>
+ rolled - </l>
+                    <l>And broke against my Ear - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I laughed a Wooden laugh - </l>
+                    <l>That I - could fear a Door -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Who Danger - and the Dead -<app type="division"><lem><lb/></lem></app>
+ had faced -</l>
+                    <l>But never shook - before - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I fitted to the Latch - my<app type="division"><lem><lb/></lem></app>
+ Hand - </l>
+                    <l>With trembling Care - </l>
+                    <l>Lest back the Awful Door<app type="division"><lem><lb/></lem></app>
+ should spring - </l>
+                    <l>And leave me - in the Floor -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I moved my fingers off, as<app type="division"><lem><lb/></lem></app>
+ cautiously as Glass - </l>
+                    <l>And held my Ears - and like a Thief </l>
+                    <l><add type="alternate" extent="Stole">fled</add>
+Stole - gasping - from the House.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

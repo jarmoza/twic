@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>With pinions of disdain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1448A">
+                <lg type="stanza">
+                    <l>With Pinions of<app type="division"><lem><lb/></lem></app>
+ Disdain </l>
+                    <l>The soul can<app type="division"><lem><lb/></lem></app>
+ farther fly </l>
+                    <l>Than any feather<app type="division"><lem><lb/></lem></app>
+ specified </l>
+                    <l><add type="alternate" extent="in -">by -</add>
+in - <app type="division"><lem><lb/></lem></app>
+Ornithology - </l>
+                    <l>It wafts this<app type="division"><lem><lb/></lem></app>
+ sordid Flesh</l>
+                    <l>Beyond it's<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="dull">slow</add>
+ dull - control<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And during it's<app type="division"><lem><lb/></lem></app>
+ electric<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="gale">spell &amp;#x2022; stay - &amp;#x2022; might - &amp;#x2022; act - &amp;#x2022; span</add>
+ gale - </l>
+                    <l>The Body<app type="division"><lem><lb/></lem></app>
+ is - a soul - </l>
+                    <l>instructing by<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="the same">itself</add>
+ the same - </l>
+                    <l><add type="alternate" extent="">What little act it be</add>
+How little work<app type="division"><lem><lb/></lem></app>
+ it be -</l>
+                    <l>To put off<app type="division"><lem><lb/></lem></app>
+ filaments like this </l>
+                    <l>for immortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

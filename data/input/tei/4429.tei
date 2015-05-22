@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE ROBIN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-79">
+                <lg type="stanza">
+                    <l>The robin is the one</l>
+                    <l>That interrupts the morn</l>
+                    <l>With hurried, few, express reports</l>
+                    <l>When March is scarcely on.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The robin is the one</l>
+                    <l>That overflows the noon</l>
+                    <l>With her cherubic quantity,</l>
+                    <l>An April but begun.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The robin is the one</l>
+                    <l>That speechless from her nest</l>
+                    <l>Submits that home and certainty</l>
+                    <l>And sanctity are best.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

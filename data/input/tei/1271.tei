@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Twice had summer her fair verdure </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F950A">
+                <lg type="stanza">
+                    <l>Twice had Summer<app type="division"><lem><lb/></lem></app>
+ her fair Verdure</l>
+                    <l>Proffered to the Plain - </l>
+                    <l>Twice - a Winter's<app type="division"><lem><lb/></lem></app>
+ Silver Fracture </l>
+                    <l>On the Rivers been - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Two full Autumns<app type="division"><lem><lb/></lem></app>
+ for the Squirrel</l>
+                    <l>Bounteous prepared - </l>
+                    <l>Nature, Had'st thou<app type="division"><lem><lb/></lem></app>
+ not a Berry </l>
+                    <l>For thy wandering Bird?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

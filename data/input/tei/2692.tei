@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sun -- lust touched the Morning -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J232">
+                <lg type="stanza">
+                    <l>The Sun -- lust touched the Morning --</l>
+                    <l>The Morning -- Happy thing --</l>
+                    <l>Supposed that He had come to dwell --</l>
+                    <l>And Life would all be Spring!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She felt herself supremer --</l>
+                    <l>A Raised -- Etherial Thing!</l>
+                    <l>Henceforth -- for Her -- What Holiday!</l>
+                    <l>Meanwhile -- Her wheeling King --</l>
+                    <l>Trailed -- slow -- along the Orchards --</l>
+                    <l>His haughty -- spangled Hems --</l>
+                    <l>Leaving a new nescessity!</l>
+                    <l>The want of Diadems!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Morning -- fluttered -- staggered --</l>
+                    <l>Felt feebly -- for Her Crown --</l>
+                    <l>Her unannointed forehead --</l>
+                    <l>Henceforth -- Her only One!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

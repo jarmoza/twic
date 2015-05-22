@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>APRIL</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-82">
+                <lg type="stanza">
+                    <l>An altered look about the hills;</l>
+                    <l>A Tyrian light the village fills;</l>
+                    <l>A wider sunrise in the dawn;</l>
+                    <l>A deeper twilight on the lawn;</l>
+                    <l>A print of a vermilion foot;</l>
+                    <l>A purple finger on the slope;</l>
+                    <l>A flippant fly upon the pane;</l>
+                    <l>A spider at his trade again;</l>
+                    <l>An added strut in chanticleer;</l>
+                    <l>A flower expected everywhere;</l>
+                    <l>An axe shrill singing in the woods;</l>
+                    <l>Fern-odors on untravelled roads, </l>
+                    <l>All this, and more I cannot tell,</l>
+                    <l>A furtive look you know as well,</l>
+                    <l>And Nicodemus' mystery</l>
+                    <l>Receives its annual reply.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

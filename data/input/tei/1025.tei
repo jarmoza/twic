@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Conscious am I in my chamber </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F773B">
+                <lg type="stanza">
+                    <l>Conscious am I in my<app type="division"><lem><lb/></lem></app>
+ Chamber -</l>
+                    <l>Of a shapeless friend - </l>
+                    <l>He doth not attest<app type="division"><lem><lb/></lem></app>
+ by Posture - </l>
+                    <l>Nor confirm - by Word - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Neither Place - need<app type="division"><lem><lb/></lem></app>
+ I present Him -</l>
+                    <l>Fitter Courtesy </l>
+                    <l>Hospitable intuition </l>
+                    <l>Of His Company - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Presence - is His furthest<app type="division"><lem><lb/></lem></app>
+ license - </l>
+                    <l>Neither He to Me</l>
+                    <l>Nor Myself to Him - by<app type="division"><lem><lb/></lem></app>
+ Accent - </l>
+                    <l>Forfeit Probity -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Weariness of Him, were<app type="division"><lem><lb/></lem></app>
+ quainter </l>
+                    <l>Than Monotony </l>
+                    <l>Knew a Particle - of<app type="division"><lem><lb/></lem></app>
+ Space's</l>
+                    <l>Vast Society - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Neither if He visit Other - </l>
+                    <l>Do He dwell - or Nay -<app type="division"><lem><lb/></lem></app>
+ know I - </l>
+                    <l>But Instinct esteem<app type="division"><lem><lb/></lem></app>
+ Him </l>
+                    <l>Immortality -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Before the ice is in the pools -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J37">
+                <lg type="stanza">
+                    <l>Before the ice is in the pools --</l>
+                    <l>Before the skaters go,</l>
+                    <l>Or any cheek at nightfall</l>
+                    <l>Is tarnished by the snow --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Before the fields have finished,</l>
+                    <l>Before the Christmas tree,</l>
+                    <l>Wonder upon wonder</l>
+                    <l>Will arrive to me!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What we touch the hems of</l>
+                    <l>On a summer's day --</l>
+                    <l>What is Only walking</l>
+                    <l>Just a bridge away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That which sings so -- speaks so --</l>
+                    <l>When there's no one here --</l>
+                    <l>Will the frock I wept in</l>
+                    <l>Answer me to wear?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

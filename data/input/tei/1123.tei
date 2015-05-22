@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Color - caste - denomination </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F836A">
+                <lg type="stanza">
+                    <l>Color - Caste - Denomination -</l>
+                    <l>These - are Time's Affair - </l>
+                    <l>Death's diviner Classifying </l>
+                    <l>Does not know they are - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As in sleep - all Hue<app type="division"><lem><lb/></lem></app>
+ forgotten -</l>
+                    <l>Tenets - put behind - </l>
+                    <l>Death's large - Democratic<app type="division"><lem><lb/></lem></app>
+ fingers </l>
+                    <l>Rub away the Brand - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If Circassian - He is careless - </l>
+                    <l>If He put away</l>
+                    <l>Chrysalis of Blonde - or Umber - </l>
+                    <l>Equal Butterfly - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>They emerge from His Obscuring - </l>
+                    <l>What Death - knows so well - </l>
+                    <l>Our minuter intuitions -</l>
+                    <l>Deem unplausible </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

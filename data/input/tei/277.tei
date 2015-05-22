@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through the straight pass of suffering </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F187A">
+                <lg type="stanza">
+                    <l>Through the strait pass of suffering, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+The martyrs even trod,</l>
+                    <l>Their feet <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ temptation, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Their foreheads <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ God:</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A stately, shriven company</l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Convulsion playing round,</l>
+                    <l>Harmless as streaks of meteor </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+<app type="emendation"><lem>Upon</lem><rdg>Opon</rdg></app>
+ a planet's <app type="emendation"><lem>bound</lem><rdg>bond</rdg></app>
+;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their faith, the everlasting troth, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Their expectation sure;</l>
+                    <l>The needle to the North degree, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Wades so, through Polar <app type="emendation"><lem>air,</lem><rdg>air.</rdg></app>
+</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

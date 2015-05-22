@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I should have been too glad, I see -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J313">
+                <lg type="stanza">
+                    <l>I should have been too glad, I see --</l>
+                    <l>Too lifted -- for the scant degree</l>
+                    <l>Of Life's penurious Round --</l>
+                    <l>My little Circuit would have shamed</l>
+                    <l>This new Circumference -- have blamed --</l>
+                    <l>The homelier time behind.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I should have been too saved -- I see --</l>
+                    <l>Too rescued -- Fear too dim to me</l>
+                    <l>That I could spell the Prayer</l>
+                    <l>I knew so perfect -- yesterday --</l>
+                    <l>That Scalding One -- Sabacthini --</l>
+                    <l>Recited fluent -- here --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Earth would have been too much -- I see --</l>
+                    <l>And Heaven -- not enough for me --</l>
+                    <l>I should have had the Joy</l>
+                    <l>Without the Fear -- to justify --</l>
+                    <l>The Palm -- without the Calvary --</l>
+                    <l>So Savior -- Crucify --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Defeat whets Victory -- they say --</l>
+                    <l>The Reefs in Old Gethsemane</l>
+                    <l>Endear the Shore beyond --</l>
+                    <l>'Tis Beggars -- Banquets best define --</l>
+                    <l>'Tis Thirsting -- vitalizes Wine --</l>
+                    <l>Faith <app type="revision"><lem>faints --</lem><rdg>faints --</rdg></app>
+bleats to understand --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>21. Shore] Coast</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

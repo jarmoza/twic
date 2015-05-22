@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perhaps I asked too large </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F358A">
+                <lg type="stanza">
+                    <l>Perhaps I asked too large -</l>
+                    <l>I take - no less than skies - </l>
+                    <l>For Earths, grow thick as </l>
+                    <l>Berries, in my native Town - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Basket holds - just -<app type="division"><lem><lb/></lem></app>
+ Firmaments -</l>
+                    <l>Those - dangle easy - on my<app type="division"><lem><lb/></lem></app>
+ arm, </l>
+                    <l>But smaller bundles - Cram.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

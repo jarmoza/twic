@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Under the Light, yet under, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J949">
+                <lg type="stanza">
+                    <l>Under the Light, yet under,</l>
+                    <l>Under the Grass and the Dirt,</l>
+                    <l>Under the Beetle's Cellar</l>
+                    <l>Under the Clover's <app type="revision"><lem>Foot</lem><rdg>Foot</rdg></app>
+Root,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Further than Arm could stretch</l>
+                    <l>Were it Giant long,</l>
+                    <l>Further than Sunshine could</l>
+                    <l>Were the Day Year long,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Over the Light, yet over,</l>
+                    <l>Over the Arc of the Bird --</l>
+                    <l>Over the Comet's chimney --</l>
+                    <l>Over the Cubit's Head,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Further than Guess can gallop</l>
+                    <l>Further than Riddle ride --</l>
+                    <l>Oh for a Disc to the Distance</l>
+                    <l>Between Ourselves and the Dead!</l>
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

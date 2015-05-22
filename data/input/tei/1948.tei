@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lay this laurel on the one </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1428C">
+                <lg type="stanza">
+                    <l>Lay this<app type="division"><lem><lb/></lem></app>
+ Laurel on<app type="division"><lem><lb/></lem></app>
+ the One </l>
+                    <l>Too intrinsic<app type="division"><lem><lb/></lem></app>
+ for Renown - </l>
+                    <l>Laurel - vail<app type="division"><lem><lb/></lem></app>
+ your deathless<app type="division"><lem><lb/></lem></app>
+ Tree - </l>
+                    <l>Him you<app type="division"><lem><lb/></lem></app>
+ chasten, that<app type="division"><lem><lb/></lem></app>
+ is He!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

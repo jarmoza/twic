@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A bee his burnished carriage </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1351B">
+                <lg type="stanza">
+                    <l>A Bee his<app type="division"><lem><lb/></lem></app>
+ Burnished <app type="emendation"><lem>Car - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ riage</lem><rdg>Carriage</rdg></app>
+</l>
+                    <l>Drove boldly<app type="division"><lem><lb/></lem></app>
+ to a Rose - </l>
+                    <l>Combinedly <app type="division"><lem><lb/></lem></app>
+alighting - </l>
+                    <l>Himself - <app type="division"><lem><lb/></lem></app>
+his Equipage.<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Rose<app type="division"><lem><lb/></lem></app>
+ received his<app type="division"><lem><lb/></lem></app>
+ Visit</l>
+                    <l>With frank<app type="division"><lem><lb/></lem></app>
+ tranquility, </l>
+                    <l>Witholding not<app type="division"><lem><lb/></lem></app>
+ a Crescent </l>
+                    <l>To his cupidity.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their Moment<app type="division"><lem><lb/></lem></app>
+ consummated </l>
+                    <l>Remained for<app type="division"><lem><lb/></lem></app>
+ him - to flee -</l>
+                    <l>Remained for<app type="division"><lem><lb/></lem></app>
+ her, of Rapture </l>
+                    <l>But the<app type="division"><lem><lb/></lem></app>
+ Humility.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

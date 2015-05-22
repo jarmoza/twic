@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The most pathetic thing I do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1345A">
+                <lg type="stanza">
+                    <l>The most pathetic<app type="division"><lem><lb/></lem></app>
+ thing I do </l>
+                    <l>Is play I hear<app type="division"><lem><lb/></lem></app>
+ from you - </l>
+                    <l>I make believe<app type="division"><lem><lb/></lem></app>
+ until my Heart </l>
+                    <l>Almost believes<app type="division"><lem><lb/></lem></app>
+ it too </l>
+                    <l>But when I<app type="division"><lem><lb/></lem></app>
+ break it with<app type="division"><lem><lb/></lem></app>
+ the news</l>
+                    <l>You knew<add type="alternate" extent="it">that</add>
+ it<app type="division"><lem><lb/></lem></app>
+ was not true </l>
+                    <l>I wish I had<app type="division"><lem><lb/></lem></app>
+ not broken it - </l>
+                    <l>Goliah - so would<app type="division"><lem><lb/></lem></app>
+ you - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

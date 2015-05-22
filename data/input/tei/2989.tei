@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;m sorry for the Dead -- Today -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J529">
+                <lg type="stanza">
+                    <l>I'm sorry for the Dead -- Today --</l>
+                    <l>It's such congenial <app type="revision"><lem>Way</lem><rdg>Way</rdg></app>
+times</l>
+                    <l>Old Neighbors have at fences --</l>
+                    <l>It's time o' year for Hay.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Broad -- Sunburned Acquaintance</l>
+                    <l>Discourse between the Toil --</l>
+                    <l>And laugh, a homely species</l>
+                    <l>That makes the Fences smile --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It seems so straight to lie away</l>
+                    <l>From all the <app type="revision"><lem>Sound</lem><rdg>Sound</rdg></app>
+noise of Fields --</l>
+                    <l>The Busy Carts -- the fragrant Cocks --</l>
+                    <l>The Mower's Metre -- Steals</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Trouble lest they're homesick --</l>
+                    <l>Those Farmers -- and their Wives --</l>
+                    <l><app type="revision"><lem>Put quiet --</lem><rdg>Put quiet --</rdg></app>
+Set separate from the Farming --</l>
+                    <l>And all the Neighbor's lives --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Wonder if the Sepulchre</l>
+                    <l>Dont feel a lonesome way --</l>
+                    <l>When Men -- and Boys -- and <app type="revision"><lem>Larks --</lem><rdg>Larks --</rdg></app>
+Carts -- and June,</l>
+                    <l>Go down the Fields to "Hay" --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

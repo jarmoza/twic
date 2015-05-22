@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some we see no more, tenements of wonder </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1210A">
+                <lg type="stanza">
+                    <l>Some we see no<app type="division"><lem><lb/></lem></app>
+ more, Tenements of<app type="division"><lem><lb/></lem></app>
+ Wonder</l>
+                    <l>Occupy to us though<app type="division"><lem><lb/></lem></app>
+ perhaps to them </l>
+                    <l>Simpler are the<app type="division"><lem><lb/></lem></app>
+ Days than the<app type="division"><lem><lb/></lem></app>
+ Supposition </l>
+                    <l>Their removing<app type="division"><lem><lb/></lem></app>
+ Manners </l>
+                    <l>Leave us to presume.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That oblique<app type="division"><lem><lb/></lem></app>
+ Belief which we<app type="division"><lem><lb/></lem></app>
+ call Conjecture </l>
+                    <l>Grapples with a<app type="division"><lem><lb/></lem></app>
+ Theme stubborn as<app type="division"><lem><lb/></lem></app>
+ sublime </l>
+                    <l>Able as the Dust<app type="division"><lem><lb/></lem></app>
+ to equip it's feature<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Adequate as Drums<app type="division"><lem><lb/></lem></app>
+ to enlist the Tomb.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

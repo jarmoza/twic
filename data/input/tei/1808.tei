@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mushroom is the elf of plants </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1350F">
+                <lg type="stanza">
+                    <l>The Mushroom<app type="division"><lem><lb/></lem></app>
+ is the Elf of<app type="division"><lem><lb/></lem></app>
+ Plants -</l>
+                    <l>At Evening, it<app type="division"><lem><lb/></lem></app>
+ is not </l>
+                    <l>At Morning, in<app type="division"><lem><lb/></lem></app>
+ a Truffled Hut </l>
+                    <l>It stop opon<app type="division"><lem><lb/></lem></app>
+ a Spot </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if it tarried<app type="division"><lem><lb/></lem></app>
+ always</l>
+                    <l>And yet it's<app type="division"><lem><lb/></lem></app>
+ whole Career </l>
+                    <l>Is shorter than<app type="division"><lem><lb/></lem></app>
+ a Snake's<app type="division"><lem><lb/></lem></app>
+ Delay - </l>
+                    <l>And fleeter than<app type="division"><lem><lb/></lem></app>
+ a Tare -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Vegetation's<app type="division"><lem><lb/></lem></app>
+ Juggler - </l>
+                    <l>The Germ of<app type="division"><lem><lb/></lem></app>
+ Alibi -</l>
+                    <l>Doth like a<app type="division"><lem><lb/></lem></app>
+ Bubble antedate </l>
+                    <l>And like a<app type="division"><lem><lb/></lem></app>
+ Bubble, hie - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I feel as if<app type="division"><lem><lb/></lem></app>
+ the Grass was<app type="division"><lem><lb/></lem></app>
+ pleased </l>
+                    <l>To have it<app type="division"><lem><lb/></lem></app>
+ intermit - </l>
+                    <l>This surreptitious<app type="division"><lem><lb/></lem></app>
+ Scion</l>
+                    <l>Of Summer's<app type="division"><lem><lb/></lem></app>
+ circumspect.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had Nature<app type="division"><lem><lb/></lem></app>
+ any supple Face<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Or could<app type="division"><lem><lb/></lem></app>
+ she one<app type="division"><lem><lb/></lem></app>
+ contemn - </l>
+                    <l>Had Nature<app type="division"><lem><lb/></lem></app>
+ an Apostate - </l>
+                    <l>That Mushroom -<app type="division"><lem><lb/></lem></app>
+ it is Him!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Murmur of a Bee
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J155">
+                <lg type="stanza">
+                    <l>The Murmur of a Bee</l>
+                    <l>A Witchcraft -- yieldeth me --</l>
+                    <l>If any ask me why --</l>
+                    <l>'Twere easier to die --</l>
+                    <l>Than tell --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Red upon the Hill</l>
+                    <l>Taketh away my will --</l>
+                    <l>If anybody sneer --</l>
+                    <l>Take care -- for God is here --</l>
+                    <l>That's all.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Breaking of the Day</l>
+                    <l>Addeth to my Degree --</l>
+                    <l>If any ask me how --</l>
+                    <l>Artist -- who drew me so --</l>
+                    <l>Must tell!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

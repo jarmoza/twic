@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Facts by our side are never sudden </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1530A">
+                <lg type="stanza">
+                    <l>Facts by our side<app type="division"><lem><lb/></lem></app>
+ are never sudden </l>
+                    <l>Until they look<app type="division"><lem><lb/></lem></app>
+ around </l>
+                    <l>And then they<app type="division"><lem><lb/></lem></app>
+ scare us like a<app type="division"><lem><lb/></lem></app>
+ spectre </l>
+                    <l>Protruding from<app type="division"><lem><lb/></lem></app>
+ the Ground - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The hight of our<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="portentous">unknowing</add>
+ portentous Neighbor</l>
+                    <l>We never know - </l>
+                    <l>Till summoned<app type="division"><lem><lb/></lem></app>
+ to his recognition </l>
+                    <l>By an Adieu - </l>
+                    <l>Adieu<add type="alternate" extent="for whence">till when</add>
+ for whence<app type="division"><lem><lb/></lem></app>
+ the<add type="alternate" extent="sage">wise</add>
+ sage cannot<app type="division"><lem><lb/></lem></app>
+ Conjecture<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The bravest die</l>
+                    <l>As ignorant of<app type="division"><lem><lb/></lem></app>
+ their resumption </l>
+                    <l>As<add type="alternate" extent="you or I -">Cowards do -</add>
+ you or I - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

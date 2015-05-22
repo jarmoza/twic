@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Arrows enamored of his Heart -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1629">
+                <lg type="stanza">
+                    <l>Arrows enamored of his <app type="revision"><lem>Breast</lem><rdg>Breast</rdg></app>
+Heart --</l>
+                    <l>Forgot to <app type="revision"><lem>enter</lem><rdg>enter</rdg></app>
+rankle there</l>
+                    <l><app type="revision"><lem>The</lem><rdg>The</rdg></app>
+And Venoms he mistook for Balms</l>
+                    <l><app type="revision"><lem>refused</lem><rdg>refused</rdg></app>
+disdained to rankle there --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

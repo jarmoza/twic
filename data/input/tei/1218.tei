@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As frost is best conceived </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F911A">
+                <lg type="stanza">
+                    <l>As Frost is best<app type="division"><lem><lb/></lem></app>
+ conceived</l>
+                    <l>By force of it's Result - </l>
+                    <l>Affliction is inferred </l>
+                    <l>By subsequent effect - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If<add type="alternate" extent="when">as</add>
+ when the Sun reveal,</l>
+                    <l>The<add type="alternate" extent="Garden keep">Landscape show - &amp;#x2022; [Landscape</add>
+ Garden keep the Gash - </l>
+                    <l>If as the Days<add type="alternate" extent="resume">increase</add>
+ resume </l>
+                    <l>The<add type="alternate" extent="wilted">Blackened</add>
+ wilted countenance </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cannot<add type="alternate" extent="correct">efface -</add>
+ correct the crease </l>
+                    <l>Or counteract the stain -</l>
+                    <l>Presumption is Vitality </l>
+                    <l>Was somewhere put in<app type="division"><lem><lb/></lem></app>
+ twain - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

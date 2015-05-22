@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Apparently with no surprise </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1668A">
+                <lg type="stanza">
+                    <l>Apparently with no<app type="division"><lem><lb/></lem></app>
+ surprise </l>
+                    <l>To any happy<app type="division"><lem><lb/></lem></app>
+ Flower </l>
+                    <l>The Frost beheads<app type="division"><lem><lb/></lem></app>
+ it at it's play - </l>
+                    <l>In accidental<app type="division"><lem><lb/></lem></app>
+ power - </l>
+                    <l>The blonde Assassin<app type="division"><lem><lb/></lem></app>
+ passes on -</l>
+                    <l>The Sun proceeds<app type="division"><lem><lb/></lem></app>
+ unmoved </l>
+                    <l>To measure off<app type="division"><lem><lb/></lem></app>
+ another Day </l>
+                    <l>For an Approving<app type="division"><lem><lb/></lem></app>
+ God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

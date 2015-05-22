@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sang from the Heart, Sire, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1059">
+                <lg type="stanza">
+                    <l>Sang from the Heart, Sire,</l>
+                    <l>Dipped my Beak in it,</l>
+                    <l>If the Tune drip too much</l>
+                    <l>Have a tint too Red</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pardon the Cochineal --</l>
+                    <l>Suffer the Vermillion --</l>
+                    <l>Death is the Wealth</l>
+                    <l>Of the Poorest Bird.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Bear with the Ballad --</l>
+                    <l>Awkward -- faltering --</l>
+                    <l>Death twists the strings --</l>
+                    <l>'Twas'nt my blame --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pause in your Liturgies --</l>
+                    <l>Wait your Chorals --</l>
+                    <l>While I <app type="revision"><lem>recite</lem><rdg>recite</rdg></app>
+repeat your</l>
+                    <l>Hallowed name --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Went up a year this evening! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J93">
+                <lg type="stanza">
+                    <l>Went up a year this evening!</l>
+                    <l>I recollect it well!</l>
+                    <l>Amid no bells nor bravoes</l>
+                    <l>The bystanders will tell!</l>
+                    <l>Cheerful -- as to the village --</l>
+                    <l>Tranquil -- as to repose --</l>
+                    <l>Chastened -- as to the Chapel</l>
+                    <l>This humble Tourist rose!</l>
+                    <l>Did not talk of returning!</l>
+                    <l>Alluded to no time</l>
+                    <l>When, were the gales propitious --</l>
+                    <l>We might look for him!</l>
+                    <l>Was grateful for the Roses</l>
+                    <l>In life's diverse boquet --</l>
+                    <l>Talked softly of new species</l>
+                    <l>To pick another day;</l>
+                    <l>Beguiling thus the wonder</l>
+                    <l>The wondrous nearer drew --</l>
+                    <l>Hands bustled at the moorings --</l>
+                    <l>The crowd respectful grew --</l>
+                    <l>Ascended from our vision</l>
+                    <l>To Countenances new!</l>
+                    <l>A Difference -- A Daisy --</l>
+                    <l>Is all the rest I knew!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

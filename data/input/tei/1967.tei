@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How human nature dotes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1440A">
+                <lg type="stanza">
+                    <l>How Human Nature<app type="division"><lem><lb/></lem></app>
+ dotes </l>
+                    <l>On what it cant<app type="division"><lem><lb/></lem></app>
+ detect - </l>
+                    <l>The moment that a<app type="division"><lem><lb/></lem></app>
+ Plot is plumbed </l>
+                    <l><add type="alternate" extent="">&lt;u&gt;Prospective is extinct.&lt;/u&gt;</add>
+It's meaning is extinct - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Prospective is the<app type="division"><lem><lb/></lem></app>
+ friend</l>
+                    <l>Reserved for us<app type="division"><lem><lb/></lem></app>
+ to know </l>
+                    <l>When Constancy is<app type="division"><lem><lb/></lem></app>
+ clarified </l>
+                    <l>Of Curiosity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of subjects that<app type="division"><lem><lb/></lem></app>
+ resist </l>
+                    <l>Redoubtablest is this</l>
+                    <l>Where go we -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Go we anywhere </l>
+                    <l>Creation after this?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

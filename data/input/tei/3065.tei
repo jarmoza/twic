@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spider holds a Silver Ball 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J605">
+                <lg type="stanza">
+                    <l>The Spider holds a Silver Ball</l>
+                    <l>In unperceived Hands --</l>
+                    <l>And dancing softly to Himself</l>
+                    <l><app type="revision"><lem>Pursues his pearly strands --</lem><rdg>Pursues his pearly strands --</rdg></app>
+His Yarn of Pearl -- unwinds --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He plies from Nought to Nought --</l>
+                    <l>In unsubstantial Trade --</l>
+                    <l>Supplants our Tapestries with His --</l>
+                    <l>In half the period --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>An Hour to rear supreme</l>
+                    <l>His <app type="revision"><lem>Theories</lem><rdg>Theories</rdg></app>
+Continents of Light --</l>
+                    <l>Then <app type="revision"><lem>perish by</lem><rdg>perish by</rdg></app>
+dangle from the Housewife's Broom --</l>
+                    <l>His <app type="revision"><lem>Sophistries --</lem><rdg>Sophistries --</rdg></app>
+Boundaries -- forgot --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>3.to Himself] as He knits</l>
+                    <l>4.Yarn] Coil --</l>
+                    <l>4.unwinds] expends --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

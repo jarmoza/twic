@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Each scar I&#x27;ll keep for him </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F920A">
+                <lg type="stanza">
+                    <l>Each Scar I'll keep<app type="division"><lem><lb/></lem></app>
+ for Him</l>
+                    <l>Instead I'll say of Gem </l>
+                    <l>In His long Absence<app type="division"><lem><lb/></lem></app>
+ worn </l>
+                    <l>A Costlier One </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But every Tear I bore</l>
+                    <l>Were He to count<app type="division"><lem><lb/></lem></app>
+ them o'er </l>
+                    <l>His own would fall<app type="division"><lem><lb/></lem></app>
+ so more </l>
+                    <l>I'll missum them - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

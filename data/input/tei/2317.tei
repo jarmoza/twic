@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Upon his saddle sprung a bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1663B">
+                <lg type="stanza">
+                    <l>And then<app type="division"><lem><lb/></lem></app>
+ he lifted up<app type="division"><lem><lb/></lem></app>
+ his Throat </l>
+                    <l>And squandered<app type="division"><lem><lb/></lem></app>
+ such a Note, </l>
+                    <l>A Universe<app type="division"><lem><lb/></lem></app>
+ that overheard<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Is stricken by it<app type="division"><lem><lb/></lem></app>
+ yet - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

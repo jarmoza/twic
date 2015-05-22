@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I gave myself to Him --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J580">
+                <lg type="stanza">
+                    <l>I gave <app type="revision"><lem>Him all myself --</lem><rdg>Him all myself --</rdg></app>
+myself to Him --</l>
+                    <l>And took Himself, for Pay,</l>
+                    <l>The solemn contract of a Life</l>
+                    <l>Was ratified, this way --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Wealth might disappoint --</l>
+                    <l>Myself a poorer prove</l>
+                    <l>Than this great Purchaser suspect,</l>
+                    <l>The Daily Own -- of Love</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Depreciate the Vision --</l>
+                    <l>But till the Merchant buy --</l>
+                    <l><app type="revision"><lem>How --</lem><rdg>How --</rdg></app>
+<app type="revision"><lem>So --</lem><rdg>So --</rdg></app>
+Still Fable -- in the Isles of Spice --</l>
+                    <l>The subtle Cargoes -- lie --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>At least -- 'tis Mutual -- Risk --</l>
+                    <l>Some -- found it -- Mutual Gain --</l>
+                    <l>Sweet Debt of Life -- Each Night to owe --</l>
+                    <l>Insolvent -- every Noon --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

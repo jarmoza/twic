@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An everywhere of silver </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F931A">
+                <lg type="stanza">
+                    <l>An Everywhere of Silver</l>
+                    <l>With Ropes of Sand </l>
+                    <l>To keep it from<app type="division"><lem><lb/></lem></app>
+ effacing </l>
+                    <l>The Track called Land - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

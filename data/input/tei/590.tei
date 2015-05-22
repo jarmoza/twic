@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Your riches taught me poverty </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F418A">
+                <lg type="stanza">
+                    <l>Your - Riches - taught me - poverty!  </l>
+                    <l>Myself, a &quot;Millionaire&quot; </l>
+                    <l>In little - wealths - as Girls can boast - </l>
+                    <l>Till broad as &quot;Buenos Ayre&quot; - </l>
+                    <l>You drifted your Dominions -</l>
+                    <l>A Different - Peru - </l>
+                    <l>And I esteemed - all - poverty - </l>
+                    <l>For Life's Estate - with you!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of <em>&quot;Mines&quot;</em> - I little know - myself - </l>
+                    <l>But just the <em>names</em> - of <em>Gems</em> -</l>
+                    <l>The <em>Colors</em> - of the <em>Commonest</em> - </l>
+                    <l>And scarce of Diadems - </l>
+                    <l>So much - that did I meet <em>the Queen</em> - </l>
+                    <l>Her glory - I should know - </l>
+                    <l>But <em>this</em> - must be a <em>different wealth</em> -</l>
+                    <l>To miss it - beggars - so!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'm sure 'tis <em>&quot;India&quot;</em> - all day - </l>
+                    <l>To those who look on you - </l>
+                    <l>Without a stint - without a blame - </l>
+                    <l>Might I - but be the Jew!</l>
+                    <l>I know it is &quot;Golconda&quot; - </l>
+                    <l>Beyond my power to dream - </l>
+                    <l>To have a smile - for mine - each day - </l>
+                    <l>How <em>better</em> - than <em>a Gem!</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l>At least - it solaces - to know -</l>
+                    <l>That there <em>exists</em> - a <em>Gold</em> - </l>
+                    <l>Altho' I prove it, just in time - </l>
+                    <l>It's distance - to behold!  </l>
+                    <l>It's far - far - Treasure - to surmise - </l>
+                    <l>And estimate - the Pearl -</l>
+                    <l>That slipped - my simple fingers - thro' </l>
+                    <l>While yet - a Girl - at school!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

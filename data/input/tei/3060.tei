@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It troubled me as once I was -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J600">
+                <lg type="stanza">
+                    <l>It troubled me as once I was --</l>
+                    <l>For I was once a Child --</l>
+                    <l><app type="revision"><lem>Deciding</lem><rdg>Deciding</rdg></app>
+Concluding how an Atom -- fell --</l>
+                    <l>And yet the Heavens -- held --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heavens weighed the most -- by far --</l>
+                    <l>Yet Blue -- and <app type="revision"><lem>easy</lem><rdg>easy</rdg></app>
+solid -- stood --</l>
+                    <l>Without a Bolt -- that I could prove --</l>
+                    <l><app type="revision"><lem>did --</lem><rdg>did --</rdg></app>
+<app type="revision"><lem>might</lem><rdg>might</rdg></app>
+Would Giants -- understand?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life set me larger -- problems --</l>
+                    <l>Some I shall keep -- to solve</l>
+                    <l><app type="revision"><lem>Where</lem><rdg>Where</rdg></app>
+Till Algebra is easier --</l>
+                    <l>Or simpler proved -- above --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then -- too -- be comprehended --</l>
+                    <l>What sorer -- puzzled me --</l>
+                    <l>Why Heaven did not break away --</l>
+                    <l>And tumble -- Blue -- on me --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

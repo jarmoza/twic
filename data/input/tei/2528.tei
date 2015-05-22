@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Low at my problem bending,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J69">
+                <lg type="stanza">
+                    <l>Low at my problem bending,</l>
+                    <l>Another problem comes --</l>
+                    <l>Larger than mine -- Serener --</l>
+                    <l>Involving statelier sums.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I check my busy pencil,</l>
+                    <l>My figures file away.</l>
+                    <l>Wherefore, my baffled fingers</l>
+                    <l>Thy perplexity?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

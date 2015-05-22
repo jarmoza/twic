@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Musicians wrestle everywhere </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F229B">
+                <lg type="stanza">
+                    <l>Musicians wrestle everywhere -</l>
+                    <l>All day - among the crowded air </l>
+                    <l>I hear the silver strife - </l>
+                    <l>And - waking - long before the morn - </l>
+                    <l>Such transport breaks opon the town</l>
+                    <l>I think it that &quot;New life&quot;!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It is not Bird - it has no nest - </l>
+                    <l>Nor &quot;Band&quot; - in brass and scarlet -<app type="division"><lem><lb/></lem></app>
+ drest - </l>
+                    <l>Nor Tamborin - nor Man - </l>
+                    <l>It is not Hymn from pulpit read -</l>
+                    <l>The &quot;Morning Stars&quot; the Treble led </l>
+                    <l>On Time's first afternoon!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some - say - it is &quot;the Spheres&quot; - at play!  </l>
+                    <l>Some say - that bright Majority </l>
+                    <l>Of vanished Dames - and Men!</l>
+                    <l>Some - think it service in the place </l>
+                    <l>Where we - with late - celestial face - </l>
+                    <l>Please God - shall ascertain!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

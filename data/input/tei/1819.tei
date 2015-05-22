@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A little madness in the spring </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1356B">
+                <lg type="stanza">
+                    <l>A little<app type="division"><lem><lb/></lem></app>
+ Madness in<app type="division"><lem><lb/></lem></app>
+ the Spring </l>
+                    <l>Is wholesome<app type="division"><lem><lb/></lem></app>
+ even for the<app type="division"><lem><lb/></lem></app>
+ King, </l>
+                    <l>But God be<app type="division"><lem><lb/></lem></app>
+ with the Clown -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Who ponders<app type="division"><lem><lb/></lem></app>
+ this tremendous<app type="division"><lem><lb/></lem></app>
+ scene - </l>
+                    <l>This whole<app type="division"><lem><lb/></lem></app>
+ Experiment of<app type="division"><lem><lb/></lem></app>
+ Green -</l>
+                    <l>As if it<app type="division"><lem><lb/></lem></app>
+ were his own!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

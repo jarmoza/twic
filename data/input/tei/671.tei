@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Most she touched me by her muteness </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F483A">
+                <lg type="stanza">
+                    <l>Most she touched me<app type="division"><lem><lb/></lem></app>
+ by her muteness -</l>
+                    <l>Most she won me by<app type="division"><lem><lb/></lem></app>
+ the way </l>
+                    <l>She presented her small<app type="division"><lem><lb/></lem></app>
+ figure - </l>
+                    <l>Plea itself - for Charity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Were a Crumb my whole<app type="division"><lem><lb/></lem></app>
+ possession -</l>
+                    <l>Were there famine in<app type="division"><lem><lb/></lem></app>
+ the land - </l>
+                    <l>Were it my resource<app type="division"><lem><lb/></lem></app>
+ from starving - </l>
+                    <l>Could I such a plea<app type="division"><lem><lb/></lem></app>
+ withstand - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not opon her knee to thank<app type="division"><lem><lb/></lem></app>
+ me </l>
+                    <l>Sank<add type="alternate" extent="this">the</add>
+ this Beggar from<app type="division"><lem><lb/></lem></app>
+ the Sky -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>But the Crumb partook -<app type="division"><lem><lb/></lem></app>
+ departed - </l>
+                    <l>And returned on High - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I supposed - when sudden </l>
+                    <l>Such a Praise began </l>
+                    <l>'Twas as Space sat singing</l>
+                    <l>To herself - and men - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas the Winged Beggar - </l>
+                    <l>Afterward I learned </l>
+                    <l>To her Benefactor </l>
+                    <l><add type="alternate" extent="Making">paying</add>
+Making Gratitude</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

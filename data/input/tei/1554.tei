@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature affects to be sedate </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1176A">
+                <lg type="stanza">
+                    <l>Nature affects to be<app type="division"><lem><lb/></lem></app>
+ sedate </l>
+                    <l>Opon Occasion, grand </l>
+                    <l>But let our observation<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="shut">&lt;u&gt;halt&lt;/u&gt;</add>
+ shut </l>
+                    <l>Her<add type="alternate" extent="practises">qualities</add>
+ practises extend </l>
+                    <l>To Necromancy and the<app type="division"><lem><pb/></lem></app>
+ Trades</l>
+                    <l><add type="alternate" extent="Remote">astute &amp;#x2022; obscure</add>
+Remote to understand </l>
+                    <l>Behold<add type="alternate" extent="our">my &amp;#x2022; this</add>
+ our spacious<app type="division"><lem><lb/></lem></app>
+ Citizen </l>
+                    <l>Unto a Juggler turned - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

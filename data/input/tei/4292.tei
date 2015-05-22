@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SEA OF SUNSET</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-57">
+                <lg type="stanza">
+                    <l>This is the land the sunset washes,</l>
+                    <l>These are the banks of the Yellow Sea;</l>
+                    <l>Where it rose, or whither it rushes,</l>
+                    <l>These are the western mystery!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Night after night her purple traffic</l>
+                    <l>Strews the landing with opal bales;</l>
+                    <l>Merchantmen poise upon horizons,</l>
+                    <l>Dip, and vanish with fairy sails.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

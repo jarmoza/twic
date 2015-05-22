@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Forbidden fruit a flavor has </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1482A">
+                <lg type="stanza">
+                    <l>Forbidden Fruit<app type="division"><lem><lb/></lem></app>
+ a flavor has </l>
+                    <l>That lawful<app type="division"><lem><lb/></lem></app>
+ Orchards mocks - </l>
+                    <l>How luscious<app type="division"><lem><lb/></lem></app>
+ lies within the<app type="division"><lem><lb/></lem></app>
+ Pod </l>
+                    <l>The Pea that<app type="division"><lem><lb/></lem></app>
+ Duty locks - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

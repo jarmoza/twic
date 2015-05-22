@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Plated Life -- diversified
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J806">
+                <lg type="stanza">
+                    <l>A Plated Life -- diversified</l>
+                    <l>With Gold and Silver Pain</l>
+                    <l>To prove the presence of the Ore</l>
+                    <l>In Particles -- 'tis when</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A <app type="revision"><lem>Nature</lem><rdg>Nature</rdg></app>
+Value struggle -- it exist --</l>
+                    <l>A Power -- will proclaim</l>
+                    <l>Although Annihilation pile</l>
+                    <l><app type="revision"><lem>Oblivions --</lem><rdg>Oblivions --</rdg></app>
+Whole Chaoses on Him --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

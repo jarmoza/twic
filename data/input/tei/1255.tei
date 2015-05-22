@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Those who have been in the grave the longest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F938A">
+                <lg type="stanza">
+                    <l>Those who have been<app type="division"><lem><lb/></lem></app>
+ in the Grave the longest -</l>
+                    <l>Those who begin Today - </l>
+                    <l>Equally perish from<app type="division"><lem><lb/></lem></app>
+ our Practise - </l>
+                    <l>Death is the other way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Foot of the Bold<app type="division"><lem><lb/></lem></app>
+ did least attempt it -</l>
+                    <l>It is the White Exploit - </l>
+                    <l>Once to achieve, annuls<app type="division"><lem><lb/></lem></app>
+ the power </l>
+                    <l>Once to communicate - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis seasons since the dimpled war </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1551A">
+                <lg type="stanza">
+                    <l>'Tis Seasons since<app type="division"><lem><lb/></lem></app>
+ the Dimpled War </l>
+                    <l>In which we each<app type="division"><lem><lb/></lem></app>
+ were Conqueror </l>
+                    <l>And each of us<app type="division"><lem><lb/></lem></app>
+ were slain </l>
+                    <l>And Centuries 'twill<app type="division"><lem><lb/></lem></app>
+ be and more </l>
+                    <l>Another Massacre<app type="division"><lem><lb/></lem></app>
+ before</l>
+                    <l>So modest and so vain - </l>
+                    <l>Without a Formula<app type="division"><lem><lb/></lem></app>
+ we fought </l>
+                    <l>Each was to each the<app type="division"><lem><lb/></lem></app>
+ Pink Redoubt - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

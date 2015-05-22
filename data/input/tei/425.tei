@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A burdock clawed my gown </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F289A">
+                <lg type="stanza">
+                    <l>A Burdock -<app type="division"><lem><lb/></lem></app>
+ clawed my Gown - </l>
+                    <l>Not <em>Burdock's</em> - blame - </l>
+                    <l>But <em>mine</em> - </l>
+                    <l>Who went too near </l>
+                    <l>The Burdock's <em>Den</em> -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A <em>Bog</em> - affronts my shoe - </l>
+                    <l>What <em>else</em> have Bogs - <em>to do</em> - </l>
+                    <l>The only trade they <em>know</em> - </l>
+                    <l>The <em>splashing Men!</em> </l>
+                    <l>Ah, <em>pity - then!</em></l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis <em>Minnows can despise!</em> </l>
+                    <l>The <em>Elephant's</em> - calm eyes </l>
+                    <l>Look <em>further on!</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

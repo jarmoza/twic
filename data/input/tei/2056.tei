@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It stole along so stealthy </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1497A">
+                <lg type="stanza">
+                    <l>It stole along<app type="division"><lem><lb/></lem></app>
+ so stealthy </l>
+                    <l>Suspicion it was<app type="division"><lem><lb/></lem></app>
+ done </l>
+                    <l>Was dim as to<app type="division"><lem><lb/></lem></app>
+ the wealthy </l>
+                    <l>Beginning not to<app type="division"><lem><lb/></lem></app>
+ own - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

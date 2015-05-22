@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It would never be common more - I said </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F388A">
+                <lg type="stanza">
+                    <l>It would never be Common -<app type="division"><lem><lb/></lem></app>
+ more - I said -</l>
+                    <l>Difference - had begun - </l>
+                    <l>Many a bitterness - had been - </l>
+                    <l>But that old sort - was done - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or - if it sometime - showed -<app type="division"><lem><lb/></lem></app>
+ as 'twill -</l>
+                    <l>Opon the Downiest - morn - </l>
+                    <l>Such bliss - had I - for all<app type="division"><lem><lb/></lem></app>
+ the years - </l>
+                    <l>'Twould give an easier - pain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'd so much joy - I told it - Red - </l>
+                    <l>Opon my simple Cheek -</l>
+                    <l>I felt it publish - in my eye - </l>
+                    <l>'Twas needless - any speak - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I walked - as wings - my body bore - </l>
+                    <l>The feet - I former used -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Unnescessary - now to me -</l>
+                    <l>As boots - would be - to Birds - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I put my pleasure all abroad - </l>
+                    <l>I dealt a word of Gold </l>
+                    <l>To every Creature - that I met - </l>
+                    <l>And Dowered - all the World -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When - suddenly - my Riches shrank - </l>
+                    <l>A Goblin - drank my Dew - </l>
+                    <l>My Palaces - dropped tenantless - </l>
+                    <l>Myself - was beggared - too - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I clutched at sounds -</l>
+                    <l>I groped at shapes - </l>
+                    <l>I touched the tops of Films - </l>
+                    <l>I felt the Wilderness roll back </l>
+                    <l>Along my Golden lines - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sackcloth - hangs opon the nail -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>The Frock I used to wear - </l>
+                    <l>But where my moment of<app type="division"><lem><lb/></lem></app>
+ Brocade - </l>
+                    <l>My - drop - of India?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

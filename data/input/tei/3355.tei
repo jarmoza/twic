@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Cloud withdrew from the Sky
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J895">
+                <lg type="stanza">
+                    <l>A Cloud withdrew from the Sky</l>
+                    <l>Superior Glory be</l>
+                    <l>But that Cloud and it's Auxiliaries</l>
+                    <l>Are forever lost to me</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had I but further scanned</l>
+                    <l>Had I secured the Glow</l>
+                    <l>In an Hermetic Memory</l>
+                    <l>It had availed me now.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never to pass the Angel</l>
+                    <l>With a glance and a Bow</l>
+                    <l>Till I am firm in Heaven</l>
+                    <l>Is my intention now.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

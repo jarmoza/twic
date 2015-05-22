@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>From blank to blank </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F484A">
+                <lg type="stanza">
+                    <l>From Blank to Blank -</l>
+                    <l>A Threadless Way </l>
+                    <l>I pushed Mechanic feet - </l>
+                    <l>To stop - or perish -<app type="division"><lem><lb/></lem></app>
+ or advance - </l>
+                    <l>Alike indifferent -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If end I<add type="alternate" extent="gained">reached</add>
+ gained </l>
+                    <l>It ends beyond </l>
+                    <l>Indefinite disclosed - </l>
+                    <l>I shut my eyes - and<app type="division"><lem><lb/></lem></app>
+ groped as well </l>
+                    <l>'Twas<add type="alternate" extent="lighter">firmer</add>
+ lighter - to be Blind -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

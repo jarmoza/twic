@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The inundation of the spring </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1423A">
+                <lg type="stanza">
+                    <l>The inundation of<app type="division"><lem><lb/></lem></app>
+ the Spring </l>
+                    <l>Enlarges every<app type="division"><lem><lb/></lem></app>
+ Soul - </l>
+                    <l>It sweeps the -<app type="division"><lem><lb/></lem></app>
+ tenement - away </l>
+                    <l>But leaves the<app type="division"><lem><lb/></lem></app>
+ Water whole - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>In which the<app type="division"><lem><lb/></lem></app>
+ Soul at first<app type="division"><lem><lb/></lem></app>
+ estranged -</l>
+                    <l><add type="alternate" extent="">Seeks furtive for it&#x27;s shore</add>
+<add type="alternate" extent="Seeks">gropes</add>
+Seeks<add type="alternate" extent="faintly">softly</add>
+ faintly for<app type="division"><lem><lb/></lem></app>
+ it's shore - </l>
+                    <l>But <app type="emendation"><lem>acclima - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ted</lem><rdg>acclimated</rdg></app>
+ - pines no more </l>
+                    <l>For that Peninsula - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Snow beneath whose chilly softness 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J942">
+                <lg type="stanza">
+                    <l>Snow beneath whose chilly softness</l>
+                    <l>Some that never lay</l>
+                    <l>Make their first Repose this Winter</l>
+                    <l>I admonish Thee</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Blanket Wealthier the Neighbor</l>
+                    <l>We so new bestow</l>
+                    <l>Than thine acclimated Creature</l>
+                    <l>Wilt Thou, <app type="revision"><lem>Russian</lem><rdg>Russian</rdg></app>
+Austere Snow?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

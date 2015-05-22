@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sun and Fog contested 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1190">
+                <lg type="stanza">
+                    <l>The Sun and Fog contested</l>
+                    <l>The Government of Day --</l>
+                    <l>The Sun took down his Yellow Whip</l>
+                    <l>And drove the Fog away --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

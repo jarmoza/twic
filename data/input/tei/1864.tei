@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The heart is the capital of the mind </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1381B">
+                <lg type="stanza">
+                    <l>The Heart is<app type="division"><lem><lb/></lem></app>
+ the Capital<app type="division"><lem><lb/></lem></app>
+ of the Mind</l>
+                    <l>The Mind<app type="division"><lem><lb/></lem></app>
+ is a single<app type="division"><lem><lb/></lem></app>
+ State - </l>
+                    <l>The Heart<app type="division"><lem><lb/></lem></app>
+ and the Mind<app type="division"><lem><lb/></lem></app>
+ together make </l>
+                    <l>A single<app type="division"><lem><lb/></lem></app>
+ Continent - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>One - is the<app type="division"><lem><lb/></lem></app>
+ Population -</l>
+                    <l>Numerous <app type="division"><lem><lb/></lem></app>
+enough - </l>
+                    <l>This ecstatic<app type="division"><lem><lb/></lem></app>
+ Nation </l>
+                    <l>Seek - it is<app type="division"><lem><lb/></lem></app>
+ Yourself.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

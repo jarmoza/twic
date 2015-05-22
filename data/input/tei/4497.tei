@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A COUNTRY BURIAL</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-147">
+                <lg type="stanza">
+                    <l>Ample make this bed.</l>
+                    <l>Make this bed with awe;</l>
+                    <l>In it wait till judgment break</l>
+                    <l>Excellent and fair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Be its mattress straight,</l>
+                    <l>Be its pillow round;</l>
+                    <l>Let no sunrise' yellow noise</l>
+                    <l>Interrupt this ground.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

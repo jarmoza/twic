@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I like to see it lap the miles </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F383A">
+                <lg type="stanza">
+                    <l>I like to see it lap the Miles -</l>
+                    <l>And lick the Valleys up - </l>
+                    <l>And stop to feed itself at<app type="division"><lem><lb/></lem></app>
+ Tanks - </l>
+                    <l>And then - prodigious step </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Around a Pile of Mountains -</l>
+                    <l>And supercilious peer </l>
+                    <l>In Shanties - by the sides of Roads - </l>
+                    <l>And then a Quarry pare </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To fit it's<add type="alternate" extent="sides">Ribs -</add>
+ sides </l>
+                    <l>And crawl between</l>
+                    <l>Complaining all the while </l>
+                    <l>In horrid - hooting stanza - </l>
+                    <l>Then chase itself down Hill - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="And">then -</add>
+And neigh like Boanerges -</l>
+                    <l>Then -<add type="alternate" extent="prompter than">punctual as -</add>
+ prompter than a Star</l>
+                    <l>Stop - docile and omnipotent </l>
+                    <l>At it's own stable door - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

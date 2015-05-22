@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Murmur in the Trees -- to note -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J416">
+                <lg type="stanza">
+                    <l>A Murmur in the Trees -- to note --</l>
+                    <l>Not loud enough -- for Wind --</l>
+                    <l>A Star -- not far enough to seek --</l>
+                    <l>Nor near enough -- to find --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A long -- long Yellow -- on the Lawn --</l>
+                    <l>A Hubbub -- as of feet --</l>
+                    <l>Not audible -- as Our's -- to Us --</l>
+                    <l>But dapperer -- More Sweet --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Hurrying Home of little Men</l>
+                    <l>To Houses unperceived --</l>
+                    <l>All this -- and more -- if I should tell --</l>
+                    <l>Would never be believed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Robins in the Trundle bed</l>
+                    <l>How many I espy</l>
+                    <l>Whose Nightgowns could not hide the Wings --</l>
+                    <l>Although I heard them try --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But then I promised ne'er to tell --</l>
+                    <l>How could I break My Word?</l>
+                    <l>So go your Way -- and I'll go Mine --</l>
+                    <l>No fear you'll miss the Road.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

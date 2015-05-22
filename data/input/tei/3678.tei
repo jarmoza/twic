@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Let my first Knowing be of thee 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1218">
+                <lg type="stanza">
+                    <l>Let my first Knowing be of thee</l>
+                    <l>With morning's warming Light --</l>
+                    <l>And my first Fearing, lest Unknowns</l>
+                    <l>Engulph thee in the night --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

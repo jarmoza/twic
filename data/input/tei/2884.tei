@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Removed from Accident of Loss
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J424">
+                <lg type="stanza">
+                    <l>Removed from Accident of Loss</l>
+                    <l>By Accident of Gain</l>
+                    <l>Befalling not my simple Days --</l>
+                    <l>Myself had just to earn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Riches -- as unconscious</l>
+                    <l>As is the Brown Malay</l>
+                    <l>Of Pearls in Eastern Waters,</l>
+                    <l>Marked His -- What Holiday</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Would stir his slow conception --</l>
+                    <l>Had he the power to dream</l>
+                    <l>That but the Dower's fraction --</l>
+                    <l>Awaited even -- Him --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The fact that earth is heaven </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1435A">
+                <lg type="stanza">
+                    <l>The Fact<app type="division"><lem><lb/></lem></app>
+ that Earth<app type="division"><lem><lb/></lem></app>
+ is Heaven - </l>
+                    <l>Whether Heaven <app type="division"><lem><lb/></lem></app>
+is Heaven or<app type="division"><lem><lb/></lem></app>
+ not </l>
+                    <l>If not an<app type="division"><lem><lb/></lem></app>
+ Affidavit<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Of that<app type="division"><lem><lb/></lem></app>
+ specific Spot </l>
+                    <l>Not only must<app type="division"><lem><lb/></lem></app>
+ confirm us</l>
+                    <l>That it is not<app type="division"><lem><lb/></lem></app>
+ for us </l>
+                    <l>But that it<app type="division"><lem><lb/></lem></app>
+ would affront<app type="division"><lem><lb/></lem></app>
+ us<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>To dwell in<app type="division"><lem><lb/></lem></app>
+ such a place - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

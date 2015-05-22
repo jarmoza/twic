@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Read -- Sweet -- how others -- strove --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J260">
+                <lg type="stanza">
+                    <l>Read -- Sweet -- how others -- strove --</l>
+                    <l>Till we -- are stouter --</l>
+                    <l>What they -- renounced --</l>
+                    <l>Till we -- are less afraid --</l>
+                    <l>How many times they -- bore the faithful witness --</l>
+                    <l>Till we -- are helped --</l>
+                    <l>As if a Kingdom -- cared!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Read then -- of faith --</l>
+                    <l>That shone above the fagot --</l>
+                    <l>Clear strains of Hymn</l>
+                    <l>The River could not drown --</l>
+                    <l>Brave names of Men --</l>
+                    <l>And Celestial Women --</l>
+                    <l>Passed out -- of Record</l>
+                    <l>Into -- Renown!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

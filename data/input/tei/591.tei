@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Your riches taught me poverty </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F418B">
+                <lg type="stanza">
+                    <l>Your Riches, taught<app type="division"><lem><lb/></lem></app>
+ me, poverty - </l>
+                    <l>Myself a Millionaire - </l>
+                    <l>In little wealths - as<app type="division"><lem><lb/></lem></app>
+ Girls could boast - </l>
+                    <l>Till broad as <app type="emendation"><lem>Buenos - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ Ayre</lem><rdg>Buenos Ayre</rdg></app>
+ - </l>
+                    <l>You drifted your <app type="emendation"><lem>Do - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ minions</lem><rdg>Dominions</rdg></app>
+ -</l>
+                    <l>A different Peru - </l>
+                    <l>And I esteemed all<app type="division"><lem><lb/></lem></app>
+ poverty - </l>
+                    <l>For Life's Estate, with you - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Mines, I little know,<app type="division"><lem><pb/></lem></app>
+ myself - </l>
+                    <l>But just the names -<app type="division"><lem><lb/></lem></app>
+ of Gems -</l>
+                    <l>The Colors of the<app type="division"><lem><lb/></lem></app>
+ commonest - </l>
+                    <l>And scarce of Diadems - </l>
+                    <l>So much - that did<app type="division"><lem><lb/></lem></app>
+ I meet the Queen - </l>
+                    <l>Her glory - I should know - </l>
+                    <l>But this - must be a<app type="division"><lem><lb/></lem></app>
+ different wealth -</l>
+                    <l>To miss it, beggars so - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'm sure 'tis India -<app type="division"><lem><lb/></lem></app>
+ all day - </l>
+                    <l>To those who look on you -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Without a stint -<app type="division"><lem><lb/></lem></app>
+ without a blame - </l>
+                    <l>Might I - but be the<app type="division"><lem><lb/></lem></app>
+ Jew!</l>
+                    <l><app type="emendation"><lem>Im</lem><rdg>I&#x27;m</rdg></app>
+ sure it is Golconda - </l>
+                    <l>Beyond my power to deem - </l>
+                    <l>To have a smile for<app type="division"><lem><lb/></lem></app>
+ mine, each day - </l>
+                    <l>How better, than a Gem!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>At least, it solaces<app type="division"><lem><lb/></lem></app>
+ to know -</l>
+                    <l>That there exists - a<app type="division"><lem><lb/></lem></app>
+ Gold - </l>
+                    <l>Although I prove it<app type="division"><lem><lb/></lem></app>
+ just in time<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>It's distance - to behold!  </l>
+                    <l>It's far - far Treasure<app type="division"><lem><lb/></lem></app>
+ to surmise - </l>
+                    <l>And estimate the<app type="division"><lem><lb/></lem></app>
+ Pearl -</l>
+                    <l>That slipped my <app type="emendation"><lem>sim - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ple</lem><rdg>simple</rdg></app>
+ fingers through - </l>
+                    <l>While just a Girl<app type="division"><lem><lb/></lem></app>
+ at school!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The day came slow till five o&#x27;clock </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F572C">
+                <lg type="stanza">
+                    <l>The Day came slow - till Five o'clock -</l>
+                    <l>Then sprang before the Hills </l>
+                    <l>Like Hindered Rubies - or the Light </l>
+                    <l>A Sudden Musket - spills - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Purple could not keep the East -</l>
+                    <l>The Sunrise shook abroad </l>
+                    <l>Like Breadths of Topaz - packed a<app type="division"><lem><lb/></lem></app>
+ night - </l>
+                    <l>The Lady just unrolled - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Happy Winds - their Timbrels took - </l>
+                    <l>The Birds - in docile Rows</l>
+                    <l>Arranged themselves around their Prince </l>
+                    <l>The Wind - is Prince of Those - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Orchard sparkled like a Jew - </l>
+                    <l>How mighty 'twas - to be </l>
+                    <l>A Guest in this stupendous place -</l>
+                    <l>The Parlor - of the Day - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Unfulfilled to Observation -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J972">
+                <lg type="stanza">
+                    <l>Unfulfilled to Observation --</l>
+                    <l>Incomplete -- to Eye --</l>
+                    <l>But to Faith -- a Revolution</l>
+                    <l>In Locality --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unto Us -- the Suns extinguish --</l>
+                    <l>To our Opposite --</l>
+                    <l>New Horizons -- they <app type="revision"><lem>Replenish</lem><rdg>Replenish</rdg></app>
+embellish --</l>
+                    <l><app type="revision"><lem>Turning us -- their Night.</lem><rdg>Turning us -- their Night.</rdg></app>
+Fronting Us -- with Night.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

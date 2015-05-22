@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What soft, cherubic creatures</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-47">
+                <lg type="stanza">
+                    <l>What soft, cherubic creatures</l>
+                    <l>These gentlewomen are!</l>
+                    <l>One would as soon assault a plush</l>
+                    <l>Or violate a star.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Such dimity convictions,</l>
+                    <l>A horror so refined</l>
+                    <l>Of freckled human nature,</l>
+                    <l>Of Deity ashamed, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's such a common glory,</l>
+                    <l>A fisherman's degree!</l>
+                    <l>Redemption, brittle lady,</l>
+                    <l>Be so, ashamed of thee.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

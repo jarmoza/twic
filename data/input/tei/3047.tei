@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Empty my Heart, of Thee -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J587">
+                <lg type="stanza">
+                    <l>Empty my Heart, of Thee --</l>
+                    <l>It's <app type="revision"><lem>Giant --</lem><rdg>Giant --</rdg></app>
+single Artery --</l>
+                    <l>Begin, and leave Thee out --</l>
+                    <l>Simply Extinction's Date --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Much Billow hath the Sea --</l>
+                    <l>One Baltic -- They --</l>
+                    <l>Subtract Thyself, in play,</l>
+                    <l>And not enough of me</l>
+                    <l>Is left -- to put away --</l>
+                    <l>"Myself" meant Thee --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Erase the Root -- no Tree --</l>
+                    <l>Thee -- then -- no me --</l>
+                    <l>The Heavens stripped --</l>
+                    <l>Eternity's <app type="revision"><lem>wide</lem><rdg>wide</rdg></app>
+vast pocket, picked --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

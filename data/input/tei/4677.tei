@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A toad can die of light!</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-161">
+                <lg type="stanza">
+                    <l>A toad can die of light!</l>
+                    <l>Death is the common right</l>
+                    <l>Of toads and men, </l>
+                    <l>Of earl and midge</l>
+                    <l>The privilege.</l>
+                    <l>Why swagger then?</l>
+                    <l>The gnat's supremacy</l>
+                    <l>Is large as thine.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

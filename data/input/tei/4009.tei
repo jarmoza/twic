@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My Wars are laid away in Books -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1549">
+                <lg type="stanza">
+                    <l>My Wars are laid away in Books --</l>
+                    <l>I have one Battle more --</l>
+                    <l>A Foe whom I have never seen</l>
+                    <l>But oft has scanned me o'er --</l>
+                    <l>And hesitated me between</l>
+                    <l>And others at my side,</l>
+                    <l>But chose the best -- Neglecting me -- till</l>
+                    <l>All the rest, have died --</l>
+                    <l>How sweet if I am not forgot</l>
+                    <l>By Chums that passed away --</l>
+                    <l>Since Playmates at threescore and ten</l>
+                    <l>Are such a scarcity --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

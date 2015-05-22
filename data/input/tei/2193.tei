@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tried always and condemned by thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1589A">
+                <lg type="stanza">
+                    <l>Tried always<app type="division"><lem><lb/></lem></app>
+ and <app type="emendation"><lem>Condem &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ned</lem><rdg>Condemned</rdg></app>
+ by thee </l>
+                    <l>Permit me<app type="division"><lem><lb/></lem></app>
+ this reprieve </l>
+                    <l>That dying I<app type="division"><lem><lb/></lem></app>
+ may earn<app type="division"><lem><lb/></lem></app>
+ the<add type="alternate" extent="look">gaze</add>
+ look<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>For which<app type="division"><lem><lb/></lem></app>
+ I cease to<app type="division"><lem><lb/></lem></app>
+ live - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

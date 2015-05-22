@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature affects to be sedate
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1170">
+                <lg type="stanza">
+                    <l>Nature <app type="revision"><lem>was known</lem><rdg>was known</rdg></app>
+affects to be sedate</l>
+                    <l>Upon occasion, grand</l>
+                    <l>But let our observation <app type="revision"><lem>halt</lem><rdg>halt</rdg></app>
+shut</l>
+                    <l>Her <app type="revision"><lem>qualities</lem><rdg>qualities</rdg></app>
+practices extend</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Necromancy and the Trades</l>
+                    <l><app type="revision"><lem>astute</lem><rdg>astute</rdg></app>
+<app type="revision"><lem>obscure</lem><rdg>obscure</rdg></app>
+Remote to understand</l>
+                    <l>Behold <app type="revision"><lem>my</lem><rdg>my</rdg></app>
+<app type="revision"><lem>this</lem><rdg>this</rdg></app>
+our spacious Citizen</l>
+                    <l>Unto a Juggler turned --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

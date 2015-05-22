@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The soul&#x27;s superior instants </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F630B">
+                <lg type="stanza">
+                    <l>The Soul's Superior instants</l>
+                    <l>Occur to Her - Alone - </l>
+                    <l>When friend - and Earth's<app type="division"><lem><lb/></lem></app>
+ occasion </l>
+                    <l>Have infinite withdrawn - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or She - Herself - <app type="emendation"><lem>as - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ cended</lem><rdg>ascended</rdg></app>
+</l>
+                    <l>To too remote a Hight </l>
+                    <l>For lower Recognition </l>
+                    <l>Than Her Omnipotent - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>This mortal Abolition </l>
+                    <l>Is seldom - but as fair</l>
+                    <l>As Apparition - subject </l>
+                    <l>To Autocratic Air - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Eternity's disclosure </l>
+                    <l><add type="alternate" extent="">To favorites - a few -</add>
+To a Revering - Eye </l>
+                    <l>Of the Colossal substance</l>
+                    <l>Of Immortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE STORM</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-99">
+                <lg type="stanza">
+                    <l>There came a wind like a bugle;</l>
+                    <l>It quivered through the grass,</l>
+                    <l>And a green chill upon the heat</l>
+                    <l>So ominous did pass</l>
+                    <l>We barred the windows and the doors</l>
+                    <l>As from an emerald ghost;</l>
+                    <l>The doom's electric moccason</l>
+                    <l>That very instant passed.</l>
+                    <l>On a strange mob of panting trees,</l>
+                    <l>And fences fled away,</l>
+                    <l>And rivers where the houses ran</l>
+                    <l>The living looked that day.</l>
+                    <l>The bell within the steeple wild</l>
+                    <l>The flying tidings whirled.</l>
+                    <l>How much can come</l>
+                    <l>And much can go,</l>
+                    <l>And yet abide the world!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

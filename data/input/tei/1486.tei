@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His bill is clasped - his eye forsook </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1126A">
+                <lg type="stanza">
+                    <l>His Bill is clasped -<app type="division"><lem><lb/></lem></app>
+ his Eye<add type="alternate" extent="forsook">estranged</add>
+ forsook </l>
+                    <l>His Feathers wilted<app type="division"><lem><lb/></lem></app>
+ low - </l>
+                    <l>The Claws that<app type="division"><lem><lb/></lem></app>
+ clung, like lifeless<app type="division"><lem><lb/></lem></app>
+ Gloves </l>
+                    <l>Indifferent<add type="alternate" extent="hanging">gathered</add>
+ hanging<app type="division"><lem><lb/></lem></app>
+ now - </l>
+                    <l>The Joy that in<app type="division"><lem><lb/></lem></app>
+ his happy Throat</l>
+                    <l><add type="alternate" extent="Was waiting">Assembled</add>
+Was waiting to<app type="division"><lem><lb/></lem></app>
+ be poured </l>
+                    <l>Gored through and<app type="division"><lem><lb/></lem></app>
+ through with Death,<app type="division"><lem><lb/></lem></app>
+ to be </l>
+                    <l>Assassin of a Bird </l>
+                    <l>Resembles to my<app type="division"><lem><lb/></lem></app>
+ outraged mind </l>
+                    <l>The firing in Heaven,</l>
+                    <l>On Angels - squandering<app type="division"><lem><lb/></lem></app>
+ for you </l>
+                    <l>Their<add type="alternate" extent="Miracles of">unsuspecting &amp;#x2022; [unsus]picious</add>
+ Miracles of<app type="division"><lem><lb/></lem></app>
+ Tune - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

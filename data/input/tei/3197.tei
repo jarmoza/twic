@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Moon was but a Chin of Gold 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J737">
+                <lg type="stanza">
+                    <l>The Moon was but a Chin of Gold</l>
+                    <l>A Night or two ago --</l>
+                    <l>And now she turns Her perfect Face</l>
+                    <l>Upon the World below --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Forehead is of Amplest Blonde --</l>
+                    <l>Her Cheek -- a Beryl hewn --</l>
+                    <l>Her Eye unto the Summer Dew</l>
+                    <l>The likest I have known --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Lips of Amber never part --</l>
+                    <l>But what must be the smile</l>
+                    <l>Upon Her Friend she could <app type="revision"><lem>bestow --</lem><rdg>bestow --</rdg></app>
+confer</l>
+                    <l>Were such Her Silver Will --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And what a privilege to be</l>
+                    <l>But the remotest Star --</l>
+                    <l>For Certainty She take Her Way</l>
+                    <l>Beside Your <app type="revision"><lem>glimmering --</lem><rdg>glimmering --</rdg></app>
+<app type="revision"><lem>twinkling --</lem><rdg>twinkling --</rdg></app>
+Palace Door --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Bonnet is the Firmament --</l>
+                    <l><app type="revision"><lem>The Valleys -- are Her Shoe --</lem><rdg>The Valleys -- are Her Shoe --</rdg></app>
+The Universe -- Her Shoe --</l>
+                    <l>The Stars -- the Trinkets at Her Belt --</l>
+                    <l>Her Dimities -- of Blue --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

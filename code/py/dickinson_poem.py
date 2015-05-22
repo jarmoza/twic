@@ -185,8 +185,6 @@ class Poem:
 
     def __get_full_text(self):
 
-        #print 'GetFullText'
-
         stanzas = self.GetStanzas()
         full_text = ''
         for stanza in stanzas:
@@ -217,7 +215,6 @@ class Poem:
     @staticmethod
     def PercentageLineMatch(original_line, compared_line, prepared_line = False):
 
-        #print 'PercentageLineMatch'
         line_words = None
         compared_line_words = None
 
@@ -256,8 +253,6 @@ class Poem:
 
     @staticmethod
     def IsPoemSimilar(original_poem, compared_poem):
-
-        #print 'IsPoemSimilar'
 
         my_lines = original_poem.GetPreparedLines()
         compared_lines = compared_poem.GetPreparedLines()

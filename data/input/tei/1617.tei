@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The popular heart is a cannon first </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1220A">
+                <lg type="stanza">
+                    <l>The Popular<app type="division"><lem><lb/></lem></app>
+ Heart is a<app type="division"><lem><lb/></lem></app>
+ Cannon first -</l>
+                    <l>Subsequent a<app type="division"><lem><lb/></lem></app>
+ Drum - </l>
+                    <l>Bells for an<app type="division"><lem><lb/></lem></app>
+ Auxiliary </l>
+                    <l>And an Afterward<app type="division"><lem><lb/></lem></app>
+ of Rum - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not a Tomorrow<app type="division"><lem><lb/></lem></app>
+ to know it's name</l>
+                    <l>Nor a Past to<app type="division"><lem><lb/></lem></app>
+ stare - </l>
+                    <l>Ditches for<app type="division"><lem><lb/></lem></app>
+ Realms and a<app type="division"><lem><lb/></lem></app>
+ Trip to Jail </l>
+                    <l>For a Souvenir.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

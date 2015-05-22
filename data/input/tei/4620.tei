@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>AURORA</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-104">
+                <lg type="stanza">
+                    <l>Of bronze and blaze</l>
+                    <l>The north, to-night!</l>
+                    <l>So adequate its forms,</l>
+                    <l>So preconcerted with itself,</l>
+                    <l>So distant to alarms, </l>
+                    <l>An unconcern so sovereign</l>
+                    <l>To universe, or me,</l>
+                    <l>It paints my simple spirit</l>
+                    <l>With tints of majesty,</l>
+                    <l>Till I take vaster attitudes,</l>
+                    <l>And strut upon my stem,</l>
+                    <l>Disdaining men and oxygen,</l>
+                    <l>For arrogance of them.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My splendors are menagerie;</l>
+                    <l>But their competeless show</l>
+                    <l>Will entertain the centuries</l>
+                    <l>When I am, long ago,</l>
+                    <l>An island in dishonored grass,</l>
+                    <l>Whom none but daisies know.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

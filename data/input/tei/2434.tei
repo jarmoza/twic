@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The parasol is the umbrella&#x27;s daughter</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1765A">
+                <lg type="stanza">
+                    <l>The parasol is the umbrella's daughter,</l>
+                    <l>And associates with a fan</l>
+                    <l>While her father abuts the tempest</l>
+                    <l>And abridges the rain.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The former assists a siren</l>
+                    <l>In her serene display;</l>
+                    <l>But her father is borne and honored,</l>
+                    <l>And borrowed to this day.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

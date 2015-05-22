@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mine Enemy is growing old --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1509">
+                <lg type="stanza">
+                    <l>Mine Enemy is growing old --</l>
+                    <l>I have at last Revenge --</l>
+                    <l>The Palate of the Hate departs --</l>
+                    <l>If any would avenge</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Let him be quick -- the Viand flits --</l>
+                    <l>It is a faded Meat --</l>
+                    <l>Anger as soon as fed is dead --</l>
+                    <l>'Tis starving makes it fat --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The daisy follows soft the sun,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-109">
+                <lg type="stanza">
+                    <l>The daisy follows soft the sun,</l>
+                    <l>And when his golden walk is done,</l>
+                    <l> Sits shyly at his feet.</l>
+                    <l>He, waking, finds the flower near.</l>
+                    <l>"Wherefore, marauder, art thou here?"</l>
+                    <l> "Because, sir, love is sweet!"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We are the flower, Thou the sun!</l>
+                    <l>Forgive us, if as days decline,</l>
+                    <l> We nearer steal to Thee, </l>
+                    <l>Enamoured of the parting west,</l>
+                    <l>The peace, the flight, the amethyst,</l>
+                    <l> Night's possibility!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

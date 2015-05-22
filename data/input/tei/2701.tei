@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I like a look of Agony, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J241">
+                <lg type="stanza">
+                    <l>I like a look of Agony,</l>
+                    <l>Because I know it's true --</l>
+                    <l>Men do not sham Convulsion,</l>
+                    <l>Nor simulate, a Throe --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Eyes glaze once -- and that is Death --</l>
+                    <l>Impossible to feign</l>
+                    <l>The Beads upon the Forehead</l>
+                    <l>By homely Anguish strung.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hope is a strange invention </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1424A">
+                <lg type="stanza">
+                    <l>Hope is a strange<app type="division"><lem><lb/></lem></app>
+ invention - </l>
+                    <l>A Patent of the<app type="division"><lem><lb/></lem></app>
+ Heart - </l>
+                    <l>In unremitting<app type="division"><lem><lb/></lem></app>
+ action </l>
+                    <l>Yet never wearing<app type="division"><lem><lb/></lem></app>
+ out - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of this electric<app type="division"><lem><lb/></lem></app>
+ adjunct</l>
+                    <l>Not anything is<app type="division"><lem><lb/></lem></app>
+ known </l>
+                    <l>But it's unique<app type="division"><lem><lb/></lem></app>
+ momentum </l>
+                    <l>Embellish all we<app type="division"><lem><lb/></lem></app>
+ own - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

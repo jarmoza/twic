@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If he were living - dare I ask </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F719A">
+                <lg type="stanza">
+                    <l>If He were living - dare<app type="division"><lem><lb/></lem></app>
+ I ask -</l>
+                    <l>And how if He be dead - </l>
+                    <l>And so around the Words<app type="division"><lem><lb/></lem></app>
+ I went - </l>
+                    <l>Of meeting them - afraid - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I hinted Changes - Lapse<app type="division"><lem><lb/></lem></app>
+ of Time -</l>
+                    <l>The Surfaces of Years - </l>
+                    <l>I touched with Caution - lest<app type="division"><lem><lb/></lem></app>
+ they crack - </l>
+                    <l>And show me to my fears - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Reverted to adjoining Lives - </l>
+                    <l>Adroitly turning out</l>
+                    <l>Wherever I suspected Graves - </l>
+                    <l>'Twas prudenter - I thought - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And He - I pushed - with<app type="division"><lem><lb/></lem></app>
+ sudden force -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>In face of the Suspense - </l>
+                    <l>&quot;Was buried&quot; - &quot;Buried&quot;! &quot;He!&quot;</l>
+                    <l>My Life just holds the Trench - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

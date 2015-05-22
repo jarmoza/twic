@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The joy that has no stem nor core</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1762A">
+                <lg type="stanza">
+                    <l>The joy that has no stem nor core,</l>
+                    <l>Nor seed that we can sow,</l>
+                    <l>Is edible to longing,</l>
+                    <l>But ablative to show.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By fundamental palates</l>
+                    <l>Those products are preferred</l>
+                    <l>Impregnable to transit</l>
+                    <l>And patented by pod.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

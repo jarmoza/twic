@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Extol thee -- could I -- Then I will
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1643">
+                <lg type="stanza">
+                    <l>Extol thee -- could I -- Then I will</l>
+                    <l>by saying nothing new --</l>
+                    <l>But just the anti fair -- averring -- fairest -- truest truth</l>
+                    <l>that thou art heavenly</l>
+                    <l>tritest -- brightest truth --</l>
+                    <l>sweetest</l>
+                    <l>that tritest eulogy</l>
+                    <l>that thou art heavenly</l>
+                    <l>Perceiving thee is evidence</l>
+                    <l>That we are of the sky</l>
+                    <l>Partaking thee a guar t y      guaranty</l>
+                    <l>of immortality</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

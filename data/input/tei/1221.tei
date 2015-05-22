@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A door just opened on a street </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F914A">
+                <lg type="stanza">
+                    <l>A Door just opened<app type="division"><lem><lb/></lem></app>
+ on a street -</l>
+                    <l>I - lost - was passing by - </l>
+                    <l>An instant's Width of<app type="division"><lem><lb/></lem></app>
+ Warmth disclosed - </l>
+                    <l>And Wealth - and Company - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Door as<add type="alternate" extent="instant">sudden</add>
+ instant shut -<app type="division"><lem><lb/></lem></app>
+ And I -</l>
+                    <l>I - lost - was passing by - </l>
+                    <l>Lost doubly - but by<app type="division"><lem><lb/></lem></app>
+ contrast - most - </l>
+                    <l><add type="alternate" extent="Informing -">enlightening - &amp;#x2022; enabling -</add>
+Informing - Misery - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

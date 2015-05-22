@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The first Day that I was a Life
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J902">
+                <lg type="stanza">
+                    <l>The first Day that I was a Life</l>
+                    <l>I recollect it -- How still --</l>
+                    <l>The last Day that I was a Life</l>
+                    <l>I recollect it -- as well --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas stiller -- though the first</l>
+                    <l>Was still --</l>
+                    <l>'Twas empty -- but the first</l>
+                    <l>Was full --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This -- was my finallest Occasion --</l>
+                    <l>But then</l>
+                    <l>My tenderer Experiment</l>
+                    <l>Toward Men --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Which choose I"?</l>
+                    <l>That -- I cannot say --</l>
+                    <l>"Which choose They"?</l>
+                    <l>Question Memory!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

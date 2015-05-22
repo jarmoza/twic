@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The martyr poets did not tell </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F665A">
+                <lg type="stanza">
+                    <l>The Martyr Poets - did not<app type="division"><lem><lb/></lem></app>
+ tell -</l>
+                    <l>But wrought their Pang in<app type="division"><lem><lb/></lem></app>
+ syllable - </l>
+                    <l>That when their mortal name<app type="division"><lem><lb/></lem></app>
+ be numb - </l>
+                    <l>Their mortal fate - encourage<app type="division"><lem><lb/></lem></app>
+ Some - </l>
+                    <l>The Martyr Painters - never spoke -</l>
+                    <l>Bequeathing - rather - to their Work - </l>
+                    <l>That when their conscious<app type="division"><lem><lb/></lem></app>
+ fingers cease - </l>
+                    <l><add type="alternate" extent="Some">Men -</add>
+Some seek in Art - the<app type="division"><lem><lb/></lem></app>
+ Art of Peace - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

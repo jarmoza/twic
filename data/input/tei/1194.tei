@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The overtakelessness of those </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F894B">
+                <lg type="stanza">
+                    <l>The Overtakelessness<app type="division"><lem><lb/></lem></app>
+ of Those </l>
+                    <l>Who have <app type="emendation"><lem>accom - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ plished</lem><rdg>accomplished</rdg></app>
+ Death - </l>
+                    <l>Majestic is to me<app type="division"><lem><lb/></lem></app>
+ beyond </l>
+                    <l>The Majesties of<app type="division"><lem><lb/></lem></app>
+ Earth - </l>
+                    <l>The Soul her<app type="division"><lem><lb/></lem></app>
+ &quot;Not at Home&quot;</l>
+                    <l>Inscribes opon the<app type="division"><lem><lb/></lem></app>
+ Flesh, </l>
+                    <l>And takes a fine<app type="division"><lem><pb/></lem></app>
+ aerial gait </l>
+                    <l>Beyond the Writ<app type="division"><lem><lb/></lem></app>
+ of Touch.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

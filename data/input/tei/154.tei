@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>For each extatic instant </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F109A">
+                <lg type="stanza">
+                    <l>For each extatic instant</l>
+                    <l>We must an anguish pay </l>
+                    <l>In keen and quivering ratio </l>
+                    <l>To the extasy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For each beloved hour</l>
+                    <l>Sharp pittances of Years - </l>
+                    <l>Bitter contested farthings - </l>
+                    <l>And Coffers heaped with tears!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

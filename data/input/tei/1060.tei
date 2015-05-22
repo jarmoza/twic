@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The veins of other flowers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F798B">
+                <lg type="stanza">
+                    <l>The Veins of other<app type="division"><lem><lb/></lem></app>
+ Flowers</l>
+                    <l>The Scarlet Flowers<app type="division"><lem><lb/></lem></app>
+ are </l>
+                    <l>Till Nature leisure has<app type="division"><lem><lb/></lem></app>
+ for Terms </l>
+                    <l>As &quot;Branch&quot;, and &quot;Jugular&quot;.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We pass, and she abides.</l>
+                    <l>We conjugate Her<app type="division"><lem><lb/></lem></app>
+ Skill </l>
+                    <l>While She creates<app type="division"><lem><lb/></lem></app>
+ and federates </l>
+                    <l>Without a syllable - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If anybody&#x27;s friend be dead </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F354A">
+                <lg type="stanza">
+                    <l>If Anybody's friend be dead</l>
+                    <l>It's sharpest of the theme </l>
+                    <l>The thinking how they walked alive - </l>
+                    <l>At such and such a time - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their costume, of a Sunday,</l>
+                    <l>Some manner of the Hair - </l>
+                    <l>A prank nobody knew but<app type="division"><lem><lb/></lem></app>
+ them </l>
+                    <l>Lost, in the Sepulchre - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How warm, they were, on such<app type="division"><lem><lb/></lem></app>
+ a day, </l>
+                    <l>You almost feel the date -</l>
+                    <l>So short way off it seems - </l>
+                    <l>And now - they're Centuries<app type="division"><lem><lb/></lem></app>
+ from that - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How pleased they<add type="alternate" extent="were">looked</add>
+ were, at what<app type="division"><lem><lb/></lem></app>
+ you said!  </l>
+                    <l>You try to<add type="alternate" extent="touch">reach</add>
+ touch the smile<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And<add type="alternate" extent="dip">mix</add>
+ dip your fingers in the<app type="division"><lem><lb/></lem></app>
+ frost -</l>
+                    <l>When was it - Can you tell - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>You asked the Company to tea - </l>
+                    <l>Acquaintance - just a few - </l>
+                    <l>And chatted close with this<app type="division"><lem><lb/></lem></app>
+ Grand Thing </l>
+                    <l>That dont remember you -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Past Bows, and Invitations - </l>
+                    <l>Past Interview, and Vow - </l>
+                    <l>Past what Ourself can<add type="alternate" extent="estimate">understand</add>
+ estimate - </l>
+                    <l>That - makes the Quick of Wo!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

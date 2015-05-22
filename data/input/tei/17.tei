@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nobody knows this little rose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F11B">
+                <lg type="stanza">
+                    <l>Nobody knows this little Rose -</l>
+                    <l>It might a pilgrim be </l>
+                    <l>Did I not take it from the ways </l>
+                    <l>And lift it up to thee.  </l>
+                    <l>Only a Bee will miss it -</l>
+                    <l>Only a Butterfly, </l>
+                    <l>Hastening from far journey - </l>
+                    <l>On it's breast to lie - </l>
+                    <l>Only a Bird will wonder - </l>
+                    <l>Only a Breeze will sigh -</l>
+                    <l>Ah Little Rose - how easy </l>
+                    <l>For such as thee to die!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

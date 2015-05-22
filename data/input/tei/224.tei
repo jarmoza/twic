@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Will there really be a &quot;morning&quot;? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F148A">
+                <lg type="stanza">
+                    <l>Will there really be a &quot;morning&quot;?</l>
+                    <l>Is there such a thing as &quot;Day&quot;?  </l>
+                    <l>Could I see it from the mountains </l>
+                    <l>If I were as tall as they?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Has it feet like Water lilies?</l>
+                    <l>Has it feathers like a Bird?  </l>
+                    <l>Is it brought from famous countries </l>
+                    <l>Of which I have never heard?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh some Scholar! Oh some Sailor!  </l>
+                    <l>Oh some Wise Man from the skies!</l>
+                    <l>Please to tell a little Pilgrim </l>
+                    <l>Where the place called &quot;morning&quot; lies!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

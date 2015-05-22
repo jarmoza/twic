@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Butterfly upon the Sky, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1521">
+                <lg type="stanza">
+                    <l>The Butterfly upon the Sky,</l>
+                    <l>That does'nt know its Name</l>
+                    <l>And has'nt any tax to pay</l>
+                    <l>And has'nt any Home</l>
+                    <l>Is just as high as you and I,</l>
+                    <l>And higher, I believe,</l>
+                    <l>So soar away and never sigh</l>
+                    <l>And that's the way to grieve --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

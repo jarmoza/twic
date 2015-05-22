@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Unto like story trouble has enticed me </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F300A">
+                <lg type="stanza">
+                    <l>Unto like Story - Trouble<app type="division"><lem><lb/></lem></app>
+ has enticed me -</l>
+                    <l>How Kinsmen fell - </l>
+                    <l>Brothers and Sisters - who<app type="division"><lem><lb/></lem></app>
+ preferred the Glory - </l>
+                    <l>And their young will </l>
+                    <l>Bent to the Scaffold, or in<app type="division"><lem><lb/></lem></app>
+ Dungeons - chanted -</l>
+                    <l>Till God's<add type="alternate" extent="full time -">whole - will -</add>
+ full time - </l>
+                    <l>When they let go the ignominy -<app type="division"><lem><lb/></lem></app>
+ smiling - </l>
+                    <l>And<add type="alternate" extent="Shame">Scorn</add>
+ Shame went<add type="alternate" extent="still -">dumb.</add>
+ still - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unto guessed Crests, my moaning<app type="division"><lem><lb/></lem></app>
+ fancy,<add type="alternate" extent="leads">lures,</add>
+ leads me, </l>
+                    <l>Worn fair</l>
+                    <l>By Heads rejected - in the lower<app type="division"><lem><lb/></lem></app>
+ country - </l>
+                    <l>Of honors there - </l>
+                    <l><add type="alternate" extent="Such">Some -</add>
+Such spirit makes her perpetual<app type="division"><lem><lb/></lem></app>
+ mention, </l>
+                    <l><add type="alternate" extent="That">till</add>
+That I - grown bold - </l>
+                    <l>Step martial - at my Crucifixion<app type="division"><lem><pb/></lem></app>
+ -</l>
+                    <l>As Trumpets - rolled - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Feet, small as mine - have<app type="division"><lem><lb/></lem></app>
+ marched in Revolution </l>
+                    <l>Firm to the Drum - </l>
+                    <l>Hands - not so stout - hoisted<app type="division"><lem><lb/></lem></app>
+ them - in witness - </l>
+                    <l>When Speech went numb -</l>
+                    <l>Let me not shame their<app type="division"><lem><lb/></lem></app>
+ sublime deportments - </l>
+                    <l>Drilled bright - </l>
+                    <l>Beckoning - Etruscan invitation - </l>
+                    <l><add type="alternate" extent="Toward">to -</add>
+Toward Light - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I never saw a moor,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-92">
+                <lg type="stanza">
+                    <l>I never saw a moor,</l>
+                    <l>I never saw the sea;</l>
+                    <l>Yet know I how the heather looks,</l>
+                    <l>And what a wave must be.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I never spoke with God,</l>
+                    <l>Nor visited in heaven;</l>
+                    <l>Yet certain am I of the spot</l>
+                    <l>As if the chart were given.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

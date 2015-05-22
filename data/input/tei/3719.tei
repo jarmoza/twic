@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Wind that rose
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1259">
+                <lg type="stanza">
+                    <l>A Wind that rose</l>
+                    <l>Though not a Leaf</l>
+                    <l>In any Forest stirred</l>
+                    <l>But with itself did cold engage</l>
+                    <l>Beyond the Realm of Bird --</l>
+                    <l>A Wind that woke a lone Delight</l>
+                    <l>Like Separation's Swell</l>
+                    <l>Restored in Arctic Confidence</l>
+                    <l>To the Invisible --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

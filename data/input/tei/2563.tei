@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Where I have lost, I softer tread --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J104">
+                <lg type="stanza">
+                    <l>Where I have lost, I softer tread --</l>
+                    <l>I sow sweet flower from garden bed --</l>
+                    <l>I pause above that vanished head</l>
+                    <l>And mourn.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whom I have lost, I pious guard</l>
+                    <l>From accent harsh, or ruthless word --</l>
+                    <l>Feeling as if their pillow heard,</l>
+                    <l>Though stone!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When I have lost, you'll know by this --</l>
+                    <l>A Bonnet black -- A dusk surplice --</l>
+                    <l>A little tremor in my voice</l>
+                    <l>Like this!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Why, I have lost, the people know</l>
+                    <l>Who dressed in frocks of purest snow</l>
+                    <l>Went home a century ago</l>
+                    <l>Next Bliss!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

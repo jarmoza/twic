@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sun went down -- no Man looked on -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1079">
+                <lg type="stanza">
+                    <l>The Sun went down -- no Man looked on --</l>
+                    <l>The Earth and I, alone,</l>
+                    <l>Were present at the Majesty --</l>
+                    <l>He triumphed, and went on --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun went up -- no Man looked on --</l>
+                    <l>The Earth and I and One</l>
+                    <l>A nameless Bird -- a Stranger</l>
+                    <l>Were Witness for the Crown --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

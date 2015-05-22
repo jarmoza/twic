@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What is &quot;Paradise&quot; </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F241A">
+                <lg type="stanza">
+                    <l>What is - &quot;Paradise&quot; -</l>
+                    <l>Who live there - </l>
+                    <l>Are they &quot;Farmers&quot; - </l>
+                    <l>Do they &quot;hoe&quot; - </l>
+                    <l>Do they know that this is<app type="division"><lem><lb/></lem></app>
+ &quot;Amherst&quot; -</l>
+                    <l>And that I - am coming - too - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Do they wear &quot;new shoes&quot; - in<app type="division"><lem><lb/></lem></app>
+ &quot;Eden&quot; - </l>
+                    <l>Is it always pleasant - there - </l>
+                    <l>Wont they scold us - when<app type="division"><lem><lb/></lem></app>
+ we're hungry - </l>
+                    <l>Or tell God - how cross we are -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You are sure there's such a<app type="division"><lem><lb/></lem></app>
+ person </l>
+                    <l>As &quot;a Father&quot; - in the sky - </l>
+                    <l>So if I get lost - there - ever - </l>
+                    <l>Or do what the Nurse<app type="division"><lem><lb/></lem></app>
+ calls &quot;die&quot; - </l>
+                    <l>I shant walk the<app type="division"><lem><lb/></lem></app>
+ &quot;Jasper&quot; - barefoot -</l>
+                    <l>Ransomed folks - wont laugh<app type="division"><lem><lb/></lem></app>
+ at me - </l>
+                    <l>Maybe - &quot;Eden&quot; a'nt so lonesome </l>
+                    <l>As New England used<app type="division"><lem><lb/></lem></app>
+ to be!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

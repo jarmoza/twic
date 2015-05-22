@@ -159,6 +159,12 @@ class MalletScript:
             else:
                 current_filewordtopics.AddNextWord(line)
 
+            if line.startswith("0"):
+                ci = len(current_filewordtopics.word_info) - 1
+                print "{0} {1}".format(current_filewordtopics.word_info[ci].word, current_filewordtopics.word_info[ci].topic)
+
+
+
         return fwt_collection
 
     def GetTopicsFileData(self):

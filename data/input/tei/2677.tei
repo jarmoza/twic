@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Savior! I&#x27;ve no one else to tell --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J217">
+                <lg type="stanza">
+                    <l>Savior! I've no one else to tell --</l>
+                    <l>And so I trouble thee.</l>
+                    <l>I am the one forgot thee so --</l>
+                    <l>Dost thou remember me?</l>
+                    <l>Nor, for myself, I came so far --</l>
+                    <l>That were the little load --</l>
+                    <l>I brought thee the imperial Heart</l>
+                    <l>I had not strength to hold --</l>
+                    <l>The Heart I carried in my own --</l>
+                    <l>Till mine too heavy grew --</l>
+                    <l>Yet -- strangest -- heavier since it went --</l>
+                    <l>Is it too large for you?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

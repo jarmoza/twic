@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A wild blue sky abreast of winds </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1418A">
+                <lg type="stanza">
+                    <l>A wild Blue sky<app type="division"><lem><lb/></lem></app>
+ abreast of Winds </l>
+                    <l>That threatened it -<app type="division"><lem><lb/></lem></app>
+ did run </l>
+                    <l>And crouched<app type="division"><lem><lb/></lem></app>
+ behind his Yellow<app type="division"><lem><lb/></lem></app>
+ Door </l>
+                    <l>Was the defiant<app type="division"><lem><lb/></lem></app>
+ sun - </l>
+                    <l>Some conflict with<app type="division"><lem><lb/></lem></app>
+ those upper friends</l>
+                    <l>So genial in the<app type="division"><lem><lb/></lem></app>
+ main </l>
+                    <l>That we deplore<app type="division"><lem><lb/></lem></app>
+ peculiarly </l>
+                    <l><add type="alternate" extent="Their">this</add>
+Their arrogant<app type="division"><lem><lb/></lem></app>
+ Campaign - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

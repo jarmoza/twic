@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The luxury to apprehend </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F819C">
+                <lg type="stanza">
+                    <l>The Luxury to apprehend</l>
+                    <l>The Luxury 'twould be </l>
+                    <l>To look at Thee a<app type="division"><lem><lb/></lem></app>
+ single time </l>
+                    <l>An Epicure of Me </l>
+                </lg>
+                <lg type="stanza">
+                    <l>In whatsoever Presence<app type="division"><lem><lb/></lem></app>
+ makes</l>
+                    <l>Till for a further Food </l>
+                    <l>I scarcely recollect to<app type="division"><lem><lb/></lem></app>
+ starve </l>
+                    <l>So first am I supplied -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Luxury to meditate </l>
+                    <l>The Luxury it was</l>
+                    <l>To banquet on thy<app type="division"><lem><lb/></lem></app>
+ Countenance </l>
+                    <l>A Sumptuousness bestows </l>
+                </lg>
+                <lg type="stanza">
+                    <l>On plainer Days, whose<app type="division"><lem><lb/></lem></app>
+ Table far </l>
+                    <l>As Certainty can see </l>
+                    <l>Is laden with a single<app type="division"><lem><lb/></lem></app>
+ Crumb</l>
+                    <l>The Consciousness of Thee.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

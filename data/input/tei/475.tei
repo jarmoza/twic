@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There came a day at summer&#x27;s full </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F325C">
+                <lg type="stanza">
+                    <l>There came a Day - at<app type="division"><lem><lb/></lem></app>
+ Summer's full -</l>
+                    <l>Entirely for me - </l>
+                    <l>I thought that such - were<app type="division"><lem><lb/></lem></app>
+ for the Saints - </l>
+                    <l>When <add type="alternate" extent="Resurrections">Revelations</add>
+Resurrections - be -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun - as common - went<app type="division"><lem><lb/></lem></app>
+ abroad -</l>
+                    <l>The Flowers - accustomed - blew - </l>
+                    <l><add type="alternate" extent="While our two Souls that">As if no Soul the</add>
+ Solstice passed -</l>
+                    <l><add type="alternate" extent="Which">That</add>
+ maketh all things new.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The time was scarce profaned -<app type="division"><lem><lb/></lem></app>
+ by speech - </l>
+                    <l>The <add type="alternate" extent="falling"></add>
+ of a word</l>
+                    <l>Was needless - as at Sacrament - </l>
+                    <l>The Wardrobe - of Our Lord -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Each was to each - the sealed<app type="division"><lem><lb/></lem></app>
+ church - </l>
+                    <l>Permitted to commune - this time - </l>
+                    <l>Lest we too awkward - show -</l>
+                    <l>At &quot;Supper of the Lamb.&quot; </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The hours slid fast - as hours<app type="division"><lem><lb/></lem></app>
+ will - </l>
+                    <l>Clutched tight - by greedy hands - </l>
+                    <l>So - faces on two Decks - look back - </l>
+                    <l>Bound to opposing Lands -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so - when all the time had <add type="alternate" extent="leaked">failed</add>
+ -</l>
+                    <l>Without external sound - </l>
+                    <l>Each - bound the other's<app type="division"><lem><lb/></lem></app>
+ Crucifix - </l>
+                    <l>We gave no other bond - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sufficient troth - that we shall<app type="division"><lem><lb/></lem></app>
+ rise -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Deposed - at length - the Grave - </l>
+                    <l>To <em>that</em> New Marriage - </l>
+                    <l>Justified - through Calvaries<app type="division"><lem><lb/></lem></app>
+ of Love!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

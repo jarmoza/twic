@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It tossed and tossed </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F746A">
+                <lg type="stanza">
+                    <l>It tossed - and tossed -</l>
+                    <l>A little Brig I knew -<app type="division"><lem><lb/></lem></app>
+ o'ertook by Blast - </l>
+                    <l>It spun - and spun - </l>
+                    <l>And groped delirious, for Morn - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It slipped - and slipped -</l>
+                    <l>As One that drunken - stept - </l>
+                    <l>It's white foot tripped - </l>
+                    <l>Then dropped from sight - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ah, Brig - Good Night </l>
+                    <l>To crew and You -</l>
+                    <l>The Ocean's Heart too smooth -<app type="division"><lem><lb/></lem></app>
+ too Blue - </l>
+                    <l>To break for You - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

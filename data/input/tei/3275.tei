@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Luxury to apprehend
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J815">
+                <lg type="stanza">
+                    <l>The Luxury to apprehend</l>
+                    <l>The Luxury 'twould be</l>
+                    <l>To look at Thee a single time</l>
+                    <l>An Epicure of Me</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In whatsoever Presence makes</l>
+                    <l>Till for a further Food</l>
+                    <l>I scarcely recollect to starve</l>
+                    <l>So first am I supplied --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Luxury to meditate</l>
+                    <l>The Luxury it was</l>
+                    <l>To banquet on thy Countenance</l>
+                    <l>A Sumptuousness bestows</l>
+                </lg>
+                <lg type="stanza">
+                    <l>On plainer Days, whose Table far</l>
+                    <l>As Certainty can see</l>
+                    <l>Is laden with a single Crumb</l>
+                    <l>The Consciousness of Thee.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

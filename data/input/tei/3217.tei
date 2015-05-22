@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Mountains -- grow unnoticed -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J757">
+                <lg type="stanza">
+                    <l>The Mountains -- grow unnoticed --</l>
+                    <l>Their Purple figures rise</l>
+                    <l>Without attempt -- Exhaustion --</l>
+                    <l>Assistance -- or Applause --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In Their Eternal Faces</l>
+                    <l>The Sun -- with just delight</l>
+                    <l>Looks long -- and last -- and golden --</l>
+                    <l>For <app type="revision"><lem>sympathy --</lem><rdg>sympathy --</rdg></app>
+fellowship -- at night --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>6.just] broad</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

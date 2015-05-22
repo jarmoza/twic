@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot meet the Spring unmoved -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1051">
+                <lg type="stanza">
+                    <l>I cannot meet the Spring unmoved --</l>
+                    <l>I feel the old desire --</l>
+                    <l>A Hurry with a lingering, mixed,</l>
+                    <l>A Warrant to be fair --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Competition in my sense</l>
+                    <l>With something hid in Her --</l>
+                    <l>And as she vanishes, Remorse</l>
+                    <l>I saw no more of Her.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

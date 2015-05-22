@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Oh shadow on the grass! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1237B">
+                <lg type="stanza">
+                    <l>Oh Shadow<app type="division"><lem><lb/></lem></app>
+ on the Grass - </l>
+                    <l>Art thou a<app type="division"><lem><lb/></lem></app>
+ Step or not?  </l>
+                    <l>Go make thee<app type="division"><lem><lb/></lem></app>
+ fair my<app type="division"><lem><lb/></lem></app>
+ Candidate </l>
+                    <l>My nominated<app type="division"><lem><lb/></lem></app>
+ Heart - </l>
+                    <l>Oh Shadow<app type="division"><lem><lb/></lem></app>
+ on the Grass<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>While I<app type="division"><lem><lb/></lem></app>
+ delay to guess </l>
+                    <l>Some other<app type="division"><lem><lb/></lem></app>
+ thou wilt<app type="division"><lem><lb/></lem></app>
+ consecrate - </l>
+                    <l>Oh Unelected<app type="division"><lem><lb/></lem></app>
+ Face - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

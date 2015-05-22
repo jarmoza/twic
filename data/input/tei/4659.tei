@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The dying need but little, dear, </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-143">
+                <lg type="stanza">
+                    <l>The dying need but little, dear, </l>
+                    <l>A glass of water's all,</l>
+                    <l>A flower's unobtrusive face</l>
+                    <l>To punctuate the wall,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A fan, perhaps, a friend's regret,</l>
+                    <l>And certainly that one</l>
+                    <l>No color in the rainbow</l>
+                    <l>Perceives when you are gone.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

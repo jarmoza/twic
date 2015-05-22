@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There&#x27;s been a death in the opposite house </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F547A">
+                <lg type="stanza">
+                    <l>There's been a Death,<app type="division"><lem><lb/></lem></app>
+ in the Opposite House,</l>
+                    <l>As lately as Today - </l>
+                    <l>I know it, by the numb<app type="division"><lem><lb/></lem></app>
+ look </l>
+                    <l>Such Houses have - alway - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Neighbors rustle in and out -</l>
+                    <l>The Doctor - drives away - </l>
+                    <l>A Window opens like a Pod - </l>
+                    <l>Abrupt - mechanically - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Somebody flings a Mattrass<app type="division"><lem><lb/></lem></app>
+ out - </l>
+                    <l>The Children hurry by -</l>
+                    <l>They wonder if it died - on that - </l>
+                    <l>I used to - when a Boy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Minister - goes stiffly in - </l>
+                    <l>As if the House were His -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And He owned all the<app type="division"><lem><lb/></lem></app>
+ Mourners - now -</l>
+                    <l>And little Boys - besides.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then the Milliner -<app type="division"><lem><lb/></lem></app>
+ and the Man </l>
+                    <l>Of the Appalling Trade - </l>
+                    <l>To take the measure of<app type="division"><lem><lb/></lem></app>
+ the House - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>There'll be that Dark Parade -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Tassels - and of Coaches -<app type="division"><lem><lb/></lem></app>
+ soon - </l>
+                    <l>It's easy as a Sign - </l>
+                    <l>The Intuition of the News - </l>
+                    <l>In just a Country Town - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

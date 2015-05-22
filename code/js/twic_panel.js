@@ -16,14 +16,26 @@ var TWiC = (function(namespace){
         this.m_resizers = {};
         this.m_lastScrollLRPos = 0;
         this.m_lastScrollTBPos = 0;
+
         this.m_paused = false;
+        this.m_showEffects = false;
+
+        this.m_transitionWhenClicked = false;
+        this.m_transitionIn = null;
+        this.m_transitionOut = null;
     };
 
     namespace.Panel.method("Initialize", function(){});
     namespace.Panel.method("Start", function(){});
     namespace.Panel.method("Update", function(p_data){});
+
     namespace.Panel.method("Pause", function(p_state){ this.m_paused = p_state; });
     namespace.Panel.method("IsPaused", function(){ return this.m_paused; });
+    namespace.Panel.method("UseEffects", function(p_state){ this.m_showEffects = p_state; });
+    namespace.Panel.method("IsUsingEffects", function(){ return this.m_showEffects; });
+    namespace.Panel.method("UseTransitions", function(p_state){ this.m_transitionWhenClicked = p_state; });
+    namespace.Panel.method("IsUsingTransitions", function(){ return this.m_transitionWhenClicked; });
+
 
     namespace.Panel.method("GetViewBoxArray", function(element){
         return element.attr("viewBox").split(" ");
@@ -365,6 +377,7 @@ var TWiC = (function(namespace){
         this.m_idealText = this.m_level.m_corpusMap["ideal_text"];
         this.m_corpusCluster = null;
         this.m_nodes = [];
+        this.m_zoomBehavior = d3.behavior.zoom();
     };
     namespace.CorpusView.inherits(namespace.GraphView);
 
@@ -409,6 +422,8 @@ var TWiC = (function(namespace){
                                                       this.m_level.m_corpusMap["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["topics"],
                                                       this.m_idealText, this.m_level.m_corpusMap["name"]);
+
+
     });
 
     namespace.CorpusView.method("Start", function(p_levelDiv){
@@ -423,15 +438,23 @@ var TWiC = (function(namespace){
                              .attr("x", this.m_corpusCluster.m_coordinates.x)
                              .attr("y", this.m_corpusCluster.m_coordinates.y)
                              .style("position", "absolute");
+                             /*.on("dblclick", function(){
+
+                             }.bind(this));*/
+                             //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusView.prototype.s_scaleExtentLimits).on("zoom", this.m_transitionOut));;
 
         this.m_corpusCluster.AppendSVGandBindData(node, [this.m_name]);
+
+        /*var fadeOutTrans = new TWiC.FadeInOut(this.m_corpusCluster.m_clusterGroup, 2000, 0.1);
+        var zoomInTrans = new TWiC.ZoomIn(this.m_corpusCluster.m_clusterGroup, 2000, {x:this.m_size.width >> 1, y:this.m_size.height>>1}, 5);
+        this.m_exitTransition = new TWiC.LinkedTransition(zoomInTrans, fadeOutTrans);*/
+
         this.DarkenAllTopicCircles();
         this.m_corpusCluster.AddTextTag(this.m_corpusCluster.m_title, 14 + (0.2 * this.m_corpusCluster.m_radius),
                                         "#FAFAD2",
                                         {x:this.m_corpusCluster.m_coordinates.x - (1.75 * this.m_corpusCluster.m_radius),
                                          y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.25 * this.m_corpusCluster.m_radius)},
                                         1.0);
-
     });
 
     namespace.CorpusView.method("Update", function(data){
@@ -460,7 +483,6 @@ var TWiC = (function(namespace){
         this.m_svg.selectAll(".topic_circle")
                   .style("fill", function(d){ return d.locolor; })
                   .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
-
     });
 
     namespace.CorpusView.method("HighlightTopicCircle", function(data){
@@ -477,6 +499,9 @@ var TWiC = (function(namespace){
                   .style("opacity", 1.0)
                   .style("fill", function(d){ return d.locolor; });
     });
+
+    namespace.CorpusView.prototype.s_scaleExtentLimits = [1, 16];
+
 
     // Higher midlevel corpus bullseye cluster view (TWiC.CorpusCluster)
     namespace.CorpusClusterView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){

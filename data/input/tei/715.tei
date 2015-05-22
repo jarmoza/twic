@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a pain so utter </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F515A">
+                <lg type="stanza">
+                    <l>There is a pain - so utter -</l>
+                    <l>It swallows substance up - </l>
+                    <l>Then covers the Abyss with Trance - </l>
+                    <l>So Memory can step </l>
+                    <l>Around - across - opon it -</l>
+                    <l>As One within a Swoon - </l>
+                    <l>Goes<add type="alternate" extent="safely -">steady -</add>
+ safely - where an open eye - </l>
+                    <l>Would<add type="alternate" extent="drop Him -">spill Him -</add>
+ drop Him - Bone by Bone - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

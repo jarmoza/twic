@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Judgment is justest</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1707A">
+                <lg type="stanza">
+                    <l>Judgment is justest</l>
+                    <l>When the Judged</l>
+                    <l>His action laid away</l>
+                    <l>Divested is of every Disk</l>
+                    <l>But his sincerity</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Honor is then the safest hue</l>
+                    <l>In a posthumous Sun</l>
+                    <l>Not any color will endure</l>
+                    <l>That scrutiny can burn.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

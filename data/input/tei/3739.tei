@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Way to know the Bobolink 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1279">
+                <lg type="stanza">
+                    <l>The Way to know the Bobolink</l>
+                    <l>From every other Bird</l>
+                    <l>Precisely as the Joy of him --</l>
+                    <l>Obliged to be inferred.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of impudent Habiliment</l>
+                    <l>Attired to defy,</l>
+                    <l>Impertinence subordinate</l>
+                    <l>At times to Majesty.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Sentiments seditious</l>
+                    <l>Amenable to Law --</l>
+                    <l>As Heresies of Transport</l>
+                    <l>Or Puck's Apostacy.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Extrinsic to Attention</l>
+                    <l>Too intimate with Joy --</l>
+                    <l>He compliments existence</l>
+                    <l>Until allured away</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By Seasons or his Children --</l>
+                    <l>Adult and urgent grown --</l>
+                    <l>Or unforeseen aggrandizement</l>
+                    <l>Or, <app type="revision"><lem>possibly</lem><rdg>possibly</rdg></app>
+happily, Renown --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By Contrast certifying</l>
+                    <l>The Bird of Birds is gone --</l>
+                    <l>How nullified the Meadow --</l>
+                    <l>Her Sorcerer withdrawn!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

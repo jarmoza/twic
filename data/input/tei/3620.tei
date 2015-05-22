@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He is alive, this morning -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1160">
+                <lg type="stanza">
+                    <l>He is alive, this morning --</l>
+                    <l>He is alive -- and awake --</l>
+                    <l>Birds are resuming for Him --</l>
+                    <l>Blossoms -- dress for His Sake.</l>
+                    <l>Bees -- to their Loaves of Honey</l>
+                    <l>Add an Amber Crumb</l>
+                    <l>Him -- to regale -- Me -- Only --</l>
+                    <l>Motion, and am dumb.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

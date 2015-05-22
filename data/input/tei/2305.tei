@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Oh future! thou secreted peace </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1652A">
+                <lg type="stanza">
+                    <l>Oh Future! thou secreted peace </l>
+                    <l>Or subterranean Wo - </l>
+                    <l>Is there no wandering route of grace </l>
+                    <l>That leads away from thee - </l>
+                    <l>No circuit sage of all the<add type="alternate" extent="course">lines</add>
+ course</l>
+                    <l>Descried by cunning men </l>
+                    <l>To balk thee of<add type="alternate" extent="thy sacred Prey">the innocence</add>
+<add type="alternate" extent="thy">The</add>
+ thy sacred Prey - </l>
+                    <l>Advancing to thy Den - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

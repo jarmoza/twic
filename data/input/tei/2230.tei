@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How slow the wind - how slow the sea </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1607A">
+                <lg type="stanza">
+                    <l>How slow the <app type="division"><lem><lb/></lem></app>
+Wind - how slow the Sea - </l>
+                    <l>how <app type="division"><lem><lb/></lem></app>
+late their Feathers<app type="division"><lem><lb/></lem></app>
+ be!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

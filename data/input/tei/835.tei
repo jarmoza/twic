@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Except the smaller size </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F606C">
+                <lg type="stanza">
+                    <l>Except the smaller<app type="division"><lem><lb/></lem></app>
+ size </l>
+                    <l>No lives are round - </l>
+                    <l>These - hurry to a<app type="division"><lem><lb/></lem></app>
+ sphere </l>
+                    <l>And show and end - </l>
+                    <l>The larger - slower<app type="division"><lem><lb/></lem></app>
+ grow</l>
+                    <l>And later hang - </l>
+                    <l>The Summers of<app type="division"><lem><lb/></lem></app>
+ Hesperides </l>
+                    <l>Are long.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

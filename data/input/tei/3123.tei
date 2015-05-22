@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Again -- his voice is at the door -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J663">
+                <lg type="stanza">
+                    <l>Again -- his voice is at the door --</l>
+                    <l>I feel the old Degree --</l>
+                    <l>I hear him ask the servant</l>
+                    <l>For such an one -- as me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I take a flower -- as I go --</l>
+                    <l>My face to justify --</l>
+                    <l>He never saw me -- in this life --</l>
+                    <l>I might surprise his eye!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I cross the Hall with mingled steps --</l>
+                    <l>I -- silent -- pass the door --</l>
+                    <l>I look on all this world contains --</l>
+                    <l>Just his face -- nothing more!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We talk in careless -- and in toss --</l>
+                    <l>A kind of plummet strain --</l>
+                    <l>Each -- sounding -- shily --</l>
+                    <l>Just -- how -- deep --</l>
+                    <l>The other's <app type="revision"><lem>foot</lem><rdg>foot</rdg></app>
+one -- had been --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We walk -- I leave my Dog -- <app type="revision"><lem>behind</lem><rdg>behind</rdg></app>
+at home --</l>
+                    <l>A tender -- thoughtful Moon</l>
+                    <l>Goes with us -- just a little way --</l>
+                    <l>And -- then -- we are alone --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A lone -- if Angels are "alone" --</l>
+                    <l>First time they try the sky!</l>
+                    <l>Alone -- if those "vailed faces" -- be --</l>
+                    <l><app type="revision"><lem>That murmur so -- chant so -- far --</lem><rdg>That murmur so -- chant so -- far --</rdg></app>
+We cannot count -- on High!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'd give -- to live that hour -- again --</l>
+                    <l>The purple -- in my Vein --</l>
+                    <l>But He <app type="revision"><lem>should</lem><rdg>should</rdg></app>
+must count the drops -- himself --</l>
+                    <l>My price for every stain!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>8.surprise] not please</l>
+                    <l>10.silent] speechless</l>
+                    <l>13.careless] venture</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

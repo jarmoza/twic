@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Let me not mar that perfect Dream
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1335">
+                <lg type="stanza">
+                    <l>Let me not mar that perfect Dream</l>
+                    <l>By an Auroral stain</l>
+                    <l>But so adjust my daily Night</l>
+                    <l>That it will come again.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not when we know, the Power accosts --</l>
+                    <l>The Garment of Surprise</l>
+                    <l>Was all our timid Mother wore</l>
+                    <l>At Home -- in Paradise.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

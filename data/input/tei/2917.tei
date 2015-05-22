@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet -- safe -- Houses -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J457">
+                <lg type="stanza">
+                    <l>Sweet -- safe -- Houses --</l>
+                    <l>Glad -- gay -- Houses --</l>
+                    <l>Sealed so stately tight --</l>
+                    <l>Lids of Steel -- on Lids of Marble --</l>
+                    <l>Locking Bare feet out --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Brooks of Plush -- in Banks of Satin</l>
+                    <l>Not so softly fall</l>
+                    <l>As the laughter -- and the whisper --</l>
+                    <l>From their People Pearl --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Bald Death -- affront their Parlors --</l>
+                    <l>No Bold Sickness come</l>
+                    <l>To deface their Stately Treasures --</l>
+                    <l>Anguish -- and the Tomb --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Hum by -- in Muffled Coaches --</l>
+                    <l>Lest they -- wonder Why --</l>
+                    <l>Any -- for the Press of Smiling --</l>
+                    <l>Interrupt -- to die --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

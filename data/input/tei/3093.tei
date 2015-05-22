@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When Bells stop ringing -- Church -- begins -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J633">
+                <lg type="stanza">
+                    <l>When Bells stop ringing -- Church -- begins --</l>
+                    <l>The <app type="revision"><lem>Transitive</lem><rdg>Transitive</rdg></app>
+Positive -- of Bells --</l>
+                    <l>When Cogs -- stop -- that's Circumference --</l>
+                    <l>The Ultimate -- of Wheels.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

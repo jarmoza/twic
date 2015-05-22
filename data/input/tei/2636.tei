@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;m the little &quot;Heart&#x27;s Ease&quot;! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J176">
+                <lg type="stanza">
+                    <l>I'm the little "Heart's Ease"!</l>
+                    <l>I dont care for pouting skies!</l>
+                    <l>If the Butterfly delay</l>
+                    <l>Can I, therefore, stay away?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If the Coward Bumble Bee</l>
+                    <l>In his chimney corner stay,</l>
+                    <l>I, must resoluter be!</l>
+                    <l>Who'll apologize for me?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Dear, Old fashioned, little flower!</l>
+                    <l>Eden is old fashioned, too!</l>
+                    <l>Birds are antiquated fellows!</l>
+                    <l>Heaven does not change her blue.</l>
+                    <l>Nor will I, the little Heart's Ease --</l>
+                    <l>Ever be induced to do!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

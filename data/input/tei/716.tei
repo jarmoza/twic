@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It troubled me as once I was </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F516A">
+                <lg type="stanza">
+                    <l>It troubled me as once I was -</l>
+                    <l>For I was once a Child - </l>
+                    <l>Concluding how an atom - fell - </l>
+                    <l>And yet the Heavens - held - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heavens<add type="alternate" extent="weighed the most - by far -">were the weightiest - far -</add>
+ weighed the most -<app type="division"><lem><lb/></lem></app>
+ by far -</l>
+                    <l>Yet Blue - and<add type="alternate" extent="solid">easy</add>
+ solid - stood - </l>
+                    <l>Without a Bolt - that I could<app type="division"><lem><lb/></lem></app>
+ prove - </l>
+                    <l><add type="alternate" extent="Would">did - &amp;#x2022; might</add>
+Would Giants - understand?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life set me larger - problems - </l>
+                    <l>Some I shall <app type="emendation"><lem>save</lem><rdg>keep</rdg></app>
+ - to <add type="reading">solve</add>
+<del type="canceled" extent="prove">prove</del>
+</l>
+                    <l><add type="alternate" extent="Till">where</add>
+Till Algebra is easier - </l>
+                    <l>Or simpler proved - above - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then - too - be comprehended - </l>
+                    <l>What sorer - puzzled me - </l>
+                    <l>Why Heaven did not break away -</l>
+                    <l>And tumble - Blue - on me - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

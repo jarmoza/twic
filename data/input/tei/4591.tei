@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>NUMEN LUMEN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-75">
+                <lg type="stanza">
+                    <l>I live with him, I see his face;</l>
+                    <l>I go no more away</l>
+                    <l>For visitor, or sundown;</l>
+                    <l>Death's single privacy,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The only one forestalling mine,</l>
+                    <l>And that by right that he</l>
+                    <l>Presents a claim invisible,</l>
+                    <l>No wedlock granted me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I live with him, I hear his voice,</l>
+                    <l>I stand alive to-day</l>
+                    <l>To witness to the certainty</l>
+                    <l>Of immortality</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Taught me by Time,  the lower way,</l>
+                    <l>Conviction every day, </l>
+                    <l>That life like this is endless,</l>
+                    <l>Be judgment what it may.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

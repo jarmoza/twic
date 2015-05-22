@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A MAN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-31">
+                <lg type="stanza">
+                    <l>Fate slew him, but he did not drop;</l>
+                    <l>She felled  he did not fall </l>
+                    <l>Impaled him on her fiercest stakes </l>
+                    <l>He neutralized them all.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She stung him, sapped his firm advance,</l>
+                    <l>But, when her worst was done,</l>
+                    <l>And he, unmoved, regarded her,</l>
+                    <l>Acknowledged him a man.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

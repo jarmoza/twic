@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The things we thought that we should do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1279B">
+                <lg type="stanza">
+                    <l>The Things<app type="division"><lem><lb/></lem></app>
+ we thought<app type="division"><lem><lb/></lem></app>
+ that we<app type="division"><lem><lb/></lem></app>
+ should do - </l>
+                    <l>We other<app type="division"><lem><lb/></lem></app>
+ Things have<app type="division"><lem><lb/></lem></app>
+ done </l>
+                    <l>But those<app type="division"><lem><lb/></lem></app>
+ peculiar<app type="division"><lem><lb/></lem></app>
+ Industries </l>
+                    <l>Have never<app type="division"><lem><lb/></lem></app>
+ been begun -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Lands<app type="division"><lem><lb/></lem></app>
+ we thought<app type="division"><lem><lb/></lem></app>
+ that we<app type="division"><lem><lb/></lem></app>
+ should seek</l>
+                    <l>When large<app type="division"><lem><lb/></lem></app>
+ enough to<app type="division"><lem><lb/></lem></app>
+ run </l>
+                    <l>By Speculation<app type="division"><lem><lb/></lem></app>
+ ceded </l>
+                    <l>To Speculation's<app type="division"><lem><lb/></lem></app>
+ Son - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heaven<app type="division"><lem><lb/></lem></app>
+ in which we<app type="division"><lem><lb/></lem></app>
+ hoped to pause<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>When Chivalry<app type="division"><lem><lb/></lem></app>
+ was done</l>
+                    <l>Impassable to<app type="division"><lem><lb/></lem></app>
+ Logic </l>
+                    <l>But possibly<app type="division"><lem><lb/></lem></app>
+ the one - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

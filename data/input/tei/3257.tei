@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>By my Window have I for Scenery 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J797">
+                <lg type="stanza">
+                    <l>By my Window have I for Scenery</l>
+                    <l>Just a Sea -- with a Stem --</l>
+                    <l><app type="revision"><lem>Grant</lem><rdg>Grant</rdg></app>
+If the Bird and the Farmer -- deem it a "Pine" --</l>
+                    <l>The Opinion will do -- for them --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It has no Port, nor a "Line" -- but the Jays --</l>
+                    <l>That split their route to the Sky --</l>
+                    <l>Or a Squirrel, whose giddy Peninsula</l>
+                    <l>May be <app type="revision"><lem>Better attained --</lem><rdg>Better attained --</rdg></app>
+easier reached -- this way --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Inlands -- the Earth is the under side --</l>
+                    <l>And the upper side -- is the Sun --</l>
+                    <l>And it's Commerce -- if Commerce it have --</l>
+                    <l>Of Spice -- I infer from the Odors borne --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of it's Voice -- to affirm -- when the Wind is within --</l>
+                    <l>Can the Dumb -- <app type="revision"><lem>divulge</lem><rdg>divulge</rdg></app>
+define the Divine?</l>
+                    <l>The Definition of Melody -- is --</l>
+                    <l>That Definition is none --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It -- suggests to our Faith --</l>
+                    <l>They -- suggest to our Sight --</l>
+                    <l>When the latter -- is put away</l>
+                    <l>I shall meet with Conviction I somewhere met</l>
+                    <l>That Immortality --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was the Pine at my Window a "Fellow</l>
+                    <l>Of the Royal" Infinity?</l>
+                    <l>Apprehensions -- are God's introductions --</l>
+                    <l><app type="revision"><lem>Extended inscrutably --</lem><rdg>Extended inscrutably --</rdg></app>
+To be hallowed -- accordingly --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>6](That] Ply between it, and the Sky</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

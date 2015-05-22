@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A counterfeit - a plated person </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1514A">
+                <lg type="stanza">
+                    <l>A Counterfeit -<app type="division"><lem><lb/></lem></app>
+ a Plated Person - </l>
+                    <l>I would not be - </l>
+                    <l>Whatever Strata<app type="division"><lem><lb/></lem></app>
+ of Iniquity </l>
+                    <l>My Nature underlie - </l>
+                    <l>Truth is good<app type="division"><lem><lb/></lem></app>
+ Health - and<app type="division"><lem><lb/></lem></app>
+ Safety, and the<app type="division"><lem><lb/></lem></app>
+ Sky -</l>
+                    <l>How meagre, what<app type="division"><lem><lb/></lem></app>
+ an Exile - is a Lie, </l>
+                    <l>And Vocal - when<app type="division"><lem><lb/></lem></app>
+ we die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

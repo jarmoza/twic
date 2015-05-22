@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through the strait pass of suffering -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J792">
+                <lg type="stanza">
+                    <l>Through the strait pass of suffering --</l>
+                    <l>The Martyrs -- even -- trod.</l>
+                    <l>Their feet -- upon Temptation --</l>
+                    <l>Their faces -- upon God --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A stately -- shriven -- Company --</l>
+                    <l>Convulsion -- playing round --</l>
+                    <l>Harmless -- as streaks of Meteor --</l>
+                    <l>Upon a Planet's Bond --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their faith -- the everlasting troth --</l>
+                    <l>Their Expectation -- fair --</l>
+                    <l>The Needle -- to the North Degree --</l>
+                    <l>Wades -- so thro' polar Air!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

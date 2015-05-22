@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SECRETS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-89">
+                <lg type="stanza">
+                    <l>The skies can't keep their secret!</l>
+                    <l>They tell it to the hills </l>
+                    <l>The hills just tell the orchards </l>
+                    <l>And they the daffodils!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A bird, by chance, that goes that way</l>
+                    <l>Soft overheard the whole.</l>
+                    <l>If I should bribe the little bird,</l>
+                    <l>Who knows but she would tell?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I think I won't, however,</l>
+                    <l>It's finer not to know;</l>
+                    <l>If summer were an axiom,</l>
+                    <l>What sorcery had snow?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So keep your secret, Father!</l>
+                    <l>I would not, if I could,</l>
+                    <l>Know what the sapphire fellows do,</l>
+                    <l>In your new-fashioned world!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

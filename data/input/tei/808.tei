@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The heart asks pleasure first </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F588A">
+                <lg type="stanza">
+                    <l>The Heart asks Pleasure -<app type="division"><lem><lb/></lem></app>
+ first -</l>
+                    <l>And then - excuse from Pain - </l>
+                    <l>And then - those little<app type="division"><lem><lb/></lem></app>
+ Anodynes </l>
+                    <l>That deaden suffering - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then - to go to sleep -</l>
+                    <l>And then - if it should<app type="division"><lem><lb/></lem></app>
+ be </l>
+                    <l>The will of it's Inquisitor </l>
+                    <l>The<add type="alternate" extent="privilege">liberty &amp;#x2022; luxury -</add>
+ privilege to die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

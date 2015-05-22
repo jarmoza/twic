@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>AT LENGTH</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-152">
+                <lg type="stanza">
+                    <l>Her final summer was it,</l>
+                    <l>And yet we guessed it not;</l>
+                    <l>If tenderer industriousness</l>
+                    <l>Pervaded her, we thought</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A further force of life</l>
+                    <l>Developed from within, </l>
+                    <l>When Death lit all the shortness up,</l>
+                    <l>And made the hurry plain.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We wondered at our blindness, </l>
+                    <l>When nothing was to see</l>
+                    <l>But her Carrara guide-post, </l>
+                    <l>At our stupidity,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When, duller than our dulness,</l>
+                    <l>The busy darling lay,</l>
+                    <l>So busy was she, finishing,</l>
+                    <l>So leisurely were we!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

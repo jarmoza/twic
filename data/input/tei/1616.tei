@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who goes to dine must take his feast </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1219B">
+                <lg type="stanza">
+                    <l>Who goes to<app type="division"><lem><lb/></lem></app>
+ dine must take<app type="division"><lem><lb/></lem></app>
+ his Feast</l>
+                    <l>Or find the<app type="division"><lem><lb/></lem></app>
+ Banquet mean - </l>
+                    <l>The Table is<app type="division"><lem><lb/></lem></app>
+ not laid without </l>
+                    <l>Till it is laid<app type="division"><lem><lb/></lem></app>
+ within.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Pattern is<app type="division"><lem><lb/></lem></app>
+ the Mind bestowed</l>
+                    <l>That imitating<app type="division"><lem><lb/></lem></app>
+ her </l>
+                    <l>Our most ignoble<app type="division"><lem><lb/></lem></app>
+ services </l>
+                    <l>Exhibit worthier.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

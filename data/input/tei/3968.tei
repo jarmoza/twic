@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>You cannot make Remembrance grow 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1508">
+                <lg type="stanza">
+                    <l>You cannot make Remembrance grow</l>
+                    <l>When it has lost it's Root --</l>
+                    <l>The tightening the Soil around</l>
+                    <l>And setting it upright</l>
+                    <l>Deceives perhaps the Universe</l>
+                    <l>But not retrieves the Plant --</l>
+                    <l>Real Memory, like Cedar Feet</l>
+                    <l>Is shod with Adamant --</l>
+                    <l>Nor can you cut Remembrance down</l>
+                    <l>When it shall once have grown --</l>
+                    <l>It's Iron Buds will sprout anew</l>
+                    <l>However overthrown --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

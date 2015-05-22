@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sky is low -- the Clouds are mean. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1075">
+                <lg type="stanza">
+                    <l>The Sky is low -- the Clouds are mean.</l>
+                    <l>A Travelling Flake of Snow</l>
+                    <l>Across a Barn or through a Rut</l>
+                    <l>Debates if it will go --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Narrow Wind complains all Day</l>
+                    <l><app type="revision"><lem>How Parties treated him</lem><rdg>How Parties treated him</rdg></app>
+How some one treated him</l>
+                    <l>Nature, like Us is sometimes caught</l>
+                    <l>Without her Diadem.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Leaves like Women, interchange 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J987">
+                <lg type="stanza">
+                    <l>The Leaves like Women, interchange</l>
+                    <l>Sagacious Confidence --</l>
+                    <l>Somewhat of nods and somewhat</l>
+                    <l>Portentous inference.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Parties in both cases</l>
+                    <l>Enjoining secrecy --</l>
+                    <l>Inviolable compact</l>
+                    <l>To notoriety.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

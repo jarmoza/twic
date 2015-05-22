@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To lose thee -- sweeter than to gain 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1754">
+                <lg type="stanza">
+                    <l>To lose thee -- sweeter than to gain</l>
+                    <l>All other <app type="revision"><lem>things</lem><rdg>things</rdg></app>
+hearts I knew.</l>
+                    <l>'Tis true the drought is destitute,</l>
+                    <l>But then, I had the dew!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Caspian has its realms of sand,</l>
+                    <l>Its other realm of sea.</l>
+                    <l>Without the sterile perquisite,</l>
+                    <l>No Caspian could be.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

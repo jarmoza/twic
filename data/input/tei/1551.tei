@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Contained in this short life </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1175A">
+                <lg type="stanza">
+                    <l>Contained in this short Life </l>
+                    <l><add type="alternate" extent="">Were exquisite extents</add>
+<add type="alternate" extent="Were">Are</add>
+Were<add type="alternate" extent="wonderful">magical &amp;#x2022; Terrible &amp;#x2022; miraculous &amp;#x2022; tenderest -</add>
+ wonderful extents - </l>
+                    <l>Discernible to not a friend </l>
+                    <l>Except Omnipotence </l>
+                    <l>A friend too straight to stoop</l>
+                    <l>Too<add type="alternate" extent="distant">subtle</add>
+ distant to be seen </l>
+                    <l>Come unto me<add type="alternate" extent="enacted">accomplished</add>
+ enacted how </l>
+                    <l>With<add type="alternate" extent="Firmaments">Centuries</add>
+ Firmaments between - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The soul came home at night<add type="alternate" extent="from trips">to sleep</add>
+ from<add type="alternate" extent="trips">towns &amp;#x2022; scenes</add>
+ trips </l>
+                    <l>That would to sense - have dazzled</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

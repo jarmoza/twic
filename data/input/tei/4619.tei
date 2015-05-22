@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SUNSET</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-103">
+                <lg type="stanza">
+                    <l>A sloop of amber slips away</l>
+                    <l>Upon an ether sea,</l>
+                    <l>And wrecks in peace a purple tar,</l>
+                    <l>The son of ecstasy.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

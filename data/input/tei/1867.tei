@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>After all birds have been investigated </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1383A">
+                <lg type="stanza">
+                    <l>After all<app type="division"><lem><lb/></lem></app>
+ Birds have<app type="division"><lem><lb/></lem></app>
+ been investigated</l>
+                    <l>And laid aside </l>
+                    <l>Nature imparts<app type="division"><lem><lb/></lem></app>
+ the little<app type="division"><lem><lb/></lem></app>
+ Blue Bird - </l>
+                    <l>Assured </l>
+                    <l>Her conscientious<app type="division"><lem><lb/></lem></app>
+ voice</l>
+                    <l>Will soar<app type="division"><lem><lb/></lem></app>
+ unmoved </l>
+                    <l>Above ostensible<app type="division"><lem><lb/></lem></app>
+ vicissitude - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>First at the<app type="division"><lem><lb/></lem></app>
+ March </l>
+                    <l>Competing with<app type="division"><lem><lb/></lem></app>
+ the Wind -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Her zealous<app type="division"><lem><lb/></lem></app>
+ Note</l>
+                    <l>Delights it to<app type="division"><lem><lb/></lem></app>
+ ascend - </l>
+                    <l>Last at the<app type="division"><lem><lb/></lem></app>
+ Scene </l>
+                    <l>When Summer<app type="division"><lem><lb/></lem></app>
+ swerves away - </l>
+                    <l>Fortitude - <app type="division"><lem><lb/></lem></app>
+flanked with<app type="division"><lem><lb/></lem></app>
+ Melody.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

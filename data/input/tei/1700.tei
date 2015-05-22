@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Was not&quot; was all the statement </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1277A">
+                <lg type="stanza">
+                    <l>&quot;Was not&quot; - was<app type="division"><lem><lb/></lem></app>
+ all the statement - </l>
+                    <l>The unpretension<app type="division"><lem><lb/></lem></app>
+ stuns - </l>
+                    <l>Perhaps - the <app type="emendation"><lem>Com - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ prehension</lem><rdg>Comprehension</rdg></app>
+ - </l>
+                    <l>They knew no<app type="division"><lem><lb/></lem></app>
+ Lexicons - </l>
+                    <l>But lest our<app type="division"><lem><lb/></lem></app>
+ speculation</l>
+                    <l>In inanition die </l>
+                    <l>&quot;Because God took<app type="division"><lem><lb/></lem></app>
+ him -&quot; tell us - </l>
+                    <l>That was Philology - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

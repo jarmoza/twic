@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dropped into the ether acre </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F286C">
+                <lg type="stanza">
+                    <l>Dropped into the Ether<app type="division"><lem><lb/></lem></app>
+ Acre -</l>
+                    <l>Wearing the Sod Gown - </l>
+                    <l>Bonnet of Everlasting<app type="division"><lem><lb/></lem></app>
+ Laces - </l>
+                    <l>Brooch - frozen on - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Horses of Blonde - and Coach<app type="division"><lem><lb/></lem></app>
+ of Silver -</l>
+                    <l>Baggage <del type="canceled" extent=""></del>
+ strapped Pearl -</l>
+                    <l>Journey of Down - and Whip<app type="division"><lem><lb/></lem></app>
+ of Diamond - </l>
+                    <l>Riding to meet the Earl - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

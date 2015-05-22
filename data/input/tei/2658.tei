@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An awful Tempest mashed the air --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J198">
+                <lg type="stanza">
+                    <l>An awful Tempest mashed the air --</l>
+                    <l>The clouds were gaunt, and few --</l>
+                    <l>A Black -- as of a Spectre's Cloak</l>
+                    <l>Hid Heaven and Earth from view.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The creatures chuckled on the Roofs --</l>
+                    <l>And whistled in the air --</l>
+                    <l>And shook their fists --</l>
+                    <l>And gnashed their teeth --</l>
+                    <l>And swung their frenzied hair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The morning lit -- the Birds arose --</l>
+                    <l>The Monster's faded eyes</l>
+                    <l>Turned slowly to his native coast --</l>
+                    <l>And peace -- was Paradise!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

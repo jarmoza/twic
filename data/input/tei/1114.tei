@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>All forgot for recollecting </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F827A">
+                <lg type="stanza">
+                    <l>All forgot for recollecting</l>
+                    <l>Just a paltry One - </l>
+                    <l>All forsook, for just<app type="division"><lem><lb/></lem></app>
+ a Stranger's </l>
+                    <l>New Accompanying - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="">Grace of Rank - and - Grace of Fortune</add>
+Grace of Wealth, and<app type="division"><lem><lb/></lem></app>
+ Grace of Station</l>
+                    <l>Less accounted than </l>
+                    <l>An unknown<add type="alternate" extent="Esteem">content</add>
+ Esteem<app type="division"><lem><lb/></lem></app>
+ possessing - </l>
+                    <l>Estimate - Who can - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Home effaced - Her<app type="division"><lem><lb/></lem></app>
+ faces dwindled - </l>
+                    <l>Nature - altered small -</l>
+                    <l>Sun - if shone - or<app type="division"><lem><lb/></lem></app>
+ Storm - if shattered - </l>
+                    <l>Overlooked I all -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Dropped - my fate - a<app type="division"><lem><lb/></lem></app>
+ timid Pebble - </l>
+                    <l>In thy bolder Sea - </l>
+                    <l><add type="alternate" extent="Prove -">Ask -</add>
+Prove - me - Sweet - if<app type="division"><lem><lb/></lem></app>
+ I regret it -</l>
+                    <l>Prove Myself - of Thee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

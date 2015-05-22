@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SOUL&#x27;S STORM</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-156">
+                <lg type="stanza">
+                    <l>It struck me every day</l>
+                    <l>The lightning was as new</l>
+                    <l>As if the cloud that instant slit</l>
+                    <l>And let the fire through.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It burned me in the night,</l>
+                    <l>It blistered in my dream;</l>
+                    <l>It sickened fresh upon my sight</l>
+                    <l>With every morning's beam.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I thought that storm was brief, </l>
+                    <l>The maddest, quickest by;</l>
+                    <l>But Nature lost the date of this,</l>
+                    <l>And left it in the sky.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

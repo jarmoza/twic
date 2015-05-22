@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I reason, earth is short,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-98">
+                <lg type="stanza">
+                    <l>I reason, earth is short,</l>
+                    <l>And anguish absolute,</l>
+                    <l>And many hurt;</l>
+                    <l>But what of that?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I reason, we could die:</l>
+                    <l>The best vitality</l>
+                    <l>Cannot excel decay;</l>
+                    <l>But what of that?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I reason that in heaven</l>
+                    <l>Somehow, it will be even,</l>
+                    <l>Some new equation given;</l>
+                    <l>But what of that?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

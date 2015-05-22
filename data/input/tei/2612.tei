@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sun kept stooping -- stooping -- low!
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J152">
+                <lg type="stanza">
+                    <l>The Sun kept stooping -- stooping -- low!</l>
+                    <l>The Hills to meet him rose!</l>
+                    <l>On his side, what Transaction!</l>
+                    <l>On their side, what Repose!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Deeper and deeper grew the stain</l>
+                    <l>Upon the window pane --</l>
+                    <l>Thicker and thicker stood the feet</l>
+                    <l>Until the Tyrian</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was crowded dense with Armies --</l>
+                    <l>So gay, so Brigadier</l>
+                    <l>That I felt martial stirrings</l>
+                    <l>Who once the Cockade wore --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Charged, from my chimney corner --</l>
+                    <l>But Nobody was there!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

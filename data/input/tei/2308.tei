@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Talk not to me of summer trees </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1655A">
+                <lg type="stanza">
+                    <l>Talk not to<app type="division"><lem><lb/></lem></app>
+ me of <app type="emendation"><lem>Sum &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ mer</lem><rdg>Summer</rdg></app>
+ Trees </l>
+                    <l>The foliage<app type="division"><lem><lb/></lem></app>
+ of the mind </l>
+                    <l>A Tabernacle<app type="division"><lem><lb/></lem></app>
+ is for Birds </l>
+                    <l>Of no <app type="emendation"><lem>cor &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ poreal</lem><rdg>corporeal</rdg></app>
+ kind </l>
+                    <l>And winds<app type="division"><lem><lb/></lem></app>
+ do go that<app type="division"><lem><lb/></lem></app>
+ way at noon</l>
+                    <l>To their<app type="division"><lem><lb/></lem></app>
+ Etherial Homes </l>
+                    <l>Whose <app type="emendation"><lem>Bu &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ gles</lem><rdg>Bugles</rdg></app>
+ call the<app type="division"><lem><lb/></lem></app>
+ least of<app type="division"><lem><lb/></lem></app>
+ us </l>
+                    <l><add type="alternate" extent="">Receipted with encores</add>
+To<add type="alternate" extent="undepicted">unreported</add>
+ undepicted<app type="division"><lem><lb/></lem></app>
+ Realms </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

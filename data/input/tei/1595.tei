@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Paul and Silas it is said </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1206A">
+                <lg type="stanza">
+                    <l>Of Paul and Silas<app type="division"><lem><lb/></lem></app>
+ it is said</l>
+                    <l>They were in Prison<app type="division"><lem><lb/></lem></app>
+ laid </l>
+                    <l>But when they went<app type="division"><lem><lb/></lem></app>
+ to take them out </l>
+                    <l>They were not<app type="division"><lem><lb/></lem></app>
+ there instead.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Security the same<app type="division"><lem><lb/></lem></app>
+ insures</l>
+                    <l>To our assaulted<app type="division"><lem><lb/></lem></app>
+ minds - </l>
+                    <l>The staple must<app type="division"><lem><lb/></lem></app>
+ be optional </l>
+                    <l>That an Immortal<app type="division"><lem><lb/></lem></app>
+ binds.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

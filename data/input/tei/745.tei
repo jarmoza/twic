@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The test of love is death </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F541A">
+                <lg type="stanza">
+                    <l>The Test of Love - is Death -</l>
+                    <l>Our Lord - &quot;so loved&quot; - it saith - </l>
+                    <l>What Largest Lover - hath - </l>
+                    <l>Another - doth - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If Smaller Patience - be -</l>
+                    <l>Through less Infinity - </l>
+                    <l>If Bravo, sometimes swerve - </l>
+                    <l>Through fainter Nerve - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Accept it's Most - </l>
+                    <l>And overlook - the Dust -</l>
+                    <l>Last - Least - </l>
+                    <l>The Cross' - Request - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

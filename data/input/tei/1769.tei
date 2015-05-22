@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Go slow, my soul, to feed thyself </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1322A">
+                <lg type="stanza">
+                    <l>Go slow, my soul,<app type="division"><lem><lb/></lem></app>
+ to feed thyself </l>
+                    <l>Opon his rare<app type="division"><lem><lb/></lem></app>
+ Approach - </l>
+                    <l>Go rapid, lest<app type="division"><lem><lb/></lem></app>
+ Competing Death </l>
+                    <l>Prevail opon the<app type="division"><lem><lb/></lem></app>
+ Coach - </l>
+                    <l>Go timid, lest<app type="division"><lem><lb/></lem></app>
+ his<add type="alternate" extent="final">testing &amp;#x2022; blazing &amp;#x2022; lofty</add>
+ final eye -</l>
+                    <l>Determine thee amiss - </l>
+                    <l><add type="alternate" extent="Go">But</add>
+Go boldly - for thou<app type="division"><lem><lb/></lem></app>
+ paid'st his price<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l><add type="alternate" extent="Redemption">Thy Total - &amp;#x2022; [Thy</add>
+Redemption - for a Kiss - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

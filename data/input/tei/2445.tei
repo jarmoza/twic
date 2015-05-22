@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The reticent volcano keeps</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1776A">
+                <lg type="stanza">
+                    <l>The reticent volcano keeps</l>
+                    <l>His never slumbering plan;</l>
+                    <l>Confided are his projects pink</l>
+                    <l>To no precarious man.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If nature will not tell the tale</l>
+                    <l>Jehovah told to her</l>
+                    <l>Can human nature not proceed</l>
+                    <l>Without a listener?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Admonished by her buckled lips</l>
+                    <l>Let every<add type="alternate" extent="prater">babbler</add>
+ prater be</l>
+                    <l>The only secret<add type="alternate" extent="neighbors">people</add>
+ neighbors<add type="alternate" extent="keep">shun</add>
+ keep</l>
+                    <l>Is Immortality.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Shells from the Coast mistaking -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J693">
+                <lg type="stanza">
+                    <l>Shells from the Coast mistaking --</l>
+                    <l>I cherished them for All --</l>
+                    <l>Happening in After Ages</l>
+                    <l>To entertain a Pearl --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wherefore so late -- I murmured --</l>
+                    <l>My need of Thee -- be done --</l>
+                    <l>Therefore -- the Pearl responded --</l>
+                    <l>My Period begin</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

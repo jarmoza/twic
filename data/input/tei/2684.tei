@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ve nothing else -- to bring, You know --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J224">
+                <lg type="stanza">
+                    <l>I've nothing else -- to bring, You know --</l>
+                    <l>So I keep bringing These --</l>
+                    <l>Just as the Night keeps fetching Stars</l>
+                    <l>To our familiar eyes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Maybe, we should'nt mind them --</l>
+                    <l>Unless they didn't come --</l>
+                    <l>Then -- maybe, it would puzzle us</l>
+                    <l>To find our way Home --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -103,6 +103,7 @@ var TWiC = (function(namespace){
                                     }.bind(this))
                                     .on("dblclick", function(){
                                         this.m_panel.ClickedClusterCircle(this);
+                                        //this.m_panel..m_exitTransition.Start();
                                         //console.log("Clicked on cluster " + this.m_name +
                                         //    " with color " + this.m_level.m_topicColors[this.m_name]);
                                     }.bind(this));

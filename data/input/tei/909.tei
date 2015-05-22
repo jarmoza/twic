@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The sweetest heresy received </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F671A">
+                <lg type="stanza">
+                    <l>The Sweetest Heresy <app type="emendation"><lem>recieved</lem><rdg>received</rdg></app>
+</l>
+                    <l>That Man and Woman know - </l>
+                    <l>Each Other's Convert - </l>
+                    <l>Though the Faith <app type="emendation"><lem>accommo - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ date</lem><rdg>accommodate</rdg></app>
+ but Two - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Churches are so<app type="division"><lem><lb/></lem></app>
+ frequent -</l>
+                    <l>The Ritual - so small - </l>
+                    <l>The Grace so unavoidable - </l>
+                    <l>To fail - is Infidel - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I went to thank her </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F637A">
+                <lg type="stanza">
+                    <l>I went to thank Her -</l>
+                    <l>But She Slept - </l>
+                    <l>Her Bed - a funneled<app type="division"><lem><lb/></lem></app>
+ Stone - </l>
+                    <l>With Nosegays at the<app type="division"><lem><lb/></lem></app>
+ Head and Foot - </l>
+                    <l>That Travellers - had thrown -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who went to thank Her - </l>
+                    <l>But She Slept - </l>
+                    <l>'Twas Short - to cross the<app type="division"><lem><lb/></lem></app>
+ Sea - </l>
+                    <l>To look opon Her like - alive - </l>
+                    <l>But turning back - 'twas<app type="division"><lem><lb/></lem></app>
+ slow -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This Chasm, Sweet, upon my life 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J858">
+                <lg type="stanza">
+                    <l>This Chasm, Sweet, upon my life</l>
+                    <l>I mention it to you,</l>
+                    <l>When Sunrise through a fissure drop</l>
+                    <l>The Day must follow too.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If we demur, it's gaping sides</l>
+                    <l>Disclose as 'twere a Tomb</l>
+                    <l>Ourself am lying straight wherein</l>
+                    <l>The Favorite of Doom.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When it has just contained a Life</l>
+                    <l>Then, Darling, it will close</l>
+                    <l>And yet so bolder every Day</l>
+                    <l>So turbulent it grows</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'm tempted half to stitch it up</l>
+                    <l>With a remaining Breath</l>
+                    <l>I should not miss in yielding, though</l>
+                    <l>To Him, it would be Death --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so I bear it big about</l>
+                    <l>My Burial -- before</l>
+                    <l>A Life quite ready to depart</l>
+                    <l>Can harass me no more --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

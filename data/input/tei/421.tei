@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>While it is alive </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F287A">
+                <lg type="stanza">
+                    <l>While &quot;it&quot; is alive - </l>
+                    <l>Until Death - touches it - </l>
+                    <l>While &quot;it&quot; and I - lap<app type="division"><lem><lb/></lem></app>
+ one - Air - </l>
+                    <l>Dwell in one Blood - </l>
+                    <l>Under one Firmament -</l>
+                    <l>Show me Division -<add type="alternate" extent="could">can</add>
+ could<app type="division"><lem><lb/></lem></app>
+ split - or pare!  </l>
+                    <l><add type="alternate" extent="Faith">Love</add>
+Faith - is like Death</l>
+                    <l><add type="alternate" extent="Only, the">&lt;u&gt;Merely&lt;/u&gt;</add>
+Only, the longer - </l>
+                    <l><add type="alternate" extent="Faith">Love</add>
+Faith - is like Death</l>
+                    <l>During - the Grave -</l>
+                    <l><add type="alternate" extent="Faith">Love</add>
+Faith - is the Fellow of the Resurrection,</l>
+                    <l>Scooping up the Dust - </l>
+                    <l>And chanting - <em>Live!</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

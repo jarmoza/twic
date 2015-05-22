@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet is the swamp with its secrets, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1740">
+                <lg type="stanza">
+                    <l>Sweet is the swamp with its secrets,</l>
+                    <l>Until we meet a snake;</l>
+                    <l>'Tis then we sigh for houses,</l>
+                    <l>And our departure take</l>
+                    <l>At that enthralling gallop</l>
+                    <l>That only childhood knows.</l>
+                    <l>A snake is <app type="revision"><lem>nature's</lem><rdg>nature&#x27;s</rdg></app>
+summer's <app type="revision"><lem>drama</lem><rdg>drama</rdg></app>
+treason,</l>
+                    <l>And <app type="revision"><lem>awe</lem><rdg>awe</rdg></app>
+guile is where it goes.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

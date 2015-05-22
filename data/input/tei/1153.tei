@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No notice gave she but a change </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F860A">
+                <lg type="stanza">
+                    <l>No Notice gave She, but<app type="division"><lem><lb/></lem></app>
+ a Change -</l>
+                    <l>No Message, but a sigh - </l>
+                    <l>For Whom, the Time<app type="division"><lem><lb/></lem></app>
+ did not suffice </l>
+                    <l>That she<add type="alternate" extent="should">could</add>
+ should specify.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She was not warm, though<app type="division"><lem><lb/></lem></app>
+ Summer shone</l>
+                    <l>Nor scrupulous of cold </l>
+                    <l>Though Rime by Rime, the<app type="division"><lem><lb/></lem></app>
+ steady Frost </l>
+                    <l>Opon Her<add type="alternate" extent="Bosom">Petals - &amp;#x2022; softness</add>
+ Bosom piled - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of shrinking ways -<add type="alternate" extent="she did not fright">Forebore her fright</add>
+ she<app type="division"><lem><lb/></lem></app>
+ did not fright </l>
+                    <l>Though all the Village<app type="division"><lem><lb/></lem></app>
+ looked -</l>
+                    <l>But held Her gravity<app type="division"><lem><lb/></lem></app>
+ aloft - </l>
+                    <l>And met the gaze - direct -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when adjusted like<app type="division"><lem><lb/></lem></app>
+ a seed </l>
+                    <l>In careful fitted Ground </l>
+                    <l>Unto the Everlasting Spring</l>
+                    <l>And hindered but a Mound </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her<add type="alternate" extent="Warm">straight - &amp;#x2022; good - &amp;#x2022; quick - &amp;#x2022; safe</add>
+ Warm return, if<app type="division"><lem><lb/></lem></app>
+ so she<add type="alternate" extent="chose">signed</add>
+ chose - </l>
+                    <l>And We - imploring drew - </l>
+                    <l>Removed our invitation by </l>
+                    <l>As<add type="alternate" extent="Some">Us -</add>
+ Some She never<app type="division"><lem><lb/></lem></app>
+ knew -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

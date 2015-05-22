@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>That she forgot me was the least 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1683">
+                <lg type="stanza">
+                    <l>That she forgot me was the least</l>
+                    <l>I felt it second pain</l>
+                    <l>That I was worthy to forget</l>
+                    <l>Was most I thought upon</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Faithful was all that I could boast</l>
+                    <l>But Constancy became</l>
+                    <l>To her, by her innominate</l>
+                    <l>A something like a shame</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

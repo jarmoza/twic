@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A little over Jordan,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-103">
+                <lg type="stanza">
+                    <l>A little over Jordan,</l>
+                    <l>As Genesis record,</l>
+                    <l>An Angel and a Wrestler</l>
+                    <l>Did wrestle long and hard.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till, morning touching mountain,</l>
+                    <l>And Jacob waxing strong,</l>
+                    <l>The Angel begged permission</l>
+                    <l>To breakfast and return.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not so, quoth wily Jacob</l>
+                    <l>And girt his loins anew,</l>
+                    <l>"Until thou bless me, stranger!"</l>
+                    <l>The which acceded to:</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Light swung the silver fleeces</l>
+                    <l>Peniel hills among,</l>
+                    <l>And the astonished Wrestler</l>
+                    <l>Found he had worsted God!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

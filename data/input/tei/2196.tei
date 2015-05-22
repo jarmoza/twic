@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cosmopolites without a plea </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1592A">
+                <lg type="stanza">
+                    <l>Cosmopolites without<app type="division"><lem><lb/></lem></app>
+ a plea </l>
+                    <l>Alight in every Land<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Compliments<app type="division"><lem><lb/></lem></app>
+ of Paradise </l>
+                    <l>From<add type="alternate" extent="these">&lt;u&gt;those&lt;/u&gt;</add>
+ these within<app type="division"><lem><lb/></lem></app>
+ my Hand<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Their dappled<app type="division"><lem><lb/></lem></app>
+ Journey - to themselves</l>
+                    <l><add type="alternate" extent="">A competence so gay</add>
+A compensation<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="fair -">gay -</add>
+ fair -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Knock <app type="division"><lem><lb/></lem></app>
+and it<app type="division"><lem><lb/></lem></app>
+ shall<app type="division"><lem><lb/></lem></app>
+ be<app type="division"><lem><lb/></lem></app>
+ opened </l>
+                    <l>is their<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Theology">Philosophy -</add>
+ Theology </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

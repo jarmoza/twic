@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Despair&#x27;s advantage is achieved </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F854A">
+                <lg type="stanza">
+                    <l>Despair's advantage is<app type="division"><lem><lb/></lem></app>
+ achieved</l>
+                    <l>By suffering - Despair - </l>
+                    <l>To be assisted of<app type="division"><lem><lb/></lem></app>
+ Reverse </l>
+                    <l>One must<add type="alternate" extent="Reverse">itself</add>
+ Reverse have bore - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The<add type="alternate" extent="Worthiness">Excellence - &amp;#x2022; quality</add>
+ Worthiness of Suffering<app type="division"><lem><lb/></lem></app>
+ like</l>
+                    <l>The Worthiness of Death </l>
+                    <l>Is ascertained by<add type="alternate" extent="tasting -">testing -</add>
+ tasting - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As can no other Mouth </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Savors - make us<app type="division"><lem><lb/></lem></app>
+ conscious - </l>
+                    <l>As did ourselves partake -</l>
+                    <l>Affliction feels impalpable </l>
+                    <l>Until Ourselves are struck - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

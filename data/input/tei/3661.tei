@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So I pull my Stockings off 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1201">
+                <lg type="stanza">
+                    <l>So I pull my Stockings off</l>
+                    <l>Wading in the Water</l>
+                    <l>For the Disobedience' Sake</l>
+                    <l>Boy that lived for "Ought to"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Went to Heaven perhaps at Death</l>
+                    <l>And perhaps he did'nt</l>
+                    <l>Moses was'nt fairly used --</l>
+                    <l>Ananias was'nt --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

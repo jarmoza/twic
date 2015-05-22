@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To die without the dying </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1027A">
+                <lg type="stanza">
+                    <l>To die - without the<app type="division"><lem><lb/></lem></app>
+ Dying</l>
+                    <l>And live - without<app type="division"><lem><lb/></lem></app>
+ the Life </l>
+                    <l>This is the hardest<app type="division"><lem><lb/></lem></app>
+ Miracle </l>
+                    <l>Propounded to Belief.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

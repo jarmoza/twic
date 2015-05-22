@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>All circumstances are the frame </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1113B">
+                <lg type="stanza">
+                    <l>All Circumstances are<app type="division"><lem><lb/></lem></app>
+ the Frame</l>
+                    <l>In which His Face is set - </l>
+                    <l>All Latitudes exist for His </l>
+                    <l>Sufficient Continent - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Light His Action, and<app type="division"><lem><lb/></lem></app>
+ the Dark</l>
+                    <l>The Leisure of His Will -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>In Him Existence serve<app type="division"><lem><lb/></lem></app>
+ or set </l>
+                    <l>A Force illegible.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

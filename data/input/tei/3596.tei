@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Frost of Death was on the Pane -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1136">
+                <lg type="stanza">
+                    <l>The Frost of Death was on the Pane --</l>
+                    <l>"Secure your Flower" said he.</l>
+                    <l>Like Sailors fighting with a Leak</l>
+                    <l>We fought Mortality.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our passive Flower we held to Sea --</l>
+                    <l>To Mountain -- To the Sun --</l>
+                    <l>Yet even on his Scarlet shelf</l>
+                    <l>To crawl the Frost begun --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We pried him back</l>
+                    <l>Ourselves we wedged</l>
+                    <l>Himself and her between,</l>
+                    <l>Yet easy as the narrow Snake</l>
+                    <l>He forked his way along</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till all her helpless beauty bent</l>
+                    <l>And then our wrath begun --</l>
+                    <l>We hunted him to his Ravine</l>
+                    <l>We chased him to his Den --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We hated Death and hated Life</l>
+                    <l>And nowhere was to go --</l>
+                    <l>Than Sea and continent there is</l>
+                    <l>A larger -- it is Woe</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

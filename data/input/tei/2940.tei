@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Why do I love&quot; You, Sir? 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J480">
+                <lg type="stanza">
+                    <l>"Why do I love" You, Sir?</l>
+                    <l>Because --</l>
+                    <l>The Wind does not require the Grass</l>
+                    <l>To answer -- Wherefore when He pass</l>
+                    <l>She cannot keep Her place.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because He knows -- and</l>
+                    <l>Do not You --</l>
+                    <l>And We know not --</l>
+                    <l>Enough for Us</l>
+                    <l>The Wisdom it be so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Lightning -- never asked an Eye</l>
+                    <l>Wherefore it shut -- when He was by --</l>
+                    <l>Because He knows it cannot speak --</l>
+                    <l>And reasons not contained --</l>
+                    <l>-- Of Talk --</l>
+                    <l>There be -- preferred by Daintier Folk --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sunrise -- Sir -- compelleth Me --</l>
+                    <l>Because He's Sunrise -- and I see --</l>
+                    <l>Therefore -- Then --</l>
+                    <l>I love Thee --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Heaven&quot; -- is what I cannot reach! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J239">
+                <lg type="stanza">
+                    <l>"Heaven" -- is what I cannot reach!</l>
+                    <l>The Apple on the Tree --</l>
+                    <l>Provided it do hopeless -- hang --</l>
+                    <l>That -- "Heaven" is -- to Me!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Color, on the Cruising Cloud --</l>
+                    <l>The interdicted Land --</l>
+                    <l>Behind the Hill -- the House behind --</l>
+                    <l>There -- Paradise -- is found!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her teazing Purples -- Afternoons --</l>
+                    <l>The credulous -- decoy --</l>
+                    <l>Enamored -- of the Conjuror --</l>
+                    <l>That spurned us -- Yesterday!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

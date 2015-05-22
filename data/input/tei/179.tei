@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Besides the autumn poets sing </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F123A">
+                <lg type="stanza">
+                    <l>Besides the autumn poets sing </l>
+                    <l>A few prosaic days </l>
+                    <l>A little this side of the snow </l>
+                    <l>And that side of the Haze.  </l>
+                    <l>A few incisive mornings -</l>
+                    <l>A few ascetic eves - </l>
+                    <l>Gone - Mr Bryant's &quot;Golden Rod&quot; </l>
+                    <l>And Mr Thom'son's &quot;Sheaves&quot; - </l>
+                    <l>Still, is the bustle in the brook, </l>
+                    <l>Sealed, are the spicy valves.</l>
+                    <l>Mesmeric fingers softly touch </l>
+                    <l>The eyes of many Elves - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Perhaps a <em>squirrel</em> may remain </l>
+                    <l>My sentiments to share - </l>
+                    <l>Grant me Oh Lord a<app type="division"><lem><lb/></lem></app>
+ sunny mind -</l>
+                    <l>Thy windy will to bear!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

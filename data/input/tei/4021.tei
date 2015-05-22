@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No Brigadier throughout the Year 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1561">
+                <lg type="stanza">
+                    <l>No Brigadier throughout the Year</l>
+                    <l>So civic as the Jay --</l>
+                    <l>A Neighbor and a Warrior too</l>
+                    <l>With shrill felicity</l>
+                    <l>Pursuing Winds that censure us</l>
+                    <l>A Febuary Day,</l>
+                    <l>The Brother of the Universe</l>
+                    <l>Was never blown away --</l>
+                    <l>The Snow and he are intimate --</l>
+                    <l>I've often seen them play</l>
+                    <l>When Heaven looked upon us all</l>
+                    <l>With such severity</l>
+                    <l>I felt apology were due</l>
+                    <l>To an insulted sky</l>
+                    <l>Whose pompous frown was Nutriment</l>
+                    <l>To their Temerity --</l>
+                    <l>Pillow of this daring Head</l>
+                    <l>Is pungent Evergreens --</l>
+                    <l>His Larder -- terse and Militant --</l>
+                    <l>Unknown -- refreshing things --</l>
+                    <l>His Character -- a Tonic --</l>
+                    <l>His Future -- a Dispute --</l>
+                    <l>Unfair an Immortality</l>
+                    <l>That leaves this Neighbor out --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

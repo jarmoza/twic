@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What is -- &quot;Paradise&quot; --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J215">
+                <lg type="stanza">
+                    <l>What is -- "Paradise" --</l>
+                    <l>Who live there --</l>
+                    <l>Are they "Farmers" --</l>
+                    <l>Do they "hoe" --</l>
+                    <l>Do they know that this is "Amherst" --</l>
+                    <l>And that I -- am coming -- too --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Do they wear "new shoes" -- in "Eden" --</l>
+                    <l>Is it always pleasant -- there --</l>
+                    <l>they scold us -- when we're <app type="revision"><lem>homesick</lem><rdg>homesick</rdg></app>
+hungry --</l>
+                    <l>Or tell God -- how cross we are --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You are sure there's such a person</l>
+                    <l>As "a Father" -- in the sky --</l>
+                    <l>So if I get lost -- there -- ever --</l>
+                    <l>Or do what the Nurse calls "die" --</l>
+                    <l>I shant walk the "Jasper" -- barefoot</l>
+                    <l>Ransomed folks -- wont laugh at me --</l>
+                    <l>Maybe -- "Eden" a'nt so lonesome</l>
+                    <l>As New England used to be!</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

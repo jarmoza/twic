@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Few yet enough </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1639B">
+                <lg type="stanza">
+                    <l>Few, yet enough, </l>
+                    <l>Enough is One - </l>
+                    <l>To that etherial<app type="division"><lem><lb/></lem></app>
+ throng </l>
+                    <l>Have not each<app type="division"><lem><lb/></lem></app>
+ one of us the<app type="division"><lem><lb/></lem></app>
+ right </l>
+                    <l>To stealthily<app type="division"><lem><lb/></lem></app>
+ belong?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

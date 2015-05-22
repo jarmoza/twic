@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Whose cheek is this? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F48A">
+                <lg type="stanza">
+                    <l>When Katie walks, this Simple pair accompany her <app type="division"><lem><lb/></lem></app>
+ side, no<app type="division"><lem><lb rend="none"/></lem></app>
+</l>
+                    <l>When Katie runs <app type="division"><lem><lb/></lem></app>
+ unwearied they follow on the road,</l>
+                    <l>When Katie kneels, their loving <app type="division"><lem><pb/></lem></app>
+ hands still clasp her <app type="division"><lem><lb/></lem></app>
+ pious knee -<app type="division"><lem><lb rend="none"/></lem></app>
+</l>
+                    <l>Ah! Katie! Smile at Fortune, with <em>two</em><app type="division"><lem><lb/></lem></app>
+ so <em>knit to thee!</em></l>
+                    <l>And bore her safe away -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Robins, in the tradition </l>
+                    <l>Did cover such with leaves, </l>
+                    <l>But which the cheek - </l>
+                    <l>And which the pall </l>
+                    <l><em>My</em> scrutiny deceives -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

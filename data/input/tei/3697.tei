@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My Heart ran so to thee 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1237">
+                <lg type="stanza">
+                    <l>My Heart ran so to thee</l>
+                    <l>It would not wait for me</l>
+                    <l>And I <app type="revision"><lem>discouraged</lem><rdg>discouraged</rdg></app>
+affronted grew</l>
+                    <l>And drew away</l>
+                    <l>For whatsoe'er my pace</l>
+                    <l>He first <app type="revision"><lem>espouse</lem><rdg>espouse</rdg></app>
+achieve thy Face</l>
+                    <l>How general a Grace</l>
+                    <l>Allotted two --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not in malignity</l>
+                    <l>Mentioned I this to thee --</l>
+                    <l>Had he obliquity</l>
+                    <l>Soonest to <app type="revision"><lem>spare</lem><rdg>spare</rdg></app>
+share</l>
+                    <l>But for the <app type="revision"><lem>vaunt</lem><rdg>vaunt</rdg></app>
+<app type="revision"><lem>like</lem><rdg>like</rdg></app>
+Greed of him --</l>
+                    <l><app type="revision"><lem>Wooing</lem><rdg>Wooing</rdg></app>
+Boasting my Premium --</l>
+                    <l><app type="revision"><lem>Winning</lem><rdg>Winning</rdg></app>
+Basking in Bethleem</l>
+                    <l>Ere I be there --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

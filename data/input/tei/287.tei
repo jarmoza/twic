@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Speech is a prank of parliament </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F193A">
+                <lg type="stanza">
+                    <l><em>Speech</em> - is a prank<app type="division"><lem><lb/></lem></app>
+ of <em>Parliament</em> - </l>
+                    <l><em>Tears</em> - a trick of<app type="division"><lem><lb/></lem></app>
+ the <em>nerve</em> - </l>
+                    <l>But the Heart with<app type="division"><lem><lb/></lem></app>
+ the heaviest freight<app type="division"><lem><lb/></lem></app>
+ on - </l>
+                    <l>Does'nt - always - move - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who were &quot;the Father and the Son&quot; 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1258">
+                <lg type="stanza">
+                    <l>Who were "the Father and the Son"</l>
+                    <l>We pondered when a child,</l>
+                    <l>And what had they to do with us</l>
+                    <l>And when portentous told</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With inference appalling</l>
+                    <l>By Childhood fortified</l>
+                    <l>We thought, at least they are no worse</l>
+                    <l>Than they have been described.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who are "the Father and the Son"</l>
+                    <l>Did we demand Today</l>
+                    <l>"The Father and the Son" himself</l>
+                    <l>Would doubtless specify --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But had they the felicity</l>
+                    <l>When we desired to know,</l>
+                    <l>We better Friends had been, perhaps,</l>
+                    <l>Than time ensue to be --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We start -- to learn that we believe</l>
+                    <l>But once -- entirely --</l>
+                    <l>Belief, it does not fit so well</l>
+                    <l>When altered frequently --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We blush, that Heaven if we achieve --</l>
+                    <l>Event ineffable --</l>
+                    <l>We shall have shunned until ashamed</l>
+                    <l>To own the Miracle --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

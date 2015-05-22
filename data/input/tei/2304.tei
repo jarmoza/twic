@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As from the earth the light balloon </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1651A">
+                <lg type="stanza">
+                    <l>As from the<app type="division"><lem><lb/></lem></app>
+ Earth the light<app type="division"><lem><lb/></lem></app>
+ Balloon </l>
+                    <l>Asks nothing<app type="division"><lem><lb/></lem></app>
+ but<add type="alternate" extent="release">it&#x27;s flight</add>
+ release - </l>
+                    <l>Ascension that<app type="division"><lem><lb/></lem></app>
+ for which it was, </l>
+                    <l><add type="alternate" extent="">It&#x27;s rapture - residence -</add>
+It's soaring,<app type="division"><lem><lb/></lem></app>
+ Residence.  </l>
+                    <l><add type="alternate" extent="The">it&#x27;s</add>
+The spirit<add type="alternate" extent="looks upon">turns upon - &amp;#x2022; gazes at &amp;#x2022; glances [at]</add>
+ looks<app type="division"><lem><lb/></lem></app>
+ upon the Dust</l>
+                    <l>That fastened<app type="division"><lem><lb/></lem></app>
+ it so long </l>
+                    <l>With indignation, </l>
+                    <l>As a Bird </l>
+                    <l>Defrauded of<app type="division"><lem><lb/></lem></app>
+ it's Song.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

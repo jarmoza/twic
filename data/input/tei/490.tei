@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Before I got my eye put out </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F336A">
+                <lg type="stanza">
+                    <l>Before I got my eye<app type="division"><lem><lb/></lem></app>
+ put out </l>
+                    <l>I liked as well to see - </l>
+                    <l>As other Creatures, that<app type="division"><lem><lb/></lem></app>
+ have Eyes </l>
+                    <l>And know no other way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But were it told to<app type="division"><lem><lb/></lem></app>
+ me - today -</l>
+                    <l>That I might have the<app type="division"><lem><lb/></lem></app>
+ sky </l>
+                    <l>For mine - I tell you<app type="division"><lem><lb/></lem></app>
+ that my Heart </l>
+                    <l>Would split, for size of<app type="division"><lem><lb/></lem></app>
+ me -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The meadows - mine - </l>
+                    <l>The Mountains - mine -</l>
+                    <l>All Forests - Stintless Stars - </l>
+                    <l>As much of Noon<app type="division"><lem><lb/></lem></app>
+ as I could take </l>
+                    <l>Between my finite eyes - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Motions of The<app type="division"><lem><lb/></lem></app>
+ Dipping Birds - </l>
+                    <l>The Morning's Amber<app type="division"><lem><lb/></lem></app>
+ Road -</l>
+                    <l>For mine - to look<app type="division"><lem><lb/></lem></app>
+ at when I liked - </l>
+                    <l>The News would strike<app type="division"><lem><lb/></lem></app>
+ me dead -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So safer Guess - </l>
+                    <l>With just my soul<app type="division"><lem><lb/></lem></app>
+ opon the Window pane - </l>
+                    <l>Where other Creatures<app type="division"><lem><lb/></lem></app>
+ put their eyes -</l>
+                    <l>Incautious - of the Sun - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

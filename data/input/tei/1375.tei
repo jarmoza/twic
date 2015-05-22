@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The dying need but little, dear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1037A">
+                <lg type="stanza">
+                    <l>The Dying need but<app type="division"><lem><lb/></lem></app>
+ little, Dear,</l>
+                    <l>A Glass of Water's<app type="division"><lem><lb/></lem></app>
+ all, </l>
+                    <l>A Flower's unobtrusive<app type="division"><lem><lb/></lem></app>
+ Face </l>
+                    <l>To punctuate the Wall, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Fan, perhaps, a<app type="division"><lem><lb/></lem></app>
+ Friend's Regret</l>
+                    <l>And Certainty that<app type="division"><lem><lb/></lem></app>
+ one </l>
+                    <l>No color in the<app type="division"><lem><lb/></lem></app>
+ Rainbow </l>
+                    <l>Perceive, when you are<app type="division"><lem><lb/></lem></app>
+ gone - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

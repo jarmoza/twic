@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas Crisis -- All the length had passed -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J948">
+                <lg type="stanza">
+                    <l>'Twas Crisis -- All the length had passed --</l>
+                    <l>That dull -- benumbing time</l>
+                    <l>There is in Fever or Event --</l>
+                    <l>And now the Chance had come --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The instant holding in it's claw</l>
+                    <l>The privilege to live</l>
+                    <l>Or warrant to <app type="revision"><lem>present</lem><rdg>present</rdg></app>
+report the Soul</l>
+                    <l>The other side the Grave.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Muscles <app type="revision"><lem>struggled</lem><rdg>struggled</rdg></app>
+grappled as with leads</l>
+                    <l>That would not let the Will --</l>
+                    <l>The Spirit shook the Adamant --</l>
+                    <l>But could not make it <app type="revision"><lem>tell --</lem><rdg>tell --</rdg></app>
+feel.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Second poised -- debated -- shot --</l>
+                    <l>Another had begun --</l>
+                    <l>And simultaneously, a Soul</l>
+                    <l>Escaped the House unseen --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

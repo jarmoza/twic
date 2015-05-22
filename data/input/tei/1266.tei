@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dying! To be afraid of thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F946C">
+                <lg type="stanza">
+                    <l>Dying! To be afraid<app type="division"><lem><lb/></lem></app>
+ of thee</l>
+                    <l>One must to thine<app type="division"><lem><lb/></lem></app>
+ Artillery </l>
+                    <l>Have left exposed a<app type="division"><lem><lb/></lem></app>
+ Friend - </l>
+                    <l>Than thine old Arrow<app type="division"><lem><lb/></lem></app>
+ is a Shot </l>
+                    <l>Delivered straighter<app type="division"><lem><lb/></lem></app>
+ to the Heart</l>
+                    <l>The leaving Love<app type="division"><lem><lb/></lem></app>
+ behind - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not for itself, the<app type="division"><lem><lb/></lem></app>
+ Dust is shy, </l>
+                    <l>But, enemy, Beloved<app type="division"><lem><lb/></lem></app>
+ be </l>
+                    <l>Thy Batteries divorce.  </l>
+                    <l>Fight sternly in a<app type="division"><lem><lb/></lem></app>
+ Dying eye<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Two Armies, Love and<app type="division"><lem><lb/></lem></app>
+ Certainty </l>
+                    <l>And Love and the<app type="division"><lem><lb/></lem></app>
+ Reverse - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

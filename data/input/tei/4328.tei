@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PLAYMATES</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-93">
+                <lg type="stanza">
+                    <l>God permits industrious angels</l>
+                    <l>Afternoons to play.</l>
+                    <l>I met one,  forgot my school-mates,</l>
+                    <l>All, for him, straightway.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>God calls home the angels promptly</l>
+                    <l>At the setting sun;</l>
+                    <l>I missed mine. How dreary marbles,</l>
+                    <l>After playing Crown!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

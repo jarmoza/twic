@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bereaved of all I went abroad </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F886A">
+                <lg type="stanza">
+                    <l>Bereaved of all, I<app type="division"><lem><lb/></lem></app>
+ went abroad -</l>
+                    <l>No less bereaved was I </l>
+                    <l>Opon a New Peninsula - </l>
+                    <l>The Grave preceded me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Obtained my Lodgings, ere<app type="division"><lem><lb/></lem></app>
+ myself -</l>
+                    <l>And when I sought my<app type="division"><lem><lb/></lem></app>
+ Bed - </l>
+                    <l>The Grave it was reposed<app type="division"><lem><lb/></lem></app>
+ opon </l>
+                    <l>The Pillow for my Head - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I waked, to find it first<app type="division"><lem><lb/></lem></app>
+ awake - </l>
+                    <l>I rose - It followed me -</l>
+                    <l>I tried to<add type="alternate" extent="drop">shift</add>
+ drop it in<app type="division"><lem><lb/></lem></app>
+ the Crowd - </l>
+                    <l>To lose it in the Sea -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>In Cups of artificial<app type="division"><lem><lb/></lem></app>
+ Drowse </l>
+                    <l>To steep it's shape away - </l>
+                    <l>The Grave - was finished -<app type="division"><lem><lb/></lem></app>
+ but the Spade</l>
+                    <l>Remained in Memory - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

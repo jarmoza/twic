@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There&#x27;s been a death in the opposite house</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-154">
+                <lg type="stanza">
+                    <l>There's been a death in the opposite house</l>
+                    <l>As lately as to-day.</l>
+                    <l>I know it by the numb look</l>
+                    <l>Such houses have alway.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The neighbors rustle in and out,</l>
+                    <l>The doctor drives away.</l>
+                    <l>A window opens like a pod,</l>
+                    <l>Abrupt, mechanically;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Somebody flings a mattress out, </l>
+                    <l>The children hurry by;</l>
+                    <l>They wonder if It died on that, </l>
+                    <l>I used to when a boy.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The minister goes stiffly in</l>
+                    <l>As if the house were his,</l>
+                    <l>And he owned all the mourners now,</l>
+                    <l>And little boys besides;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then the milliner, and the man</l>
+                    <l>Of the appalling trade,</l>
+                    <l>To take the measure of the house.</l>
+                    <l>There'll be that dark parade</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of tassels and of coaches soon;</l>
+                    <l>It's easy as a sign, </l>
+                    <l>The intuition of the news</l>
+                    <l>In just a country town.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

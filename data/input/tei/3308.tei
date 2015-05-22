@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Just as He spoke it from his Hands 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J848">
+                <lg type="stanza">
+                    <l>Just as He spoke it from his Hands</l>
+                    <l>This Edifice remain --</l>
+                    <l>A Turret more, a Turret less</l>
+                    <l>Dishonor his Design --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>According as his skill prefer</l>
+                    <l>It perish, or endure --</l>
+                    <l>Content, soe'er, it ornament</l>
+                    <l>His absent character.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

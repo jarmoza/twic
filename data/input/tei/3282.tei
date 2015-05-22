@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This Consciousness that is aware 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J822">
+                <lg type="stanza">
+                    <l>This Consciousness that is aware</l>
+                    <l>Of Neighbors and the Sun</l>
+                    <l>Will be the one aware of Death</l>
+                    <l>And that itself alone</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is traversing the interval</l>
+                    <l>Experience between</l>
+                    <l>And most profound experiment</l>
+                    <l>Appointed unto Men --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How adequate unto itself</l>
+                    <l>It's properties shall be</l>
+                    <l>Itself unto itself and none</l>
+                    <l>Shall make discovery.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>Adventure most unto itself</l>
+                    <l>The Soul condemned to be --</l>
+                    <l>Attended by a single Hound</l>
+                    <l>It's own identity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

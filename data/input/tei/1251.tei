@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As willing lid o&#x27;er weary eye </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F936A">
+                <lg type="stanza">
+                    <l>As Willing lid o'er<app type="division"><lem><lb/></lem></app>
+ Weary Eye</l>
+                    <l>The Evening on the Day<app type="division"><lem><lb/></lem></app>
+ leans </l>
+                    <l>Till of all our Nature's<app type="division"><lem><lb/></lem></app>
+ House </l>
+                    <l>Remains but Balcony </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Take all away </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1390A">
+                <lg type="stanza">
+                    <l>Take all<app type="division"><lem><lb/></lem></app>
+ away - </l>
+                    <l>The only<app type="division"><lem><lb/></lem></app>
+ thing worth<app type="division"><lem><lb/></lem></app>
+ larceny </l>
+                    <l>Is left - the<app type="division"><lem><lb/></lem></app>
+ Immortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

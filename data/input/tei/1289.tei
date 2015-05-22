@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like men and women shadows walk </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F964B">
+                <lg type="stanza">
+                    <l>Like Men and Women<app type="division"><lem><lb/></lem></app>
+ Shadows walk</l>
+                    <l>Opon the Hills Today </l>
+                    <l>With here and there<app type="division"><lem><lb/></lem></app>
+ a mighty Bow </l>
+                    <l>Or trailing Courtesy </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Neighbors doubtless<app type="division"><lem><lb/></lem></app>
+ of their own</l>
+                    <l>Not quickened to <app type="emendation"><lem>percieve</lem><rdg>perceive</rdg></app>
+ </l>
+                    <l>Minuter Landscape as<app type="division"><lem><lb/></lem></app>
+ Ourselves </l>
+                    <l>And<add type="alternate" extent="Boroughs">limits</add>
+ Boroughs where<app type="division"><lem><lb/></lem></app>
+ We live </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Valentine week
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1">
+                <lg type="stanza">
+                    <l>Valentine week</l>
+                    <l>Awake ye muses nine, sing me a strain divine,</l>
+                    <l>Unwind the solemn twine, and tie my Valentine!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh the Earth was made for lovers, for damsel, and hopeless swain,</l>
+                    <l>For sighing, and gentle whispering, and unity made of twain.</l>
+                    <l>All things do go a courting, in earth, or sea, or air,</l>
+                    <l>God hath made nothing single but thee in His world so fair!</l>
+                    <l>The bride, and then the bridegroom, the two, and then the one,</l>
+                    <l>Adam, and Eve, his consort, the moon, and then the sun;</l>
+                    <l>The life doth prove the precept, who obey shall happy be,</l>
+                    <l>Who will not serve the sovreign, be hanged on fatal tree.</l>
+                    <l>The high do seek the lowly, the great do seek the small,</l>
+                    <l>None cannot find who seeketh, on this terrestial ball;</l>
+                    <l>The bee doth court the flower, the flower his suit receives,</l>
+                    <l>And they make merry wedding, whose guests are hundred leaves;</l>
+                    <l>The wind doth woo the branches, the branches they are won,</l>
+                    <l>And the father fond demandeth the maiden for his son.</l>
+                    <l>The storm doth walk the seashore humming a mournful tune,</l>
+                    <l>The wave with eye so pensive, looketh to see the moon,</l>
+                    <l>Their spirits meet together, they make them solemn vows,</l>
+                    <l>No more he singeth mournful, her sadness she doth lose.</l>
+                    <l>The worm doth woo the mortal, death claims a living bride,</l>
+                    <l>Night unto day is married, morn unto eventide;</l>
+                    <l>Earth is a merry damsel, and heaven a knight so true,</l>
+                    <l>And Earth is quite coquettish, and beseemeth in vain to sue.</l>
+                    <l>Now to the application, to the reading of the roll,</l>
+                    <l>To bringing thee to justice, and marshalling thy soul:</l>
+                    <l>Thou art a human solo, a being cold, and lone,</l>
+                    <l>Wilt have no kind companion, thou reap'st what thou hast sown.</l>
+                    <l>Hast never silent hours, and minutes all too long,</l>
+                    <l>And a deal of sad reflection, and wailing instead of song?</l>
+                    <l>There's Sarah, and Eliza, and Emeline so fair,</l>
+                    <l>And Harriet, and Susan, and she with curling hair!</l>
+                    <l>Thine eyes are sadly blinded, but yet thou mayest see</l>
+                    <l>Six true, and comely maidens sitting upon the tree;</l>
+                    <l>Approach that tree with caution, then up it boldly climb,</l>
+                    <l>And seize the one thou lovest, nor care for space, or time!</l>
+                    <l>Then bear her to the greenwood, and build for her a bower,</l>
+                    <l>And give her what she asketh, jewel, or bird, or flower --</l>
+                    <l>And bring the fife, and trumpet, and beat upon the drum --</l>
+                    <l>And bid the world Goodmorrow, and go to glory home!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

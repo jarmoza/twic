@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I got so I could hear his name </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F292A">
+                <lg type="stanza">
+                    <l>I got so I could hear his<app type="division"><lem><lb/></lem></app>
+ name -</l>
+                    <l>Without - Tremendous gain - </l>
+                    <l>That Stop-sensation - on my Soul - </l>
+                    <l>And Thunder - in the Room - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got so I could walk across</l>
+                    <l>That Angle in the floor, </l>
+                    <l>Where he turned so, and I<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="turned - how -">let go -</add>
+ turned - how - </l>
+                    <l>And all our Sinew tore - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got so I could stir the Box - </l>
+                    <l>In which his letters grew</l>
+                    <l>Without that forcing, in my breath - </l>
+                    <l>As Staples - driven through - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Could dimly recollect a<add type="alternate" extent="Grace">Force</add>
+ Grace - </l>
+                    <l>I think, they called it &quot;God&quot; - </l>
+                    <l>Renowned<add type="alternate" extent="to ease Extremity -">to stir - Extremity -</add>
+ to ease Extremity -</l>
+                    <l>When<add type="alternate" extent="Formula, had failed -">Filament - had failed -</add>
+ Formula, had failed -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And shape my Hands - </l>
+                    <l>Petition's way, </l>
+                    <l>Tho' ignorant of a word </l>
+                    <l>That Ordination - utters -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Business - with the Cloud, </l>
+                    <l>If any Power behind it, be, </l>
+                    <l><add type="alternate" extent="Not subject to">Supremer than - &amp;#x2022; Superior to -</add>
+Not subject to Despair - </l>
+                    <l>It care - in some remoter way, </l>
+                    <l>For so minute affair</l>
+                    <l>As Misery - </l>
+                    <l>Itself, too<add type="alternate" extent="great">&lt;u&gt;vast&lt;/u&gt;</add>
+ great, for <app type="emendation"><lem>interrup - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ting</lem><rdg>interrupting</rdg></app>
+ - more - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

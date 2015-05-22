@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How sick -- to wait -- in any place -- but thine -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J368">
+                <lg type="stanza">
+                    <l>How sick -- to wait -- in any place -- but thine --</l>
+                    <l>I knew last night -- when someone tried to twine --</l>
+                    <l>Thinking perhaps -- that I looked tired -- or alone --</l>
+                    <l>Or breaking -- almost -- with unspoken pain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And I turned -- ducal --</l>
+                    <l>That right -- was thine --</l>
+                    <l>One port -- suffices -- for a Brig -- like mine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our's be the tossing -- wild though the sea --</l>
+                    <l>Rather than a Mooring -- unshared by thee.</l>
+                    <l>Our's be the Cargo -- unladen -- here --</l>
+                    <l>Rather than the "spicy isles -- "</l>
+                    <l>And thou -- not there --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

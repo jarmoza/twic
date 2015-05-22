@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sleep is supposed to be,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-113">
+                <lg type="stanza">
+                    <l>Sleep is supposed to be,</l>
+                    <l>By souls of sanity,</l>
+                    <l>The shutting of the eye.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sleep is the station grand</l>
+                    <l>Down which on either hand</l>
+                    <l>The hosts of witness stand!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Morn is supposed to be,</l>
+                    <l>By people of degree,</l>
+                    <l>The breaking of the day.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Morning has not occurred!</l>
+                    <l>That shall aurora be</l>
+                    <l>East of eternity;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>One with the banner gay,</l>
+                    <l>One in the red array, </l>
+                    <l>That is the break of day.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

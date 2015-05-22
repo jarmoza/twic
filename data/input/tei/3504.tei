@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Sickness of this World it most occasions
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1044">
+                <lg type="stanza">
+                    <l>A Sickness of this World it most occasions</l>
+                    <l>When Best Men die.</l>
+                    <l>A Wishfulness their far Condition</l>
+                    <l>To occupy.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Chief indifference, as Foreign</l>
+                    <l>A World must be</l>
+                    <l>Themselves forsake -- contented,</l>
+                    <l>For Deity</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

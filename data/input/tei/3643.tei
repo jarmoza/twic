@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Step lightly on this narrow spot -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1183">
+                <lg type="stanza">
+                    <l>Step lightly on this narrow spot --</l>
+                    <l>The broadest Land that grows</l>
+                    <l>Is not so ample as the Breast</l>
+                    <l>These Emerald Seams enclose.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Step lofty, for this name be told</l>
+                    <l>As far as Cannon dwell</l>
+                    <l>Or Flag subsist or Fame export</l>
+                    <l>Her deathless Syllable.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

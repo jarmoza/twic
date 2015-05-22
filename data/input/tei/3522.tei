@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He scanned it -- staggered -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1062">
+                <lg type="stanza">
+                    <l>He scanned it -- staggered --</l>
+                    <l>Dropped the Loop</l>
+                    <l>To Past or Period --</l>
+                    <l>Caught helpless at a sense as if</l>
+                    <l>His Mind were going blind --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Groped up, to see if God <app type="revision"><lem>was</lem><rdg>was</rdg></app>
+were there --</l>
+                    <l>Groped backward at Himself</l>
+                    <l>Caressed a Trigger absently</l>
+                    <l>And wandered out of Life.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

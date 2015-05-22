@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How know it from a Summer&#x27;s Day?
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1364">
+                <lg type="stanza">
+                    <l>How know it from a Summer's Day?</l>
+                    <l>It's Fervors are as firm --</l>
+                    <l>And nothing in the Countenance</l>
+                    <l>But scintillates the same --</l>
+                    <l>Yet Birds examine it and flee --</l>
+                    <l>And Vans without a name</l>
+                    <l>Inspect the Admonition</l>
+                    <l>And sunder as they came --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

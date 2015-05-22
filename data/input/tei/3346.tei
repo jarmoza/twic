@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These tested Oui Horizon -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J886">
+                <lg type="stanza">
+                    <l>These tested Oui Horizon --</l>
+                    <l>Then disappeared</l>
+                    <l>As Birds before achieving</l>
+                    <l>A Latitude.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our Retrospection of Them</l>
+                    <l>A fixed Delight,</l>
+                    <l>But our Anticipation</l>
+                    <l>A Dice -- a Doubt --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

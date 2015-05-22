@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>While we were fearing it, it came </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1317B">
+                <lg type="stanza">
+                    <l>While we<app type="division"><lem><lb/></lem></app>
+ were fearing<app type="division"><lem><lb/></lem></app>
+ it, it came - </l>
+                    <l>But came<app type="division"><lem><lb/></lem></app>
+ with less<app type="division"><lem><lb/></lem></app>
+ of fear </l>
+                    <l>Because <app type="division"><lem><lb/></lem></app>
+that fearing<app type="division"><lem><lb/></lem></app>
+ it so long </l>
+                    <l>Had almost<app type="division"><lem><lb/></lem></app>
+ made it<app type="division"><lem><lb/></lem></app>
+ fair -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>There is a<app type="division"><lem><lb/></lem></app>
+ Fitting - a<app type="division"><lem><lb/></lem></app>
+ Dismay -</l>
+                    <l>A Fitting - a<app type="division"><lem><lb/></lem></app>
+ Despair - </l>
+                    <l>'Tis harder<app type="division"><lem><lb/></lem></app>
+ knowing it<app type="division"><lem><lb/></lem></app>
+ is Due </l>
+                    <l>Than knowing<app type="division"><lem><lb/></lem></app>
+ it is Here.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Trying<app type="division"><lem><lb/></lem></app>
+ on the Utmost </l>
+                    <l>The Morning<app type="division"><lem><lb/></lem></app>
+ it is New</l>
+                    <l>Is terribler<app type="division"><lem><lb/></lem></app>
+ than wearing<app type="division"><lem><lb/></lem></app>
+ it </l>
+                    <l>A whole<app type="division"><lem><lb/></lem></app>
+ existence<app type="division"><lem><lb/></lem></app>
+ through - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

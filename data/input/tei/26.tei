@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The feet of people walking home </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F16B">
+                <lg type="stanza">
+                    <l>The feet of people walking home</l>
+                    <l>With gayer sandals go - </l>
+                    <l>The Crocus - till she rises </l>
+                    <l>The Vassal of the snow - </l>
+                    <l>The lips at Hallelujah</l>
+                    <l>Long years of practise bore </l>
+                    <l>Till bye and bye these <app type="emendation"><lem>Bargmen</lem><rdg>Bargemen</rdg></app>
+</l>
+                    <l>Walked singing on the shore.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pearls are the Diver's farthings </l>
+                    <l>Extorted from the sea -</l>
+                    <l>Pinions - the Seraph's wagon </l>
+                    <l>Pedestrian once - as we - </l>
+                    <l>Night is the morning's Canvas </l>
+                    <l>Larceny - legacy - </l>
+                    <l>Death, but our rapt attention</l>
+                    <l>To Immortality.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>My figures fail to tell me </l>
+                    <l>How far the village lies -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Whose peasants are the angels - </l>
+                    <l>Whose Cantons dot the skies -</l>
+                    <l>My Classics vail their faces - </l>
+                    <l>My faith that Dark adores - </l>
+                    <l>Which from it's solemn abbeys </l>
+                    <l>Such resurrection pours.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

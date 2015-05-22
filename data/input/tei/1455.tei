@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The crickets sang </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1104A">
+                <lg type="stanza">
+                    <l>The Crickets<app type="division"><lem><lb/></lem></app>
+ sang </l>
+                    <l>And set the Sun </l>
+                    <l>And Workmen<app type="division"><lem><lb/></lem></app>
+ finished, one by one </l>
+                    <l>Their Seam the<app type="division"><lem><lb/></lem></app>
+ Day opon.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The low Grass<app type="division"><lem><lb/></lem></app>
+ loaded with the Dew,</l>
+                    <l>The Twilight stood<app type="division"><lem><lb/></lem></app>
+ as Strangers do -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>With Hat in Hand,<app type="division"><lem><lb/></lem></app>
+ polite and new </l>
+                    <l>To stay as if, or go.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Vastness, as<app type="division"><lem><lb/></lem></app>
+ a Neighbor, came - </l>
+                    <l>A Wisdom without<app type="division"><lem><lb/></lem></app>
+ Face or Name -</l>
+                    <l>A Peace, as<app type="division"><lem><lb/></lem></app>
+ Hemispheres at<app type="division"><lem><lb/></lem></app>
+ Home - </l>
+                    <l>And so, the Night<app type="division"><lem><lb/></lem></app>
+ became - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

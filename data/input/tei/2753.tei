@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I got so I could hear his name --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J293">
+                <lg type="stanza">
+                    <l>I got so I could hear his name --</l>
+                    <l>Without -- Tremendous gain --</l>
+                    <l>That Stop -- sensation -- on my Soul --</l>
+                    <l>And Thunder -- in the Room --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got so I could walk across</l>
+                    <l>That Angle in the floor,</l>
+                    <l>Where he turned so, and I <app type="revision"><lem>let go -- had failed --</lem><rdg>let go -- had failed --</rdg></app>
+turned -- how --</l>
+                    <l>And all our Sinew tore --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got so I could stir the Box --</l>
+                    <l>In which his letters grew</l>
+                    <l>Without that forcing, in my breath --</l>
+                    <l>As Staples -- driven through --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Could dimly recollect a Grace --</l>
+                    <l>I think, they call it "God" --</l>
+                    <l>Renowned to ease Extremity --</l>
+                    <l>When Formula, had failed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And shape my Hands --</l>
+                    <l>Petition's way,</l>
+                    <l>Tho' ignorant of a word</l>
+                    <l>That Ordination -- utters --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Business, with the Cloud,</l>
+                    <l>If any Power behind it, be,</l>
+                    <l><app type="revision"><lem>Supremer than --</lem><rdg>Supremer than --</rdg></app>
+Not subject to Despair --</l>
+                    <l>It care, in some remoter way,</l>
+                    <l>For so minute affair</l>
+                    <l>As Misery --</l>
+                    <l>Itself, too <app type="revision"><lem>vast</lem><rdg>vast</rdg></app>
+great, for interrupting -- more --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>1.hear] think -- / take -- i</l>
+                </lg>
+                <lg type="stanza">
+                    <l>13.Grace] Force</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

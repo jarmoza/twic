@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Good to hide and hear &#x27;em hunt! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F945A">
+                <lg type="stanza">
+                    <l>Good to hide, and<app type="division"><lem><lb/></lem></app>
+ hear 'em hunt!</l>
+                    <l>Better, to be found, </l>
+                    <l>If one care to,<app type="division"><lem><lb/></lem></app>
+ that is, </l>
+                    <l>The Fox fits the<app type="division"><lem><lb/></lem></app>
+ Hound - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Good to know, and<app type="division"><lem><lb/></lem></app>
+ not tell -</l>
+                    <l>Best, to know and<app type="division"><lem><lb/></lem></app>
+ tell, </l>
+                    <l>Can one find the<app type="division"><lem><lb/></lem></app>
+ rare Ear </l>
+                    <l>Not too dull - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

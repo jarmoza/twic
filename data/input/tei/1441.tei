@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A narrow fellow in the grass </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1096B">
+                <lg type="stanza">
+                    <l>A narrow Fellow in<app type="division"><lem><lb/></lem></app>
+ the Grass</l>
+                    <l>Occasionally rides - </l>
+                    <l>You may have met Him -<app type="division"><lem><lb/></lem></app>
+ did you not </l>
+                    <l>His notice sudden is - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Grass divides as<app type="division"><lem><lb/></lem></app>
+ with a Comb -</l>
+                    <l>A spotted shaft is<app type="division"><lem><lb/></lem></app>
+ seen - </l>
+                    <l>And then it closes<app type="division"><lem><lb/></lem></app>
+ at your feet </l>
+                    <l>And opens further on - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He likes a Boggy<app type="division"><lem><lb/></lem></app>
+ Acre </l>
+                    <l>A Floor too cool<app type="division"><lem><lb/></lem></app>
+ for Corn</l>
+                    <l>Yet when a Boy, and<app type="division"><lem><lb/></lem></app>
+ Barefoot -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>I more than once at<app type="division"><lem><lb/></lem></app>
+ Noon </l>
+                    <l>Have passed, I thought,<app type="division"><lem><lb/></lem></app>
+ a Whip lash </l>
+                    <l>Unbraiding in the Sun </l>
+                    <l>When stooping to secure<app type="division"><lem><lb/></lem></app>
+ it</l>
+                    <l>It wrinkled, and was<app type="division"><lem><lb/></lem></app>
+ gone - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Several of Nature's<app type="division"><lem><lb/></lem></app>
+ People </l>
+                    <l>I know, and they know<app type="division"><lem><lb/></lem></app>
+ me - </l>
+                    <l>I feel for them a<app type="division"><lem><lb/></lem></app>
+ transport </l>
+                    <l>Of cordiality -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But never met this<app type="division"><lem><lb/></lem></app>
+ Fellow </l>
+                    <l>Attended, or alone<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Without a tighter<app type="division"><lem><lb/></lem></app>
+ breathing </l>
+                    <l>And Zero at the Bone - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

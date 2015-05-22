@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Nature&quot; is what we see </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F721B">
+                <lg type="stanza">
+                    <l>&quot;Nature&quot; is what We see -</l>
+                    <l>The Hill - the Afternoon - </l>
+                    <l>Squirrel - Eclipse - the<app type="division"><lem><lb/></lem></app>
+ Bumble bee - </l>
+                    <l>Nay - Nature is Heaven - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Nature&quot; is what We hear -</l>
+                    <l>The Bobolink - the Sea - </l>
+                    <l>Thunder - the Cricket - </l>
+                    <l>Nay - Nature is Harmony - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Nature&quot; is what We know - </l>
+                    <l>But have no Art to say -</l>
+                    <l>So impotent our Wisdom<add type="alternate" extent="is">be -</add>
+ is </l>
+                    <l>To Her Sincerity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

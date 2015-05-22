@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Belshazzar had a Letter -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1459">
+                <lg type="stanza">
+                    <l>Belshazzar had a Letter --</l>
+                    <l>He never had but one --</l>
+                    <l>Belshazzar's Correspondent</l>
+                    <l>Concluded and begun</l>
+                    <l>In that immortal Copy</l>
+                    <l>The Conscience of us all</l>
+                    <l>Can read without it's Glasses</l>
+                    <l>On Revelation's Wall --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

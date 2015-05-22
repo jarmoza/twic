@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A little Dog that wags his tail
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1185">
+                <lg type="stanza">
+                    <l>A little Dog that wags his tail</l>
+                    <l>And knows no other joy</l>
+                    <l>Of such a little Dog am I</l>
+                    <l>Reminded by a Boy</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who gambols all the living Day</l>
+                    <l>Without an earthly cause</l>
+                    <l>Because he is a little Boy</l>
+                    <l>I honestly suppose --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                    <l>The Cat that in the Corner dwells</l>
+                    <l>Her martial Day forgot</l>
+                    <l>The Mouse but a Tradition now</l>
+                    <l>Of her desireless Lot</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Another class remind me</l>
+                    <l>Who neither please nor play</l>
+                    <l>But not to make a "bit of noise"</l>
+                    <l>Beseech each little Boy --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

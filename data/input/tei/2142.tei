@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The bird her punctual music brings </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1556A">
+                <lg type="stanza">
+                    <l>The <app type="division"><lem><lb/></lem></app>
+Bird her<app type="division"><lem><lb/></lem></app>
+ punctual<app type="division"><lem><lb/></lem></app>
+ music brings </l>
+                    <l>And lays<app type="division"><lem><lb/></lem></app>
+ it in <app type="emendation"><lem>its</lem><rdg>it&#x27;s</rdg></app>
+ place - </l>
+                    <l>It's place is<app type="division"><lem><lb/></lem></app>
+ in the Human<app type="division"><lem><lb/></lem></app>
+ Heart </l>
+                    <l>And in the<app type="division"><lem><lb/></lem></app>
+ Heavenly<app type="division"><lem><lb/></lem></app>
+ Grace - </l>
+                    <l>What respite<app type="division"><lem><lb/></lem></app>
+ from her<app type="division"><lem><lb/></lem></app>
+ thrilling toil</l>
+                    <l>Did Beauty<app type="division"><lem><lb/></lem></app>
+ ever take - </l>
+                    <l>But work<app type="division"><lem><lb/></lem></app>
+ might be<app type="division"><lem><lb/></lem></app>
+ Electric Rest </l>
+                    <l>To those that<app type="division"><lem><lb/></lem></app>
+ Magic<app type="division"><lem><lb/></lem></app>
+ make - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

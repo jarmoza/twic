@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I learned at least what home could be </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F891A">
+                <lg type="stanza">
+                    <l>I learned - at least -<app type="division"><lem><lb/></lem></app>
+ what Home could be -</l>
+                    <l>How ignorant I had been </l>
+                    <l>Of pretty ways of Covenant - </l>
+                    <l>How awkward at the Hymn </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Round our new Fireside -<app type="division"><lem><lb/></lem></app>
+ but for this -</l>
+                    <l>This pattern - of the way - </l>
+                    <l>Whose Memory drowns<app type="division"><lem><lb/></lem></app>
+ me, like the Dip </l>
+                    <l>Of a Celestial Sea - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Mornings in our<app type="division"><lem><lb/></lem></app>
+ Garden - guessed - </l>
+                    <l>What Bees - for us - to<app type="division"><lem><lb/></lem></app>
+ hum -</l>
+                    <l>With only<add type="alternate" extent="Birds">Bloom</add>
+ Birds to<app type="division"><lem><lb/></lem></app>
+ interrupt </l>
+                    <l>The Ripple of our Theme -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Task for Both -<app type="division"><lem><lb/></lem></app>
+ When Play be done - </l>
+                    <l>Your<add type="alternate" extent="Problem">labor</add>
+ Problem - of the<app type="division"><lem><lb/></lem></app>
+ Brain - </l>
+                    <l>And mine - some<app type="division"><lem><lb/></lem></app>
+ foolisher effect -</l>
+                    <l>A<add type="alternate" extent="Ruffle">Thimble</add>
+ Ruffle - or a Tune - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Afternoons - together<app type="division"><lem><lb/></lem></app>
+ spent - </l>
+                    <l>And Twilight - in the<app type="division"><lem><lb/></lem></app>
+ Lanes - </l>
+                    <l>Some ministry to poorer lives - </l>
+                    <l>Seen poorest - thro' our gains -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then Return - and<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Night">Trust</add>
+ Night - and Home - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then away to You<app type="division"><lem><lb/></lem></app>
+ to pass - </l>
+                    <l>A new - diviner - Care -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Till Sunrise<add type="alternate" extent="take">call -</add>
+ take us<app type="division"><lem><lb/></lem></app>
+ back to Scene - </l>
+                    <l>Transmuted - Vivider -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This seems a Home -<app type="division"><lem><lb/></lem></app>
+ And Home is not - </l>
+                    <l>But what that Place<app type="division"><lem><lb/></lem></app>
+ could be - </l>
+                    <l>Afflicts me - as a<app type="division"><lem><lb/></lem></app>
+ Setting Sun - </l>
+                    <l>Where Dawn - knows<app type="division"><lem><lb/></lem></app>
+ how to be - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

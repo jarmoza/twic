@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I should not dare to be so sad </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1233A">
+                <lg type="stanza">
+                    <l>I should<app type="division"><lem><lb/></lem></app>
+ not dare to<app type="division"><lem><lb/></lem></app>
+ be so sad</l>
+                    <l>So many<app type="division"><lem><lb/></lem></app>
+ Years again - </l>
+                    <l>A Load is<app type="division"><lem><lb/></lem></app>
+ first impossible </l>
+                    <l>When we<app type="division"><lem><lb/></lem></app>
+ have put it<app type="division"><lem><lb/></lem></app>
+ down - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Superhuman<app type="division"><lem><lb/></lem></app>
+ then withdraws</l>
+                    <l>And we who<app type="division"><lem><lb/></lem></app>
+ never saw </l>
+                    <l>The Giant at<app type="division"><lem><lb/></lem></app>
+ the other side </l>
+                    <l>Begin to perish<app type="division"><lem><lb/></lem></app>
+ now.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

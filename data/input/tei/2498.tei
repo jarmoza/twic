@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It did not surprise me -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J39">
+                <lg type="stanza">
+                    <l>It did not surprise me --</l>
+                    <l>So I said -- or thought --</l>
+                    <l>She will stir her pinions</l>
+                    <l>And the nest forgot,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Traverse broader forests --</l>
+                    <l>Build in gayer boughs,</l>
+                    <l>Breathe in Ear more modern</l>
+                    <l>God's old fashioned vows --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This was but a Birdling --</l>
+                    <l>What and if it be One within my bosom</l>
+                    <l>Had departed me?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This was but a story --</l>
+                    <l>What and if indeed</l>
+                    <l>There were just such coffin</l>
+                    <l>In the heart instead?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

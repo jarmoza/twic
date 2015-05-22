@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Did we disobey him? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F299A">
+                <lg type="stanza">
+                    <l>Did we disobey Him?</l>
+                    <l>Just one time!  </l>
+                    <l>Charged us to forget Him - </l>
+                    <l>But we could'nt learn!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Were Himself - such a Dunce -</l>
+                    <l>What would we - do?  </l>
+                    <l>Love the dull lad - best - </l>
+                    <l>Oh, would'nt you?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

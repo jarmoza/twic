@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On that dear Frame the Years had worn 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J940">
+                <lg type="stanza">
+                    <l>On that dear Frame the Years had worn</l>
+                    <l>Yet precious as the House</l>
+                    <l>In which We first experienced Light</l>
+                    <l>The Witnessing, to Us --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Precious! It was conceiveless fair</l>
+                    <l>As Hands the Grave had grimed</l>
+                    <l>Should softly place within our own</l>
+                    <l><app type="revision"><lem>Disputing</lem><rdg>Disputing</rdg></app>
+Denying that they died.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

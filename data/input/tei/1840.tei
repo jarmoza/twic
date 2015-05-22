@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The rat is the concisest tenant </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1369A">
+                <lg type="stanza">
+                    <l>The rat is the concisest tenant </l>
+                    <l>He pays no rent </l>
+                    <l>Repudiates the obligation </l>
+                    <l>On schemes intent - </l>
+                    <l>Balking our wit<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>To sound or circumvent </l>
+                    <l>Hate cannot harm </l>
+                    <l>A Foe so reticent </l>
+                    <l>Or decree prohibit him </l>
+                    <l>Lawful as Equilibrium -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

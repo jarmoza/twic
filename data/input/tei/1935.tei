@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>March is the month of expectation </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1422C">
+                <lg type="stanza">
+                    <l>March is<app type="division"><lem><lb/></lem></app>
+ the Month<app type="division"><lem><lb/></lem></app>
+ of Expectation.  </l>
+                    <l>The things<app type="division"><lem><lb/></lem></app>
+ we do not<app type="division"><lem><lb/></lem></app>
+ know - </l>
+                    <l>The Persons<app type="division"><lem><lb/></lem></app>
+ of prognostication<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Are coming<app type="division"><lem><lb/></lem></app>
+ now - </l>
+                    <l>We try to<app type="division"><lem><lb/></lem></app>
+ show becoming<app type="division"><lem><lb/></lem></app>
+ firmness -</l>
+                    <l>But pompous<app type="division"><lem><lb/></lem></app>
+ Joy </l>
+                    <l>Betrays us, as<app type="division"><lem><lb/></lem></app>
+ his first<app type="division"><lem><pb/></lem></app>
+ Betrothal </l>
+                    <l>Betrays a<app type="division"><lem><lb/></lem></app>
+ Boy.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

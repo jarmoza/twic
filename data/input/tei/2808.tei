@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I dreaded that first Robin, so,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J348">
+                <lg type="stanza">
+                    <l>I dreaded that first Robin, so,</l>
+                    <l>But He is mastered, now,</l>
+                    <l>I'm some accustomed to Him grown,</l>
+                    <l>He hurts a little, though --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I thought if I could only live</l>
+                    <l>Till that first Shout got by --</l>
+                    <l>Not all Pianos in the Woods</l>
+                    <l>Had power to mangle me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I dared not meet the Daffodils --</l>
+                    <l>For fear their Yellow Gown</l>
+                    <l>Would pierce me with a fashion</l>
+                    <l>So foreign to my own --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wished the Grass would hurry --</l>
+                    <l>So -- when 'twas time to see --</l>
+                    <l>He'd be too tall, the tallest one</l>
+                    <l>Could stretch -- to look at me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could not bear the Bees should come,</l>
+                    <l>I wished they'd stay away</l>
+                    <l>In those dim countries where they go,</l>
+                    <l>What word had they, for me?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They're here, though; not a creature failed --</l>
+                    <l>No Blossom stayed away</l>
+                    <l>In gentle deference to me --</l>
+                    <l>The Queen of Calvary --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Each one salutes me, as he goes,</l>
+                    <l>And I, my childish Plumes,</l>
+                    <l>Lift, in bereaved acknowledgement</l>
+                    <l>Of their unthinking Drums --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The thought beneath so slight a film --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J210">
+                <lg type="stanza">
+                    <l>The thought beneath so slight a film --</l>
+                    <l>Is more distinctly seen --</l>
+                    <l>As laces just reveal the surge --</l>
+                    <l>Or Mists -- the Appenine --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

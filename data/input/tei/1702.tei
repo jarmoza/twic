@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So pleased she was to die </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1278A">
+                <lg type="stanza">
+                    <l>So pleased she<app type="division"><lem><lb/></lem></app>
+ was to die </l>
+                    <l>It made us all<app type="division"><lem><lb/></lem></app>
+ ashamed </l>
+                    <l>That what we<app type="division"><lem><lb/></lem></app>
+ valued so devoid </l>
+                    <l>To her desire<app type="division"><lem><lb/></lem></app>
+ seemed - </l>
+                    <l>So satisfied to<app type="division"><lem><lb/></lem></app>
+ go - where none<app type="division"><lem><lb/></lem></app>
+ of us would be</l>
+                    <l>Immediately - that<app type="division"><lem><lb/></lem></app>
+ Anguish stooped </l>
+                    <l>Almost to Jealousy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

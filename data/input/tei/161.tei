@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Success is counted sweetest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F112D">
+                <lg type="stanza">
+                    <l>Success - is counted<app type="division"><lem><lb/></lem></app>
+ <app type="emendation"><lem>sweetestt</lem><rdg>sweetest</rdg></app>
+ </l>
+                    <l>By those who ne'er<app type="division"><lem><lb/></lem></app>
+ succeed - </l>
+                    <l>To Comprehend a Nectar - </l>
+                    <l>Requires sorest need - </l>
+                    <l>Not one of all the<app type="division"><lem><lb/></lem></app>
+ Purple Host</l>
+                    <l>Who took the Flag - today - </l>
+                    <l>Can tell the Definition -<app type="division"><lem><lb/></lem></app>
+ so clear - of Victory - </l>
+                    <l>As He - defeated - dying - </l>
+                    <l>On whose forbidden ear - </l>
+                    <l>The distant strains of<app type="division"><lem><pb/></lem></app>
+ Triumph</l>
+                    <l>Burst - agonized - and<app type="division"><lem><lb/></lem></app>
+ Clear!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

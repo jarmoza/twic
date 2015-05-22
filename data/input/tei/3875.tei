@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A wild Blue sky abreast of Winds 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1415">
+                <lg type="stanza">
+                    <l>A wild Blue sky abreast of Winds</l>
+                    <l>That threatened it -- did run</l>
+                    <l>And crouched behind his Yellow Door</l>
+                    <l><app type="revision"><lem>sat</lem><rdg>sat</rdg></app>
+Was the defiant sun --</l>
+                    <l>Some conflict with those upper friends</l>
+                    <l>So genial in the main</l>
+                    <l>That we deplore peculiarly</l>
+                    <l><app type="revision"><lem>this</lem><rdg>this</rdg></app>
+Their arrogant campaign --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

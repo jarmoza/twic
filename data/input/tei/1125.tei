@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Robbed by death but that was easy </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F838A">
+                <lg type="stanza">
+                    <l>Robbed by Death - but that<app type="division"><lem><lb/></lem></app>
+ was easy -</l>
+                    <l>To the failing Eye </l>
+                    <l>I could hold the latest Glowing - </l>
+                    <l>Robbed by Liberty </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Her Jugular Defences -</l>
+                    <l>This, too, I endured - </l>
+                    <l>Hint of Glory - it afforded - </l>
+                    <l>For the<add type="alternate" extent="Brave">bold</add>
+ Brave Beloved - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fraud of Distance - Fraud of Danger, </l>
+                    <l>Fraud of Death - to bear -</l>
+                    <l>It is Bounty - to Suspense's </l>
+                    <l>Vague Calamity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Staking our<add type="alternate" extent="entire">divine -</add>
+ entire Possession </l>
+                    <l>On a Hair's result - </l>
+                    <l>Then - Seesawing - coolly - on it -</l>
+                    <l><add type="alternate" extent="">As to estimate</add>
+Trying if it split - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

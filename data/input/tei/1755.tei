@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas later when the summer went </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1312A">
+                <lg type="stanza">
+                    <l>'Twas later when<app type="division"><lem><lb/></lem></app>
+ the summer went </l>
+                    <l>Than when the<app type="division"><lem><lb/></lem></app>
+ Cricket came - </l>
+                    <l>And yet we knew<app type="division"><lem><lb/></lem></app>
+ that gentle Clock </l>
+                    <l>Meant nought but<app type="division"><lem><lb/></lem></app>
+ Going Home - </l>
+                    <l>'Twas sooner when<app type="division"><lem><lb/></lem></app>
+ the Cricket went</l>
+                    <l>Than when the<app type="division"><lem><lb/></lem></app>
+ Winter came </l>
+                    <l>Yet that <app type="emendation"><lem>pa - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ thetic</lem><rdg>pathetic</rdg></app>
+ Pendulum </l>
+                    <l>Keeps <app type="division"><lem><lb/></lem></app>
+Esoteric<app type="division"><lem><lb/></lem></app>
+ Time.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

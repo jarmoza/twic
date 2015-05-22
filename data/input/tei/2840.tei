@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a flower that Bees prefer --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J380">
+                <lg type="stanza">
+                    <l>There is a flower that Bees prefer --</l>
+                    <l>And Butterflies -- desire --</l>
+                    <l>To gain the Purple Democrat</l>
+                    <l>The Humming Bird -- aspire --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Whatsoever Insect pass --</l>
+                    <l>A Honey bear away</l>
+                    <l>Proportioned to his several dearth</l>
+                    <l>And her -- capacity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her face be rounder than the Moon</l>
+                    <l>And ruddier than the Gown</l>
+                    <l>Of Orchis in the Pasture --</l>
+                    <l>Or Rhododendron -- worn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She doth not wait for June --</l>
+                    <l>Before the World be Green --</l>
+                    <l>Her sturdy little Countenance</l>
+                    <l>Against the Wind -- be seen --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Contending with the Grass --</l>
+                    <l>Near Kinsman to Herself --</l>
+                    <l>For Privilege of Sod and Sun --</l>
+                    <l>Sweet Litigants for Life --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the Hills be full --</l>
+                    <l>And newer fashions blow --</l>
+                    <l>Doth not retract a single spice</l>
+                    <l>For pang of jealousy --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Public -- be the Noon --</l>
+                    <l>Her Providence -- the Sun --</l>
+                    <l>Her Progress -- by the Bee -- proclaimed --</l>
+                    <l>In sovreign -- Swerveless Tune --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Bravest -- of the Host --</l>
+                    <l>Surrendering -- the last --</l>
+                    <l>Nor even of Defeat -- aware --</l>
+                    <l>When cancelled by the Frost</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

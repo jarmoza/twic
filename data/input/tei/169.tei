@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Talk with prudence to a beggar </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F118A">
+                <lg type="stanza">
+                    <l>Talk with prudence to a Beggar</l>
+                    <l>Of &quot;Potosi,&quot; and the mines!  </l>
+                    <l>Reverently, to the Hungry </l>
+                    <l>Of your viands, and your wines!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cautious, hint to any Captive</l>
+                    <l>You have passed enfranchised feet!  </l>
+                    <l>Anecdotes of air, in Dungeons </l>
+                    <l>Have sometimes proved deadly sweet!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

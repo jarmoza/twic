@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There&#x27;s the Battle of Burgoyne </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1316A">
+                <lg type="stanza">
+                    <l>There's the<app type="division"><lem><lb/></lem></app>
+ Battle of Burgoyne - </l>
+                    <l>Over, every Day, </l>
+                    <l>By the Time<app type="division"><lem><lb/></lem></app>
+ that Man and<app type="division"><lem><lb/></lem></app>
+ Beast </l>
+                    <l>Put their work<app type="division"><lem><lb/></lem></app>
+ away - </l>
+                    <l>&quot;Sunset&quot; sounds<app type="division"><lem><lb/></lem></app>
+ majestic -</l>
+                    <l>But that solemn<app type="division"><lem><lb/></lem></app>
+ War </l>
+                    <l>Could you<app type="division"><lem><lb/></lem></app>
+ comprehend it<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>You would<app type="division"><lem><lb/></lem></app>
+ chastened<app type="division"><lem><lb/></lem></app>
+ stare - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

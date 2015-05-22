@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If the foolish, call them &quot;flowers&quot; --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J168">
+                <lg type="stanza">
+                    <l>If the foolish, call them "flowers" --</l>
+                    <l>Need the wiser, tell?</l>
+                    <l>If the Savans "Classify" them</l>
+                    <l>It is just as well!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Those who read the "Revelations"</l>
+                    <l>Must not criticize</l>
+                    <l>Those who read the same Edition --</l>
+                    <l>With beclouded Eyes!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Could we stand with that Old "Moses" --</l>
+                    <l>"Canaan" denied --</l>
+                    <l>Scan like him, the stately landscape</l>
+                    <l>On the other side --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Doubtless, we should deem superfluous</l>
+                    <l>Many Sciences,</l>
+                    <l>Not pursued by learned Angels</l>
+                    <l>In scholastic skies!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Low amid that glad Belles lettres</l>
+                    <l>Grant that we may stand,</l>
+                    <l>Stars, amid profound Galaxies --</l>
+                    <l>At that grand "Right hand"!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To venerate the simple days 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J57">
+                <lg type="stanza">
+                    <l>To venerate the simple days</l>
+                    <l>Which lead the seasons by,</l>
+                    <l>Needs but to remember</l>
+                    <l>That from you or I,</l>
+                    <l>They may take the trifle</l>
+                    <l>Termed mortality!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

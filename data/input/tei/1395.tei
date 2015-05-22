@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Could I but ride indefinite </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1056A">
+                <lg type="stanza">
+                    <l>Could I but ride<app type="division"><lem><lb/></lem></app>
+ indefinite</l>
+                    <l>As doth the Meadow Bee </l>
+                    <l>And visit only where I<app type="division"><lem><lb/></lem></app>
+ liked </l>
+                    <l>And no one visit me </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And flirt all Day with<app type="division"><lem><lb/></lem></app>
+ Buttercups</l>
+                    <l>And marry whom I may </l>
+                    <l>And dwell a little<app type="division"><lem><lb/></lem></app>
+ everywhere </l>
+                    <l>Or better, run away </l>
+                </lg>
+                <lg type="stanza">
+                    <l>With no Police to follow </l>
+                    <l>Or chase Him if He do</l>
+                    <l>Till He should jump<app type="division"><lem><lb/></lem></app>
+ Peninsulas </l>
+                    <l>To get away from me -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I said &quot;But just to be<app type="division"><lem><lb/></lem></app>
+ a Bee&quot; </l>
+                    <l>Opon a Raft of Air </l>
+                    <l>And row in Nowhere<app type="division"><lem><lb/></lem></app>
+ all Day long</l>
+                    <l>And anchor &quot;off the Bar&quot; </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Liberty! So Captives<app type="division"><lem><lb/></lem></app>
+ deem </l>
+                    <l>Who tight in Dungeons are.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

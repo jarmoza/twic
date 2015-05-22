@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I never hear that one is dead </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1325A">
+                <lg type="stanza">
+                    <l>I never hear<app type="division"><lem><lb/></lem></app>
+ that one is dead </l>
+                    <l>Without the chance<app type="division"><lem><lb/></lem></app>
+ of Life </l>
+                    <l>Afresh annihilating me </l>
+                    <l>That mightiest Belief, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too mighty for the<app type="division"><lem><lb/></lem></app>
+ Daily mind</l>
+                    <l>That tilling it's abyss, </l>
+                    <l>Had Madness, had<app type="division"><lem><lb/></lem></app>
+ it once or, Twice </l>
+                    <l>The<add type="alternate" extent="yawning Consciousness,">Consciousness of this.</add>
+ yawning Consciousness, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Beliefs are Bandaged,<app type="division"><lem><lb/></lem></app>
+ like the Tongue </l>
+                    <l>When Terror<app type="division"><lem><lb/></lem></app>
+ were it told</l>
+                    <l>In any Tone<app type="division"><lem><pb/></lem></app>
+ commensurate </l>
+                    <l>Would strike<app type="division"><lem><lb/></lem></app>
+ us instant<app type="division"><lem><lb/></lem></app>
+ Dead - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I do not know<app type="division"><lem><lb/></lem></app>
+ the man so<app type="division"><lem><lb/></lem></app>
+ bold </l>
+                    <l>He dare<app type="division"><lem><lb/></lem></app>
+ in<add type="alternate" extent="lonely Place">lonesome Place - &amp;#x2022; secret Place</add>
+ lonely<app type="division"><lem><lb/></lem></app>
+ Place </l>
+                    <l>That awful<app type="division"><lem><lb/></lem></app>
+ stranger -<app type="division"><lem><lb/></lem></app>
+ Consciousness</l>
+                    <l><add type="alternate" extent="">look squarely in the Face.</add>
+Deliberately <app type="division"><lem><lb/></lem></app>
+face - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

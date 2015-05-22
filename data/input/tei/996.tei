@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>God gave a loaf to every bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F748B">
+                <lg type="stanza">
+                    <l>God gave a Loaf to every Bird -</l>
+                    <l>But just a Crumb - to Me - </l>
+                    <l>I dare not <app type="emendation"><lem>eaut</lem><rdg>eat</rdg></app>
+ it - tho'<app type="division"><lem><lb/></lem></app>
+ I starve - </l>
+                    <l>My poignant luxury - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To own it - touch it -</l>
+                    <l>Prove the feat - that made<app type="division"><lem><lb/></lem></app>
+ the Pellet mine - </l>
+                    <l>Too happy - for my Sparrow's chance - </l>
+                    <l>For Ampler Coveting - </l>
+                    <l>It might be Famine - all around - </l>
+                    <l>I could not miss an Ear -</l>
+                    <l>Such Plenty smiles opon my Board - </l>
+                    <l>My Garner shows so fair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wonder how the Rich - may feel - </l>
+                    <l>An Indiaman - An Earl - </l>
+                    <l>I deem that I - with but a Crumb -</l>
+                    <l>Am Sovreign of them all - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

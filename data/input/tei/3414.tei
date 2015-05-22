@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Chemical conviction
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J954">
+                <lg type="stanza">
+                    <l>The Chemical conviction</l>
+                    <l>That Nought be lost</l>
+                    <l>Enable in Disaster</l>
+                    <l>My fractured Trust --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Faces of the Atoms</l>
+                    <l>If I shall see</l>
+                    <l>How more the Finished Creatures</l>
+                    <l><app type="revision"><lem>Entrusted</lem><rdg>Entrusted</rdg></app>
+Departed me!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

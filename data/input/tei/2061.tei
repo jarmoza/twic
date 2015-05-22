@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A winged spark doth soar about </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1502A">
+                <lg type="stanza">
+                    <l>A winged spark<app type="division"><lem><lb/></lem></app>
+ doth soar about - </l>
+                    <l>I never met it<app type="division"><lem><lb/></lem></app>
+ near </l>
+                    <l>For Lightning it<app type="division"><lem><lb/></lem></app>
+ is oft mistook </l>
+                    <l>When nights are<app type="division"><lem><lb/></lem></app>
+ hot and sere - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's twinkling<app type="division"><lem><lb/></lem></app>
+ Travels it pursues</l>
+                    <l>Above the Haunts<app type="division"><lem><lb/></lem></app>
+ of men - </l>
+                    <l>A speck of<app type="division"><lem><lb/></lem></app>
+ Rapture - first<app type="division"><lem><lb/></lem></app>
+ perceived </l>
+                    <l>By feeling it<app type="division"><lem><lb/></lem></app>
+ is gone - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

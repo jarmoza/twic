@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Faithful to the end&quot; amended </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1386D">
+                <lg type="stanza">
+                    <l>&quot;Faithful to<app type="division"><lem><lb/></lem></app>
+ the end&quot; amended </l>
+                    <l>From the<app type="division"><lem><lb/></lem></app>
+ Heavenly clause - </l>
+                    <l>Constancy <app type="division"><lem><lb/></lem></app>
+with a<app type="division"><lem><lb/></lem></app>
+ Proviso </l>
+                    <l>Constancy <app type="division"><lem><lb/></lem></app>
+abhors - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Crowns of<app type="division"><lem><lb/></lem></app>
+ Life&quot; are<app type="division"><lem><lb/></lem></app>
+ servile Prizes</l>
+                    <l>To the<app type="division"><lem><lb/></lem></app>
+ stately Heart, </l>
+                    <l>Given for<app type="division"><lem><lb/></lem></app>
+ the Giving,<app type="division"><lem><lb/></lem></app>
+ solely, </l>
+                    <l>No Emolument.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

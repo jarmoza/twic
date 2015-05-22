@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Adrift! A little boat adrift!</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-153">
+                <lg type="stanza">
+                    <l>Adrift! A little boat adrift!</l>
+                    <l>And night is coming down!</l>
+                    <l>Will no one guide a little boat</l>
+                    <l>Unto the nearest town?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So sailors say, on yesterday,</l>
+                    <l>Just as the dusk was brown,</l>
+                    <l>One little boat gave up its strife,</l>
+                    <l>And gurgled down and down.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But angels say, on yesterday,</l>
+                    <l>Just as the dawn was red,</l>
+                    <l>One little boat o'erspent with gales</l>
+                    <l>Retrimmed its masts, redecked its sails</l>
+                    <l>Exultant, onward sped!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

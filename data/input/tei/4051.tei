@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bobolink is gone -- the Rowdy of the Meadow -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1591">
+                <lg type="stanza">
+                    <l>The Bobolink is gone -- the Rowdy of the Meadow --</l>
+                    <l>And no one swaggers now but me --</l>
+                    <l>The Presbyterian Birds can now resume the Meeting</l>
+                    <l>He gaily interrupted that overflowing Day</l>
+                    <l>boldly</l>
+                    <l>When opening the Sabbath in their afflictive Way</l>
+                    <l>He bowed to Heaven instead of Earth</l>
+                    <l>to every Heaven above</l>
+                    <l>to all the saints he knew</l>
+                    <l>every God he knew</l>
+                    <l>And shouted Let us pray --</l>
+                    <l>and bubbled let us pray --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He recognized his maker -- overturned the Decalogue --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He swung upon the Decalogue</l>
+                    <l>And shouted Let us pray --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When supplicating mercy</l>
+                    <l>In a portentous way -- portentous way</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Gay from an unannointed Twig        Sweet from a surreptitious Twig</l>
+                    <l>He gurgled -- Let us pray --</l>
+                    <l>bubbled</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

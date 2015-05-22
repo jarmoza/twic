@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a strength in proving that it can be borne </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1133A">
+                <lg type="stanza">
+                    <l>There is a strength<app type="division"><lem><lb/></lem></app>
+ in<add type="alternate" extent="proving">knowing</add>
+ proving that<app type="division"><lem><lb/></lem></app>
+ it can be borne </l>
+                    <l>Although it tear - </l>
+                    <l>What are the<app type="division"><lem><lb/></lem></app>
+ sinews of such<app type="division"><lem><lb/></lem></app>
+ cordage for </l>
+                    <l>Except to bear </l>
+                    <l>The ship might<app type="division"><lem><lb/></lem></app>
+ be of satin had<app type="division"><lem><lb/></lem></app>
+ it not to fight -</l>
+                    <l>To walk on<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="seas">tides</add>
+ seas requires<app type="division"><lem><lb/></lem></app>
+ cedar Feet </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

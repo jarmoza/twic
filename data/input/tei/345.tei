@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I should not dare to leave my friend </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F234A">
+                <lg type="stanza">
+                    <l>I should not dare to leave<app type="division"><lem><lb/></lem></app>
+ my friend,</l>
+                    <l>Because - because if he should<app type="division"><lem><lb/></lem></app>
+ die </l>
+                    <l>While I was gone - and I - too<app type="division"><lem><lb/></lem></app>
+ late - </l>
+                    <l>Should reach the Heart<app type="division"><lem><lb/></lem></app>
+ that wanted me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If I should disappoint<app type="division"><lem><lb/></lem></app>
+ the eyes</l>
+                    <l>That hunted - hunted so - to see - </l>
+                    <l>And could not bear to shut<app type="division"><lem><lb/></lem></app>
+ until </l>
+                    <l>They &quot;noticed&quot; me - they noticed<app type="division"><lem><lb/></lem></app>
+ me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If I should stab the<app type="division"><lem><lb/></lem></app>
+ patient faith </l>
+                    <l>So sure I'd come -<app type="division"><lem><pb/></lem></app>
+ so sure<app type="division"><lem><lb/></lem></app>
+ I'd come -</l>
+                    <l>It <em>listening</em> - listening - went to<app type="division"><lem><lb/></lem></app>
+ sleep - </l>
+                    <l>Telling my tardy name - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Heart would wish it<app type="division"><lem><lb/></lem></app>
+ broke before - </l>
+                    <l>Since breaking then - since<app type="division"><lem><lb/></lem></app>
+ breaking then - </l>
+                    <l>Were useless as next morning's<app type="division"><lem><lb/></lem></app>
+ sun -</l>
+                    <l>Where midnight frosts - had<app type="division"><lem><lb/></lem></app>
+ lain!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

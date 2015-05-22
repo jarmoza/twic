@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Wounded Deer -- leaps highest -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J165">
+                <lg type="stanza">
+                    <l>A Wounded Deer -- leaps highest --</l>
+                    <l>I've heard the Hunter tell --</l>
+                    <l>'Tis but the Extasy of death --</l>
+                    <l>And then the Brake is still!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Smitten Rock that gushes!</l>
+                    <l>The trampled Steel that springs!</l>
+                    <l>A Cheek is always redder</l>
+                    <l>Just where the Hectic stings!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mirth is the Mail of Anguish --</l>
+                    <l>In which it Cautious Arm,</l>
+                    <l>Lest anybody spy the blood</l>
+                    <l>And "you're hurt" exclaim!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Brain -- is wider than the Sky -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J632">
+                <lg type="stanza">
+                    <l>The Brain -- is wider than the Sky --</l>
+                    <l>For -- put them side by side --</l>
+                    <l>The one the other will contain</l>
+                    <l>With ease -- and You -- beside --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Brain is deeper than the sea --</l>
+                    <l>For -- hold them -- Blue to Blue --</l>
+                    <l>The one the other will absorb --</l>
+                    <l>As Sponges -- Buckets -- do --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Brain is just the weight of God --</l>
+                    <l>For -- Heft them -- Pound for Pound --</l>
+                    <l>And they will differ -- if they do --</l>
+                    <l>As Syllable from Sound --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>3. contain) include</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

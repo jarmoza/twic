@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I do not care - why should I care </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1534A">
+                <lg type="stanza">
+                    <l>I do not care -<app type="division"><lem><lb/></lem></app>
+ why should I care </l>
+                    <l>And yet I fear<app type="division"><lem><lb/></lem></app>
+ I'm caring </l>
+                    <l>To rock a<add type="alternate" extent="fretting">crying &amp;#x2022; wailing</add>
+ fretting<app type="division"><lem><lb/></lem></app>
+ truth to sleep - </l>
+                    <l>Is<add type="alternate" extent="short">no &amp;#x2022; frail &amp;#x2022; poor</add>
+ short security </l>
+                    <l>The terror it will<app type="division"><lem><lb/></lem></app>
+ wake</l>
+                    <l>persistent as perdition </l>
+                    <l>Is harder than to face </l>
+                    <l>the frank adversity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Her &quot;last Poems&quot; </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F600A">
+                <lg type="stanza">
+                    <l>Her - &quot;last Poems&quot; - </l>
+                    <l>Poets ended - </l>
+                    <l>Silver perished with her<app type="division"><lem><lb/></lem></app>
+ tongue - </l>
+                    <l>Not on Record bubbled<app type="division"><lem><lb/></lem></app>
+ Other - </l>
+                    <l>Flute, or Woman, so<app type="division"><lem><lb/></lem></app>
+ divine -</l>
+                    <l>Not unto it's Summer -<app type="division"><lem><lb/></lem></app>
+ Morning </l>
+                    <l>Robin - uttered - half - the<app type="division"><lem><lb/></lem></app>
+ tune - </l>
+                    <l>Gushed too free for the<app type="division"><lem><lb/></lem></app>
+ adoring, </l>
+                    <l>From the Anglo-Florentine.<app type="division"><lem><pb/></lem></app>
+  </l>
+                    <l>Late - the Praise -</l>
+                    <l>'Tis dull - conferring </l>
+                    <l>On a Head too high<app type="division"><lem><lb/></lem></app>
+ to crown - </l>
+                    <l>Diadem - or Ducal Showing - </l>
+                    <l>Be it's Grave - sufficient<app type="division"><lem><lb/></lem></app>
+ Sign - </l>
+                    <l>Yet, if We - No Poet's<app type="division"><lem><lb/></lem></app>
+ Kinsman -</l>
+                    <l>Suffocate - with easy wo - </l>
+                    <l>What and if Ourself<app type="division"><lem><lb/></lem></app>
+ a Bridegroom - </l>
+                    <l>Put Her down - in Italy?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

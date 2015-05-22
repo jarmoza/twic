@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When they come back - if blossoms do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1042A">
+                <lg type="stanza">
+                    <l>When they come back -<app type="division"><lem><lb/></lem></app>
+ if Blossoms do -</l>
+                    <l>I always feel a doubt </l>
+                    <l>If Blossoms can be<app type="division"><lem><lb/></lem></app>
+ born again </l>
+                    <l>When once the Art<app type="division"><lem><lb/></lem></app>
+ is out - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When they begin, if<app type="division"><lem><lb/></lem></app>
+ Robins may,</l>
+                    <l>I always had a fear </l>
+                    <l>I did not tell, it<app type="division"><lem><lb/></lem></app>
+ was their last<app type="division"><lem><lb/></lem></app>
+ Experiment </l>
+                    <l>Last Year, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When it is May, if<app type="division"><lem><lb/></lem></app>
+ May return, </l>
+                    <l>Had nobody a pang</l>
+                    <l>Lest in a Face so beautiful </l>
+                    <l>He might not look again?<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If I am there - One<app type="division"><lem><lb/></lem></app>
+ does not know </l>
+                    <l>What Party - One may<app type="division"><lem><lb/></lem></app>
+ be </l>
+                    <l>Tomorrow, but if I am<app type="division"><lem><lb/></lem></app>
+ there</l>
+                    <l>I take back all I say - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

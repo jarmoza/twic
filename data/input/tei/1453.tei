@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perception of an object costs </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1103A">
+                <lg type="stanza">
+                    <l>Perception of an<app type="division"><lem><lb/></lem></app>
+ object costs </l>
+                    <l>Precise the Object's<app type="division"><lem><lb/></lem></app>
+ loss - </l>
+                    <l>Perception in itself<app type="division"><lem><lb/></lem></app>
+ a Gain </l>
+                    <l>Replying to it's<app type="division"><lem><lb/></lem></app>
+ Price - </l>
+                    <l>The Object absolute -<app type="division"><lem><lb/></lem></app>
+ is nought -</l>
+                    <l>Perception sets it<app type="division"><lem><lb/></lem></app>
+ fair </l>
+                    <l>And then upbraids<app type="division"><lem><lb/></lem></app>
+ a Perfectness </l>
+                    <l>That situates<app type="division"><lem><lb/></lem></app>
+ so far - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

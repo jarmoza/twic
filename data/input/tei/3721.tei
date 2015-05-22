@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Word dropped careless on a Page 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1261">
+                <lg type="stanza">
+                    <l>A Word dropped careless on a Page</l>
+                    <l>May <app type="revision"><lem>consecrated.</lem><rdg>consecrated.</rdg></app>
+stimulate an eye</l>
+                    <l>When folded in perpetual seam</l>
+                    <l>The Wrinkled <app type="revision"><lem>Author</lem><rdg>Author</rdg></app>
+Maker lie</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Infection in the sentence breeds</l>
+                    <l>We may inhale Despair</l>
+                    <l>At distances of Centuries</l>
+                    <l>From the Malaria --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

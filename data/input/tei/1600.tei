@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Somehow myself survived the night </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1209A">
+                <lg type="stanza">
+                    <l>Somehow myself<app type="division"><lem><lb/></lem></app>
+ survived the Night</l>
+                    <l>And entered with<app type="division"><lem><lb/></lem></app>
+ the Day - </l>
+                    <l>That it be saved<app type="division"><lem><lb/></lem></app>
+ the Saved suffice </l>
+                    <l>Without the<app type="division"><lem><lb/></lem></app>
+ Formula - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Henceforth I take<app type="division"><lem><lb/></lem></app>
+ my living place</l>
+                    <l>As one commuted<app type="division"><lem><lb/></lem></app>
+ led - </l>
+                    <l>A Candidate for<app type="division"><lem><lb/></lem></app>
+ Morning Chance </l>
+                    <l>But dated with<app type="division"><lem><lb/></lem></app>
+ the Dead.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

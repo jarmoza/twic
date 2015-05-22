@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SHELTER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-44">
+                <lg type="stanza">
+                    <l>The body grows outside, </l>
+                    <l>The more convenient way, </l>
+                    <l>That if the spirit like to hide,</l>
+                    <l>Its temple stands alway</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ajar, secure, inviting;</l>
+                    <l>It never did betray</l>
+                    <l>The soul that asked its shelter</l>
+                    <l>In timid honesty.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

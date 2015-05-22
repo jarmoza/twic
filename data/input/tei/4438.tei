@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE HUMMING-BIRD.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-88">
+                <lg type="stanza">
+                    <l>THE HUMMING-BIRD.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A route of evanescence</l>
+                    <l>With a revolving wheel;</l>
+                    <l>A resonance of emerald,</l>
+                    <l>A rush of cochineal;</l>
+                    <l>And every blossom on the bush</l>
+                    <l>Adjusts its tumbled head, </l>
+                    <l>The mail from Tunis, probably,</l>
+                    <l>An easy morning's ride.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

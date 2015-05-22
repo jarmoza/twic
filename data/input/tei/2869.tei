@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They dropped like Flakes -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J409">
+                <lg type="stanza">
+                    <l>They dropped like Flakes --</l>
+                    <l>They dropped like Stars --</l>
+                    <l>Like Petals from a Rose --</l>
+                    <l>When suddenly across the June</l>
+                    <l>A Wind with fingers -- goes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They perished in the Seamless Grass --</l>
+                    <l>No eye could find the place --</l>
+                    <l>But God can summon every face</l>
+                    <l>On his Repealless -- List.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

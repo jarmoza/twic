@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis so appalling it exhilirates </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F341A">
+                <lg type="stanza">
+                    <l>'Tis so appalling - it exhilirates -</l>
+                    <l>So over Horror, it half captivates - </l>
+                    <l>The Soul stares after it, secure - </l>
+                    <l><add type="alternate" extent="To know the worst, leaves no dread more -">A Sepulchre, fears frost,  no more -</add>
+To know the worst, leaves <app type="division"><lem><lb/></lem></app>
+ no dread more -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To scan a Ghost, is faint -</l>
+                    <l>But grappling, conquers it - </l>
+                    <l>How easy, Torment, now - </l>
+                    <l>Suspense kept sawing so - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Truth, is Bald - and Cold - </l>
+                    <l>But that will hold -</l>
+                    <l>If any are not sure - </l>
+                    <l>We show them - prayer - </l>
+                    <l>But we, who know, </l>
+                    <l>Stop hoping, now - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Looking at Death, is Dying -</l>
+                    <l>Just let go the Breath -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And not the pillow at<app type="division"><lem><lb/></lem></app>
+ your cheek </l>
+                    <l>So slumbereth - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Others, can wrestle - </l>
+                    <l>Your's, is done -</l>
+                    <l>And so of Wo, bleak dreaded -<app type="division"><lem><lb/></lem></app>
+ come, </l>
+                    <l>It sets the Fright at liberty - </l>
+                    <l>And Terror's free - </l>
+                    <l>Gay, Ghastly, Holiday!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

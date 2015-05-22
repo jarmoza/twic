@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ample make this Bed -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J829">
+                <lg type="stanza">
+                    <l>Ample make this Bed --</l>
+                    <l>Make this Bed with Awe --</l>
+                    <l>In it wait till Judgment break</l>
+                    <l>Excellent and Fair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Be it's Mattress straight --</l>
+                    <l>Be it's Pillow round --</l>
+                    <l>Let no Sunrise' yellow noise</l>
+                    <l>Interrupt this Ground --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

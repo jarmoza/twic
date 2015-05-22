@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Blazing in Gold and quenching in Purple 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J228">
+                <lg type="stanza">
+                    <l>Blazing in Gold and quenching in Purple</l>
+                    <l>Leaping like Leopards to the Sky</l>
+                    <l>Then at the feet of the old Horizon</l>
+                    <l>Laying her spotted Face to die</l>
+                    <l>Stooping as low as the Otter's Window</l>
+                    <l>Touching the Roof and tinting the Barn</l>
+                    <l>Kissing her Bonnet to the Meadow</l>
+                    <l>And the Juggler of Day is gone</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

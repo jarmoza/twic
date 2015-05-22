@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The way I read a letter &#x27;s this:</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-63">
+                <lg type="stanza">
+                    <l>The way I read a letter 's this:</l>
+                    <l>'T is first I lock the door,</l>
+                    <l>And push it with my fingers next,</l>
+                    <l>For transport it be sure.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then I go the furthest off</l>
+                    <l>To counteract a knock;</l>
+                    <l>Then draw my little letter forth</l>
+                    <l>And softly pick its lock.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then, glancing narrow at the wall,</l>
+                    <l>And narrow at the floor,</l>
+                    <l>For firm conviction of a mouse</l>
+                    <l>Not exorcised before,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Peruse how infinite I am</l>
+                    <l>To  no one that you know!</l>
+                    <l>And sigh for lack of heaven,  but not</l>
+                    <l>The heaven the creeds bestow.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

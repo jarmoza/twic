@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The duties of the Wind are few, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1137">
+                <lg type="stanza">
+                    <l>The duties of the Wind are few,</l>
+                    <l>To cast the ships, at Sea,</l>
+                    <l>Establish March, the Floods escort</l>
+                    <l>And usher Liberty.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The pleasures of the Wind are broad,</l>
+                    <l>To dwell Extent among,</l>
+                    <l>Remain, or wander,</l>
+                    <l>Speculate, or Forests entertain.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The kinsmen of the Wind are Peaks</l>
+                    <l>Azof -- the Equinox,</l>
+                    <l>Also with Bird and Asteroid</l>
+                    <l>A bowing intercourse.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The limitations of the Wind</l>
+                    <l>Do he exist, or die,</l>
+                    <l>Too wise he seems for Wakelessness,</l>
+                    <l>However, know not I.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

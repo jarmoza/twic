@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Opon concluded lives </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F722A">
+                <lg type="stanza">
+                    <l>Opon Concluded Lives</l>
+                    <l>There's nothing cooler falls - </l>
+                    <l>Than Life's sweet Calculations - </l>
+                    <l>The mixing Bells and Palls - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Makes Lacerating Tune -</l>
+                    <l>To Ears the Dying side - </l>
+                    <l>'Tis Coronal - and Funeral - </l>
+                    <l><add type="alternate" extent="Saluting">Confronting &amp;#x2022; Contrasting</add>
+Saluting - in the Road - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

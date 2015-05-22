@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The murmuring of Bees, has ceased
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1115">
+                <lg type="stanza">
+                    <l>The murmuring of Bees, has ceased</l>
+                    <l>But murmuring of some</l>
+                    <l>Posterior, prophetic,</l>
+                    <l>Has simultaneous come.</l>
+                    <l>The lower metres of the Year</l>
+                    <l>When Nature's laugh is done</l>
+                    <l>The Revelations of the Book</l>
+                    <l>Whose Genesis was June.</l>
+                    <l>Appropriate Creatures to her change</l>
+                    <l>The Typic Mother sends</l>
+                    <l>As Accent fades to interval</l>
+                    <l>With separating Friends</l>
+                    <l>Till what we speculate, has been</l>
+                    <l>And thoughts we will not show</l>
+                    <l>More intimate with us become</l>
+                    <l>Than Persons, that we know.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

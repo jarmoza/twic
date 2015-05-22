@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Before he comes we weigh the time </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F949A">
+                <lg type="stanza">
+                    <l>Before He comes,<app type="division"><lem><lb/></lem></app>
+ We weigh the<app type="division"><lem><lb/></lem></app>
+ Time, </l>
+                    <l>'Tis Heavy, and<app type="division"><lem><lb/></lem></app>
+ 'tis Light - </l>
+                    <l>When He departs,<app type="division"><lem><lb/></lem></app>
+ An Emptiness </l>
+                    <l>Is the superior<app type="division"><lem><lb/></lem></app>
+ Freight - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

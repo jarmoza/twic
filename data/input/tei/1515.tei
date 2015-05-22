@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tell as a marksman were forgotten </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1148A">
+                <lg type="stanza">
+                    <l>Tell as a Marksman -<app type="division"><lem><lb/></lem></app>
+ were forgotten </l>
+                    <l>Tell - this Day endures </l>
+                    <l>Ruddy as that Coeval Apple </l>
+                    <l><add type="alternate" extent="The Tradition">Heroism</add>
+The Tradition bears - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="Fresh">new</add>
+Fresh as Mankind<app type="division"><lem><lb/></lem></app>
+ that humble story</l>
+                    <l><add type="alternate" extent="Though">while</add>
+Though a statelier Tale </l>
+                    <l>Grown<add type="alternate" extent="in">by</add>
+ in the Repetition<app type="division"><lem><lb/></lem></app>
+ hoary </l>
+                    <l>Scarcely<add type="alternate" extent="would">could</add>
+ would prevail - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell had a son - The<app type="division"><lem><lb/></lem></app>
+ ones that<add type="alternate" extent="knew">heard</add>
+ knew it </l>
+                    <l>Need not<add type="alternate" extent="linger">tarry</add>
+ linger here -</l>
+                    <l>Those<add type="alternate" extent="who">that</add>
+ who<add type="alternate" extent="did">do</add>
+ did not<app type="division"><lem><lb/></lem></app>
+ to Human nature </l>
+                    <l><add type="alternate" extent="Will">Would</add>
+Will subscribe a Tear - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell would not bare<app type="division"><lem><lb/></lem></app>
+ his Head </l>
+                    <l>In Presence </l>
+                    <l>Of the Ducal Hat -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Threatened for that<app type="division"><lem><lb/></lem></app>
+ with Death - by Gessler - </l>
+                    <l>Tyranny bethought </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Make of his only<app type="division"><lem><lb/></lem></app>
+ Boy a Target </l>
+                    <l>That surpasses Death - </l>
+                    <l>Stolid to Love's<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="supreme">sublime</add>
+ supreme entreaty</l>
+                    <l>Not<add type="alternate" extent="forsook">forgot</add>
+ forsook of Faith - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="Mercy">Power</add>
+Mercy of the Almighty<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="begging">asking</add>
+ begging - </l>
+                    <l>Tell his Arrow sent - </l>
+                    <l>God it is said<app type="division"><lem><lb/></lem></app>
+ replies in Person </l>
+                    <l>When the Cry is<app type="division"><lem><lb/></lem></app>
+ meant</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

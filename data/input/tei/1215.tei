@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They ask but our delight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F908A">
+                <lg type="stanza">
+                    <l>They ask but our Delight -</l>
+                    <l>The Darlings of the Soil </l>
+                    <l>And grant us all their<app type="division"><lem><lb/></lem></app>
+ Countenance </l>
+                    <l>For a penurious smile - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

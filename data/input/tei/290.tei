@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title divine is mine! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F194B">
+                <lg type="stanza">
+                    <l>Title divine, is mine.  </l>
+                    <l>The Wife without<app type="division"><lem><lb/></lem></app>
+ the Sign - </l>
+                    <l>Acute Degree<app type="division"><lem><lb/></lem></app>
+ conferred on me - </l>
+                    <l>Empress of Calvary - </l>
+                    <l>Royal, all but the<app type="division"><lem><lb/></lem></app>
+ Crown -</l>
+                    <l>Betrothed, without<app type="division"><lem><lb/></lem></app>
+ the Swoon </l>
+                    <l>God gives us Women - </l>
+                    <l>When You hold<app type="division"><lem><pb/></lem></app>
+ Garnet to Garnet - </l>
+                    <l>Gold - to Gold - </l>
+                    <l>Born - Bridalled -<app type="division"><lem><lb/></lem></app>
+ Shrouded -</l>
+                    <l>In a Day - </l>
+                    <l>Tri Victory - </l>
+                    <l>&quot;My Husband&quot; - Women say </l>
+                    <l>Stroking the Melody - </l>
+                    <l>Is this the way -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

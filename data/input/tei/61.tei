@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a word </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F42A">
+                <lg type="stanza">
+                    <l>There is a word </l>
+                    <l>Which bears a sword </l>
+                    <l>Can pierce an armed man - </l>
+                    <l>It hurls it's barbed syllables </l>
+                    <l>And is mute again -</l>
+                    <l>But where it fell </l>
+                    <l>The Saved will tell </l>
+                    <l>On patriotic day, </l>
+                    <l>Some epauletted Brother </l>
+                    <l>Gave his breath away!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wherever runs the breathless sun - </l>
+                    <l>Wherever roams the day - </l>
+                    <l>There is it's noiseless onset - </l>
+                    <l>There is it's victory!<app type="division"><lem><pb/></lem></app>
+  </l>
+                    <l>Behold the keenest marksman -</l>
+                    <l>The most accomplished shot!  </l>
+                    <l>Time's sublimest target </l>
+                    <l>Is a soul &quot;forgot&quot;!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

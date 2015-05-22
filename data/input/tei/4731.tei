@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Duties of the Wind are few --</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-49">
+                <lg type="stanza">
+                    <l>The Duties of the Wind are few --</l>
+                    <l>To cast the Ships at sea,</l>
+                    <l>Establish March,</l>
+                    <l>The Floods escort,</l>
+                    <l>And usher Liberty.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

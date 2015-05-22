@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I noticed people disappeared,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-143">
+                <lg type="stanza">
+                    <l>I noticed people disappeared,</l>
+                    <l>When but a little child, </l>
+                    <l>Supposed they visited remote,</l>
+                    <l>Or settled regions wild.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Now know I they both visited</l>
+                    <l>And settled regions wild,</l>
+                    <l>But did because they died,  a fact</l>
+                    <l>Withheld the little child!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

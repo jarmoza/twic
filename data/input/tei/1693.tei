@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Now I knew I lost her </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1274A">
+                <lg type="stanza">
+                    <l>Now I knew<app type="division"><lem><lb/></lem></app>
+ I lost her - </l>
+                    <l>Not that<app type="division"><lem><lb/></lem></app>
+ she was gone - </l>
+                    <l>But Remoteness<app type="division"><lem><lb/></lem></app>
+ travelled </l>
+                    <l>On her Face<app type="division"><lem><lb/></lem></app>
+ and Tongue.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Alien, though<app type="division"><lem><lb/></lem></app>
+ adjoining</l>
+                    <l>As a Foreign<app type="division"><lem><lb/></lem></app>
+ Race -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Traversed she<app type="division"><lem><lb/></lem></app>
+ though pausing </l>
+                    <l>Latitudeless <app type="division"><lem><lb/></lem></app>
+Place.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Elements <app type="division"><lem><lb/></lem></app>
+Unaltered - </l>
+                    <l>Universe the<app type="division"><lem><lb/></lem></app>
+ same</l>
+                    <l>But Love's<app type="division"><lem><lb/></lem></app>
+ transmigration - </l>
+                    <l>Somehow this<app type="division"><lem><lb/></lem></app>
+ had come -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Henceforth <app type="division"><lem><lb/></lem></app>
+to remember </l>
+                    <l>Nature took<app type="division"><lem><lb/></lem></app>
+ the Day </l>
+                    <l>I had paid<app type="division"><lem><lb/></lem></app>
+ so much for -</l>
+                    <l>His is Penury </l>
+                    <l>Not who<app type="division"><lem><lb/></lem></app>
+ toils for<app type="division"><lem><lb/></lem></app>
+ Freedom </l>
+                    <l>Or for<app type="division"><lem><lb/></lem></app>
+ Family </l>
+                    <l>But the<app type="division"><lem><lb/></lem></app>
+ Restitution </l>
+                    <l>Of Idolatry.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

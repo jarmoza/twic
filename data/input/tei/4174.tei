@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>By a departing light 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1714">
+                <lg type="stanza">
+                    <l>By a <app type="revision"><lem>absconding</lem><rdg>absconding</rdg></app>
+<app type="revision"><lem>retreating</lem><rdg>retreating</rdg></app>
+departing light</l>
+                    <l>We see <app type="revision"><lem>distincter</lem><rdg>distincter</rdg></app>
+<app type="revision"><lem>sincerer</lem><rdg>sincerer</rdg></app>
+acuter, quite,</l>
+                    <l>Th<app type="revision"><lem>the</lem><rdg>the</rdg></app>
+an by a wick that stays.</l>
+                    <l>There's something in the flight</l>
+                    <l>That clarifies the sight</l>
+                    <l><app type="revision"><lem>And swells the rays</lem><rdg>And swells the rays</rdg></app>
+And <app type="revision"><lem>brims</lem><rdg>brims</rdg></app>
+<app type="revision"><lem>fills</lem><rdg>fills</rdg></app>
+decks the rays</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MY CRICKET</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-117">
+                <lg type="stanza">
+                    <l>Farther in summer than the birds,</l>
+                    <l>Pathetic from the grass,</l>
+                    <l>A minor nation celebrates</l>
+                    <l>Its unobtrusive mass.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No ordinance is seen,</l>
+                    <l>So gradual the grace,</l>
+                    <l>A pensive custom it becomes,</l>
+                    <l>Enlarging loneliness.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Antiquest felt at noon</l>
+                    <l>When August, burning low,</l>
+                    <l>Calls forth this spectral canticle,</l>
+                    <l>Repose to typify.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Remit as yet no grace,</l>
+                    <l>No furrow on the glow,</l>
+                    <l>Yet a druidic difference</l>
+                    <l>Enhances nature now.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

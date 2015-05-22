@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Future never spoke,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-31">
+                <lg type="stanza">
+                    <l>The Future never spoke,</l>
+                    <l>Nor will he, like the Dumb,</l>
+                    <l>Reveal by sign or syllable</l>
+                    <l>Of his profound To-come.</l>
+                    <l>But when the news be ripe,</l>
+                    <l>Presents it in the Act --</l>
+                    <l>Forestalling preparation</l>
+                    <l>Escape or substitute.</l>
+                    <l>Indifferent to him</l>
+                    <l>The Dower as the Doom,</l>
+                    <l>His office but to execute</l>
+                    <l>Fate's Telegram to him.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Future never spoke,</l>
+                    <l>Nor will he, like the Dumb,</l>
+                    <l>Reveal by sign or syllable</l>
+                    <l>Of his profound To-come.</l>
+                    <l>But when the news be ripe,</l>
+                    <l>Presents it in the Act --</l>
+                    <l>Forestalling preparation</l>
+                    <l>Escape or substitute.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

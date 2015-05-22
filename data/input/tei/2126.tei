@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An antiquated tree </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1544A">
+                <lg type="stanza">
+                    <l>An Antiquated Tree </l>
+                    <l>Is cherished by the Crow.  </l>
+                    <l>Because that Junior<app type="division"><lem><lb/></lem></app>
+ Foliage </l>
+                    <l>Is disrespectful now </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To venerable Birds</l>
+                    <l>Whose<add type="alternate" extent="Corporation Coat">unsuspecting Coat - &amp;#x2022; well intentioned Coat -</add>
+ Corporation<app type="division"><lem><lb/></lem></app>
+ Coat </l>
+                    <l>Would decorate<app type="division"><lem><lb/></lem></app>
+ Oblivion's </l>
+                    <l><add type="alternate" extent="Fantastic">Most gracious - &amp;#x2022; [Most</add>
+Fantastic Consulate - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The butterfly obtains</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1701A">
+                <lg type="stanza">
+                    <l>The butterfly obtains</l>
+                    <l>But little sympathy</l>
+                    <l>Though favorably mentioned</l>
+                    <l>In Entomology -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because he travels freely</l>
+                    <l>And <app type="emendation"><lem>weas</lem><rdg>wears</rdg></app>
+ a proper coat</l>
+                    <l>The circumspect are certain</l>
+                    <l>That he is dissolute</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had he the homely scutcheon</l>
+                    <l>Of modest Industry</l>
+                    <l><app type="emendation"><lem>T&#x27;were</lem><rdg>&#x27;Twere</rdg></app>
+ fitter certifying</l>
+                    <l>For Immortality -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

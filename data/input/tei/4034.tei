@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No ladder needs the bird but skies
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1574">
+                <lg type="stanza">
+                    <l>No ladder needs the bird but skies</l>
+                    <l>To situate its wings,</l>
+                    <l>Nor any leader's grim baton</l>
+                    <l>Arraigns it as it sings.</l>
+                    <l>The implements of bliss are few --</l>
+                    <l>As Jesus says of Him,</l>
+                    <l>"Come unto me" the moiety</l>
+                    <l>That wafts the cherubim.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

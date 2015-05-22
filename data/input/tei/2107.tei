@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of whom so dear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1533A">
+                <lg type="stanza">
+                    <l>Of whom so dear </l>
+                    <l>The name to hear </l>
+                    <l>illumines with a Glow </l>
+                    <l>as<add type="alternate" extent="intimate">magical</add>
+ intimate - as fugitive </l>
+                    <l>As Sunset on the snow -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

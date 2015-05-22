@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature rarer uses yellow</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-104">
+                <lg type="stanza">
+                    <l>Nature rarer uses yellow</l>
+                    <l> Than another hue;</l>
+                    <l>Saves she all of that for sunsets, </l>
+                    <l> Prodigal of blue,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Spending scarlet like a woman,</l>
+                    <l> Yellow she affords</l>
+                    <l>Only scantly and selectly,</l>
+                    <l> Like a lover's words.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

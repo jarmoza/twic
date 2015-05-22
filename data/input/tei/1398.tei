@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Uncertain lease developes lustre </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1059A">
+                <lg type="stanza">
+                    <l>Uncertain lease - <app type="emendation"><lem>devel - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ opes</lem><rdg>developes</rdg></app>
+ lustre</l>
+                    <l>On Time - </l>
+                    <l>Uncertain Grasp, <app type="emendation"><lem>appre - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ciation</lem><rdg>appreciation</rdg></app>
+ </l>
+                    <l>Of Sum - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The shorter Fate - is<app type="division"><lem><lb/></lem></app>
+ oftener the chiefest</l>
+                    <l>Because </l>
+                    <l>Inheritors opon a<app type="division"><lem><lb/></lem></app>
+ tenure </l>
+                    <l>Prize - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

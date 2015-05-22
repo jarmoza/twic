@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He fought like those Who&#x27;ve nought to lose -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J759">
+                <lg type="stanza">
+                    <l>He fought like those Who've nought to lose --</l>
+                    <l><app type="revision"><lem>He gave him.</lem><rdg>He gave him.</rdg></app>
+Bestowed Himself to Balls</l>
+                    <l>As One who for a further Life</l>
+                    <l>Had not a further Use --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Invited Death -- with bold attempt --</l>
+                    <l>But Death was <app type="revision"><lem>shy</lem><rdg>shy</rdg></app>
+Coy of Him</l>
+                    <l>As Other Men, were Coy of Death --</l>
+                    <l>To Him -- to live -- was Doom --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His Comrades, shifted like the Flakes</l>
+                    <l>When Gusts reverse the Snow --</l>
+                    <l>But He -- was left alive Because</l>
+                    <l>Of <app type="revision"><lem>Urgency --</lem><rdg>Urgency --</rdg></app>
+<app type="revision"><lem>Vehemence</lem><rdg>Vehemence</rdg></app>
+Greediness to die --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

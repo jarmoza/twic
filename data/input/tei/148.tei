@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A throe opon the features </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F105A">
+                <lg type="stanza">
+                    <l>A throe opon the features - </l>
+                    <l>A hurry in the breath - </l>
+                    <l>An <app type="emendation"><lem>extacy</lem><rdg>extasy</rdg></app>
+ of parting </l>
+                    <l>Denominated Death - </l>
+                    <l>An Anguish at the mention</l>
+                    <l>Which when to patience grown, </l>
+                    <l>I've known permission given </l>
+                    <l>To rejoin it's own - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like rain it sounded till it curved </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1245A">
+                <lg type="stanza">
+                    <l>Like Rain it sounded till<app type="division"><lem><lb/></lem></app>
+ it curved </l>
+                    <l>And then<add type="alternate" extent="I">&lt;u&gt;we&lt;/u&gt;</add>
+ I knew 'twas Wind - </l>
+                    <l>It walked as wet as any<app type="division"><lem><lb/></lem></app>
+ Wave </l>
+                    <l>But swept as dry as Sand - </l>
+                    <l>When it had pushed itself<app type="division"><lem><lb/></lem></app>
+ away</l>
+                    <l>To some remotest Plain </l>
+                    <l>A coming as of Hosts was<app type="division"><lem><lb/></lem></app>
+ heard </l>
+                    <l>That was indeed the Rain - </l>
+                    <l>It filled the Wells, it<app type="division"><lem><lb/></lem></app>
+ pleased the Pools </l>
+                    <l>It warbled in the Road -</l>
+                    <l>It pulled the spigot from<app type="division"><lem><lb/></lem></app>
+ the Hills </l>
+                    <l>And let the Floods abroad - </l>
+                    <l>It loosened acres, lifted<app type="division"><lem><lb/></lem></app>
+ seas </l>
+                    <l>The sites of Centres<app type="division"><lem><lb/></lem></app>
+ stirred </l>
+                    <l>Then like Elijah rode<app type="division"><lem><lb/></lem></app>
+ away</l>
+                    <l>Opon a Wheel of Cloud - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

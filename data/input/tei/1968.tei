@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How spacious the wind must feel morns </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1441A">
+                <lg type="stanza">
+                    <l>How spacious the wind must feel morns </l>
+                    <l>Encamping on a hundred dawns </l>
+                    <l>Espousing one, and spurning all, </l>
+                    <l>Then soaring to his temple tall!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How haughty the wind must feel noons,</l>
+                    <l>Stepping to<add type="alternate" extent="elemental">incorporeal</add>
+ elemental tunes!  </l>
+                    <l><add type="alternate" extent="">Escorting little groups of sky.</add>
+Correcting errors of the sky </l>
+                    <l><add type="alternate" extent="">Or skirmishing with scenery.</add>
+Or clarifying scenery!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How lonely the wind must be nights, </l>
+                    <l>When people have put out the lights,</l>
+                    <l>And everything that has an inn </l>
+                    <l>Closes <app type="emendation"><lem>its</lem><rdg>it&#x27;s</rdg></app>
+ shutter and goes in.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Me prove it now - Whoever doubt </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F631A">
+                <lg type="stanza">
+                    <l>Me prove it now - Whoever<app type="division"><lem><lb/></lem></app>
+ doubt</l>
+                    <l>Me stop to prove it - now - </l>
+                    <l><add type="alternate" extent="Make haste">Come near</add>
+Make haste - the Scruple! Death<app type="division"><lem><lb/></lem></app>
+ be scant </l>
+                    <l>For Opportunity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to my<app type="division"><lem><lb/></lem></app>
+ feet -</l>
+                    <l>As yet - My Heart be dry - </l>
+                    <l>Oh Lover - Life could not<app type="division"><lem><lb/></lem></app>
+ convince - </l>
+                    <l>Might Death - enable Thee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to My<app type="division"><lem><lb/></lem></app>
+ Breast - </l>
+                    <l>Still - still - My Hands above</l>
+                    <l>Proclaim with their <app type="emendation"><lem>remain - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ing</lem><rdg>remaining</rdg></app>
+ might - </l>
+                    <l>Dost recognize the Love?<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The River reaches to my<app type="division"><lem><lb/></lem></app>
+ Mouth - </l>
+                    <l>Remember - when the Sea </l>
+                    <l>Swept by my searching<app type="division"><lem><lb/></lem></app>
+ eyes - the last -</l>
+                    <l>Themselves were quick -<app type="division"><lem><lb/></lem></app>
+ with Thee!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

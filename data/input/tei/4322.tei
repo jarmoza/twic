@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>REAL</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-87">
+                <lg type="stanza">
+                    <l>I like a look of agony,</l>
+                    <l>Because I know it 's true;</l>
+                    <l>Men do not sham convulsion,</l>
+                    <l>Nor simulate a throe.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The eyes glaze once, and that is death.</l>
+                    <l>Impossible to feign</l>
+                    <l>The beads upon the forehead</l>
+                    <l>By homely anguish strung.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

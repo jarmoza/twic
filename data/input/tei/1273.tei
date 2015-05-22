@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Unable are the loved to die </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F951B">
+                <lg type="stanza">
+                    <l>Unable are the Loved<app type="division"><lem><lb/></lem></app>
+ to die</l>
+                    <l>For Love is Immortality, </l>
+                    <l>Nay, it is Deity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unable they that love -<app type="division"><lem><lb/></lem></app>
+ to die </l>
+                    <l>For Love reforms Vitality</l>
+                    <l>Into Divinity.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

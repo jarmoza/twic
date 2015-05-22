@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like Brooms of Steel 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1252">
+                <lg type="stanza">
+                    <l>Like Brooms of Steel</l>
+                    <l>The Snow and Wind</l>
+                    <l>Had swept the Winter Street --</l>
+                    <l>The House was hooked</l>
+                    <l>The Sun sent out</l>
+                    <l>Faint Deputies of Heat --</l>
+                    <l>Where rode the Bird</l>
+                    <l>The Silence tied</l>
+                    <l>His ample -- plodding Steed</l>
+                    <l>The Apple in the Cellar snug</l>
+                    <l>Was all the one that played.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

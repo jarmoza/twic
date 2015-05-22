@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Where Ships of Purple -- gently toss -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J265">
+                <lg type="stanza">
+                    <l>Where Ships of Purple -- gently toss --</l>
+                    <l>On Seas of Daffodil --</l>
+                    <l>Fantastic Sailors -- mingle --</l>
+                    <l>And then -- the Wharf is still!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

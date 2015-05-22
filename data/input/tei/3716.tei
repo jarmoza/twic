@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not any higher stands the Grave
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1256">
+                <lg type="stanza">
+                    <l>Not any higher stands the Grave</l>
+                    <l>For Heroes than for Men --</l>
+                    <l>Not any nearer for the Child</l>
+                    <l>Than numb Three Score and Ten --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This latest Leisure equal lulls</l>
+                    <l>The Beggar and his Queen</l>
+                    <l>Propitiate this Democrat</l>
+                    <l>A Summer's Afternoon --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

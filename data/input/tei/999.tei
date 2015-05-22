@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Precious to me she still shall be </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F751A">
+                <lg type="stanza">
+                    <l>Precious to Me - She still<app type="division"><lem><lb/></lem></app>
+ shall be -</l>
+                    <l>Though She forget the name<app type="division"><lem><lb/></lem></app>
+ I bear - </l>
+                    <l>The fashion of the Gown<app type="division"><lem><lb/></lem></app>
+ I wear - </l>
+                    <l>The very Color of My Hair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So like the Meadows - now -</l>
+                    <l>I dared to show a Tress<app type="division"><lem><lb/></lem></app>
+ of Their's </l>
+                    <l>If haply - She might not<app type="division"><lem><lb/></lem></app>
+ despise </l>
+                    <l>A Buttercup's Array - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I know the Whole - <app type="emendation"><lem>ob - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ scures</lem><rdg>obscures</rdg></app>
+ the Part - </l>
+                    <l>The fraction - that appeased<app type="division"><lem><lb/></lem></app>
+ the Heart</l>
+                    <l>Till Number's Empery -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Remembered - as the Milliner's<app type="division"><lem><lb/></lem></app>
+ flower </l>
+                    <l>When Summer's Everlasting Dower - </l>
+                    <l>Confronts the dazzled Bee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Could I but ride indefinite,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-97">
+                <lg type="stanza">
+                    <l>Could I but ride indefinite,</l>
+                    <l>As doth the meadow-bee,</l>
+                    <l>And visit only where I liked,</l>
+                    <l>And no man visit me,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And flirt all day with buttercups,</l>
+                    <l>And marry whom I may,</l>
+                    <l>And dwell a little everywhere,</l>
+                    <l>Or better, run away</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With no police to follow,</l>
+                    <l>Or chase me if I do,</l>
+                    <l>Till I should jump peninsulas</l>
+                    <l>To get away from you, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I said, but just to be a bee</l>
+                    <l>Upon a raft of air,</l>
+                    <l>And row in nowhere all day long,</l>
+                    <l>And anchor off the bar,</l>
+                    <l>What liberty! So captives deem</l>
+                    <l>Who tight in dungeons are.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

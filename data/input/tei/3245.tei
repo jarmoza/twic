@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They have a little Odor -- that to me 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J785">
+                <lg type="stanza">
+                    <l>They have a little Odor -- that to me</l>
+                    <l>Is metre --  nay -- 'tis <app type="revision"><lem>Poesy --</lem><rdg>Poesy --</rdg></app>
+melody --</l>
+                    <l>And spiciest at fading -- <app type="revision"><lem>celebrate --</lem><rdg>celebrate --</rdg></app>
+indicate --</l>
+                    <l>A Habit -- of a Laureate --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

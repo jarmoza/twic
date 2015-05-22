@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The road to Paradise is plain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1525C">
+                <lg type="stanza">
+                    <l>The Road to Paradise<app type="division"><lem><lb/></lem></app>
+ is plain - </l>
+                    <l>And holds scarce one - </l>
+                    <l>Not that it is not<app type="division"><lem><lb/></lem></app>
+ firm </l>
+                    <l>But we presume </l>
+                    <l>A Dimpled Road</l>
+                    <l>Is more preferred - </l>
+                    <l>The Belles of Paradise<app type="division"><lem><lb/></lem></app>
+ are few -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Not me - nor you - </l>
+                    <l>But unsuspected<app type="division"><lem><lb/></lem></app>
+ things - </l>
+                    <l>Mines have no Wings -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

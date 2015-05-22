@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The moon upon her fluent route </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1574C">
+                <lg type="stanza">
+                    <l>The Moon<app type="division"><lem><lb/></lem></app>
+ upon her<app type="division"><lem><lb/></lem></app>
+ fluent Route </l>
+                    <l>Defiant of a<app type="division"><lem><lb/></lem></app>
+ Road </l>
+                    <l>The Star's<app type="division"><lem><lb/></lem></app>
+ Etruscan Argument </l>
+                    <l>Substantiate a<app type="division"><lem><lb/></lem></app>
+ God - </l>
+                    <l>How archly<app type="division"><lem><lb/></lem></app>
+ spared the<app type="division"><lem><lb/></lem></app>
+ Heaven &quot;to come&quot; -</l>
+                    <l>If such<app type="division"><lem><lb/></lem></app>
+ prospective be -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>By superseding<app type="division"><lem><lb/></lem></app>
+ Destiny </l>
+                    <l>And dwelling<app type="division"><lem><lb/></lem></app>
+ there Today - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

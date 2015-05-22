@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Myself can read the telegrams </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1049A">
+                <lg type="stanza">
+                    <l>Myself can read the<app type="division"><lem><lb/></lem></app>
+ Telegrams</l>
+                    <l>A Letter chief to me </l>
+                    <l>The Stock's advance<app type="division"><lem><lb/></lem></app>
+ and retrogade </l>
+                    <l>And what the<app type="division"><lem><lb/></lem></app>
+ Markets say </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Weather - how<app type="division"><lem><lb/></lem></app>
+ the Rains</l>
+                    <l>In Counties have begun.  </l>
+                    <l>'Tis News as null<app type="division"><lem><lb/></lem></app>
+ as nothing, </l>
+                    <l>But sweeter so,<app type="division"><lem><lb/></lem></app>
+ than none.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

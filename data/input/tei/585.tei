@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Heaven is so far of the mind </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F413A">
+                <lg type="stanza">
+                    <l>Heaven is so far of the<app type="division"><lem><lb/></lem></app>
+ Mind</l>
+                    <l>That were the Mind dissolved - </l>
+                    <l>The Site - of it - by Architect </l>
+                    <l>Could not again be proved - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Vast - as our Capacity -</l>
+                    <l>As fair - as our idea - </l>
+                    <l>To Him of adequate<app type="division"><lem><lb/></lem></app>
+ desire </l>
+                    <l>No further 'tis, than Here - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

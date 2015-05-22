@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One of the ones that Midas touched 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1466">
+                <lg type="stanza">
+                    <l>One of the ones that Midas touched</l>
+                    <l>Who failed to touch us all</l>
+                    <l>Was that confiding Prodigal</l>
+                    <l>The reeling Oriole --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So drunk he disavows it</l>
+                    <l>With badinage divine --</l>
+                    <l>So dazzling we mistake him</l>
+                    <l>For an alighting Mine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Pleader -- a Dissembler --</l>
+                    <l>An Epicure -- a Thief --</l>
+                    <l>Betimes an Oratorio --</l>
+                    <l>An Ecstasy in chief --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Jesuit of Orchards</l>
+                    <l>He cheats as he enchants</l>
+                    <l>Of an entire Attar</l>
+                    <l>For his decamping wants --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The splendor of a Burmah</l>
+                    <l>The Meteor of Birds,</l>
+                    <l>Departing like a Pageant</l>
+                    <l>Of Ballads and of Bards --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I never thought that Jason sought</l>
+                    <l>For any Golden Fleece</l>
+                    <l>But then I am a rural man</l>
+                    <l>With thoughts that make for Peace --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But if there were a Jason,</l>
+                    <l>Tradition bear with me</l>
+                    <l>Behold his lost Aggrandizement</l>
+                    <l>Upon the Apple Tree --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Her -- &quot;last Poems&quot; -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J312">
+                <lg type="stanza">
+                    <l>Her -- "last Poems" --</l>
+                    <l>Poets -- ended --</l>
+                    <l>Silver -- perished -- with her Tongue --</l>
+                    <l>Not on Record -- bubbled other,</l>
+                    <l>Flute -- or Woman --</l>
+                    <l>So divine --</l>
+                    <l>Not unto it's Summer -- Morning</l>
+                    <l>Robin -- uttered Half the Tune --</l>
+                    <l>Gushed too free for the Adoring --</l>
+                    <l>From the Anglo -- Florentine --</l>
+                    <l>Late -- the Praise --</l>
+                    <l>'Tis dull -- conferring</l>
+                    <l>On the Head too High to Crown --</l>
+                    <l>Diadem -- or Ducal Showing --</l>
+                    <l>Be it's Grave -- sufficient sign --</l>
+                    <l>Nought -- that We -- No Poet's Kinsman --</l>
+                    <l>Suffocate -- with easy wo --</l>
+                    <l>What, and if, Ourself a Bridegroom --</l>
+                    <l>Put Her down -- in Italy?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

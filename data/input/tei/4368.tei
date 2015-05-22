@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SHOW</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-18">
+                <lg type="stanza">
+                    <l>The show is not the show,</l>
+                    <l>But they that go.</l>
+                    <l>Menagerie to me</l>
+                    <l>My neighbor be.</l>
+                    <l>Fair play </l>
+                    <l>Both went to see.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

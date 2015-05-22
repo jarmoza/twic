@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who is it seeks my Pillow Nights -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1598">
+                <lg type="stanza">
+                    <l>Who is it seeks my Pillow Nights --</l>
+                    <l>With plain inspecting face --</l>
+                    <l>"Did you" or "Did you not," to ask --</l>
+                    <l>'Tis "Conscience" -- Childhood's Nurse --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With Martial Hand she strokes the Hair</l>
+                    <l>Upon my wincing Head --</l>
+                    <l>"All" Rogues "shall have their part in" what --</l>
+                    <l>The Phosphorus of God --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

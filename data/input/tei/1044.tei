@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Growth of man like growth of nature </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F790A">
+                <lg type="stanza">
+                    <l>Growth of Man - like Growth<app type="division"><lem><lb/></lem></app>
+ of Nature -</l>
+                    <l>Gravitates within - </l>
+                    <l>Atmosphere, and Sun<app type="division"><lem><lb/></lem></app>
+ endorse it - </l>
+                    <l>But it stir - alone - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Each - it's<add type="alternate" extent="difficult">absolute</add>
+ difficult Ideal</l>
+                    <l>Must achieve - Itself - </l>
+                    <l>Through the solitary prowess </l>
+                    <l>Of a Silent Life - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Effort - is the sole condition - </l>
+                    <l>Patience of Itself -</l>
+                    <l>Patience of opposing forces - </l>
+                    <l>And<add type="alternate" extent="intact">direct - &amp;#x2022; distinct</add>
+ intact Belief - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Looking on - is the Department </l>
+                    <l>Of it's Audience - </l>
+                    <l>But Transaction - is assisted</l>
+                    <l>By no Countenance - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

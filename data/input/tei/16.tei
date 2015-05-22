@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nobody knows this little rose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F11A">
+                <lg type="stanza">
+                    <l>Nobody knows this little rose; </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+It might a pilgrim be,</l>
+                    <l>Did I not take it from the ways, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+And lift it up to thee!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Only a bee will miss it;</l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Only a butterfly,</l>
+                    <l>Hastening from far journey, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+On <app type="emendation"><lem>its</lem><rdg>it&#x27;s</rdg></app>
+ breast to lie.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Only a bird will wonder; </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Only a breeze will sigh;</l>
+                    <l>Ah! little rose, how easy </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+For such as <app type="emendation"><lem>thou</lem><rdg>thee</rdg></app>
+ to die!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

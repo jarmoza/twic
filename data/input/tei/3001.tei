@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some such Butterfly be seen 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J541">
+                <lg type="stanza">
+                    <l>Some such Butterfly be seen</l>
+                    <l>On Brazilian Pampas --</l>
+                    <l>just at noon -- no later -- <app type="revision"><lem>Than</lem><rdg>Than</rdg></app>
+Sweet --</l>
+                    <l>Then -- the <app type="revision"><lem>Vision --</lem><rdg>Vision --</rdg></app>
+<app type="revision"><lem>Pageant</lem><rdg>Pageant</rdg></app>
+License closes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some such <app type="revision"><lem>Rose</lem><rdg>Rose</rdg></app>
+Spice -- express and pass --</l>
+                    <l><app type="revision"><lem>Present</lem><rdg>Present</rdg></app>
+Subject to Your Plucking --</l>
+                    <l>As the Stars -- You knew last Night --</l>
+                    <l><app type="revision"><lem>Know not You --</lem><rdg>Know not You --</rdg></app>
+Foreigners -- This Morning --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

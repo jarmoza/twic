@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>REMEMBRANCE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-41">
+                <lg type="stanza">
+                    <l>Remembrance has a rear and front, </l>
+                    <l>'T is something like a house;</l>
+                    <l>It has a garret also</l>
+                    <l>For refuse and the mouse,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Besides, the deepest cellar</l>
+                    <l>That ever mason hewed;</l>
+                    <l>Look to it, by its fathoms</l>
+                    <l>Ourselves be not pursued.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

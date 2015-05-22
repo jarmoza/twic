@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To die -- takes just a little while -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J255">
+                <lg type="stanza">
+                    <l>To die -- takes just a little while --</l>
+                    <l>They say it does'nt hurt --</l>
+                    <l>It's only fainter -- by degrees --</l>
+                    <l>And then -- it's out of sight --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A darker Ribbon -- for a Day --</l>
+                    <l>A Crape upon the Hat --</l>
+                    <l>And then the pretty sunshine comes --</l>
+                    <l>And helps us to forget --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The absent -- mystic -- creature --</l>
+                    <l>That but for love of us --</l>
+                    <l>Had gone to sleep -- that soundest time --</l>
+                    <l>Without the weariness --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

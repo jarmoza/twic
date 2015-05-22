@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Severer service of myself </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F887A">
+                <lg type="stanza">
+                    <l>Severer Service of myself</l>
+                    <l>I hastened to demand </l>
+                    <l>To fill the awful Vacuum </l>
+                    <l>Your life had left behind - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I worried Nature with<app type="division"><lem><lb/></lem></app>
+ my Wheels</l>
+                    <l>When Her's had ceased<app type="division"><lem><lb/></lem></app>
+ to run - </l>
+                    <l>When she had put away<app type="division"><lem><lb/></lem></app>
+ Her Work </l>
+                    <l>My own had just begun - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I strove to weary Brain<app type="division"><lem><lb/></lem></app>
+ and Bone - </l>
+                    <l>To harass to fatigue</l>
+                    <l>The glittering Retinue<app type="division"><lem><lb/></lem></app>
+ of nerves - </l>
+                    <l>Vitality to clog<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To some dull comfort<app type="division"><lem><lb/></lem></app>
+ Those obtain </l>
+                    <l>Who put a Head away </l>
+                    <l>They knew the Hair to -</l>
+                    <l>And forget the<add type="alternate" extent="color">figure -</add>
+ color<app type="division"><lem><lb/></lem></app>
+ of the Day - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Affliction would not be<app type="division"><lem><lb/></lem></app>
+ appeased - </l>
+                    <l>The<add type="alternate" extent="Darkness">trouble -</add>
+ Darkness braced as<app type="division"><lem><lb/></lem></app>
+ firm </l>
+                    <l>As all my strategem<app type="division"><lem><lb/></lem></app>
+ had been </l>
+                    <l>The Midnight to confirm -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Drug for Consciousness -<app type="division"><lem><lb/></lem></app>
+ can be - </l>
+                    <l>Alternative to die </l>
+                    <l>Is Nature's only Pharmacy </l>
+                    <l>For Being's Malady - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I measure every Grief I meet 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J561">
+                <lg type="stanza">
+                    <l>I measure every Grief I meet</l>
+                    <l>With narrow, probing, Eyes --</l>
+                    <l>I wonder if It weighs like Mine --</l>
+                    <l>Or has an Easier size.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wonder if They bore it long --</l>
+                    <l>Or did it just begin --</l>
+                    <l>I could not tell the Date of Mine --</l>
+                    <l>It feels so old a pain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wonder if it hurts to live --</l>
+                    <l>And if They have to try --</l>
+                    <l>And whether -- could They choose between --</l>
+                    <l>It would not be -- to die --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I note that Some -- gone patient long --</l>
+                    <l>At length, renew their smile --</l>
+                    <l>An imitation of a Light</l>
+                    <l>That has so little Oil --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wonder if when Years have piled --</l>
+                    <l>Some Thousands -- on the Harm --</l>
+                    <l>That hurt them early -- such a lapse</l>
+                    <l>Could give them any Balm --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or would they go on aching still</l>
+                    <l>Through Centuries of Nerve --</l>
+                    <l>Enlightened to a larger Pain --</l>
+                    <l>In Contrast with the Love --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>The Grieved -- are many -- I am told --</l>
+                    <l>There is the various Cause --</l>
+                    <l>Death -- is but one -- and comes but once --</l>
+                    <l>And only nails the eyes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>There's Grief of Want -- and Grief of Cold --</l>
+                    <l>A sort they call "Despair" --</l>
+                    <l>There's Banishment from native Eyes --</l>
+                    <l>In sight of Native Air</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And though I may not guess the kind --</l>
+                    <l>Correctly -- yet to me</l>
+                    <l>A piercing Comfort it affords</l>
+                    <l>In passing Calvary --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To note the fashions -- of the Cross --</l>
+                    <l>And how they're mostly worn --</l>
+                    <l>Still fascinated to presume</l>
+                    <l>That Some -- are like My --  Own --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

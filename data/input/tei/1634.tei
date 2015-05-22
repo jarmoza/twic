@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Frigid and sweet her parting face </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1231A">
+                <lg type="stanza">
+                    <l>Frigid and sweet<app type="division"><lem><lb/></lem></app>
+ Her parting Face -</l>
+                    <l>Frigid and fleet<app type="division"><lem><lb/></lem></app>
+ my Feet - </l>
+                    <l>Alien and<app type="division"><lem><lb/></lem></app>
+ vain whatever<app type="division"><lem><lb/></lem></app>
+ Clime </l>
+                    <l>Acrid whatever<app type="division"><lem><lb/></lem></app>
+ Fate - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Given to me<app type="division"><lem><lb/></lem></app>
+ without the Suit</l>
+                    <l>Riches and Name<app type="division"><lem><lb/></lem></app>
+ and Realm - </l>
+                    <l>Who was She<app type="division"><lem><lb/></lem></app>
+ to withold from<app type="division"><lem><lb/></lem></app>
+ me </l>
+                    <l><add type="alternate" extent="Penury">Hemisphere</add>
+Penury and Home?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

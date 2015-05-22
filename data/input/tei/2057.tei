@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Time&#x27;s wily chargers will not wait </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1498A">
+                <lg type="stanza">
+                    <l>Time's wily<app type="division"><lem><lb/></lem></app>
+ Chargers will<app type="division"><lem><lb/></lem></app>
+ not wait </l>
+                    <l>At any Gate<app type="division"><lem><lb/></lem></app>
+ but Woe's - </l>
+                    <l>But there - so<app type="division"><lem><lb/></lem></app>
+ gloat to hesitate </l>
+                    <l>They will not<app type="division"><lem><lb/></lem></app>
+ stir for blows - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

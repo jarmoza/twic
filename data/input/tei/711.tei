@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He found my being - set it up </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F511A">
+                <lg type="stanza">
+                    <l>He found my Being - set<app type="division"><lem><lb/></lem></app>
+ it up -</l>
+                    <l>Adjusted it to place - </l>
+                    <l>Then carved his name - opon it - </l>
+                    <l><add type="alternate" extent="And">then -</add>
+And bade it to the East </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Be faithful - in his absence -</l>
+                    <l>And he would come again - </l>
+                    <l>With Equipage of Amber - </l>
+                    <l>That time - to take it Home - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

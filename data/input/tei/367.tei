@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The court is far away </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F250A">
+                <lg type="stanza">
+                    <l>The Court is far away -</l>
+                    <l>No Umpire - have I - </l>
+                    <l>My Sovreign is offended - </l>
+                    <l>To gain his grace - I'd die!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll seek his royal feet -</l>
+                    <l>I'll say - Remember - King - </l>
+                    <l>Thou shalt - thyself - one<app type="division"><lem><lb/></lem></app>
+ day - a Child - </l>
+                    <l>Implore a <em>larger</em> - thing - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><em>That</em> Empire - is of Czars - </l>
+                    <l>As small - they say - as I -</l>
+                    <l>Grant <em>me</em> - that day - the<app type="division"><lem><lb/></lem></app>
+ royalty - </l>
+                    <l>To <em>intercede</em> - for <em>Thee</em> - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

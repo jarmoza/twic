@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I thought that nature was enough 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1286">
+                <lg type="stanza">
+                    <l>I thought that nature was enough</l>
+                    <l>Till Human nature came</l>
+                    <l><app type="revision"><lem>And</lem><rdg>And</rdg></app>
+But that the other did absorb</l>
+                    <l>As <app type="revision"><lem>Firmament</lem><rdg>Firmament</rdg></app>
+Parallax a Flame --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Human nature just aware</l>
+                    <l>There added the Divine</l>
+                    <l>Brief struggle for capacity</l>
+                    <l>The power to contain</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is always as the contents</l>
+                    <l>But give a Giant room</l>
+                    <l><app type="revision"><lem>A Giant is your Tenant</lem><rdg>A Giant is your Tenant</rdg></app>
+And you <app type="revision"><lem>shall</lem><rdg>shall</rdg></app>
+will lodge a Giant</l>
+                    <l>And not a <app type="revision"><lem>lesser --</lem><rdg>lesser --</rdg></app>
+smaller man</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

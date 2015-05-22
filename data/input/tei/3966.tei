@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Summer is shorter than any one -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1506">
+                <lg type="stanza">
+                    <l>Summer is shorter than any one --</l>
+                    <l>Life is shorter than Summer --</l>
+                    <l>Seventy Years is spent as quick</l>
+                    <l>As an Only Dollar --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sorrow -- now -- is polite -- and stays --</l>
+                    <l>See how well we spurn him --</l>
+                    <l>Equally to abhor Delight --</l>
+                    <l>Equally retain him --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>5. Sorrow] Aroma --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

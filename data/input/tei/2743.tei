@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Mien to move a Queen -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J283">
+                <lg type="stanza">
+                    <l>A Mien to move a Queen --</l>
+                    <l>Half Child -- Half Heroine --</l>
+                    <l>An Orleans in the Eye</l>
+                    <l>That puts it's manner by</l>
+                    <l>For humbler Company</l>
+                    <l>When none are near</l>
+                    <l>Even a Tear --</l>
+                    <l>It's frequent Visitor --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Bonnet like a Duke --</l>
+                    <l>And yet a Wren's Peruke</l>
+                    <l>Were not so shy</l>
+                    <l>Of Goer by --</l>
+                    <l>And Hands -- so slight --</l>
+                    <l>They would elate a Sprite</l>
+                    <l>With Merriment --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Voice that Alters -- Low</l>
+                    <l>And on the Ear can go</l>
+                    <l>Like Let of Snow --</l>
+                    <l>Or shift supreme --</l>
+                    <l>As tone of Realm</l>
+                    <l>On Subjects Diadem --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too small -- to fear --</l>
+                    <l>Too distant -- to endear --</l>
+                    <l><app type="revision"><lem>And Men -- too Brigadier --</lem><rdg>And Men -- too Brigadier --</rdg></app>
+And so Men Compromise --</l>
+                    <l>And just -- revere --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>17.can] doth</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

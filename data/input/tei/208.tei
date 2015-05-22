@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A lady red amid the hill </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F137B">
+                <lg type="stanza">
+                    <l>A Lady red - amid the Hill</l>
+                    <l>Her annual secret keeps!  </l>
+                    <l>A Lady white, within the Field </l>
+                    <l>In placid Lily sleeps!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The tidy Breezes, with their Brooms -</l>
+                    <l>Sweep vale - and hill - and tree!  </l>
+                    <l>Prithee, my pretty Housewives!  </l>
+                    <l>Who may expected be?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The neighbors do not yet suspect!  </l>
+                    <l>The woods exchange a smile!</l>
+                    <l>Orchard, and Buttercup, and Bird - </l>
+                    <l>In such a little while!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And yet, how still the Landscape stands!  </l>
+                    <l>How nonchalant the Hedge!  </l>
+                    <l>As if the &quot;Resurrection&quot;</l>
+                    <l>Were nothing very strange!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

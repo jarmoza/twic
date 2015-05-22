@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Because he loves her </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1183C">
+                <lg type="stanza">
+                    <l>It will not harm her magic pace </l>
+                    <l>That we so far behind </l>
+                    <l>Her distances propitiate </l>
+                    <l>As forests touch the wind, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not hoping for his notice far,</l>
+                    <l>But vainer to adore </l>
+                    <l>'Tis Glory's overtakelessness </l>
+                    <l>That makes our running poor.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

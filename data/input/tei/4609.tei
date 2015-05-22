@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE WIND</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-93">
+                <lg type="stanza">
+                    <l>It's like the light, </l>
+                    <l>A fashionless delight</l>
+                    <l>It's like the bee, </l>
+                    <l>A dateless melody.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's like the woods,</l>
+                    <l>Private like breeze,</l>
+                    <l>Phraseless, yet it stirs</l>
+                    <l>The proudest trees.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's like the morning, </l>
+                    <l>Best when it's done, </l>
+                    <l>The everlasting clocks</l>
+                    <l>Chime noon.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

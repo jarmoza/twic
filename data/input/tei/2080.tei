@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Estranged from beauty none can be </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1515A">
+                <lg type="stanza">
+                    <l>Estranged from<app type="division"><lem><lb/></lem></app>
+ Beauty - none can<app type="division"><lem><lb/></lem></app>
+ be - </l>
+                    <l>For Beauty is<app type="division"><lem><lb/></lem></app>
+ Infinity - </l>
+                    <l>And power to<app type="division"><lem><lb/></lem></app>
+ be finite ceased </l>
+                    <l><add type="alternate" extent="">When Fate incorporated us -</add>
+Before Identity<app type="division"><lem><lb/></lem></app>
+ was creased - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

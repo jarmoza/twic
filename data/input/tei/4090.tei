@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As from the earth the light Balloon
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1630">
+                <lg type="stanza">
+                    <l>As from the earth the <app type="revision"><lem>fair</lem><rdg>fair</rdg></app>
+light Balloon</l>
+                    <l>Asks nothing but <app type="revision"><lem>it's flight</lem><rdg>it&#x27;s flight</rdg></app>
+release --</l>
+                    <l>Ascension that for which it was,</l>
+                    <l>It's soaring Residence.</l>
+                    <l><app type="revision"><lem>it's</lem><rdg>it&#x27;s</rdg></app>
+The spirit <app type="revision"><lem>gazes</lem><rdg>gazes</rdg></app>
+<app type="revision"><lem>turns upon --</lem><rdg>turns upon --</rdg></app>
+looks upon the Dust</l>
+                    <l>That fastened it so long</l>
+                    <l>With indignation,</l>
+                    <l>As a Bird</l>
+                    <l>Defrauded of it's song.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

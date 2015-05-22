@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It dropped so low -- in my Regard -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J747">
+                <lg type="stanza">
+                    <l>It dropped so low -- in my Regard --</l>
+                    <l>I heard it hit the Ground --</l>
+                    <l>And go to pieces <app type="revision"><lem>in the Ditch --</lem><rdg>in the Ditch --</rdg></app>
+on the Stones</l>
+                    <l>At bottom of my Mind --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet blamed the Fate that <app type="revision"><lem>flung it</lem><rdg>flung it</rdg></app>
+fractured -- less</l>
+                    <l>Than I <app type="revision"><lem>denounced</lem><rdg>denounced</rdg></app>
+reviled Myself,</l>
+                    <l>For entertaining Plated Wares</l>
+                    <l>Upon my Silver Shelf --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

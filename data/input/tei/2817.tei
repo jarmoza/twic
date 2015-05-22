@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>God is a distant -- stately Lover -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J357">
+                <lg type="stanza">
+                    <l>God is a distant -- stately Lover --</l>
+                    <l>Woos, as He states us -- by His Son --</l>
+                    <l>Verily, a Vicarious Courtship --</l>
+                    <l>"Miles", and "Priscilla", were such an One</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But, lest the Soul -- like fair "Priscilla"</l>
+                    <l>Choose the Envoy -- and spurn the Groom --</l>
+                    <l>Vouches, with hyperbolic archness --</l>
+                    <l>"Miles", and "John Alden" were Synonyme --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

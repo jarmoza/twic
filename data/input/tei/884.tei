@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To fill a gap </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F647A">
+                <lg type="stanza">
+                    <l>To fill a Gap</l>
+                    <l>Insert the Thing that<app type="division"><lem><lb/></lem></app>
+ caused it - </l>
+                    <l>Block it up </l>
+                    <l>With Other - and 'twill<app type="division"><lem><lb/></lem></app>
+ yawn the more - </l>
+                    <l>You cannot solder an<app type="division"><lem><lb/></lem></app>
+ Abyss</l>
+                    <l>With Air - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

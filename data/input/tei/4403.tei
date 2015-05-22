@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RETURNING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-53">
+                <lg type="stanza">
+                    <l>I years had been from home,</l>
+                    <l>And now, before the door,</l>
+                    <l>I dared not open, lest a face</l>
+                    <l>I never saw before</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Stare vacant into mine</l>
+                    <l>And ask my business there.</l>
+                    <l>My business,  just a life I left,</l>
+                    <l>Was such still dwelling there?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I fumbled at my nerve,</l>
+                    <l>I scanned the windows near;</l>
+                    <l>The silence like an ocean rolled,</l>
+                    <l>And broke against my ear.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I laughed a wooden laugh</l>
+                    <l>That I could fear a door,</l>
+                    <l>Who danger and the dead had faced,</l>
+                    <l>But never quaked before.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I fitted to the latch</l>
+                    <l>My hand, with trembling care,</l>
+                    <l>Lest back the awful door should spring,</l>
+                    <l>And leave me standing there.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I moved my fingers off</l>
+                    <l>As cautiously as glass,</l>
+                    <l>And held my ears, and like a thief</l>
+                    <l>Fled gasping from the house.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

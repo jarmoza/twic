@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Somehow myself survived the Night 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1194">
+                <lg type="stanza">
+                    <l>Somehow myself survived the Night</l>
+                    <l>And entered with the Day --</l>
+                    <l>That it be saved the Saved suffice</l>
+                    <l>Without the Formula.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Henceforth I take my living place</l>
+                    <l>As one commuted led --</l>
+                    <l>A Candidate for Morning Chance</l>
+                    <l>But dated with the Dead.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

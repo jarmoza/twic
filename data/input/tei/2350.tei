@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why should we hurry - why indeed </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1683A">
+                <lg type="stanza">
+                    <l>Why should we hurry -<app type="division"><lem><lb/></lem></app>
+ Why indeed </l>
+                    <l>When every way we<app type="division"><lem><lb/></lem></app>
+ fly </l>
+                    <l>we are molested<app type="division"><lem><lb/></lem></app>
+ equally<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>by immortality </l>
+                    <l>no respite from the<add type="alternate" extent="inference">mightiness</add>
+ inference</l>
+                    <l>that this which is begun </l>
+                    <l>though where it's<app type="division"><lem><lb/></lem></app>
+ labors lie </l>
+                    <l>A bland <app type="emendation"><lem>un - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ certainty</lem><rdg>uncertainty</rdg></app>
+ </l>
+                    <l>Besets the sight </l>
+                    <l>This mighty night </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

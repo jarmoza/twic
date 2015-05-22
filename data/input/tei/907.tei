@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An ignorance a sunset </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F669A">
+                <lg type="stanza">
+                    <l>An ignorance a Sunset</l>
+                    <l>Confer opon the Eye - </l>
+                    <l>Of Territory - Color - </l>
+                    <l>Circumference -<add type="alternate" extent="Decay">Array</add>
+ Decay - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's Amber Revelation</l>
+                    <l>Exhilirate - Debase - </l>
+                    <l>Omnipotence'<add type="alternate" extent="inspection">Analysis</add>
+ inspection </l>
+                    <l>Of Our inferior face - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the solemn<app type="division"><lem><lb/></lem></app>
+ features </l>
+                    <l><add type="alternate" extent="Confirm -">Withdraw -</add>
+Confirm - in Victory -</l>
+                    <l>We start - as if<app type="division"><lem><lb/></lem></app>
+ detected </l>
+                    <l>In Immortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

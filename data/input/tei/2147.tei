@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Go traveling with us&quot;! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1561A">
+                <lg type="stanza">
+                    <l>&quot;Go traveling<app type="division"><lem><lb/></lem></app>
+ with us&quot;!  </l>
+                    <l><em>Her</em> Travels<app type="division"><lem><lb/></lem></app>
+ daily be </l>
+                    <l>By routes of<app type="division"><lem><lb/></lem></app>
+ ecstasy </l>
+                    <l>To Evening's<app type="division"><lem><lb/></lem></app>
+ Sea - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

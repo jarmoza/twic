@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not to discover weakness is </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1011A">
+                <lg type="stanza">
+                    <l>Not to discover <app type="emendation"><lem>weak - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ness</lem><rdg>weakness</rdg></app>
+ is</l>
+                    <l>The Artifice of strength - </l>
+                    <l>Impregnability inheres </l>
+                    <l>As much through<app type="division"><lem><lb/></lem></app>
+ Consciousness </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of faith of others<app type="division"><lem><lb/></lem></app>
+ in itself</l>
+                    <l>As<add type="alternate" extent="Pyramidal">elemental - &amp;#x2022; plupotential</add>
+ Pyramidal Nerve </l>
+                    <l>Behind the most<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="unconscious">Consummate</add>
+ unconscious clock </l>
+                    <l>What <app type="emendation"><lem>skilful</lem><rdg>skillful</rdg></app>
+ Pointers<app type="division"><lem><lb/></lem></app>
+ move - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

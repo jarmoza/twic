@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It&#x27;s like the Light --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J297">
+                <lg type="stanza">
+                    <l>It's like the Light --</l>
+                    <l>A fashionless Delight --</l>
+                    <l>It's like the Bee --</l>
+                    <l>A dateless -- Melody --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>It's like the Woods --</l>
+                    <l>Private -- Like the Breeze --</l>
+                    <l>Phraseless -- yet it stirs</l>
+                    <l>The proudest Trees --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's like the Morning --</l>
+                    <l>Best -- when it's done --</l>
+                    <l>And the Everlasting Clocks --</l>
+                    <l><app type="revision"><lem>Strike</lem><rdg>Strike</rdg></app>
+Chime -- Noon!</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

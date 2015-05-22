@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perhaps you think me stooping </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F273A">
+                <lg type="stanza">
+                    <l>Perhaps you think me<app type="division"><lem><lb/></lem></app>
+ <em>stooping!</em> </l>
+                    <l>I'm not ashamed - of <em>that!</em> </l>
+                    <l><em>Christ</em> - stooped - until<app type="division"><lem><lb/></lem></app>
+ he <em>touched the Grave!</em> </l>
+                    <l>Do those at <em>Sacrament</em> - </l>
+                    <l>Commemorate <em>dishonor</em> -</l>
+                    <l>Or love - annealed of<app type="division"><lem><lb/></lem></app>
+ love - </l>
+                    <l>Until it bend - as low<app type="division"><lem><lb/></lem></app>
+ as <em>Death</em> </l>
+                    <l><em>Re-royalized - above?</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

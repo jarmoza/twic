@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bird did prance -- the Bee did play -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1107">
+                <lg type="stanza">
+                    <l>The Bird did prance -- the Bee did play --</l>
+                    <l>The Sun ran miles away</l>
+                    <l>So blind with joy he could not choose</l>
+                    <l>Between <app type="revision"><lem>the</lem><rdg>the</rdg></app>
+his Holiday</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The morn was up -- the meadows out</l>
+                    <l>The Fences all but ran,</l>
+                    <l>Republic of Delight, I thought</l>
+                    <l>Where each is Citizen --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>From Heavy laden <app type="revision"><lem>Climes</lem><rdg>Climes</rdg></app>
+Lands to thee</l>
+                    <l>Were seas to cross to come</l>
+                    <l>A Caspian were crowded --</l>
+                    <l>Too <app type="revision"><lem>close</lem><rdg>close</rdg></app>
+near thou art for Fame --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

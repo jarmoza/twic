@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through those old Grounds of memory,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1753">
+                <lg type="stanza">
+                    <l>Through those old Grounds of memory,</l>
+                    <l>The sauntering alone</l>
+                    <l>Is a divine intemperance</l>
+                    <l>A prudent man would shun.</l>
+                    <l>Of liquors that are vended</l>
+                    <l>'Tis easy to beware</l>
+                    <l>But statutes do not meddle</l>
+                    <l>With the internal bar.</l>
+                    <l>Pernicious as the sunset</l>
+                    <l>Permitting to pursue</l>
+                    <l>But impotent to gather,</l>
+                    <l>The tranquil perfidy</l>
+                    <l>Alloys our firmer moments</l>
+                    <l>With that severest gold</l>
+                    <l>Convenient to the longing</l>
+                    <l>But otherwise withheld.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The pattern of the sun </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1580A">
+                <lg type="stanza">
+                    <l>The pattern<app type="division"><lem><lb/></lem></app>
+ of the sun </l>
+                    <l>Can fit<app type="division"><lem><lb/></lem></app>
+ but him<app type="division"><lem><lb/></lem></app>
+ alone </l>
+                    <l>For sheen<app type="division"><lem><lb/></lem></app>
+ must<app type="division"><lem><pb/></lem></app>
+ have a Disk </l>
+                    <l>To be a<app type="division"><lem><lb/></lem></app>
+ sun - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

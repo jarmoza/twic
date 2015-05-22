@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>BY THE SEA</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-92">
+                <lg type="stanza">
+                    <l>I started early, took my dog,</l>
+                    <l>And visited the sea;</l>
+                    <l>The mermaids in the basement</l>
+                    <l>Came out to look at me,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And frigates in the upper floor</l>
+                    <l>Extended hempen hands,</l>
+                    <l>Presuming me to be a mouse</l>
+                    <l>Aground, upon the sands.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But no man moved me till the tide</l>
+                    <l>Went past my simple shoe,</l>
+                    <l>And past my apron and my belt,</l>
+                    <l>And past my bodice too,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And made as he would eat me up</l>
+                    <l>As wholly as a dew</l>
+                    <l>Upon a dandelion's sleeve </l>
+                    <l>And then I started too.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And he  he followed close behind;</l>
+                    <l>I felt his silver heel</l>
+                    <l>Upon my ankle,  then my shoes</l>
+                    <l>Would overflow with pearl.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Until we met the solid town,</l>
+                    <l>No man he seemed to know;</l>
+                    <l>And bowing with a mighty look</l>
+                    <l>At me, the sea withdrew.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

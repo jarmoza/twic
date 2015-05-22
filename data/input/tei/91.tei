@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Once more my now bewildered dove </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F65A">
+                <lg type="stanza">
+                    <l>Once more, my now bewildered Dove</l>
+                    <l>Bestirs her puzzled wings.  </l>
+                    <l>Once more, her mistress, on the deep </l>
+                    <l>Her troubled question flings - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thrice to the floating casement</l>
+                    <l>The Patriarch's bird returned - </l>
+                    <l>Courage! My brave Columba!  </l>
+                    <l>There may yet be <em>Land!</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

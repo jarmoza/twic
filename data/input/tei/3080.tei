@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It makes no difference abroad -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J620">
+                <lg type="stanza">
+                    <l>It makes no difference abroad --</l>
+                    <l>The Seasons -- fit -- the same --</l>
+                    <l>The Mornings blossom into Noons --</l>
+                    <l>And split their Pods of Flame --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wild flowers -- kindle in the Woods --</l>
+                    <l>The Brooks <app type="revision"><lem>brag --</lem><rdg>brag --</rdg></app>
+slam -- all the Day --</l>
+                    <l>No Black bird bates his Banjo --</l>
+                    <l>For passing Calvary --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Auto da Fe -- and Judgment --</l>
+                    <l>Are nothing to the Bee --</l>
+                    <l>His separation from His Rose --</l>
+                    <l>To Him -- sums Misery --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

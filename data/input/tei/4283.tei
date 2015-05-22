@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perhaps you&#x27;d like to buy a flower?</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-48">
+                <lg type="stanza">
+                    <l>Perhaps you'd like to buy a flower?</l>
+                    <l>But I could never sell.</l>
+                    <l>If you would like to borrow</l>
+                    <l>Until the daffodil</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unties her yellow bonnet</l>
+                    <l>Beneath the village door,</l>
+                    <l>Until the bees, from clover rows</l>
+                    <l>Their hock and sherry draw,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Why, I will lend until just then,</l>
+                    <l>But not an hour more!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

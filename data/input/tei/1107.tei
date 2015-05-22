@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Wert thou but ill that I might show thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F821A">
+                <lg type="stanza">
+                    <l>Wert Thou but ill - that<app type="division"><lem><lb/></lem></app>
+ I might show thee</l>
+                    <l>How long a Day I could<app type="division"><lem><lb/></lem></app>
+ endure </l>
+                    <l>Though thine attention<app type="division"><lem><lb/></lem></app>
+ stop not on me </l>
+                    <l>Nor the least signal,<app type="division"><lem><lb/></lem></app>
+ Me assure - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wert Thou but stranger<app type="division"><lem><lb/></lem></app>
+ in ungracious country -</l>
+                    <l>And Mine - the Door </l>
+                    <l>Thou paused at, for a<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="passing">doubtful</add>
+ passing bounty - </l>
+                    <l>No More - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Accused - wert Thou -<app type="division"><lem><lb/></lem></app>
+ and Myself - Tribunal - </l>
+                    <l>Convicted - sentenced -<app type="division"><lem><lb/></lem></app>
+ Ermine - not to Me<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Half the<add type="alternate" extent="Condition">distinction</add>
+ Condition, thy<app type="division"><lem><lb/></lem></app>
+ Reverse - to follow - </l>
+                    <l>Just to partake - the<app type="division"><lem><lb/></lem></app>
+ infamy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Tenant of the narrow<app type="division"><lem><lb/></lem></app>
+ Cottage, wert Thou - </l>
+                    <l>Permit to be </l>
+                    <l>The Housewife in thy<app type="division"><lem><lb/></lem></app>
+ low attendance</l>
+                    <l>Contenteth Me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Service hast Thou,<app type="division"><lem><lb/></lem></app>
+ I would not<add type="alternate" extent="achieve">attempt</add>
+ achieve it - </l>
+                    <l>To die - or live - </l>
+                    <l>The first - Sweet,<add type="alternate" extent="proved I">That was</add>
+ proved<app type="division"><lem><lb/></lem></app>
+ I, ere I saw thee - </l>
+                    <l>For<add type="alternate" extent="Life - be">Life is - &amp;#x2022; [Life</add>
+ Life - be Love -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

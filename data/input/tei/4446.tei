@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>IN THE GARDEN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-96">
+                <lg type="stanza">
+                    <l>A bird came down the walk:</l>
+                    <l>He did not know I saw;</l>
+                    <l>He bit an angle-worm in halves</l>
+                    <l>And ate the fellow, raw.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then he drank a dew</l>
+                    <l>From a convenient grass,</l>
+                    <l>And then hopped sidewise to the wall</l>
+                    <l>To let a beetle pass.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He glanced with rapid eyes</l>
+                    <l>That hurried all abroad, </l>
+                    <l>They looked like frightened beads, I thought;</l>
+                    <l>He stirred his velvet head</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Like one in danger; cautious,</l>
+                    <l>I offered him a crumb,</l>
+                    <l>And he unrolled his feathers</l>
+                    <l>And rowed him softer home</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Than oars divide the ocean,</l>
+                    <l>Too silver for a seam,</l>
+                    <l>Or butterflies, off banks of noon,</l>
+                    <l>Leap, plashless, as they swim.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My wars are laid away in books </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1579A">
+                <lg type="stanza">
+                    <l>My Wars are laid<app type="division"><lem><lb/></lem></app>
+ away in Books - </l>
+                    <l>I have one Battle<app type="division"><lem><lb/></lem></app>
+ more - </l>
+                    <l>A Foe whom<app type="division"><lem><lb/></lem></app>
+ I have never seen </l>
+                    <l>But oft has scanned<app type="division"><lem><lb/></lem></app>
+ me o'er - </l>
+                    <l>And hesitated me<app type="division"><lem><lb/></lem></app>
+ between</l>
+                    <l>And others at my side, </l>
+                    <l>But chose the best -<app type="division"><lem><lb/></lem></app>
+ Neglecting me - till </l>
+                    <l>All the rest have died - </l>
+                    <l>How sweet if I am<app type="division"><lem><lb/></lem></app>
+ not forgot </l>
+                    <l>By Chums that passed<app type="division"><lem><lb/></lem></app>
+ away -</l>
+                    <l>Since Playmates at<app type="division"><lem><pb/></lem></app>
+ threescore and<app type="division"><lem><lb/></lem></app>
+ ten </l>
+                    <l>Are such a<app type="division"><lem><lb/></lem></app>
+ scarcity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

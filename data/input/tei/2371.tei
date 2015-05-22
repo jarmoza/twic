@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fame is a fickle food</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1702A">
+                <lg type="stanza">
+                    <l>Fame is a fickle food</l>
+                    <l>Upon a shifting plate</l>
+                    <l>Whose table once a</l>
+                    <l>Guest but not</l>
+                    <l>The second time is set</l>
+                    <l>Whose crumbs the crows inspect</l>
+                    <l>And with ironic caw</l>
+                    <l>Flap past it to the</l>
+                    <l><app type="emendation"><lem>Farmers</lem><rdg>Farmer&#x27;s</rdg></app>
+ corn</l>
+                    <l>Men eat of it and die</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

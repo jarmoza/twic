@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A THUNDER-STORM.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-110">
+                <lg type="stanza">
+                    <l>A THUNDER-STORM.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wind begun to rock the grass</l>
+                    <l>With threatening tunes and low, </l>
+                    <l>He flung a menace at the earth,</l>
+                    <l>A menace at the sky.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The leaves unhooked themselves from trees</l>
+                    <l>And started all abroad;</l>
+                    <l>The dust did scoop itself like hands</l>
+                    <l>And throw away the road.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wagons quickened on the streets,</l>
+                    <l>The thunder hurried slow;</l>
+                    <l>The lightning showed a yellow beak,</l>
+                    <l>And then a livid claw.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The birds put up the bars to nests,</l>
+                    <l>The cattle fled to barns;</l>
+                    <l>There came one drop of giant rain,</l>
+                    <l>And then, as if the hands</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That held the dams had parted hold,</l>
+                    <l>The waters wrecked the sky,</l>
+                    <l>But overlooked my father's house,</l>
+                    <l>Just quartering a tree.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Lilac is an ancient shrub 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1241">
+                <lg type="stanza">
+                    <l>The Lilac is an ancient shrub</l>
+                    <l>But ancienter than that</l>
+                    <l>The Firmamental Lilac</l>
+                    <l>Upon the Hill tonight --</l>
+                    <l>The Sun subsiding on his Course</l>
+                    <l>Bequeathes this final Plant</l>
+                    <l><app type="revision"><lem>To spectacle, but not to Touch</lem><rdg>To spectacle, but not to Touch</rdg></app>
+To Contemplation -- not to Touch --</l>
+                    <l>The Flower of Occident.</l>
+                    <l>Of one Corolla is the West --</l>
+                    <l>The Calyx is the Earth --</l>
+                    <l>The Capsules burnished Seeds the Stars --</l>
+                    <l>The Scientist of Faith</l>
+                    <l>His research has but just begun --</l>
+                    <l>Above his synthesis</l>
+                    <l>The Flora unimpeachable</l>
+                    <l>To Time's Analysis --</l>
+                    <l>"Eye hath not seen" may possibly</l>
+                    <l>Be current with the Blind</l>
+                    <l>But let not Revelation</l>
+                    <l>By theses be <app type="revision"><lem>profaned --</lem><rdg>profaned --</rdg></app>
+detained --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>IN VAIN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-38">
+                <lg type="stanza">
+                    <l>I cannot live with you,</l>
+                    <l>It would be life,</l>
+                    <l>And life is over there</l>
+                    <l>Behind the shelf</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The sexton keeps the key to,</l>
+                    <l>Putting up</l>
+                    <l>Our life, his porcelain,</l>
+                    <l>Like a cup</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Discarded of the housewife,</l>
+                    <l>Quaint or broken;</l>
+                    <l>A newer Sevres pleases,</l>
+                    <l>Old ones crack.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could not die with you,</l>
+                    <l>For one must wait</l>
+                    <l>To shut the other's gaze down, </l>
+                    <l>You could not.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And I, could I stand by</l>
+                    <l>And see you freeze,</l>
+                    <l>Without my right of frost,</l>
+                    <l>Death's privilege?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor could I rise with you,</l>
+                    <l>Because your face</l>
+                    <l>Would put out Jesus',</l>
+                    <l>That new grace</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Glow plain and foreign</l>
+                    <l>On my homesick eye,</l>
+                    <l>Except that you, than he</l>
+                    <l>Shone closer by.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They'd judge us  how?</l>
+                    <l>For you served Heaven, you know,</l>
+                    <l>Or sought to;</l>
+                    <l>I could not,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because you saturated sight,</l>
+                    <l>And I had no more eyes</l>
+                    <l>For sordid excellence</l>
+                    <l>As Paradise.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And were you lost, I would be,</l>
+                    <l>Though my name</l>
+                    <l>Rang loudest</l>
+                    <l>On the heavenly fame.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And were you saved,</l>
+                    <l>And I condemned to be</l>
+                    <l>Where you were not,</l>
+                    <l>That self were hell to me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So we must keep apart,</l>
+                    <l>You there, I here,</l>
+                    <l>With just the door ajar</l>
+                    <l>That oceans are,</l>
+                    <l>And prayer,</l>
+                    <l>And that pale sustenance,</l>
+                    <l>Despair!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

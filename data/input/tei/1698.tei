@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The sea said &quot;Come&quot; to the brook </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1275C">
+                <lg type="stanza">
+                    <l>The Sea said<app type="division"><lem><lb/></lem></app>
+ &quot;Come&quot; to the<app type="division"><lem><lb/></lem></app>
+ Brook - </l>
+                    <l>The Brook<app type="division"><lem><lb/></lem></app>
+ said &quot;Let me<app type="division"><lem><lb/></lem></app>
+ grow&quot; - </l>
+                    <l>The Sea <app type="division"><lem><lb/></lem></app>
+said &quot;then you will be<app type="division"><lem><lb/></lem></app>
+ a Sea - </l>
+                    <l>I want a<app type="division"><lem><lb/></lem></app>
+ Brook -<app type="division"><lem><lb/></lem></app>
+ Come now&quot;!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sea <app type="division"><lem><lb/></lem></app>
+said &quot;Go&quot; to<app type="division"><lem><lb/></lem></app>
+ the Sea -</l>
+                    <l>The Sea<app type="division"><lem><lb/></lem></app>
+ said &quot;I am<app type="division"><lem><lb/></lem></app>
+ he </l>
+                    <l>You cherished&quot; - &quot;Learned Waters - </l>
+                    <l>Wisdom is<app type="division"><lem><lb/></lem></app>
+ stale - to Me&quot; - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How well I knew her not </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F813A">
+                <lg type="stanza">
+                    <l>How well I knew<app type="division"><lem><lb/></lem></app>
+ Her not </l>
+                    <l>Whom not to know -<app type="division"><lem><lb/></lem></app>
+ has been </l>
+                    <l>A Bounty in<app type="division"><lem><lb/></lem></app>
+ prospective - now </l>
+                    <l>Next door to mine,<app type="division"><lem><lb/></lem></app>
+ the pain - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

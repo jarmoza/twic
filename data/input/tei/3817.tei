@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Faithful to the end&quot; Amended
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1357">
+                <lg type="stanza">
+                    <l>"Faithful to the end" Amended</l>
+                    <l>From the Heavenly Clause --</l>
+                    <l>Constancy with a Proviso</l>
+                    <l>Constancy abhors --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Crowns of Life" are servile Prizes</l>
+                    <l>To the stately Heart,</l>
+                    <l>Given for the Giving, solely,</l>
+                    <l>No Emolument.                        version I</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Faithful to the end" Amended</l>
+                    <l>From the Heavenly clause --</l>
+                    <l>Lucrative indeed the offer</l>
+                    <l>But the Heart withdraws --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"I will give" the base Proviso --</l>
+                    <l>Spare Your "Crown of Life" --</l>
+                    <l>Those it fits', too fair to wear it --</l>
+                    <l>Try it on Yourself --                version II</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

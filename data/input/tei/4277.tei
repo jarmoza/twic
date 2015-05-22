@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>APOCALYPSE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-42">
+                <lg type="stanza">
+                    <l>I'm wife; I've finished that,</l>
+                    <l>That other state;</l>
+                    <l>I'm Czar, I'm woman now:</l>
+                    <l>It's safer so.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How odd the girl's life looks</l>
+                    <l>Behind this soft eclipse!</l>
+                    <l>I think that earth seems so</l>
+                    <l>To those in heaven now.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This being comfort, then</l>
+                    <l>That other kind was pain;</l>
+                    <l>But why compare?</l>
+                    <l>I'm wife! stop there!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

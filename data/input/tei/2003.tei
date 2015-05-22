@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brother of ingots - Ah Peru </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1462A">
+                <lg type="stanza">
+                    <l>Brother of<app type="division"><lem><lb/></lem></app>
+ Ingots - Ah<app type="division"><lem><lb/></lem></app>
+ Peru - </l>
+                    <l>Empty the<app type="division"><lem><lb/></lem></app>
+ Hearts that<app type="division"><lem><lb/></lem></app>
+ purchased<app type="division"><lem><lb/></lem></app>
+ you - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

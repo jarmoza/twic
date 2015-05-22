@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This quiet Dust was Gentlemen and Ladies,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-64">
+                <lg type="stanza">
+                    <l>This quiet Dust was Gentlemen and Ladies,</l>
+                    <l>And Lads and Girls;</l>
+                    <l>Was laughter and ability and sighing,</l>
+                    <l>And frocks and curls.</l>
+                    <l>This passive place a Summer's nimble mansion,</l>
+                    <l>Where Bloom and Bees</l>
+                    <l>Fulfilled their Oriental Circuit,</l>
+                    <l>Then ceased like these.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

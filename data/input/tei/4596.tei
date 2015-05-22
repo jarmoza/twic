@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A light exists in spring</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-80">
+                <lg type="stanza">
+                    <l>A light exists in spring</l>
+                    <l>Not present on the year</l>
+                    <l>At any other period.</l>
+                    <l>When March is scarcely here</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A color stands abroad</l>
+                    <l>On solitary hills</l>
+                    <l>That science cannot overtake,</l>
+                    <l>But human nature feels.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It waits upon the lawn;</l>
+                    <l>It shows the furthest tree</l>
+                    <l>Upon the furthest slope we know;</l>
+                    <l>It almost speaks to me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then, as horizons step,</l>
+                    <l>Or noons report away,</l>
+                    <l>Without the formula of sound,</l>
+                    <l>It passes, and we stay:</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A quality of loss</l>
+                    <l>Affecting our content,</l>
+                    <l>As trade had suddenly encroached</l>
+                    <l>Upon a sacrament.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

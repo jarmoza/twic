@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Rearrange a &quot;Wife&#x27;s&quot; affection! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1737">
+                <lg type="stanza">
+                    <l>Rearrange a "Wife's" affection!</l>
+                    <l>When they dislocate my Brain!</l>
+                    <l>Amputate my freckled Bosom!</l>
+                    <l>Make me bearded like a man!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Blush, my spirit, in thy Fastness --</l>
+                    <l>Blush, my unacknowledged clay --</l>
+                    <l>Seven years of troth have taught thee</l>
+                    <l>More than Wifehood ever may!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Love that never leaped its socket --</l>
+                    <l>Trust entrenched in narrow pain --</l>
+                    <l>Constancy thro' fire -- awarded --</l>
+                    <l>Anguish -- bare of anodyne!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Burden -- borne so far triumphant --</l>
+                    <l>None suspect me of the crown,</l>
+                    <l>For I wear the "Thorns" till Sunset --</l>
+                    <l>Then -- my Diadem put on.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Big my Secret but it's bandaged --</l>
+                    <l>It will never get away</l>
+                    <l>Till the Day its Weary Keeper</l>
+                    <l>Leads it through the Grave to thee.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Your Riches -- taught me -- Poverty.
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J299">
+                <lg type="stanza">
+                    <l>Your Riches -- taught me -- Poverty.</l>
+                    <l>Myself -- a Millionaire</l>
+                    <l>In little Wealths, as Girls could boast</l>
+                    <l>Till broad as Buenos Ayre --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You drifted your Dominions --</l>
+                    <l>A Different Peru --</l>
+                    <l>And I esteemed All Poverty</l>
+                    <l>For Life's Estate with you --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Mines, I little know -- myself --</l>
+                    <l>But just the names, of Gems --</l>
+                    <l>The Colors of the Commonest --</l>
+                    <l>And scarce of Diadems --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So much, that did I meet the Queen --</l>
+                    <l>Her Glory I should know --</l>
+                    <l>But this, must be a different Wealth --</l>
+                    <l>To miss it -- beggars so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'm sure 'tis India -- all Day --</l>
+                    <l>To those who look on You --</l>
+                    <l>Without a stint -- without a blame,</l>
+                    <l>Might I -- but be the Jew --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'm sure it is Golconda --</l>
+                    <l>Beyond my power to deem --</l>
+                    <l>To have a smile for Mine -- each Day,</l>
+                    <l>How better, than a Gem!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>At least, it solaces to know</l>
+                    <l>That there exists -- a Gold --</l>
+                    <l>Altho' I prove it, just in time</l>
+                    <l>It's distance -- to behold --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's far -- far Treasure to surmise --</l>
+                    <l>And estimate the Pearl --</l>
+                    <l>That slipped my simple fingers through --</l>
+                    <l>While just a Girl at School.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

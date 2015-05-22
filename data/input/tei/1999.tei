@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How brittle are the piers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1459B">
+                <lg type="stanza">
+                    <l>How brittle are<app type="division"><lem><lb/></lem></app>
+ the Piers </l>
+                    <l>On which our<app type="division"><lem><lb/></lem></app>
+ Faith doth tread - </l>
+                    <l>No Bridge below<app type="division"><lem><lb/></lem></app>
+ doth totter so </l>
+                    <l>Yet none hath<app type="division"><lem><lb/></lem></app>
+ such a Crowd -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>It is as old<app type="division"><lem><lb/></lem></app>
+ as God -</l>
+                    <l>Indeed - 'twas<app type="division"><lem><lb/></lem></app>
+ built by him - </l>
+                    <l>He sent his Son<app type="division"><lem><lb/></lem></app>
+ to test the Plank </l>
+                    <l>And he pronounced<app type="division"><lem><lb/></lem></app>
+ it firm - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>For death - or rather </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F644B">
+                <lg type="stanza">
+                    <l>For Death - or rather</l>
+                    <l>For the Things 'twould buy - </l>
+                    <l>This - put away </l>
+                    <l>Life's Opportunity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Things that Death will<app type="division"><lem><lb/></lem></app>
+ buy</l>
+                    <l>Are Room - </l>
+                    <l>Escape from Circumstances - </l>
+                    <l>And a Name - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>With Gifts of Life </l>
+                    <l>How Death's Gifts may compare -</l>
+                    <l>We know not - </l>
+                    <l>For the Rates - lie Here - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

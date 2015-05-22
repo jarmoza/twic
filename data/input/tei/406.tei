@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of all the souls that stand create </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F279A">
+                <lg type="stanza">
+                    <l>Of all the Souls<app type="division"><lem><lb/></lem></app>
+ that stand create - </l>
+                    <l>I have Elected - One - </l>
+                    <l>When Sense from Spirit -<app type="division"><lem><lb/></lem></app>
+ files away - </l>
+                    <l>And Subterfuge - is done - </l>
+                    <l>When that which is -<app type="division"><lem><lb/></lem></app>
+ and that which was -</l>
+                    <l>Apart - intrinsic - stand - </l>
+                    <l>And this brief Tragedy<app type="division"><lem><lb/></lem></app>
+ of Flesh - </l>
+                    <l>Is shifted - like a Sand - </l>
+                    <l>When Figures show their<app type="division"><lem><lb/></lem></app>
+ royal Front - </l>
+                    <l>And Mists - are carved away,</l>
+                    <l>Behold the Atom - I <app type="emendation"><lem>pre - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;pb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ferred</lem><rdg>preferred</rdg></app>
+ - </l>
+                    <l>To all the lists of<app type="division"><lem><lb/></lem></app>
+ Clay!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

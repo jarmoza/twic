@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of tolling bell I ask the cause? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F933C">
+                <lg type="stanza">
+                    <l>That Bells should<app type="division"><lem><lb/></lem></app>
+ ring, till all<app type="division"><lem><lb/></lem></app>
+ should know </l>
+                    <l>A soul had<app type="division"><lem><lb/></lem></app>
+ gone to Heaven </l>
+                    <l>Would seem<app type="division"><lem><lb/></lem></app>
+ to me the more<app type="division"><lem><lb/></lem></app>
+ the way </l>
+                    <l>A good news<app type="division"><lem><lb/></lem></app>
+ should be given - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

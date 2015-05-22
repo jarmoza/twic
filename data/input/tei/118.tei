@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>For every bird a nest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F86A">
+                <lg type="stanza">
+                    <l>For every Bird a nest -</l>
+                    <l>Wherefore in timid quest </l>
+                    <l>Some little Wren goes seeking round - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wherefore when boughs are free, </l>
+                    <l>Households in every tree,</l>
+                    <l>Pilgrim be found?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Perhaps a home too high - </l>
+                    <l>Ah aristocracy!  </l>
+                    <l>The little Wren desires - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Perhaps of twig so fine -</l>
+                    <l>Of twine e'en superfine, </l>
+                    <l>Her pride aspires - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Lark is not ashamed </l>
+                    <l>To build opon the ground </l>
+                    <l>Her modest house -<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet who of all the throng </l>
+                    <l>Dancing around the sun </l>
+                    <l>Does so rejoice?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Somewhat to hope for </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F998A">
+                <lg type="stanza">
+                    <l>Somewhat, to hope for,</l>
+                    <l>Be it ne'er so far </l>
+                    <l>Is Capital against<app type="division"><lem><lb/></lem></app>
+ Despair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Somewhat, to suffer, </l>
+                    <l>Be it ne'er so keen -</l>
+                    <l>If terminable, may<app type="division"><lem><lb/></lem></app>
+ be borne - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

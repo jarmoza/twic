@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A PRAYER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-13">
+                <lg type="stanza">
+                    <l>I meant to have but modest needs,</l>
+                    <l>Such as content, and heaven;</l>
+                    <l>Within my income these could lie,</l>
+                    <l>And life and I keep even.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But since the last included both,</l>
+                    <l>It would suffice my prayer</l>
+                    <l>But just for one to stipulate,</l>
+                    <l>And grace would grant the pair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so, upon this wise I prayed, </l>
+                    <l>Great Spirit, give to me</l>
+                    <l>A heaven not so large as yours,</l>
+                    <l>But large enough for me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A smile suffused Jehovah's face;</l>
+                    <l>The cherubim withdrew;</l>
+                    <l>Grave saints stole out to look at me,</l>
+                    <l>And showed their dimples, too.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I left the place with all my might, </l>
+                    <l>My prayer away I threw;</l>
+                    <l>The quiet ages picked it up,</l>
+                    <l>And Judgment twinkled, too,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That one so honest be extant</l>
+                    <l>As take the tale for true</l>
+                    <l>That "Whatsoever you shall ask,</l>
+                    <l>Itself be given you."</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But I, grown shrewder, scan the skies</l>
+                    <l>With a suspicious air, </l>
+                    <l>As children, swindled for the first,</l>
+                    <l>All swindlers be, infer.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

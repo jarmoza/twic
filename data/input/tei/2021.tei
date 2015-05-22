@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Your thoughts dont have words every day </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1476A">
+                <lg type="stanza">
+                    <l>Your thoughts dont have words every day </l>
+                    <l>They come a single time </l>
+                    <l>Like signal esoteric sips </l>
+                    <l>Of the communion Wine </l>
+                    <l>Which while you taste<add type="alternate" extent="so native seems">so ample seems &amp;#x2022; [so</add>
+ so<add type="alternate" extent="native">adjacent</add>
+ native seems</l>
+                    <l><add type="alternate" extent="So easy">[So</add>
+So easy so to be </l>
+                    <l>You cannot comprehend it's price - </l>
+                    <l>Nor it's infrequency </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

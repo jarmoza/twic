@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We dream -- it is good we are dreaming -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J531">
+                <lg type="stanza">
+                    <l><app type="revision"><lem>We are dreaming</lem><rdg>We are dreaming</rdg></app>
+We dream -- it is good we are dreaming --</l>
+                    <l><app type="revision"><lem>They</lem><rdg>They</rdg></app>
+It would hurt us -- were we awake --</l>
+                    <l>But since it is playing -- kill us,</l>
+                    <l>And we are playing -- shriek --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What harm? Men die -- externally --</l>
+                    <l>It is a <app type="revision"><lem>Fact</lem><rdg>Fact</rdg></app>
+truth -- of Blood --</l>
+                    <l>But we -- are dying in Drama --</l>
+                    <l>And Drama -- is <app type="revision"><lem>seldom --</lem><rdg>seldom --</rdg></app>
+never dead --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cautious -- We jar each other --</l>
+                    <l>And ei<app type="revision"><lem>it's</lem><rdg>it&#x27;s</rdg></app>
+ther -- open the eyes --</l>
+                    <l>Lest the Phantasm -- prove the Mistake --</l>
+                    <l>And the livid Surprise</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cool us to Shafts of Granite --</l>
+                    <l>With just an Age -- and Name --</l>
+                    <l>And perhaps a <app type="revision"><lem>latin inscription</lem><rdg>latin inscription</rdg></app>
+phrase in Egyptian --</l>
+                    <l>It's prudenter -- to dream --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If I should&#x27;nt be alive </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F210A">
+                <lg type="stanza">
+                    <l>If I should'nt be alive</l>
+                    <l>When the Robins come, </l>
+                    <l>Give the one in Red Cravat, </l>
+                    <l>A Memorial crumb - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If I could'nt thank you,</l>
+                    <l>Being fast asleep, </l>
+                    <l>You will know I'm trying </l>
+                    <l>With my Granite lip!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If he dissolve - then there is nothing more </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F251A">
+                <lg type="stanza">
+                    <l>If <em>He dissolve</em> - then - there<app type="division"><lem><lb/></lem></app>
+ is <em>nothing</em> - <em>more</em> -</l>
+                    <l><em>Eclipse</em> - at <em>Midnight</em> - </l>
+                    <l>It was <em>dark - before</em> - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><em>Sunset</em> - at <em>Easter</em> - </l>
+                    <l><em>Blindness</em> - on the <em>Dawn</em> -</l>
+                    <l><em>Faint</em> Star of Bethleem - </l>
+                    <l><em>Gone down!</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l><em>Would</em> but some <em>God</em> - <em>inform<app type="division"><lem><lb/></lem></app>
+</em> Him - </l>
+                    <l>Or it be <em>too late!</em> </l>
+                    <l>Say - that the pulse <em>just lisps</em> -</l>
+                    <l>The <em>Chariots wait</em> - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Say - that a <em>little life</em> - for<app type="division"><lem><lb/></lem></app>
+ <em>His</em> - </l>
+                    <l>Is <em>leaking</em> - <em>red</em> - </l>
+                    <l><em>His little Spaniel</em> - tell Him!  </l>
+                    <l><em>Will He heed?</em></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

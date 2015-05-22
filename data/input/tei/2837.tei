@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To lose one&#x27;s faith -- surpass 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J377">
+                <lg type="stanza">
+                    <l>To lose one's faith -- surpass</l>
+                    <l>The loss of an Estate --</l>
+                    <l>Because Estates can be</l>
+                    <l>Replenished -- faith cannot --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Inherited with Life --</l>
+                    <l>Belief -- but once -- can he --</l>
+                    <l>Annihilate a single clause --</l>
+                    <l>And Being's -- Beggary --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Today or this noon</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1706A">
+                <lg type="stanza">
+                    <l><app type="emendation"><lem>To-day</lem><rdg>Today</rdg></app>
+ or this noon</l>
+                    <l>She dwelt so close</l>
+                    <l>I almost touched her</l>
+                    <l><app type="emendation"><lem>To-night</lem><rdg>Tonight</rdg></app>
+ she lies</l>
+                    <l>Past <app type="emendation"><lem>neigborhood</lem><rdg>neighborhood</rdg></app>
+</l>
+                    <l>And bough and steeple</l>
+                    <l>Now past surmise</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

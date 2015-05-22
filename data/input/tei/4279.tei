@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>APOTHEOSIS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-44">
+                <lg type="stanza">
+                    <l>Come slowly, Eden!</l>
+                    <l>Lips unused to thee,</l>
+                    <l>Bashful, sip thy jasmines,</l>
+                    <l>As the fainting bee,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Reaching late his flower,</l>
+                    <l>Round her chamber hums,</l>
+                    <l>Counts his nectars  enters,</l>
+                    <l>And is lost in balms!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

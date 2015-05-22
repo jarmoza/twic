@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lay this laurel on the one </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1428A">
+                <lg type="stanza">
+                    <l>Lay this Laurel on the one </l>
+                    <l>Triumphed - and<app type="division"><lem><lb/></lem></app>
+ remained unknown - </l>
+                    <l>Laurel fell your futile tree - </l>
+                    <l>Such a Victor<add type="alternate" extent="cannot">could not</add>
+ cannot be - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Lay this Laurel on the<app type="division"><lem><lb/></lem></app>
+ one<app type="division"><lem><pb/></lem></app>
+ -</l>
+                    <l>Too intrinsic for Renown - </l>
+                    <l>Laurel - vail your<app type="division"><lem><lb/></lem></app>
+ deathless tree - </l>
+                    <l><add type="alternate" extent="">Him you chastened that was he</add>
+Him thou chastenest -<app type="division"><lem><lb/></lem></app>
+ That<add type="alternate" extent="is">was -</add>
+ is he - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

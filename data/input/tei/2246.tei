@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There came a wind like a bugle </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1618A">
+                <lg type="stanza">
+                    <l>There came a<app type="division"><lem><lb/></lem></app>
+ Wind like a<app type="division"><lem><lb/></lem></app>
+ Bugle - </l>
+                    <l>It quivered through<app type="division"><lem><lb/></lem></app>
+ the Grass </l>
+                    <l>And a Green Chill<app type="division"><lem><lb/></lem></app>
+ upon the Heat </l>
+                    <l>So ominous did<app type="division"><lem><lb/></lem></app>
+ pass </l>
+                    <l>We barred the<app type="division"><lem><lb/></lem></app>
+ Windows and the<app type="division"><lem><lb/></lem></app>
+ Doors</l>
+                    <l>As from an<app type="division"><lem><lb/></lem></app>
+ Emerald Ghost - </l>
+                    <l>The Doom's<app type="division"><lem><lb/></lem></app>
+ Electric Moccasin </l>
+                    <l>That very instant<app type="division"><lem><lb/></lem></app>
+ passed -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l><add type="alternate" extent="On a strange Mob">Upon a Mob -</add>
+On a strange<app type="division"><lem><lb/></lem></app>
+ Mob of panting<app type="division"><lem><lb/></lem></app>
+ Trees </l>
+                    <l>And Fences fled<app type="division"><lem><lb/></lem></app>
+ away</l>
+                    <l>And Rivers where<app type="division"><lem><lb/></lem></app>
+ the Houses ran </l>
+                    <l><add type="alternate" extent="">The Living looked that Day -</add>
+Those looked<app type="division"><lem><lb/></lem></app>
+ that lived - that<app type="division"><lem><lb/></lem></app>
+ Day - </l>
+                    <l>The Bell within<app type="division"><lem><lb/></lem></app>
+ the steeple wild </l>
+                    <l>The flying tidings<app type="division"><lem><lb/></lem></app>
+ told - </l>
+                    <l>How much can<app type="division"><lem><lb/></lem></app>
+ come</l>
+                    <l>And much can<app type="division"><lem><lb/></lem></app>
+ go, </l>
+                    <l>And yet<add type="alternate" extent="abide">remain</add>
+ abide<app type="division"><lem><lb/></lem></app>
+ the World!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

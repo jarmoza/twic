@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The name -- of it -- is &quot;Autumn&quot; -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J656">
+                <lg type="stanza">
+                    <l>The name -- of it -- is "Autumn" --</l>
+                    <l>The hue -- of it -- is Blood --</l>
+                    <l>An Artery -- upon the Hill --</l>
+                    <l>A Vein -- along the Road --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Great Globules -- in the Alleys --</l>
+                    <l>And Oh, the Shower of Stain --</l>
+                    <l>When Winds -- upset the Basin --</l>
+                    <l>And spill the Scarlet Rain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It sprinkles Bonnets -- far below --</l>
+                    <l>It <app type="revision"><lem>makes Vermillion --</lem><rdg>makes Vermillion --</rdg></app>
+gathers ruddy Pools --</l>
+                    <l>Then -- eddies like a Rose -- away --</l>
+                    <l><app type="revision"><lem>And leaves me with the Hills.</lem><rdg>And leaves me with the Hills.</rdg></app>
+Upon Vermillion Wheels --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>8.spill] tip --</l>
+                    <l>10.gathers] stands in --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

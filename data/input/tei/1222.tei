@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What shall I do when the summer troubles </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F915A">
+                <lg type="stanza">
+                    <l>What shall I do<app type="division"><lem><lb/></lem></app>
+ when the Summer<app type="division"><lem><lb/></lem></app>
+ troubles -</l>
+                    <l>What, when the Rose<app type="division"><lem><lb/></lem></app>
+ is ripe - </l>
+                    <l>What when the Eggs<app type="division"><lem><lb/></lem></app>
+ fly off in Music </l>
+                    <l>From the Maple Keep?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What shall I do<app type="division"><lem><lb/></lem></app>
+ when the Skies a'chirrup</l>
+                    <l>Drop a Tune on Me - </l>
+                    <l>When the Bee hangs<app type="division"><lem><lb/></lem></app>
+ all Noon in the Buttercup </l>
+                    <l>What will become of<app type="division"><lem><lb/></lem></app>
+ Me?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh, when the Squirrel<app type="division"><lem><lb/></lem></app>
+ fills His Pockets </l>
+                    <l>And the Berries stare<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>How can I bear their<app type="division"><lem><lb/></lem></app>
+ jocund Faces </l>
+                    <l>Thou from Here, so far?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twould'nt afflict a Robin - </l>
+                    <l>All His Goods have Wings - </l>
+                    <l>I - do not fly, so Wherefore</l>
+                    <l>My Perennial Things?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

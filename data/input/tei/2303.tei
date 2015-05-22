@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The pedigree of honey </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1650C">
+                <lg type="stanza">
+                    <l>The Pedigree<app type="division"><lem><lb/></lem></app>
+ of Honey </l>
+                    <l>Does not<app type="division"><lem><lb/></lem></app>
+ concern the<app type="division"><lem><lb/></lem></app>
+ Bee - </l>
+                    <l>A Clover,<app type="division"><lem><lb/></lem></app>
+ any time, to<app type="division"><lem><lb/></lem></app>
+ him, </l>
+                    <l>Is Aristocracy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

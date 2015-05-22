@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There came a Day at Summer&#x27;s full, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J322">
+                <lg type="stanza">
+                    <l>There came a Day at Summer's full,</l>
+                    <l>Entirely for me --</l>
+                    <l>I thought that such were for the Saints,</l>
+                    <l>Where Resurrections -- be --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun, as common, went abroad,</l>
+                    <l>The flowers, accustomed, blew,</l>
+                    <l>As if no soul the solstice passed</l>
+                    <l>That maketh all things new --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The time was scarce profaned, by speech --</l>
+                    <l>The symbol of a word</l>
+                    <l>Was needless, as at Sacrament,</l>
+                    <l>The Wardrobe -- of our Lord --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Each was to each The Sealed Church,</l>
+                    <l>Permitted to commune this -- time --</l>
+                    <l>Lest we too awkward show</l>
+                    <l>At Supper of the Lamb.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Hours slid fast -- as Hours will,</l>
+                    <l>Clutched tight, by greedy hands --</l>
+                    <l>So faces on two Decks, look back,</l>
+                    <l>Bound to opposing lands --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so when all the time had leaked,</l>
+                    <l>Without external sound</l>
+                    <l>Each bound the Other's Crucifix --</l>
+                    <l>We gave no other Bond</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sufficient troth, that we shall rise --</l>
+                    <l>Deposed -- at length, the Grave --</l>
+                    <l>To that new Marriage,</l>
+                    <l>Justified -- through Calvaries of Love --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

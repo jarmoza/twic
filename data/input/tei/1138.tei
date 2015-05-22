@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who giants know, with lesser men </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F848A">
+                <lg type="stanza">
+                    <l>Who Giants know, with<app type="division"><lem><lb/></lem></app>
+ lesser Men</l>
+                    <l>Are incomplete, and shy - </l>
+                    <l>For Greatness, that is ill<app type="division"><lem><lb/></lem></app>
+ at ease </l>
+                    <l><add type="alternate" extent="">With other quality -</add>
+In minor Company - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Smaller, could not be<app type="division"><lem><lb/></lem></app>
+ perturbed -</l>
+                    <l>The Summer Gnat displays - </l>
+                    <l>Unconscious that his single<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Fleet">Bulk - &amp;#x2022; Sail -</add>
+ Fleet </l>
+                    <l>Do not comprise the skies - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

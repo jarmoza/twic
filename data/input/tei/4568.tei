@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Is bliss, then, such abyss</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-52">
+                <lg type="stanza">
+                    <l>Is bliss, then, such abyss</l>
+                    <l>I must not put my foot amiss</l>
+                    <l>For fear I spoil my shoe?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'd rather suit my foot</l>
+                    <l>Than save my boot,</l>
+                    <l>For yet to buy another pair</l>
+                    <l>Is possible</l>
+                    <l>At any fair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But bliss is sold just once;</l>
+                    <l>The patent lost</l>
+                    <l>None buy it any more.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

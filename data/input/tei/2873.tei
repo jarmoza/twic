@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I never felt at Home -- Below -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J413">
+                <lg type="stanza">
+                    <l>I never felt at Home -- Below --</l>
+                    <l>And in the Handsome Skies</l>
+                    <l>I shall not feel at Home -- I know --</l>
+                    <l>I dont like Paradise</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because it's Sunday -- all the time --</l>
+                    <l>And Recess -- never comes --</l>
+                    <l>And Eden'll be so lonesome</l>
+                    <l>Bright Wednesday Afternoons</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If God could make a visit --</l>
+                    <l>Or ever took a Nap --</l>
+                    <l>So not to see us -- but they say</l>
+                    <l>Himself --  a Telescope</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>Perennial beholds us --</l>
+                    <l>Myself would run away</l>
+                    <l>From Him -- and Holy Ghost -- and All</l>
+                    <l>But there's the "Judgment Day"!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

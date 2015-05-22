@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mushroom is the elf of plants </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1350B">
+                <lg type="stanza">
+                    <l>The <app type="division"><lem><lb/></lem></app>
+Mushroom<app type="division"><lem><lb/></lem></app>
+ is the Elf<app type="division"><lem><lb/></lem></app>
+ of Plants - </l>
+                    <l>At evening<app type="division"><lem><lb/></lem></app>
+ it is not - </l>
+                    <l>At morning - in a Truffled<app type="division"><lem><lb/></lem></app>
+ Hut </l>
+                    <l>It stop opon a spot </l>
+                    <l>As if it tarried always</l>
+                    <l>And yet it's whole career </l>
+                    <l>Is shorter than a<app type="division"><lem><lb/></lem></app>
+ snake's delay </l>
+                    <l>And fleeter<app type="division"><lem><lb/></lem></app>
+ than a<app type="division"><lem><lb/></lem></app>
+ <app type="emendation"><lem>T &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ Tare</lem><rdg>Tare</rdg></app>
+ - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It was not death, for I stood up,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-159">
+                <lg type="stanza">
+                    <l>It was not death, for I stood up,</l>
+                    <l>And all the dead lie down;</l>
+                    <l>It was not night, for all the bells</l>
+                    <l>Put out their tongues, for noon.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It was not frost, for on my flesh</l>
+                    <l>I felt siroccos crawl, </l>
+                    <l>Nor fire, for just my marble feet</l>
+                    <l>Could keep a chancel cool.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And yet it tasted like them all;</l>
+                    <l>The figures I have seen</l>
+                    <l>Set orderly, for burial,</l>
+                    <l>Reminded me of mine,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if my life were shaven</l>
+                    <l>And fitted to a frame,</l>
+                    <l>And could not breathe without a key;</l>
+                    <l>And 't was like midnight, some,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When everything that ticked has stopped,</l>
+                    <l>And space stares, all around,</l>
+                    <l>Or grisly frosts, first autumn morns,</l>
+                    <l>Repeal the beating ground.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But most like chaos,  stopless, cool, </l>
+                    <l>Without a chance or spar,</l>
+                    <l>Or even a report of land</l>
+                    <l>To justify despair.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

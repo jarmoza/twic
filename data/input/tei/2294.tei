@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Morning that comes but once </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1645A">
+                <lg type="stanza">
+                    <l>Morning, <app type="division"><lem><lb/></lem></app>
+that comes<app type="division"><lem><lb/></lem></app>
+ but once, </l>
+                    <l>Considers <app type="division"><lem><lb/></lem></app>
+coming twice - </l>
+                    <l>Two Dawns<app type="division"><lem><lb/></lem></app>
+ upon a <app type="emendation"><lem>Sin - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ gle</lem><rdg>Single</rdg></app>
+ Morn </l>
+                    <l>Make Life<app type="division"><lem><lb/></lem></app>
+ a sudden<app type="division"><lem><lb/></lem></app>
+ price - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

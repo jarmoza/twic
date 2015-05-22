@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why make it doubt -- it hurts it so --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J462">
+                <lg type="stanza">
+                    <l>Why make it doubt -- it hurts it so --</l>
+                    <l>So sick -- to guess --</l>
+                    <l>So strong -- to know --</l>
+                    <l>So brave -- upon it's little Bed</l>
+                    <l>To tell the very last They said</l>
+                    <l>Unto Itself -- and smile -- And shake --</l>
+                    <l>For that dear -- distant -- dangerous -- Sake --</l>
+                    <l>But -- the Instead -- the Pinching fear</l>
+                    <l>That Something -- it did do -- or dare --</l>
+                    <l>Offend the Vision -- and it flee --</l>
+                    <l>And They no more remember me --</l>
+                    <l>Nor ever turn to tell me why --</l>
+                    <l>Oh, Master, This is Misery --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

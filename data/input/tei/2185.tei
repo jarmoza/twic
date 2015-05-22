@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Within thy grave! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1582A">
+                <lg type="stanza">
+                    <l>Within thy<app type="division"><lem><lb/></lem></app>
+ Grave!  </l>
+                    <l>Oh no,<app type="division"><lem><lb/></lem></app>
+ but on<app type="division"><lem><lb/></lem></app>
+ some other<app type="division"><lem><lb/></lem></app>
+ flight - </l>
+                    <l>Thou only<app type="division"><lem><lb/></lem></app>
+ camest to<app type="division"><lem><lb/></lem></app>
+ mankind </l>
+                    <l>To rend<app type="division"><lem><lb/></lem></app>
+ it with<app type="division"><lem><lb/></lem></app>
+ Good<app type="division"><lem><lb/></lem></app>
+ night - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

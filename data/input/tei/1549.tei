@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He is alive this morning </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1173A">
+                <lg type="stanza">
+                    <l>He is alive, this<app type="division"><lem><lb/></lem></app>
+ morning - </l>
+                    <l>He is alive - and<app type="division"><lem><lb/></lem></app>
+ awake - </l>
+                    <l>Birds are resuming<app type="division"><lem><lb/></lem></app>
+ for Him - </l>
+                    <l>Blossoms - dress<app type="division"><lem><lb/></lem></app>
+ for His sake - </l>
+                    <l>Bees - to their<app type="division"><lem><lb/></lem></app>
+ Loaves of Honey</l>
+                    <l>Add an Amber<app type="division"><lem><lb/></lem></app>
+ Crumb </l>
+                    <l>Him - to regale -<app type="division"><lem><pb/></lem></app>
+ Me - Only - </l>
+                    <l>Motion, and<app type="division"><lem><lb/></lem></app>
+ am dumb.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

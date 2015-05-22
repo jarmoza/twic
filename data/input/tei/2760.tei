@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Morning&quot; -- means &quot;Milking&quot; -- to the Farmer -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J300">
+                <lg type="stanza">
+                    <l>"Morning" -- means "Milking" -- to the Farmer --</l>
+                    <l>Dawn -- to the Teneriffe --</l>
+                    <l>Dice -- to the Maid --</l>
+                    <l>Morning means just Risk -- to the Lover --</l>
+                    <l>Just revelation -- to the Beloved --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>Epicures -- date a Breakfast -- by it --</l>
+                    <l>Brides -- an Apocalypse --</l>
+                    <l>Worlds -- a Flood --</l>
+                    <l>Faint -- going Lives -- Their lapse from Sighing --</l>
+                    <l>Faith -- The Experiment of Our Lord --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

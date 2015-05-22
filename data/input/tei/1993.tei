@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perhaps they do not go so far </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1455C">
+                <lg type="stanza">
+                    <l>Perhaps she<app type="division"><lem><lb/></lem></app>
+ does not<app type="division"><lem><lb/></lem></app>
+ go so far </l>
+                    <l>As you who<app type="division"><lem><lb/></lem></app>
+ stay - suppose -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Perhaps comes<app type="division"><lem><lb/></lem></app>
+ closer, for<app type="division"><lem><lb/></lem></app>
+ the lapse </l>
+                    <l>Of her<app type="division"><lem><lb/></lem></app>
+ Corporeal<app type="division"><lem><lb/></lem></app>
+ Clothes - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

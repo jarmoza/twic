@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The moon was but a chin of gold </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F735B">
+                <lg type="stanza">
+                    <l>The Moon was but a Chin<app type="division"><lem><lb/></lem></app>
+ of Gold</l>
+                    <l>A night or two ago - </l>
+                    <l>And now she turns Her<app type="division"><lem><lb/></lem></app>
+ perfect Face </l>
+                    <l>Opon the World below - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Forehead is of Amplest<app type="division"><lem><lb/></lem></app>
+ Blonde -</l>
+                    <l>Her Cheek - a Beryl hewn - </l>
+                    <l>Her Eye unto the Summer<app type="division"><lem><lb/></lem></app>
+ Dew </l>
+                    <l>The likest I have known - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Lips of Amber never part - </l>
+                    <l>But what must be the smile</l>
+                    <l>Opon Her Friend she could<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="confer">bestow -</add>
+ confer </l>
+                    <l>Were such Her silver will -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And what a privilege to be </l>
+                    <l>But the remotest star - </l>
+                    <l>For Certainty she take Her<app type="division"><lem><lb/></lem></app>
+ way</l>
+                    <l>Beside Your<add type="alternate" extent="Palace">twinkling - &amp;#x2022; glimmering -</add>
+ Palace Door - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Bonnet is the <app type="emendation"><lem>Firma - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ment</lem><rdg>Firmament</rdg></app>
+ - </l>
+                    <l><add type="alternate" extent="">The Valleys - are Her shoe -</add>
+The Universe - Her shoe - </l>
+                    <l>The Stars - the Trinkets at<app type="division"><lem><lb/></lem></app>
+ Her Belt - </l>
+                    <l>Her Dimities - of Blue -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE LONELY HOUSE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-15">
+                <lg type="stanza">
+                    <l>I know some lonely houses off the road</l>
+                    <l>A robber 'd like the look of, </l>
+                    <l>Wooden barred,</l>
+                    <l>And windows hanging low,</l>
+                    <l>Inviting to</l>
+                    <l>A portico,</l>
+                    <l>Where two could creep:</l>
+                    <l>One hand the tools,</l>
+                    <l>The other peep</l>
+                    <l>To make sure all's asleep.</l>
+                    <l>Old-fashioned eyes,</l>
+                    <l>Not easy to surprise!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How orderly the kitchen 'd look by night,</l>
+                    <l>With just a clock, </l>
+                    <l>But they could gag the tick,</l>
+                    <l>And mice won't bark;</l>
+                    <l>And so the walls don't tell,</l>
+                    <l>None will.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A pair of spectacles ajar just stir </l>
+                    <l>An almanac's aware.</l>
+                    <l>Was it the mat winked,</l>
+                    <l>Or a nervous star?</l>
+                    <l>The moon slides down the stair</l>
+                    <l>To see who's there.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>There's plunder,  where?</l>
+                    <l>Tankard, or spoon,</l>
+                    <l>Earring, or stone,</l>
+                    <l>A watch, some ancient brooch</l>
+                    <l>To match the grandmamma,</l>
+                    <l>Staid sleeping there.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Day rattles, too,</l>
+                    <l>Stealth's slow;</l>
+                    <l>The sun has got as far</l>
+                    <l>As the third sycamore.</l>
+                    <l>Screams chanticleer,</l>
+                    <l>"Who's there?"</l>
+                    <l>And echoes, trains away,</l>
+                    <l>Sneer  "Where?"</l>
+                    <l>While the old couple, just astir,</l>
+                    <l>Fancy the sunrise left the door ajar!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

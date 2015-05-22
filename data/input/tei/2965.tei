@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I would not paint -- a picture --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J505">
+                <lg type="stanza">
+                    <l>I would not paint -- a picture --</l>
+                    <l>I'd rather be the One</l>
+                    <l>It's <app type="revision"><lem>fair</lem><rdg>fair</rdg></app>
+bright impossibility</l>
+                    <l>To dwell -- delicious -- on --</l>
+                    <l>And wonder how the fingers feel</l>
+                    <l>Whose rare -- celestial -- stir --</l>
+                    <l><app type="revision"><lem>provokes</lem><rdg>provokes</rdg></app>
+Evokes so sweet a Torment --</l>
+                    <l>Such sumptuous -- Despair --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I would not talk, like Cornets --</l>
+                    <l>I'd rather be the One</l>
+                    <l>Raised softly to <app type="revision"><lem>Horizons</lem><rdg>Horizons</rdg></app>
+the Ceilings --</l>
+                    <l>And <app type="revision"><lem>by --</lem><rdg>by --</rdg></app>
+out, and easy on --</l>
+                    <l>Through Villages of Ether --</l>
+                    <l>Myself <app type="revision"><lem>upheld</lem><rdg>upheld</rdg></app>
+<app type="revision"><lem>upborne</lem><rdg>upborne</rdg></app>
+<app type="revision"><lem>sustained</lem><rdg>sustained</rdg></app>
+endued Balloon</l>
+                    <l>By but a lip of Metal --</l>
+                    <l>The pier to my Pontoon --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor would I be a Poet --</l>
+                    <l>It's finer -- own the Ear</l>
+                    <l>Enamored -- impotent -- content --</l>
+                    <l>The License to revere,</l>
+                    <l>A <app type="revision"><lem>luxury</lem><rdg>luxury</rdg></app>
+privilege so awful</l>
+                    <l>What would the Dower be,</l>
+                    <l>Had I the Art to stun myself</l>
+                    <l>With Bolts of Melody!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

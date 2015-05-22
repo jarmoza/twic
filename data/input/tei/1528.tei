@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The duties of the wind are few </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1160A">
+                <lg type="stanza">
+                    <l>The duties of<app type="division"><lem><lb/></lem></app>
+ the Wind are few - </l>
+                    <l>To cast the<app type="division"><lem><lb/></lem></app>
+ ships, at Sea, </l>
+                    <l>Establish March,<app type="division"><lem><lb/></lem></app>
+ the Floods escort, </l>
+                    <l>And usher Liberty.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The pleasures<app type="division"><lem><lb/></lem></app>
+ of the Wind are<app type="division"><lem><lb/></lem></app>
+ broad,</l>
+                    <l>To dwell Extent<app type="division"><lem><lb/></lem></app>
+ among,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Remain, or<app type="division"><lem><lb/></lem></app>
+ wander, </l>
+                    <l>Speculate, or<app type="division"><lem><lb/></lem></app>
+ Forests entertain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The kinsmen of<app type="division"><lem><lb/></lem></app>
+ the Wind, are<app type="division"><lem><lb/></lem></app>
+ Peaks </l>
+                    <l>Azof - the Equinox,</l>
+                    <l>Also with Bird<app type="division"><lem><lb/></lem></app>
+ and Asteroid </l>
+                    <l>A bowing <app type="emendation"><lem>inter - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ course -&lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;pb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ </lem><rdg>intercourse -</rdg></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The limitations<app type="division"><lem><lb/></lem></app>
+ of the Wind </l>
+                    <l>Do he exist,<app type="division"><lem><lb/></lem></app>
+ or die, </l>
+                    <l>Too wise he<app type="division"><lem><lb/></lem></app>
+ seems for<app type="division"><lem><lb/></lem></app>
+ Wakelessness,</l>
+                    <l>However, know<app type="division"><lem><lb/></lem></app>
+ not I - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

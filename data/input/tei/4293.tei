@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PURPLE CLOVER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-58">
+                <lg type="stanza">
+                    <l>There is a flower that bees prefer,</l>
+                    <l>And butterflies desire;</l>
+                    <l>To gain the purple democrat</l>
+                    <l>The humming-birds aspire.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And whatsoever insect pass,</l>
+                    <l>A honey bears away</l>
+                    <l>Proportioned to his several dearth</l>
+                    <l>And her capacity.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her face is rounder than the moon,</l>
+                    <l>And ruddier than the gown</l>
+                    <l>Of orchis in the pasture,</l>
+                    <l>Or rhododendron worn.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She doth not wait for June;</l>
+                    <l>Before the world is green</l>
+                    <l>Her sturdy little countenance</l>
+                    <l>Against the wind is seen,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Contending with the grass,</l>
+                    <l>Near kinsman to herself,</l>
+                    <l>For privilege of sod and sun,</l>
+                    <l>Sweet litigants for life.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the hills are full,</l>
+                    <l>And newer fashions blow,</l>
+                    <l>Doth not retract a single spice</l>
+                    <l>For pang of jealousy.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her public is the noon,</l>
+                    <l>Her providence the sun,</l>
+                    <l>Her progress by the bee proclaimed</l>
+                    <l>In sovereign, swerveless tune.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The bravest of the host,</l>
+                    <l>Surrendering the last,</l>
+                    <l>Nor even of defeat aware</l>
+                    <l>When cancelled by the frost.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

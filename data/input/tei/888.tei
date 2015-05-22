@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Smiling back from coronation </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F651A">
+                <lg type="stanza">
+                    <l>Smiling back from<app type="division"><lem><lb/></lem></app>
+ Coronation</l>
+                    <l>May be Luxury - </l>
+                    <l>On the Heads that started<app type="division"><lem><lb/></lem></app>
+ with us - </l>
+                    <l>Being's Peasantry - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Recognizing in Procession</l>
+                    <l>Ones We former knew - </l>
+                    <l>When Ourselves were also<app type="division"><lem><lb/></lem></app>
+ dusty - </l>
+                    <l>Centuries ago - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had the Triumph no<app type="division"><lem><lb/></lem></app>
+ Conviction </l>
+                    <l>Of how many be -</l>
+                    <l>Stimulated - by the Contrast - </l>
+                    <l>Unto Misery - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

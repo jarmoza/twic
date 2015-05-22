@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hope is a strange invention -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1392">
+                <lg type="stanza">
+                    <l>Hope is a strange invention --</l>
+                    <l>A Patent of the Heart --</l>
+                    <l>In unremitting action</l>
+                    <l>Yet never wearing out --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of this electric Adjunct</l>
+                    <l>Not anything is known</l>
+                    <l>But it's unique momentum</l>
+                    <l>Embellish all we own --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

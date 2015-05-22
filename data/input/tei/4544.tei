@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CONTRAST</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-28">
+                <lg type="stanza">
+                    <l>A door just opened on a street </l>
+                    <l>I, lost, was passing by </l>
+                    <l>An instant's width of warmth disclosed,</l>
+                    <l>And wealth, and company.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The door as sudden shut, and I,</l>
+                    <l>I, lost, was passing by, </l>
+                    <l>Lost doubly, but by contrast most,</l>
+                    <l>Enlightening misery.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

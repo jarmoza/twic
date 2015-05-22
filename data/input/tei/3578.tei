@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exhiliration is the Breeze
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1118">
+                <lg type="stanza">
+                    <l>Exhiliration is the Breeze</l>
+                    <l>That lifts us from the Ground</l>
+                    <l>And leaves us in another place</l>
+                    <l>Whose statement is not found --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Returns us not, but after time</l>
+                    <l>We soberly descend</l>
+                    <l>A little newer for the term</l>
+                    <l>Upon Enchanted Ground --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

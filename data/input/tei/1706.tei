@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The things we thought that we should do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1279C">
+                <lg type="stanza">
+                    <l>The things we<app type="division"><lem><lb/></lem></app>
+ thought that we<app type="division"><lem><lb/></lem></app>
+ should do </l>
+                    <l>We other things<app type="division"><lem><lb/></lem></app>
+ have done </l>
+                    <l>But those peculiar<app type="division"><lem><lb/></lem></app>
+ industries </l>
+                    <l>Have never been<app type="division"><lem><lb/></lem></app>
+ begun - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Lands we<app type="division"><lem><lb/></lem></app>
+ thought that we<app type="division"><lem><lb/></lem></app>
+ should seek -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>When large enough<app type="division"><lem><lb/></lem></app>
+ to run - </l>
+                    <l>By Speculation<app type="division"><lem><lb/></lem></app>
+ ceded </l>
+                    <l>To Speculation's<app type="division"><lem><lb/></lem></app>
+ Son - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heaven in<app type="division"><lem><lb/></lem></app>
+ which we hoped<app type="division"><lem><lb/></lem></app>
+ to pause </l>
+                    <l>When discipline was<app type="division"><lem><lb/></lem></app>
+ done -</l>
+                    <l>Untenable to Logic </l>
+                    <l>But possibly the one - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

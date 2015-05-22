@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A stagnant pleasure like a pool </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1258A">
+                <lg type="stanza">
+                    <l>A Stagnant pleasure<app type="division"><lem><lb/></lem></app>
+ like a Pool </l>
+                    <l>That lets it's Rushes<app type="division"><lem><lb/></lem></app>
+ grow </l>
+                    <l>Until they heedless<app type="division"><lem><lb/></lem></app>
+ tumble in </l>
+                    <l>And make the<app type="division"><lem><lb/></lem></app>
+ Water slow </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Impeding navigation<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="bright">fair</add>
+ bright</l>
+                    <l>Of<add type="alternate" extent="Shadows">Ripples</add>
+ Shadows going<app type="division"><lem><lb/></lem></app>
+ down </l>
+                    <l>Yet even this shall<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="rouse">stir</add>
+ rouse itself </l>
+                    <l>When Freshets come<app type="division"><lem><lb/></lem></app>
+ along - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Whatever it is -- she has tried it -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1204">
+                <lg type="stanza">
+                    <l>Whatever it <app type="revision"><lem>be</lem><rdg>be</rdg></app>
+is -- she has tried it --</l>
+                    <l>Awful Father of Love --</l>
+                    <l>Is not Our's the chastising --</l>
+                    <l>Do not chastise the Dove --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not for Ourselves, petition --</l>
+                    <l>Nothing is left to pray --</l>
+                    <l>When a subject is finished --</l>
+                    <l>Words are handed away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Only lest she be lonely</l>
+                    <l>In thy beautiful House</l>
+                    <l>Give her for her Transgression</l>
+                    <l>License to <app type="revision"><lem>cherish ii</lem><rdg>cherish ii</rdg></app>
+think of us --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

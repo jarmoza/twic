@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like mighty foot lights burned the red </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F507A">
+                <lg type="stanza">
+                    <l>Like Mighty Foot Lights - burned<app type="division"><lem><lb/></lem></app>
+ the Red</l>
+                    <l>At Bases of the Trees - </l>
+                    <l>The far Theatricals of Day </l>
+                    <l>Exhibiting - to These - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas Universe - that did applaud -</l>
+                    <l>While Chiefest -<add type="alternate" extent="of">in -</add>
+ of the Crowd - </l>
+                    <l>Enabled by his Royal Dress - </l>
+                    <l>Myself distinguished God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

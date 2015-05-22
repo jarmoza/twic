@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fame of Myself, to justify, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J713">
+                <lg type="stanza">
+                    <l>Fame of Myself, to justify,</l>
+                    <l>All other Plaudit be</l>
+                    <l>Superfluous -- An Incense</l>
+                    <l>Beyond Nescessity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fame of Myself to lack -- Although</l>
+                    <l>My Name be else Supreme --</l>
+                    <l>This were an Honor honorless --</l>
+                    <l>A futile Diadem --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

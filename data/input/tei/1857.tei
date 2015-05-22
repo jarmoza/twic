@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The last of summer is a time </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1380A">
+                <lg type="stanza">
+                    <l>The last of Summer<app type="division"><lem><lb/></lem></app>
+ is a Time </l>
+                    <l>For chastened <app type="emendation"><lem>Retro - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ spect</lem><rdg>Retrospect</rdg></app>
+.  </l>
+                    <l>'Tis <app type="emendation"><lem>Ecstasy&#x27;s divine &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+</lem><rdg>Ecstasy&#x27;s</rdg></app>
+ revealed Review - </l>
+                    <l>Enchantment's<add type="alternate" extent="Postulate -">Testament &amp;#x2022; &lt;u&gt;Syndicate -&lt;/u&gt;</add>
+ Postulate - </l>
+                    <l>To meet it - nameless<app type="division"><lem><lb/></lem></app>
+ as it is</l>
+                    <l>Without celestial mail<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Audacious as without<app type="division"><lem><lb/></lem></app>
+ a knock </l>
+                    <l>To walk within the<app type="division"><lem><lb/></lem></app>
+ Vail - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

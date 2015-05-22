@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>From Cocoon forth a Butterfly
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J354">
+                <lg type="stanza">
+                    <l>From Cocoon forth a Butterfly</l>
+                    <l>As Lady from her Door</l>
+                    <l>Emerged -- a Summer Afternoon --</l>
+                    <l>Repairing Everywhere --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Without Design -- that I could trace</l>
+                    <l>Except to stray abroad</l>
+                    <l>On Miscellaneous Enterprise</l>
+                    <l>The Clovers -- understood --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her pretty Parasol be seen</l>
+                    <l>Contracting in a Field</l>
+                    <l>Where Men made Hay --</l>
+                    <l>Then struggling hard</l>
+                    <l>With an opposing Cloud</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Where Parties -- Phantom as Herself --</l>
+                    <l>To Nowhere -- seemed to go</l>
+                    <l>In purposeless Circumference --</l>
+                    <l>As 'twere a Tropic Show --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And notwithstanding Bee -- that worked --</l>
+                    <l>And Flower -- that zealous blew --</l>
+                    <l>This Audience of Idleness</l>
+                    <l>Disdained them, from the Sky --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till Sundown crept -- a steady Tide --</l>
+                    <l>And Men that made the Hay --</l>
+                    <l>And Afternoon -- and Butterfly --</l>
+                    <l>Extinguished -- in the Sea --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

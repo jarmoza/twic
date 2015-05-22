@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cautious scanned my little life </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F175A">
+                <lg type="stanza">
+                    <l>I cautious, scanned my little life -</l>
+                    <l>I winnowed what would fade </l>
+                    <l>From what w'd last till Heads like mine </l>
+                    <l>Should be <app type="emendation"><lem>a-dreaming</lem><rdg>a&#x27;dreaming</rdg></app>
+ laid.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I put the latter in a Barn -</l>
+                    <l>The former, blew away.  </l>
+                    <l>I went one winter morning </l>
+                    <l>And lo, my priceless Hay </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was not opon the &quot;Scaffold&quot; - </l>
+                    <l>Was not opon the &quot;Beam&quot; -</l>
+                    <l>And from a thriving Farmer - </l>
+                    <l>A Cynic, I became.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whether a Thief did it - </l>
+                    <l>Whether it was the wind - </l>
+                    <l>Whether Deity's guiltless -</l>
+                    <l>My business is, to find!<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So I begin to ransack!  </l>
+                    <l>How is it Hearts, with Thee?  </l>
+                    <l>Art thou within the little Barn </l>
+                    <l>Love provided Thee?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

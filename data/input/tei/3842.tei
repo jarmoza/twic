@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In many and reportless places
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1382">
+                <lg type="stanza">
+                    <l>In many and reportless places</l>
+                    <l>We feel a Joy --</l>
+                    <l>Reportless, also, but sincere as Nature</l>
+                    <l>Or Deity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It comes, without a consternation --</l>
+                    <l><app type="revision"><lem>abates --</lem><rdg>abates --</rdg></app>
+<app type="revision"><lem>Exhales --</lem><rdg>Exhales --</rdg></app>
+Dissolves -- the same --</l>
+                    <l>But leaves a <app type="revision"><lem>blissful</lem><rdg>blissful</rdg></app>
+sumptuous Destitution --</l>
+                    <l>Without a Name --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Profane it by <app type="revision"><lem>pursuit</lem><rdg>pursuit</rdg></app>
+a search -- we cannot</l>
+                    <l>It has no home --</l>
+                    <l>Nor we who having once <app type="revision"><lem>waylaid it</lem><rdg>waylaid it</rdg></app>
+inhaled it --</l>
+                    <l>Thereafter roam.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

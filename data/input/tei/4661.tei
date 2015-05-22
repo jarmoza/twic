@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The soul should always stand ajar,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-145">
+                <lg type="stanza">
+                    <l>The soul should always stand ajar,</l>
+                    <l>That if the heaven inquire,</l>
+                    <l>He will not be obliged to wait,</l>
+                    <l>Or shy of troubling her.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Depart, before the host has slid</l>
+                    <l>The bolt upon the door,</l>
+                    <l>To seek for the accomplished guest, </l>
+                    <l>Her visitor no more.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

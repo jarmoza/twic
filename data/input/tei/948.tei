@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Doom is the house without the door </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F710A">
+                <lg type="stanza">
+                    <l>Doom is the House without<app type="division"><lem><lb/></lem></app>
+ the Door -</l>
+                    <l>'Tis entered from the Sun - </l>
+                    <l>And then the Ladder's<app type="division"><lem><lb/></lem></app>
+ thrown away, </l>
+                    <l>Because Escape - is done - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis varied by the Dream</l>
+                    <l>Of what they do outside - </l>
+                    <l>Where Squirrels play - and<app type="division"><lem><lb/></lem></app>
+ Berries dye - </l>
+                    <l>And Hemlocks - bow - to<app type="division"><lem><lb/></lem></app>
+ God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

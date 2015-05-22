@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not probable - the barest chance </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F678A">
+                <lg type="stanza">
+                    <l>Not probable - The barest<app type="division"><lem><lb/></lem></app>
+ Chance -</l>
+                    <l>A smile too few - a<app type="division"><lem><lb/></lem></app>
+ word too much </l>
+                    <l>And far from Heaven<app type="division"><lem><lb/></lem></app>
+ as the Rest - </l>
+                    <l>The Soul so close on<app type="division"><lem><lb/></lem></app>
+ Paradise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What if the Bird -<app type="division"><lem><lb/></lem></app>
+ from journey far -</l>
+                    <l>Confused by Sweets - as<app type="division"><lem><lb/></lem></app>
+ Mortals - are - </l>
+                    <l>Forget the secret of His<app type="division"><lem><lb/></lem></app>
+ wing </l>
+                    <l>And perish - but a Bough<app type="division"><lem><lb/></lem></app>
+ between - </l>
+                    <l>Oh, Groping feet - </l>
+                    <l>Oh Phantom Queen!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

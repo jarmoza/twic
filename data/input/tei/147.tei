@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A something in a summer&#x27;s day </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F104A">
+                <lg type="stanza">
+                    <l>A something in a summer's Day</l>
+                    <l>As slow her flambeaux burn away </l>
+                    <l>Which solemnizes me.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A something in a summer's noon - </l>
+                    <l>A depth - an Azure - a perfume -</l>
+                    <l>Transcending extasy.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And still within a summer's night </l>
+                    <l>A something so transporting bright </l>
+                    <l>I clap my hands to see - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then vail my too inspecting face</l>
+                    <l>Lest such a subtle - shimmering grace </l>
+                    <l>Flutter too far for me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wizard fingers never rest - </l>
+                    <l>The purple brook within the breast </l>
+                    <l>Still chafes it's narrow bed -<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Still rears the East her amber Flag - </l>
+                    <l>Guides still the sun along the Crag </l>
+                    <l>His Caravan of Red - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So looking on - the night - the morn </l>
+                    <l>Conclude the wonder gay -</l>
+                    <l>And I meet, coming thro' the dews </l>
+                    <l>Another summer's Day!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

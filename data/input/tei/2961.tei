@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This World is not Conclusion. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J501">
+                <lg type="stanza">
+                    <l>This World is not Conclusion.</l>
+                    <l>A <app type="revision"><lem>A sequel --</lem><rdg>A sequel --</rdg></app>
+Species stands beyond --</l>
+                    <l>Invisible, as Music</l>
+                    <l>But positive, as Sound --</l>
+                    <l>It beckons, and it baffles --</l>
+                    <l>Philosophy -- dont know --</l>
+                    <l>And through a Riddle, at the last --</l>
+                    <l>Sagacity, must go --</l>
+                    <l>To <app type="revision"><lem>prove it --</lem><rdg>prove it --</rdg></app>
+guess it, puzzles scholars --</l>
+                    <l>To gain it, Men have borne</l>
+                    <l>Contempt of Generations</l>
+                    <l>And Crucifixion, shown --</l>
+                    <l>Faith slips -- and laughs, and rallies --</l>
+                    <l>Blushes, if any see --</l>
+                    <l>Plucks at a twig of Evidence --</l>
+                    <l>And asks a Vane, the way --</l>
+                    <l>Much Gesture, from the Pulpit --</l>
+                    <l><app type="revision"><lem>Sure --</lem><rdg>Sure --</rdg></app>
+Strong Hallelujahs roll --</l>
+                    <l>Narcotics cannot still the <app type="revision"><lem>Mouse --</lem><rdg>Mouse --</rdg></app>
+Tooth</l>
+                    <l>That nibbles at the soul --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

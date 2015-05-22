@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The love a child can show below </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F285A">
+                <lg type="stanza">
+                    <l>The Love a Child can<app type="division"><lem><lb/></lem></app>
+ show - below - </l>
+                    <l>Is but a Filament - I<app type="division"><lem><lb/></lem></app>
+ know - </l>
+                    <l>Of that Diviner - Thing - </l>
+                    <l>That faints opon the face<app type="division"><lem><lb/></lem></app>
+ of Noon - </l>
+                    <l>And smites the Tinder<app type="division"><lem><lb/></lem></app>
+ in the Sun -</l>
+                    <l>And hinders - Gabriel's Wing!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis This - in Music -<app type="division"><lem><lb/></lem></app>
+ hints - and sways - </l>
+                    <l>And far abroad - on<app type="division"><lem><pb/></lem></app>
+ Summer Days - </l>
+                    <l><app type="emendation"><lem>Distils</lem><rdg>Distills</rdg></app>
+ - uncertain - pain - </l>
+                    <l>'Tis This - afflicts us<app type="division"><lem><lb/></lem></app>
+ in the East -</l>
+                    <l>And tints the Transit<app type="division"><lem><lb/></lem></app>
+ in the West - </l>
+                    <l>With Harrowing - Iodine!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis this - invites - appalls -<app type="division"><lem><lb/></lem></app>
+ endows - </l>
+                    <l>Flits - glimmers - proves -<app type="division"><lem><lb/></lem></app>
+ dissolves - </l>
+                    <l>Returns - suggests - convicts -<app type="division"><lem><lb/></lem></app>
+ enchants -</l>
+                    <l>Then - flings in Paradise!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

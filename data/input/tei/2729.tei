@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bound -- a trouble -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J269">
+                <lg type="stanza">
+                    <l>Bound -- a trouble --</l>
+                    <l>And lives can bear it!</l>
+                    <l>Limit -- how deep a bleeding go!</l>
+                    <l>So -- many -- drops -- of vital scarlet --</l>
+                    <l>Deal with the soul</l>
+                    <l>As with Algebra!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell it the Ages -- to a cypher --</l>
+                    <l>And it will ache -- contented -- on --</l>
+                    <l>Sing -- at it's pain -- as any Workman --</l>
+                    <l>Notching the fall of the Even Sun!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

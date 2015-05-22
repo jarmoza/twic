@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>By my window have I for scenery </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F849A">
+                <lg type="stanza">
+                    <l>By my Window have<app type="division"><lem><lb/></lem></app>
+ I for Scenery</l>
+                    <l>Just a Sea - with a Stem - </l>
+                    <l>If the Bird and the<app type="division"><lem><lb/></lem></app>
+ Farmer - deem it a &quot;Pine&quot; - </l>
+                    <l>The Opinion will<add type="alternate" extent="do">serve</add>
+ do -<app type="division"><lem><lb/></lem></app>
+ for them - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It has no Port, nor<app type="division"><lem><lb/></lem></app>
+ a &quot;Line&quot; - but the Jays -</l>
+                    <l>That<add type="alternate" extent="split their route to the Sky">Ply between it, and the Sky</add>
+ split their route<app type="division"><lem><lb/></lem></app>
+ to the Sky - </l>
+                    <l>Or a Squirrel, whose<app type="division"><lem><lb/></lem></app>
+ giddy Peninsula </l>
+                    <l>May be<add type="alternate" extent="easier reached -">Better attained - &amp;#x2022; easier gained -</add>
+ easier reached -<app type="division"><lem><lb/></lem></app>
+ this way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Inlands - the Earth<app type="division"><lem><lb/></lem></app>
+ is the under side - </l>
+                    <l>And the upper side - is<app type="division"><lem><lb/></lem></app>
+ the Sun -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>And it's Commerce - if<app type="division"><lem><lb/></lem></app>
+ Commerce it have - </l>
+                    <l>Of Spice - I infer from<app type="division"><lem><lb/></lem></app>
+ the Odors borne - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of it's Voice - to affirm -<app type="division"><lem><lb/></lem></app>
+ when the Wind is within - </l>
+                    <l>Can the Dumb -<add type="alternate" extent="define">divulge</add>
+ define<app type="division"><lem><lb/></lem></app>
+ the Divine?  </l>
+                    <l>The Definition of Melody - is -</l>
+                    <l>That Definition is none - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It - suggests to our<app type="division"><lem><lb/></lem></app>
+ Faith - </l>
+                    <l>They - suggest to our<app type="division"><lem><lb/></lem></app>
+ Sight - </l>
+                    <l>When the latter - is<app type="division"><lem><lb/></lem></app>
+ put away </l>
+                    <l>I shall meet with<app type="division"><lem><lb/></lem></app>
+ Conviction I somewhere met</l>
+                    <l>That Immortality -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was the Pine at my<app type="division"><lem><lb/></lem></app>
+ Window a &quot;Fellow </l>
+                    <l>Of the Royal&quot; Infinity?  </l>
+                    <l>Apprehensions - are<app type="division"><lem><lb/></lem></app>
+ God's introductions - </l>
+                    <l><add type="alternate" extent="">Extended inscrutably -</add>
+To be hallowed - <app type="emendation"><lem>accor - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ dingly</lem><rdg>accordingly</rdg></app>
+ -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

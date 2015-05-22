@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>That love is all there is</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1747A">
+                <lg type="stanza">
+                    <l>That Love is all there is</l>
+                    <l>Is all we know of Love,</l>
+                    <l>It is enough, the freight should be</l>
+                    <l><app type="emendation"><lem>Porportioned</lem><rdg>Proportioned</rdg></app>
+ to the groove.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

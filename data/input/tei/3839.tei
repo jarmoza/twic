@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His Mansion in the Pool 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1379">
+                <lg type="stanza">
+                    <l>His Mansion in the Pool</l>
+                    <l>The Frog forsakes --</l>
+                    <l>He rises on a Log</l>
+                    <l>And statements makes --</l>
+                    <l>His Auditors two Worlds</l>
+                    <l>Deducting me --</l>
+                    <l>The Orator of April</l>
+                    <l>Is hoarse Today --</l>
+                    <l>His Mittens at his Feet</l>
+                    <l>No Hand <app type="revision"><lem>has</lem><rdg>has</rdg></app>
+hath he --</l>
+                    <l>His eloquence a Bubble</l>
+                    <l>As Fame should be --</l>
+                    <l>Applaud him to discover</l>
+                    <l>To your chagrin</l>
+                    <l>Demosthenes has vanished</l>
+                    <l>In <app type="revision"><lem>Forums --</lem><rdg>Forums --</rdg></app>
+Waters Green --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

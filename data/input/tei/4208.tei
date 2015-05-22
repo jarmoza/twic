@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The reticent volcano keeps
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1748">
+                <lg type="stanza">
+                    <l>The reticent volcano keeps</l>
+                    <l>His never slumbering plan;</l>
+                    <l>Confided are his projects pink</l>
+                    <l>To no precarious man.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If nature will not tell the tale</l>
+                    <l>Jehovah told to her</l>
+                    <l>Can human nature not <app type="revision"><lem>proceed</lem><rdg>proceed</rdg></app>
+survive</l>
+                    <l>Without a listener?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Admonished by her buckled lips</l>
+                    <l>Let every babbler be</l>
+                    <l>The only secret <app type="revision"><lem>neighbors</lem><rdg>neighbors</rdg></app>
+people <app type="revision"><lem>shun</lem><rdg>shun</rdg></app>
+keep</l>
+                    <l>Is Immortality.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>10. babbler] prater</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

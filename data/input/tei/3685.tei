@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It&#x27;s Hour with itself
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1225">
+                <lg type="stanza">
+                    <l>It's Hour with itself</l>
+                    <l>The Spirit never shows.</l>
+                    <l>What Terror would enthrall the Street</l>
+                    <l>Could Countenance disclose</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Subterranean Freight</l>
+                    <l>The Cellars of the Soul --</l>
+                    <l>Thank God the loudest Place he made</l>
+                    <l>Is licensed to be still.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

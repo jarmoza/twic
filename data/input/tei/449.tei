@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A shady friend for torrid days </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F306A">
+                <lg type="stanza">
+                    <l>A Shady friend - for Torrid days -</l>
+                    <l>Is easier to find - </l>
+                    <l>Than one of higher temperature </l>
+                    <l>For Frigid - hour of mind - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Vane a little to the East -</l>
+                    <l>Scares Muslin souls - away - </l>
+                    <l>If Broadcloth Hearts are<app type="division"><lem><lb/></lem></app>
+ firmer </l>
+                    <l>Than those of Organdy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who is to blame?<app type="division"><lem><lb/></lem></app>
+ The Weaver?  </l>
+                    <l>Ah, the bewildering thread!</l>
+                    <l>The Tapestries of Paradise </l>
+                    <l>So notelessly - are made!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

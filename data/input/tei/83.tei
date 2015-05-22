@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Could live - did live </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F59A">
+                <lg type="stanza">
+                    <l>Could live - <em>did</em> live -</l>
+                    <l>Could die - <em>did</em> die - </l>
+                    <l>Could smile opon the whole </l>
+                    <l><app type="emendation"><lem>Trough</lem><rdg>Through</rdg></app>
+ faith in one he met not - </l>
+                    <l>To introduce his soul -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Could go from scene familiar </l>
+                    <l>To an untraversed spot - </l>
+                    <l>Could contemplate the journey </l>
+                    <l>With unpuzzled heart - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Such trust had one among us -</l>
+                    <l>Among us <em>not</em> today - </l>
+                    <l>We who saw the launching </l>
+                    <l>Never sailed the Bay!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

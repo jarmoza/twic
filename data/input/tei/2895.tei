@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Much Madness is divinest Sense --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J435">
+                <lg type="stanza">
+                    <l>Much Madness is divinest Sense --</l>
+                    <l>To a discerning Eye --</l>
+                    <l>Much Sense -- the starkest Madness --</l>
+                    <l>'Tis the Majority</l>
+                    <l>In this, as All, prevail --</l>
+                    <l>Assent -- and you are sane --</l>
+                    <l>Demur -- you're straightway dangerous --</l>
+                    <l>And handled with a Chain --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

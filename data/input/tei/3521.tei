@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Three Weeks passed since -- I had seen Her -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1061">
+                <lg type="stanza">
+                    <l>Three Weeks passed since -- I had seen Her --</l>
+                    <l>Some Disease had vext</l>
+                    <l>'Twas with Text and <app type="revision"><lem>Antique</lem><rdg>Antique</rdg></app>
+Village Singing</l>
+                    <l>I beheld Her next</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And a Company -- our pleasure</l>
+                    <l>To discourse alone --</l>
+                    <l>Gracious now to me as any --</l>
+                    <l>Gracious unto none --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Borne without dissent of <app type="revision"><lem>any</lem><rdg>any</rdg></app>
+Either</l>
+                    <l>To the Parish night --</l>
+                    <l>Of the Separated <app type="revision"><lem>People</lem><rdg>People</rdg></app>
+Parties</l>
+                    <l>Which be out of sight?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

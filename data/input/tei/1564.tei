@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It will not harm her magic pace </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1183B">
+                <lg type="stanza">
+                    <l>It will not harm<app type="division"><lem><lb/></lem></app>
+ her magic pace </l>
+                    <l>That we, so far<app type="division"><lem><lb/></lem></app>
+ behind </l>
+                    <l>Her distances<app type="division"><lem><lb/></lem></app>
+ propitiate </l>
+                    <l>As Branches<app type="division"><lem><lb/></lem></app>
+ touch the Wind </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not hoping for<app type="division"><lem><lb/></lem></app>
+ his notice<add type="alternate" extent="far">vast</add>
+ far</l>
+                    <l>But<add type="alternate" extent="nearer">closer &amp;#x2022; further &amp;#x2022; simply &amp;#x2022; merely &amp;#x2022; finer</add>
+ nearer to<app type="division"><lem><lb/></lem></app>
+ adore - </l>
+                    <l>'Tis Glory's <app type="emendation"><lem>over - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ takelessness</lem><rdg>overtakelessness</rdg></app>
+ </l>
+                    <l>That makes our<app type="division"><lem><lb/></lem></app>
+ running poor </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

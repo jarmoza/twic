@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When we have ceased to care
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1706">
+                <lg type="stanza">
+                    <l>When we have ceased to care</l>
+                    <l>The Gift is given</l>
+                    <l>For which we gave the Earth</l>
+                    <l>And mortgaged Heaven</l>
+                    <l>But so declined in worth</l>
+                    <l>T'is ignominy now</l>
+                    <l>To look upon --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

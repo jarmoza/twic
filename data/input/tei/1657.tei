@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The clouds their backs together laid </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1246A">
+                <lg type="stanza">
+                    <l>The Clouds their<app type="division"><lem><lb/></lem></app>
+ Backs together laid </l>
+                    <l>The North begun<app type="division"><lem><lb/></lem></app>
+ to push </l>
+                    <l>The Forests galloped<app type="division"><lem><lb/></lem></app>
+ till they fell </l>
+                    <l>The Lightning<app type="division"><lem><lb/></lem></app>
+ played like mice </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Thunder crumbled<app type="division"><lem><lb/></lem></app>
+ like a stuff</l>
+                    <l>How<add type="alternate" extent="good">safe &amp;#x2022; firm &amp;#x2022; calm</add>
+ good to be<app type="division"><lem><lb/></lem></app>
+ in Tombs </l>
+                    <l>Where nature's<app type="division"><lem><pb/></lem></app>
+ Temper cannot<app type="division"><lem><lb/></lem></app>
+ reach </l>
+                    <l>Nor<add type="alternate" extent="missile">vengeance</add>
+ missile ever<app type="division"><lem><lb/></lem></app>
+ comes </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

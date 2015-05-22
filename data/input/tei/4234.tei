@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Too happy Time dissolves itself
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1774">
+                <lg type="stanza">
+                    <l>Too happy Time dissolves itself</l>
+                    <l>And leaves no remnant by --</l>
+                    <l>'Tis Anguish not a Feather hath</l>
+                    <l>Or too much weight to fly --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Come slowly -- Eden! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J211">
+                <lg type="stanza">
+                    <l>Come slowly -- Eden!</l>
+                    <l>Lips unused to Thee --</l>
+                    <l>Bashful -- sip thy Jessamines --</l>
+                    <l>As the fainting Bee</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Reaching late his flower,</l>
+                    <l>Round her chamber hums --</l>
+                    <l>Counts his nectars --</l>
+                    <l>Enters -- and is lost in Balms.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

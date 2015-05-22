@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DYING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-100">
+                <lg type="stanza">
+                    <l>The sun kept setting, setting still;</l>
+                    <l>No hue of afternoon</l>
+                    <l>Upon the village I perceived, </l>
+                    <l>From house to house 't was noon.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The dusk kept dropping, dropping still;</l>
+                    <l>No dew upon the grass,</l>
+                    <l>But only on my forehead stopped,</l>
+                    <l>And wandered in my face.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My feet kept drowsing, drowsing still,</l>
+                    <l>My fingers were awake;</l>
+                    <l>Yet why so little sound myself</l>
+                    <l>Unto my seeming make?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How well I knew the light before!</l>
+                    <l>I could not see it now.</l>
+                    <l>'T is dying, I am doing; but</l>
+                    <l>I'm not afraid to know.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

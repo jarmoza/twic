@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joy to have merited the Pain -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J788">
+                <lg type="stanza">
+                    <l>Joy to have merited the Pain --</l>
+                    <l>To merit the Release --</l>
+                    <l>Joy to have perished every step --</l>
+                    <l>To Compass Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pardon -- to look upon thy face --</l>
+                    <l>With these old fashioned Eyes --</l>
+                    <l>Better than new -- could be -- for that --</l>
+                    <l>Though bought in Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because they looked on thee before --</l>
+                    <l>And thou hast looked on them --</l>
+                    <l>Prove Me -- My <app type="revision"><lem>Swimming</lem><rdg>Swimming</rdg></app>
+Hazel Witnesses</l>
+                    <l>The features are the same --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So fleet thou wert, when present --</l>
+                    <l>So infinite -- when gone --</l>
+                    <l>An Orient's Apparition --</l>
+                    <l>Remanded of the Morn --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Hight I recollect --</l>
+                    <l>'Twas even with the Hills --</l>
+                    <l>The Depth upon my Soul was notched --</l>
+                    <l>As Floods -- on Whites of Wheels --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Haunt -- till Time have dropped</l>
+                    <l>His last Decade away,</l>
+                    <l>And Haunting actualize -- to last</l>
+                    <l>At least -- Eternity --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

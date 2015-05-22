@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bloom opon the mountain stated </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F787A">
+                <lg type="stanza">
+                    <l>Bloom <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ the mountain stated </l>
+                    <l>Efflorescence of a sunset </l>
+                    <l>Reproduced the same.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Seed had I, my purple sowing</l>
+                    <l>Should address the day </l>
+                    <l>Not a tropic of a twilight </l>
+                    <l>Show itself away - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who for tilling, to the mountain </l>
+                    <l>Come, and disappear -</l>
+                    <l>Whose, be this renown, or fading </l>
+                    <l>Witness, is not here.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>While I state the solemn petals </l>
+                    <l>Far as north and east </l>
+                    <l>Far as south and west expanding</l>
+                    <l>Culminate in rest -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And the mountain to the evening </l>
+                    <l><app type="emendation"><lem>Fits</lem><rdg>Fit</rdg></app>
+ his countenance </l>
+                    <l>Indicating by no muscle </l>
+                    <l>The experience.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

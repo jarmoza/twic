@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A PORTRAIT</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-18">
+                <lg type="stanza">
+                    <l>A face devoid of love or grace,</l>
+                    <l>A hateful, hard, successful face,</l>
+                    <l>A face with which a stone</l>
+                    <l>Would feel as thoroughly at ease</l>
+                    <l>As were they old acquaintances, </l>
+                    <l>First time together thrown.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

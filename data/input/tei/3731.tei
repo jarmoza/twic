@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>September&#x27;s Baccalaureate
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1271">
+                <lg type="stanza">
+                    <l>September's Baccalaureate</l>
+                    <l>A combination is</l>
+                    <l>Of Crickets -- Crows -- and Retrospects</l>
+                    <l>And a dissembling Breeze</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That hints without assuming --</l>
+                    <l>An Innuendo sear</l>
+                    <l>That makes the Heart put up it's Fun</l>
+                    <l>And turn Philosopher.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

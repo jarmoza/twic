@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Their height in heaven comforts not,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-139">
+                <lg type="stanza">
+                    <l>Their height in heaven comforts not,</l>
+                    <l>Their glory nought to me;</l>
+                    <l>'T was best imperfect, as it was;</l>
+                    <l>I 'm finite, I can't see.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The house of supposition,</l>
+                    <l>The glimmering frontier</l>
+                    <l>That skirts the acres of perhaps,</l>
+                    <l>To me shows insecure.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wealth I had contented me;</l>
+                    <l>If 't was a meaner size,</l>
+                    <l>Then I had counted it until</l>
+                    <l>It pleased my narrow eyes</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Better than larger values,</l>
+                    <l>However true their show;</l>
+                    <l>This timid life of evidence</l>
+                    <l>Keeps pleading, "I don't know."</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

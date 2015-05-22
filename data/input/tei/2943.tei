@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Solemn thing within the Soul 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J483">
+                <lg type="stanza">
+                    <l>A Solemn thing within the Soul</l>
+                    <l>To feel itself get ripe --</l>
+                    <l>And golden hang -- while farther up --</l>
+                    <l>The Maker's Ladders stop --</l>
+                    <l>And in the Orchard far below --</l>
+                    <l>You hear a Being -- drop --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Wonderful -- to feel the</l>
+                    <l>Sun Still toiling at the Cheek</l>
+                    <l>You thought was finished --</l>
+                    <l>Cool of eye, and critical of Work --</l>
+                    <l>He shifts the stem -- a little --</l>
+                    <l>To give your Gore -- a look --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But solemnest -- to know</l>
+                    <l>Your chance in Harvest moves</l>
+                    <l>A little nearer -- Every Sun</l>
+                    <l>The Single -- to some lives.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

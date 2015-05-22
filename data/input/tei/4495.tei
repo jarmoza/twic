@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If anybody&#x27;s friend be dead,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-145">
+                <lg type="stanza">
+                    <l>If anybody's friend be dead,</l>
+                    <l>It 's sharpest of the theme</l>
+                    <l>The thinking how they walked alive,</l>
+                    <l>At such and such a time.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their costume, of a Sunday,</l>
+                    <l>Some manner of the hair, </l>
+                    <l>A prank nobody knew but them,</l>
+                    <l>Lost, in the sepulchre.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How warm they were on such a day:</l>
+                    <l>You almost feel the date,</l>
+                    <l>So short way off it seems; and now,</l>
+                    <l>They 're centuries from that.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How pleased they were at what you said;</l>
+                    <l>You try to touch the smile,</l>
+                    <l>And dip your fingers in the frost:</l>
+                    <l>When was it, can you tell,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You asked the company to tea,</l>
+                    <l>Acquaintance, just a few,</l>
+                    <l>And chatted close with this grand thing</l>
+                    <l>That don't remember you?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Past bows and invitations,</l>
+                    <l>Past interview, and vow,</l>
+                    <l>Past what ourselves can estimate, </l>
+                    <l>That makes the quick of woe!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He touched me, so I live to know</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-73">
+                <lg type="stanza">
+                    <l>He touched me, so I live to know</l>
+                    <l>That such a day, permitted so,</l>
+                    <l>I groped upon his breast.</l>
+                    <l>It was a boundless place to me,</l>
+                    <l>And silenced, as the awful sea</l>
+                    <l>Puts minor streams to rest.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And now, I'm different from before,</l>
+                    <l>As if I breathed superior air,</l>
+                    <l>Or brushed a royal gown;</l>
+                    <l>My feet, too, that had wandered so,</l>
+                    <l>My gypsy face transfigured now</l>
+                    <l>To tenderer renown.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

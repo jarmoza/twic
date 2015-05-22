@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A single Screw of Flesh 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J263">
+                <lg type="stanza">
+                    <l>A single Screw of Flesh</l>
+                    <l>Is all that pins the Soul</l>
+                    <l>That stands for Deity, to Mine,</l>
+                    <l>Upon my side the Vail</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Once witnessed of the Gauze --</l>
+                    <l>It's name is put away</l>
+                    <l>As far from mine, as if no plight</l>
+                    <l>Had printed yesterday,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In tender -- solemn Alphabet,</l>
+                    <l>My eyes just turned to see,</l>
+                    <l>When it was smuggled by my sight</l>
+                    <l>Into Eternity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>More Hands -- to hold -- These are but Two --</l>
+                    <l>One more new -- mailed Nerve</l>
+                    <l>Just granted, for the Peril's sake --</l>
+                    <l>Some striding -- Giant -- Love --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So greater than the Gods can show,</l>
+                    <l>They slink before the Clay,</l>
+                    <l>That not for all their Heaven can boast</l>
+                    <l>Will let it's Keepsake -- go</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

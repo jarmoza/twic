@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We -- Bee and I -- live by the quaffing -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J230">
+                <lg type="stanza">
+                    <l>We -- Bee and I -- live by the quaffing --</l>
+                    <l>'Tis'nt all Hock -- with us --</l>
+                    <l>Life has it's Ale --</l>
+                    <l>But it's many a lay of the Dim Burgundy --</l>
+                    <l>We chant -- for cheer -- when the Wines -- fail --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Do we "get drunk"?</l>
+                    <l>Ask the jolly Clovers!</l>
+                    <l>Do we "beat" our "Wife"?</l>
+                    <l>I -- never wed --</l>
+                    <l>Bee -- pledges his -- in minute flagons --</l>
+                    <l>Dainty -- as the tress -- on her deft Head --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>While runs the Rhine --</l>
+                    <l>He and I -- revel --</l>
+                    <l>First -- at the vat -- and latest at the Vine --</l>
+                    <l>Noon -- our last Cup --</l>
+                    <l>"Found dead" -- "of Nectar" --</l>
+                    <l>By a humming Coroner --</l>
+                    <l>In a By-Thyme!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

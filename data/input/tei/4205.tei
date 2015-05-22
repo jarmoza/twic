@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mob within the heart 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1745">
+                <lg type="stanza">
+                    <l>The mob within the heart</l>
+                    <l>Police cannot suppress</l>
+                    <l>The riot given at the first</l>
+                    <l>Is authorized as peace</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>Not certified</lem><rdg>Not certified</rdg></app>
+Uncertified of scene</l>
+                    <l>Or signified of sound</l>
+                    <l>But growing like a hurricane</l>
+                    <l>In a congenial ground.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

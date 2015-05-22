@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One and one are one </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F497A">
+                <lg type="stanza">
+                    <l>One and One - are One -</l>
+                    <l>Two - be finished using - </l>
+                    <l>Well enough for schools - </l>
+                    <l>But for minor Choosing - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life - just - Or Death -</l>
+                    <l>Or the Everlasting - </l>
+                    <l><add type="alternate" extent="More">Two -</add>
+More - would be too vast </l>
+                    <l>For the Soul's Comprising - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

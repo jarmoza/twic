@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Power is a familiar growth </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1287A">
+                <lg type="stanza">
+                    <l>Power is a familiar<app type="division"><lem><lb/></lem></app>
+ growth - </l>
+                    <l>Not distant - not to be - </l>
+                    <l>Beside us like a<app type="division"><lem><lb/></lem></app>
+ bland Abyss </l>
+                    <l>In every company - </l>
+                    <l>Escape it - there is but<app type="division"><lem><lb/></lem></app>
+ a chance -</l>
+                    <l>When consciousness and clay<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Lean forward for a<app type="division"><lem><lb/></lem></app>
+ final glance </l>
+                    <l><add type="alternate" extent="">Dispel that and you may -</add>
+Disprove that, and you<app type="division"><lem><lb/></lem></app>
+ may - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

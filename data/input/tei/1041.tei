@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bloom opon the mountain stated </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F787C">
+                <lg type="stanza">
+                    <l>Bloom opon the Mountain<app type="division"><lem><lb/></lem></app>
+ stated -</l>
+                    <l>Blameless of a name - </l>
+                    <l>Efflorescence of a Sunset - </l>
+                    <l>Reproduced - the same - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Seed had I, my Purple<app type="division"><lem><lb/></lem></app>
+ Sowing</l>
+                    <l>Should<add type="alternate" extent="address">endow - &amp;#x2022; reward</add>
+ address the Day - </l>
+                    <l>Not - a<add type="alternate" extent="Tropic">Manner</add>
+ Tropic of a Twilight - </l>
+                    <l><add type="alternate" extent="Show">shift</add>
+Show itself away - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who for tilling - to the<app type="division"><lem><lb/></lem></app>
+ Mountain </l>
+                    <l>Come - and disappear -</l>
+                    <l>Whose be<add type="alternate" extent="her">this</add>
+ her Renown -<app type="division"><lem><lb/></lem></app>
+ or fading - </l>
+                    <l>Witness is not here - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>While I state - the Solemn<app type="division"><lem><lb/></lem></app>
+ Petals -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Far as North - and East - </l>
+                    <l>Far as South - and West<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="expanding">disclosing</add>
+ expanding -</l>
+                    <l>Culminate - in Rest - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And the Mountain to<app type="division"><lem><lb/></lem></app>
+ the Evening </l>
+                    <l><add type="alternate" extent="Fit">Strain</add>
+Fit His Countenance - </l>
+                    <l>Indicating by no<add type="alternate" extent="Muscle">feature</add>
+ Muscle </l>
+                    <l><add type="alternate" extent="His">the -</add>
+His Experience -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

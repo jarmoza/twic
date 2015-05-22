@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>That this should feel the need of Death
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1112">
+                <lg type="stanza">
+                    <l>That this should feel the need of Death</l>
+                    <l>The same as those that lived</l>
+                    <l>Is such a stroke</l>
+                    <l>Hight -- Feat -- pass --</l>
+                    <l>Of Irony</l>
+                    <l>As never was beheld -- achieved --</l>
+                    <l>As makes one hide it's head --</l>
+                    <l>hang</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not satisfied to ape the Great in his simplicity</l>
+                    <l>The small must die, the same as he -- as well as He --</l>
+                    <l>do</l>
+                    <l>What a Pomposity --</l>
+                    <l>an absurdity --</l>
+                    <l>Perversity --</l>
+                    <l>Oh the Audacity --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

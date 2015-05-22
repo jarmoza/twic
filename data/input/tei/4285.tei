@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A SERVICE OF SONG</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-50">
+                <lg type="stanza">
+                    <l>Some keep the Sabbath going to church;</l>
+                    <l>I keep it staying at home,</l>
+                    <l>With a bobolink for a chorister,</l>
+                    <l>And an orchard for a dome.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some keep the Sabbath in surplice;</l>
+                    <l>I just wear my wings,</l>
+                    <l>And instead of tolling the bell for church,</l>
+                    <l>Our little sexton sings.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>God preaches,  a noted clergyman, </l>
+                    <l>And the sermon is never long;</l>
+                    <l>So instead of getting to heaven at last,</l>
+                    <l>I'm going all along!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

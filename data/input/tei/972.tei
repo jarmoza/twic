@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A thought went up my mind today </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F731A">
+                <lg type="stanza">
+                    <l>A Thought went up my mind<app type="division"><lem><lb/></lem></app>
+ today -</l>
+                    <l>That I have had before - </l>
+                    <l>But did not finish - some way back - </l>
+                    <l>I could not fix the Year - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor Where it went - nor why it came</l>
+                    <l>The second time to me - </l>
+                    <l>Nor definitely, what it was - </l>
+                    <l>Have I the Art to say - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But somewhere - in my soul -<app type="division"><lem><lb/></lem></app>
+ I know - </l>
+                    <l>I've met the Thing before -</l>
+                    <l>It just reminded me - 'twas all - </l>
+                    <l>And came my way no more - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

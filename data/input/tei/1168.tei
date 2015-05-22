@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Deprived of other banquet </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F872A">
+                <lg type="stanza">
+                    <l>Deprived of other <app type="emendation"><lem>Ban - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ quet</lem><rdg>Banquet</rdg></app>
+,</l>
+                    <l>I entertained Myself - </l>
+                    <l>At first - a scant<app type="division"><lem><lb/></lem></app>
+ nutrition - </l>
+                    <l><add type="alternate" extent="">An innutritious Loaf</add>
+An insufficient Loaf - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But grown by slender<app type="division"><lem><lb/></lem></app>
+ addings</l>
+                    <l>To so esteemed a size </l>
+                    <l>'Tis sumptuous enough for me - </l>
+                    <l>And almost to suffice </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Robin's<add type="alternate" extent="famine -">palate - &amp;#x2022; hunger -</add>
+ famine - able - </l>
+                    <l>Red Pilgrim, He and I -</l>
+                    <l>A Berry from our table </l>
+                    <l>Reserve - for Charity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

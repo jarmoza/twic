@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I was a Phebe -- nothing more -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1009">
+                <lg type="stanza">
+                    <l>I was a Phebe -- nothing more --</l>
+                    <l>A Phebe -- nothing less --</l>
+                    <l>The little note that others dropt</l>
+                    <l>I fitted into place --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I dwelt too low that any seek --</l>
+                    <l>Too shy, that any blame --</l>
+                    <l>A Phebe makes a little print</l>
+                    <l>Upon the Floors of Fame --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

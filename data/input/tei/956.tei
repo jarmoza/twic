@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The spirit is the conscious ear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F718A">
+                <lg type="stanza">
+                    <l>The Spirit is the Conscious<app type="division"><lem><lb/></lem></app>
+ Ear -</l>
+                    <l>We actually Hear </l>
+                    <l>When We inspect - that's<app type="division"><lem><lb/></lem></app>
+ audible - </l>
+                    <l>That is admitted - Here - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For other Services - as Sound -</l>
+                    <l>There hangs a<add type="alternate" extent="smaller">minor</add>
+ smaller Ear </l>
+                    <l>Outside the Castle - that<add type="alternate" extent="Contain -">present -</add>
+<app type="division"><lem><lb/></lem></app>
+ Contain - </l>
+                    <l>The other - only - Hear - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

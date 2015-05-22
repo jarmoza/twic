@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The moon upon her fluent route </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1574A">
+                <lg type="stanza">
+                    <l>The Moon upon<app type="division"><lem><lb/></lem></app>
+ her fluent Route </l>
+                    <l>Defiant of a Road - </l>
+                    <l>The Star's<app type="division"><lem><lb/></lem></app>
+ Etruscan Argument </l>
+                    <l>Substantiate a God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If Aims impel<app type="division"><lem><lb/></lem></app>
+ these Astral Ones</l>
+                    <l>The ones allowed<app type="division"><lem><lb/></lem></app>
+ to know </l>
+                    <l>Know that which<app type="division"><lem><lb/></lem></app>
+ makes them as<app type="division"><lem><lb/></lem></app>
+ forgot<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>As Dawn<app type="division"><lem><lb/></lem></app>
+ forgets them -<app type="division"><lem><lb/></lem></app>
+ now - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

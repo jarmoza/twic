@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I meant to find Her when I came -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J718">
+                <lg type="stanza">
+                    <l>I meant to find Her when I came --</l>
+                    <l>Death -- had the same design --</l>
+                    <l>But the Success -- was His -- it seems --</l>
+                    <l>And the Surrender -- Mine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                    <l>I meant to tell Her how I longed</l>
+                    <l>For just this single time --</l>
+                    <l>But Death had told Her so the first --</l>
+                    <l>And she had past, with Him --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To wander -- now -- is my Repose</l>
+                    <l>To rest -- To rest would be</l>
+                    <l>A privilege of Hurricane</l>
+                    <l>To Memory -- and Me.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

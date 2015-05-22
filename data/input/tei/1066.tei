@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature and God I neither knew </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F803A">
+                <lg type="stanza">
+                    <l>Nature, and God, I<app type="division"><lem><lb/></lem></app>
+ neither knew </l>
+                    <l>Yet both, so well<app type="division"><lem><lb/></lem></app>
+ knew me </l>
+                    <l>They startled - like<app type="division"><lem><lb/></lem></app>
+ Executors </l>
+                    <l>Of an identity - </l>
+                    <l>Yet neither - told -<app type="division"><lem><lb/></lem></app>
+ that I could learn -</l>
+                    <l>My secret, as secure </l>
+                    <l>As Herschel's private<app type="division"><lem><lb/></lem></app>
+ interest,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Or Mercury's<app type="division"><lem><lb/></lem></app>
+ Affair - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

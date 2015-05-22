@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To put this World down, like a Bundle -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J527">
+                <lg type="stanza">
+                    <l>To put this World down, like a Bundle --</l>
+                    <l>And walk steady, away,</l>
+                    <l>Requires Energy -- possibly Agony --</l>
+                    <l>'Tis the Scarlet way</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Trodden with straight renunciation</l>
+                    <l>By the Son of God --</l>
+                    <l>Later, his faint Confederates</l>
+                    <l>Justify the Road --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Flavors of that old Crucifixion --</l>
+                    <l>Filaments of Bloom, Pontius Pilate sowed --</l>
+                    <l>Strong Clusters, from Barabbas' Tomb --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sacrament, Saints <app type="revision"><lem>indorsed</lem><rdg>indorsed</rdg></app>
+partook before us --</l>
+                    <l>Patent, every drop,</l>
+                    <l>With the <app type="revision"><lem>Stamp</lem><rdg>Stamp</rdg></app>
+Brand of the Gentile Drinker</l>
+                    <l>Who <app type="revision"><lem>enforced</lem><rdg>enforced</rdg></app>
+indorsed the Cup --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

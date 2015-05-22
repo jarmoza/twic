@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Course -- I prayed -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J376">
+                <lg type="stanza">
+                    <l>Of Course -- I prayed --</l>
+                    <l>And did God Care?</l>
+                    <l>He cared as much as on the Air</l>
+                    <l>A Bird -- had stamped her foot --</l>
+                    <l>And cried "Give Me" --</l>
+                    <l>My Reason -- Life --</l>
+                    <l>I had not had -- but for Yourself --</l>
+                    <l>'Twere better Charity</l>
+                    <l>To leave me in the Atom's Tomb --</l>
+                    <l>Merry, and Nought, and gay, and numb --</l>
+                    <l>Than this smart Misery.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

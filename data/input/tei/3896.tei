@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Than Heaven more remote, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1436">
+                <lg type="stanza">
+                    <l>Than Heaven more remote,</l>
+                    <l>For Heaven is the root,</l>
+                    <l>But these the flitted seed,</l>
+                    <l>More flown indeed</l>
+                    <l>Than ones that never were,</l>
+                    <l>Or those that hide, and are.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What madness, by their side,</l>
+                    <l>A vision to provide</l>
+                    <l>Of future days</l>
+                    <l>They cannot praise.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My soul, to find them, come,</l>
+                    <l>They cannot call, they're dumb,</l>
+                    <l>Nor prove, nor woo,</l>
+                    <l>But that they have abode</l>
+                    <l>Is absolute as God,</l>
+                    <l>And instant, too.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How ruthless are the gentle </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1465A">
+                <lg type="stanza">
+                    <l>How ruthless are the<app type="division"><lem><lb/></lem></app>
+ gentle - </l>
+                    <l>How cruel are the kind - </l>
+                    <l>God broke his <app type="emendation"><lem>con &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ tract</lem><rdg>contract</rdg></app>
+ to his Lamb </l>
+                    <l>To qualify the Wind - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

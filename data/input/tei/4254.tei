@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE MYSTERY OF PAIN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-19">
+                <lg type="stanza">
+                    <l>Pain has an element of blank;</l>
+                    <l>It cannot recollect</l>
+                    <l>When it began, or if there were</l>
+                    <l>A day when it was not.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It has no future but itself,</l>
+                    <l>Its infinite realms contain</l>
+                    <l>Its past, enlightened to perceive</l>
+                    <l>New periods of pain.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE WHITE HEAT</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-7">
+                <lg type="stanza">
+                    <l>Dare you see a soul at the white heat?</l>
+                    <l> Then crouch within the door.</l>
+                    <l>Red is the fire's common tint;</l>
+                    <l> But when the vivid ore</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Has sated flame's conditions,</l>
+                    <l> Its quivering substance plays</l>
+                    <l>Without a color but the light</l>
+                    <l> Of unanointed blaze.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Least village boasts its blacksmith,</l>
+                    <l> Whose anvil's even din</l>
+                    <l>Stands symbol for the finer forge</l>
+                    <l> That soundless tugs within,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Refining these impatient ores</l>
+                    <l> With hammer and with blaze,</l>
+                    <l>Until the designated light</l>
+                    <l> Repudiate the forge.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

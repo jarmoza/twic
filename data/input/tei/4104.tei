@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some one prepared this mighty show 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1644">
+                <lg type="stanza">
+                    <l>Some one prepared this mighty show</l>
+                    <l>To which without a Ticket go</l>
+                    <l>The nations and the Days --</l>
+                    <l>Displayed before the simplest Door</l>
+                    <l>Pass slow before the humblest Door</l>
+                    <l>That all may them -- it -- examine</l>
+                    <l>and more</l>
+                    <l>witness it and more</l>
+                    <l>The -- of summer Days --</l>
+                    <l>pomp of summer Days</l>
+                    <l>The Ethiopian Days</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DEATH AND LIFE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-69">
+                <lg type="stanza">
+                    <l>Apparently with no surprise</l>
+                    <l>To any happy flower,</l>
+                    <l>The frost beheads it at its play</l>
+                    <l>In accidental power.</l>
+                    <l>The blond assassin passes on,</l>
+                    <l>The sun proceeds unmoved</l>
+                    <l>To measure off another day</l>
+                    <l>For an approving God.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

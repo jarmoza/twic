@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Because the bee may blameless hum </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F909A">
+                <lg type="stanza">
+                    <l>Because the Bee may<app type="division"><lem><lb/></lem></app>
+ blameless hum</l>
+                    <l>For Thee a Bee do<app type="division"><lem><lb/></lem></app>
+ I become </l>
+                    <l>List even unto Me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because the Flowers<app type="division"><lem><lb/></lem></app>
+ unafraid </l>
+                    <l>May lift a look on<app type="division"><lem><lb/></lem></app>
+ thine, a Maid</l>
+                    <l>Alway a Flower would be - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor Robins, Robins need<app type="division"><lem><lb/></lem></app>
+ not hide </l>
+                    <l>When Thou opon their<app type="division"><lem><lb/></lem></app>
+ Crypts intrude </l>
+                    <l>So Wings bestow on Me </l>
+                    <l>Or Petals, or a Dower<app type="division"><lem><lb/></lem></app>
+ of Buzz</l>
+                    <l>That Bee to ride - or<app type="division"><lem><lb/></lem></app>
+ Flower of Furze<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>I that way worship Thee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

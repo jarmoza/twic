@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Oh give it Motion -- deck it sweet 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1527">
+                <lg type="stanza">
+                    <l>Oh give it Motion -- deck it sweet</l>
+                    <l>With Artery and Vein --</l>
+                    <l>Upon it's fastened Lips lay words --</l>
+                    <l>Affiance it again</l>
+                    <l>To that Pink stranger we call Dust --</l>
+                    <l>Acquainted more with that</l>
+                    <l>Than with this horizontal one</l>
+                    <l>That will not lift it's Hat --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

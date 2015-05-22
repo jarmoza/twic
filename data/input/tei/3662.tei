@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Frost was never seen -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1202">
+                <lg type="stanza">
+                    <l>The Frost was never seen --</l>
+                    <l>If met, too rapid passed,</l>
+                    <l>Or in too unsubstantial Team --</l>
+                    <l>The Flowers notice first</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Stranger hovering round</l>
+                    <l>A Symptom of alarm</l>
+                    <l>In Villages remotely set</l>
+                    <l>But search effaces him</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till some retrieveless Night</l>
+                    <l>Our Vigilance at waste</l>
+                    <l>The Garden gets the only shot</l>
+                    <l>That never could be traced.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unproved is much we know --</l>
+                    <l>Unknown the worst we fear --</l>
+                    <l>Of Strangers is the Earth the Inn</l>
+                    <l>Of <app type="revision"><lem>Travellers the</lem><rdg>Travellers the</rdg></app>
+Secrets is the Air</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To analyze perhaps</l>
+                    <l>A Philip would prefer</l>
+                    <l>But Labor vaster than myself</l>
+                    <l>I find it to infer.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

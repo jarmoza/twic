@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Essential Oils -- are wrung -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J675">
+                <lg type="stanza">
+                    <l>Essential Oils -- are wrung --</l>
+                    <l>The Attar from the Rose</l>
+                    <l>Be not expressed by Suns -- alone --</l>
+                    <l>It is the gift of Screws --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The General Rose -- decay --</l>
+                    <l>But this -- in Lady's Drawer</l>
+                    <l>Make Summer -- When the Lady lie</l>
+                    <l>In Ceaseless Rosemary --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

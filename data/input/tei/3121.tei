@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Could I but ride indefinite 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J661">
+                <lg type="stanza">
+                    <l>Could I but ride indefinite</l>
+                    <l>As doth the Meadow Bee</l>
+                    <l>And visit Only where I liked</l>
+                    <l>And No one visit me</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And flirt all Day with Buttercups</l>
+                    <l>And marry whom I may</l>
+                    <l>And dwell a little <app type="revision"><lem>generally</lem><rdg>generally</rdg></app>
+everywhere</l>
+                    <l>Or better, run away</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With no Police to follow</l>
+                    <l>Or chase Him if He do</l>
+                    <l>Till He should jump Peninsulas</l>
+                    <l>To get away from me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I said "But just to be a Bee"</l>
+                    <l>Upon a Raft of Air</l>
+                    <l>And row in Nowhere all Day long</l>
+                    <l>And anchor "off the Bar"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Liberty! So Captives deem</l>
+                    <l>Who tight in Dungeons are.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

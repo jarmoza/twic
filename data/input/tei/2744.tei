@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Drop, that wrestles in the Sea -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J284">
+                <lg type="stanza">
+                    <l>The Drop, that wrestles in the Sea --</l>
+                    <l>Forgets her own locality --</l>
+                    <l>As I -- toward Thee --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She knows herself an incense small --</l>
+                    <l>Yet small -- she sighs -- if All -- is All --</l>
+                    <l>How larger -- be?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Ocean -- smiles -- at her Conceit --</l>
+                    <l>But she, forgetting Amphitrite --</l>
+                    <l>Pleads -- "Me"?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

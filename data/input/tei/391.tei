@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why do they shut me out of heaven? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F268A">
+                <lg type="stanza">
+                    <l>Why - do they shut me<app type="division"><lem><lb/></lem></app>
+ out of Heaven?</l>
+                    <l>Did I sing - too loud?  </l>
+                    <l>But - I can say a little<app type="division"><lem><lb/></lem></app>
+ &quot;minor&quot; </l>
+                    <l>Timid as a Bird!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Would'nt the Angels try me -</l>
+                    <l>Just - once - more - </l>
+                    <l>Just - see - if I troubled them - </l>
+                    <l>But dont - shut the door!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh, if I - were the Gentleman </l>
+                    <l>In the &quot;White Robe&quot; -</l>
+                    <l>And they - were the<app type="division"><lem><lb/></lem></app>
+ little Hand - that knocked - </l>
+                    <l>Could - I - forbid?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not to discover weakness is
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1054">
+                <lg type="stanza">
+                    <l>Not to discover weakness is</l>
+                    <l>The <app type="revision"><lem>Mystery</lem><rdg>Mystery</rdg></app>
+Artifice of strength --</l>
+                    <l>Impregnability inheres</l>
+                    <l>As much through Consciousness</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of faith of others in itself</l>
+                    <l>As <app type="revision"><lem>Elemental --</lem><rdg>Elemental --</rdg></app>
+<app type="revision"><lem>plupotential</lem><rdg>plupotential</rdg></app>
+Pyramidal Nerve</l>
+                    <l>Behind the most unconscious clock</l>
+                    <l>What <app type="revision"><lem>Anxious</lem><rdg>Anxious</rdg></app>
+skilful Pointers move --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

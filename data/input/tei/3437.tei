@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Besides this May 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J977">
+                <lg type="stanza">
+                    <l>Besides this May</l>
+                    <l>We know</l>
+                    <l>There is Another --</l>
+                    <l>How fair</l>
+                    <l>Our Speculations of the Foreigner!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some know <app type="revision"><lem>it</lem><rdg>it</rdg></app>
+Him whom We knew --</l>
+                    <l>Sweet Wonder --</l>
+                    <l>A <app type="revision"><lem>Section</lem><rdg>Section</rdg></app>
+Nature be</l>
+                    <l>Where Saints, and our plain going Neighbor</l>
+                    <l>Keep May!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

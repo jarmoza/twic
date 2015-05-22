@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mine enemy is growing old </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1539A">
+                <lg type="stanza">
+                    <l>Mine Enemy is<app type="division"><lem><lb/></lem></app>
+ growing old - </l>
+                    <l>I have at last<app type="division"><lem><lb/></lem></app>
+ revenge - </l>
+                    <l>The Palate of<app type="division"><lem><lb/></lem></app>
+ the Hate departs - </l>
+                    <l>If any would<app type="division"><lem><lb/></lem></app>
+ avenge </l>
+                    <l>Let him be<app type="division"><lem><lb/></lem></app>
+ quick -</l>
+                    <l><add type="alternate" extent="">The Banquet cools -</add>
+The Viand flits -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>It is a<add type="alternate" extent="faded Meat -">phantom Meat -</add>
+ faded<app type="division"><lem><lb/></lem></app>
+ Meat - </l>
+                    <l>Anger as soon<app type="division"><lem><lb/></lem></app>
+ as fed - is dead - </l>
+                    <l>'Tis starving makes it fat - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

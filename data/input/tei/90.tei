@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Heart! We will forget him! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F64A">
+                <lg type="stanza">
+                    <l>Heart! We will forget him!</l>
+                    <l>You and I - tonight!  </l>
+                    <l>You may forget the warmth he gave - </l>
+                    <l>I will forget the light!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When you have done, pray tell me</l>
+                    <l>That I may straight begin!  </l>
+                    <l>Haste! lest while <app type="emendation"><lem>your&#x27;e</lem><rdg>you&#x27;re</rdg></app>
+ lagging </l>
+                    <l>I remember him!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

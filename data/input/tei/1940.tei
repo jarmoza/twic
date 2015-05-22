@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They might not need me, yet they might </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1425A">
+                <lg type="stanza">
+                    <l>They might <app type="division"><lem><lb/></lem></app>
+not need me,<app type="division"><lem><lb/></lem></app>
+ yet they might - </l>
+                    <l>I'll let my<app type="division"><lem><lb/></lem></app>
+ Heart be just<app type="division"><lem><lb/></lem></app>
+ in sight - </l>
+                    <l>A smile so<app type="division"><lem><lb/></lem></app>
+ small as mine<app type="division"><lem><lb/></lem></app>
+ might be </l>
+                    <l>Precisely their<app type="division"><lem><lb/></lem></app>
+ necessity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

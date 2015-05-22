@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The grass so little has to do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F379A">
+                <lg type="stanza">
+                    <l>The Grass so little has<app type="division"><lem><lb/></lem></app>
+ to do - </l>
+                    <l>A Sphere of simple Green - </l>
+                    <l>With only Butterflies to<app type="division"><lem><lb/></lem></app>
+ brood </l>
+                    <l>And Bees to entertain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And stir all day to<app type="division"><lem><lb/></lem></app>
+ pretty Tunes</l>
+                    <l>The Breezes fetch along - </l>
+                    <l>And hold the Sunshine<app type="division"><lem><lb/></lem></app>
+ in it's lap </l>
+                    <l>And bow to everything - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And thread the Dews, all<app type="division"><lem><pb/></lem></app>
+ night, like Pearls - </l>
+                    <l>And make itself so fine</l>
+                    <l>A Duchess were too<app type="division"><lem><lb/></lem></app>
+ common </l>
+                    <l>For such a noticing -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And even when it dies -<app type="division"><lem><lb/></lem></app>
+ to pass </l>
+                    <l>In Odors so divine - </l>
+                    <l>Like Lowly spices, lain<app type="division"><lem><lb/></lem></app>
+ to sleep -</l>
+                    <l>Or Spikenards, perishing - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then, in Sovreign<app type="division"><lem><lb/></lem></app>
+ Barns to dwell - </l>
+                    <l>And dream the Days away,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Grass so little has<app type="division"><lem><lb/></lem></app>
+ to do </l>
+                    <l>I wish I were a<app type="division"><lem><lb/></lem></app>
+ Hay -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE RETURN</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-22">
+                <lg type="stanza">
+                    <l>Though I get home how late, how late!</l>
+                    <l>So I get home, 't will compensate.</l>
+                    <l>Better will be the ecstasy</l>
+                    <l>That they have done expecting me,</l>
+                    <l>When, night descending, dumb and dark,</l>
+                    <l>They hear my unexpected knock.</l>
+                    <l>Transporting must the moment be,</l>
+                    <l>Brewed from decades of agony!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To think just how the fire will burn,</l>
+                    <l>Just how long-cheated eyes will turn</l>
+                    <l>To wonder what myself will say,</l>
+                    <l>And what itself will say to me,</l>
+                    <l>Beguiles the centuries of way!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

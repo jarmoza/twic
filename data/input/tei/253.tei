@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis so much joy! &#x27;Tis so much joy! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F170A">
+                <lg type="stanza">
+                    <l>'Tis so much joy! 'Tis so much joy!</l>
+                    <l>If I should fail, what poverty!  </l>
+                    <l>And yet, as poor as I, </l>
+                    <l>Have ventured all opon a throw!  </l>
+                    <l>Have gained! Yes! Hesitated so -</l>
+                    <l>This side the Victory!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life is but Life! And Death, but Death!  </l>
+                    <l>Bliss is but Bliss, and Breath but Breath!  </l>
+                    <l>And if indeed I fail, </l>
+                    <l>At least, to know the worst, is sweet!</l>
+                    <l>Defeat means nothing <em>but</em> Defeat, </l>
+                    <l>No drearier, can befall!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And if I gain! Oh Gun at sea, </l>
+                    <l>Oh Bells, that in the steeples be!  </l>
+                    <l>At first, repeat it slow!</l>
+                    <l>For Heaven is a different thing, </l>
+                    <l>Conjectured, and waked sudden in - </l>
+                    <l>And might extinguish me!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

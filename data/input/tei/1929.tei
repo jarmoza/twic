@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A field of stubble lying sere </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1419A">
+                <lg type="stanza">
+                    <l>A Field of Stubble - lying sere </l>
+                    <l>Beneath the second sun </l>
+                    <l>It's toils to Brindled<add type="alternate" extent="People">nations</add>
+ People<add type="alternate" extent="tost">cast - &amp;#x2022; &lt;u&gt;thrust&lt;/u&gt;</add>
+ tost </l>
+                    <l>It's<add type="alternate" extent="triumphs - to">Pumpkin to -</add>
+ triumphs - to the Bin - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Accosted by a timid Bird</l>
+                    <l>Irresolute of Alms - </l>
+                    <l>Is often seen - but seldom felt </l>
+                    <l>On our New England Farms - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

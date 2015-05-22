@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SNOW</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-123">
+                <lg type="stanza">
+                    <l>It sifts from leaden sieves,</l>
+                    <l>It powders all the wood,</l>
+                    <l>It fills with alabaster wool</l>
+                    <l>The wrinkles of the road.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It makes an even face</l>
+                    <l>Of mountain and of plain, </l>
+                    <l>Unbroken forehead from the east</l>
+                    <l>Unto the east again.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It reaches to the fence,</l>
+                    <l>It wraps it, rail by rail,</l>
+                    <l>Till it is lost in fleeces;</l>
+                    <l>It flings a crystal veil</l>
+                </lg>
+                <lg type="stanza">
+                    <l>On stump and stack and stem, </l>
+                    <l>The summer's empty room,</l>
+                    <l>Acres of seams where harvests were,</l>
+                    <l>Recordless, but for them.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It ruffles wrists of posts,</l>
+                    <l>As ankles of a queen, </l>
+                    <l>Then stills its artisans like ghosts,</l>
+                    <l>Denying they have been.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

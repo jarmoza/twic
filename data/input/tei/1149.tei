@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I play at riches to appease </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F856A">
+                <lg type="stanza">
+                    <l>I play at Riches - to appease</l>
+                    <l>The Clamoring for Gold - </l>
+                    <l>It kept me from a Thief,<app type="division"><lem><lb/></lem></app>
+ I think, </l>
+                    <l>For often, overbold </l>
+                </lg>
+                <lg type="stanza">
+                    <l>With Want, and Opportunity -</l>
+                    <l>I<add type="alternate" extent="could">might</add>
+ could have done a Sin </l>
+                    <l>And been Myself that<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="easy">distant</add>
+ easy Thing </l>
+                    <l>An <app type="emendation"><lem>independant</lem><rdg>independent</rdg></app>
+ Man - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But often as my lot<app type="division"><lem><lb/></lem></app>
+ displays </l>
+                    <l>Too hungry to be borne</l>
+                    <l>I deem Myself what I<app type="division"><lem><lb/></lem></app>
+ would be - </l>
+                    <l>And<add type="alternate" extent="novel Comforting">so much comforting</add>
+ novel Comforting </l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Poverty and I derive - </l>
+                    <l>We question if the Man -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Who own - Esteem the<app type="division"><lem><lb/></lem></app>
+ Opulence -</l>
+                    <l>As we - Who never Can - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Should ever these exploring<app type="division"><lem><lb/></lem></app>
+ Hands </l>
+                    <l>Chance Sovreign on a<app type="division"><lem><lb/></lem></app>
+ Mine - </l>
+                    <l>Or in the long - uneven<app type="division"><lem><lb/></lem></app>
+ term </l>
+                    <l>To win, become<add type="alternate" extent="their">my</add>
+ their<app type="division"><lem><lb/></lem></app>
+ turn -</l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="How">&#x27;Tis</add>
+How fitter they will be -<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="for">by</add>
+ for Want - </l>
+                    <l>Enlightening so well - </l>
+                    <l>I know not which,<app type="division"><lem><lb/></lem></app>
+ Desire, or<add type="alternate" extent="Grant -">Right - &amp;#x2022; sight</add>
+ Grant - </l>
+                    <l>Be<add type="alternate" extent="wholly">chiefest &amp;#x2022; utmost</add>
+ wholly beautiful - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

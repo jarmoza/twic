@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Herein a blossom lies </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1073A">
+                <lg type="stanza">
+                    <l>Herein a Blossom lies -</l>
+                    <l>A Sepulchre, between - </l>
+                    <l>Cross it, and overcome the Bee - </l>
+                    <l>Remain - 'tis but a Rind - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

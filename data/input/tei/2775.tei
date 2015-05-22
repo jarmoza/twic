@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He fumbles at your Soul 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J315">
+                <lg type="stanza">
+                    <l>He fumbles at your Soul</l>
+                    <l>As Players at the Keys</l>
+                    <l>Before they drop full Music on --</l>
+                    <l>He stuns you by degrees --</l>
+                    <l>Prepares your brittle Nature</l>
+                    <l>For the Etherial Blow</l>
+                    <l>By fainter Hammers -- further heard --</l>
+                    <l>Then nearer -- Then so slow</l>
+                    <l>Your Breath has time to straighten --</l>
+                    <l>Your Brain -- to bubble Cool --</l>
+                    <l>Deals -- One -- imperial -- Thunderbolt --</l>
+                    <l>That scalps your naked Soul --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Winds take Forests in their Paws --</l>
+                    <l>The Universe -- is still --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

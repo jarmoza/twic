@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The bustle in a house </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1108A">
+                <lg type="stanza">
+                    <l>The Bustle in a House</l>
+                    <l>The Morning after<app type="division"><lem><lb/></lem></app>
+ Death </l>
+                    <l>Is solemnest of<app type="division"><lem><lb/></lem></app>
+ industries </l>
+                    <l>Enacted opon Earth - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sweeping up<app type="division"><lem><lb/></lem></app>
+ the Heart</l>
+                    <l>And putting Love away </l>
+                    <l>We shall not want<app type="division"><lem><lb/></lem></app>
+ to use again </l>
+                    <l>Until Eternity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

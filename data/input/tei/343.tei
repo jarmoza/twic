@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A slash of blue! A sweep of gray! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F233A">
+                <lg type="stanza">
+                    <l>A slash of Blue - </l>
+                    <l>A sweep of Gray - </l>
+                    <l>Some scarlet patches<app type="division"><lem><lb/></lem></app>
+ on the way - </l>
+                    <l>Compose an evening sky - </l>
+                    <l>A little purple - slipped<app type="division"><lem><lb/></lem></app>
+ between -</l>
+                    <l>Some Ruby Trowsers<app type="division"><lem><lb/></lem></app>
+ hurried on - </l>
+                    <l>A Wave of Gold - </l>
+                    <l>A Bank of Day - </l>
+                    <l>This just makes out<app type="division"><lem><lb/></lem></app>
+ the <em>Morning</em> Sky - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

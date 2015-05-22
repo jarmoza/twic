@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bird her punctual music brings 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1585">
+                <lg type="stanza">
+                    <l>The Bird her punctual music brings</l>
+                    <l>And lays it in its place --</l>
+                    <l>It's place is in the Human Heart</l>
+                    <l>And in the Heavenly Grace --</l>
+                    <l>What respite from her thrilling toil</l>
+                    <l>Did Beauty ever take --</l>
+                    <l>But Work might be electric Rest</l>
+                    <l>To those that Magic make --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

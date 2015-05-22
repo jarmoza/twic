@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If He dissolve -- then -- there is nothing -- more -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J236">
+                <lg type="stanza">
+                    <l>If He dissolve -- then -- there is nothing -- more --</l>
+                    <l>Eclipse -- at Midnight --</l>
+                    <l>It was dark -- before --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sunset -- at Easter --</l>
+                    <l>Blindness -- on the Dawn --</l>
+                    <l>Faint Star of Bethlehem --</l>
+                    <l>Gone down!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Would but some God -- inform Him --</l>
+                    <l>Or it be too late!</l>
+                    <l>Say -- that the pulse lust lisps --</l>
+                    <l>The Chariots wait --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Say -- that a little life -- for His --</l>
+                    <l>Is leaking -- red --</l>
+                    <l>His little Spaniel -- tell Him!</l>
+                    <l>Will He heed?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

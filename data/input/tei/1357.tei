@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Which is best? Heaven </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1021A">
+                <lg type="stanza">
+                    <l>Which is best? Heaven -</l>
+                    <l>Or only Heaven to come </l>
+                    <l>With that old<app type="division"><lem><lb/></lem></app>
+ Codicil of Doubt?  </l>
+                    <l>I cannot help esteem </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The &quot;Bird within<app type="division"><lem><lb/></lem></app>
+ the Hand&quot;</l>
+                    <l>Superior to the one </l>
+                    <l>The &quot;Bush&quot; may<app type="division"><lem><lb/></lem></app>
+ yield me </l>
+                    <l>Or may not - </l>
+                    <l>Too late to choose<app type="division"><lem><lb/></lem></app>
+ again.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Summer has two beginnings </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1457A">
+                <lg type="stanza">
+                    <l>Summer has two<app type="division"><lem><lb/></lem></app>
+ Beginnings - </l>
+                    <l>Beginning once in<app type="division"><lem><lb/></lem></app>
+ June - </l>
+                    <l>Beginning in October </l>
+                    <l>Affectingly again - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Without, perhaps, the<app type="division"><lem><lb/></lem></app>
+ Riot</l>
+                    <l>But graphicer for<app type="division"><lem><lb/></lem></app>
+ Grace - </l>
+                    <l>As finer is a going </l>
+                    <l>Than a remaining<app type="division"><lem><lb/></lem></app>
+ Face - </l>
+                    <l>Departing<add type="alternate" extent="then">next</add>
+ then - forever - </l>
+                    <l>Forever - until May -</l>
+                    <l>Forever is<add type="alternate" extent="deciduous">recurrent</add>
+ deciduous - </l>
+                    <l>Except to<app type="division"><lem><lb/></lem></app>
+ those who die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

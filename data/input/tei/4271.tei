@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TRANSPLANTED</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-36">
+                <lg type="stanza">
+                    <l>As if some little Arctic flower,</l>
+                    <l>Upon the polar hem,</l>
+                    <l>Went wandering down the latitudes,</l>
+                    <l>Until it puzzled came</l>
+                    <l>To continents of summer,</l>
+                    <l>To firmaments of sun,</l>
+                    <l>To strange, bright crowds of flowers,</l>
+                    <l>And birds of foreign tongue!</l>
+                    <l>I say, as if this little flower</l>
+                    <l>To Eden wandered in </l>
+                    <l>What then? Why, nothing, only,</l>
+                    <l>Your inference therefrom!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

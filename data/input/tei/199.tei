@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Just lost, when I was saved! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F132A">
+                <lg type="stanza">
+                    <l>Just lost, when I was saved!  </l>
+                    <l>Just heard the world go by!  </l>
+                    <l>Just girt me for the onset with eternity </l>
+                    <l>When breath blew back - </l>
+                    <l>And on the other side</l>
+                    <l>I heard recede the disappointed tide.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Therefore, as one <em>returned</em>, I feel, </l>
+                    <l>Odd secrets of &quot;the Line&quot; to tell!  </l>
+                    <l>Some sailor skirting novel shores!  </l>
+                    <l>Some pale &quot;Reporter&quot; from the awful doors</l>
+                    <l>Before the Seal!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Next time to stay!  </l>
+                    <l>Next time, the things to see </l>
+                    <l>By ear unheard - </l>
+                    <l>Unscrutinized by eye!</l>
+                    <l>Next time to tarry </l>
+                    <l>While the Ages steal -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Tramp the slow Centuries </l>
+                    <l>And the Cycles wheel!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

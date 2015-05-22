@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They shut me up in prose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F445A">
+                <lg type="stanza">
+                    <l>They shut me up in Prose -</l>
+                    <l>As when a little Girl </l>
+                    <l>They put me in the Closet - </l>
+                    <l>Because they liked me &quot;still&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Still! Could themself have peeped -</l>
+                    <l>And seen my Brain - go round - </l>
+                    <l>They might as wise have lodged<app type="division"><lem><lb/></lem></app>
+ a Bird </l>
+                    <l>For Treason - in the Pound - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Himself has but to will </l>
+                    <l>And easy as a Star</l>
+                    <l>Look down opon Captivity - </l>
+                    <l>And laugh - No more have I - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

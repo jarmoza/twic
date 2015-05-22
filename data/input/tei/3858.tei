@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I have no Life but this --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1398">
+                <lg type="stanza">
+                    <l>I have no Life but this --</l>
+                    <l>To lead it here --</l>
+                    <l>Nor any Death -- but lest</l>
+                    <l>Dispelled from there --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor tie to Earths to come --</l>
+                    <l>Nor Action new --</l>
+                    <l>Except through this extent --</l>
+                    <l>The Realm of you --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

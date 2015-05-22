@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Our lives are Swiss </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F129A">
+                <lg type="stanza">
+                    <l>Our lives are Swiss - </l>
+                    <l>So still - so cool - </l>
+                    <l>Till some odd afternoon </l>
+                    <l>The Alps neglect their curtains </l>
+                    <l>And we look further on.</l>
+                    <l><em>Italy</em> stands the other side.  </l>
+                    <l>While like a guard between - </l>
+                    <l>The solemn Alps - </l>
+                    <l>The siren Alps </l>
+                    <l>Forever intervene -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

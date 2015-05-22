@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No crowd that has occurred </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F653A">
+                <lg type="stanza">
+                    <l>No Crowd that has occurred</l>
+                    <l>Exhibit - I suppose </l>
+                    <l>That General Attendance </l>
+                    <l>That Resurrection - does - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Circumference be full -</l>
+                    <l>The long restricted Grave </l>
+                    <l>Assert<add type="alternate" extent="her Vital Privilege">His Primogeniture</add>
+ her Vital Privilege - </l>
+                    <l>The Dust -<add type="alternate" extent="connect -">adjust -</add>
+ connect - and live - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>On Atoms - features place - </l>
+                    <l>All Multitudes that were</l>
+                    <l>Efface in the Comparison - </l>
+                    <l>As Suns -<add type="alternate" extent="dissolve">annul</add>
+ dissolve a star - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Solemnity - prevail - </l>
+                    <l>It's Individual Doom </l>
+                    <l>Possess each - separate <app type="emendation"><lem>Con - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ sciousness</lem><rdg>Consciousness</rdg></app>
+ -</l>
+                    <l>August -<add type="alternate" extent="Absorbed - Numb">Resistless - dumb</add>
+ Absorbed - Numb -<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Duplicate - exist - </l>
+                    <l>What<add type="alternate" extent="Parallel">scenery</add>
+ Parallel can be - </l>
+                    <l>Of the<add type="alternate" extent="Significance">stupendousness</add>
+ Significance of This - </l>
+                    <l>To Universe - and Me?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

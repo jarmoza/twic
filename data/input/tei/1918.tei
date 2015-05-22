@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Summer laid her simple hat </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1411E">
+                <lg type="stanza">
+                    <l>Summer laid<app type="division"><lem><lb/></lem></app>
+ her supple Glove </l>
+                    <l>In it's sylvan<app type="division"><lem><lb/></lem></app>
+ Drawer -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Wheresoe'er, or<app type="division"><lem><lb/></lem></app>
+ was she - </l>
+                    <l>The demand<app type="division"><lem><lb/></lem></app>
+ of Awe?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

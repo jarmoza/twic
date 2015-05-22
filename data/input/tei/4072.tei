@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Auctioneer of Parting 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1612">
+                <lg type="stanza">
+                    <l>The Auctioneer of Parting</l>
+                    <l>His "Going, going, gone"</l>
+                    <l>Shouts even from the Crucifix,</l>
+                    <l>And brings his Hammer down --</l>
+                    <l>He only sells the Wilderness,</l>
+                    <l>The prices of Despair</l>
+                    <l>Range from a single human Heart</l>
+                    <l>To Two -- not any more --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

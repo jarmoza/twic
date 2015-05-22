@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>ALONG THE POTOMAC</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-108">
+                <lg type="stanza">
+                    <l>When I was small, a woman died.</l>
+                    <l>To-day her only boy</l>
+                    <l>Went up from the Potomac,</l>
+                    <l>His face all victory,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To look at her; how slowly</l>
+                    <l>The seasons must have turned</l>
+                    <l>Till bullets clipt an angle,</l>
+                    <l>And he passed quickly round!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If pride shall be in Paradise</l>
+                    <l>I never can decide;</l>
+                    <l>Of their imperial conduct,</l>
+                    <l>No person testified.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But proud in apparition,</l>
+                    <l>That woman and her boy</l>
+                    <l>Pass back and forth before my brain,</l>
+                    <l>As ever in the sky.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

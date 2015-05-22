@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Art thou the thing I wanted? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1311B">
+                <lg type="stanza">
+                    <l>Art thou the thing<app type="division"><lem><lb/></lem></app>
+ I wanted?  </l>
+                    <l>Begone - my Tooth<app type="division"><lem><lb/></lem></app>
+ has grown - </l>
+                    <l>Affront a minor<app type="division"><lem><lb/></lem></app>
+ palate </l>
+                    <l>Thou<add type="alternate" extent="did&#x27;st">&lt;u&gt;could&#x27;st&lt;/u&gt;</add>
+ did'st not goad<app type="division"><lem><lb/></lem></app>
+ so long - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I tell thee while<app type="division"><lem><lb/></lem></app>
+ I<add type="alternate" extent="waited">famished</add>
+ waited -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The mystery of Food </l>
+                    <l>Increased till I<app type="division"><lem><lb/></lem></app>
+ abjured it </l>
+                    <l>Subsisting<add type="alternate" extent="now">since</add>
+ now<app type="division"><lem><lb/></lem></app>
+ like God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

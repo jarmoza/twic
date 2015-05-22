@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Over the fence </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F271A">
+                <lg type="stanza">
+                    <l>Over the fence -</l>
+                    <l>Strawberries - grow - </l>
+                    <l>Over the fence - </l>
+                    <l>I could climb - if I tried,<app type="division"><lem><lb/></lem></app>
+ I know - </l>
+                    <l>Berries are nice!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But - if I stained my<app type="division"><lem><lb/></lem></app>
+ Apron - </l>
+                    <l>God would certainly scold!  </l>
+                    <l>Oh, dear, - I guess if He<app type="division"><lem><lb/></lem></app>
+ were a Boy - </l>
+                    <l>He'd - climb - if He could!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

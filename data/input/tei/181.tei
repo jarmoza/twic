@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Safe in their alabaster chambers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F124A">
+                <lg type="stanza">
+                    <l>Safe in their alabaster chambers, </l>
+                    <l>Untouched by morning, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+And untouched by noon,</l>
+                    <l>Sleep the meek members of the Resurrection, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Rafter of satin, and roof of stone.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Light laughs the breeze </l>
+                    <l>In her castle above them, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Babbles the bee in a stolid ear,</l>
+                    <l>Pipe the sweet birds in ignorant <app type="emendation"><lem>cadences</lem><rdg>cadence</rdg></app>
+: </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Ah! what sagacity perished here!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

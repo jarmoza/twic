@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On the bleakness of my lot </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F862B">
+                <lg type="stanza">
+                    <l>On the Bleakness of<app type="division"><lem><lb/></lem></app>
+ my Lot</l>
+                    <l>Bloom I strove to raise - </l>
+                    <l>Late - my Garden of a<app type="division"><lem><lb/></lem></app>
+ Rock </l>
+                    <l>Yielded Grape - and Maise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Soil of Flint, if<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="steady tilled">steadfast tilled</add>
+ steady tilled</l>
+                    <l>Will<add type="alternate" extent="refund">reward - &amp;#x2022; repay -</add>
+ refund the Hand - </l>
+                    <l>Seed of Palm, by<app type="division"><lem><lb/></lem></app>
+ Lybian Sun </l>
+                    <l>Fructified in Sand - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

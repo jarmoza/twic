@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Four trees opon a solitary acre </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F778A">
+                <lg type="stanza">
+                    <l>Four Trees - opon a solitary<app type="division"><lem><lb/></lem></app>
+ Acre -</l>
+                    <l>Without Design </l>
+                    <l>Or Order, or Apparent<app type="division"><lem><lb/></lem></app>
+ Action - </l>
+                    <l><add type="alternate" extent="Maintain -">Do reign -</add>
+Maintain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun - opon a Morning<app type="division"><lem><lb/></lem></app>
+ meets them -</l>
+                    <l>The Wind - </l>
+                    <l>No nearer Neighbor - have<app type="division"><lem><lb/></lem></app>
+ they - </l>
+                    <l>But God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Acre gives them -<app type="division"><lem><lb/></lem></app>
+ Place - </l>
+                    <l>They - Him - Attention of<app type="division"><lem><lb/></lem></app>
+ Passer by -</l>
+                    <l>Of Shadow, or of Squirrel,<app type="division"><lem><lb/></lem></app>
+ haply - </l>
+                    <l>Or Boy -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Deed<add type="alternate" extent="is Their&#x27;s">they bear</add>
+ is Their's<app type="division"><lem><lb/></lem></app>
+ unto the General Nature - </l>
+                    <l>What Plan </l>
+                    <l>They severally -<add type="alternate" extent="retard - or further -">promote - or hinder -</add>
+ retard - or<app type="division"><lem><lb/></lem></app>
+ further -</l>
+                    <l>Unknown - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

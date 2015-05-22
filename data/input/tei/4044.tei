@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Expanse cannot be lost -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1584">
+                <lg type="stanza">
+                    <l>Expanse cannot be lost --</l>
+                    <l>Not Joy, but a Decree</l>
+                    <l>Is Deity --</l>
+                    <l>His Scene, Infinity --</l>
+                    <l>Whose rumor's Gate was shut so tight</l>
+                    <l>Before my Beam was sown,</l>
+                    <l>Not even a Prognostic's push</l>
+                    <l>Could make a Dent thereon --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The World that thou hast opened</l>
+                    <l>Shuts for thee,</l>
+                    <l>But not alone,</l>
+                    <l>We all have followed thee --</l>
+                    <l>Escape more slowly</l>
+                    <l>To thy Tracts of Sheen --</l>
+                    <l>The Tent is listening,</l>
+                    <l>But the Troops are gone!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

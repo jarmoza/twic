@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This was a poet </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F446A">
+                <lg type="stanza">
+                    <l>This was a Poet -</l>
+                    <l>It is That </l>
+                    <l>Distills amazing sense </l>
+                    <l>From Ordinary Meanings - </l>
+                    <l>And Attar so immense</l>
+                </lg>
+                <lg type="stanza">
+                    <l>From the familiar species </l>
+                    <l>That perished by the Door - </l>
+                    <l>We wonder it was not<app type="division"><lem><lb/></lem></app>
+ Ourselves </l>
+                    <l>Arrested it - before - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Pictures, the Discloser -</l>
+                    <l>The Poet - it is He - </l>
+                    <l>Entitles Us - by Contrast - </l>
+                    <l>To ceaseless Poverty - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Portion - so unconscious - </l>
+                    <l>The Robbing - could not harm -</l>
+                    <l>Himself - to Him - a Fortune - </l>
+                    <l>Exterior - to Time - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A flower will not trouble her </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1648A">
+                <lg type="stanza">
+                    <l>A Flower<app type="division"><lem><lb/></lem></app>
+ will not trouble<app type="division"><lem><lb/></lem></app>
+ her, it has so<app type="division"><lem><lb/></lem></app>
+ small a Foot, </l>
+                    <l>And yet if<app type="division"><lem><lb/></lem></app>
+ you compare<app type="division"><lem><lb/></lem></app>
+ the Lasts, </l>
+                    <l>Her's is the<app type="division"><lem><lb/></lem></app>
+ smallest Boot - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

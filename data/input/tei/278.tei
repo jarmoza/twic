@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through the straight pass of suffering </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F187B">
+                <lg type="stanza">
+                    <l>Through the strait pass<app type="division"><lem><lb/></lem></app>
+ of suffering -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Martyrs - even - trod.  </l>
+                    <l>Their feet - opon Temptation - </l>
+                    <l>Their faces - opon God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A stately - shriven -<app type="division"><lem><lb/></lem></app>
+ Company -</l>
+                    <l>Convulsion - playing round - </l>
+                    <l>Harmless - as streaks<app type="division"><lem><lb/></lem></app>
+ of meteor - </l>
+                    <l>Opon a Planet's Bond - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their faith -<app type="division"><lem><lb/></lem></app>
+ the everlasting troth - </l>
+                    <l>Their expectation - fair -</l>
+                    <l>The Needle - to the North<app type="division"><lem><lb/></lem></app>
+ Degree - </l>
+                    <l>Wades - so - thro' polar Air!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DAY&#x27;S PARLOR</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-77">
+                <lg type="stanza">
+                    <l>The day came slow, till five o'clock,</l>
+                    <l>Then sprang before the hills</l>
+                    <l>Like hindered rubies, or the light</l>
+                    <l>A sudden musket spills.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The purple could not keep the east,</l>
+                    <l>The sunrise shook from fold,</l>
+                    <l>Like breadths of topaz, packed a night,</l>
+                    <l>The lady just unrolled.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The happy winds their timbrels took;</l>
+                    <l>The birds, in docile rows,</l>
+                    <l>Arranged themselves around their prince</l>
+                    <l>(The wind is prince of those).</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The orchard sparkled like a Jew, </l>
+                    <l>How mighty 't was, to stay</l>
+                    <l>A guest in this stupendous place,</l>
+                    <l>The parlor of the day!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

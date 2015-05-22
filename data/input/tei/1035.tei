@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Never for society </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F783A">
+                <lg type="stanza">
+                    <l>Never for Society</l>
+                    <l>He shall seek in vain - </l>
+                    <l>Who His own acquaintance </l>
+                    <l>Cultivate - Of Men </l>
+                    <l>Wiser Men may weary -</l>
+                    <l>But the Man within </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never knew Satiety - </l>
+                    <l><add type="alternate" extent="Better">braver -</add>
+Better entertain </l>
+                    <l>Than could Border Ballad - </l>
+                    <l>Or Biscayan Hymn -</l>
+                    <l>Neither introduction </l>
+                    <l>Need You - unto Him - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

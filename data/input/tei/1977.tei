@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ourselves we do inter with sweet derision </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1449A">
+                <lg type="stanza">
+                    <l>Ourselves - we<app type="division"><lem><lb/></lem></app>
+ do inter - with<app type="division"><lem><lb/></lem></app>
+ sweet derision </l>
+                    <l>The channel of<app type="division"><lem><lb/></lem></app>
+ the Dust - who<app type="division"><lem><lb/></lem></app>
+ once achieves - </l>
+                    <l>Invalidates the<app type="division"><lem><lb/></lem></app>
+ Balm of that<app type="division"><lem><lb/></lem></app>
+ Religion<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>That doubts - as<app type="division"><lem><lb/></lem></app>
+ fervently as it<app type="division"><lem><lb/></lem></app>
+ believes - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

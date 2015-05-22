@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Forget! The lady with the amulet </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F625A">
+                <lg type="stanza">
+                    <l>Forget! The lady with the<app type="division"><lem><lb/></lem></app>
+ Amulet</l>
+                    <l>Forgot she wore it at her<app type="division"><lem><lb/></lem></app>
+ Heart </l>
+                    <l>Because she breathed against </l>
+                    <l>Was Treason twixt?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Deny! Did Rose her Bee -</l>
+                    <l>For Privilege of Play </l>
+                    <l>Or Wile of Butterfly </l>
+                    <l>Or Opportunity - Her Lord away?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The lady with the Amulet -<app type="division"><lem><lb/></lem></app>
+ will fade - </l>
+                    <l>The Bee - in Mausoleum laid -</l>
+                    <l>Discard his Bride - </l>
+                    <l>But longer than the little Rill - </l>
+                    <l>That cooled the Forehead of the<app type="division"><lem><lb/></lem></app>
+ Hill - </l>
+                    <l>While Other - went the Sea to<app type="division"><lem><lb/></lem></app>
+ fill -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And Other - went to turn<app type="division"><lem><lb/></lem></app>
+ the Mill -</l>
+                    <l>I'll do thy Will - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

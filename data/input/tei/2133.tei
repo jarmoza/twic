@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His little hearse like figure </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1547B">
+                <lg type="stanza">
+                    <l>His little Hearse<app type="division"><lem><lb/></lem></app>
+ like Figure </l>
+                    <l>Unto itself a Dirge </l>
+                    <l>To a delusive<app type="division"><lem><lb/></lem></app>
+ Lilac </l>
+                    <l>The vanity divulge </l>
+                    <l>Of Industry and<app type="division"><lem><lb/></lem></app>
+ Morals</l>
+                    <l>And every righteous<app type="division"><lem><lb/></lem></app>
+ thing<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>For the divine<app type="division"><lem><lb/></lem></app>
+ Perdition </l>
+                    <l>Of Idleness and<app type="division"><lem><lb/></lem></app>
+ Spring - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

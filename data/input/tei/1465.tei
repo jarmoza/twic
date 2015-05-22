@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He outstripped time with but a bout </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1111A">
+                <lg type="stanza">
+                    <l>He outstripped Time<app type="division"><lem><lb/></lem></app>
+ with but a Bout,</l>
+                    <l>He outstripped Stars<app type="division"><lem><lb/></lem></app>
+ and Sun </l>
+                    <l>And then, unjaded,<app type="division"><lem><lb/></lem></app>
+ challenged God </l>
+                    <l>In presence of the Throne - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And He and He<app type="division"><lem><lb/></lem></app>
+ in mighty List</l>
+                    <l>Unto this present, run, </l>
+                    <l>The larger Glory for<app type="division"><lem><lb/></lem></app>
+ the less </l>
+                    <l>A just sufficient<app type="division"><lem><lb/></lem></app>
+ Ring.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of nearness to her sundered Things 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J607">
+                <lg type="stanza">
+                    <l>Of nearness to her sundered Things</l>
+                    <l>The Soul has special times --</l>
+                    <l>When Dimness -- looks the Oddity --</l>
+                    <l>Distinctness -- easy -- seems --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Shapes we buried, dwell about,</l>
+                    <l>Familiar, in the Rooms --</l>
+                    <l>Untarnished by the Sepulchre,</l>
+                    <l><app type="revision"><lem>Our</lem><rdg>Our</rdg></app>
+The Mouldering Playmate comes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In just the Jacket that he wore --</l>
+                    <l>Long buttoned in the Mold</l>
+                    <l>Since we -- old mornings, Children -- played --</l>
+                    <l>Divided -- by a world --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Grave yields back her Robberies --</l>
+                    <l>The Years, our pilfered Things --</l>
+                    <l>Bright Knots of Apparitions</l>
+                    <l>Salute us, with their wings --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As we -- it were -- that perished --</l>
+                    <l>Themself -- had just remained till we rejoin them --</l>
+                    <l>And 'twas they, and not ourself</l>
+                    <l>That mourned.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

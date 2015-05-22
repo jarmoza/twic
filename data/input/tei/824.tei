@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We do not play on graves </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F599A">
+                <lg type="stanza">
+                    <l>We do not play on Graves -</l>
+                    <l>Because there is'nt Room - </l>
+                    <l>Besides - it is'nt even - it<app type="division"><lem><lb/></lem></app>
+ slants </l>
+                    <l>And People come - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And put a Flower on it -</l>
+                    <l>And hang their faces so - </l>
+                    <l>We're fearing that their Hearts<app type="division"><lem><lb/></lem></app>
+ will drop - </l>
+                    <l>And crush our pretty play - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so we move as far </l>
+                    <l>As Enemies - away -</l>
+                    <l>Just looking round to see how far </l>
+                    <l>It is - Occasionally - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SUCCESS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-1">
+                <lg type="stanza">
+                    <l>Success is counted sweetest</l>
+                    <l>By those who ne'er succeed.</l>
+                    <l>To comprehend a nectar</l>
+                    <l>Requires sorest need.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not one of all the purple host</l>
+                    <l>Who took the flag to-day</l>
+                    <l>Can tell the definition,</l>
+                    <l>So clear, of victory,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As he, defeated, dying,</l>
+                    <l>On whose forbidden ear</l>
+                    <l>The distant strains of triumph</l>
+                    <l>Break, agonized and clear!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

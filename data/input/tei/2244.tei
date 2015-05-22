@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To her derided home </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1617A">
+                <lg type="stanza">
+                    <l>To her derided Home </l>
+                    <l>A weed of Summer came - </l>
+                    <l>She did not know her station low </l>
+                    <l>Nor ignominy's Name - </l>
+                    <l>Bestowed a Summer long</l>
+                    <l>Upon a fameless Flower - </l>
+                    <l>Then swept as lightly from Disdain </l>
+                    <l>As Lady from her Bower - </l>
+                    <l>The Dandelion's Shield </l>
+                    <l>Is valid as a Star -</l>
+                    <l>The Buttercup's Escutcheon - </l>
+                    <l>Sustains him anywhere - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

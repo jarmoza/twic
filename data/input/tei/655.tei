@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis good the looking back on grief </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F472A">
+                <lg type="stanza">
+                    <l>'Tis good - the looking back<app type="division"><lem><lb/></lem></app>
+ on Grief -</l>
+                    <l>To re-endure a Day - </l>
+                    <l>We thought the<add type="alternate" extent="mighty">monstrous</add>
+ mighty<app type="division"><lem><lb/></lem></app>
+ Funeral - </l>
+                    <l>Of all conceived Joy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To recollect how Busy Grass</l>
+                    <l>Did<add type="alternate" extent="meddle">tamper</add>
+ meddle - one by one - </l>
+                    <l>Till all the Grief with Summer -<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="waved">blew -</add>
+ waved </l>
+                    <l>And none could see the stone.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And though the Wo you<app type="division"><lem><lb/></lem></app>
+ have Today </l>
+                    <l>Be larger - As the Sea</l>
+                    <l>Exceeds it's<add type="alternate" extent="unremembered">undeveloped</add>
+ unremembered Drop - </l>
+                    <l><add type="alternate" extent="They&#x27;re Water - equally -">they prove One Chemistry -</add>
+They're Water - equally -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We cover thee - sweet face </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F461A">
+                <lg type="stanza">
+                    <l>We Cover Thee - Sweet Face -</l>
+                    <l>Not that We tire of Thee - </l>
+                    <l>But that Thyself fatigue<app type="division"><lem><lb/></lem></app>
+ of Us - </l>
+                    <l>Remember - as Thou go - </l>
+                    <l>We follow Thee until</l>
+                    <l>Thou notice Us - no more - </l>
+                    <l>And then - reluctant -<app type="division"><lem><lb/></lem></app>
+ turn away </l>
+                    <l>To Con Thee <app type="emendation"><lem>oer and oer</lem><rdg>o&#x27;er and o&#x27;er</rdg></app>
+ - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And blame the scanty<app type="division"><lem><lb/></lem></app>
+ love </l>
+                    <l>We were Content to show -</l>
+                    <l>Augmented - Sweet - a Hundred fold - </l>
+                    <l>If Thou would'st take it - now - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

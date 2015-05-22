@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Summer is shorter than any one </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1483A">
+                <lg type="stanza">
+                    <l>Summer is<app type="division"><lem><lb/></lem></app>
+ shorter than any<app type="division"><lem><lb/></lem></app>
+ one - </l>
+                    <l>Life is shorter<app type="division"><lem><lb/></lem></app>
+ than Summer - </l>
+                    <l>Seventy Years<app type="division"><lem><lb/></lem></app>
+ is spent as<app type="division"><lem><lb/></lem></app>
+ quick </l>
+                    <l>As an only<app type="division"><lem><lb/></lem></app>
+ Dollar - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sorrow - now -<add type="alternate" extent="is polite - and stays -">is courteous and stays -</add>
+ is<app type="division"><lem><lb/></lem></app>
+ polite - and<app type="division"><lem><lb/></lem></app>
+ stays -</l>
+                    <l>See how well<app type="division"><lem><lb/></lem></app>
+ we spurn<add type="alternate" extent="her -">him -</add>
+ her -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Equally to<app type="division"><lem><lb/></lem></app>
+ abhor Delight - </l>
+                    <l>Equally retain<app type="division"><lem><lb/></lem></app>
+ him - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

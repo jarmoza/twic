@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>ETERNITY</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-165">
+                <lg type="stanza">
+                    <l>On this wondrous sea,</l>
+                    <l>Sailing silently,</l>
+                    <l>Ho! pilot, ho!</l>
+                    <l>Knowest thou the shore</l>
+                    <l>Where no breakers roar,</l>
+                    <l>Where the storm is o'er?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In the silent west</l>
+                    <l>Many sails at rest,</l>
+                    <l>Their anchors fast;</l>
+                    <l>Thither I pilot thee, </l>
+                    <l>Land, ho! Eternity!</l>
+                    <l>Ashore at last!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ah, Moon -- and Star!
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J240">
+                <lg type="stanza">
+                    <l>Ah, Moon -- and Star!</l>
+                    <l>You are very far --</l>
+                    <l>But were no one</l>
+                    <l>Farther than you --</l>
+                    <l>Do you think I'd stop</l>
+                    <l>For a Firmament --</l>
+                    <l>Or a Cubit -- or so?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could borrow a Bonnet</l>
+                    <l>Of the Lark --</l>
+                    <l>And a Chamois' Silver Boot --</l>
+                    <l>And a stirrup of an Antelope --</l>
+                    <l>And be with you -- Tonight!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But, Moon, and Star,</l>
+                    <l>Though you're very far --</l>
+                    <l>There is one -- farther than you --</l>
+                    <l>He -- is more the a firmament -- from Me --</l>
+                    <l>So I can never go!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

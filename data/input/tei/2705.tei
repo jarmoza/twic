@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I held a Jewel in my fingers --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J245">
+                <lg type="stanza">
+                    <l>I held a Jewel in my fingers --</l>
+                    <l>And went to sleep --</l>
+                    <l>The day was warm, and winds were prosy --</l>
+                    <l>I said "'Twill keep" --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I woke -- and chid my honest fingers,</l>
+                    <l>The Gem was gone --</l>
+                    <l>And now, an Amethyst remembrance</l>
+                    <l>Is all I own --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

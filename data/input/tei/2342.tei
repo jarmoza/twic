@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of God we ask one favor </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1675B">
+                <lg type="stanza">
+                    <l>Of God we ask<app type="division"><lem><lb/></lem></app>
+ one favor, that<app type="division"><lem><lb/></lem></app>
+ we may be <app type="emendation"><lem>for - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ given</lem><rdg>forgiven</rdg></app>
+ - </l>
+                    <l>For what, he is<app type="division"><lem><pb/></lem></app>
+ presumed to know - </l>
+                    <l>The Crime, from<app type="division"><lem><lb/></lem></app>
+ us, is hidden - </l>
+                    <l>Immured the whole<app type="division"><lem><lb/></lem></app>
+ of Life </l>
+                    <l>Within a magic<app type="division"><lem><lb/></lem></app>
+ Prison</l>
+                    <l>We reprimand the<app type="division"><lem><lb/></lem></app>
+ Happiness </l>
+                    <l>That too <app type="emendation"><lem>com - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ petes</lem><rdg>competes</rdg></app>
+ with Heaven - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

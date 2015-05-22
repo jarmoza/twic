@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How many times these low feet staggered </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F238A">
+                <lg type="stanza">
+                    <l>How many times these low feet<app type="division"><lem><lb/></lem></app>
+ staggered -</l>
+                    <l>Only the soldered mouth can<app type="division"><lem><lb/></lem></app>
+ tell - </l>
+                    <l>Try - can you stir the awful<app type="division"><lem><lb/></lem></app>
+ rivet - </l>
+                    <l>Try - can you lift the hasps of steel!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Stroke the cool forehead - hot so<app type="division"><lem><lb/></lem></app>
+ often -</l>
+                    <l>Lift - if you care - the listless hair - </l>
+                    <l>Handle the adamantine fingers </l>
+                    <l>Never a thimble - more - shall<app type="division"><lem><lb/></lem></app>
+ wear - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Buzz the dull flies - on the<app type="division"><lem><lb/></lem></app>
+ chamber window - </l>
+                    <l>Brave - shines the sun through<app type="division"><lem><lb/></lem></app>
+ the freckled pane -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Fearless - the cobweb swings from<app type="division"><lem><lb/></lem></app>
+ the ceiling - </l>
+                    <l>Indolent Housewife - in Daisies - lain!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

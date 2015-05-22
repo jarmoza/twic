@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>At Half past Three, a single Bird 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1084">
+                <lg type="stanza">
+                    <l>At Half past Three, a single Bird</l>
+                    <l>Unto a silent Sky</l>
+                    <l>Propounded but a single term</l>
+                    <l>Of cautious melody.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>At Half past Four, Experiment</l>
+                    <l>Had subjugated test</l>
+                    <l>And lo, Her silver Principle</l>
+                    <l>Supplanted all the rest.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>At Half past Seven, Element</l>
+                    <l>Nor Implement, be seen --</l>
+                    <l>And Place was where the Presence was</l>
+                    <l>Circumference between.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

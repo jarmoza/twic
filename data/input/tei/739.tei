@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some work for immortality </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F536A">
+                <lg type="stanza">
+                    <l>Some - Work for Immortality -</l>
+                    <l>The Chiefer part, for Time - </l>
+                    <l>He - Compensates - immediately - </l>
+                    <l>The former - Checks - on Fame - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Slow Gold - but Everlasting -</l>
+                    <l>The Bullion of Today - </l>
+                    <l>Contrasted with the Currency </l>
+                    <l>Of Immortality - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Beggar - Here and There - </l>
+                    <l>Is gifted to discern</l>
+                    <l>Beyond the Broker's insight - </l>
+                    <l>One's - Money - One's - the Mine - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

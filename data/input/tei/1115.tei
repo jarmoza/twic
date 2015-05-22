@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Had I not this or this I said </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F828A">
+                <lg type="stanza">
+                    <l>Had I not This, or<app type="division"><lem><lb/></lem></app>
+ This, I said,</l>
+                    <l>Appealing to Myself, </l>
+                    <l>In moment of prosperity - </l>
+                    <l>Inadequate - were Life - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Thou hast not Me,<app type="division"><lem><lb/></lem></app>
+ nor Me&quot; - it said,</l>
+                    <l>In moment of Reverse - </l>
+                    <l>&quot;And yet Thou art<app type="division"><lem><lb/></lem></app>
+ industrious - </l>
+                    <l>No need - <app type="emendation"><lem>hadst</lem><rdg>had&#x27;st</rdg></app>
+ Thou - of us -&quot;?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>My need - was all I had -<app type="division"><lem><lb/></lem></app>
+ I said </l>
+                    <l>The need did not<app type="division"><lem><lb/></lem></app>
+ reduce -</l>
+                    <l>Because the food - exterminate - </l>
+                    <l>The hunger - does not cease -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But diligence - is sharper - </l>
+                    <l>Proportioned to the chance - </l>
+                    <l>To feed opon the<app type="division"><lem><lb/></lem></app>
+ Retrogade -</l>
+                    <l>Enfeebles - the Advance - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

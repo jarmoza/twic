@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Too cold is this </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1137A">
+                <lg type="stanza">
+                    <l>Too cold is this </l>
+                    <l>To warm with Sun - </l>
+                    <l>Too stiff to bended be.<app type="division"><lem><lb/></lem></app>
+  </l>
+                    <l>To joint this Agate<app type="division"><lem><lb/></lem></app>
+ were a work - </l>
+                    <l><add type="alternate" extent="">Beyond machinery -</add>
+<add type="alternate" extent="Outstaring">Defying - &amp;#x2022; Appalling - &amp;#x2022; Abashing</add>
+Outstaring Masonry -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How went the Agile<app type="division"><lem><lb/></lem></app>
+ Kernel out </l>
+                    <l>Contusion of the Husk </l>
+                    <l>Nor Rip, nor wrinkle<app type="division"><lem><lb/></lem></app>
+ indicate </l>
+                    <l>But just an Asterisk.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Visitor in Marl -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J391">
+                <lg type="stanza">
+                    <l>A Visitor in Marl --</l>
+                    <l>Who influences Flowers --</l>
+                    <l>Till they are orderly as Busts --</l>
+                    <l>And Elegant -- as Glass</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who visits in the Night --</l>
+                    <l>And just before the Sun --</l>
+                    <l>Concludes his glistening interview --</l>
+                    <l>Caresses -- and is gone --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But whom his fingers touched --</l>
+                    <l>And where his feet have run --</l>
+                    <l>And whatsoever Mouth he kissed --</l>
+                    <l>Is as it had not been --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

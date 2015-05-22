@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>That after Horror -- that &#x27;twas us 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J286">
+                <lg type="stanza">
+                    <l>That after Horror -- that 'twas us</l>
+                    <l>That passed the mouldering Pier --</l>
+                    <l>Just as the Granite Crumb let go --</l>
+                    <l>Our Savior, by a Hair --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A second more, had dropped too deep</l>
+                    <l>For Fisherman to plumb --</l>
+                    <l>The very profile of the Thought</l>
+                    <l>Puts Recollection numb --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The possibility -- to pass</l>
+                    <l>Without a Moment's Bell --</l>
+                    <l>Into Conjecture's presence --</l>
+                    <l>Is like a Face of Steel --</l>
+                    <l>That suddenly looks into our's</l>
+                    <l>With a metallic grin --</l>
+                    <l>The Cordiality of Death --</l>
+                    <l>Who <app type="revision"><lem>nails</lem><rdg>nails</rdg></app>
+drills his Welcome in --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

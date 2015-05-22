@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>HUNGER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-50">
+                <lg type="stanza">
+                    <l>I had been hungry all the years;</l>
+                    <l>My noon had come, to dine;</l>
+                    <l>I, trembling, drew the table near,</l>
+                    <l>And touched the curious wine.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'T was this on tables I had seen,</l>
+                    <l>When turning, hungry, lone,</l>
+                    <l>I looked in windows, for the wealth</l>
+                    <l>I could not hope to own.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I did not know the ample bread,</l>
+                    <l>'T was so unlike the crumb</l>
+                    <l>The birds and I had often shared</l>
+                    <l>In Nature's dining-room.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The plenty hurt me, 't was so new, </l>
+                    <l>Myself felt ill and odd,</l>
+                    <l>As berry of a mountain bush</l>
+                    <l>Transplanted to the road.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor was I hungry; so I found</l>
+                    <l>That hunger was a way</l>
+                    <l>Of persons outside windows,</l>
+                    <l>The entering takes away.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

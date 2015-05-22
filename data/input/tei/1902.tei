@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The worthlessness of earthly things </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1400A">
+                <lg type="stanza">
+                    <l>The worthlessness of<app type="division"><lem><lb/></lem></app>
+ Earthly things </l>
+                    <l>The<add type="alternate" extent="Sermon">Ditty</add>
+ Sermon is that<app type="division"><lem><lb/></lem></app>
+ Nature sings </l>
+                    <l>And then enforces<app type="division"><lem><lb/></lem></app>
+ their Delight </l>
+                    <l>Till<add type="alternate" extent="Zion is inordinate -">Rectitude is suffocate -</add>
+ Zion is inordinate - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

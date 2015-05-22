@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This consciousness that is aware </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F817B">
+                <lg type="stanza">
+                    <l>This Consciousness that<app type="division"><lem><lb/></lem></app>
+ is aware</l>
+                    <l>Of Neighbors and the Sun </l>
+                    <l>Will be the one aware<app type="division"><lem><lb/></lem></app>
+ of Death </l>
+                    <l>And that itself alone </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is traversing the interval</l>
+                    <l>Experience between </l>
+                    <l>And most profound<app type="division"><lem><lb/></lem></app>
+ experiment </l>
+                    <l>Appointed unto Men - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How adequate unto itself </l>
+                    <l>It's properties shall be</l>
+                    <l>Itself unto itself and None </l>
+                    <l>Shall make discovery - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Adventure most unto<app type="division"><lem><lb/></lem></app>
+ itself </l>
+                    <l>The Soul condemned to be -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Attended by a single<app type="division"><lem><lb/></lem></app>
+ Hound</l>
+                    <l>It's own identity.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

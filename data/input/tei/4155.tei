@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a solitude of space
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1695">
+                <lg type="stanza">
+                    <l>There is a solitude of space</l>
+                    <l>A solitude of sea</l>
+                    <l>A solitude of death, but these</l>
+                    <l>Society shall be</l>
+                    <l>Compared with that profounder site</l>
+                    <l>That polar privacy</l>
+                    <l>A soul admitted to itself --</l>
+                    <l>Finite Infinity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

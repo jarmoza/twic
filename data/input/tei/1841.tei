@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The rat is the concisest tenant </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1369B">
+                <lg type="stanza">
+                    <l>The Rat<app type="division"><lem><lb/></lem></app>
+ is the<app type="division"><lem><lb/></lem></app>
+ concisest<app type="division"><lem><lb/></lem></app>
+ Tenant.  </l>
+                    <l>He pays no<app type="division"><lem><lb/></lem></app>
+ Rent.  </l>
+                    <l>Repudiates <app type="division"><lem><lb/></lem></app>
+the Obligation - </l>
+                    <l>On Schemes<app type="division"><lem><lb/></lem></app>
+ intent </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Balking our<app type="division"><lem><lb/></lem></app>
+ Wit<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>To sound<app type="division"><lem><lb/></lem></app>
+ or circumvent - </l>
+                    <l>Hate cannot<app type="division"><lem><lb/></lem></app>
+ harm </l>
+                    <l>A Foe so<app type="division"><lem><lb/></lem></app>
+ reticent - </l>
+                    <l>Neither Decree<app type="division"><lem><lb/></lem></app>
+ prohibit him - </l>
+                    <l>Lawful as<app type="division"><lem><lb/></lem></app>
+ Equilibrium.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

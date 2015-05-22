@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Those fair - fictitious people </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F369A">
+                <lg type="stanza">
+                    <l>Those<add type="alternate" extent="fair">new</add>
+ fair - fictitious People -</l>
+                    <l>The Women - plucked away </l>
+                    <l>From our <add type="alternate" extent="familiar Lifetime">familiar notice</add>
+<add type="alternate" extent="familiar Lifetime">familiar fingers</add>
+familiar <add type="alternate" extent="Lifetime">address -</add>
+<add type="alternate" extent="Lifetime">gazing -</add>
+Lifetime -</l>
+                    <l>The Men of Ivory - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Those Boys and Girls, in Canvas -</l>
+                    <l>Who<add type="alternate" extent="stay">dwell</add>
+ stay opon the Wall </l>
+                    <l>In everlasting Keepsake - </l>
+                    <l><add type="alternate" extent="Can anybody tell?">Where are they - Can you tell -</add>
+Can anybody tell?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We trust - in places<app type="division"><lem><lb/></lem></app>
+ perfecter - </l>
+                    <l>Inheriting Delight</l>
+                    <l><add type="alternate" extent="Beyond"></add>
+Beyond our faint COnjecture -</l>
+                    <l>Our dizzy Estimate - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Remembering ourselves, we trust - </l>
+                    <l>Yet Blesseder - than we - </l>
+                    <l>Through Knowing - where we<app type="division"><lem><lb/></lem></app>
+ only<add type="alternate" extent="hope">guess</add>
+ hope -</l>
+                    <l><add type="alternate" extent="Receiving">beholding</add>
+Receiving - where we - pray -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Expectation - also - </l>
+                    <l>Anticipating us </l>
+                    <l>With transport, that would<app type="division"><lem><lb/></lem></app>
+ be a pain </l>
+                    <l>Except for Holiness -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Esteeming us - as Exile - </l>
+                    <l>Themself - admitted Home - </l>
+                    <l>Through<add type="alternate" extent="gentle">curious &amp;#x2022; &lt;u&gt;easy -&lt;/u&gt;</add>
+ gentle Miracle of<app type="division"><lem><lb/></lem></app>
+ Death - </l>
+                    <l>The Way ourself, must come - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

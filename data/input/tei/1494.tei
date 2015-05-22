@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A diamond on the hand </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1131A">
+                <lg type="stanza">
+                    <l>A Diamond on the Hand </l>
+                    <l>To Custom Common grown </l>
+                    <l>Subsides from it's significance </l>
+                    <l>The Gem were best unknown - </l>
+                    <l>Within a Seller's shrine</l>
+                    <l>How many sight and sigh </l>
+                    <l>And cannot, but are mad<add type="alternate" extent="with">for</add>
+ with fear </l>
+                    <l>That any other buy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

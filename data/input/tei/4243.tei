@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A wounded deer leaps highest,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-8">
+                <lg type="stanza">
+                    <l>A wounded deer leaps highest,</l>
+                    <l>I've heard the hunter tell;</l>
+                    <l>'T is but the ecstasy of death,</l>
+                    <l>And then the brake is still.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The smitten rock that gushes,</l>
+                    <l>The trampled steel that springs;</l>
+                    <l>A cheek is always redder</l>
+                    <l>Just where the hectic stings!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mirth is the mail of anguish,</l>
+                    <l>In which it cautions arm,</l>
+                    <l>Lest anybody spy the blood</l>
+                    <l>And "You're hurt" exclaim!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

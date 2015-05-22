@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Our little secrets slink away -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1326">
+                <lg type="stanza">
+                    <l>Our little secrets slink away --</l>
+                    <l>Beside God's <app type="revision"><lem>will</lem><rdg>will</rdg></app>
+shall not tell --</l>
+                    <l>He kept his word a Trillion years</l>
+                    <l>And might we not as well --</l>
+                    <l>But for the niggardly delight</l>
+                    <l>To make each other stare</l>
+                    <l>Is there no sweet beneath the sun</l>
+                    <l>With this that may compare --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

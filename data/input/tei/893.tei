@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I started early - took my dog </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F656A">
+                <lg type="stanza">
+                    <l>I started Early - Took my<app type="division"><lem><lb/></lem></app>
+ Dog -</l>
+                    <l>And visited the Sea - </l>
+                    <l>The Mermaids in the Basement </l>
+                    <l>Came out to look at me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Frigates - in the Upper<app type="division"><lem><lb/></lem></app>
+ Floor</l>
+                    <l>Extended Hempen Hands - </l>
+                    <l>Presuming Me to be a Mouse - </l>
+                    <l>Aground - opon the Sands - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But no Man moved Me -<app type="division"><lem><lb/></lem></app>
+ till the Tide </l>
+                    <l>Went past my simple Shoe -</l>
+                    <l>And past my Apron - and<app type="division"><lem><lb/></lem></app>
+ my Belt </l>
+                    <l>And past my Boddice - too - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And made as He would eat<app type="division"><lem><lb/></lem></app>
+ me up -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>As wholly as a Dew </l>
+                    <l>Opon a Dandelion's Sleeve -</l>
+                    <l>And then - I started - too - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And He - He followed - close<app type="division"><lem><lb/></lem></app>
+ behind - </l>
+                    <l>I felt His Silver Heel </l>
+                    <l>Opon my Ancle - Then My<app type="division"><lem><lb/></lem></app>
+ Shoes </l>
+                    <l>Would overflow with Pearl -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Until We met the Solid<app type="division"><lem><lb/></lem></app>
+ Town - </l>
+                    <l>No<add type="alternate" extent="One">man -</add>
+ One He seemed to know - </l>
+                    <l>And bowing - with a<app type="division"><lem><lb/></lem></app>
+ Mighty look - </l>
+                    <l>At me - The Sea withdrew - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

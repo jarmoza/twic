@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No passenger was known to flee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1451C">
+                <lg type="stanza">
+                    <l>No Passenger<app type="division"><lem><lb/></lem></app>
+ was known to<app type="division"><lem><lb/></lem></app>
+ flee - </l>
+                    <l>That lodged<app type="division"><lem><lb/></lem></app>
+ a Night in<app type="division"><lem><lb/></lem></app>
+ memory - </l>
+                    <l>That wily -<app type="division"><lem><lb/></lem></app>
+ subterranean Inn<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Contrives that<app type="division"><lem><lb/></lem></app>
+ none go out<app type="division"><lem><lb/></lem></app>
+ again - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

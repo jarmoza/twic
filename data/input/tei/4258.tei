@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>UNRETURNING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-23">
+                <lg type="stanza">
+                    <l>'T was such a little, little boat</l>
+                    <l>That toddled down the bay!</l>
+                    <l>'T was such a gallant, gallant sea</l>
+                    <l>That beckoned it away!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'T was such a greedy, greedy wave</l>
+                    <l>That licked it from the coast;</l>
+                    <l>Nor ever guessed the stately sails</l>
+                    <l>My little craft was lost!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

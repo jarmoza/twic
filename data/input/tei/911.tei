@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A tongue to tell him I am true! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F673A">
+                <lg type="stanza">
+                    <l>A Tongue - to tell Him<app type="division"><lem><lb/></lem></app>
+ I am true!</l>
+                    <l>It's fee - to be of Gold - </l>
+                    <l>Had Nature - in Her<app type="division"><lem><lb/></lem></app>
+ monstrous House </l>
+                    <l>A single Ragged Child - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To earn a Mine - would run</l>
+                    <l>That Interdicted Way, </l>
+                    <l>And tell Him - Charge<app type="division"><lem><lb/></lem></app>
+ Thee speak it plain - </l>
+                    <l>That so far - Truth is True?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And answer What I do - </l>
+                    <l>Beginning with the Day</l>
+                    <l>That Night - begun - </l>
+                    <l>Nay - Midnight - 'twas - </l>
+                    <l>Since Midnight - happened - say - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If once more - Pardon - Boy - </l>
+                    <l>The Magnitude thou may<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Enlarge my Message - If too<app type="division"><lem><lb/></lem></app>
+ vast </l>
+                    <l>Another Lad - help Thee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thy Pay - in Diamonds - be - </l>
+                    <l>And His - in solid Gold - </l>
+                    <l>Say Rubies - if He hesitate -</l>
+                    <l>My Message - must be told - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Say - last I said - was This - </l>
+                    <l>That when the Hills - come<app type="division"><lem><lb/></lem></app>
+ down - </l>
+                    <l>And hold no higher than<app type="division"><lem><lb/></lem></app>
+ the Plain - </l>
+                    <l>My Bond - have just begun -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the Heavens - disband - </l>
+                    <l>And Deity conclude - </l>
+                    <l>Then - look for me - Be sure<app type="division"><lem><lb/></lem></app>
+ you say - </l>
+                    <l>Least Figure - on the Road - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

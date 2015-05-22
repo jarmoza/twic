@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some days retired from the rest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1169A">
+                <lg type="stanza">
+                    <l>Some Days<app type="division"><lem><lb/></lem></app>
+ retired from<app type="division"><lem><lb/></lem></app>
+ the rest </l>
+                    <l>In soft<app type="division"><lem><lb/></lem></app>
+ distinction lie </l>
+                    <l>The Day that<app type="division"><lem><lb/></lem></app>
+ a Companion<app type="division"><lem><lb/></lem></app>
+ came </l>
+                    <l>Or was obliged<app type="division"><lem><lb/></lem></app>
+ to die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

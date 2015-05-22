@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The day grew small, surrounded tight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1164B">
+                <lg type="stanza">
+                    <l>The Day grew<app type="division"><lem><lb/></lem></app>
+ small, surrounded<app type="division"><lem><lb/></lem></app>
+ tight </l>
+                    <l>By early, stooping<app type="division"><lem><lb/></lem></app>
+ Night - </l>
+                    <l>The Afternoon in<app type="division"><lem><lb/></lem></app>
+ Evening deep </l>
+                    <l>It's Yellow shortness<app type="division"><lem><lb/></lem></app>
+ dropt - </l>
+                    <l>The Winds went<app type="division"><lem><lb/></lem></app>
+ out their martial<app type="division"><lem><lb/></lem></app>
+ ways</l>
+                    <l>The Leaves obtained<app type="division"><lem><lb/></lem></app>
+ excuse - </l>
+                    <l>November hung<app type="division"><lem><lb/></lem></app>
+ his Granite Hat </l>
+                    <l>Opon a nail<app type="division"><lem><lb/></lem></app>
+ of Plush - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

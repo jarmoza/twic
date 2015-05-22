@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This slow day moved along </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1198A">
+                <lg type="stanza">
+                    <l>This slow Day moved<app type="division"><lem><lb/></lem></app>
+ along - </l>
+                    <l>I heard it's axles<app type="division"><lem><lb/></lem></app>
+ go </l>
+                    <l>As if they could not<app type="division"><lem><lb/></lem></app>
+ hoist themselves </l>
+                    <l>They hated motion so - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I told my soul to<app type="division"><lem><lb/></lem></app>
+ come -</l>
+                    <l>It was no use to wait - </l>
+                    <l>We went and played<app type="division"><lem><lb/></lem></app>
+ and came again </l>
+                    <l>And it was out of sight </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not any higher stands the grave </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1214B">
+                <lg type="stanza">
+                    <l>Not any<app type="division"><lem><lb/></lem></app>
+ higher stands<app type="division"><lem><lb/></lem></app>
+ the Grave </l>
+                    <l>For Heroes<app type="division"><lem><lb/></lem></app>
+ than for<app type="division"><lem><lb/></lem></app>
+ Men - </l>
+                    <l>Not any<app type="division"><lem><lb/></lem></app>
+ nearer for<app type="division"><lem><lb/></lem></app>
+ the Child </l>
+                    <l>Than numb<app type="division"><lem><lb/></lem></app>
+ Three score<app type="division"><lem><lb/></lem></app>
+ and Ten - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>This latest<app type="division"><lem><lb/></lem></app>
+ Leisure equal<app type="division"><lem><lb/></lem></app>
+ lulls<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>The Beggar<app type="division"><lem><lb/></lem></app>
+ and his Queen </l>
+                    <l>Propitiate this<app type="division"><lem><lb/></lem></app>
+ Democrat </l>
+                    <l>A Summer's<app type="division"><lem><lb/></lem></app>
+ Afternoon - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

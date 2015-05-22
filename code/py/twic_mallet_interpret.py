@@ -1,5 +1,6 @@
 import json
 import time
+import os
 
 import jensen_shannon
 
@@ -90,7 +91,7 @@ class TWiC_MalletInterpret:
         return file_wordtopic_map, line_wordtopic_map
 
     @staticmethod
-    def ConvertTextToJSON(text, json_output_directory, state_file_data=None):
+    def ConvertTextToJSON(text, json_output_directory, mallet_script, state_file_data=None):
 
         json_data = { "document" : {} }
 
@@ -118,7 +119,8 @@ class TWiC_MalletInterpret:
             return
 
         # Get topic word indexes for this text
-        filepath = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/source/plaintext/' + text.GetFilename() + ".txt"
+        # filepath = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/source/plaintext/' + text.GetFilename() + ".txt"
+        filepath = mallet_script.corpus_source_dir + text.GetFilename() + ".txt"
         file_wordtopic_map, line_wordtopic_map = TWiC_MalletInterpret.Build_WordTopicFileIndices(filepath, state_file_data)
 
         line_index = 0
@@ -158,7 +160,7 @@ class TWiC_MalletInterpret:
         #    b. Optimization question - Can we trim further than O(n^2) - n?
         #    c. Once all comparisons are done we have an N * N array of probability distribution distances.
         # 3. Clustering parametrization becomes a question.
-        #    a. How many documents should cluster toward the a topic proportion composition standard?
+        #    a. How many documents should cluster toward the topic proportion composition standard?
         #       But is this really a question?  Let's look at clustering algorithms...
         #    b. Take the smallest distance for each file and assign it to a list of size N, representing the list
         #       of potential clusters (and also, it happens topics).
@@ -284,7 +286,7 @@ class TWiC_MalletInterpret:
         return clusters_json
 
     @staticmethod
-    def Build_CorpusMapJSON(corpus_name, corpus_topics, file_topic_proportions, output_dir, cluster_distance_filename):
+    def Build_CorpusMapJSON(corpus_name, corpus_topics, file_topic_proportions, output_dir):
 
         '''
           TWiC JSON Hierarchy: Corpus -> Clusters -> Texts
@@ -381,8 +383,8 @@ class TWiC_MalletInterpret:
         twic_corpus_map["distance2ideal"] = distances_to_ideal[0][1]
 
         # 2. Now work on defining the cluster level JSON
-        cluster_distance_file = open(output_dir + cluster_distance_filename, 'r')
-        cluster_distance_data = json.load(cluster_distance_file)
+        # cluster_distance_file = open(output_dir + cluster_distance_filename, 'r')
+        # cluster_distance_data = json.load(cluster_distance_file)
 
         # Determine topic clusters of the corpus
         clusters_json = TWiC_MalletInterpret.DetermineCorpusClusters(file_topic_proportions, corpus_topic_proportions)
@@ -440,10 +442,10 @@ class TWiC_MalletInterpret:
             output_file.write(json.dumps(twic_corpus_map))
 
     @staticmethod
-    def Build_HTMLandJSONForText(text, output_dir, css_filename, current_tp, fwt_collection, topic_keys, color_list):
+    def Build_HTMLandJSONForText(text, output_dir, css_filename, current_tp, fwt_collection, topic_keys, color_list, mallet_script):
 
         file_id = text.GetFilename()
-        output_html = open(output_dir + file_id + '.html', 'w')
+        output_html = open(output_dir + "html/" + file_id + '.html', 'w')
         output_html.write('<html>\n')
         output_html.write('\t<head>\n')
         output_html.write('\t\t<link rel="stylesheet" type="text/css" href="{0}">\n'.format(css_filename))
@@ -468,7 +470,7 @@ class TWiC_MalletInterpret:
                 break
 
         # Convert text to JSON readable by the high-level TWiC visualization
-        TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir, current_fwt)
+        TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json/texts/", mallet_script, current_fwt)
 
         # Read in the plain text file
         input_file = open(current_tp.filename, 'r')
@@ -609,19 +611,25 @@ class TWiC_MalletInterpret:
         json_output[corpus_info][CI_CorpusTitle] = corpus_title
         json_output[corpus_info][CI_TopicProportions] = [topic_keys.corpus_topic_proportions[str(topic_index)]
                                                          for topic_index in range(topic_count)]
-        json_output[topic_info] = [[topic_keys.corpus_topic_words[str(topic_index)], color_list[topic_index]]
-                                   for topic_index in range(topic_count)]
+        json_output[topic_info] = [[topic_keys.corpus_topic_words[str(topic_index)] for topic_index in range(topic_count)],
+                                   [color_list[topic_index] for topic_index in range(topic_count)]]
+
+        # print "COLOR LIST COMPLETION"
+        # print [color_list[topic_index] for topic_index in range(topic_count)]
 
         # Fill out file_info
         for tp in tp_collection:
             json_output[file_info][tp.fileid] = []
             json_output[file_info][tp.fileid] = [0 for index in range(FI_FieldCount)]
-            json_output[file_info][tp.fileid][FI_Filename] = tp.filename
+            # json_output[file_info][tp.fileid][FI_Filename] = tp.filename
+            json_output[file_info][tp.fileid][FI_Filename] = Mallet_InterpretUtils.GetFilename(tp.filename)
+            print "Filename: {0}".format(json_output[file_info][tp.fileid][FI_Filename])
             json_output[file_info][tp.fileid][FI_TopicProportions] = []
             for topic_index in range(0, topic_count):
                 json_output[file_info][tp.fileid][FI_TopicProportions].append(tp.topic_guide[str(topic_index)])
         for text in text_collection:
             text_filename = text.GetFilename()
+            print "text_filename: {0}".format(text_filename)
             for fileid in json_output[file_info].keys():
                 if text_filename == json_output[file_info][fileid][FI_Filename]:
                     json_output[file_info][fileid][FI_TextTitle] = text.GetTitle()
@@ -640,7 +648,8 @@ class TWiC_MalletInterpret:
 
         print 'Interpreting MALLET output for visualization...'
 
-        myoutput_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/myviz-output/'
+        # myoutput_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/myviz-output/'
+        myoutput_dir = '../../data/input/'
 
         print '\tReading in MALLET output...'
 
@@ -688,22 +697,22 @@ class TWiC_MalletInterpret:
                     current_tp = tp
                     break
             TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
-                                     current_tp, fwt_collection, topic_keys, color_list)
+                                     current_tp, fwt_collection, topic_keys, color_list, mallet_script)
 
         ###### 7. Build JSON files for visualization
 
         print '\tBuilding JSON map files for TWiC visualization...'
 
         # Build a json that shows the hierarchy of Corpus -> Text clusters -> Texts based on Jensen-Shannon Distance
-        TWiC_MalletInterpret.Build_CorpusMapJSON(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir, 'clusters.json')
+        TWiC_MalletInterpret.Build_CorpusMapJSON(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
 
         # Output a JSON of the topic-color list
-        TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir)
+        TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir + "json/")
 
         # Generate topic list JSON based on the used_topics_list
-        TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir)
+        TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir + "json/")
 
         # New JSON format for client side
-        TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir)
+        TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir + "json/")
 
 

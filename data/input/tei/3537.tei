@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These are the Signs to Nature&#x27;s Inns -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1077">
+                <lg type="stanza">
+                    <l>These are the Signs to Nature's Inns --</l>
+                    <l>Her invitation broad</l>
+                    <l>To Whosoever famishing</l>
+                    <l>To taste her mystic Bread --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>These are the rites of Nature's House --</l>
+                    <l>The Hospitality</l>
+                    <l>That opens with an equal width</l>
+                    <l>To Beggar and to Bee</l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Sureties of her staunch Estate</l>
+                    <l>Her undecaying Cheer</l>
+                    <l>The Purple in the East is set</l>
+                    <l>And in the North, the Star --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

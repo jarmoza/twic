@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SUMMER&#x27;S OBSEQUIES</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-120">
+                <lg type="stanza">
+                    <l>The gentian weaves her fringes,</l>
+                    <l>The maple's loom is red.</l>
+                    <l>My departing blossoms</l>
+                    <l>Obviate parade.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A brief, but patient illness,</l>
+                    <l>An hour to prepare;</l>
+                    <l>And one, below this morning,</l>
+                    <l>Is where the angels are.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It was a short procession, </l>
+                    <l>The bobolink was there,</l>
+                    <l>An aged bee addressed us,</l>
+                    <l>And then we knelt in prayer.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We trust that she was willing, </l>
+                    <l>We ask that we may be.</l>
+                    <l>Summer, sister, seraph,</l>
+                    <l>Let us go with thee!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In the name of the bee</l>
+                    <l>And of the butterfly</l>
+                    <l>And of the breeze, amen!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

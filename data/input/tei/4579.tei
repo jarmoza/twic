@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To lose thee, sweeter than to gain</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-63">
+                <lg type="stanza">
+                    <l>To lose thee, sweeter than to gain</l>
+                    <l>All other hearts I knew.</l>
+                    <l>'T is true the drought is destitute,</l>
+                    <l>But then I had the dew!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Caspian has its realms of sand,</l>
+                    <l>Its other realm of sea;</l>
+                    <l>Without the sterile perquisite</l>
+                    <l>No Caspian could be.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

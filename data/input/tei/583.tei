@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mine by the right of the white election! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F411A">
+                <lg type="stanza">
+                    <l><add type="alternate" extent="Mine - by the Right of the White Election!"></add>
+Mine - by the Right of the White Election!</l>
+                    <l>Mine - by the Royal Seal!  </l>
+                    <l>Mine - by the sign in<app type="division"><lem><lb/></lem></app>
+ the Scarlet prison - </l>
+                    <l>Bars - cannot conceal!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mine - here - in Vision - and<app type="division"><lem><lb/></lem></app>
+ in Veto!</l>
+                    <l>Mine - by the Grave's Repeal - </l>
+                    <l>Titled - Confirmed - </l>
+                    <l><add type="alternate" extent="Delirious Charter!">Good affidavit -</add>
+Delirious Charter!</l>
+                    <l>Mine -<add type="alternate" extent="long as">while</add>
+ long as Ages steal!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

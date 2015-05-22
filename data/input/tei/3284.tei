@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Wind begun to knead the Grass -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J824">
+                <lg type="stanza">
+                    <l>The Wind begun to knead the Grass --</l>
+                    <l>As Women do a Dough --</l>
+                    <l>He flung a Hand full at the Plain --</l>
+                    <l>A Hand full at the Sky --</l>
+                    <l>The Leaves unhooked themselves from Trees --</l>
+                    <l>And started all abroad --</l>
+                    <l>The Dust did scoop itself like Hands --</l>
+                    <l>And throw away the Road --</l>
+                    <l>The Wagons quickened on the Street --</l>
+                    <l>The Thunders gossiped low --</l>
+                    <l>The Lightning showed a Yellow Head --</l>
+                    <l>And then a livid Toe --</l>
+                    <l>The Birds put up the Bars to Nests --</l>
+                    <l>The Cattle flung to Barns --</l>
+                    <l>Then came one drop of Giant Rain --</l>
+                    <l>And then, as if the Hands</l>
+                    <l>That held the Dams -- had parted hold --</l>
+                    <l>The Waters Wrecked the Sky --</l>
+                    <l>But overlooked my Father's House --</l>
+                    <l>Just Quartering a Tree --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>first version</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Wind begun to rock the Grass</l>
+                    <l>With threatening Tunes and low --</l>
+                    <l>He threw a Menace at the Earth --</l>
+                    <l>A Menace at the Sky.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Leaves unhooked themselves from Trees --</l>
+                    <l>And started all abroad</l>
+                    <l>The Dust did scoop itself like Hands</l>
+                    <l>And threw away the Road.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Wagons quickened on the Streets</l>
+                    <l>The Thunder hurried slow --</l>
+                    <l>The Lightning showed a Yellow Beak</l>
+                    <l>And then a livid Claw.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Birds put up the Bars to Nests --</l>
+                    <l>The Cattle fled to Barns --</l>
+                    <l>There came one drop of Giant Rain</l>
+                    <l>And then as if the Hands</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That held the Dams had parted hold</l>
+                    <l>The Waters Wrecked the Sky,</l>
+                    <l>But overlooked my Father's House --</l>
+                    <l>Just quartering a Tree --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>second version</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To see her is a picture </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1597C">
+                <lg type="stanza">
+                    <l>To see her<app type="division"><lem><lb/></lem></app>
+ is a Picture - </l>
+                    <l>To hear her is<app type="division"><lem><lb/></lem></app>
+ a Tune - </l>
+                    <l>To know her<app type="division"><lem><lb/></lem></app>
+ an Intemperance </l>
+                    <l>As innocent as<app type="division"><lem><lb/></lem></app>
+ June - </l>
+                    <l>To know her<app type="division"><lem><lb/></lem></app>
+ not - Affliction -</l>
+                    <l>To own her for<app type="division"><lem><lb/></lem></app>
+ a Friend </l>
+                    <l>A warmth as near<app type="division"><lem><lb/></lem></app>
+ as if the Sun </l>
+                    <l>Were shining in <app type="emendation"><lem>your &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ - Hand</lem><rdg>your Hand</rdg></app>
+ - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

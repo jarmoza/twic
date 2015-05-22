@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>They wont frown always - some sweet day </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F923B">
+                <lg type="stanza">
+                    <l>They wont frown always -<app type="division"><lem><lb/></lem></app>
+ some sweet Day</l>
+                    <l>When I forget to teaze - </l>
+                    <l>They'll recollect how<app type="division"><lem><lb/></lem></app>
+ cold I looked </l>
+                    <l>And how I just<app type="division"><lem><lb/></lem></app>
+ said &quot;Please&quot;.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then They will hasten<app type="division"><lem><lb/></lem></app>
+ to the Door</l>
+                    <l>To call the little Girl </l>
+                    <l>Who cannot thank<app type="division"><lem><lb/></lem></app>
+ Them for the Ice </l>
+                    <l>That filled the lisping<app type="division"><lem><lb/></lem></app>
+ full.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

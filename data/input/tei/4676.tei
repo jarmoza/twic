@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CHARLOTTE BRONT&#x27;S GRAVE.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-160">
+                <lg type="stanza">
+                    <l>CHARLOTTE BRONT'S GRAVE.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>All overgrown by cunning moss,</l>
+                    <l>All interspersed with weed,</l>
+                    <l>The little cage of 'Currer Bell,'</l>
+                    <l>In quiet Haworth laid.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This bird, observing others,</l>
+                    <l>When frosts too sharp became,</l>
+                    <l>Retire to other latitudes,</l>
+                    <l>Quietly did the same,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But differed in returning;</l>
+                    <l>Since Yorkshire hills are green,</l>
+                    <l>Yet not in all the nests I meet</l>
+                    <l>Can nightingale be seen.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Gathered from many wanderings,</l>
+                    <l>Gethsemane can tell</l>
+                    <l>Through what transporting anguish</l>
+                    <l>She reached the asphodel!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Soft fall the sounds of Eden</l>
+                    <l>Upon her puzzled ear;</l>
+                    <l>Oh, what an afternoon for heaven,</l>
+                    <l>When 'Bronte' entered there!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

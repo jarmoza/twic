@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A doubt if it be us </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F903A">
+                <lg type="stanza">
+                    <l>A Doubt if it be Us</l>
+                    <l>Assists the staggering<app type="division"><lem><lb/></lem></app>
+ Mind </l>
+                    <l>In an extremer Anguish </l>
+                    <l>Until it footing find - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>An Unreality is lent,</l>
+                    <l>A merciful Mirage </l>
+                    <l>That makes the<app type="division"><lem><lb/></lem></app>
+ living possible </l>
+                    <l>While it suspends<app type="division"><lem><lb/></lem></app>
+ the lives.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

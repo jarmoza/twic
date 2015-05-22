@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A narrow fellow in the grass </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1096A">
+                <lg type="stanza">
+                    <l>A narrow fellow in the grass </l>
+                    <l>Occasionally rides; </l>
+                    <l>You may have met himdid you <app type="emendation"><lem>not?</lem><rdg>not</rdg></app>
+ </l>
+                    <l>His notice instant is, </l>
+                    <l>The grass divides as with a comb,</l>
+                    <l>A spotted shaft is seen, </l>
+                    <l>And then it closes at your feet, </l>
+                    <l>And opens further on.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He likes a boggy acre, </l>
+                    <l>A floor too cool for corn,</l>
+                    <l>Yet when a boy and barefoot, </l>
+                    <l>I more than once at noon </l>
+                    <l>Have passed, I thought, a <app type="emendation"><lem>whip-lash</lem><rdg>whip lash</rdg></app>
+, </l>
+                    <l>Unbraiding in the sun, </l>
+                    <l>When stooping to secure it,</l>
+                    <l>It wrinkled and was gone.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Several of nature's people </l>
+                    <l>I know, and they know me; </l>
+                    <l>I feel for them a transport </l>
+                    <l>Of cordiality.</l>
+                    <l>Yet never met this fellow, </l>
+                    <l>Attended or alone, </l>
+                    <l>Without a tighter breathing, </l>
+                    <l>And zero at the bone.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

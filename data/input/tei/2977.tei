@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He parts Himself -- like Leaves -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J517">
+                <lg type="stanza">
+                    <l>He parts Himself -- like Leaves --</l>
+                    <l>And then -- He closes up --</l>
+                    <l>Then stands upon the Bonnet</l>
+                    <l>Of Any Buttercup</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then He runs against</l>
+                    <l>And <app type="revision"><lem>overturns</lem><rdg>overturns</rdg></app>
+oversets a Rose --</l>
+                    <l>And then does Nothing --</l>
+                    <l>Then away upon a Jib -- He goes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And dangles like a Mote</l>
+                    <l>Suspended in the Noon --</l>
+                    <l>Uncertain -- to return Below --</l>
+                    <l>Or settle in the Moon --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What come of Him -- at Night --</l>
+                    <l>The privilege to say</l>
+                    <l>Be limited by Ignorance --</l>
+                    <l>What come of Him -- That Day</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Frost -- <app type="revision"><lem>obtain the</lem><rdg>obtain the</rdg></app>
+possess the World --</l>
+                    <l>In Cabinets -- be shown --</l>
+                    <l>A Sepulchre of quaintest Floss --</l>
+                    <l>An Abbey -- a Cocoon --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

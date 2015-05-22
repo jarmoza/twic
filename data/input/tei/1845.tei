@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A dew sufficed itself </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1372A">
+                <lg type="stanza">
+                    <l>A Dew sufficed<app type="division"><lem><lb/></lem></app>
+ itself </l>
+                    <l>And satisfied a Leaf </l>
+                    <l>And thought, how vast<app type="division"><lem><lb/></lem></app>
+ a Destiny - </l>
+                    <l>How trivial is Life.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun went out<app type="division"><lem><lb/></lem></app>
+ to work</l>
+                    <l>The Day went out to<app type="division"><lem><lb/></lem></app>
+ play </l>
+                    <l>And not again that<app type="division"><lem><lb/></lem></app>
+ Dew be seen </l>
+                    <l>By Physiognomy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whether by Day abducted </l>
+                    <l>Or Emptied by the sun</l>
+                    <l>Into the Sea in passing, </l>
+                    <l>Eternally Unknown - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

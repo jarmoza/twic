@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How happy I was if I could forget </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1080A">
+                <lg type="stanza">
+                    <l>How happy I was if<app type="division"><lem><lb/></lem></app>
+ I could forget</l>
+                    <l>To remember how sad<app type="division"><lem><lb/></lem></app>
+ I am </l>
+                    <l>Would be an easy<app type="division"><lem><lb/></lem></app>
+ adversity </l>
+                    <l>But the recollecting<app type="division"><lem><lb/></lem></app>
+ of Bloom </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Keeps making November<app type="division"><lem><lb/></lem></app>
+ difficult</l>
+                    <l>Till I who was almost<app type="division"><lem><lb/></lem></app>
+ bold </l>
+                    <l>Lose my way like a<app type="division"><lem><lb/></lem></app>
+ little Child </l>
+                    <l>And perish of the cold.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>
