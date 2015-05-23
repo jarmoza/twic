@@ -56,6 +56,7 @@ class TWiC_MalletInterpret:
         for line in data:
 
             words = line.split(' ')
+            words[:] = [word for word in words if len(word) > 0]
 
             # Add an entry to the line map
             line_wordtopic_map.append([line, []])
@@ -69,12 +70,15 @@ class TWiC_MalletInterpret:
                 # Lowercase only for comparison
                 lowercase_word = clean_word(words[actual_word_index].lower())
 
+                # NOTE: Condition includes workaround for MALLET regex/punctuation issue with import-dir
                 if statefile_word_index < len(current_fwt.word_info) and \
-                   lowercase_word == lowercase_state_word:
+                   (lowercase_word == lowercase_state_word)
+                   # or ("\'" in words[actual_word_index].lower() and lowercase_word != lowercase_state_word)):
 
                     statefile_word_index += 1
 
                     if statefile_word_index < len(current_fwt.word_info):
+
                         lowercase_state_word = clean_word(current_fwt.word_info[statefile_word_index].word.lower())
 
                         # Add an entry for this word in the file and line maps for this topic
@@ -86,7 +90,6 @@ class TWiC_MalletInterpret:
                     # Add a blank entry (-1) for this word in the file and line maps for this word
                     line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(-1)
                     file_wordtopic_map.append(-1)
-
 
         return file_wordtopic_map, line_wordtopic_map
 

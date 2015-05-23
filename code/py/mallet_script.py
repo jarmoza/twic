@@ -3,6 +3,7 @@ import subprocess
 import os
 import sys
 import string
+import glob
 from numpy.linalg import norm
 from mallet_interpret_utils import Mallet_InterpretUtils
 clean_word = Mallet_InterpretUtils.CleanWord
@@ -16,6 +17,8 @@ class MalletScript:
         self.corpus_source_dir = ''
         self.tei_source = ''
         self.output_dir = ''
+        self.stopwords_dir = ''
+        self.extra_stopwords_file = ''
         self.lda_dir = ''
         self.script_dir = ''
         self.num_topics = ''
@@ -50,6 +53,56 @@ class MalletScript:
         if os.path.isfile(self.keys_file):
             os.unlink(self.keys_file)
 
+    def CreateParticleStopwordList(self, input_path, output_path, min_particle_length=10, output_filename="particle_stopwords.txt"):
+
+        # Save the extra stopwords filename
+        self.extra_stopwords_file = output_filename
+
+        words_with_punct = []
+        all_particles = []
+
+        for input_filename in glob.glob(input_path + "*.txt"):
+
+            input_file = open(input_filename, "r")
+            input_data = input_file.readlines()
+
+            # Gather all words in this file with punctuation inside of them
+            for line in input_data:
+
+                words = line.lower().strip().split(" ")
+                for word in words:
+
+                    if len(word):
+
+                        stripped_word = word.strip().strip(string.punctuation)
+                        if any((c in string.punctuation) for c in stripped_word):
+                            if stripped_word not in words_with_punct:
+                                words_with_punct.append(stripped_word)
+
+            # Determine all unique particles (split by punctuation) in this file
+            for word in words_with_punct:
+
+                current_particles = []
+                for c in word:
+                    if c not in string.punctuation:
+                        current_particles.append(c)
+                    else:
+                        if len(current_particles):
+                            current_str = "".join(current_particles)
+                            if current_str not in all_particles:
+                                all_particles.append(current_str)
+                            current_particles = []
+
+        # Output file a stopwords file containing particles under the given minimum length
+        with open(output_path + output_filename, "w") as output_file:
+            interim_list = []
+            for particle in all_particles:
+                if len(particle) < min_particle_length:
+                    interim_list.append(particle)
+            interim_list.sort()
+            for particle in interim_list:
+                output_file.write(particle + "\n")
+
     def ImportDir(self):
 
         print '\tImporting files...'
@@ -64,7 +117,9 @@ class MalletScript:
             '--output',
             self.mallet_file,
             '--keep-sequence',
-            '--remove-stopwords'
+            '--remove-stopwords',
+            '--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
+            # '--token-regex \"[\p{L}\p{P}]*\p{L}\"'
         ]
         subprocess.check_call(args, stdout=sys.stdout)
 
@@ -109,6 +164,7 @@ class MalletScript:
 
         print 'Running MALLET...'
 
+        self.CreateParticleStopwordList(self.corpus_source_dir, self.stopwords_dir)
         self.ImportDir()
         self.TrainTopics()
         if decompress_state_file:

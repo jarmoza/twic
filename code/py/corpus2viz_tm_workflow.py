@@ -25,6 +25,7 @@ def CreateMallet():
     mallet_script.corpus_name = 'dickinson'
     # mallet_script.output_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/mallet-output/'
     mallet_script.output_dir = '../../data/output/mallet/'
+    mallet_script.stopwords_dir = '../../data/output/stopwords/'
     mallet_script.lda_dir = '/Users/PeregrinePickle/mallet-2.0.7/'
     mallet_script.script_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/scripts/'
     mallet_script.num_topics = '100'

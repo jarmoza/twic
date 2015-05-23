@@ -1733,7 +1733,7 @@ var TWiC = (function(namespace){
     });
 
     namespace.TopicBar.prototype.s_svgSize = { "width":1280, "height":165 };
-    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1415, "yIncrement":30, "fontSize":20 };
+    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1405, "yIncrement":30, "fontSize":20 };
 
 
     // Shows individual cluster and text information tiles (TWiC.DocumentTiles)
