@@ -13,26 +13,26 @@
         var divName = "dickinson"; // NOTE: This needs to be added to twic_corpusinfo.json from serverside
 
         var topicBar0 = new TWiC.TopicBar({x:0, y:635}, // Position
-                                         {width:1055, height:165}, // Size
+                                         {width:1275, height:165}, // Size
                                          divName + "0", // Name
                                          twicLevel, []); // Level and linked view(s)
         infoViews.push(topicBar0);
 
         var corpusView = new TWiC.CorpusView({x:0,y:0}, // Position
-                                             {width:1055,height:635}, // Size
+                                             {width:1275,height:635}, // Size
                                              divName, // Name
                                              twicLevel, [{panel:topicBar0, update:"mouseover"}]);
         graphViews.push(corpusView);
 
 
-        var topicBar1 = new TWiC.TopicBar({x:1056, y:635}, // Position
-                                         {width:1055, height:165}, // Size
+        var topicBar1 = new TWiC.TopicBar({x:1276, y:635}, // Position
+                                         {width:1275, height:165}, // Size
                                          divName + "1", // Name
                                          twicLevel, []); // Level and linked view(s)
         infoViews.push(topicBar1);
 
-        var corpusClusterView = new TWiC.CorpusClusterView({ "x":1056, "y":0 }, // Position
-                                                           { "width":1055, "height":635}, // Size
+        var corpusClusterView = new TWiC.CorpusClusterView({ "x":1276, "y":0 }, // Position
+                                                           { "width":1275, "height":635}, // Size
                                                            divName, // Name
                                                            twicLevel, [{panel:topicBar1, update:"mouseover"}]); // Level and linked view(s)
         graphViews.push(corpusClusterView);
@@ -43,15 +43,15 @@
         topicBar1.m_linkedViews.push({panel:corpusClusterView, update:"click"});
 
 
-        var topicBar2 = new TWiC.TopicBar({x:2112, y:635}, // Position
-                                         {width:1055, height:165}, // Size
+        var topicBar2 = new TWiC.TopicBar({x:2552, y:635}, // Position
+                                         {width:1275, height:165}, // Size
                                          divName + "2", // Name
                                          twicLevel, []); // Level and linked view(s)
         infoViews.push(topicBar2);
 
 
-        var textClusterView = new TWiC.TextClusterView({ "x":2112, "y":0 }, // Position
-                                                       { "width":1055, "height":635}, // Size
+        var textClusterView = new TWiC.TextClusterView({ "x":2552, "y":0 }, // Position
+                                                       { "width":1275, "height":635}, // Size
                                                        divName, // Name
                                                        twicLevel, [{panel:topicBar2, update:"mouseover"}], // Level and linked view(s)
                                                        0); // Cluster index
@@ -61,15 +61,15 @@
         corpusClusterView.m_linkedViews.push({panel:textClusterView, update:"click"});
 
 
-        var topicBar3 = new TWiC.TopicBar({x:3168, y:635}, // Position
-                                         {width:1055, height:165}, // Size
+        var topicBar3 = new TWiC.TopicBar({x:3828, y:635}, // Position
+                                         {width:1275, height:165}, // Size
                                          divName + "3", // Name
                                          twicLevel, []); // Level and linked view(s)
         infoViews.push(topicBar3);
 
 
-        var textView = new TWiC.TextView({x:3168, y:0}, // Position
-                                         {width:1055, height:635}, // Size
+        var textView = new TWiC.TextView({x:3828, y:0}, // Position
+                                         {width:1275, height:635}, // Size
                                          divName, // Name
                                          twicLevel, [{panel:topicBar3, update:"mouseover"}], // Level and linked views
                                          "665"); // Individual text name
@@ -81,9 +81,10 @@
         // Initialize the level
         twicLevel.Initialize([0,0], // Position
                              //TWiC.GetViewport(), // Size
-                             {width:4223,height:800},
+                             {width:5104,height:800},
                              divName, // Name
                              graphViews, infoViews); // TWiC graph and information panels
+        //twicLevel.AddControl(50, "top", "Topic Words in Context - The Poems of Emily Dickinson");
 
         // jQuery section
         /*$("#div_twic_graph_corpusclusterview_" + divName).resizable();

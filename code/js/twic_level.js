@@ -7,7 +7,7 @@ var TWiC = (function(namespace){
         this.m_coordinates = {x:0, y:0};
         this.m_size = {width:0, height:0};
         this.m_name = "";
-        this.m_levelDiv = null;
+        this.m_div = null;
         this.m_objectCount = 0;
         this.m_graphViews = null;
         this.m_infoViews = null;
@@ -21,8 +21,15 @@ var TWiC = (function(namespace){
         this.m_usingTransitions = false;
         this.m_currentPanel = null;
         this.m_panelList = [];
+
+        this.m_controlBar = null;
     };
     namespace.Level.prototype.s_twicLevels = [];
+    namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
+                                            "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
+                                            "beige": "#DFDAC4"};
+    namespace.Level.prototype.s_fontFamily = "Archer";
+    namespace.Level.prototype.s_fontAlt = "Fenwick";
 
     // Creating a Level instance also adds it to the TWiC level list
     namespace.Level.prototype.Instance = function(){
@@ -31,6 +38,20 @@ var TWiC = (function(namespace){
         namespace.Level.prototype.s_twicLevels.push(new_level);
         return new_level;
     };
+
+    namespace.Level.method("AddControl", function(p_barThickness, p_barOrientation, p_text){
+
+        this.m_controlBar = new TWiC.Control(this, p_barThickness, p_barOrientation, p_text);
+        switch ( p_barOrientation) {
+
+            case "top":
+                p_level.m_coordinates.y += p_barThickness;
+                break;
+            case "left":
+                p_level.m_coordinates.x += p_barThickness;
+                break;
+        };
+    });
 
     // Loads all JSON required for TWiC
     namespace.Level.method("LoadJSON", function(p_corpusInfoPath, p_corpusMapPath){
@@ -68,7 +89,7 @@ var TWiC = (function(namespace){
         this.m_infoViews = p_infoViews;
 
         // Create the level container div and svg
-        this.m_levelDiv = d3.select("body")
+        this.m_div = d3.select("body")
                             .append("div")
                             .attr("class", "div_twic_level")
                             .attr("id", "twic_level_" + this.m_name)
@@ -84,13 +105,13 @@ var TWiC = (function(namespace){
         // Add and setup the graph div and svg elements
         for ( var index = 0; index < this.m_graphViews.length; index++ ){
 
-            this.m_graphViews[index].Initialize(this.m_levelDiv);
+            this.m_graphViews[index].Initialize(this.m_div);
         }
 
         // Add and setup the informational div and svg elements
         for ( var index = 0; index < this.m_infoViews.length; index++ ){
 
-            this.m_infoViews[index].Initialize(this.m_levelDiv);
+            this.m_infoViews[index].Initialize(this.m_div);
         }
     });
 

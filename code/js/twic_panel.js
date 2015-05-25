@@ -23,6 +23,8 @@ var TWiC = (function(namespace){
         this.m_transitionWhenClicked = false;
         this.m_transitionIn = null;
         this.m_transitionOut = null;
+
+        this.m_controlBar = null;
     };
 
     namespace.Panel.method("Initialize", function(){});
@@ -35,8 +37,6 @@ var TWiC = (function(namespace){
     namespace.Panel.method("IsUsingEffects", function(){ return this.m_showEffects; });
     namespace.Panel.method("UseTransitions", function(p_state){ this.m_transitionWhenClicked = p_state; });
     namespace.Panel.method("IsUsingTransitions", function(){ return this.m_transitionWhenClicked; });
-
-
     namespace.Panel.method("GetViewBoxArray", function(element){
         return element.attr("viewBox").split(" ");
     });
@@ -324,7 +324,15 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.Panel.method("AddControlBar", function(p_barThickness, p_barOrientation){
+
+        this.m_controlBar = new TWiC.Control(this, p_barThickness, p_barOrientation);
+        this.m_controlBar.Initialize();
+        this.AddBarText();
+    });;
+
     namespace.Panel.prototype.s_minimumPanelSize = 50;
+
 
     // Base for TWiC graph view
     namespace.GraphView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
@@ -415,7 +423,7 @@ var TWiC = (function(namespace){
                                               .attr("ry", this.m_div.style("border-radius"))
                                               .attr("width", this.m_size.width)
                                               .attr("height", this.m_size.height)
-                                              .attr("fill", "#002240");
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
         // Create the corpus TWiC bullseye
         this.m_corpusCluster = new TWiC.ClusterCircle({x:this.m_size.width >> 1, y:this.m_size.height >> 1}, 200,
@@ -423,7 +431,8 @@ var TWiC = (function(namespace){
                                                       this.m_level.m_corpusMap["topics"],
                                                       this.m_idealText, this.m_level.m_corpusMap["name"]);
 
-
+        // Add title bar that references the current top topics and corpus name
+        this.AddControlBar(50, "top");
     });
 
     namespace.CorpusView.method("Start", function(p_levelDiv){
@@ -451,9 +460,9 @@ var TWiC = (function(namespace){
 
         this.DarkenAllTopicCircles();
         this.m_corpusCluster.AddTextTag(this.m_corpusCluster.m_title, 14 + (0.2 * this.m_corpusCluster.m_radius),
-                                        "#FAFAD2",
-                                        {x:this.m_corpusCluster.m_coordinates.x - (1.75 * this.m_corpusCluster.m_radius),
-                                         y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.25 * this.m_corpusCluster.m_radius)},
+                                        namespace.Level.prototype.s_palette.gold,
+                                        {x:this.m_corpusCluster.m_coordinates.x - (1.65 * this.m_corpusCluster.m_radius),
+                                         y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.30 * this.m_corpusCluster.m_radius)},
                                         1.0);
     });
 
@@ -498,6 +507,48 @@ var TWiC = (function(namespace){
                   .filter(function(d){ return d.topicID != data.topicID; })
                   .style("opacity", 1.0)
                   .style("fill", function(d){ return d.locolor; });
+    });
+
+    namespace.CorpusView.method("AddBarText", function(){
+
+        this.m_controlBar.AddText(function(p_controlBar){
+
+            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                                .attr("x", this.m_coordinates.x + (p_controlBar.m_barThickness >> 1))
+                                                                .attr("y", this.m_coordinates.y + (p_controlBar.m_barThickness * 0.65));
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("TWiC:")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("&nbsp;&nbsp;Top&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            // NOTE: Topic count is currently hard-coded, TODO: parametrize
+            p_controlBar.m_barText.append("tspan")
+                                  .html(10)
+                                  .attr("fill", namespace.Level.prototype.s_palette.green)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 24);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("&nbsp;topics in&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(this.m_level.m_corpusMap["name"])
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+        }.bind(this));
     });
 
     namespace.CorpusView.prototype.s_scaleExtentLimits = [1, 16];
@@ -1336,7 +1387,7 @@ var TWiC = (function(namespace){
                                              .attr("height", this.m_size.height)
                                              .attr("rx", this.m_div.style("border-radius"))
                                              .attr("ry", this.m_div.style("border-radius"))
-                                             .attr("fill", "#002240")
+                                             .attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                              .style("position", "absolute");
 
         // Load the JSON for this text
@@ -1444,17 +1495,17 @@ var TWiC = (function(namespace){
                //.style("max-height", this.m_size.height)
                .style("max-width", "100%")
                //.style("max-height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
-               //.style("background-color", "#002240")
-               .style("font-family", "Archer")
+               //.style("background-color", namespace.Level.prototype.s_palette.darkblue)
+               .style("font-family", namespace.Level.prototype.s_fontFamily)
                .style("font-size", 20)
-               .style("color", "#FAFAD2")
+               .style("color", namespace.Level.prototype.s_palette.gold)
                .style("float", "left")
                .style("text-align", "left");
 
         titleDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
                 .style("max-width", "100%")//this.m_size.width)
                 .style("font-size", "26")
-                .style("font-family", "Archer")
+                .style("font-family", namespace.Level.prototype.s_fontFamily)
                 .style("top", "25px")
                 .style("left", "100px")
                 .style("margin", "0 auto !important")
@@ -1464,7 +1515,7 @@ var TWiC = (function(namespace){
         publicationDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
                 .style("max-width", "100%")
                 .style("font-size", "22")
-                .style("font-family", "Archer")
+                .style("font-family", namespace.Level.prototype.s_fontFamily)
                 .style("top", "55px")
                 .style("left", "100px")
                 .style("margin", "0 auto !important")
@@ -1498,10 +1549,10 @@ var TWiC = (function(namespace){
                         .attr("width", this.m_size.width)
                         .attr("height", this.m_size.height)
                         .append("xhtml:body")
-                        .style("background-color", "#002240")
-                        .style("font-family", "Archer")
+                        .style("background-color", namespace.Level.prototype.s_palette.darkblue)
+                        .style("font-family", namespace.Level.prototype.s_fontFamily)
                         .style("font-size", 20)
-                        .style("color", "#FAFAD2")
+                        .style("color", namespace.Level.prototype.s_palette.gold)
                         .style("float", "left")
                         .style("text-align", "left")
                         .style("overflow", "auto")
@@ -1733,7 +1784,7 @@ var TWiC = (function(namespace){
     });
 
     namespace.TopicBar.prototype.s_svgSize = { "width":1280, "height":165 };
-    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1405, "yIncrement":30, "fontSize":20 };
+    namespace.TopicBar.prototype.s_textInfo = { "yStart":-1400, "yIncrement":30, "fontSize":20 };
 
 
     // Shows individual cluster and text information tiles (TWiC.DocumentTiles)
