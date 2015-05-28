@@ -1,17 +1,98 @@
 var TWiC = (function(namespace){
 
+    namespace.s_domPrefix = "twic_";
+    namespace.GetUniqueID = function(){
+
+        return namespace.s_domPrefix + "dickinson";
+    };
+
+    namespace.Container = function(p_coordinates, p_controlBar, p_panel){
+
+        this.m_coordinates = {x: p_coordinates.x, y: p_coordinates.y};
+        this.m_controlBar = p_controlBar;
+        this.m_panel = p_panel;
+        this.m_name = namespace.GetUniqueID();
+    };
+
+    namespace.Container.method("Initialize", function(p_parentDiv){
+
+        // Calculate the container size based on the panel/control bar dimensions and orientation
+        if ( null != this.m_controlBar ){
+
+            // Set the control bar dimensions based on its accompanying panel before proceeding
+            this.m_controlBar.DetermineDimensions();
+
+            switch ( this.m_controlBar.m_orientation ){
+
+                case "top":
+                case "bottom":
+                    this.m_size = {width: this.m_panel.m_size.width,
+                                   height: this.m_panel.m_size.height + this.m_controlBar.m_size.height};
+                break;
+                case "left":
+                case "right":
+                    this.m_size = {width: this.m_panel.m_size.width + this.m_controlBar.m_size.width,
+                                   height: this.m_panel.m_size.height};
+                break;
+            }
+        } else {
+            this.m_size = {width: this.m_panel.m_size.width, height: this.m_panel.m_size.height};
+        }
+
+        // Add the container's div
+        this.m_div = p_parentDiv.append("div")
+                                .style("class", "div_twic_container")
+                                .style("id", "div_twic_container_" + this.m_name)
+                                .style("position", "absolute")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height);
+
+
+        // Initialize the panel and control bar
+        if ( null != this.m_controlBar ) {
+            this.m_controlBar.Initialize(this.m_div);
+        }
+        this.m_panel.Initialize(this.m_div);
+    });
+
+    namespace.Container.method("Update", function(d){
+
+        // Update the panel and control bar
+        this.m_panel.Update(d);
+        if ( null != this.m_controlBar ) {
+            this.m_controlBar.Update(d);
+        }
+    });
+
+    namespace.Container.method("Start", function(){
+
+        // Start the panel
+        this.m_panel.Start();
+    });
+
+
     // Basic constructor (property initialization occurs later)
     namespace.Level = function(){
 
+        // Queue for loading JSON
         this.m_queue = new queue();
+
+        // Level attributes
         this.m_coordinates = {x:0, y:0};
         this.m_size = {width:0, height:0};
         this.m_name = "";
         this.m_div = null;
         this.m_objectCount = 0;
-        this.m_graphViews = null;
-        this.m_infoViews = null;
 
+        // Arrays of TWiC.Container objects
+        this.m_graphViews = [];
+        this.m_infoViews = [];
+
+        // Corpus JSON data
         this.m_corpusMap = {};
         this.m_corpusInfo = {};
         this.m_topicWordLists = {};
@@ -24,33 +105,100 @@ var TWiC = (function(namespace){
 
         this.m_controlBar = null;
     };
-    namespace.Level.prototype.s_twicLevels = [];
-    namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
-                                            "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
-                                            "beige": "#DFDAC4"};
-    namespace.Level.prototype.s_fontFamily = "Archer";
-    namespace.Level.prototype.s_fontAlt = "Fenwick";
 
-    // Creating a Level instance also adds it to the TWiC level list
-    namespace.Level.prototype.Instance = function(){
+    namespace.Level.method("AddControlBar", function(p_barThickness, p_barOrientation){
 
-        var new_level = new namespace.Level();
-        namespace.Level.prototype.s_twicLevels.push(new_level);
-        return new_level;
-    };
+        this.m_controlBar = new TWiC.Control(p_barThickness, p_barOrientation);
+        this.m_controlBar.Initialize(this.m_div);
+        this.AddBarText();
+    });
 
-    namespace.Level.method("AddControl", function(p_barThickness, p_barOrientation, p_text){
+    namespace.Level.method("AddBarText", function(){
 
-        this.m_controlBar = new TWiC.Control(this, p_barThickness, p_barOrientation, p_text);
-        switch ( p_barOrientation) {
+        this.m_controlBar.AddText(function(p_controlBar){
 
-            case "top":
-                p_level.m_coordinates.y += p_barThickness;
-                break;
-            case "left":
-                p_level.m_coordinates.x += p_barThickness;
-                break;
-        };
+            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                    .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                    .attr("y", (p_controlBar.m_barThickness * 0.65));
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("T")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21)
+                                  .style("font-weight", "bold");
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("opic&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("W")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21)
+                                  .style("font-weight", "bold");
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("ords&nbsp;in&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("C")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21)
+                                  .style("font-weight", "bold");
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("ontext&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("Corpus:&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(this.m_corpusMap["name"])
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21)
+                                  .style("font-weight", "bold");
+        }.bind(this));
+
+    });
+
+    namespace.Level.method("AddPanel", function(p_panel){
+
+        // Some panels may not have control bars
+        if ( p_panel instanceof namespace.GraphView ) {
+            var controlBar = new namespace.Control(namespace.Control.prototype.s_defaultThickness, "top");
+        } else {
+            var controlBar = null;
+        }
+
+        // Create a container for the panel and (possible) control bar
+        var container = new namespace.Container({x: p_panel.m_coordinates.x, y: p_panel.m_coordinates.y}, controlBar, p_panel);
+        p_panel.SetContainer(container);
+        if ( null != controlBar) {
+            controlBar.SetContainer(container);
+        }
+
+        // Add a container with the panel and control bar to the appropriate view list
+        if ( p_panel instanceof namespace.InformationView ) {
+            this.m_infoViews.push(container);
+        } else {
+            this.m_graphViews.push(container);
+
+        }
     });
 
     // Loads all JSON required for TWiC
@@ -80,27 +228,26 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
-    namespace.Level.method("Initialize", function(p_coordinates, p_size, p_name, p_graphViews, p_infoViews){
+    namespace.Level.method("Initialize", function(p_coordinates, p_size, p_parentDiv){
 
         this.m_coordinates = p_coordinates;
         this.m_size = p_size;
-        this.m_name = p_name;
-        this.m_graphViews = p_graphViews;
-        this.m_infoViews = p_infoViews;
+        this.m_name = namespace.GetUniqueID();
 
         // Create the level container div and svg
-        this.m_div = d3.select("body")
-                            .append("div")
-                            .attr("class", "div_twic_level")
-                            .attr("id", "twic_level_" + this.m_name)
-                            .style("position", "relative")
-                            .style("left", this.m_coordinates.x)
-                            .style("top", this.m_coordinates.y)
-                            .style("width", this.m_size.width)
-                            .style("height", this.m_size.height)
-                            .style("max-width", this.m_size.width)
-                            .style("max-height", this.m_size.height)
-                            .style("background-color", "gray");
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_level")
+                                .attr("id", "twic_level_" + this.m_name)
+                                .style("position", "relative")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .style("background-color", "gray");
+
+        //this.AddControlBar(50, "top", "Topic Words in Context - The Poems of Emily Dickinson");
 
         // Add and setup the graph div and svg elements
         for ( var index = 0; index < this.m_graphViews.length; index++ ){
@@ -113,6 +260,14 @@ var TWiC = (function(namespace){
 
             this.m_infoViews[index].Initialize(this.m_div);
         }
+
+        // jQuery section
+        /*$("#div_twic_graph_corpusclusterview_" + divName).resizable();
+        $("#div_twic_info_topicbar_" + divName).resizable();
+        $("#div_twic_info_docbar_" + divName).resizable();
+        $("#div_twic_graph_corpusclusterview_" + divName).draggable();
+        $("#div_twic_info_topicbar_" + divName).draggable();
+        $("#div_twic_info_docbar_" + divName).draggable();*/
     });
 
     namespace.Level.method("Start", function(){
@@ -150,6 +305,22 @@ var TWiC = (function(namespace){
 
     namespace.Level.method("PopulatePanelHierarchy", function(p_panelList){ this.m_panelList = p_panelList; });
 
+    namespace.Level.prototype.s_fontFamily = "Archer";
+    namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
+    namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
+                                            "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
+                                            "beige": "#DFDAC4", "lightpurple":"#D8D8FF"};
+    namespace.Level.prototype.s_twicLevels = [];
+
+    // Creating a Level instance also adds it to the TWiC level list
+    namespace.Level.prototype.Instance = function(){
+
+        var new_level = new namespace.Level();
+        namespace.Level.prototype.s_twicLevels.push(new_level);
+        return new_level;
+    };
+
+
     namespace.GetViewport = function(){
 
         var e = window, a = 'inner';
@@ -162,6 +333,7 @@ var TWiC = (function(namespace){
 
         return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
     }
+
 
     return namespace;
 }(TWiC || {}));

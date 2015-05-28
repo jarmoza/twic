@@ -55,6 +55,8 @@ var TWiC = (function(namespace){
         this.m_clusterGroup = null;
         this.m_linkedViews = p_linkedViews;
 
+        this.m_scaledRadius = false;
+
     };
     namespace.ClusterCircle.inherits(namespace.DataShape);
 
@@ -64,7 +66,9 @@ var TWiC = (function(namespace){
     namespace.ClusterCircle.prototype.s_unhighlightedOpacity = 0.3;
     namespace.ClusterCircle.prototype.s_semihighlightedOpacity = 0.6;
 
-
+    namespace.ClusterCircle.method("SetScaledRadius", function(p_state){
+        this.m_scaledRadius = p_state;
+    });
     namespace.ClusterCircle.method("Load", function(){ });
 
     namespace.ClusterCircle.method("BindDataToNode", function(p_node){
@@ -77,7 +81,15 @@ var TWiC = (function(namespace){
     namespace.ClusterCircle.method("AppendSVGandBindData", function(p_node, p_filenames){
 
         var currentRadius = this.m_size;
-        var radiusReduction = this.m_size / this.m_numberCircles;
+
+        // Radii can optionally be scaled by top topic proportion and number of this ClusterCircle's siblings
+        if ( this.m_scaledRadius ){
+            currentRadius = Math.max(this.m_size,
+                                     this.m_size + (this.m_level.m_corpusInfo.corpus_info[1][this.m_topTopics[0][0]]
+                                     * this.m_level.m_corpusMap["children"][this.m_topTopics[0][0]]["children"].length));
+            this.m_size = this.m_radius = currentRadius;
+        }
+        var radiusReduction = currentRadius / this.m_numberCircles;
 
         // Modify the given node to be a twic cluster group (extra parent group for smooth zoom-behavior)
         this.m_clusterGroup = p_node.append("g")
@@ -174,6 +186,17 @@ var TWiC = (function(namespace){
                                            this.m_panel.m_linkedViews[index].panel.Update(d);
                                        }
                                    }
+                                   /*var ring = this.m_panel.m_svg.selectAll(".topic_circle").selectAll("#topic-" + d.topicID);
+                                   ring.transition()
+                                       .ease("bounce")
+                                       .duration(1000)
+                                       .attr("transform", "translate(-10,0)")
+                                       .each("end", function(){
+                                           ring.transition()
+                                               .ease("bounce")
+                                               .duration(1000)
+                                               .attr("transform", "translate(0,0)");
+                                       }.bind(this));*/
                                }.bind(this))
                                .on("mouseout", function(d){
                                    this.m_panel.Update(null);
@@ -202,9 +225,9 @@ var TWiC = (function(namespace){
             var textTag = this.m_clusterGroup.append("text")
                                            .attr("dx", "0")
                                            .attr("dy", "0")
-                                           //.attr("fill", "#FAFAD2")
+                                           //.attr("fill", namespace.Level.prototype.s_palette.gold)
                                            .attr("fill", this.m_level.m_topicColors[this.m_topTopics[0][0]])
-                                           .style("font-family", "Archer")
+                                           .style("font-family", namespace.Level.prototype.s_fontFamily)
                                            .style("font-size", fontSize)
                                            .style("position", "relative");
 
@@ -226,9 +249,9 @@ var TWiC = (function(namespace){
                             .direction("s")
                             .offset(-this.m_radius, this.m_radius + (0.2 * this.m_radius))
                             .html("<font color=\"white\">" + this.m_title + "</font")
-                            .style("font-family", "Archer")
+                            .style("font-family", namespace.Level.prototype.s_fontFamily)
                             .style("font-size", 14 + (0.2 * this.m_radius))
-                            .style("color", "#FAFAD2");
+                            .style("color", namespace.Level.prototype.s_palette.gold);
        this.m_panel.m_svg.call(this.m_tip);
        this.m_tip.show();*/
 
@@ -256,10 +279,11 @@ var TWiC = (function(namespace){
     namespace.ClusterCircle.method("AddTextTag", function(p_text, p_fontSize, p_color, p_position, p_opacity){
 
         var textTag = this.m_clusterGroup.append("text")
+                                         .attr("class", "clustercircle_text")
                                          .attr("dx", "0")
                                          .attr("dy", "0")
                                          .attr("fill", p_color)
-                                         .style("font-family", "Archer")
+                                         .style("font-family", namespace.Level.prototype.s_fontFamily)
                                          .style("font-size", p_fontSize)
                                          .style("position", "relative");
 
@@ -278,9 +302,9 @@ var TWiC = (function(namespace){
                             .direction("s")
                             .offset(-this.m_radius, this.m_radius + (0.2 * this.m_radius))
                             .html("<font color=\"white\">" + this.m_title + "</font")
-                            .style("font-family", "Archer")
+                            .style("font-family", namespace.Level.prototype.s_fontFamily)
                             .style("font-size", 14 + (0.2 * this.m_radius))
-                            .style("color", "#FAFAD2");
+                            .style("color", namespace.Level.prototype.s_palette.gold);
        this.m_panel.m_svg.call(this.m_tip);
        this.m_tip.show();*/
     });
@@ -443,7 +467,7 @@ var TWiC = (function(namespace){
                                          .attr("dx", "0")
                                          .attr("dy", "0")
                                          .attr("fill", p_color)
-                                         .style("font-family", "Archer")
+                                         .style("font-family", namespace.Level.prototype.s_fontFamily)
                                          .style("font-size", p_fontSize)
                                          .style("position", "relative");
 
@@ -481,13 +505,13 @@ var TWiC = (function(namespace){
     namespace.TextRectangle.prototype.borderWidth = 2 * namespace.TextRectangle.prototype.multiplier;
     namespace.TextRectangle.prototype.cornerRadius = 2 * namespace.TextRectangle.prototype.multiplier;
 
-    namespace.TextRectangle.prototype.fillColor = "#002240";
+    namespace.TextRectangle.prototype.fillColor = namespace.Level.prototype.s_palette.darkblue;
     namespace.TextRectangle.prototype.strokeWidth = 2 * namespace.TextRectangle.prototype.multiplier;
     namespace.TextRectangle.prototype.wordLength = 2 * namespace.TextRectangle.prototype.multiplier;
     namespace.TextRectangle.prototype.spaceBetweenLines = 2 * namespace.TextRectangle.prototype.multiplier;
 
     //namespace.TextRectangle.prototype.defaultFontColor = "lightgoldenrodyellow";
-    namespace.TextRectangle.prototype.defaultFontColor = "#FAFAD2";
+    namespace.TextRectangle.prototype.defaultFontColor = namespace.Level.prototype.s_palette.gold;
     namespace.TextRectangle.prototype.jsonDirectory = "data/input/json/texts/";
     namespace.TextRectangle.prototype.tipYOffset = 10;
 

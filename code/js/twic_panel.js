@@ -1,13 +1,13 @@
 var TWiC = (function(namespace){
 
     // Base for TWiC panels
-    namespace.Panel = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
+    namespace.Panel = function(p_coordinates, p_size, p_level){
 
         this.m_coordinates = p_coordinates;
         this.m_size = p_size;
-        this.m_name = p_name;
+        this.m_name = namespace.GetUniqueID();
         this.m_level = p_level;
-        this.m_linkedViews = p_linkedViews;
+        this.m_linkedViews = [];
 
         this.m_div = null;
         this.m_svg = null;
@@ -25,6 +25,10 @@ var TWiC = (function(namespace){
         this.m_transitionOut = null;
 
         this.m_controlBar = null;
+
+        if ( null != this.m_level ) {
+            this.m_level.AddPanel(this);
+        }
     };
 
     namespace.Panel.method("Initialize", function(){});
@@ -39,6 +43,18 @@ var TWiC = (function(namespace){
     namespace.Panel.method("IsUsingTransitions", function(){ return this.m_transitionWhenClicked; });
     namespace.Panel.method("GetViewBoxArray", function(element){
         return element.attr("viewBox").split(" ");
+    });
+
+    namespace.Panel.method("AddLinkedView", function(p_linkedPanel, p_linkType){
+
+        this.m_linkedViews.push({panel:p_linkedPanel, update:p_linkType});
+    });
+
+    namespace.Panel.method("AddLinkedViews", function(p_linkedPanelMaps){
+
+        for ( var index = 0; index < p_linkedPanelMaps.length; index++ ){
+            this.m_linkedViews.push(p_linkedPanelMaps[index]);
+        }
     });
 
     namespace.Panel.method("MakeResizable", function(){
@@ -324,18 +340,20 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.Panel.method("AddControlBar", function(p_barThickness, p_barOrientation){
+    namespace.Panel.method("SetContainer", function(p_container){
 
-        this.m_controlBar = new TWiC.Control(this, p_barThickness, p_barOrientation);
-        this.m_controlBar.Initialize();
-        this.AddBarText();
-    });;
+        this.m_container = p_container;
+        this.m_controlBar = this.m_container.m_controlBar;
+    });
+
+    namespace.Panel.method("AddBarText", function(){});
 
     namespace.Panel.prototype.s_minimumPanelSize = 50;
+    namespace.Panel.prototype.s_borderRadius = 15;
 
 
     // Base for TWiC graph view
-    namespace.GraphView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
+    namespace.GraphView = function(p_coordinates, p_size, p_level){
 
         namespace.Panel.apply(this, arguments);
     };
@@ -378,7 +396,7 @@ var TWiC = (function(namespace){
 
 
     // High level corpus view (TWiC.CorpusCluster)
-    namespace.CorpusView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
+    namespace.CorpusView = function(p_coordinates, p_size, p_level){
 
         namespace.GraphView.apply(this, arguments);
 
@@ -386,20 +404,21 @@ var TWiC = (function(namespace){
         this.m_corpusCluster = null;
         this.m_nodes = [];
         this.m_zoomBehavior = d3.behavior.zoom();
+        this.m_radius = 225;
     };
     namespace.CorpusView.inherits(namespace.GraphView);
 
-    namespace.CorpusView.method("Initialize", function(p_levelDiv){
+    namespace.CorpusView.method("Initialize", function(p_parentDiv){
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_graph_corpusview div_twic_graph twic_panel")
-                               .attr("id", "div_twic_graph_corpusview_" + this.m_name)
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height)
-                               .style("width", this.m_size.width)
-                               .style("height", this.m_size.height);
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_graph_corpusview div_twic_graph twic_panel")
+                                .attr("id", "div_twic_graph_corpusview_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height);
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -412,30 +431,28 @@ var TWiC = (function(namespace){
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_corpusview_overlay")
-                                        .attr("id", "group_twic_graph_corpusview_overlay_" + this.m_name);
+                                        .attr("id", "group_twic_graph_corpusview_overlay_" + this.m_name)
+                                        .style("position", "absolute");
 
-        this.m_panelRect = this.m_groupOverlay.append("rect")
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(0,
+                                                0, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
                                               .attr("class","rect_twic_graph")
                                               .attr("id","rect_twic_graph_corpusview_" + this.m_name)
-                                              .attr("x", this.m_coordinates.x)
-                                              .attr("y", this.m_coordinates.y)
-                                              .attr("rx", this.m_div.style("border-radius"))
-                                              .attr("ry", this.m_div.style("border-radius"))
-                                              .attr("width", this.m_size.width)
-                                              .attr("height", this.m_size.height)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
-        // Create the corpus TWiC bullseye
-        this.m_corpusCluster = new TWiC.ClusterCircle({x:this.m_size.width >> 1, y:this.m_size.height >> 1}, 200,
+        // Create the corpus TWiC bullseye (NOTE: topic count currently hardcoded)
+        this.m_corpusCluster = new TWiC.ClusterCircle({x: this.m_size.width >> 1, y: this.m_size.height - (this.m_size.height * 0.6)},
+                                                      this.m_radius,
                                                       this.m_level.m_corpusMap["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["topics"],
                                                       this.m_idealText, this.m_level.m_corpusMap["name"]);
 
-        // Add title bar that references the current top topics and corpus name
-        this.AddControlBar(50, "top");
+        // Add my text to the container's control bar
+        this.AddBarText();
     });
 
-    namespace.CorpusView.method("Start", function(p_levelDiv){
+    namespace.CorpusView.method("Start", function(p_parentDiv){
 
         this.m_nodes.push({index:0,name:this.m_name});
         var node = this.m_svg.selectAll(".node")
@@ -461,7 +478,7 @@ var TWiC = (function(namespace){
         this.DarkenAllTopicCircles();
         this.m_corpusCluster.AddTextTag(this.m_corpusCluster.m_title, 14 + (0.2 * this.m_corpusCluster.m_radius),
                                         namespace.Level.prototype.s_palette.gold,
-                                        {x:this.m_corpusCluster.m_coordinates.x - (1.65 * this.m_corpusCluster.m_radius),
+                                        {x:this.m_corpusCluster.m_coordinates.x - (1.7 * this.m_corpusCluster.m_radius),
                                          y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.30 * this.m_corpusCluster.m_radius)},
                                         1.0);
     });
@@ -514,18 +531,21 @@ var TWiC = (function(namespace){
         this.m_controlBar.AddText(function(p_controlBar){
 
             p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                                .attr("x", this.m_coordinates.x + (p_controlBar.m_barThickness >> 1))
-                                                                .attr("y", this.m_coordinates.y + (p_controlBar.m_barThickness * 0.65));
+                                                                .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                                .attr("y", (p_controlBar.m_barThickness * 0.65));
+
+            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                  .style("opacity", 1.0);
 
             p_controlBar.m_barText.append("tspan")
-                                  .html("TWiC:")
-                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .html("TWiC:&nbsp;&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
             p_controlBar.m_barText.append("tspan")
-                                  .html("&nbsp;&nbsp;Top&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .html("Top&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
@@ -538,7 +558,7 @@ var TWiC = (function(namespace){
 
             p_controlBar.m_barText.append("tspan")
                                   .html("&nbsp;topics in&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
@@ -555,7 +575,7 @@ var TWiC = (function(namespace){
 
 
     // Higher midlevel corpus bullseye cluster view (TWiC.CorpusCluster)
-    namespace.CorpusClusterView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
+    namespace.CorpusClusterView = function(p_coordinates, p_size, p_level){
 
         namespace.GraphView.apply(this, arguments);
 
@@ -571,18 +591,20 @@ var TWiC = (function(namespace){
     };
     namespace.CorpusClusterView.inherits(namespace.GraphView);
 
-    namespace.CorpusClusterView.method("Initialize", function(p_levelDiv){
+    namespace.CorpusClusterView.method("Initialize", function(p_parentDiv){
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_graph_corpusclusterview div_twic_graph twic_panel")
-                               .attr("id", "div_twic_graph_corpusclusterview_" + this.m_name)
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height)
-                               .style("width", this.m_size.width)
-                               .style("height", this.m_size.height)
-                               .style("position", "relative");
+        this.m_coordinates.x = 0;
+        this.m_coordinates.y = 0;
+
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_graph_corpusclusterview div_twic_graph twic_panel")
+                                .attr("id", "div_twic_graph_corpusclusterview_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height);
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -598,15 +620,12 @@ var TWiC = (function(namespace){
                                         .attr("id", "group_twic_graph_corpusclusterview_overlay_" + this.m_name);
                                         //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)));
 
-        this.m_panelRect = this.m_groupOverlay.append("rect")
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
+                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
                                               .attr("class","rect_twic_graph")
                                               .attr("id","rect_twic_graph_corpusclusterview_" + this.m_name)
-                                              .attr("x", this.m_coordinates.x)
-                                              .attr("y", this.m_coordinates.y)
-                                              .attr("rx", this.m_div.style("border-radius"))
-                                              .attr("ry", this.m_div.style("border-radius"))
-                                              .attr("width", this.m_size.width)
-                                              .attr("height", this.m_size.height);
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
         // Add resize bars/capability to panel
         //this.MakeResizable();
@@ -629,6 +648,10 @@ var TWiC = (function(namespace){
                                                       this.m_level.m_corpusMap["children"][index]["topics"],
                                                       this.m_level.m_corpusMap["children"][index]["ideal_text"],
                                                       index.toString());
+
+            // Cluster circles are scaled in the CorpusClusterView
+            twic_cluster.SetScaledRadius(true);
+
             var twic_cluster_json = {
                 "name": this.m_level.m_corpusMap["children"][index]["name"],
                 "ideal_text": this.m_level.m_corpusMap["children"][index]["ideal_text"],
@@ -814,6 +837,9 @@ var TWiC = (function(namespace){
             this.m_graph.stop();
             this.b_positionsCalculated = true;
         }.bind(this), 10);
+
+        // Add my text to the container's control bar
+        this.AddBarText();
     });
 
     namespace.CorpusClusterView.method("ScrollToZoom", function(p_twicLevel){
@@ -910,7 +936,7 @@ var TWiC = (function(namespace){
                   .style("fill", function(d){ return d.locolor; })
                   .style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
 
-        this.m_svg.selectAll("tspan").style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
+        this.m_svg.selectAll(".clustercircle_text").selectAll("tspan").style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
     });
 
     namespace.CorpusClusterView.method("HighlightAllClustersWithTopic", function(data){
@@ -949,12 +975,55 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.CorpusClusterView.method("AddBarText", function(){
+
+        this.m_controlBar.AddText(function(p_controlBar){
+
+            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                    .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                    .attr("y", (p_controlBar.m_barThickness * 0.65));
+
+            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                  .style("opacity", 1.0);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("TWiC:&nbsp;&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("Texts Clustered by Top Topic in the ")
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(Object.keys(this.m_level.m_topicColors).length)
+                                  .attr("fill", namespace.Level.prototype.s_palette.green)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 24);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("&nbsp;topics of&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(this.m_level.m_corpusMap["name"])
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+        }.bind(this));
+    });
+
     namespace.CorpusClusterView.prototype.s_linkDistanceMod = 100;
     namespace.CorpusClusterView.prototype.s_scaleExtentLimits = [1, 16];
 
 
     // Lower midlevel document rectangle cluster view (TWiC.TextRectangle)
-    namespace.TextClusterView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews, p_clusterIndex){
+    namespace.TextClusterView = function(p_coordinates, p_size, p_level, p_clusterIndex){
 
         namespace.GraphView.apply(this, arguments);
 
@@ -973,17 +1042,20 @@ var TWiC = (function(namespace){
     };
     namespace.TextClusterView.inherits(namespace.GraphView);
 
-    namespace.TextClusterView.method("Initialize", function(p_levelDiv){
+    namespace.TextClusterView.method("Initialize", function(p_parentDiv){
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_graph_textclusterview div_twic_graph twic_panel")
-                               .attr("id", "div_twic_graph_textclusterview_" + this.m_name)
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("width", this.m_size.width)
-                               .style("height", this.m_size.height)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height)
+        this.m_coordinates.x = 0;
+        this.m_coordinates.y = 0;
+
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_graph_textclusterview div_twic_graph twic_panel")
+                                .attr("id", "div_twic_graph_textclusterview_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -1000,18 +1072,17 @@ var TWiC = (function(namespace){
                                         //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)))
 
         // Add a background rect to the svg group
-        this.m_panelRect = this.m_groupOverlay.append("rect")
-                                              .attr("class","rect_twic_graph_textclusterview")
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
+                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class","rect_twic_graph")
                                               .attr("id","rect_twic_graph_textclusterview_" + this.m_name)
-                                              .attr("x", this.m_coordinates.x)
-                                              .attr("y", this.m_coordinates.y)
-                                              .attr("width", this.m_size.width)
-                                              .attr("height", this.m_size.height)
-                                              .attr("rx", this.m_div.style("border-radius"))
-                                              .attr("ry", this.m_div.style("border-radius"))
-                                              .style("fill", "white");
+                                              .attr("fill", "white");
 
         this.m_clusterSvgGroup = this.m_svg.append("g").attr("id", "clustersvg_group");
+
+        // Add my text to the container's control bar
+        this.AddBarText();
 
         this.InitializeGraph();
     });
@@ -1195,7 +1266,7 @@ var TWiC = (function(namespace){
 
                 this.m_graph.start();
 
-                for (var i = 1000; i > 0; --i) {
+                for ( var index = 1000; index > 0; --index ) {
 
                     this.Tick();
                 }
@@ -1315,6 +1386,9 @@ var TWiC = (function(namespace){
             this.b_positionsCalculated = false;
             this.m_rootIndex = -1;
 
+            this.m_controlBar.m_barText.selectAll("*").remove();
+            this.AddBarText(50, "top");
+
             // Re-initialize and start the graph
             this.InitializeGraph();
             this.Start();
@@ -1338,28 +1412,75 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.TextClusterView.method("AddBarText", function(){
+
+        this.m_controlBar.AddText(function(p_controlBar){
+
+            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                    .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                    .attr("y", (p_controlBar.m_barThickness * 0.65));
+
+            p_controlBar.m_barPath.attr("fill", "white").style("opacity", 1.0);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("TWiC:&nbsp;&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("Texts with Top Topic of&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(this.m_clusterIndex)
+                                  .attr("fill", this.m_level.m_topicColors[this.m_clusterIndex])
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 24);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html("&nbsp;in&nbsp;")
+                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+
+            p_controlBar.m_barText.append("tspan")
+                                  .html(this.m_level.m_corpusMap["name"])
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                  .style("font-size", 21);
+        }.bind(this));
+    });
+
 
     // Low level individual text view (TWiC.TopicTextHTML)
-    namespace.TextView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews, p_fileID){
+    namespace.TextView = function(p_coordinates, p_size, p_level, p_fileID){
 
         namespace.GraphView.apply(this, arguments);
 
         this.m_fileID = p_fileID;
-        this.m_HTML = null;
+        //this.m_HTML = null;
+        this.m_data = null;
+        //this.m_hasControlBar = false;
     };
     namespace.TextView.inherits(namespace.GraphView);
 
-    namespace.TextView.method("Initialize", function(p_levelDiv){
+    namespace.TextView.method("Initialize", function(p_parentDiv){
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_graph_textview div_twic_graph twic_panel")
-                               .attr("id", "div_twic_graph_textview_" + this.m_name)
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("width", this.m_size.width)
-                               .style("height", this.m_size.height)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height)
+        this.m_coordinates.x = 0;
+        this.m_coordinates.y = 0;
+
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_graph_textview div_twic_graph twic_panel")
+                                .attr("id", "div_twic_graph_textview_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -1367,8 +1488,11 @@ var TWiC = (function(namespace){
                                .attr("x", this.m_coordinates.x)
                                .attr("y", this.m_coordinates.y)
                                .attr("width", this.m_size.width)
-                               .attr("height", this.m_size.height)
-                               .style("position", "absolute");
+                               .attr("height", this.m_size.height);
+
+
+        // Load the HTML for the initial text
+        //this.Load();
 
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
@@ -1378,20 +1502,28 @@ var TWiC = (function(namespace){
                                         //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)))
 
         // Add a background rect to the svg group
-        this.m_panelRect = this.m_svg.append("svg:rect")
-                                             .attr("class","rect_twic_graph_textview")
-                                             .attr("id","rect_twic_graph_textview_" + this.m_name)
-                                             .attr("x", 0)//this.m_coordinates.x)
-                                             .attr("y", this.m_coordinates.y)
-                                             .attr("width", this.m_size.width)
-                                             .attr("height", this.m_size.height)
-                                             .attr("rx", this.m_div.style("border-radius"))
-                                             .attr("ry", this.m_div.style("border-radius"))
-                                             .attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                             .style("position", "absolute");
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
+                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class","rect_twic_graph")
+                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
-        // Load the JSON for this text
-        this.Load();
+        this.m_highlightRect = this.m_groupOverlay.append("rect")
+                                                  .attr("x", this.m_coordinates.x)
+                                                  .attr("y", this.m_coordinates.y - this.m_controlBar.m_size.height)
+                                                  .attr("width", this.m_size.width)
+                                                  .attr("height", this.m_size.height + this.m_controlBar.m_size.height)
+                                                  .attr("fill", "none")
+                                                  .style("opacity", 0.0);
+
+        // Append a separate group for foreignObject tags for the text
+        this.m_textGroup = this.m_groupOverlay.append("g")
+                                              .attr("class", "group_textview_text");
+
+        // Make the bar text opaque initially
+        this.m_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                   .style("opacity", 1.0);
     });
 
     namespace.TextView.method("Load", function(){
@@ -1408,22 +1540,29 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
+    namespace.TextView.method("Start", function(){ });
+
     namespace.TextView.method("Update", function(data){
 
+        // Save a reference to the JSON data
+        this.m_data = data;
+
+        // Create an HTML foreignObject from this text's JSON
         this.CreateHTMLFromJSON(data);
-
         //this.AddHTMLAsForeignObject(data);
-    });
 
-    namespace.TextView.method("Start", function(){
+        // Remove any old text and add my new text to the container's control bar
+        this.AddBarText();
 
     });
 
     namespace.TextView.method("CreateHTMLFromJSON", function(data){
 
         // Panel border reflects the color of the most prevalent topic
-        this.m_panelRect.style("stroke", this.m_level.m_topicColors[data.clusterIndex])
+        /*this.m_panelRect.style("stroke", this.m_level.m_topicColors[data.clusterIndex])
                         .style("stroke-width", namespace.TextView.prototype.s_borderWidth);
+        this.m_controlBar.m_barPath.style("stroke", this.m_level.m_topicColors[data.clusterIndex])
+                                   .style("stroke-width", namespace.TextView.prototype.s_borderWidth);*/
 
         /*data.lines_and_colors
         data.title
@@ -1431,25 +1570,25 @@ var TWiC = (function(namespace){
         data.filename*/
 
         // Remove old texts from the view
-        this.m_groupOverlay.selectAll("*").remove();
+        this.m_textGroup.selectAll("*").remove();
 
         // Add div for text
-        var textBody = this.m_groupOverlay.append("foreignObject").append("xhtml:body");
+        var textBody = this.m_textGroup.append("foreignObject").append("xhtml:body");
         var containerDiv = textBody.append("div").attr("class", "textview_container")
                                                  .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
                                                  .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
                                                  .style("position", "relative")
-                                                 .style("overflow", "auto");
+                                                 .style("overflow", "auto")
                                                  //.style("border", namespace.TextView.prototype.s_borderWidth + "px")
                                                  //.style("border-style", "solid")
                                                  //.style("border-color", this.m_level.m_topicColors[data.clusterIndex]);
-        var titleDiv = containerDiv.append("div").attr("class", "title");
-        var publicationDiv = containerDiv.append("div").attr("class", "publication");
+        //var titleDiv = containerDiv.append("div").attr("class", "title");
+        //var publicationDiv = containerDiv.append("div").attr("class", "publication");
         var textDiv = containerDiv.append("div").attr("class", "center");
         var lineTextAll = "";
 
-        titleDiv.html("<b>" + data.json.title + "</b>");
-        publicationDiv.html("<b>" + data.json.publication + "</b>");
+        //titleDiv.html("<b>" + data.json.title + "</b>");
+        //publicationDiv.html("<b>" + data.json.publication + "</b>");
 
         // Build the HTML text
         for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
@@ -1483,7 +1622,7 @@ var TWiC = (function(namespace){
 
         // Apply styles to the divs
         textDiv.style("left", 100)//this.m_coordinates.x)
-               .style("top", 100)//this.m_coordinates.y)
+               .style("top", 50)//this.m_coordinates.y)
                .style("float","left")
                .style("position", "absolute")
                .style("margin", "0 auto !important")
@@ -1502,7 +1641,7 @@ var TWiC = (function(namespace){
                .style("float", "left")
                .style("text-align", "left");
 
-        titleDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
+        /*titleDiv.style("color", this.m_level.m_topicColors[data.clusterIndex])
                 .style("max-width", "100%")//this.m_size.width)
                 .style("font-size", "26")
                 .style("font-family", namespace.Level.prototype.s_fontFamily)
@@ -1521,7 +1660,7 @@ var TWiC = (function(namespace){
                 .style("margin", "0 auto !important")
                 .style("position", "absolute")
                 .style("float", "left")
-                .style("margin-bottom", "25px");
+                .style("margin-bottom", "25px");*/
 
         myPanel = this;
         this.m_svg.selectAll("span")
@@ -1599,7 +1738,63 @@ var TWiC = (function(namespace){
                   });
     });
 
-    namespace.TextView.prototype.s_borderWidth = 8;
+    namespace.TextView.method("AddBarText", function(){
+
+        this.m_controlBar.AddText(function(p_controlBar){
+
+            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                  .style("opacity", 1.0);
+
+            if ( null == p_controlBar.m_barText ) {
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                        .attr("y", (p_controlBar.m_barThickness * 0.65));
+            }
+
+            if ( null != this.m_data ){
+
+                this.m_controlBar.m_barText.selectAll("*").remove();
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_data.json.title)
+                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 23);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;from&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Topic Cluster " + this.m_data.clusterIndex)
+                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 23);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;in&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_level.m_corpusMap["name"])
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+            }
+        }.bind(this));
+    });
+
+    namespace.TextView.prototype.s_borderWidth = 5;
 
 
     // Base for informational views
@@ -1611,51 +1806,82 @@ var TWiC = (function(namespace){
 
 
     // Shows corpus, cluster(?), and text topic word lists (TWiC.TextLine)
-    namespace.TopicBar = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
+    namespace.TopicBar = function(p_coordinates, p_size, p_level){
 
         namespace.InformationView.apply(this, arguments);
+
+        // Initial values
+        this.m_currentSelection = -1;
     };
     namespace.TopicBar.inherits(namespace.InformationView);
 
-    namespace.TopicBar.method("Initialize", function(p_levelDiv){
+    namespace.TopicBar.method("Initialize", function(p_parentDiv){
+
+        this.m_coordinates.x = 0;
+        this.m_coordinates.y = 0;
 
         // No initial selected text
         this.m_currentSelection = -1;
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
-                               .attr("id", "div_twic_info_topicbar_" + this.m_name)
-                               .attr("width", this.m_size.width)
-                               .attr("height", this.m_size.height)
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height);
+        /*this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
+                                .attr("id", "div_twic_info_topicbar_" + this.m_name)
+                                .attr("width", this.m_size.width)
+                                .attr("height", this.m_size.height)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height);
 
         // Topic bar svg viewport
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_info")
                                .attr("id","svg_twic_info_topicbar_" + this.m_name)
-                               .attr("x", 0)
-                               .attr("y", 0)
+                               .attr("x", this.m_coordinates.x)
+                               .attr("y", this.m_coordinates.x)
                                .attr("width", this.m_size.width)
                                .attr("height", this.m_size.height)
-                               .attr("viewBox", "0 " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " + this.m_size.width + " " + this.m_size.height);
+                               //.attr("viewBox", "0 " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " + this.m_size.width + " " + this.m_size.height);
+                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
+                               .style("position", "absolute");*/
 
-        /*this.m_svg.append("defs")
-                  .append("clipPath")
-                  .attr("id", "clippath1")
-                  .append("rect")
-                  .style("position", "relative")
-                  .attr("x", 0)
-                  .attr("y", 0)
-                  .attr("width", this.m_size.width)
-                  .attr("height", this.m_size.height);*/
+
+
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
+                                .attr("id", "div_twic_info_topicbar_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height)
+                                .style("overflow", "scroll")
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+
+        // Topic bar svg viewport
+        this.m_svg = this.m_div.append("svg")
+                               .attr("class", "svg_twic_info")
+                               .attr("id","svg_twic_info_topicbar_" + this.m_name)
+                               .attr("x", this.m_coordinates.x)
+                               .attr("y", this.m_coordinates.y)
+                               .attr("width", this.m_size.width)
+                               .attr("height", this.m_size.height);
 
 
         // Topic bar topic word list group
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_topicbar");
+
+        // Add background rectangle
+        this.m_panelRect = this.m_groupOverlay.append("rect")
+                                              .attr("class", "rect_twic_topicbar")
+                                              .attr("id", "rect_twic_topicbar_" + this.m_name)
+                                              .attr("x", this.m_coordinates.x)
+                                              .attr("y", this.m_coordinates.y)
+                                              .attr("width", this.m_size.width)
+                                              .attr("height", this.m_size.height)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                              .attr("rx", namespace.Panel.prototype.s_borderRadius)
+                                              .attr("ry", namespace.Panel.prototype.s_borderRadius);
 
         // Add resize bars/capability to panel
         //this.MakeResizable();
@@ -1676,15 +1902,15 @@ var TWiC = (function(namespace){
         // Print svg text/tspans for each topic using the 'textFlow' library
         var rectGrowth = 0;
         //for ( var index = 0, yPosition = TWiC_TopicBar.prototype.s_textInfo.yStart;
-        for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.yStart + namespace.TopicBar.prototype.s_textInfo.fontSize;
-        //for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.fontSize;
+        //for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.yStart + namespace.TopicBar.prototype.s_textInfo.fontSize;
+        for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.fontSize;
                   index < topicStrArray.length; index++ ){
 
             // Append opaque rectangle that will be used as highlight for each topic word list
             var highlightRect = this.m_groupOverlay.append("rect")
                                              .attr("class", "topic_highlightrect")
                                              .attr("id", "topic_" + index)
-                                             .attr("fill", this.m_level.m_topicColors[index])
+                                             .attr("fill", this.m_level.m_topicColors[index]);
 
             // Add the topic text element
             var topicText = this.m_groupOverlay.append("text")
@@ -1705,30 +1931,36 @@ var TWiC = (function(namespace){
                                                         this.m_linkedViews[view_index].panel.Update(update_data);
                                                     }
                                                 }
-                                             }.bind(this));
-            //var dy = 30;
+                                         }.bind(this));
+
+            // NOTE: dy seems to be an unreliable measure, textFlow.js may be buggy
+            // Implementing "numTspansAdded" - 05/28/2015
             var dy = textFlow(topicStrArray[index],
                               topicText[0][0],
-                              namespace.TopicBar.prototype.s_svgSize.width,
+                              this.m_size.width,
                               namespace.TopicBar.prototype.s_textInfo.fontSize,
-                              //topicText.style("font-size"),
                               namespace.TopicBar.prototype.s_textInfo.yIncrement, false);
+
+            var numTspansAdded = topicText.selectAll("tspan")[0].length;
+            dy = namespace.TopicBar.prototype.s_textInfo.yIncrement * numTspansAdded;
 
             // More attributes added after svg text is added to the DOM
             // (done this way for drawing order/later highlighting)
-            highlightRect.datum({"dy":rectGrowth + dy, "height":dy})
+            highlightRect.datum({"dy":rectGrowth + dy, "height":dy, "lines":numTspansAdded})
                          .attr("x", topicText.attr("x"))
                          .attr("y", parseInt(topicText.attr("y")) - parseInt(topicText.style("font-size")))
-                         .attr("width", namespace.TopicBar.prototype.s_svgSize.width)
+                         .attr("width", this.m_size.width)
                          .attr("height", dy)
                          .attr("opacity", 0);
 
+            // Hacky way of ensuring wrapped text is not overwritten by the next topic word list
             yPosition += dy;
             rectGrowth += dy;
         }
 
         // Alter the height of the svg and rect to match the printed topics
         this.m_svg.attr("height", rectGrowth);
+        this.m_panelRect.attr("height", rectGrowth);
     });
 
 
@@ -1756,13 +1988,16 @@ var TWiC = (function(namespace){
             // Highlight the topic word list and scroll to it
             if ( null != data ) {
 
-                this.m_svg.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_div.style("background-color"));
-                this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", "1");
-                dy = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
-                var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-                this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + dy + " " +
-                                                 viewBoxArray[2] + " " +
-                                                 viewBoxArray[3]);
+                this.m_svg.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_panelRect.attr("fill"));
+                this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", 1.0);
+                var dy = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
+                var numLines = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["lines"]
+
+                this.m_div[0][0].scrollTop = dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement);
+                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
+                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + dy + " " +
+                //                                 viewBoxArray[2] + " " +
+                //                                 viewBoxArray[3]);
 
                 // Save the current highlighted topic ID
                 this.m_currentSelection = data.topicID;
@@ -1771,11 +2006,10 @@ var TWiC = (function(namespace){
             else {
 
                 this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
-                this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_div.style("background-color")).attr("opacity", "0");
-                var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-                this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " +
-                                                 viewBoxArray[2] + " " +
-                                                 viewBoxArray[3]);
+                this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
+                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
+                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " 0 " + viewBoxArray[2] + " " + viewBoxArray[3]);
+                this.m_div[0][0].scrollTop = 0;
 
                 // Reset the current selected topic to none
                 this.m_currentSelection = -1;
@@ -1794,18 +2028,18 @@ var TWiC = (function(namespace){
     };
     namespace.DocumentBar.inherits(namespace.InformationView);
 
-    namespace.DocumentBar.method("Initialize", function(p_levelDiv){
+    namespace.DocumentBar.method("Initialize", function(p_parentDiv){
 
-        this.m_div = p_levelDiv.append("div")
-                               .attr("class", "div_twic_info_docbar div_twic_info twic_panel")
-                               .attr("id", "div_twic_info_docbar_" + this.m_name)
-                               //.style("float", "left")
-                               .style("left", this.m_coordinates.x)
-                               .style("top", this.m_coordinates.y)
-                               .style("max-width", this.m_size.width)
-                               .style("max-height", this.m_size.height)
-                               .attr("width", this.m_size.width)
-                               .attr("height", this.m_size.height);
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_info_docbar div_twic_info twic_panel")
+                                .attr("id", "div_twic_info_docbar_" + this.m_name)
+                                .style("float", "left")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .attr("width", this.m_size.width)
+                                .attr("height", this.m_size.height);
 
         // Document bar svg viewport (NOTE: viewBox needed?)
         this.m_svg = this.m_div.append("svg")

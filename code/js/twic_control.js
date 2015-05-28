@@ -15,7 +15,7 @@ var TWiC = (function(namespace){
 
           return "M" + p_x + "," + p_y
            + "h" + p_width
-           + "v" + p_height
+           + "v" + (p_height - p_borderRadius)
            + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + -p_borderRadius + "," + p_borderRadius
            + "h" + -(p_width - (2 * p_borderRadius))
            + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + -p_borderRadius + "," + -p_borderRadius
@@ -45,83 +45,121 @@ var TWiC = (function(namespace){
     };
 
 
-    namespace.Control = function(p_parent, p_barThickness, p_orientation, p_text){
+    namespace.Control = function(p_barThickness, p_orientation){
 
-        this.m_parent = p_parent;
         this.m_barThickness = p_barThickness;
         this.m_orientation = p_orientation;
-        this.m_text = p_text;
+        this.m_name = namespace.GetUniqueID();
+        this.m_coordinates = {x: 0, y: 0};
 
         // To be determined upon initialization
-        this.m_barSize = {};
-        this.m_controlSize = {};
+        this.m_size = {};
+
+        // Initial values
+        this.m_div = null;
+        this.m_svg = null;
+        this.m_controlGroup = null;
+        this.m_barPath = null;
+        this.m_barText = null;
     };
 
-    namespace.Control.method("Initialize", function(){
+    namespace.Control.method("Initialize", function(p_parentDiv){
 
-        // Make a group to hold the control bar and panel
-        this.m_controlGroup = this.m_parent.m_svg.append("g")
-                                                .attr("class", "group_control")
-                                                .attr("id", "group_control_" + this.m_parent.m_name);
-
+        // Determine the type of partially-rounded rectangle to draw
         switch ( this.m_orientation ){
 
             case 'top':
-                this.m_barSize = {width: this.m_parent.m_size.width, height:this.m_barThickness};
-                this.m_controlSize = {width: this.m_parent.m_size.width, height: this.m_parent.m_size.height + this.m_barSize.height};
-                var path = namespace.TopRoundedRect(this.m_parent.m_coordinates.x, this.m_parent.m_coordinates.y,
-                                                    this.m_barSize.width, this.m_barSize.height,
-                                                    parseInt(this.m_parent.m_div.style("border-radius")));
+                var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.x,
+                                                    this.m_size.width, this.m_size.height,
+                                                    namespace.Control.prototype.s_borderRadius);
+                //this.m_panel.m_coordinates.y += this.m_size.height;
                 break;
             case 'bottom':
-                this.m_barSize = {width: this.m_parent.m_size.width, height: this.m_barThickness};
-                this.m_controlSize = {width: this.m_parent.m_size.width, height: this.m_parent.m_size.height + this.m_barSize.height};
-                var path = namespace.BottomRoundedRect(this.m_parent.m_coordinates.x,
-                                                       this.m_parent.m_size.height - this.m_barHeight - this.m_parent.m_div.style("border-radius"),
+                var path = namespace.BottomRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                        this.m_barWidth, this.m_barHeight,
-                                                       parseInt(this.m_parent.m_div.style("border-radius")));
+                                                       namespace.Control.prototype.s_borderRadius);
                 break;
             case 'left':
-                this.m_barSize = {width: this.m_barThickness, height: this.m_parent.m_size.height};
-                this.m_controlSize = {width: this.m_parent.m_size.width + this.m_barSize.width,
-                                      height: this.m_parent.m_size.height};
-                var path = namespace.LeftRoundedRect(this.m_parent.m_coordinates.x, this.m_parent.m_coordinates.y,
-                                                     this.m_barSize.width, this.m_barSize.height,
-                                                     parseInt(this.m_parent.m_div.style("border-radius")));
+                var path = namespace.LeftRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
+                                                     this.m_size.width, this.m_size.height,
+                                                     namespace.Control.prototype.s_borderRadius);
+                //this.m_panel.m_coordinates.x += this.m_size.width;
                 break;
             case 'right':
-                this.m_barSize = {width: this.m_barThickness, height: this.m_parent.m_size.height};
-                this.m_controlSize = {width: this.m_parent.m_size.width + this.m_barSize, height: this.m_parent.m_size.height};
-                var path = namespace.RightRoundedRect(this.m_parent.m_coordinates.x + this.m_parent.m_size.width,
-                                                      this.m_parent.m_coordinates.y,
-                                                      this.m_barSize.width, this.m_barSize.height,
-                                                      parseInt(this.m_parent.m_div.style("border-radius")));
+                var path = namespace.RightRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
+                                                      this.m_size.width, this.m_size.height,
+                                                      namespace.Control.prototype.s_borderRadius);
                 break;
         };
 
-        // Add the path for the control bar shape
+        // Add the control bar's div and svg tags
+        this.m_div = p_parentDiv.append("div")
+                                .attr("class", "div_twic_control")
+                                .attr("id", "div_twic_control_" + this.m_name)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)
+                                .style("width", this.m_size.width)
+                                .style("height", this.m_size.height);
+
+        this.m_svg = this.m_div.append("svg")
+                               .attr("class", "svg_twic_control")
+                               .attr("id", "svg_twic_control_" + this.m_name)
+                               .attr("x", this.m_coordinates.x)
+                               .attr("y", this.m_coordinates.y)
+                               .attr("width", this.m_size.width)
+                               .attr("height", this.m_size.height);
+
+        // Make a group to hold the control bar components
+        this.m_controlGroup = this.m_svg.append("g")
+                                        .attr("class", "group_control")
+                                        .attr("id", "group_control_" + this.m_name);
+
+        // Add the path for the control bar shape (the panel/owner will determine the text/controls itself)
         this.m_barPath = this.m_controlGroup.append("path")
                                             .attr("d", path)
-                                            .attr("fill", namespace.Level.prototype.s_palette.beige)
-                                            .attr("stroke", namespace.Level.prototype.s_palette.purple)
-                                            .attr("stroke-width", 4.5);
-
-        // Add the text for the control bar
-        /*this.m_barTspan = this.m_controlGroup.append("text")
-                                             .append("tspan")
-                                             .attr("x", this.m_barSize.width >> 1)
-                                             .attr("y", this.m_barSize.width * 0.65)
-                                             .html(this.m_text)
-                                             .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                             .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                             .style("font-size", 21);*/
+                                            .style("opacity", 0)
+                                            .attr("fill", namespace.Level.prototype.s_palette.beige);
+                                            //.attr("stroke", namespace.Level.prototype.s_palette.purple)
+                                            //.attr("stroke-width", 4.5);
     });
 
-    namespace.Control.method("AddText", function(p_addTextCallback){
+    namespace.Control.method("AddText", function(p_addTextCallback){ p_addTextCallback(this); });
 
-        p_addTextCallback(this);
+    namespace.Control.method("DetermineDimensions", function(){
+
+        // Determine the type of partially-rounded rectangle to draw
+        switch ( this.m_orientation ){
+
+            case 'top':
+                this.m_size = {width: this.m_panel.m_size.width, height: this.m_barThickness};
+                //this.m_coordinates = {x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y};
+                break;
+            case 'bottom':
+                this.m_size = {width: this.m_panel.m_size.width, height: this.m_barThickness};
+                //this.m_coordinates = {x: this.m_panel.m_coordinates.x, y: this.m_panel.m_coordinates.y + this.m_panel.m_size.height - this.m_size.height - namespace.Control.prototype.s_borderRadius};
+                break;
+            case 'left':
+                this.m_size = {width: this.m_barThickness, height: this.m_panel.m_size.height};
+                //this.m_coordinates = {x: 0, y: 0};
+                break;
+            case 'right':
+                this.m_size = {width: this.m_barThickness, height: this.m_panel.m_size.height};
+                //this.m_coordinates = {x: this.m_panel.m_size.width, y: 0};
+                break;
+        };
+
     });
 
+    namespace.Control.method("SetContainer", function(p_container){
+
+        this.m_container = p_container;
+        this.m_panel = this.m_container.m_panel;
+    });
+
+    namespace.Control.prototype.s_defaultThickness = 50;
+    namespace.Control.prototype.s_borderRadius = 15;
 
     return namespace;
 }(TWiC || {}));

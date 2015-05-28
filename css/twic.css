@@ -10,21 +10,21 @@ body {
   min-height: 100%;
 }
 
+.div_twic_control{
+  position:relative;
+  display: block;
+}
+
 .twic_panel {
-  border-radius: 15px;
-  position: absolute;
+  position: relative;
   overflow: auto;
+  display: block;
 }
 
 .div_twic_graph {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
-  float: left;
-}
-
-.svg_twic_graph {
-  position: absolute;
 }
 
 .group_twic_graph_overlay {
@@ -32,27 +32,18 @@ body {
   pointer-events: all;
 }
 
-.div_twic_graph_corpusclusterview {
-  background-color: #002240;
-}
-
-.div_twic_graph_textclusterview {
-  background-color: white;
-}
-
 .div_twic_info {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
-  display:inline-block;
-}
-
-.div_twic_info_topicbar {
+  display:inline;
+  border-radius:15px;
   background-color: #002240;
+  position:absolute;
 }
 
 .svg_twic_info {
-  overflow: scroll;
+
 }
 
 .topic_highlightrect {
@@ -63,15 +54,6 @@ body {
   font-family: Archer;
   font-size: 20;
   position: absolute;
-}
-
-.div_twic_info_docbar {
-  background-color: #002240;
-  overflow: auto;
-}
-
-.rect_twic_graph_textclusterview {
-  fill: white;
 }
 
 .left_resizer {
