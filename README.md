@@ -10,7 +10,7 @@ Then run the following, depending on your version of Python.
 
 For Python 2.7: "python -m SimpleHTTPServer 8080"  
 
-For Python 3.0: "python3 -m http.server"
+For Python 3.0: "python3 -m http.server 8080"
 
 *2)* Direct your web browser to localhost:8080/twic.html (Chrome is currently the only browser fully supported.)
 
