@@ -71,8 +71,7 @@ class TWiC_MalletInterpret:
                 lowercase_word = clean_word(words[actual_word_index].lower())
 
                 # NOTE: Condition includes workaround for MALLET regex/punctuation issue with import-dir
-                if statefile_word_index < len(current_fwt.word_info) and \
-                   (lowercase_word == lowercase_state_word)
+                if statefile_word_index < len(current_fwt.word_info) and (lowercase_word == lowercase_state_word):
                    # or ("\'" in words[actual_word_index].lower() and lowercase_word != lowercase_state_word)):
 
                     statefile_word_index += 1
@@ -288,6 +287,70 @@ class TWiC_MalletInterpret:
 
         return clusters_json
 
+
+    # @staticmethod
+    # def Build_CorpusMapJSON_Two(corpus_name, corpus_topics, file_topic_proportions, output_dir):
+
+    #     '''
+    #       TWiC JSON Hierarchy: Corpus -> Clusters -> Texts
+    #       // Corpus
+    #       {
+    #           "name": <corpus_name>,
+    #           "ideal_text":<file_id>, - Text with average topic distribution
+    #           "distance2ideal":"NA",
+    #           "topics" : {
+    #               <topic_id> : [<rank>, <topic_proportion>],...
+    #           },
+    #           // Clusters
+    #           "children" : [
+    #               {
+    #                 "name":<cluster_name>, - Topic number
+    #                 "ideal_text":<file_id>, - Text where topic is strongest
+    #                 "distance2ideal":<jd distance from cluster ideal text's topic distribution
+    #                                   to corpus topic distribution>
+    #                 "topics" : { // Average topic distribution (of all texts in the cluster)
+    #                     <topic_id> : [<rank>, <topic_proportion>],...
+    #                 },
+    #                 // Texts
+    #                 "children":[
+    #                     {
+    #                         "name":<text_name>,
+    #                         "ideal_text":<file_id> - Self
+    #                         "distance2ideal":<jd distance from this text's topic distribution to
+    #                                          cluster ideal text's topic distribution>
+    #                         "topics": {
+    #                             <topic_id> : [<rank>, <topic_proportion>],...
+    #                         },
+    #                         "children":[]
+    #                     },...
+    #                 ]
+    #               },...
+    #           ]
+    #       }
+    #     '''
+
+    #     # 1. Define corpus level JSON
+    #     twic_corpus_map = {
+    #         "name" : corpus_name,
+    #         "ideal_text" : "",
+    #         "distance2ideal" : "",
+    #         "topics" : {},
+    #         "children" : []
+    #     }
+
+    #     # Build a ranked map of corpus-level topics for the JSON
+    #     corpus_topic_pairs = [[topic, corpus_topics[topic]] for topic in corpus_topics.keys()]
+    #     sorted_corpus_topic_pairs = sorted(corpus_topic_pairs, key=lambda x:x[1], reverse=True)
+    #     ranked_corpus_topic_map = {}
+    #     ranked_corpus_topic_map = { sorted_corpus_topic_pairs[index][0]:
+    #                                 [index + 1, sorted_corpus_topic_pairs[index][1]]
+    #                                 for index in range(len(sorted_corpus_topic_pairs))}
+    #     twic_corpus_map["topics"] = ranked_corpus_topic_map
+
+    #     # Get corpus topic distribution sorted by topic id
+    #     corpus_topic_proportions = [corpus_topics[str(index)] for index in range(len(corpus_topics.keys()))]
+
+
     @staticmethod
     def Build_CorpusMapJSON(corpus_name, corpus_topics, file_topic_proportions, output_dir):
 
@@ -431,12 +494,19 @@ class TWiC_MalletInterpret:
             })
 
             # 3. Work on the text level JSON
+            my_text_index = -1
             for entry in clusters_json[cluster_topic_id]["linked_docs"]:
+
+                for index in range(len(file_topic_proportions)):
+                    if file_topic_proportions[index].fileid == entry[1]:
+                        my_text_index = index
+                        break
+
                 twic_corpus_map["children"][current_cluster_index]["children"].append({
                         "name" : entry[1],
                         "ideal_text" : entry[0],
                         "distance2ideal" : entry[2],
-                        "topics" : file_topic_proportions[file_index].topic_guide,
+                        "topics" : file_topic_proportions[my_text_index].topic_guide,
                         "children" : []
                     })
 

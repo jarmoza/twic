@@ -102,6 +102,28 @@ var TWiC = (function(namespace){
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height);
+                                /*.on("mousedown", function(d) {
+
+                                    $(this).parent().addClass('draggable').parents().on('mousemove', function(e) {
+
+                                        //console.log("Coords: " + coords[0] + "," + coords[1]);
+                                        console.log("PageX: " + e.pageX + " PageY: " + e.pageY);
+                                        console.log("================================");
+
+                                        $('.draggable').offset({
+                                            top: e.pageY - ($('.draggable').outerHeight() / 2),
+                                            //top: coords[1] - $('.draggable').position().top,
+                                            left: e.pageX - ($('.draggable').outerWidth() / 2)
+                                            //left: coords[0] - $('.draggable').position().left
+                                        })
+                                        .on('mouseup', function() {
+                                            $(this).removeClass('draggable');
+                                        });
+                                    });
+                                    //e.preventDefault();
+                                }).on('mouseup', function() {
+                                    $('.draggable').removeClass('draggable');
+                                });*/
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_control")
@@ -123,6 +145,31 @@ var TWiC = (function(namespace){
                                             .attr("fill", namespace.Level.prototype.s_palette.beige);
                                             //.attr("stroke", namespace.Level.prototype.s_palette.purple)
                                             //.attr("stroke-width", 4.5);
+
+        // Explanation '?' for demo
+        /*var helpBoxOffset = {x:this.m_size.width - 50, y:this.m_coordinates.y + 10};
+        var helpBoxPath = "M" + this.m_
+        this.m_helpBox = this.m_controlGroup.append("rect")
+                                            .attr("x", helpBoxOffset.x)
+                                            .attr("y", helpBoxOffset.y)
+                                            .attr("width", 30)
+                                            .attr("height", 30)
+                                            .attr("fill", TWiC.Level.prototype.s_palette.darkblue)
+                                            .attr("rx", 5)
+                                            .attr("ry", 5);
+       this.m_helpBoxText = this.m_controlGroup.append("text")
+                           .attr("x", helpBoxOffset.x)
+                           .attr("y", helpBoxOffset.y)
+                           .attr("dx", 11)
+                           .attr("dy", 23)
+                           .attr("width", 30)
+                           .attr("height", 30)
+                           .attr("fill", TWiC.Level.prototype.s_palette.lightpurple)
+                           .attr("rx", 5)
+                           .attr("ry", 5)
+                           .html("?")
+                           .style("font-family", namespace.Level.prototype.s_fontFamily)
+                           .style("font-size", 23);*/
     });
 
     namespace.Control.method("AddText", function(p_addTextCallback){ p_addTextCallback(this); });

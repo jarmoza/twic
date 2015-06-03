@@ -33,9 +33,11 @@ var TWiC = (function(namespace){
 
     namespace.Panel.method("Initialize", function(){});
     namespace.Panel.method("Start", function(){});
-    namespace.Panel.method("Update", function(p_data){});
+    namespace.Panel.method("Update", function(p_data, p_updateType){});
 
-    namespace.Panel.method("Pause", function(p_state){ this.m_paused = p_state; });
+    namespace.Panel.method("Pause", function(p_state){
+        this.m_paused = p_state;
+    });
     namespace.Panel.method("IsPaused", function(){ return this.m_paused; });
     namespace.Panel.method("UseEffects", function(p_state){ this.m_showEffects = p_state; });
     namespace.Panel.method("IsUsingEffects", function(){ return this.m_showEffects; });
@@ -483,22 +485,23 @@ var TWiC = (function(namespace){
                                         1.0);
     });
 
-    namespace.CorpusView.method("Update", function(data){
+    namespace.CorpusView.method("Update", function(p_data, p_updateType){
 
         if ( !this.m_paused ) {
-            if ( null != data ){
-                this.HighlightTopicCircle(data);
+
+            if ( null != p_data ){
+                this.HighlightTopicCircle(p_data);
             } else {
                 this.DarkenAllTopicCircles();
             }
         }
     });
 
-    namespace.CorpusView.method("ClickedClusterCircle", function(p_clusterRef){
+    namespace.CorpusView.method("DoubleClickedClusterCircle", function(p_clusterRef){
 
         for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
-            if ( "click" == this.m_linkedViews[index].update ) {
-                this.m_linkedViews[index].panel.Update({topicID: p_clusterCircle.m_name})
+            if ( "dblclick" == this.m_linkedViews[index].update ) {
+                this.m_linkedViews[index].panel.Update({topicID: p_clusterCircle.m_name}, "dblclick")
             }
         }
     });
@@ -568,6 +571,28 @@ var TWiC = (function(namespace){
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
+            /*var myTip = d3.tip().attr("class", "d3-tip")
+                                .direction("s")
+                                .offset([0,0])
+                                .html("Topic Words in Context: Corpus View<br><br>" +
+                                      "Actions:<br><br>" +
+                                      "Mouseover - Highlights topics in view<br>" +
+                                      "Click - Click on topic rings to pause viewing;<br>" +
+                                      "click again to resume.<br><br>" +
+                                      "Description:<br><br>" +
+                                      "&nbsp;&nbsp;Here is a representation of a familiar output from<br>" +
+                                      "MALLET, the top N topics of an entire corpus, which<br>" +
+                                      "itself is a calculated average of the topic distributions<br>" +
+                                      "of each document in the corpus.  As you mouse over the<br>" +
+                                      "bullseye-like shape, you move toward the most prevalent<br>" +
+                                      "topics of the corpus, the words of which can be seen in<br>" +
+                                      "the topic bar below. These topics, as they are distributed<br>" +
+                                      "throughout the corpus, can be seen as well as you mouseover.");
+
+            this.m_svg.call(myTip);
+            this.m_controlBar.m_helpBoxText.on("mouseover", myTip.show)
+                                           .on("mouseout", myTip.hide);*/
+
         }.bind(this));
     });
 
@@ -626,6 +651,11 @@ var TWiC = (function(namespace){
                                               .attr("class","rect_twic_graph")
                                               .attr("id","rect_twic_graph_corpusclusterview_" + this.m_name)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue);
+
+
+        // Make the control bar visible up front (as graph takes time to load)
+        this.m_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                   .style("opacity", 1.0);
 
         // Add resize bars/capability to panel
         //this.MakeResizable();
@@ -857,6 +887,7 @@ var TWiC = (function(namespace){
 
         var links = this.m_svg.selectAll(".link"); // Perform visible/active test later
         var nodes = this.m_svg.selectAll(".node"); // Perform visible/active test later
+
         var svgWidth = parseInt(this.m_svg.attr("width"));
         var svgHeight = parseInt(this.m_svg.attr("height"));
 
@@ -918,11 +949,11 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.CorpusClusterView.method("Update", function(data){
+    namespace.CorpusClusterView.method("Update", function(p_data, p_updateType){
 
         if ( !this.m_paused ) {
-            if ( null != data ){
-                this.HighlightAllClustersWithTopic(data);
+            if ( null != p_data ){
+                this.HighlightAllClustersWithTopic(p_data);
             } else {
                 this.DarkenAllClusters();
             }
@@ -966,11 +997,11 @@ var TWiC = (function(namespace){
         });
     });
 
-    namespace.CorpusClusterView.method("ClickedClusterCircle", function(p_clusterCircle){
+    namespace.CorpusClusterView.method("DoubleClickedClusterCircle", function(p_clusterCircle){
 
         for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
-            if ( "click" == this.m_linkedViews[index].update ) {
-                this.m_linkedViews[index].panel.Update({topicID: p_clusterCircle.m_name})
+            if ( "dblclick" == this.m_linkedViews[index].update ) {
+                this.m_linkedViews[index].panel.Update({topicID: p_clusterCircle.m_name}, "dblclick")
             }
         }
     });
@@ -1015,6 +1046,31 @@ var TWiC = (function(namespace){
                                   .attr("fill", namespace.Level.prototype.s_palette.lightblue)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
+
+            /*var myTip = d3.tip().attr("class", "d3-tip")
+                                .direction("w")
+                                .offset([0,-300])
+                                .html("Topic Words in Context: Corpus Cluster View<br><br>" +
+                                      "Actions:<br>" +
+                                      "Mouseover - Highlight topics as they appear in text clusters<br>" +
+                                      "throughout the corpus.<br>" +
+                                      "Click - Click on topic rings to pause viewing;<br>" +
+                                      "click again to resume<br>" +
+                                      "Double Click - Reveals the underlying text cluster<br>" +
+                                      "in the Text Cluster View.<br><br>" +
+                                      "Description:<br><br>" +
+                                      "The corpus cluster view is one level below the corpus view.<br>" +
+                                      "Texts are clustered by their top topic represented with similar<br>" +
+                                      "bullseye abstraction, each of which shows the average top N topics<br>" +
+                                      "of that cluster. At the center of the graph lies the cluster<br>" +
+                                      "closest to the average corpus topic distribution (as visible in<br>" +
+                                      "the corpus view), the distribution against which which all clusters<br>" +
+                                      "of texts are compared and appropriately placed in space via<br>" +
+                                      "computed distance measure.");
+
+            this.m_svg.call(myTip);
+            this.m_controlBar.m_helpBoxText.on("mouseover", myTip.show)
+                                           .on("mouseout", myTip.hide);*/
         }.bind(this));
     });
 
@@ -1077,9 +1133,14 @@ var TWiC = (function(namespace){
                                               this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
                                               .attr("class","rect_twic_graph")
                                               .attr("id","rect_twic_graph_textclusterview_" + this.m_name)
-                                              .attr("fill", "white");
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
-        this.m_clusterSvgGroup = this.m_svg.append("g").attr("id", "clustersvg_group");
+        this.m_clusterSvgGroup = this.m_groupOverlay.append("g").attr("id", "clustersvg_group")
+                                                       .attr("width", this.m_size.width)
+                                                       .attr("height", this.m_size.height)
+                                                       .attr("transform", "translate(" + ((this.m_coordinates.x + (this.m_size.width >> 2)) * 0.4)
+                                                             + "," + ((this.m_coordinates.y + (this.m_size.height >> 2)) * 0.4) + ") scale(0.75)");
+
 
         // Add my text to the container's control bar
         this.AddBarText();
@@ -1201,9 +1262,11 @@ var TWiC = (function(namespace){
         this.m_graph = d3.layout.force()
                                 .nodes(this.m_nodes)
                                 .links(this.m_links)
-                                .size([this.m_size.width, this.m_size.height])
-                                .charge(0.2)
-                                .gravity(0)
+                                .size([this.m_size.width,
+                                    this.m_size.height])
+                                .charge(-400)
+                                .gravity(0.05)
+                                .linkStrength(0.1)
                                 //.chargeDistance(10)
                                 .linkDistance(function(d){ return d.value * TWiC.CorpusClusterView.prototype.s_linkDistanceMod; });
     });
@@ -1229,8 +1292,9 @@ var TWiC = (function(namespace){
                            .enter()
                            .append("line")
                            .attr("class", "link")
-                           .style("stroke-width", 2)
-                           .style("stroke","lightgray");
+                           .style("stroke-width", 0.5)
+                           .style("stroke","lightgray")
+                           .style("opacity", TWiC.ClusterCircle.s_semihighlightedOpacity);
 
             // Bind TWiC object data to the node data
             for ( var index = 0; index < this.m_twicObjects.length; index++ ) {
@@ -1252,6 +1316,14 @@ var TWiC = (function(namespace){
                     if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["name"] ){
 
                         this.m_twicObjects[index].Draw();
+                        //p_text, p_fontSize, p_color, p_position, p_opacity
+                        var fileID = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["name"];
+                        var title = this.m_level.m_corpusInfo.file_info[parseInt(fileID)][1];
+                        this.m_twicObjects[index].AddTextTag(title,
+                                                             20, TWiC.Level.prototype.s_palette.gold,
+                                                             {x:this.m_twicObjects[index].m_coordinates.x - ((7 * title.length) >> 1),
+                                                              y:this.m_twicObjects[index].m_coordinates.y + (2.75 * this.m_twicObjects[index].m_radius)},
+                                                             0.0);
                     }
                 }
             }
@@ -1365,51 +1437,110 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TextClusterView.method("Update", function(data){
+    namespace.TextClusterView.method("Update", function(p_data, p_updateType){
 
-        if ( data && data.topicID != this.m_clusterIndex && this.m_level.m_corpusMap["children"][this.m_clusterIndex] ) {
+        if ( !this.m_paused ){
 
-            // Stop the force directed graph
-            this.m_graph.stop();
+            if ( p_updateType && "mouseover" == p_updateType ){
 
-            // Clear out svg objects
-            this.m_clusterSvgGroup.selectAll("*").remove();
+                if ( !this.m_paused ) {
 
-            // Reset prior values and assign new cluster index
-            this.m_twicObjects = [];
-            this.m_objectsJSON = [];
-            this.m_nodes = [];
-            this.m_links = [];
-            this.m_graph = null;
-            this.m_clusterIndex = data.topicID;
-            this.m_idealText = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["ideal_text"];
-            this.b_positionsCalculated = false;
-            this.m_rootIndex = -1;
+                    if ( null != p_data ){
 
-            this.m_controlBar.m_barText.selectAll("*").remove();
-            this.AddBarText(50, "top");
-
-            // Re-initialize and start the graph
-            this.InitializeGraph();
-            this.Start();
-
-            // Create new TextRectangles and load their JSON
-            /*for ( var index = 0; index < data.texts.length; index++ ){
-                 var textRectangle = new TextRectangle({x:0,y:0}, {width:17,height:22},
-                                                       data.texts[index], this.m_level,
-                                                       this.m_panel, this.m_linkedViews);
-                 textRectangle.Load();
-                 this.m_twicObjects.push(textRectangle);
-            }
-
-            q.await(function(){
-
-                for ( var index = 0; index < this.m_twicObjects.length; index++ ) {
-                    this.m_twicObjects.Draw();
+                        if ( parseInt(p_data.topicID) == this.m_clusterIndex ){
+                            this.HighlightAllClusters();
+                        } else {
+                            this.HighlightAllClustersWithTopic(p_data);
+                        }
+                    } else {
+                        this.DarkenAllClusters();
+                    }
                 }
+            } else {
+                if ( p_data && p_data.topicID != this.m_clusterIndex && this.m_level.m_corpusMap["children"][this.m_clusterIndex] ) {
 
-            });*/
+                    // Stop the force directed graph
+                    this.m_graph.stop();
+
+                    // Clear out svg objects
+                    this.m_clusterSvgGroup.selectAll("*").remove();
+
+                    // Reset prior values and assign new cluster index
+                    this.m_twicObjects = [];
+                    this.m_objectsJSON = [];
+                    this.m_nodes = [];
+                    this.m_links = [];
+                    this.m_graph = null;
+                    this.m_clusterIndex = p_data.topicID;
+                    this.m_idealText = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["ideal_text"];
+                    this.b_positionsCalculated = false;
+                    this.m_rootIndex = -1;
+
+                    this.m_controlBar.m_barText.selectAll("*").remove();
+                    this.AddBarText(50, "top");
+
+                    // Re-initialize and start the graph
+                    this.InitializeGraph();
+                    this.Start();
+                }
+            }
         }
+    });
+
+    namespace.TextClusterView.method("HighlightAllClusters", function(){
+
+        var allRects = this.m_svg.selectAll(".topic_rectangle");
+                                 //.style("stroke", function(d){ return d.color; })
+                                 //.style("stroke-opacity", 1.0);
+        allRects.each(function(d){
+            d.text_rect_ref.m_textInfoSelection.style("opacity", 1.0);
+            d.text_rect_ref.m_textTag.style("opacity", 1.0);
+        });
+        this.m_svg.selectAll(".clusterrect_text").selectAll("tspan").style("opacity", 1.0);
+    });
+
+    namespace.TextClusterView.method("HighlightAllClustersWithTopic", function(data){
+
+        // Color all circles that represent the given topic
+        var filteredRects = this.m_svg.selectAll(".topic_rectangle")
+                                        .filter(function(d){ return d.topicID == data.topicID; })
+                                        .style("stroke", data.color)
+                                        .style("stroke-opacity", 1.0);
+
+        // Darken all circles that don't represent the given topic
+        this.m_svg.selectAll(".topic_rectangle")
+                  .filter(function(d){ return d.topicID != data.topicID; })
+                  .style("stroke", function(d){ return d.locolor; })
+                  .style("stroke-opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
+
+        // Raise the opacity of all circles in the highlighted cluster
+        filteredRects.each(function(d){
+            d3.select(this.parentNode)
+              .selectAll(".topic_rectangle")
+              .filter(function(d){return d.topicID != data.topicID; })
+              .style("stroke-opacity", 1.0);
+
+            d.text_rect_ref.m_textInfoSelection.style("opacity", 1.0);
+            d.text_rect_ref.m_textInfoSelection
+              .selectAll(".clusterrect_text")
+              .selectAll("tspan")
+              .style("opacity", 1.0);
+            d.text_rect_ref.m_textTag.style("opacity", 1.0);
+        });
+    });
+
+    namespace.TextClusterView.method("DarkenAllClusters", function(){
+
+        // Darken all clusters
+        var allRects = this.m_svg.selectAll(".topic_rectangle")
+                                 .style("stroke", function(d){ return d.locolor; })
+                                 .style("stroke-opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
+        allRects.each(function(d){
+            d.text_rect_ref.m_textInfoSelection.style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
+            d.text_rect_ref.m_textTag.style("opacity", 0.0);
+        });
+
+        this.m_svg.selectAll(".clusterrect_text").selectAll("tspan").style("opacity", TWiC.ClusterCircle.prototype.s_semihighlightedOpacity);
     });
 
     namespace.TextClusterView.method("AddBarText", function(){
@@ -1420,17 +1551,17 @@ var TWiC = (function(namespace){
                                                     .attr("x", (p_controlBar.m_barThickness >> 1))
                                                     .attr("y", (p_controlBar.m_barThickness * 0.65));
 
-            p_controlBar.m_barPath.attr("fill", "white").style("opacity", 1.0);
+            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue).style("opacity", 1.0);
 
             p_controlBar.m_barText.append("tspan")
                                   .html("TWiC:&nbsp;&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.purple)
+                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
             p_controlBar.m_barText.append("tspan")
                                   .html("Texts with Top Topic of&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
@@ -1442,7 +1573,7 @@ var TWiC = (function(namespace){
 
             p_controlBar.m_barText.append("tspan")
                                   .html("&nbsp;in&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.brown)
+                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
 
@@ -1451,7 +1582,21 @@ var TWiC = (function(namespace){
                                   .attr("fill", namespace.Level.prototype.s_palette.lightblue)
                                   .style("font-family", namespace.Level.prototype.s_fontFamily)
                                   .style("font-size", 21);
+
+            /*var myTip = d3.tip().attr("class", "d3-tip")
+                                .direction("s")
+                                .offset([0,0])
+                                .html("Corpus-Cluster View: One level below the corpus view, texts are clustered by their top topic<br>" +
+                                      "represented with similar abstraction. At the center of the graph\nlies the central statistical<br>" +
+                                      "measure by which all clusters of texts are measured. In the case on display, the top 10 topics<br>" +
+                                      "of each cluster is shown through the bullseye-like shape (with the most central topic at its center),<br>" +
+                                      "and those clusters are shown at a computed distance from the average topic distribution of the corpus.");
+
+            this.m_svg.call(myTip);
+            this.m_controlBar.m_helpBoxText.on("mouseover", myTip.show)
+                                           .on("mouseout", myTip.hide);*/
         }.bind(this));
+
     });
 
 
@@ -1481,6 +1626,10 @@ var TWiC = (function(namespace){
                                 .style("height", this.m_size.height)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
+                                // New
+                                .style("overflow", "scroll")
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -1509,13 +1658,13 @@ var TWiC = (function(namespace){
                                               .attr("id","rect_twic_graph_textview_" + this.m_name)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
-        this.m_highlightRect = this.m_groupOverlay.append("rect")
+        /*this.m_highlightRect = this.m_groupOverlay.append("rect")
                                                   .attr("x", this.m_coordinates.x)
                                                   .attr("y", this.m_coordinates.y - this.m_controlBar.m_size.height)
                                                   .attr("width", this.m_size.width)
                                                   .attr("height", this.m_size.height + this.m_controlBar.m_size.height)
                                                   .attr("fill", "none")
-                                                  .style("opacity", 0.0);
+                                                  .style("opacity", 0.0);*/
 
         // Append a separate group for foreignObject tags for the text
         this.m_textGroup = this.m_groupOverlay.append("g")
@@ -1542,17 +1691,165 @@ var TWiC = (function(namespace){
 
     namespace.TextView.method("Start", function(){ });
 
-    namespace.TextView.method("Update", function(data){
+    namespace.TextView.method("Update", function(p_data, p_updateType){
 
-        // Save a reference to the JSON data
-        this.m_data = data;
+        if ( !this.IsPaused() ) {
+            if ( "mouseover" == p_updateType ) {
 
-        // Create an HTML foreignObject from this text's JSON
-        this.CreateHTMLFromJSON(data);
-        //this.AddHTMLAsForeignObject(data);
+                if ( null == p_data ) {
+                    this.DarkenTopicText();
+                } else {
+                    this.HighlightTopicText(p_data);
+                }
+            } else {
 
-        // Remove any old text and add my new text to the container's control bar
-        this.AddBarText();
+                // Save a reference to the JSON data
+                this.m_data = p_data;
+
+                // Create an HTML foreignObject from this text's JSON
+                this.CreateTextSVGFromJSON(p_data);
+                //this.CreateHTMLFromJSON(p_data);
+                //this.AddHTMLAsForeignObject(data);
+
+                // Remove any old text and add my new text to the container's control bar
+                this.AddBarText();
+            }
+        }
+    });
+
+    namespace.TextView.method("CreateTextSVGFromJSON", function(data){
+
+        // Remove old texts from the view
+        //this.m_textGroup.selectAll("*").remove();
+        this.m_groupOverlay.selectAll("*").remove();
+
+        // Initial loop for path/panel rect resize (needs to be drawn first)
+        var currentX = 50, currentY = 100;
+        var rectGrowth = this.m_size.height;
+        var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
+        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
+            var words = data.json.lines_and_colors[index][0].split(" ");
+            for ( var index2 = 0; index2 < words.length; index2++ ) {
+
+            }
+
+            currentY += dy;
+            if ( currentY > this.m_size.height ){
+                rectGrowth += dy;
+            }
+        }
+
+        // Resize the svg and panel rect
+        this.m_svg.attr("height", rectGrowth);
+        this.m_groupOverlay.selectAll(".rect_twic_graph").remove();
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
+                                              this.m_coordinates.y, this.m_size.width, rectGrowth, namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class","rect_twic_graph")
+                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
+        this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
+
+        // Re-add text groups
+        this.m_textGroup = this.m_groupOverlay.append("g")
+                                              .attr("class", "group_textview_text");
+        var containerGroup = this.m_textGroup.append("g").attr("class", "textview_container")
+                                                 .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
+                                                 .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
+                                                 .style("position", "relative")
+                                                 .style("overflow", "auto");
+
+        // Build the HTML text
+        currentX = 50;
+        currentY = 100;
+        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
+
+            words = data.json.lines_and_colors[index][0].split(" ");
+            var lineText = "";
+
+            currentX = 50;
+            var text;
+
+            for ( var index2 = 0; index2 < words.length; index2++ ) {
+
+                // NOTE: undefined HACK
+                if ( "-1" == data.json.lines_and_colors[index][1][index2] ||
+                     undefined == data.json.lines_and_colors[index][1][index2] ){
+
+                    var dlocolor = namespace.ShadeBlend(TWiC.ClusterCircle.prototype.s_colorMidlight,
+                                                 TWiC.Level.prototype.s_palette.gold);
+
+
+                    text = containerGroup.append("text").attr("class", "text_word")
+                                                 .attr("x", currentX)
+                                                 .attr("y", currentY)
+                                                 .attr("dx", "0")
+                                                 .attr("dy", "0")
+                                                 .attr("fill", dlocolor)
+                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                 .style("font-size", 20)
+                                                 .style("position", "absolute")
+                                                 .html(words[index2] + "&nbsp;");
+                }
+                else {
+
+                    var dlocolor = namespace.ShadeBlend(TWiC.ClusterCircle.prototype.s_colorMidlight,
+                                                 this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]);
+
+                    text = containerGroup.append("text").attr("class", "text_coloredword")
+                                                 .datum({topicID: data.json.lines_and_colors[index][1][index2],
+                                                         locolor: dlocolor,
+                                                         color:this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]})
+                                                 .attr("x", currentX)
+                                                 .attr("y", currentY)
+                                                 .attr("dx", "0")
+                                                 .attr("dy", "0")
+                                                 .attr("fill", dlocolor)
+                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                 .style("font-size", 20)
+                                                 .style("position", "absolute")
+                                                 .html(words[index2] + "&nbsp;");
+                }
+
+                currentX += text[0][0].offsetWidth * 0.67;
+                //currentX += text[0][0].offsetWidth * 0.9;
+            }
+
+            currentY += dy;
+            if ( currentY > this.m_size.height ){
+                rectGrowth += dy;
+            }
+        }
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .on("click", function(){
+                      // Pause/unpause my panel's Update() to keep
+                      // highlighting frozen or allow it to resume
+                      var initialPauseState = this.IsPaused();
+                      this.Pause(!initialPauseState);
+
+                      // Pause/unpause all of my panel's linked views as well
+                      for ( var index = 0; index < this.m_linkedViews.length;
+                            index++ ) {
+                          this.m_linkedViews[index].panel.Pause(!initialPauseState);
+                      }
+                  }.bind(this))
+                  .on("mouseover", function(d){
+                      this.Update(d, "mouseover");
+                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                          if ( "mouseover" == this.m_linkedViews[index].update ) {
+                              this.m_linkedViews[index].panel.Update(d, "mouseover");
+                          }
+                      }
+                  }.bind(this))
+                  .on("mouseout", function(){
+                      this.Update(null, "mouseover");
+                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                          if ( "mouseover" == this.m_linkedViews[index].update ) {
+                              this.m_linkedViews[index].panel.Update(null, "mouseover");
+                          }
+                      }
+                  }.bind(this));
 
     });
 
@@ -1578,7 +1875,7 @@ var TWiC = (function(namespace){
                                                  .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
                                                  .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
                                                  .style("position", "relative")
-                                                 .style("overflow", "auto")
+                                                 .style("overflow", "auto");
                                                  //.style("border", namespace.TextView.prototype.s_borderWidth + "px")
                                                  //.style("border-style", "solid")
                                                  //.style("border-color", this.m_level.m_topicColors[data.clusterIndex]);
@@ -1664,19 +1961,31 @@ var TWiC = (function(namespace){
 
         myPanel = this;
         this.m_svg.selectAll("span")
+                  .on("click", function(){
+                      // Pause/unpause my panel's Update() to keep
+                      // highlighting frozen or allow it to resume
+                      var initialPauseState = this.IsPaused();
+                      this.Pause(!initialPauseState);
+
+                      // Pause/unpause all of my panel's linked views as well
+                      for ( var index = 0; index < this.m_linkedViews.length;
+                            index++ ) {
+                          this.m_linkedViews[index].panel.Pause(!initialPauseState);
+                      }
+                  }.bind(this))
                   .on("mouseover", function(){
                       var spanTopicID = this.title.split(" ")[1];
                       var data = {topicID: spanTopicID, color:myPanel.m_level.m_topicColors[spanTopicID]};
                       for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
                           if ( "mouseover" == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(data);
+                              myPanel.m_linkedViews[index].panel.Update(data, "mouseover");
                           }
                       }
                   })
                   .on("mouseout", function(){
                       for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
                           if ( "mouseover" == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(null);
+                              myPanel.m_linkedViews[index].panel.Update(null, "mouseover");
                           }
                       }
                   });
@@ -1725,14 +2034,14 @@ var TWiC = (function(namespace){
                       var data = {topicID: spanTopicID, color:myPanel.m_level.m_topicColors[spanTopicID]};
                       for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
                           if ( "mouseover" == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(data);
+                              myPanel.m_linkedViews[index].panel.Update(data, "mouseover");
                           }
                       }
                   })
                   .on("mouseout", function(){
                       for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
                           if ( "mouseover" == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(null);
+                              myPanel.m_linkedViews[index].panel.Update(null, "mouseover");
                           }
                       }
                   });
@@ -1762,7 +2071,7 @@ var TWiC = (function(namespace){
                                       .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html(this.m_data.json.title)
+                                      .html("\"" + this.m_data.json.title + "\"")
                                       .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 23);
@@ -1777,7 +2086,7 @@ var TWiC = (function(namespace){
                                       .html("Topic Cluster " + this.m_data.clusterIndex)
                                       .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 23);
+                                      .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
                                       .html("&nbsp;in&nbsp;")
@@ -1792,6 +2101,24 @@ var TWiC = (function(namespace){
                                       .style("font-size", 21);
             }
         }.bind(this));
+    });
+
+    namespace.TextView.method("HighlightTopicText", function(p_data){
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .filter(function(d){ return d.topicID == p_data.topicID; })
+                  .attr("fill", function(d){ return d.color; });
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .filter(function(d){ return d.topicID != p_data.topicID; })
+                  .attr("fill", function(d){ return d.locolor; });
+
+    });
+
+    namespace.TextView.method("DarkenTopicText", function(p_data){
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .attr("fill", function(d){ return d.locolor; });
     });
 
     namespace.TextView.prototype.s_borderWidth = 5;
@@ -1928,7 +2255,16 @@ var TWiC = (function(namespace){
                                                 for ( var view_index = 0; view_index < this.m_linkedViews.length;
                                                       view_index++ ){
                                                     if ( "click" == this.m_linkedViews[view_index].update ) {
+
                                                         this.m_linkedViews[view_index].panel.Update(update_data);
+                                                        /*var initialPauseState = this.m_linkedViews[view_index].IsPaused();
+                                                        if ( !initialPauseState) {
+                                                            this.m_linkedViews[view_index].panel.Update(update_data);
+                                                            this.m_linkedViews[view_index].Pause(true);
+                                                        } else {
+                                                            this.m_linkedViews[view_index].Pause(false);
+                                                            this.m_linkedViews[view_index].panel.Update(update_data);
+                                                        }*/
                                                     }
                                                 }
                                          }.bind(this));

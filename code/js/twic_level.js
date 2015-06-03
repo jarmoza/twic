@@ -41,7 +41,7 @@ var TWiC = (function(namespace){
 
         // Add the container's div
         this.m_div = p_parentDiv.append("div")
-                                .style("class", "div_twic_container")
+                                .style("class", "div_twic_container ui-widget-content")
                                 .style("id", "div_twic_container_" + this.m_name)
                                 .style("position", "absolute")
                                 .style("left", this.m_coordinates.x)
@@ -51,6 +51,11 @@ var TWiC = (function(namespace){
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height);
 
+       // Make the container draggable
+       //$(this.m_div[0]).drags();
+
+       //var x = $(this.m_div[0]);
+       //$(this.m_div[0]).resizable({ aspectRatio: 'preserve' });
 
         // Initialize the panel and control bar
         if ( null != this.m_controlBar ) {
@@ -298,6 +303,16 @@ var TWiC = (function(namespace){
                 }
             }
         }.bind(this));
+    });
+
+    namespace.Level.method("Pause", function(p_state){
+
+        for ( var index = 0; index < this.m_graphViews.length; index++ ){
+            this.m_graphViews[index].Pause(p_state);
+        }
+        for ( var index = 0; index < this.m_infoViews.length; index++ ){
+            this.m_infoViews[index].Pause(p_state);
+        }
     });
 
     namespace.Level.method("UseTransitions", function(p_state){ this.m_usingTransitions = p_state; });
