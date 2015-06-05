@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <br/>
 <br/>
 <font size="32" color="#FE23F7" style="font-family: Archer;">**T**</font><font size="32" color="#002240" style="font-family: Archer;">opic </font><font size="32" color="#FE23F7" style="font-family: Archer;">**W**</font><font size="32" color="#002240" style="font-family: Archer;">ords </font><font size="32" color="#FE23F7" style="font-family: Archer;">**i**</font><font size="32" color="#002240" style="font-family: Archer;">n </font><font size="32" color="#FE23F7" style="font-family: Archer;">**C**</font><font size="32" color="#002240" style="font-family: Archer;">ontext</font>
@@ -55,3 +56,22 @@ TWiC presents users with a research environment for examining topic models that 
 
 <table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_corpusview.png" width="800" height="450"/></td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
 
+=======
+# twic
+Topic Words in Context
+
+*To run:*
+
+*1)* Start a python server in the twic directory:
+
+Open the terminal and navigate to the TWiC directory.
+Then run the following, depending on your version of Python.
+
+For Python 2.7: "python -m SimpleHTTPServer 8080"  
+
+For Python 3.0: "python3 -m http.server 8080"
+
+*2)* Direct your web browser to localhost:8080/twic.html (Chrome is currently the only browser fully supported.)
+
+More descriptive readme and version to browse your own corpus's topics, soon to follow!
+>>>>>>> f485004eda23068e7dab874539aeb6e6e6ba8b2a
