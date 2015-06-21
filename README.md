@@ -61,6 +61,9 @@ TWiC presents users with a research environment for examining topic models that 
 <br/>
 <table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_corpusview.png" width="800" height="450"/></td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
 
+=======
+# twic
+Topic Words in Context
 
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Corpus Cluster View</font>
 
@@ -82,3 +85,6 @@ TWiC presents users with a research environment for examining topic models that 
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Topic Bar</font>
 
 <table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_topicbar.png" width="800" height="150"/></td></tr><tr><td align="center">**Displays and highlights all topic word lists of the model**</td></tr></table>
+=======
+More descriptive readme and version to browse your own corpus's topics, soon to follow!
+
