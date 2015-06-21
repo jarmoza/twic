@@ -1,3 +1,4 @@
+import os
 import sys
 from mallet_script import MalletScript
 from dickinson_poem import Poem
@@ -27,7 +28,8 @@ def CreateMallet():
     mallet_script.output_dir = '../../data/output/mallet/'
     mallet_script.stopwords_dir = '../../data/output/stopwords/'
     mallet_script.lda_dir = '/Users/PeregrinePickle/mallet-2.0.7/'
-    mallet_script.script_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/scripts/'
+    #mallet_script.script_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/scripts/'
+    mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = '100'
     mallet_script.num_intervals = '100'
 
@@ -45,15 +47,24 @@ def Corpus2Vis(args):
     # Create a MalletScript object
     mallet_script = CreateMallet()
 
+    if len(args) and "--help" in args:
+        print "Usage: python corpus2vis_tm_workflow.py [gmci] [short_corpus_title] [full_corpus_title]"
+        return
+
     # Options: g - Gather texts, m - Run MALLET, i - Interpret MALLET's output
     options_gather_poems = 'g'
     options_clear_oldoutput = 'c'
     options_run_mallet = 'm'
     options_interpret_output = 'i'
     #options = [options_gather_poems, options_clear_oldoutput, options_run_mallet, options_interpret_output]
-    options = [options_run_mallet, options_interpret_output]
+    #options = [options_run_mallet, options_interpret_output]
+    options = [options_interpret_output]
     if len(args):
         options = args[0]
+        if len(args) >= 2:
+            mallet_script.corpus_name = args[1]
+            if len(args >= 3):
+                mallet_script.corpus_title = args[2]
 
     # Run parts of the corpus 2 visualization workflow
     if options_gather_poems in options:

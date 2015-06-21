@@ -204,9 +204,6 @@ class TWiC_MalletInterpret:
             #    distribution.append(doc.topic_guide[str(index)])
             prob_distributions[doc.id] = distribution
 
-        #for mfid in prob_distributions.keys():
-        #    print 'File ID: {0} Distribution: {1}'.format(mfid, prob_distributions[mfid])
-
         # Build a list of JSD distances compared to that distribution for every other file
         for key in top_proportions.keys():
 
@@ -287,69 +284,147 @@ class TWiC_MalletInterpret:
 
         return clusters_json
 
+    @staticmethod
+    def DetermineCorpusClusters_Avg(file_topic_proportions, corpus_topic_proportions):
 
-    # @staticmethod
-    # def Build_CorpusMapJSON_Two(corpus_name, corpus_topics, file_topic_proportions, output_dir):
+        clusters_json = {}
+        topic_count = len(corpus_topic_proportions)
+        file_count = len(file_topic_proportions)
 
-    #     '''
-    #       TWiC JSON Hierarchy: Corpus -> Clusters -> Texts
-    #       // Corpus
-    #       {
-    #           "name": <corpus_name>,
-    #           "ideal_text":<file_id>, - Text with average topic distribution
-    #           "distance2ideal":"NA",
-    #           "topics" : {
-    #               <topic_id> : [<rank>, <topic_proportion>],...
-    #           },
-    #           // Clusters
-    #           "children" : [
-    #               {
-    #                 "name":<cluster_name>, - Topic number
-    #                 "ideal_text":<file_id>, - Text where topic is strongest
-    #                 "distance2ideal":<jd distance from cluster ideal text's topic distribution
-    #                                   to corpus topic distribution>
-    #                 "topics" : { // Average topic distribution (of all texts in the cluster)
-    #                     <topic_id> : [<rank>, <topic_proportion>],...
-    #                 },
-    #                 // Texts
-    #                 "children":[
-    #                     {
-    #                         "name":<text_name>,
-    #                         "ideal_text":<file_id> - Self
-    #                         "distance2ideal":<jd distance from this text's topic distribution to
-    #                                          cluster ideal text's topic distribution>
-    #                         "topics": {
-    #                             <topic_id> : [<rank>, <topic_proportion>],...
-    #                         },
-    #                         "children":[]
-    #                     },...
-    #                 ]
-    #               },...
-    #           ]
-    #       }
-    #     '''
+        print "============================"
+        print "DetermineCorpusClusters_Avg"
+        print "\nTopic Count:{0}\nFile Count: {1}".format(topic_count, file_count)
 
-    #     # 1. Define corpus level JSON
-    #     twic_corpus_map = {
-    #         "name" : corpus_name,
-    #         "ideal_text" : "",
-    #         "distance2ideal" : "",
-    #         "topics" : {},
-    #         "children" : []
-    #     }
+        for topic_id in range(topic_count):
 
-    #     # Build a ranked map of corpus-level topics for the JSON
-    #     corpus_topic_pairs = [[topic, corpus_topics[topic]] for topic in corpus_topics.keys()]
-    #     sorted_corpus_topic_pairs = sorted(corpus_topic_pairs, key=lambda x:x[1], reverse=True)
-    #     ranked_corpus_topic_map = {}
-    #     ranked_corpus_topic_map = { sorted_corpus_topic_pairs[index][0]:
-    #                                 [index + 1, sorted_corpus_topic_pairs[index][1]]
-    #                                 for index in range(len(sorted_corpus_topic_pairs))}
-    #     twic_corpus_map["topics"] = ranked_corpus_topic_map
+            print "\nProcessing cluster {0}".format(topic_id)
+            
+            # Clusters have name, dist2avg, topics, and text-level children
+            clusters_json[topic_id] = {
+                "name": topic_id,
+                "children": []
+            }
 
-    #     # Get corpus topic distribution sorted by topic id
-    #     corpus_topic_proportions = [corpus_topics[str(index)] for index in range(len(corpus_topics.keys()))]
+            # Find all texts with this topic as their top topic
+            texts_with_top_topic = []
+            for index in range(file_count):
+                if topic_id == int(file_topic_proportions[index].sorted_topic_list[0][0]):
+                    texts_with_top_topic.append(index)
 
+            print "Texts with top topic {0}: {1}".format(topic_id, texts_with_top_topic)
+
+            # Get the average topic distribution for this cluster
+            cluster_avg_topic_dist = [0 for index in range(topic_count)]
+            for index in range(len(texts_with_top_topic)):
+                for index2 in range(topic_count):
+                    cluster_avg_topic_dist[index2] += file_topic_proportions[texts_with_top_topic[index]].topic_guide[str(index2)]
+            for index in range(topic_count):
+                cluster_avg_topic_dist[index] /= topic_count
+
+            # Get its distance from the corpus distribution
+            clusters_json[topic_id]["dist2avg"] = jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, cluster_avg_topic_dist)
+
+            # Sort and store the average topic distribution for this cluster
+            clusters_json[topic_id]["topics"] = {}
+            cluster_topic_list = []
+            for index in range(topic_count):
+                clusters_json[topic_id]["topics"][index] = [0, cluster_avg_topic_dist[index]]
+                cluster_topic_list.append([index, cluster_avg_topic_dist[index]])       
+            cluster_topic_list = sorted(cluster_topic_list, key=lambda x:x[1], reverse=True)
+            for rank in range(len(cluster_topic_list)):
+                clusters_json[topic_id]["topics"][cluster_topic_list[rank][0]][0] = rank
+
+            # Now add the text-level children
+            for index in range(len(texts_with_top_topic)):
+
+                current_ftp = file_topic_proportions[texts_with_top_topic[index]]
+                text_json = { "name": current_ftp.fileid }
+
+                # Get the ranked topics/topic proportions for this text
+                text_json["topics"] = {topic:[] for topic in range(topic_count)}
+                for ranked_topic_pair_index in range(len(current_ftp.sorted_topic_list)):
+                    text_json["topics"][int(current_ftp.sorted_topic_list[ranked_topic_pair_index][0])].append(ranked_topic_pair_index)
+                    text_json["topics"][int(current_ftp.sorted_topic_list[ranked_topic_pair_index][0])].append(current_ftp.sorted_topic_list[ranked_topic_pair_index][1])
+
+                # Calculate the distance between the cluster's average topic distribution and this text's topic distribution
+                text_topic_distribution = [current_ftp.topic_guide[str(index)] for index in range(len(corpus_topic_proportions))]
+                text_json["dist2avg"] = jensen_shannon.jensen_shannon_distance(cluster_avg_topic_dist, text_topic_distribution)
+
+                # Add this text to the cluster json
+                clusters_json[topic_id]["children"].append(text_json)
+
+
+        print "============================"
+
+        return clusters_json
+
+
+
+    @staticmethod
+    def Build_CorpusMapJSON_Avg(corpus_name, corpus_topics, file_topic_proportions, output_dir):
+
+        '''
+          TWiC JSON Hierarchy: Corpus -> Clusters -> Texts
+          // Corpus
+          {
+              "name": <corpus_name>,
+              "dist2avg": 0.0, // (No distance to corpus average topic distribution)
+              "topics" : {
+                  <topic_id> : [<rank>, <topic_proportion>],...
+              },
+              // Clusters
+              "children" : [
+                  {
+                    "name":<cluster_name>, - Topic number                 
+                    "dist2avg":<jd distance from cluster's average topic distribution
+                                to corpus (average) topic distribution>
+                    "topics" : { // Average topic distribution (of all texts in the cluster)
+                        <topic_id> : [<rank>, <topic_proportion>],...
+                    },
+                    // Texts
+                    "children":[
+                        {
+                            "name":<text_name>,
+                            "dist2avg":<jd distance from this text's topic distribution to
+                                        cluster's average topic distribution>
+                            "topics": {
+                                <topic_id> : [<rank>, <topic_proportion>],...
+                            }
+                        },...
+                    ]
+                  },...
+              ]
+          }
+        '''
+
+        # 1. Define corpus level JSON
+        twic_corpus_map = {
+            "name" : corpus_name,
+            "dist2avg" : 0,
+            "topics" : {},
+            "children" : []
+        }
+
+        # Build a ranked map of corpus-level topics for the JSON
+        corpus_topic_pairs = [[topic, corpus_topics[topic]] for topic in corpus_topics.keys()]
+        sorted_corpus_topic_pairs = sorted(corpus_topic_pairs, key=lambda x:x[1], reverse=True)
+        ranked_corpus_topic_map = {}
+        ranked_corpus_topic_map = { sorted_corpus_topic_pairs[index][0]:
+                                    [index + 1, sorted_corpus_topic_pairs[index][1]]
+                                    for index in range(len(sorted_corpus_topic_pairs))}
+        twic_corpus_map["topics"] = ranked_corpus_topic_map
+
+        # Get corpus topic distribution sorted by topic id
+        corpus_topic_proportions = [corpus_topics[str(index)] for index in range(len(corpus_topics.keys()))]
+
+        # 2. Now work on defining the cluster level JSON
+
+        # Determine topic clusters of the corpus and their texts
+        twic_corpus_map["children"] = TWiC_MalletInterpret.DetermineCorpusClusters_Avg(file_topic_proportions, corpus_topic_proportions)
+
+        # 3. Write out corpus map to JSON
+        with open(output_dir + 'twic_corpusmap.json','w') as output_file:
+            output_file.write(json.dumps(twic_corpus_map))        
 
     @staticmethod
     def Build_CorpusMapJSON(corpus_name, corpus_topics, file_topic_proportions, output_dir):
@@ -696,13 +771,11 @@ class TWiC_MalletInterpret:
             json_output[file_info][tp.fileid] = [0 for index in range(FI_FieldCount)]
             # json_output[file_info][tp.fileid][FI_Filename] = tp.filename
             json_output[file_info][tp.fileid][FI_Filename] = Mallet_InterpretUtils.GetFilename(tp.filename)
-            print "Filename: {0}".format(json_output[file_info][tp.fileid][FI_Filename])
             json_output[file_info][tp.fileid][FI_TopicProportions] = []
             for topic_index in range(0, topic_count):
                 json_output[file_info][tp.fileid][FI_TopicProportions].append(tp.topic_guide[str(topic_index)])
         for text in text_collection:
-            text_filename = text.GetFilename()
-            print "text_filename: {0}".format(text_filename)
+            text_filename = text.GetFilename()            
             for fileid in json_output[file_info].keys():
                 if text_filename == json_output[file_info][fileid][FI_Filename]:
                     json_output[file_info][fileid][FI_TextTitle] = text.GetTitle()
@@ -777,7 +850,7 @@ class TWiC_MalletInterpret:
         print '\tBuilding JSON map files for TWiC visualization...'
 
         # Build a json that shows the hierarchy of Corpus -> Text clusters -> Texts based on Jensen-Shannon Distance
-        TWiC_MalletInterpret.Build_CorpusMapJSON(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
+        TWiC_MalletInterpret.Build_CorpusMapJSON_Avg(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
 
         # Output a JSON of the topic-color list
         TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir + "json/")

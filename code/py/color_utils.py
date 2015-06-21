@@ -73,5 +73,5 @@ class Color_Utils:
     @staticmethod
     def RGB_to_Hex(rgb):
 
-        return '#%02x%02x%02x' % rgb
+        return "#%02x%02x%02x" % rgb
 

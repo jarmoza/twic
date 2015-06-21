@@ -56,13 +56,15 @@
     twicLevel.m_queue.await(function(){
 
         // Create TWiC panels and link them together (panels add themselves to their given level)
-        var topicBar0 = new TWiC.TopicBar({x: 2551 >> 2, y: 685}, // Position
-                                         {width: 2551 >> 1, height: 200}, // Size
-                                         twicLevel); // Level
+        var topicBar = new TWiC.TopicBar({x: 2551 >> 2, y: 685}, // Panel position
+                                         {width: 2551 >> 1, height: 200}, // Panel size
+                                         twicLevel); // Level reference
 
-        var corpusView = new TWiC.CorpusView({x: 0, y: 0}, // Position
-                                             {width: 1275, height: 635}, // Size
-                                             twicLevel); // Level
+        var corpusView = new TWiC.CorpusView({x: 0, y: 0}, // Panel position
+                                             {width: 1275, height: 635}, // Panel size
+                                             twicLevel, // Level reference 
+                                             225, // Bullseye radius
+                                             10); // Number of topics to display
 
         var corpusClusterView = new TWiC.CorpusClusterView({x: 1276, y: 0}, // Position
                                                            {width: 1275, height: 635}, // Size
@@ -81,31 +83,31 @@
         // View links
 
         // All views are linked to the topic bar
-        corpusView.AddLinkedView(topicBar0, "mouseover");
-        corpusClusterView.AddLinkedView(topicBar0, "mouseover");
-        textClusterView.AddLinkedView(topicBar0, "mouseover");
-        textView.AddLinkedView(topicBar0, "mouseover");
+        corpusView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
+        corpusClusterView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
+        textClusterView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
+        textView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
 
         // Corpus view
-        corpusView.AddLinkedView(corpusClusterView, "mouseover");
-        corpusView.AddLinkedView(textClusterView, "mouseover");
-        corpusView.AddLinkedView(textView, "mouseover");
+        corpusView.AddLinkedView(corpusClusterView, TWiC.Interaction.mouseover);
+        corpusView.AddLinkedView(textClusterView, TWiC.Interaction.mouseover);
+        corpusView.AddLinkedView(textView, TWiC.Interaction.mouseover);
 
         // Corpus cluster view
-        corpusClusterView.AddLinkedView(corpusView, "mouseover");
-        corpusClusterView.AddLinkedView(textClusterView, "mouseover")
-        corpusClusterView.AddLinkedView(textClusterView, "dblclick");
+        corpusClusterView.AddLinkedView(corpusView, TWiC.Interaction.mouseover);
+        corpusClusterView.AddLinkedView(textClusterView, TWiC.Interaction.mouseover)
+        corpusClusterView.AddLinkedView(textClusterView, TWiC.Interaction.dblclick);
 
         // Text cluster view
-        textClusterView.AddLinkedView(corpusView, "mouseover");
-        textClusterView.AddLinkedView(corpusClusterView, "mouseover");
-        textClusterView.AddLinkedView(textView, "dblclick");
-        textClusterView.AddLinkedView(textView, "mouseover");
+        textClusterView.AddLinkedView(corpusView, TWiC.Interaction.mouseover);
+        textClusterView.AddLinkedView(corpusClusterView, TWiC.Interaction.mouseover);
+        textClusterView.AddLinkedView(textView, TWiC.Interaction.dblclick);
+        textClusterView.AddLinkedView(textView, TWiC.Interaction.mouseover);
 
         // Text view
-        textView.AddLinkedView(corpusView, "mouseover");
-        textView.AddLinkedView(corpusClusterView, "mouseover");
-        textView.AddLinkedView(textClusterView, "mouseover");
+        textView.AddLinkedView(corpusView, TWiC.Interaction.mouseover);
+        textView.AddLinkedView(corpusClusterView, TWiC.Interaction.mouseover);
+        textView.AddLinkedView(textClusterView, TWiC.Interaction.mouseover);
 
 
         // Initialize the level

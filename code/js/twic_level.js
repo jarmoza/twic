@@ -6,6 +6,33 @@ var TWiC = (function(namespace){
         return namespace.s_domPrefix + "dickinson";
     };
 
+    // From http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
+    namespace.ShadeBlend = function(p, c0, c1) {
+
+        var n=p<0?p*-1:p,u=Math.round,w=parseInt;
+
+        if ( null == c0.length ){
+          var x = 0;
+        }
+
+        if ( c0.length > 7 ) {
+            var f=c0.split(","),t=(c1?c1:p<0?"rgb(0,0,0)":"rgb(255,255,255)").split(","),R=w(f[0].slice(4)),G=w(f[1]),B=w(f[2]);
+            return "rgb("+(u((w(t[0].slice(4))-R)*n)+R)+","+(u((w(t[1])-G)*n)+G)+","+(u((w(t[2])-B)*n)+B)+")"
+        }
+        else {
+            var f=w(c0.slice(1),16),t=w((c1?c1:p<0?"#000000":"#FFFFFF").slice(1),16),R1=f>>16,G1=f>>8&0x00FF,B1=f&0x0000FF;
+            return "#"+(0x1000000+(u(((t>>16)-R1)*n)+R1)*0x10000+(u(((t>>8&0x00FF)-G1)*n)+G1)*0x100+(u(((t&0x0000FF)-B1)*n)+B1)).toString(16).slice(1)
+        }
+    };    
+
+    namespace.Interaction = {
+
+        mouseover: "mouseover",
+        click: "click",
+        dblclick: "dblclick"
+
+    };
+
     namespace.Container = function(p_coordinates, p_controlBar, p_panel){
 
         this.m_coordinates = {x: p_coordinates.x, y: p_coordinates.y};
@@ -324,7 +351,8 @@ var TWiC = (function(namespace){
     namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
-                                            "beige": "#DFDAC4", "lightpurple":"#D8D8FF"};
+                                            "beige": "#DFDAC4", "lightpurple":"#D8D8FF",
+                                            "logold":namespace.ShadeBlend(-0.50, "#FAFAD2") };
     namespace.Level.prototype.s_twicLevels = [];
 
     // Creating a Level instance also adds it to the TWiC level list
