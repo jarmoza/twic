@@ -6,9 +6,13 @@
 <br/>
 <font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;">Table of Contents</font>
 <br/>
-1. [**Overview**](#overview)
+**1.** [**Overview**](#overview)
 <br/>
-2. [**How to Use**](#howtouse)
+**2.** [**How to Use**](#howtouse)
+<br/>
+**--**&nbsp;&nbsp;[**Data Shapes**](#datashapes)
+<br/>
+**--**&nbsp;&nbsp;[**Panels**](#panels)
 <br/>
 <br/>
 <br/>
@@ -26,12 +30,12 @@ In order to do so, the visualization presents users with multiple, related views
 <br/>
 <br/>
 <br/>
-<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;">Data Shapes</font>
+<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;"><a name="datashapes" style="text-decoration:none; color:black;">Data Shapes</a></font>
 <br/>
 <br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">Topic Bullseyes</font>
 <br/>
-<table border="0" align="center"><tr><td>![Topic Bullseye](./docs/images/twic_bullseye_350x350.png)</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_bullseye_350x350.png" width="350" height="350"/></td></tr></table>
 
 
 <br/>
@@ -41,7 +45,7 @@ Above is one of the primary means by which topic distribution is visualized in T
 <br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">Topic Rectangles</font>
 <br/>
-<table border="0" align="center"><tr><td>![Topic Rectangle](./docs/images/twic_rectangle_181x400.png)</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_rectangle_181x400.png" width="181" height="400"/></td></tr></table>
 
 
 <br/>
@@ -51,7 +55,7 @@ The other primary shape in TWiC is the topic rectangle, a shape that utilizes th
 <br/>
 <br/>
 <br/>
-<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;">Panels</font>
+<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;"><a name="panels" style="text-decoration:none; color:black;">Panels</a></font>
 <br/>
 <br/>
 
@@ -67,14 +71,14 @@ TWiC presents users with a research environment for examining topic models that 
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Corpus View</font>
 <br/>
 <br/>
-<table border="0" align="center"><tr><td>![Corpus View](./docs/images/twic_corpusview_800x431.png)</td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_corpusview_800x431.png" width="800" height="431"/></td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
 
 <br/>
 <br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Corpus Cluster View</font>
 <br/>
 <br/>
-<table border="0" align="center"><tr><td>![Corpus Cluster View](./docs/images/twic_corpusclusterview_800x431.png)</td></tr><tr><td align="center">**Texts clustered by their top topic and seen as topic bullseyes. Each bullseye is placed at a distance from the corpus's average topic distribution**</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_corpusclusterview_800x431.png" width="800" height="431"/></td></tr><tr><td align="center">**Texts clustered by their top topic and seen as topic bullseyes. Each bullseye is placed at a distance from the corpus's average topic distribution**</td></tr></table>
 
 <br/>
 <br/>
@@ -82,7 +86,7 @@ TWiC presents users with a research environment for examining topic models that 
 <br/>
 <br/>
 
-<table border="0" align="center"><tr><td>![Text Cluster View](./docs/images/twic_textclusterview_800x431.png)</td></tr><tr><td align="center">**An example of texts/topic rectangles as viewed underneath a corpus cluster's topic bullseye. Each text is set at a distance from the cluster's average topic distribution.**</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_textclusterview_800x431.png" width="800" height="431"/></td></tr><tr><td align="center">**An example of texts/topic rectangles as viewed underneath a corpus cluster's topic bullseye. Each text is set at a distance from the cluster's average topic distribution.**</td></tr></table>
 
 <br/>
 <br/>
@@ -90,7 +94,7 @@ TWiC presents users with a research environment for examining topic models that 
 <br/>
 <br/>
 
-<table border="0" align="center"><tr><td>![Individual Text View](./docs/images/twic_textview_800x416.png)</td></tr><tr><td align="center">**A text as selected and viewed from the previous text cluster panel**</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_textview_800x416.png" width="800" height="416"/></td></tr><tr><td align="center">**A text as selected and viewed from the previous text cluster panel**</td></tr></table>
 
 <br/>
 <br/>
@@ -102,7 +106,7 @@ TWiC presents users with a research environment for examining topic models that 
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Topic Bar</font>
 <br/>
 <br/>
-<table border="0" align="center"><tr><td><img src="./docs/images/twic_topicbar_900x142.png" width="850" height="150"/></td></tr><tr><td align="center">**Displays and highlights all topic word lists of the model**</td></tr></table>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_topicbar_900x142.png" width="900" height="142"/></td></tr><tr><td align="center">**Displays and highlights all topic word lists of the model**</td></tr></table>
 <br/>
 <br/>
 <br/>
