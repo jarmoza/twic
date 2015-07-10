@@ -10,6 +10,27 @@ body {
   min-height: 100%;
 }
 
+.ui-widget-content {
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important;
+    overflow: scroll;
+}
+
+.div_twic_level{
+  position: relative;
+  width: 100%;
+  max-width:100%;
+  margin: 0 auto;
+}
+
+.div_twic_level:before{
+    margin-top: 25%;
+    content: '.';
+    font-size: 0;
+    display: inline-block; 
+}
+
 .div_twic_control{
   position:relative;
   display: block;
@@ -17,13 +38,22 @@ body {
 
 .div_twic_container {
   overflow:hidden;
-  resize:both;
+  resize:both; 
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;  
 }
+
 
 .twic_panel {
   position: relative;
   overflow: auto;
   display: block;
+  resize:both;
 }
 
 .div_twic_graph {
@@ -68,14 +98,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
-  display:inline;
   border-radius:15px;
   background-color: #002240;
   position:absolute;
-}
-
-.svg_twic_info {
-
 }
 
 .topic_highlightrect {
@@ -83,97 +108,9 @@ body {
 }
 
 .topic_wordlist {
-  font-family: Archer;
-  font-size: 20;
+  font-family: Inconsolata;
+  font-size: 23;
   position: absolute;
-}
-
-.left_resizer {
-    position: absolute;
-    width: 10px;
-    top: 0;
-    bottom: 0;
-    left:-5px;
-    background: orange;
-    opacity: .5;
-    cursor: ew-resize;
-}
-
-.right_resizer {
-    position: absolute;
-    width: 10px;
-    top: 0;
-    bottom: 0;
-    right:-5px;
-    background: orange;
-    opacity: .5;
-    cursor: ew-resize;
-}
-
-.top_resizer {
-    position: absolute;
-    height: 10px;
-    left: 0;
-    right: 0;
-    top:-5px;
-    background: orange;
-    opacity: .5;
-    cursor: ns-resize;
-}
-
-.bottom_resizer {
-    position: absolute;
-    height: 10px;
-    left: 0;
-    right: 0;
-    bottom:-5px;
-    background: orange;
-    opacity: .5;
-    cursor: ns-resize;
-}
-
-.se_resizer {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    bottom: -5px;
-    right: -5px;
-    background: red;
-    opacity: .5;
-    cursor: nwse-resize;
-}
-
-.ne_resizer {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    top: -5px;
-    right: -5px;
-    background: red;
-    opacity: .5;
-    cursor: nesw-resize;
-}
-
-.sw_resizer {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    bottom: -5px;
-    left: -5px;
-    background: red;
-    opacity: .5;
-    cursor: nesw-resize;
-}
-
-.nw_resizer {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    top: -5px;
-    left: -5px;
-    background: red;
-    opacity: .5;
-    cursor: nwse-resize;
 }
 
 .d3-tip {

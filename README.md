@@ -4,7 +4,16 @@
 <br/>
 <br/>
 <br/>
-<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;">Overview</font>
+<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;">Table of Contents</font>
+<br/>
+1. [**Overview**](#overview)
+<br/>
+2. [**How to Use**](#howtouse)
+<br/>
+<br/>
+<br/>
+
+<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;"><a name="overview" style="text-decoration:none; color:black;">Overview</a></font>
 <br/>
 <br/>
 Thanks for trying out **"Topic Words in Context"** - or **"TWiC"**, for short.  
@@ -22,7 +31,7 @@ In order to do so, the visualization presents users with multiple, related views
 <br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">Topic Bullseyes</font>
 <br/>
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_bullseye.png" width="350" height="350"/></td></tr></table>
+<table border="0" align="center"><tr><td>![Topic Bullseye](./docs/images/twic_bullseye_350x350.png)</td></tr></table>
 
 
 <br/>
@@ -32,7 +41,7 @@ Above is one of the primary means by which topic distribution is visualized in T
 <br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">Topic Rectangles</font>
 <br/>
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_rectangle.png" width="200" height="400"/></td></tr></table>
+<table border="0" align="center"><tr><td>![Topic Rectangle](./docs/images/twic_rectangle_181x400.png)</td></tr></table>
 
 
 <br/>
@@ -55,36 +64,68 @@ TWiC presents users with a research environment for examining topic models that 
 <font style="color: black; font-weight: bold; font-size: 20px; font-family: Archer;">Graphical Panels</font>  
 <br/>
 <br/>
-
-
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Corpus View</font>
 <br/>
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_corpusview.png" width="800" height="450"/></td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
+<br/>
+<table border="0" align="center"><tr><td>![Corpus View](./docs/images/twic_corpusview_800x431.png)</td></tr><tr><td align="center">**The top 10 corpus-level topics of "The Poems of Emily Dickinson"**</td></tr></table>
 
-=======
-# twic
-Topic Words in Context
-
+<br/>
+<br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Corpus Cluster View</font>
+<br/>
+<br/>
+<table border="0" align="center"><tr><td>![Corpus Cluster View](./docs/images/twic_corpusclusterview_800x431.png)</td></tr><tr><td align="center">**Texts clustered by their top topic and seen as topic bullseyes. Each bullseye is placed at a distance from the corpus's average topic distribution**</td></tr></table>
 
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_corpusclusterview.png" width="800" height="450"/></td></tr><tr><td align="center">**Texts clustered by their top topic and seen as topic bullseyes. Each bullseye is placed at a distance from the corpus's average topic distribution**</td></tr></table>
-
-
+<br/>
+<br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Text Cluster View</font>
+<br/>
+<br/>
 
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_textclusterview.png" width="800" height="450"/></td></tr><tr><td align="center">**An example of texts/topic rectangles as viewed underneath a corpus cluster's topic bullseye. Each text is set at a distance from the cluster's average topic distribution.**</td></tr></table>
+<table border="0" align="center"><tr><td>![Text Cluster View](./docs/images/twic_textclusterview_800x431.png)</td></tr><tr><td align="center">**An example of texts/topic rectangles as viewed underneath a corpus cluster's topic bullseye. Each text is set at a distance from the cluster's average topic distribution.**</td></tr></table>
 
-
+<br/>
+<br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Individual Text View</font>
+<br/>
+<br/>
 
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_textview.png" width="800" height="450"/></td></tr><tr><td align="center">**A text as selected and viewed from the previous text cluster panel**</td></tr></table>
+<table border="0" align="center"><tr><td>![Individual Text View](./docs/images/twic_textview_800x416.png)</td></tr><tr><td align="center">**A text as selected and viewed from the previous text cluster panel**</td></tr></table>
 
-
+<br/>
+<br/>
 <font style="color: black; font-weight: bold; font-size: 20px; font-family: Archer;">Informational Panels</font>
+<br/>
+<br/>
 
+<br/>
 <font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">The Topic Bar</font>
+<br/>
+<br/>
+<table border="0" align="center"><tr><td><img src="./docs/images/twic_topicbar_900x142.png" width="850" height="150"/></td></tr><tr><td align="center">**Displays and highlights all topic word lists of the model**</td></tr></table>
+<br/>
+<br/>
+<br/>
+<font style="color: black; font-weight: bold; font-size: 22px; font-family: Archer;"><a name="howtouse" style="text-decoration:none; color:black;">How to Use</a></font>
+<br/>
+<br/>
 
-<table border="0" align="center"><tr><td><img src="/Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/docs/images/twic_topicbar.png" width="800" height="150"/></td></tr><tr><td align="center">**Displays and highlights all topic word lists of the model**</td></tr></table>
-=======
-More descriptive readme and version to browse your own corpus's topics, soon to follow!
+<span style="color:black;">**Follow the steps below to try out the current version of TWiC that browses the poems of Emily Dickinson**</span>
+<br/><br/>
+<font style="color: black; font-weight: bold; font-size: 20px; font-family: Archer;">Steps</font>
+<br/>
+<span style="color:black;">**1.** Download and unzip TWiC's [master zip file](https://github.com/jarmoza/twic/archive/master.zip) and place in the directory where you would like run the visualization.
+<br/>
+**2.** Browse to the same directory via your terminal (or command line) application and type the following command without quotes.
+<br/>
+**-- For Python 2 users:** "python -m SimpleHTTPServer 8080"
+<br/>
+**-- For Python 3 users:** "python3 -m http.server 8080"
+<br/>
+**If you don't know your current Python version, first try:** "python --version"<br/>
+**3.** Open your web browser (TWiC is currently best supported by [Google Chrome](http://www.google.com/chrome/)) and enter the following into the address bar without quotes: "localhost:8080/twic.html"
+</span><br/>
+<br/>
+<br/>
+<font style="color: black; font-weight: bold; font-size: 18px; font-family: Archer;">**More descriptive readme and version to browse your own corpus's topics, soon to follow!**</font>
 

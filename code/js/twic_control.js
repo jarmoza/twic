@@ -63,45 +63,24 @@ var TWiC = (function(namespace){
         this.m_barText = null;
     };
 
-    namespace.Control.method("Initialize", function(p_parentDiv){
+    namespace.Control.method("Initialize", function(p_parentDiv, p_fadeInControlBar){
 
-        // Determine the type of partially-rounded rectangle to draw
-        switch ( this.m_orientation ){
-
-            case 'top':
-                var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.x,
-                                                    this.m_size.width, this.m_size.height,
-                                                    namespace.Control.prototype.s_borderRadius);
-                //this.m_panel.m_coordinates.y += this.m_size.height;
-                break;
-            case 'bottom':
-                var path = namespace.BottomRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
-                                                       this.m_barWidth, this.m_barHeight,
-                                                       namespace.Control.prototype.s_borderRadius);
-                break;
-            case 'left':
-                var path = namespace.LeftRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
-                                                     this.m_size.width, this.m_size.height,
-                                                     namespace.Control.prototype.s_borderRadius);
-                //this.m_panel.m_coordinates.x += this.m_size.width;
-                break;
-            case 'right':
-                var path = namespace.RightRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
-                                                      this.m_size.width, this.m_size.height,
-                                                      namespace.Control.prototype.s_borderRadius);
-                break;
-        };
+        // Get string for control bar path rect
+        var path = this.GetRectPath();
 
         // Add the control bar's div and svg tags
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_control")
                                 .attr("id", "div_twic_control_" + this.m_name)
-                                .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
+                                //.style("left", this.m_coordinates.x)
+                                //.style("top", this.m_coordinates.y)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
-                                .style("height", this.m_size.height);
+                                .style("height", this.m_size.height)
+                                .style("background", "transparent")
+                                //.style("float", "left")
+                                .style("margin", 0);
                                 /*.on("mousedown", function(d) {
 
                                     $(this).parent().addClass('draggable').parents().on('mousemove', function(e) {
@@ -131,7 +110,8 @@ var TWiC = (function(namespace){
                                .attr("x", this.m_coordinates.x)
                                .attr("y", this.m_coordinates.y)
                                .attr("width", this.m_size.width)
-                               .attr("height", this.m_size.height);
+                               .attr("height", this.m_size.height)
+                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);                               
 
         // Make a group to hold the control bar components
         this.m_controlGroup = this.m_svg.append("g")
@@ -142,7 +122,9 @@ var TWiC = (function(namespace){
         this.m_barPath = this.m_controlGroup.append("path")
                                             .attr("d", path)
                                             .style("opacity", 0)
-                                            .attr("fill", namespace.Level.prototype.s_palette.beige);
+                                            .attr("fill", namespace.Level.prototype.s_palette.beige)
+                                            .attr("id", "twic_barpath_" + this.m_name);
+                                            // Path outline
                                             //.attr("stroke", namespace.Level.prototype.s_palette.purple)
                                             //.attr("stroke-width", 4.5);
 
@@ -172,7 +154,12 @@ var TWiC = (function(namespace){
                            .style("font-size", 23);*/
     });
 
-    namespace.Control.method("AddText", function(p_addTextCallback){ p_addTextCallback(this); });
+    namespace.Control.method("Update", function(p_data, p_updateType){});
+
+    namespace.Control.method("AddText", function(p_addTextCallback){ 
+
+      p_addTextCallback(this);
+    });
 
     namespace.Control.method("DetermineDimensions", function(){
 
@@ -196,7 +183,38 @@ var TWiC = (function(namespace){
                 //this.m_coordinates = {x: this.m_panel.m_size.width, y: 0};
                 break;
         };
+    });
 
+    namespace.Control.method("GetRectPath", function(){
+      
+        // Determine the type of partially-rounded rectangle to draw
+        switch ( this.m_orientation ){
+
+            case 'top':
+                var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.x,
+                                                    this.m_size.width, this.m_size.height,
+                                                    namespace.Control.prototype.s_borderRadius);
+                //this.m_panel.m_coordinates.y += this.m_size.height;
+                break;
+            case 'bottom':
+                var path = namespace.BottomRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
+                                                       this.m_size.width, this.m_size.height,
+                                                       namespace.Control.prototype.s_borderRadius);
+                break;
+            case 'left':
+                var path = namespace.LeftRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
+                                                     this.m_size.width, this.m_size.height,
+                                                     namespace.Control.prototype.s_borderRadius);
+                //this.m_panel.m_coordinates.x += this.m_size.width;
+                break;
+            case 'right':
+                var path = namespace.RightRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
+                                                      this.m_size.width, this.m_size.height,
+                                                      namespace.Control.prototype.s_borderRadius);
+                break;
+        };
+
+        return path;
     });
 
     namespace.Control.method("SetContainer", function(p_container){
@@ -204,6 +222,24 @@ var TWiC = (function(namespace){
         this.m_container = p_container;
         this.m_panel = this.m_container.m_panel;
     });
+
+    namespace.Control.method("SetPosition", function(p_coordinates){
+
+        this.m_coordinates.x = p_coordinates.x;
+        this.m_coordinates.y = p_coordinates.y;
+    });
+
+    namespace.Control.method("SetSize", function(p_size) {
+        
+        this.m_size.width = p_size.width;
+        this.m_size.height = p_size.height;
+    })    
+
+    namespace.Control.method("UpdateBarPath", function(p_pathString){
+
+        // Add the path for the control bar shape (the panel/owner will determine the text/controls itself)
+        this.m_barPath.attr("d", p_pathString);
+    });    
 
     namespace.Control.prototype.s_defaultThickness = 50;
     namespace.Control.prototype.s_borderRadius = 15;

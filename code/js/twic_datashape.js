@@ -24,8 +24,7 @@ var TWiC = (function(namespace){
 
 
     // ClusterCircle (inherits from DataShape)
-    namespace.ClusterCircle = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel,
-                                       p_linkedViews, p_numberCircles, p_topics, p_title){
+    namespace.ClusterCircle = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_title){                                       
         
         // Apply the base class arguments
         namespace.DataShape.apply(this, arguments);
@@ -272,7 +271,7 @@ var TWiC = (function(namespace){
         this.m_topTopics = [];
         this.m_title = this.m_name;
 
-        var topicsSorted = Object.keys(p_topics).sort(function(a, b) { return p_topics[a] - p_topics[b]; });
+        var topicsSorted = Object.keys(p_topics).sort(function(a, b) { return p_topics[a][1] - p_topics[b][1]; });
 
         for ( var index = topicsSorted.length - 1, rectCount = 0; index >= 0 && rectCount < p_numberRects; index--, rectCount++ ) {
             this.m_topTopics.push([topicsSorted[index], p_topics[topicsSorted[index]]])
@@ -316,19 +315,28 @@ var TWiC = (function(namespace){
                                     }.bind(this))
                                     .on(namespace.Interaction.dblclick, function(){
 
-                                       for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                           if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
-                                               var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-                                               if ( initialPauseState ){
-                                                   this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                               }
-                                               this.m_panel.m_linkedViews[index].panel.Update({json:this.m_textRectangle.m_data, 
-                                                                                               clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                               topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
-                                               if ( initialPauseState ){
-                                                   this.m_panel.m_linkedViews[index].panel.Pause(true);
-                                               }
-                                           }
+                                       if ( !this.m_panel.IsUnderlyingPanelOpen() ){
+
+                                           this.m_level.Update({json:this.m_textRectangle.m_data, 
+                                                                clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
+
+                                       } else {
+
+                                         for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                             if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                 var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
+                                                 if ( initialPauseState ){
+                                                     this.m_panel.m_linkedViews[index].panel.Pause(false);
+                                                 }
+                                                 this.m_panel.m_linkedViews[index].panel.Update({json:this.m_textRectangle.m_data, 
+                                                                                                 clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                                                 topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
+                                                 if ( initialPauseState ){
+                                                     this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                 }
+                                             }
+                                         }
                                        }
                                        d3.event.stopPropagation();
                                     }.bind(this));
@@ -370,6 +378,7 @@ var TWiC = (function(namespace){
 
             this.m_shapeGroup.append("svg:rect")
                 .datum(data)
+                .attr("class", this.m_panel.s_datashapeClassName)
                 .attr("x", this.m_coordinates.x + (((sizeReduction.width >> 1) * rectsDrawn)))
                 .attr("y", this.m_coordinates.y + (((sizeReduction.height >> 1) * rectsDrawn)))
                 .attr("rx", namespace.ClusterRectangle.prototype.s_borderRadius + 7)
@@ -584,17 +593,26 @@ var TWiC = (function(namespace){
                                  .style("position", "absolute")
                                  .on(namespace.Interaction.dblclick, function(){
 
-                                       for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                           if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
-                                               var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-                                               if ( initialPauseState ){
-                                                   this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                               }
-                                               this.m_panel.m_linkedViews[index].panel.Update({json: this.m_data, 
-                                                                                               clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                               topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
-                                               if ( initialPauseState ){
-                                                   this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                       if ( !this.m_panel.IsUnderlyingPanelOpen() ){
+
+                                           this.m_level.Update({json:this.m_data, 
+                                                                clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
+
+                                       } else {                                  
+
+                                           for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                               if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                   var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
+                                                   if ( initialPauseState ){
+                                                       this.m_panel.m_linkedViews[index].panel.Pause(false);
+                                                   }
+                                                   this.m_panel.m_linkedViews[index].panel.Update({json: this.m_data, 
+                                                                                                   clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                                                   topicID: this.m_panel.m_clusterIndex}, namespace.Interaction.dblclick);
+                                                   if ( initialPauseState ){
+                                                       this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                   }
                                                }
                                            }
                                        }
@@ -791,19 +809,18 @@ var TWiC = (function(namespace){
 
         // Tip lines Part 2
 
-        /*current_line_index = 0
-        this.m_shapeGroup.selectAll("g")
-          .data(this.m_tipLines)
-          .enter()
-          .append("g")
-          .attr("class", function(d) {
-            retval = "line" + current_line_index + " d3-tip";
-            current_line_index += 1;
-            return retval;
-          })
-          .on('mouseover', tip.show)
-          .on('mouseout', tip.hide);*/
-
+        // current_line_index = 0
+        // this.m_shapeGroup.selectAll("g")
+        //                  .data(this.m_tipLines)
+        //                  .enter()
+        //                  .append("g")
+        //                  .attr("class", function(d) {
+        //                      retval = "line" + current_line_index + " d3-tip";
+        //                      current_line_index += 1;
+        //                      return retval;
+        //                  })
+        //                  .on('mouseover', tip.show)
+        //                 .on('mouseout', tip.hide);
 
         // Create a path element for each word on each line (NOTE: We'll see how expensive this is)
 
