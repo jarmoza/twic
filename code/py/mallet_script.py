@@ -176,7 +176,6 @@ class MalletScript:
 
         with open(self.keys_file, 'r') as input_file:
             data = input_file.readlines()
-        # input_file.close()
 
         topic_keys = MalletScript.Mallet_TopicKeys()
         for line in data:
@@ -199,7 +198,6 @@ class MalletScript:
 
             # Save remaining word topic lines
             statefile_data = statefile.readlines()
-        # statefile.close()
 
         # Build file word topics collection from state file
         current_filenumber = 'NaN'
@@ -214,12 +212,6 @@ class MalletScript:
                 current_filewordtopics.AddNextWord(line)
             else:
                 current_filewordtopics.AddNextWord(line)
-
-            #if line.startswith("0"):
-            #    ci = len(current_filewordtopics.word_info) - 1
-            #    print "{0} {1}".format(current_filewordtopics.word_info[ci].word, current_filewordtopics.word_info[ci].topic)
-
-
 
         return fwt_collection
 
@@ -252,8 +244,6 @@ class MalletScript:
                 tp.sorted_topic_list = sorted(tp.sorted_topic_list, key=lambda x:x[1], reverse=True)
 
                 tp_collection.append(tp)
-
-        # input_file.close()
 
         return tp_collection
 
