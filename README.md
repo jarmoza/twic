@@ -8,11 +8,11 @@
 <br/>
 **1.** [**Overview**](#overview)
 <br/>
-**2.** [**How to Use**](#howtouse)
-<br/>
 **--**&nbsp;&nbsp;[**Data Shapes**](#datashapes)
 <br/>
 **--**&nbsp;&nbsp;[**Panels**](#panels)
+<br/>
+**2.** [**How to Use**](#howtouse)
 <br/>
 <br/>
 <br/>
