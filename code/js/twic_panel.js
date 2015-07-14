@@ -126,7 +126,6 @@ var TWiC = (function(namespace){
                                                 maxWidth: this.m_level.m_size.width,
                                                 maxHeight: this.m_level.m_size.height,
                                                 resize: function(){ this.OnResize(); }.bind(this)});
-
     });
 
     namespace.Panel.method("OnResize", function(){
@@ -349,7 +348,7 @@ var TWiC = (function(namespace){
                                         //.style("position", "absolute");
 
         // Create the corpus TWiC bullseye
-        this.m_corpusCluster = new TWiC.ClusterCircle({x: this.m_size.width >> 1, y: this.m_size.height - (this.m_size.height * 0.65)},
+        this.m_corpusCluster = new TWiC.ClusterCircle({x: this.m_size.width >> 1, y: this.m_size.height - (this.m_size.height * 0.6)},
                                                       this.m_radius,
                                                       this.m_level.m_corpusMap["name"], 
                                                       this.m_level, 
@@ -419,15 +418,33 @@ var TWiC = (function(namespace){
                 if ( null != p_data ){
                     this.HighlightAllDataShapesWithTopic(p_data);
                 } else {
-                    //this.DarkenAllDataShapes();
                     this.HighlightAllDataShapes();
                 }
             } else if ( namespace.Interaction.dblclick == p_updateType ){
 
                 // Tell the level to open the underlying panel (CorpusClusterView) if not open
                 if ( !this.IsUnderlyingPanelOpen() ){
-                   this.m_level.Update(p_data, p_updateType);
+                    this.Pause(false);
+                    this.Update({topicID: this.m_level.m_currentSelection,
+                                 color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
+                                namespace.Interaction.mouseover);
+                    this.Pause(true);
+                    this.m_level.m_infoViews[0].m_panel.Pause(true);
+                    this.m_level.Update(p_data, p_updateType);
                 }
+            }
+        // Double-clicks can come through, even if the CorpusView is paused
+        } else if ( namespace.Interaction.dblclick == p_updateType ){
+
+            // Tell the level to open the underlying panel (CorpusClusterView) if not open
+            if ( !this.IsUnderlyingPanelOpen() ){
+                this.Pause(false);
+                this.Update({topicID: this.m_level.m_currentSelection,
+                             color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
+                            namespace.Interaction.mouseover);
+                this.Pause(true);
+                this.m_level.m_infoViews[0].m_panel.Pause(true);
+                this.m_level.Update(p_data, p_updateType);
             }
         }
     });
@@ -549,6 +566,9 @@ var TWiC = (function(namespace){
         this.AddLinkedView(corpusClusterView, namespace.Interaction.mouseover);
         corpusClusterView.AddLinkedView(this, namespace.Interaction.mouseover);
 
+        // Link the TopicBar to the CorpusClusterView via click
+        this.m_level.m_infoViews[0].m_panel.AddLinkedView(corpusClusterView, namespace.Interaction.click);
+
         // Initialize and Start the CorpusClusterView
         corpusClusterView.m_container.Initialize(this.m_level.m_div);
         // Fake transition to allow for loading of data time buffer (NOTE: Does this work?)
@@ -563,7 +583,8 @@ var TWiC = (function(namespace){
                                             .style("opacity", 1.0);
         corpusClusterView.m_panelRectDiv.transition()
                                         .delay(500).duration(3000)
-                                        .style("opacity", 1.0);                                            
+                                        .style("opacity", 1.0);
+        corpusClusterView.Pause(true);                                         
 
         // Update the view if a topic is already highlighted
         /*if ( -1 != this.m_level.m_currentSelection ){
@@ -770,7 +791,154 @@ var TWiC = (function(namespace){
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height);
+
+        // Initialize the graph with TWiC bullseye nodes for a force-directed layout
+        this.InitializeGraph(p_fadeInControlBar);
+    });
+
+    namespace.CorpusClusterView.method("InitializeGraph", function(p_fadeInControlBar){
+
+        // Set up the svg for the corpus cluster view
+        var viewBoxFactor = Object.keys(this.m_level.m_corpusMap["children"]).length / 5.0;
+        // (AreafromBasicRadius * clusterCount / availablePixels)
+        var availSpaceRadiusScale =  viewBoxFactor * ((25 * 3.14 * 2) * Object.keys(this.m_level.m_corpusMap["children"]).length) / (this.m_size.width * this.m_size.height);
+
+        this.m_svg = this.m_div.append("svg")
+                               .attr("class", "svg_twic_graph")
+                               .attr("id", "svg_twic_graph_corpusclusterview_" + this.m_name)
+                               .attr("x", this.m_coordinates.x)
+                               .attr("y", this.m_coordinates.y)
+                               .attr("width", this.m_size.width)
+                               .attr("height", this.m_size.height)
+                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
+
+        // Add group and rectangle for trapping mouse events in the graph
+        this.m_groupOverlay = this.m_svg.append("g")
+                                        .attr("class","group_twic_graph_corpusclusterview_overlay")
+                                        .attr("id", "group_twic_graph_corpusclusterview_overlay_" + this.m_name);
+                                        //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)))
+
+
+        // Make the control bar visible up front (as graph takes time to load)
+        if ( p_fadeInControlBar ){
+
+          this.m_controlBar.m_barPath.transition()
+                                     .duration(3000)
+                                     .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                     .style("opacity", 1.0);            
+        } else {
+
+          this.m_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                     .style("opacity", 1.0);
+        }
+
+        var twic_objects = [];
+        var twic_cluster_json_list = [];
+        var halfDimensions = {width:this.m_size.width >> 1, height: this.m_size.height >> 1};
+        var clusterCount = Object.keys(this.m_level.m_corpusMap["children"]).length;
+
+        // Distance to ideal normalization via corpus map JSON data
+        var avg = 0.0;
+        for ( var index = 0; index < clusterCount; index++ ){
+            avg += this.m_level.m_corpusMap["children"][index]["dist2avg"];
+        }
+        avg /= this.m_level.m_corpusMap["children"].length;
+
+        // Build all clusters
+        var linkDilation = 80;
+        for ( var index = 0; index < clusterCount; index++ ){
+
+            var twic_cluster = new TWiC.ClusterCircle({x:0, y:0}, availSpaceRadiusScale * 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
+                                                      this.m_level.m_corpusMap["children"][index]["topics"],
+                                                      index.toString());
+
+            // Cluster circles are scaled in the CorpusClusterView
+            twic_cluster.SetScaledRadius(true);
+
+            var twic_cluster_json = {
+                "name": this.m_level.m_corpusMap["children"][index]["name"],
+                "dist2avg": 2 + Math.abs((this.m_level.m_corpusMap["children"][index]["dist2avg"] - avg) * linkDilation),
+                "topics": this.m_level.m_corpusMap["children"][index]["topics"],
+                "children": []
+            };
+
+            // Add ideal text filename for this cluster - WHY???
+            //twic_cluster_json["children"].push(this.m_level.m_corpusMap["children"]["ideal_text"]);
+
+            // Add text filenames inside this cluster
+            /*for ( var index2 = 0; index2 < this.m_level.m_corpusMap["children"]["children"].length; index2++ ){
+                 twic_cluster_json["children"].push(this.m_level.m_corpusMap["children"]["children"][index2]["name"]);
+            }*/
+
+            this.m_objectsJSON.push(twic_cluster_json);
+            this.m_twicObjects.push(twic_cluster);
+        }
+
+        // Node zero for the force-directed graph will be a cluster circle representing
+        // the average topic distribution for this cluster
+        this.m_rootIndex = 0;
+        //this.m_nodes.push({"index": this.m_rootIndex, "name": this.m_level.m_corpusMap["name"]});
+        this.m_nodes.push({"index": this.m_rootIndex, "name": ""});
+
+        // Top N topics of this node
+        var topTopics = [];
+        var topTopicCount = 10;
+        for ( var index = 0; index < topTopicCount; index++ ) { topTopics.push([]) };
+        var topTopicID = "";
+        for ( var topic in this.m_level.m_corpusMap["topics"] ){
+            if ( this.m_level.m_corpusMap["topics"][topic][0] < topTopicCount + 1){
+                topTopics[this.m_level.m_corpusMap["topics"][topic][0] - 1] = this.m_level.m_corpusMap["topics"][topic];
+            }
+        }
+
+        //var topTopics = namespace.Panel.prototype.GetTopNTopics(this.m_level.m_corpusMap["topics"], topTopicCount);
+
+        var centralNode = new TWiC.ClusterCircle({x: 0, y: 0}, 25,
+                                                 this.m_rootIndex, this.m_level, this, 
+                                                 this.m_linkedViews, topTopicCount, topTopics,
+                                                 this.m_nodes[0]["name"]);
+        centralNode.SetScaledRadius(true);
+        this.m_twicObjects.push(centralNode);
         
+
+        // Establish the rest of the nodes and edges for the force-directed graph
+        for ( var index = 0; index < this.m_objectsJSON.length; index++ ){
+
+            if ( this.m_rootIndex == index )
+                continue;
+
+            //this.m_nodes.push({"node_index":index});
+            this.m_nodes.push({"index": index, "name": this.m_objectsJSON[index]["name"]});
+            this.m_links.push({
+                "source":index,
+                "target":this.m_rootIndex,
+                "value":this.m_objectsJSON[index]["dist2avg"]
+            });
+        }
+
+        // Set up the force-directed graph
+        this.m_graph = d3.layout.force()
+                                .nodes(this.m_nodes)
+                                .links(this.m_links)
+                                .size([this.m_size.width, this.m_size.height])
+                                .charge(0.2)
+                                .gravity(0)
+                                //.chargeDistance(10)
+                                .linkDistance(function(d){ return d.value * TWiC.CorpusClusterView.prototype.s_linkDistanceMod; });
+    });
+
+    namespace.CorpusClusterView.method("InitializeGraph_ArchimedeanSpiral", function(p_fadeInControlBar){
+
+        // Calculate the world
+
+        // Set up the SVG
+
+        // Set up the ClusterCircles
+
+        // Sort them by dist2avg
+
+        // Function arguments needed: svg, data, circleMax, padding, steps
+        //this.ArchimedeanSpiral(this.m_svg, [], )
 
         // Set up the svg for the corpus cluster view
         var viewBoxFactor = Object.keys(this.m_level.m_corpusMap["children"]).length / 5.0;
@@ -900,9 +1068,6 @@ var TWiC = (function(namespace){
 
     namespace.CorpusClusterView.method("Start", function(){
 
-        // Start the force-directed graph
-        //this.m_graph.start();
-
         // Add lines for the links and bind the link data to them
         var link = this.m_svg.selectAll(".link")
                        .data(this.m_links)
@@ -916,16 +1081,14 @@ var TWiC = (function(namespace){
 
         // Bind TWiC object data to the node data
         for ( index = 0; index < this.m_twicObjects.length; index++ ) {
+
             for ( var index2 = 0; index2 < this.m_nodes.length; index2++ ){
-                //if ( this.m_twicObjects[index].nodeIndex == this.m_nodes[index2]["node_index"] ){
+
                 if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["index"] ){
+
                     this.m_twicObjects[index].BindDataToNode(this.m_nodes[index2]);
                     break;
                 }
-                /*graph.nodes[index].width = twic_rectangles[index].dimensions[0];
-                graph.nodes[index].height = twic_rectangles[index].dimensions[1];
-                graph.nodes[index].cornerRadius = twic_rectangles[index].cornerRadius;
-                graph.nodes[index].fillColor = twic_rectangles[index].fillColor;*/
             }
         }
 
@@ -956,8 +1119,9 @@ var TWiC = (function(namespace){
         for ( index = 0; index < this.m_twicObjects.length; index++ ) {
 
             for ( var index2 = 0; index2 < this.m_nodes.length; index2++ ){
-                //if ( this.m_twicObjects[index].nodeIndex == this.m_nodes[index2]["node_index"] ){
+                
                 if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["index"] ){
+                
                     this.m_twicObjects[index].AppendSVGandBindData(this.m_svg.select(".node#node_" + index2), this.m_nodes[index2]["children"]);
                     if ( 0 == index ){
                         var textColor = namespace.Level.prototype.s_palette.gold;
@@ -1127,6 +1291,52 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
+    // Original implementation of D3 archimedean spiral with circle nodes:
+    // http://stackoverflow.com/questions/27596115/finding-x-y-coordinates-of-a-point-on-an-archimedean-spiral
+    namespace.CorpusClusterView.method("ArchimedeanSpiral", function(data, circleMax, padding, steps){
+
+
+
+        // Create the spiral based on the ordered ClusterCircles
+
+        var d = circleMax + padding;
+        var arcAxis = [];
+        var angle = 0;
+
+        for ( var index = 0; index < steps; index++){
+
+            var radius = Math.sqrt(index + 1);
+
+            //sin(angle) = opposite/hypothenuse => used asin to get angle
+            angle += Math.asin(1 / radius);
+            var x = Math.cos(angle) * (radius * d);
+            var y = Math.sin(angle)*(radius * d);
+
+            arcAxis.push({"x": x,"y": y})
+        }
+
+        var lineFunction = d3.svg.line()
+            .x(function(d) { return this.m_size.width + d.x; }.bind(this))
+            .y(function(d) { return this.m_size.height + d.y; }.bind(this))
+            .interpolate("cardinal");
+
+        this.m_svg.append("path")
+            .attr("d", lineFunction(arcAxis))
+            .attr("stroke", "gray")
+            .attr("stroke-width", 5)
+            .attr("fill", "none");
+
+        var circles = this.m_svg.selectAll("circle")
+            .data(arcAxis)
+            .enter()
+            .append("circle")
+            .attr("cx", function (d) { return this.m_size.width + d.x; }.bind(this))
+            .attr("cy", function (d) { return this.m_size.height + d.y; }.bind(this))
+            .attr("r", 10);
+
+        return arcAxis;
+    });
+
     namespace.CorpusClusterView.method("DarkenAllDataShapes", function(){
 
         // Darken all shapes
@@ -1286,28 +1496,36 @@ var TWiC = (function(namespace){
         textClusterView.AddLinkedView(this, namespace.Interaction.mouseover);
         this.AddLinkedView(textClusterView, namespace.Interaction.dblclick);
 
+        // Link the TopicBar to the TextClusterView via click
+        this.m_level.m_infoViews[0].m_panel.AddLinkedView(textClusterView, namespace.Interaction.click);        
+
         // Initialize and Start the TextClusterView
         textClusterView.m_container.Initialize(this.m_level.m_div);
-        textClusterView.m_container.Start();
-        textClusterView.m_div.style("opacity", 0.0);        
-        textClusterView.m_controlBar.m_div.style("opacity", 0.0);
-        textClusterView.m_panelRectDiv.style("opacity", 0.0);       
-        textClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
-        textClusterView.m_controlBar.m_div.transition()
-                                            .delay(500).duration(3000)
-                                            .style("opacity", 1.0);
-        textClusterView.m_panelRectDiv.transition()
-                                      .delay(500).duration(3000)
-                                      .style("opacity", 1.0);                                            
+        //this.m_level.m_queue.await(function(){
+            textClusterView.m_container.Start();
+            textClusterView.m_div.style("opacity", 0.0);        
+            textClusterView.m_controlBar.m_div.style("opacity", 0.0);
+            textClusterView.m_panelRectDiv.style("opacity", 0.0);       
+            textClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
+            textClusterView.m_controlBar.m_div.transition()
+                                                .delay(500).duration(3000)
+                                                .style("opacity", 1.0);
+            textClusterView.m_panelRectDiv.transition()
+                                          .delay(500).duration(3000)
+                                          .style("opacity", 1.0)
+                                          .each("end", function(){
 
-        // Update the view if a topic is already highlighted
-        /*if ( -1 != this.m_level.m_currentSelection ){
-            textClusterView.Update({topicID: this.m_level.m_currentSelection, color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
-                                     namespace.Interaction.mouseover);
-        }*/   
-        
-        // Indicate that the underlying panel for CorpusView has now been opened
-        this.m_underlyingPanelOpen = true;
+                                              // Update the view if a topic is already highlighted
+                                              //if ( -1 != this.m_level.m_currentSelection ){
+                                              //    textClusterView.Update({topicID: this.m_level.m_currentSelection, color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
+                                              //                           namespace.Interaction.mouseover);
+                                              //}
+                                          }.bind(this));                                            
+
+            
+            // Indicate that the underlying panel for CorpusView has now been opened
+            this.m_underlyingPanelOpen = true;
+        //}.bind(this));
     });
 
     namespace.CorpusClusterView.method("ScrollToZoom", function(p_twicLevel){
@@ -1508,7 +1726,7 @@ var TWiC = (function(namespace){
         var twic_objects = [];
         var twic_cluster_json_list = [];
 
-        // Distance to ideal normalization via corpus map JSON data
+        // Average distance to ideal normalization via corpus map JSON data
         var avg = 0.0;
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index++ )
             avg += this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["dist2avg"];
@@ -1708,6 +1926,14 @@ var TWiC = (function(namespace){
             this.MakeResizable();
             this.MakeDraggable();
 
+            // Update the panel for potential highlighting now that all SVG objects have been built
+            if ( -1 != this.m_level.m_currentSelection ){
+                var initialPauseState = this.m_paused;
+                this.Pause(false);
+                this.Update({topicID: this.m_level.m_currentSelection}, namespace.Interaction.mouseover)
+                this.Pause(initialPauseState);
+            }
+
         }.bind(this));
     });
 
@@ -1887,14 +2113,14 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TextClusterView.method("HighlightAllDataShapesWithTopic", function(data){
+    namespace.TextClusterView.method("HighlightAllDataShapesWithTopic", function(p_data){
 
         // Darken all shapes and text first
         this.DarkenAllDataShapes();
 
         // Highlight all shapes that represent the given topic
         var filteredShapes = this.m_svg.selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect)
-                                       .filter(function(d){ return d.topicID == data.topicID; });
+                                       .filter(function(d){ return d.topicID == p_data.topicID; });
         filteredShapes.each(function(d){
 
             // Highlight all paths, circles, and rectangles 
@@ -1914,7 +2140,7 @@ var TWiC = (function(namespace){
             // Raise the opacity, but not color of shapes in the same datashape that do not represent the given topic
             var nonHighlights = d3.select(this.parentNode)
                                   .selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect)
-                                  .filter(function(d){return d.topicID != data.topicID; });
+                                  .filter(function(d){return d.topicID != p_data.topicID; });
             nonHighlights.each(function(d){
                 if ( "path" == this.nodeName || "circle" == this.nodeName ){
                     d3.select(this).style("fill", d.locolor)
@@ -2099,6 +2325,9 @@ var TWiC = (function(namespace){
         textView.AddLinkedView(this, namespace.Interaction.mouseover);
         this.AddLinkedView(textView, namespace.Interaction.dblclick);
 
+        // Link the TopicBar to the CorpusClusterView via click
+        this.m_level.m_infoViews[0].m_panel.AddLinkedView(textView, namespace.Interaction.click);        
+
         // Initialize and Start the TextView
         textView.m_container.Initialize(this.m_level.m_div);
         textView.m_container.Start();
@@ -2119,7 +2348,10 @@ var TWiC = (function(namespace){
         // Update the view if a topic is already highlighted
         if ( -1 != this.m_level.m_currentSelection ){
             textView.Update(p_data, namespace.Interaction.mouseover);
-        }    
+        // Else, just highlight all words
+        } else {
+            textView.Update(null, namespace.Interaction.mouseover);
+        }   
         
         // Indicate that the underlying panel for CorpusView has now been opened
         this.m_underlyingPanelOpen = true;
@@ -2446,7 +2678,7 @@ var TWiC = (function(namespace){
                                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
                                                  .style("font-size", 22)
-                                                 .style("position", "absolute")
+                                                 .style("position", "relative")
                                                  .style("opacity", 1.0)
                                                  .html(words[index2] + "&nbsp;");
                 }
@@ -2466,13 +2698,13 @@ var TWiC = (function(namespace){
                                                  .attr("fill", this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]])
                                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
                                                  .style("font-size", 22)
-                                                 .style("position", "absolute")
+                                                 .style("position", "relative")
                                                  .style("opacity", 1.0)
                                                  .html(words[index2] + "&nbsp;");
                 }
 
-                currentX += text[0][0].offsetWidth * 0.67;
-                //currentX += text[0][0].offsetWidth * 0.5;
+                //currentX += text[0][0].offsetWidth * 0.67;
+                currentX += text[0][0].offsetWidth * 0.66;
                 //currentX += text[0][0].offsetWidth;
             }
 
@@ -2976,7 +3208,6 @@ var TWiC = (function(namespace){
     namespace.InformationView.inherits(namespace.Panel);
 
 
-    // Shows corpus, cluster(?), and text topic word lists (TWiC.TextLine)
     namespace.TopicBar = function(p_coordinates, p_size, p_level){
 
         namespace.InformationView.apply(this, arguments);
@@ -2993,30 +3224,6 @@ var TWiC = (function(namespace){
 
         // No initial selected text
         this.m_level.m_currentSelection = -1;
-
-        /*this.m_div = p_parentDiv.append("div")
-                                .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
-                                .attr("id", "div_twic_info_topicbar_" + this.m_name)
-                                .attr("width", this.m_size.width)
-                                .attr("height", this.m_size.height)
-                                .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
-                                .style("max-width", this.m_size.width)
-                                .style("max-height", this.m_size.height);
-
-        // Topic bar svg viewport
-        this.m_svg = this.m_div.append("svg")
-                               .attr("class", "svg_twic_info")
-                               .attr("id","svg_twic_info_topicbar_" + this.m_name)
-                               .attr("x", this.m_coordinates.x)
-                               .attr("y", this.m_coordinates.x)
-                               .attr("width", this.m_size.width)
-                               .attr("height", this.m_size.height)
-                               //.attr("viewBox", "0 " + namespace.TopicBar.prototype.s_textInfo.yIncrement + " " + this.m_size.width + " " + this.m_size.height);
-                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
-                               .style("position", "absolute");*/
-
-
 
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
@@ -3082,6 +3289,10 @@ var TWiC = (function(namespace){
                                              .attr("class", "topic_highlightrect")
                                              .attr("id", "topic_" + index)
                                              .attr("fill", this.m_level.m_topicColors[index]);
+                                             //.on(namespace.Interaction.click, function(p_data){
+                                             //    this.Update(p_data, namespace.Interaction.click);
+                                             //    for 
+                                             //}.bind(this));
 
             // Add the topic text element
             var topicText = this.m_groupOverlay.append("text")
@@ -3094,23 +3305,40 @@ var TWiC = (function(namespace){
                                          .attr("dy", "0")
                                          .attr("fill", this.m_level.m_topicColors[index])
                                          .on(namespace.Interaction.click, function(d){
-                                                update_data = {topicID:d.id, color:this.m_level.m_topicColors[d.id]};
-                                                this.HighlightText(update_data);
-                                                for ( var view_index = 0; view_index < this.m_linkedViews.length;
-                                                      view_index++ ){
-                                                    if ( namespace.Interaction.click == this.m_linkedViews[view_index].update ) {
+                                                if ( 1 == parseInt(this.m_svg.select(".topic_highlightrect#topic_" + d.id).attr("opacity")) ){
+                                                    var update_data = null;
+                                                    this.Update(update_data, namespace.Interaction.click);
+                                                    for ( var view_index = 0; view_index < this.m_linkedViews.length;
+                                                          view_index++ ){
+                                                        if ( namespace.Interaction.click == this.m_linkedViews[view_index].update ) {
 
-                                                        this.m_linkedViews[view_index].panel.Update(update_data);
-                                                        /*var initialPauseState = this.m_linkedViews[view_index].IsPaused();
-                                                        if ( !initialPauseState) {
-                                                            this.m_linkedViews[view_index].panel.Update(update_data);
-                                                            this.m_linkedViews[view_index].Pause(true);
-                                                        } else {
-                                                            this.m_linkedViews[view_index].Pause(false);
-                                                            this.m_linkedViews[view_index].panel.Update(update_data);
-                                                        }*/
+                                                            this.m_linkedViews[view_index].panel.Pause(false);
+                                                            this.m_linkedViews[view_index].panel.Update(update_data, namespace.Interaction.mouseover);    
+                                                        }
                                                     }
+                                                    this.Pause(false);
+
+                                                } else {
+                                                    var update_data = {topicID:d.id, color:this.m_level.m_topicColors[d.id]};
+                                                    this.HighlightText(update_data);
+                                                    for ( var view_index = 0; view_index < this.m_linkedViews.length;
+                                                          view_index++ ){
+                                                        if ( namespace.Interaction.click == this.m_linkedViews[view_index].update ) {
+
+                                                            var initialPauseState = this.m_linkedViews[view_index].panel.IsPaused();
+                                                            if ( !initialPauseState) {
+                                                                this.m_linkedViews[view_index].panel.Update(update_data, namespace.Interaction.mouseover);
+                                                                this.m_linkedViews[view_index].panel.Pause(true);
+                                                            } else {
+                                                                this.m_linkedViews[view_index].panel.Pause(false);
+                                                                this.m_linkedViews[view_index].panel.Update(update_data, namespace.Interaction.mouseover);
+                                                                this.m_linkedViews[view_index].panel.Pause(true);
+                                                            }
+                                                        }
+                                                    }
+                                                    this.Pause(true);
                                                 }
+                                                
                                          }.bind(this));
 
             // NOTE: dy seems to be an unreliable measure, textFlow.js may be buggy
@@ -3164,17 +3392,17 @@ var TWiC = (function(namespace){
         this.m_level.m_currentSelection = data.topicID;
     });
 
-    namespace.TopicBar.method("Update", function(data, p_updateType){
+    namespace.TopicBar.method("Update", function(p_data, p_updateType){
 
         if ( !this.m_paused ) {
 
             // Highlight the topic word list and scroll to it
-            if ( null != data ) {
+            if ( null != p_data ) {
 
-                this.m_svg.select(".topic_wordlist#topic_" + data.topicID).attr("fill", this.m_panelRect.attr("fill"));
-                this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).attr("fill", data.color).attr("opacity", 1.0);
-                var dy = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["dy"]
-                var numLines = this.m_svg.select(".topic_highlightrect#topic_" + data.topicID).datum()["lines"]
+                this.m_svg.select(".topic_wordlist#topic_" + p_data.topicID).attr("fill", this.m_panelRect.attr("fill"));
+                this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).attr("fill", p_data.color).attr("opacity", 1.0);
+                var dy = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["dy"]
+                var numLines = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["lines"]
 
                 $(this.m_div[0][0]).scrollTop(dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement));
                 //this.m_div[0][0].scrollTop = dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement);
@@ -3185,11 +3413,24 @@ var TWiC = (function(namespace){
                 //                                 viewBoxArray[3]);
 
                 // Save the current highlighted topic ID
-                this.m_level.m_currentSelection = data.topicID;
+                this.m_level.m_currentSelection = p_data.topicID;
             }
             // De-highlight all topic words lists and scroll back to the top of the topic bar
             else {
 
+                this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
+                this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
+                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
+                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " 0 " + viewBoxArray[2] + " " + viewBoxArray[3]);
+                
+                $(this.m_div[0][0]).scrollTop(0);
+                //this.m_div[0][0].scrollTop = 0;
+
+                // Reset the current selected topic to none
+                this.m_level.m_currentSelection = -1;
+            }
+        } else {
+            if ( namespace.Interaction.click == p_updateType ){
                 this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
                 this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
                 //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");

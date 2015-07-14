@@ -82,6 +82,9 @@
                                                        "Publication Name",
                                                        "publication.json");*/
 
+        // Topic bar
+        topicBar.AddLinkedView(corpusView, TWiC.Interaction.click);
+
         // Initialize the level
         twicLevel.Initialize({x: 0, y: 0}, // Position
                              //{width:2551,height:1571},

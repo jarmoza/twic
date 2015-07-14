@@ -167,6 +167,9 @@ var TWiC = (function(namespace){
                                     }
                                 }
 
+                                // Re-append the cluster circle group to bump up its z-order to top
+                                this.m_shapeGroup.node().parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode);
+
                                 // Future animation - TBD
                                 /*var ring = this.m_panel.m_svg.selectAll(this.m_panel.s_datashapeClassName).selectAll("#topic-" + d.topicID);
                                 ring.transition()
@@ -181,7 +184,7 @@ var TWiC = (function(namespace){
                                     }.bind(this));*/
 
                             }.bind(this))
-                            .on("mouseout", function(d){
+                            .on(namespace.Interaction.mouseout, function(d){
 
                                 this.m_panel.Update(null, namespace.Interaction.mouseover);
                                 for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
@@ -404,6 +407,10 @@ var TWiC = (function(namespace){
                             this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
                         }
                     }
+
+                    // Re-append the cluster circle group to bump up its z-order to top
+                    this.m_shapeGroup.node().parentNode.parentNode.parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode.parentNode.parentNode);
+
                 }.bind(this))
                 .on("mouseout", function(d){
 
@@ -795,6 +802,10 @@ var TWiC = (function(namespace){
                                      this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
                                  }
                              }
+
+                             // Re-append the cluster circle group to bump up its z-order to top
+                             this.m_shapeGroup.node().parentNode.parentNode.parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode.parentNode.parentNode);
+
                          }.bind(this))
                          .on("mouseout", function(d){
 

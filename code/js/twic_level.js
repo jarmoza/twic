@@ -3,6 +3,20 @@ var TWiC = (function(namespace){
     namespace.s_domPrefix = "twic_";
     namespace.s_lastUsedID = -1;
     
+    namespace.Interaction = {
+
+        mouseover: "mouseover",
+        mouseout: "mouseout",
+        click: "click",
+        dblclick: "dblclick"
+    };
+
+    namespace.GetAvailableScreenSpace = function(){
+
+        //return { width: screen.availWidth, height: screen.availHeight };
+        return { width: window.innerWidth, height: window.innerHeight };
+    };
+    
     namespace.GetUniqueID = function(){
 
         namespace.s_lastUsedID++;
@@ -20,13 +34,7 @@ var TWiC = (function(namespace){
         }
 
         return {width: e[a+'Width'] , height: e[a+'Height']}
-    }
-
-    namespace.GetAvailableScreenSpace = function(){
-
-        //return { width: screen.availWidth, height: screen.availHeight };
-        return { width: window.innerWidth, height: window.innerHeight };
-    }; 
+    } 
 
     // From http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
     namespace.ShadeBlend = function(p, c0, c1) {
@@ -46,14 +54,6 @@ var TWiC = (function(namespace){
             return "#"+(0x1000000+(u(((t>>16)-R1)*n)+R1)*0x10000+(u(((t>>8&0x00FF)-G1)*n)+G1)*0x100+(u(((t&0x0000FF)-B1)*n)+B1)).toString(16).slice(1)
         }
     };    
-
-    namespace.Interaction = {
-
-        mouseover: "mouseover",
-        mouseout: "mouseout",
-        click: "click",
-        dblclick: "dblclick"
-    };
 
     namespace.Container = function(p_coordinates, p_controlBar, p_panel){
 
@@ -102,9 +102,6 @@ var TWiC = (function(namespace){
 
        // Make the container draggable
        //$(this.m_div[0]).drags();
-
-       //var x = $(this.m_div[0]);
-       //
 
         /*window.onresize=function resizeit(){
             var a=document.getElementById("twic_level_twic_dickinson");
@@ -219,6 +216,11 @@ var TWiC = (function(namespace){
         this.m_panelList = [];
 
         this.m_controlBar = null;
+
+        // Keeps track of who the level is temporarily pausing/unpausing.
+        // This way, panels can remain in charge of their own more permanent pause/unpause.
+        this.m_graphPauseList = [];
+        this.m_infoPauseList = [];        
     };
 
     namespace.Level.method("AddControlBar", function(p_barThickness, p_barOrientation){
@@ -435,11 +437,32 @@ var TWiC = (function(namespace){
 
     namespace.Level.method("Pause", function(p_state){
 
-        for ( var index = 0; index < this.m_graphViews.length; index++ ){
-            this.m_graphViews[index].m_panel.Pause(p_state);
+        for ( var index = 0; index < this.m_graphViews.length; index++ ){ 
+
+            if ( p_state && !this.m_graphViews[index].m_panel.IsPaused() ){
+                this.m_graphPauseList.push(index);
+                this.m_graphViews[index].m_panel.Pause(true);
+            } else if ( !p_state ){
+                for ( var index2 = 0; index2 < this.m_graphPauseList.length; index2++ ){
+                    if ( index == this.m_graphPauseList[index2]){
+                        this.m_graphPauseList.splice(index2, 1);
+                        this.m_graphViews[index].m_panel.Pause(false);
+                    }
+                }
+            }
         }
         for ( var index = 0; index < this.m_infoViews.length; index++ ){
-            this.m_infoViews[index].m_panel.Pause(p_state);
+            if ( p_state && !this.m_infoViews[index].m_panel.IsPaused() ){
+                this.m_infoPauseList.push(index);
+                this.m_infoViews[index].m_panel.Pause(true);
+            } else if ( !p_state ){
+                for ( var index2 = 0; index2 < this.m_infoPauseList.length; index2++ ){
+                    if ( index == this.m_infoPauseList[index2]){
+                        this.m_infoPauseList.splice(index2, 1);
+                        this.m_infoViews[index].m_panel.Pause(false);
+                    }
+                }
+            }
         }
     });
 
@@ -557,6 +580,7 @@ var TWiC = (function(namespace){
                                                                          {width: p_containerWidth,
                                                                           height: p_containerHeight - namespace.Control.prototype.s_defaultThickness});
 
+                        //this.m_queue.await(function(){
                         // Update all panels as if they have had a datashape mouseover event, and then pause them
                         for ( var index = 0; index < this.m_graphViews.length; index++ ){
                             this.m_graphViews[index].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
@@ -582,6 +606,7 @@ var TWiC = (function(namespace){
                         this.m_graphViews[2].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
                                                           namespace.Interaction.mouseover);
                         this.m_graphViews[2].m_panel.Pause(true);
+                    //}.bind(this));
 
 
                     }.bind(this, containerWidth, containerHeight, p_data));                    

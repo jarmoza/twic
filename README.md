@@ -39,7 +39,7 @@ In order to do so, the visualization presents users with multiple, related views
 
 
 <br/>
-Above is one of the primary means by which topic distribution is visualized in TWiC: a bullseye-like abstraction of the top N topics of the texts being represented. In the image above, this would represent the top 10 topics of a group of texts. Each ring represents a topic and is given a randomly assigned and unique color.  Moving inward from the outside of the shape toward the center, more significant topics are represented, until one arrives at the center, or, the top topic.
+Above is one of the primary means by which topic distribution is visualized in TWiC: a bullseye-like abstraction of the top N topics of the texts being represented. In the image above, this would represent the top 10 topics of a group of texts. Each ring represents a topic and is given a randomly assigned and unique color. Moving inward from the outside of the shape toward the center, more significant topics are represented, until one arrives at the center, or, the top topic.
 
 <br/>
 <br/>
