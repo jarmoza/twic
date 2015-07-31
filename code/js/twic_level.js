@@ -60,6 +60,7 @@ var TWiC = (function(namespace){
         this.m_coordinates = {x: p_coordinates.x, y: p_coordinates.y};
         this.m_controlBar = p_controlBar;
         this.m_panel = p_panel;
+        this.m_level = this.m_panel.m_level;
         this.m_name = namespace.GetUniqueID();
     };
 
@@ -76,13 +77,13 @@ var TWiC = (function(namespace){
                 case "top":
                 case "bottom":
                     this.m_size = {width: this.m_panel.m_size.width,
-                                   height: this.m_panel.m_size.height + this.m_controlBar.m_size.height};
-                break;
+                                  height: this.m_panel.m_size.height + this.m_controlBar.m_size.height};
+                    break;
                 case "left":
                 case "right":
                     this.m_size = {width: this.m_panel.m_size.width + this.m_controlBar.m_size.width,
                                    height: this.m_panel.m_size.height};
-                break;
+                    break;
             }
         } else {
             this.m_size = {width: this.m_panel.m_size.width, height: this.m_panel.m_size.height};
@@ -95,8 +96,10 @@ var TWiC = (function(namespace){
                                 .style("position", "absolute")
                                 .style("left", this.m_coordinates.x)
                                 .style("top", this.m_coordinates.y)
-                                .style("max-width", this.m_size.width)
-                                .style("max-height", this.m_size.height)
+                                //.style("max-width", this.m_size.width)
+                                //.style("max-height", this.m_size.height)
+                                .style("max-width", this.m_level.m_size.width)
+                                .style("max-height", this.m_level.m_size.height)                                
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height);
 
@@ -524,13 +527,15 @@ var TWiC = (function(namespace){
 
                             // Update all panels as if they have had a datashape mouseover event, and then pause them
                             for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                                this.m_graphViews[index].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
+                                this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
+                                                                  color: this.m_topicColors[this.m_currentSelection] },
                                                                 namespace.Interaction.mouseover);
                                 this.m_graphViews[index].m_panel.Pause(true);
                             }
 
                             for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                               this.m_infoViews[index].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
+                               this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
+                                                                color: this.m_topicColors[this.m_currentSelection] },
                                                               namespace.Interaction.mouseover);                                
                                this.m_infoViews[index].m_panel.Pause(true);
                             }   
@@ -544,13 +549,12 @@ var TWiC = (function(namespace){
                             levelAsContainer.packery("reloadItems");
 
                             this.m_graphViews[1].m_panel.Pause(false);
-                            this.m_graphViews[1].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
-                                                              namespace.Interaction.mouseover);
+                            this.m_graphViews[1].Update({ topicID: this.m_currentSelection,
+                                                          color: this.m_topicColors[this.m_currentSelection] },
+                                                         namespace.Interaction.mouseover);
                             this.m_graphViews[1].m_panel.Pause(true);
 
                         }.bind(this, p_containerWidth, p_containerHeight, p_data));
-
-
                     }.bind(this, containerWidth, containerHeight, p_data));
 
                     break;
@@ -567,8 +571,8 @@ var TWiC = (function(namespace){
 
                     // Resize the topic bar to the bottom right
                     var transition = {
-                        position: {x: containerWidth, y: containerHeight},
-                        size: {width: containerWidth, height: containerHeight},
+                        position: { x: containerWidth, y: containerHeight },
+                        size: { width: containerWidth, height: containerHeight },
                         duration: 2000
                     };
 
@@ -576,20 +580,21 @@ var TWiC = (function(namespace){
 
                         // Open the text cluster view based on the double-clicked cluster
                         this.m_graphViews[1].m_panel.OpenUnderlyingPanel(p_data, 
-                                                                         {x: 0, y: p_containerHeight},
-                                                                         {width: p_containerWidth,
-                                                                          height: p_containerHeight - namespace.Control.prototype.s_defaultThickness});
+                                                                         { x: 0, y: p_containerHeight },
+                                                                         { width: p_containerWidth,
+                                                                           height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
-                        //this.m_queue.await(function(){
                         // Update all panels as if they have had a datashape mouseover event, and then pause them
                         for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                            this.m_graphViews[index].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
+                            this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
+                                                              color: this.m_topicColors[this.m_currentSelection] },
                                                             namespace.Interaction.mouseover);
                             this.m_graphViews[index].m_panel.Pause(true);
                         }
 
                         for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                           this.m_infoViews[index].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
+                           this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
+                                                            color: this.m_topicColors[this.m_currentSelection] },
                                                           namespace.Interaction.mouseover);                                
                            this.m_infoViews[index].m_panel.Pause(true);
                         }
@@ -603,33 +608,12 @@ var TWiC = (function(namespace){
                         levelAsContainer.packery("reloadItems");
 
                         this.m_graphViews[2].m_panel.Pause(false);
-                        this.m_graphViews[2].Update({topicID: this.m_currentSelection, color: this.m_topicColors[this.m_currentSelection]},
-                                                          namespace.Interaction.mouseover);
+                        this.m_graphViews[2].Update({ topicID: this.m_currentSelection,
+                                                      color: this.m_topicColors[this.m_currentSelection] },
+                                                    namespace.Interaction.mouseover);
                         this.m_graphViews[2].m_panel.Pause(true);
-                    //}.bind(this));
-
 
                     }.bind(this, containerWidth, containerHeight, p_data));                    
-
-                    /*// The original two panels' heights are shrunk and animated towards that new height
-                    this.m_graphViews[0].m_panel.SetSize({width: this.m_graphViews[0].m_panel.m_size.width, height: panelHeight});
-                    this.m_graphViews[0].m_panel.TransitionToNewSizeAndPosition();
-                    this.m_graphViews[1].m_panel.SetSize({width: this.m_graphViews[0].m_panel.m_size.width, height: panelHeight});
-                    this.m_graphViews[1].m_panel.TransitionToNewSizeAndPosition();
-
-                    // Reposition the information view and animate the move towards that position
-                    this.m_infoViews[0].m_panel.SetPosition({x: this.m_size.width >> 2, y: panelHeight});
-                    this.m_infoViews[0].m_panel.TransitionToNewSizeAndPosition();
-
-                    // Determine which new panel to create (by implicitly determining which was double-clicked)
-                    var createIndex = 0;
-                    // (Only one instance of an underlying panel may be open at once)
-                    if ( this.m_graphViews[0].m_panel.IsUnderlyingPanelOpen() ){
-                        createIndex = 1;
-                    }
-                    this.m_graphViews[createIndex].m_panel.OpenUnderlyingPanel(p_data,
-                        {x: this.m_size.width >> 2, y: panelHeight + this.m_infoViews[0].m_panel.m_size.height},
-                        {width: panelWidth, height: panelHeight});*/
 
                     break;
 
@@ -640,22 +624,22 @@ var TWiC = (function(namespace){
                     var containerWidth = this.m_size.width >> 1;
                     var containerHeight = (this.m_size.height >> 1) - (topicBarMinSize >> 1);
                     var transition = {
-                        position: {x: 0, y: 0},
-                        size: {width: containerWidth, height: containerHeight},
+                        position: { x: 0, y: 0 },
+                        size: { width: containerWidth, height: containerHeight },
                         duration: 2000
                     };
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight){
 
                         transition = {
-                            position: {x: p_containerWidth, y: 0},
-                            size: {width: p_containerWidth, height: p_containerHeight},
+                            position: { x: p_containerWidth, y: 0 },
+                            size: { width: p_containerWidth, height: p_containerHeight },
                             duration: 2000
                         };                            
                         this.m_graphViews[1].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight){
 
                             transition = {
-                                position: {x: 0, y: p_containerHeight + namespace.TopicBar.prototype.s_minHeight},
-                                size: {width: p_containerWidth, height: p_containerHeight},
+                                position: { x: 0, y: p_containerHeight + namespace.TopicBar.prototype.s_minHeight },
+                                size: { width: p_containerWidth, height: p_containerHeight },
                                 duration: 2000
                             };
                             this.m_graphViews[2].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight){
@@ -664,33 +648,32 @@ var TWiC = (function(namespace){
 
                             }.bind(this, p_containerWidth, p_containerHeight));
                         }.bind(this, p_containerWidth, p_containerHeight));
-
                     }.bind(this, containerWidth, containerHeight));
 
                     // Topic bar resizes to its minimum height and width of the level, moves to the center of the screen
                     transition = {
-                        position: {x: containerWidth, y: containerHeight + containerHeight - topicBarMinSize},
-                        size: {width: containerWidth, height: containerHeight},
+                        position: { x: containerWidth, y: containerHeight + containerHeight - topicBarMinSize },
+                        size: { width: containerWidth, height: containerHeight },
                         duration: 1500
                     };
                     this.m_infoViews[0].m_panel.Move(transition, "end", function(p_data, p_containerWidth, p_containerHeight){
 
                         transition = {
-                            position: {x: 0, y: p_containerHeight},
-                            size: {width: this.m_size.width, height: namespace.TopicBar.prototype.s_minHeight},
+                            position: { x: 0, y: p_containerHeight },
+                            size: { width: this.m_size.width, height: namespace.TopicBar.prototype.s_minHeight },
                             duration: 1500
                         };
                         this.m_infoViews[0].m_panel.Move(transition, "end", function(p_data, p_containerWidth, p_containerHeight){
 
                             // New panel of size of panels 1-3 in bottom left (NOTE: height temporarily hacked to remove control bar height)
                             this.m_graphViews[2].m_panel.OpenUnderlyingPanel(p_data, 
-                                                                            {x: p_containerWidth, y: p_containerHeight + namespace.TopicBar.prototype.s_minHeight},
-                                                                            {width: p_containerWidth, height: p_containerHeight - namespace.Control.prototype.s_defaultThickness});
+                                                                            { x: p_containerWidth, y: p_containerHeight + namespace.TopicBar.prototype.s_minHeight },
+                                                                            { width: p_containerWidth, height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
                             // Update all panels as if they have had a datashape mouseover event, and then pause them
                             var topicForUpdate = ( -1 == this.m_currentSelection ) ? p_data.topicID : this.m_currentSelection;
-                            var dataToViews = {json: p_data.json, clusterIndex: p_data.clusterIndex,
-                                               topicID: topicForUpdate, color: this.m_topicColors[topicForUpdate]};
+                            var dataToViews = { json: p_data.json, clusterIndex: p_data.clusterIndex,
+                                                topicID: topicForUpdate, color: this.m_topicColors[topicForUpdate] };
                             for ( var index = 0; index < this.m_graphViews.length; index++ ){
                                 this.m_graphViews[index].Update(dataToViews, namespace.Interaction.mouseover);
                                 this.m_graphViews[index].m_panel.Pause(true);
@@ -710,7 +693,6 @@ var TWiC = (function(namespace){
                             levelAsContainer.packery("reloadItems");
 
                         }.bind(this, p_data, p_containerWidth, p_containerHeight));
-
                     }.bind(this, p_data, containerWidth, containerHeight));                  
 
                     break;

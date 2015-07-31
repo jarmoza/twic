@@ -2,13 +2,13 @@ var TWiC = (function(namespace){
 
     namespace.TopRoundedRect = function(p_x, p_y, p_width, p_height, p_borderRadius){
 
-          return "M" + p_x + "," + (p_y + p_borderRadius)
-           + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + -p_borderRadius
-           + "h" + (p_width - (2 * p_borderRadius))
-           + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + p_borderRadius
-           + "v" + (p_height - p_borderRadius)
-           + "h" + -p_width
-           + "z";
+        return "M" + p_x + "," + (p_y + p_borderRadius)
+               + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + -p_borderRadius
+               + "h" + (p_width - (2 * p_borderRadius))
+               + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + p_borderRadius
+               + "v" + (p_height - p_borderRadius)
+               + "h" + -p_width
+               + "z";
     };
 
     namespace.BottomRoundedRect = function(p_x, p_y, p_width, p_height, p_borderRadius){

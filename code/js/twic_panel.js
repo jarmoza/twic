@@ -102,25 +102,29 @@ var TWiC = (function(namespace){
             start: function(){ this.m_level.Pause(true); }.bind(this),
             drag: function(){
                 this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
-                this.m_level.Pause()
+                this.m_level.Pause();
             }.bind(this),
             stop: function(){ this.m_level.Pause(false); }.bind(this)
         });
     }); 
 
-    namespace.Panel.method("MakeResizable", function(){
+    namespace.Panel.method("MakeResizable", function(p_maintainAspectRatio){
+
+        if ( undefined === p_maintainAspectRatio ){
+            p_maintainAspectRatio = true;
+        }
 
         // Minimum width is dependent on the width of the control bar's descriptive text
-        var resizeMinWidth = namespace.Panel.s_minimumPanelSize;
-        var resizeMinHeight = namespace.Panel.s_minimumPanelSize;            
+        var resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
+        var resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;            
         if ( this.m_controlBar && this.m_controlBar.m_barText ){
             var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
             var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
         }
 
         $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .div_twic_control .twic_panel",
-                                                aspectRatio: true,
-                                                autohide: true,
+                                                aspectRatio: p_maintainAspectRatio,
+                                                autoHide: true,
                                                 minWidth: resizeMinWidth,
                                                 minHeight: resizeMinHeight,
                                                 maxWidth: this.m_level.m_size.width,
@@ -132,6 +136,52 @@ var TWiC = (function(namespace){
 
         var containerWidth = parseFloat(this.m_container.m_div.style("width"));
         var containerHeight = parseFloat(this.m_container.m_div.style("height"));
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+
+        // Control bar resize
+        if ( this.m_controlBar ){
+            this.m_controlBar.m_size.width = containerWidth;
+            this.m_controlBar.m_div.style("width", containerWidth);
+            this.m_controlBar.m_svg.attr("width", containerWidth)
+                                   .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
+            this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
+        }
+
+        // Panel resize (vars for potentially faster access to the dimension values)
+        this.m_size.width = containerWidth;
+        this.m_size.height = containerHeight - controlBarHeight;
+        var divWidth = this.m_size.width;
+        var divHeight = this.m_size.height;
+
+        this.m_div.style("width", divWidth)
+                  .style("height", divHeight);
+        this.m_svg.attr("width", divWidth)
+                  .attr("height", divHeight);
+
+        // Panel rect resize
+        this.m_panelRectDiv.style("width", divWidth)
+                           .style("height", divHeight);
+        this.m_panelRectSvg.attr("width", divWidth)
+                           .attr("height", divHeight)
+                           .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
+        this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight, 
+                                                               namespace.Panel.prototype.s_borderRadius));
+
+        // Re-append this container to the level div to bump up its z-order
+        this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
+
+        // Packery re-layout call
+        $(this.m_level.m_div[0]).packery();
+
+        //$(this.m_container.m_div[0]).resizable("option","autoHide",true);
+    });
+
+    namespace.Panel.method("OnResizeWithArgs", function(p_width, p_height){
+
+        var containerWidth = p_width;
+        this.m_container.m_div.style("width", containerWidth);
+        var containerHeight = p_height;
+        this.m_container.m_div.style("height", containerHeight);
         var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
 
         // Control bar resize
@@ -348,7 +398,8 @@ var TWiC = (function(namespace){
                                         //.style("position", "absolute");
 
         // Create the corpus TWiC bullseye
-        this.m_corpusCluster = new TWiC.ClusterCircle({x: this.m_size.width >> 1, y: this.m_size.height - (this.m_size.height * 0.6)},
+        this.m_corpusCluster = new TWiC.TopicBullseye({ x: this.m_size.width >> 1,
+                                                        y: this.m_size.height - (this.m_size.height * 0.6) },
                                                       this.m_radius,
                                                       this.m_level.m_corpusMap["name"], 
                                                       this.m_level, 
@@ -365,7 +416,7 @@ var TWiC = (function(namespace){
     namespace.CorpusView.method("Start", function(p_parentDiv){
 
         // Add the single bullseye for the corpus view
-        this.m_nodes.push({index: 0, name: this.m_name});
+        this.m_nodes.push({ index: 0, name: this.m_name });
         var node = this.m_svg.selectAll(".node")
                              .data(this.m_nodes)
                              .enter()
@@ -375,18 +426,9 @@ var TWiC = (function(namespace){
                              .attr("x", this.m_corpusCluster.m_coordinates.x)
                              .attr("y", this.m_corpusCluster.m_coordinates.y)
                              .style("position", "absolute");
-                             //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusView.prototype.s_scaleExtentLimits).on("zoom", this.m_transitionOut));;
 
         // Create the svg for this node
-        this.m_corpusCluster.AppendSVGandBindData(node, [this.m_name]);
-
-        /* // Transitions between corpus view and corpus cluster view
-        var fadeOutTrans = new TWiC.FadeInOut(this.m_corpusCluster.m_clusterGroup, 2000, 0.1);
-        var zoomInTrans = new TWiC.ZoomIn(this.m_corpusCluster.m_clusterGroup, 2000, {x:this.m_size.width >> 1, y:this.m_size.height>>1}, 5);
-        this.m_exitTransition = new TWiC.LinkedTransition(zoomInTrans, fadeOutTrans);*/
-
-        // Start with the bullseye unhighlighted
-        //this.DarkenAllDataShapes();
+        this.m_corpusCluster.Draw(node, [this.m_name]);
 
         // Start with the bullseye highlighted
         this.HighlightAllDataShapes();
@@ -400,12 +442,7 @@ var TWiC = (function(namespace){
 
         // Make all objects of this panel resizable and draggable
         this.MakeResizable();
-        this.MakeDraggable();
-
-        // Make this panel draggable
-        /*$(function() {            
-            $(this.m_container.m_div[0][0]).draggable();
-        }.bind(this));*/        
+        this.MakeDraggable();      
     });
 
     namespace.CorpusView.method("Update", function(p_data, p_updateType){
@@ -425,8 +462,8 @@ var TWiC = (function(namespace){
                 // Tell the level to open the underlying panel (CorpusClusterView) if not open
                 if ( !this.IsUnderlyingPanelOpen() ){
                     this.Pause(false);
-                    this.Update({topicID: this.m_level.m_currentSelection,
-                                 color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
+                    this.Update({ topicID: this.m_level.m_currentSelection,
+                                  color: this.m_level.m_topicColors[this.m_level.m_currentSelection] },
                                 namespace.Interaction.mouseover);
                     this.Pause(true);
                     this.m_level.m_infoViews[0].m_panel.Pause(true);
@@ -438,9 +475,10 @@ var TWiC = (function(namespace){
 
             // Tell the level to open the underlying panel (CorpusClusterView) if not open
             if ( !this.IsUnderlyingPanelOpen() ){
+
                 this.Pause(false);
-                this.Update({topicID: this.m_level.m_currentSelection,
-                             color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
+                this.Update({ topicID: this.m_level.m_currentSelection,
+                              color: this.m_level.m_topicColors[this.m_level.m_currentSelection] },
                             namespace.Interaction.mouseover);
                 this.Pause(true);
                 this.m_level.m_infoViews[0].m_panel.Pause(true);
@@ -550,8 +588,8 @@ var TWiC = (function(namespace){
     namespace.CorpusView.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
 
         // Create new CorpusClusterView panel
-        var corpusClusterView = new namespace.CorpusClusterView({x: p_coordinates.x, y: p_coordinates.y},
-                                                                {width: p_size.width, height: p_size.height},
+        var corpusClusterView = new namespace.CorpusClusterView({ x: p_coordinates.x, y: p_coordinates.y },
+                                                                { width: p_size.width, height: p_size.height },
                                                                 this.m_level);
 
         // Link the CorpusClusterView to all open information views via mouseover
@@ -571,12 +609,14 @@ var TWiC = (function(namespace){
 
         // Initialize and Start the CorpusClusterView
         corpusClusterView.m_container.Initialize(this.m_level.m_div);
+
         // Fake transition to allow for loading of data time buffer (NOTE: Does this work?)
         corpusClusterView.m_container.m_div.transition().delay(100).style("top", corpusClusterView.m_container.m_div.style("top"));
         corpusClusterView.m_container.Start();
         corpusClusterView.m_div.style("opacity", 0.0);        
         corpusClusterView.m_controlBar.m_div.style("opacity", 0.0);
-        corpusClusterView.m_panelRectDiv.style("opacity", 0.0);        
+        corpusClusterView.m_panelRectDiv.style("opacity", 0.0);
+        
         corpusClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
         corpusClusterView.m_controlBar.m_div.transition()
                                             .delay(500).duration(3000)
@@ -584,13 +624,7 @@ var TWiC = (function(namespace){
         corpusClusterView.m_panelRectDiv.transition()
                                         .delay(500).duration(3000)
                                         .style("opacity", 1.0);
-        corpusClusterView.Pause(true);                                         
-
-        // Update the view if a topic is already highlighted
-        /*if ( -1 != this.m_level.m_currentSelection ){
-            corpusClusterView.Update({topicID: this.m_level.m_currentSelection, color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
-                                     namespace.Interaction.mouseover);
-        }*/   
+        corpusClusterView.Pause(true);                                           
         
         // Indicate that the underlying panel for CorpusView has now been opened
         this.m_underlyingPanelOpen = true;
@@ -683,45 +717,7 @@ var TWiC = (function(namespace){
                                                           .attr("viewBox", "0 0 " + (this.m_size.width) + " " + this.m_controlBar.m_size.height);
 
                                }.bind(this, p_transition));
-
     });
-
-      /*var transitionTime = 2500;
-      this.m_div.transition().duration(transitionTime)
-                             .style("left", this.m_coordinates.x)
-                             .style("top", this.m_coordinates.y)
-                             .style("width", this.m_size.width)
-                             .style("height", this.m_size.height)
-                             .each("start", function(){
-                                 this.m_svg.transition().duration(transitionTime)
-                                                        .attr("x", 0)
-                                                        .attr("y", 0)
-                                                        .attr("width", this.m_size.width)
-                                                        .attr("height", this.m_size.height)
-                                                        .each("start", function(){
-                                                            this.m_groupOverlay.select("path")
-                                                                               .transition()
-                                                                               .attr("d", namespace.BottomRoundedRect(0, -parseInt(this.m_controlBar.m_div.style("height")) << 1,
-                                                                                                                      this.m_level.m_size.width,
-                                                                                                                      this.m_level.m_size.height,
-                                                                                                                      namespace.Panel.prototype.s_borderRadius));
-                                                        }.bind(this));                                
-                             }.bind(this));
-
-
-      
-      this.m_controlBar.m_coordinates.x = this.m_coordinates.x;
-      this.m_controlBar.m_coordinates.y = this.m_coordinates.y;
-      this.m_container.m_div.transition()
-                            .duration(transitionTime)
-                            .style("left", this.m_coordinates.x)
-                            .style("top", this.m_coordinates.y)
-                            .style("width", this.m_size.width)
-                            .style("height", this.m_size.height + parseInt(this.m_controlBar.m_div.style("height")));
-      this.m_controlBar.m_div.transition().duration(transitionTime).style("width", this.m_size.width);                                      
-      this.m_controlBar.m_size.width = this.m_size.width;
-      this.m_controlBar.m_barPath.transition().duration(transitionTime).attr("d", this.m_controlBar.GetRectPath());
-    });*/
 
     namespace.CorpusView.prototype.s_datashapeClassName = "corpus_shape";
     namespace.CorpusView.prototype.s_datashapeClassSelect = ".corpus_shape";
@@ -763,6 +759,9 @@ var TWiC = (function(namespace){
                                         .style("height", this.m_size.height)
                                         .style("max-width", this.m_size.width)
                                         .style("max-height", this.m_size.height);
+                                        //.style("max-width", this.m_level.m_size.width)
+                                        //.style("max-height", this.m_level.m_size.height);
+
         this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
                                                  .attr("x", this.m_coordinates.x)
                                                  .attr("y", this.m_coordinates.y)
@@ -791,17 +790,6 @@ var TWiC = (function(namespace){
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height);
-
-        // Initialize the graph with TWiC bullseye nodes for a force-directed layout
-        this.InitializeGraph(p_fadeInControlBar);
-    });
-
-    namespace.CorpusClusterView.method("InitializeGraph", function(p_fadeInControlBar){
-
-        // Set up the svg for the corpus cluster view
-        var viewBoxFactor = Object.keys(this.m_level.m_corpusMap["children"]).length / 5.0;
-        // (AreafromBasicRadius * clusterCount / availablePixels)
-        var availSpaceRadiusScale =  viewBoxFactor * ((25 * 3.14 * 2) * Object.keys(this.m_level.m_corpusMap["children"]).length) / (this.m_size.width * this.m_size.height);
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -832,6 +820,18 @@ var TWiC = (function(namespace){
                                      .style("opacity", 1.0);
         }
 
+
+        // Initialize the graph with TWiC bullseye nodes for a force-directed layout
+        this.InitializeGraph(p_fadeInControlBar);
+    });
+
+    namespace.CorpusClusterView.method("InitializeGraph", function(p_fadeInControlBar){
+
+        // Set up the svg for the corpus cluster view
+        var viewBoxFactor = Object.keys(this.m_level.m_corpusMap["children"]).length / 5.0;
+        // (AreafromBasicRadius * clusterCount / availablePixels)
+        var availSpaceRadiusScale =  viewBoxFactor * ((25 * 3.14 * 2) * Object.keys(this.m_level.m_corpusMap["children"]).length) / (this.m_size.width * this.m_size.height);
+
         var twic_objects = [];
         var twic_cluster_json_list = [];
         var halfDimensions = {width:this.m_size.width >> 1, height: this.m_size.height >> 1};
@@ -842,13 +842,13 @@ var TWiC = (function(namespace){
         for ( var index = 0; index < clusterCount; index++ ){
             avg += this.m_level.m_corpusMap["children"][index]["dist2avg"];
         }
-        avg /= this.m_level.m_corpusMap["children"].length;
+        avg /= Object.keys(this.m_level.m_corpusMap["children"]).length;
 
         // Build all clusters
         var linkDilation = 80;
         for ( var index = 0; index < clusterCount; index++ ){
 
-            var twic_cluster = new TWiC.ClusterCircle({x:0, y:0}, availSpaceRadiusScale * 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
+            var twic_cluster = new TWiC.TopicBullseye({x:0, y:0}, availSpaceRadiusScale * 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["children"][index]["topics"],
                                                       index.toString());
 
@@ -893,7 +893,7 @@ var TWiC = (function(namespace){
 
         //var topTopics = namespace.Panel.prototype.GetTopNTopics(this.m_level.m_corpusMap["topics"], topTopicCount);
 
-        var centralNode = new TWiC.ClusterCircle({x: 0, y: 0}, 25,
+        var centralNode = new TWiC.TopicBullseye({x: 0, y: 0}, 25,
                                                  this.m_rootIndex, this.m_level, this, 
                                                  this.m_linkedViews, topTopicCount, topTopics,
                                                  this.m_nodes[0]["name"]);
@@ -933,7 +933,7 @@ var TWiC = (function(namespace){
 
         // Set up the SVG
 
-        // Set up the ClusterCircles
+        // Set up the TopicBullseyes
 
         // Sort them by dist2avg
 
@@ -987,7 +987,7 @@ var TWiC = (function(namespace){
         var linkDilation = 80;
         for ( var index = 0; index < clusterCount; index++ ){
 
-            var twic_cluster = new TWiC.ClusterCircle({x:0, y:0}, availSpaceRadiusScale * 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
+            var twic_cluster = new TWiC.TopicBullseye({x:0, y:0}, availSpaceRadiusScale * 25, this.m_level.m_corpusMap["children"][index]["name"], this.m_level, this, this.m_linkedViews, 10,
                                                       this.m_level.m_corpusMap["children"][index]["topics"],
                                                       index.toString());
 
@@ -1032,7 +1032,7 @@ var TWiC = (function(namespace){
 
         //var topTopics = namespace.Panel.prototype.GetTopNTopics(this.m_level.m_corpusMap["topics"], topTopicCount);
 
-        var centralNode = new TWiC.ClusterCircle({x: 0, y: 0}, 25,
+        var centralNode = new TWiC.TopicBullseye({x: 0, y: 0}, 25,
                                                  this.m_rootIndex, this.m_level, this, 
                                                  this.m_linkedViews, topTopicCount, topTopics,
                                                  this.m_nodes[0]["name"]);
@@ -1077,16 +1077,13 @@ var TWiC = (function(namespace){
                        //.style("stroke-width", function(d) { return Math.sqrt(d.value); })
                        .style("stroke-width", 0.5)
                        .style("stroke","lightgray")
-                       .style("opacity", TWiC.ClusterCircle.s_semihighlightedOpacity);
+                       .style("opacity", TWiC.TopicBullseye.s_semihighlightedOpacity);
 
-        // Bind TWiC object data to the node data
+        // Save the TWiC datashape's radius to the graph node (for graph/collision usage)
         for ( index = 0; index < this.m_twicObjects.length; index++ ) {
-
             for ( var index2 = 0; index2 < this.m_nodes.length; index2++ ){
-
                 if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["index"] ){
-
-                    this.m_twicObjects[index].BindDataToNode(this.m_nodes[index2]);
+                    this.m_nodes[index2].radius = this.m_twicObjects[index].m_size;                    
                     break;
                 }
             }
@@ -1100,9 +1097,7 @@ var TWiC = (function(namespace){
                              .append("g")
                              .attr("class", "node")
                              .style("position", "absolute")
-                             //.attr("id", function(d){return "node_" + d.node_index;})
                              .attr("id", function(d){return "node_" + d.index;});
-                             //.call(this.m_graph.drag);
 
         // Neat transition in effect for circles from:
         // http://bl.ocks.org/mbostock/7881887
@@ -1122,38 +1117,24 @@ var TWiC = (function(namespace){
                 
                 if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["index"] ){
                 
-                    this.m_twicObjects[index].AppendSVGandBindData(this.m_svg.select(".node#node_" + index2), this.m_nodes[index2]["children"]);
-                    if ( 0 == index ){
-                        var textColor = namespace.Level.prototype.s_palette.gold;
-                    } else {
-                        var textColor = this.m_level.m_topicColors[index];
-                    }
+                    var children = ( index > 0 && index < this.m_objectsJSON.length ) ? this.m_objectsJSON[index].children : [];
+                    this.m_twicObjects[index].Draw(this.m_svg.select(".node#node_" + index2), children);
+                    var textColor = ( 0 == index ) ? namespace.Level.prototype.s_palette.gold : this.m_level.m_topicColors[index];
                     this.m_twicObjects[index].AddTextTag(this.m_nodes[index2]["name"].toString(),
-                                                         20, textColor,
-                                                         {x:this.m_twicObjects[index].m_coordinates.x - ((7 * index.toString().length) >> 1),
-                                                          y:this.m_twicObjects[index].m_coordinates.y + (1.6 * this.m_twicObjects[index].m_radius)},
+                                                         20, 
+                                                         textColor,
+                                                         { x:this.m_twicObjects[index].m_coordinates.x - ((7 * index.toString().length) >> 1),
+                                                           y:this.m_twicObjects[index].m_coordinates.y + (1.6 * this.m_twicObjects[index].m_radius) },
                                                          1.0);
                 }
             }
         }
-        /*node.append("svg:rect")
-               .attr("class", "node_rects")
-               .attr("width", function(d){ return d.width; })
-               .attr("height", function(d){ return d.height; })
-               .attr("rx", function(d){ return d.cornerRadius; })
-               .attr("ry", function(d){ return d.cornerRadius; })
-               .style("stroke", function(d) { return fascicleColors[d.fascicle]; })
-               .style("fill", function(d) { return d.fillColor})
-               .style("position", "absolute");
-        */
 
         // Add tick function for graph corresponding to object type
         setTimeout(function(){
 
             this.m_graph.start();
-            for ( var index = 0; index < 1000; index++ ) {
-                this.Tick();
-            }
+            for ( var index = 0; index < 1000; index++ ) { this.Tick(); }
             this.m_graph.stop();
             this.b_positionsCalculated = true;
         }.bind(this), 10);
@@ -1163,12 +1144,7 @@ var TWiC = (function(namespace){
 
         // Make all objects of this panel resizable and draggable
         this.MakeResizable();
-        this.MakeDraggable();
-
-        // Make this panel draggable
-        /*$(function() {            
-            $(this.m_container.m_div[0][0]).draggable();
-        }.bind(this));*/        
+        this.MakeDraggable();      
     });
 
     namespace.CorpusClusterView.method("Update", function(p_data, p_updateType){
@@ -1182,7 +1158,7 @@ var TWiC = (function(namespace){
                 } else {
                     for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
                         if ( namespace.Interaction.dblclick == this.m_linkedViews[index].update ) {
-                            this.m_linkedViews[index].panel.Update({topicID: p_data.m_name}, p_updateType);
+                            this.m_linkedViews[index].panel.Update({ topicID: p_data.m_name}, p_updateType);
                         }
                     }
                 }   
@@ -1190,7 +1166,6 @@ var TWiC = (function(namespace){
                 if ( null != p_data ){
                     this.HighlightAllDataShapesWithTopic(p_data);
                 } else {
-                    //this.DarkenAllDataShapes();
                     this.HighlightAllDataShapes();
                 }
             }
@@ -1212,7 +1187,7 @@ var TWiC = (function(namespace){
                             if ( initialPauseState ){
                                 this.m_linkedViews[index].panel.Pause(false);
                             }
-                            this.m_linkedViews[index].panel.Update({topicID: p_data.m_name}, p_updateType);
+                            this.m_linkedViews[index].panel.Update({ topicID: p_data.m_name }, p_updateType);
                             if ( initialPauseState ){
                                 this.m_linkedViews[index].panel.Pause(true);
                             }
@@ -1297,7 +1272,7 @@ var TWiC = (function(namespace){
 
 
 
-        // Create the spiral based on the ordered ClusterCircles
+        // Create the spiral based on the ordered TopicBullseyes
 
         var d = circleMax + padding;
         var arcAxis = [];
@@ -1341,8 +1316,13 @@ var TWiC = (function(namespace){
 
         // Darken all shapes
         var allShapes = this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
-                  .style("fill", function(d){ return d.locolor; })
-                  .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+                                  .style("fill", function(d){ return d.locolor; })
+                                  .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+
+        // Darken all inner text rectangles
+        this.m_svg.selectAll(".text_info_rect")
+                  .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity)
+                  .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
 
         // Darken all text
         this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeTextClassSelect)
@@ -1357,23 +1337,31 @@ var TWiC = (function(namespace){
                   .style("opacity", 1.0)
                   .style("fill", function(d){ return d.color; });
 
+        // Highlight all inner text rectangles
+        this.m_svg.selectAll(".text_info_rect")
+                  .style("opacity", 1.0)
+                  .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+
         // Highlight all text
         this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeTextClassSelect)
                   .selectAll("tspan")
                   .style("opacity", 1.0);
     });
 
-    namespace.CorpusClusterView.method("HighlightAllDataShapesWithTopic", function(data){
+    namespace.CorpusClusterView.method("HighlightAllDataShapesWithTopic", function(p_data){
+
+        // Start with all shapes darkened
+        this.DarkenAllDataShapes();
 
         // Color all shapes that represent the given topic
         var filteredShapes = this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
-                                        .filter(function(d){ return d.topicID == data.topicID; })
-                                        .style("fill", data.color)
+                                        .filter(function(d){ return d.topicID == p_data.topicID; })
+                                        .style("fill", p_data.color)
                                         .style("opacity", 1.0);
 
         // Darken all shapes that don't represent the given topic
         var darkShapes = this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
-                  .filter(function(d){ return d.topicID != data.topicID; })
+                  .filter(function(d){ return d.topicID != p_data.topicID; })
                   .style("fill", function(d){ return d.locolor; })
                   .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
         darkShapes.each(function(d){
@@ -1384,17 +1372,28 @@ var TWiC = (function(namespace){
 
         // Raise the opacity of all shapes and text in the highlighted datashape
         filteredShapes.each(function(d){
+
+            if ( d.topicID != p_data.topicID && d.shapeRef.m_textRect.classed("text_info_rect") ){
+                d.shapeRef.m_textRect.style("opacity", 1.0)
+                                     .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+            }
             
             d3.select(this.parentNode)
               .selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
-              .filter(function(d){return d.topicID != data.topicID; })
+              .filter(function(d){return d.topicID != p_data.topicID; })
               .style("opacity", 1.0)
               .style("fill", function(d){return d.locolor; });
 
             d3.select(this.parentNode)
               .selectAll("tspan")
               .style("opacity", 1.0);
-        });                  
+        }); 
+
+        // Highlight any inner rectangles matching the topic ID
+        this.m_svg.selectAll(".text_info_rect")
+                  .filter(function(d){ return d.topicID == p_data.topicID; })
+                  .style("opacity", 1.0)
+                  .style("stroke-opacity", 1.0);
     });
 
     namespace.CorpusClusterView.method("Move", function(p_transition, p_callbackTiming, p_callback){
@@ -1476,8 +1475,8 @@ var TWiC = (function(namespace){
     namespace.CorpusClusterView.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
 
         // Create new TextClusterView panel
-        var textClusterView = new namespace.TextClusterView({x: p_coordinates.x, y: p_coordinates.y},
-                                                            {width: p_size.width, height: p_size.height},
+        var textClusterView = new namespace.TextClusterView({ x: p_coordinates.x, y: p_coordinates.y },
+                                                            { width: p_size.width, height: p_size.height },
                                                             this.m_level,
                                                             parseInt(p_data.m_name));
 
@@ -1501,31 +1500,17 @@ var TWiC = (function(namespace){
 
         // Initialize and Start the TextClusterView
         textClusterView.m_container.Initialize(this.m_level.m_div);
-        //this.m_level.m_queue.await(function(){
-            textClusterView.m_container.Start();
-            textClusterView.m_div.style("opacity", 0.0);        
-            textClusterView.m_controlBar.m_div.style("opacity", 0.0);
-            textClusterView.m_panelRectDiv.style("opacity", 0.0);       
-            textClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
-            textClusterView.m_controlBar.m_div.transition()
-                                                .delay(500).duration(3000)
-                                                .style("opacity", 1.0);
-            textClusterView.m_panelRectDiv.transition()
-                                          .delay(500).duration(3000)
-                                          .style("opacity", 1.0)
-                                          .each("end", function(){
+        textClusterView.m_container.Start();
 
-                                              // Update the view if a topic is already highlighted
-                                              //if ( -1 != this.m_level.m_currentSelection ){
-                                              //    textClusterView.Update({topicID: this.m_level.m_currentSelection, color: this.m_level.m_topicColors[this.m_level.m_currentSelection]},
-                                              //                           namespace.Interaction.mouseover);
-                                              //}
-                                          }.bind(this));                                            
-
-            
-            // Indicate that the underlying panel for CorpusView has now been opened
-            this.m_underlyingPanelOpen = true;
-        //}.bind(this));
+        textClusterView.m_div.style("opacity", 0.0);        
+        textClusterView.m_controlBar.m_div.style("opacity", 0.0);
+        textClusterView.m_panelRectDiv.style("opacity", 0.0);       
+        textClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
+        textClusterView.m_controlBar.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
+        textClusterView.m_panelRectDiv.transition().delay(500).duration(3000).style("opacity", 1.0);                                   
+        
+        // Indicate that the underlying panel for CorpusView has now been opened
+        this.m_underlyingPanelOpen = true;
     });
 
     namespace.CorpusClusterView.method("ScrollToZoom", function(p_twicLevel){
@@ -1563,6 +1548,7 @@ var TWiC = (function(namespace){
             var i = 0;
             var n = this.m_nodes.length;
 
+            // CONTINUE WORK HERE
             while (++i < n) { q.visit(namespace.GraphView.prototype.Collide(this.m_nodes[i])); }
 
             links.attr("x1", function(d) {
@@ -1583,6 +1569,8 @@ var TWiC = (function(namespace){
                 d.firstY = d.y;
                 return "translate(" + d.x + "," + d.y + ")";
             });
+
+            //this.b_positionsCalculated = true;
         }
         else{
 
@@ -1613,7 +1601,7 @@ var TWiC = (function(namespace){
     namespace.CorpusClusterView.prototype.s_scaleExtentLimits = [1, 16];
 
 
-    // Lower midlevel document rectangle cluster view (TWiC.TextRectangle)
+    // Lower midlevel document rectangle cluster view (TWiC.TopicBullseye)
     namespace.TextClusterView = function(p_coordinates, p_size, p_level, p_clusterIndex){
 
         namespace.GraphView.apply(this, arguments);
@@ -1628,6 +1616,7 @@ var TWiC = (function(namespace){
         this.m_rootIndex = -1;
         this.m_zoomBehavior = d3.behavior.zoom();
         this.m_clusterSvgGroup = null;
+        this.m_numberTopics = 5;
     };
     namespace.TextClusterView.inherits(namespace.GraphView);
 
@@ -1698,15 +1687,6 @@ var TWiC = (function(namespace){
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_overlay")
                                         .attr("id", "group_twic_graph_overlay_textclusterview_" + this.m_name);
-                                        //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)))
-
-        // Add the rectangle where all graph data will sit
-        /*this.m_panelRect = this.m_groupOverlay.append("path")
-                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
-                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
-                                              .attr("class","rect_twic_graph")
-                                              .attr("id","rect_twic_graph_textclusterview_" + this.m_name)
-                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);*/
 
         this.m_clusterSvgGroup = this.m_groupOverlay.append("g").attr("id", "clustersvg_group")
                                                        .attr("width", this.m_size.width)
@@ -1730,7 +1710,7 @@ var TWiC = (function(namespace){
         var avg = 0.0;
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index++ )
             avg += this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["dist2avg"];
-        avg /= this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length;
+        avg /= Object.keys(this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"]).length;
 
         // Node zero for the force-directed graph will be a cluster circle representing the average
         // topic distribution of this text cluster
@@ -1755,20 +1735,21 @@ var TWiC = (function(namespace){
             }
         }
 
-        var centralNode = new TWiC.ClusterCircle({x: 0, y: 0}, 25 * 1.333, this.m_nodes[0]["name"], this.m_level, this, this.m_linkedViews,
+        var centralNode = new TWiC.TopicBullseye({x: 0, y: 0}, 25 * 1.333, this.m_nodes[0]["name"], this.m_level, this, this.m_linkedViews,
                                                  topTopicCount, topTopics, this.m_nodes[0]["name"]);
         centralNode.SetScaledRadius(true);
         this.m_twicObjects.push(centralNode);
-        this.m_objectsJSON.push({"name": centralNode.m_name, "dist2avg": 0.0, "topics": topTopics, "children":[]});        
+        this.m_objectsJSON.push({ "name": centralNode.m_name, "dist2avg": 0.0, "topics": topTopics, "children":[] });        
 
         // Build all clusters
         var linkDilation = 40;
         var halfDimensions = {width:this.m_size.width >> 1, height: this.m_size.height >> 1};
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index ++ ){
 
-            var textRectangle = new TWiC.TextRectangle({x:0,y:0}, {width:0,height:0},
-                                                       this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["name"], this.m_level,
-                                                       this, this.m_linkedViews, this.m_clusterIndex);
+            var textRectangle = new TWiC.TopicRectangle({ x: 0,y: 0 },
+                                                        { width: 0,height: 0 },
+                                                        this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index]["name"], this.m_level,
+                                                        this, this.m_linkedViews, this.m_clusterIndex, this.m_numberTopics);
             // Load the individual JSON for this text
             textRectangle.Load();
 
@@ -1811,25 +1792,16 @@ var TWiC = (function(namespace){
                                 .nodes(this.m_nodes)
                                 .links(this.m_links)
                                 .size([this.m_size.width, this.m_size.height])
-                                .charge(-400)
-                                .gravity(0.05)
-                                .linkStrength(0.1)
+                                //.charge(-400)
+                                //.gravity(0.05)
+                                //.linkStrength(0.1)
+                                .charge(0.2)
+                                .gravity(0)
                                 //.chargeDistance(10)
                                 .linkDistance(function(d){ return d.value * TWiC.CorpusClusterView.prototype.s_linkDistanceMod; });
     });
 
     namespace.TextClusterView.method("Start", function(){
-
-        /*var panelCenter = [this.m_size["width"] >> 1, this.m_size["height"] >> 1];
-        var textRectangle = new TWiC.TextRectangle({x:panelCenter[0],y:panelCenter[1]}, {width:17,height:22},
-                                                   this.m_level.m_corpusMap["children"][0]["ideal_text"], this.m_level,
-                                                   this, this.m_linkedViews);
-
-        textRectangle.Load();
-
-        this.m_level.m_queue.await(function(){
-            textRectangle.Draw();
-        }.bind(textRectangle));*/
 
         this.m_level.m_queue.await(function(){
 
@@ -1841,15 +1813,26 @@ var TWiC = (function(namespace){
                                   .attr("class", "link")
                                   .style("stroke-width", 0.5)
                                   .style("stroke","lightgray")
-                                  .style("opacity", TWiC.ClusterCircle.s_semihighlightedOpacity);
+                                  .style("opacity", TWiC.TopicBullseye.s_semihighlightedOpacity);
 
-            // Bind TWiC object data to the node data
+            // Save the TWiC datashape's radius to the graph node (for graph/collision usage)
             for ( var index = 0; index < this.m_twicObjects.length; index++ ) {
 
                 for ( var index2 = 0; index2 < this.m_nodes.length; index2++ ){
 
                     if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["name"] ){
-                        this.m_twicObjects[index].BindDataToNode(this.m_nodes[index2]);
+
+                        if ( 0 == index ){
+                            this.m_nodes[index2].radius = this.m_twicObjects[index].m_size;
+                        } else {
+                            var topTopicCount = 5;
+                            var highlightRectWidth =  2 * topTopicCount * namespace.TopicRectangle.prototype.borderWidth;
+                            var totalDims = { width: this.m_twicObjects[index].m_size.width + highlightRectWidth,
+                                              height: this.m_twicObjects[index].m_size.height + highlightRectWidth };
+                            this.m_nodes[index2].radius = Math.sqrt(((totalDims.width >> 1) * (totalDims.width >> 1)) + 
+                                                                    ((totalDims.height >> 1) * (totalDims.height >> 1)));
+                        }
+
                         break;
                     }
                 }
@@ -1862,8 +1845,9 @@ var TWiC = (function(namespace){
 
                     if ( this.m_twicObjects[index].m_name == this.m_nodes[index2]["name"] ){
 
-                        // Simple test to discern between TextRectangles and the central ClusterCircle
-                        if ( undefined != this.m_twicObjects[index].Draw ){
+                        // Simple test to discern between TopicBullseyes and the central TopicBullseye
+                        //if ( undefined != this.m_twicObjects[index].Draw ){
+                        if ( namespace.TopicRectangle.prototype.s_shapeChar == this.m_twicObjects[index].m_shapeChar ){
 
                             this.m_twicObjects[index].Draw();                            
                             var fileID = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index - 1]["name"];                                
@@ -1871,7 +1855,7 @@ var TWiC = (function(namespace){
 
                         } else {
                             // Adds a cluster circle in the center (with no attached filenames --> [])
-                            this.m_twicObjects[index].AppendSVGandBindData(this.m_svg.select(".node#node_" + index), []);
+                            this.m_twicObjects[index].Draw(this.m_svg.select(".node#node_" + index), []);
                             var title = "Topic Cluster " + this.m_clusterIndex.toString(); 
                         }
 
@@ -1893,34 +1877,11 @@ var TWiC = (function(namespace){
             setTimeout(function(){
 
                 this.m_graph.start();
-
-                for ( var index = 1000; index > 0; --index ) {
-
-                    this.Tick();
-                }
-
+                for ( var index = 1000; index > 0; --index ) { this.Tick(); }
                 this.m_graph.stop();
-
                 this.b_positionsCalculated = true;
 
-                //this.m_svg.attr("opacity", this.m_svg.style("opacity") + 0.001);
             }.bind(this), 10);
-
-            /*this.m_svg.transition()
-                      .duration(750)
-                      .delay(function(d, i) { return i * 5; })
-                      .styleTween("width", function(d) {
-
-                          var i = d3.interpolate(0, this.m_svg.attr("width"));
-                          return function(t) {
-
-                              return this.m_svg.attr("width", i(t));
-                          }.bind(this);
-                      }.bind(this));
-
-            this.m_svg.style("opacity", 1.0);
-            twicLevel.m_graph.start();
-            this.m_graph.on("tick", function() { twicLevel.Tick(twicLevel); });*/
 
             // Make all objects of this panel resizable and draggable
             this.MakeResizable();
@@ -1946,16 +1907,15 @@ var TWiC = (function(namespace){
                 if ( null != p_data ){
 
                     // If mouseover occurs over the center of a text rectangle show all text titles
-                    if ( parseInt(p_data.topicID) == this.m_clusterIndex ){
-                        this.HighlightAllDataShapes(true);
+                    //if ( parseInt(p_data.topicID) == this.m_clusterIndex ){
+                    //    this.HighlightAllDataShapes(true);
                     // Highlight all matching cluster rectangle shapes
-                    } else {
+                    //} else {
                         this.HighlightAllDataShapesWithTopic(p_data);
-                    }
+                    //}
                 // Otherwise, this is a mouseout from a text rectangle.
                 // Highlight all but show no titles
                 } else {
-                    //this.DarkenAllDataShapes();
                     this.HighlightAllDataShapes(false);
                 }
             } else {
@@ -2076,6 +2036,12 @@ var TWiC = (function(namespace){
             }
         });
 
+        // Darken all inner text rectangles
+        this.m_svg.selectAll(".text_info_rect")
+                  .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity)
+                  .style("stroke", function(d){ return d.locolor; })
+                  .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+
         // Hide all text
         this.m_svg.selectAll(TWiC.TextClusterView.prototype.s_datashapeTextClassSelect)
                   .selectAll("tspan")
@@ -2100,6 +2066,12 @@ var TWiC = (function(namespace){
                 d3.select(this).selectAll("path").style("opacity", 1.0);
             }
         });
+
+        // Highlight all inner text rectangles
+        this.m_svg.selectAll(".text_info_rect")
+                  .style("opacity", 1.0)
+                  .style("stroke", function(d){ return d.color; })
+                  .style("stroke-opacity", 1.0);
 
         // Text highlighting is optional
         if ( p_showText ){
@@ -2158,71 +2130,25 @@ var TWiC = (function(namespace){
             if ( d && d.shapeRef ){
                 d.shapeRef.m_textTag.selectAll("tspan")
                                     .style("opacity", 1.0);
+                if ( namespace.TopicRectangle.prototype.s_shapeChar == d.shapeRef.m_shapeChar ){
+                    d.shapeRef.m_textRect.style("opacity", 1.0);
+                    d3.select(d.shapeRef.m_textRect.node().parentNode)
+                      .selectAll("path")
+                      .style("opacity", 1.0);
+                }
             }
         });
 
-        // Darken all shapes that don't represent the given topic
-        /*var darkShapes = this.m_svg.selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect)
-                                   .filter(function(d){ return d.topicID != data.topicID; });
-        darkShapes.each(function(d){
-
-            if ( "path" == this.nodeName || "circle" == this.nodeName ){
-                d3.select(this).style("fill", d.locolor)
-                               .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
-            } else if ( "rect" == this.nodeName ){
-                d3.select(this).style("stroke", d.locolor)
-                               .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
-            } else if ( "group" == this.nodeName ){
-                d3.select(this).selectAll("rect").style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
-                d3.select(this).selectAll("path").style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);                
-            }
-
-            // Hide the text of these darkened shapes
-            if ( d && d.shapeRef ){
-                d.shapeRef.m_textTag.selectAll("tspan")
-                                    .style("opacity", 0.0);
-            }
-        });*/
-
-        /*// Raise the opacity of all circles in the highlighted cluster
-        filteredShapes.each(function(d){
-            d3.select(this.parentNode)
-              .selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect)
-              .filter(function(d){return d.topicID != data.topicID; })
-              .style("stroke-opacity", 1.0);
-
-            d.shapeRef.m_shapeGroup.style("opacity", 1.0);
-            d.shapeRef.m_shapeGroup
-              .selectAll(".clusterrect_text")
-              .selectAll("tspan")
-              .style("opacity", 1.0);
-            d.shapeRef.m_textTag.style("opacity", 1.0);
+        var filteredTextRectangles = this.m_svg.selectAll(".text_info_rect")
+                                               .filter(function(d){ return d.topicID == p_data.topicID; });
+        filteredTextRectangles.each(function(d){
+            d3.select(this).style("opacity", 1.0)
+                           .style("stroke", d.color)
+                           .style("stroke-opacity", 1.0)
+                           .selectAll("path")
+                           .style("opacity", 1.0)
+                           .style("fill", function(d){ return d.color; });
         });
-
-        // Duplicated code for cluster circle at the center of the panel
-        // Color all circles that represent the given topic
-        var filteredCircles = this.m_svg.selectAll(".topic_circle")
-                                        .filter(function(d){ return d.topicID == data.topicID; })
-                                        .style("fill", data.color)
-                                        .style("opacity", 1.0);
-
-        // Darken all circles that don't represent the given topic
-        this.m_svg.selectAll(".topic_circle")
-                  .filter(function(d){ return d.topicID != data.topicID; })
-                  .style("fill", function(d){ return d.locolor; })
-                  .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
-
-        // Raise the opacity of all circles in the highlighted cluster
-        filteredCircles.each(function(d){
-            d3.select(this.parentNode)
-              .selectAll(".topic_circle")
-              .filter(function(d){return d.topicID != data.topicID; })
-              .style("opacity", 1.0);
-
-            d3.select(this.parentNode)
-              .selectAll("tspan")
-              .style("opacity", 1.0);
-        });*/
     });
 
     namespace.TextClusterView.method("Move", function(p_transition, p_callbackTiming, p_callback){
@@ -2303,10 +2229,9 @@ var TWiC = (function(namespace){
     namespace.TextClusterView.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
 
         // Create new TextView panel
-        var textView = new namespace.TextView({x: p_coordinates.x, y: p_coordinates.y},
-                                              {width: p_size.width, height: p_size.height},
-                                              this.m_level,
-                                              "665");
+        var textView = new namespace.TextView({ x: p_coordinates.x, y: p_coordinates.y },
+                                              { width: p_size.width, height: p_size.height },
+                                              this.m_level);
 
         // Link the TextView to all open information views via mouseover
         for ( var index = 0; index < this.m_linkedViews.length; index++ ){
@@ -2335,12 +2260,8 @@ var TWiC = (function(namespace){
         textView.m_controlBar.m_div.style("opacity", 0.0);
         textView.m_panelRectDiv.style("opacity", 0.0);       
         textView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
-        textView.m_controlBar.m_div.transition()
-                                            .delay(500).duration(3000)
-                                            .style("opacity", 1.0);
-        textView.m_panelRectDiv.transition()
-                                      .delay(500).duration(3000)
-                                      .style("opacity", 1.0); 
+        textView.m_controlBar.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
+        textView.m_panelRectDiv.transition().delay(500).duration(3000).style("opacity", 1.0); 
 
         // Initial update call shows the text clicked
         textView.Update(p_data, namespace.Interaction.dblclick);
@@ -2401,6 +2322,8 @@ var TWiC = (function(namespace){
                 d.firstY = d.y;
                 return "translate(" + d.x + "," + d.y + ")";
             });
+
+            this.b_positionsCalculated = true;
         }
         else{
 
@@ -2430,21 +2353,23 @@ var TWiC = (function(namespace){
 
 
     // Low level individual text view (TWiC.TopicTextHTML)
-    namespace.TextView = function(p_coordinates, p_size, p_level, p_fileID){
+    namespace.TextView = function(p_coordinates, p_size, p_level/*, p_fileID*/){
 
         namespace.GraphView.apply(this, arguments);
 
-        this.m_fileID = p_fileID;
+        //this.m_fileID = p_fileID;
         this.m_data = null;
     };
     namespace.TextView.inherits(namespace.GraphView);
 
     namespace.TextView.method("Initialize", function(p_parentDiv){
 
+        // Set up the panel container to the given coordinates
         this.m_container.SetPosition(this.m_coordinates);
         this.m_container.m_div.style("left", this.m_container.m_coordinates.x);
         this.m_container.m_div.style("top", this.m_container.m_coordinates.y);
 
+        // Top/left coordinates are relative to the containing div/level
         this.m_coordinates.x = 0;
         this.m_coordinates.y = 0;
 
@@ -2458,8 +2383,11 @@ var TWiC = (function(namespace){
                                         .style("top", this.m_coordinates.y + controlBarHeight)
                                         .style("width", this.m_size.width)
                                         .style("height", this.m_size.height)
-                                        .style("max-width", this.m_size.width)
-                                        .style("max-height", this.m_size.height);
+                                        //.style("max-width", this.m_size.width)
+                                        //.style("max-height", this.m_size.height);
+                                        .style("max-width", this.m_level.m_size.width)
+                                        .style("max-height", this.m_level.m_size.height);
+
         this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
                                                  .attr("x", this.m_coordinates.x)
                                                  .attr("y", this.m_coordinates.y)
@@ -2487,8 +2415,10 @@ var TWiC = (function(namespace){
                                 .style("top", this.m_coordinates.y)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
-                                .style("max-width", this.m_size.width)
-                                .style("max-height", this.m_size.height)
+                                //.style("max-width", this.m_size.width)
+                                //.style("max-height", this.m_size.height)
+                                .style("max-width", this.m_level.m_size.width)
+                                .style("max-height", this.m_level.m_size.height)                                
                                 .style("overflow", "scroll")
                                 .style("border-radius", namespace.Panel.prototype.s_borderRadius);
                                         
@@ -2501,32 +2431,10 @@ var TWiC = (function(namespace){
                                .attr("height", this.m_size.height)
                                .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
 
-
-        // (Testing) Load the HTML for an initial text
-        //this.Load();
-
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_overlay")
                                         .attr("id", "group_twic_graph_overlay_textview_" + this.m_name);
-                                        //.attr("position", "absolute");
-                                        //.call(this.m_zoomBehavior.scaleExtent(TWiC.CorpusClusterView.prototype.s_scaleExtentLimits).on("zoom", this.ScrollToZoom(this)))
-
-        // Add a background rect to the svg group
-        /*this.m_panelRect = this.m_groupOverlay.append("path")
-                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
-                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
-                                              .attr("class","rect_twic_graph")
-                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
-                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);*/
-
-        /*this.m_highlightRect = this.m_groupOverlay.append("rect")
-                                                  .attr("x", this.m_coordinates.x)
-                                                  .attr("y", this.m_coordinates.y - this.m_controlBar.m_size.height)
-                                                  .attr("width", this.m_size.width)
-                                                  .attr("height", this.m_size.height + this.m_controlBar.m_size.height)
-                                                  .attr("fill", "none")
-                                                  .style("opacity", 0.0);*/
 
         // Append a separate group for foreignObject tags for the text
         this.m_textGroup = this.m_groupOverlay.append("g")
@@ -2541,7 +2449,7 @@ var TWiC = (function(namespace){
         this.MakeDraggable();                             
     });
 
-    namespace.TextView.method("Load", function(){
+    /*namespace.TextView.method("Load", function(){
 
         this.m_level.m_queue.defer(function(callback) {
 
@@ -2553,7 +2461,7 @@ var TWiC = (function(namespace){
             }.bind(this));
 
         }.bind(this));
-    });
+    });*/
 
     namespace.TextView.method("Start", function(){ });
 
@@ -2564,7 +2472,6 @@ var TWiC = (function(namespace){
             if ( namespace.Interaction.mouseover == p_updateType ) {
 
                 if ( null == p_data ) {
-                    //this.DarkenTopicText();
                     this.HighlightAllWords();
                 } else {
                     this.DarkenAllWords();
@@ -3043,14 +2950,55 @@ var TWiC = (function(namespace){
 
         this.m_name = p_name;
         this.m_filename = p_filename;
+        this.m_objectsJSON = [];
+        this.m_twicObjects = [];
+
+        this.m_numberTopics = 5;
     };
     namespace.PublicationView.inherits(namespace.GraphView);
 
     namespace.PublicationView.method("Initialize", function(p_parentDiv){
-  
+
+        // Set up the panel container to the given coordinates
+        this.m_container.SetPosition(this.m_coordinates);
+        this.m_container.m_div.style("left", this.m_container.m_coordinates.x);
+        this.m_container.m_div.style("top", this.m_container.m_coordinates.y);
+
         // Top/left coordinates are relative to the containing div/level
         this.m_coordinates.x = 0;
         this.m_coordinates.y = 0;
+
+        // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        this.m_panelRectDiv = p_parentDiv.append("div")
+                                        .attr("class", "div_panel_rect")
+                                        .attr("id", "div_panel_rect_" + this.m_name)
+                                        .style("position", "absolute")
+                                        .style("left", this.m_coordinates.x)
+                                        .style("top", this.m_coordinates.y + controlBarHeight)
+                                        .style("width", this.m_size.width)
+                                        .style("height", this.m_size.height)
+                                        .style("max-width", this.m_size.width)
+                                        .style("max-height", this.m_size.height);
+        this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
+                                                 .attr("x", this.m_coordinates.x)
+                                                 .attr("y", this.m_coordinates.y)
+                                                 .attr("width", this.m_size.width)
+                                                 .attr("height", this.m_size.height)
+                                                 .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
+
+        // Add the rectangle where all graph data will sit
+        this.m_panelRect = this.m_panelRectSvg.append("path")
+                                              .attr("d", 
+                                                    namespace.BottomRoundedRect(this.m_coordinates.x, 
+                                                                                this.m_coordinates.y, 
+                                                                                this.m_size.width,
+                                                                                this.m_size.height,
+                                                                                namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class", "rect_twic_graph")
+                                              .attr("id", "rect_twic_graph_publicationview_" + this.m_name)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                              .style("position", "absolute");
 
         // Set up the div for the publication view
         this.m_div = p_parentDiv.append("div")
@@ -3063,7 +3011,7 @@ var TWiC = (function(namespace){
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("overflow", "scroll")
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                                        
 
         // Set up the svg for the publication view
         this.m_svg = this.m_div.append("svg")
@@ -3078,38 +3026,159 @@ var TWiC = (function(namespace){
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_overlay")
-                                        .attr("id", "group_twic_graph_overlay_publicationview_" + this.m_name)
-                                        .attr("position", "absolute");
+                                        .attr("id", "group_twic_graph_overlay_publicationview_" + this.m_name);
+                                        
 
-        // Add a background rect to the svg group
-        this.m_panelRect = this.m_groupOverlay.append("path")
-                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
-                                              this.m_coordinates.y, this.m_size.width, this.m_size.height, namespace.Panel.prototype.s_borderRadius))
-                                              .attr("class","rect_twic_graph")
-                                              .attr("id","rect_twic_graph_publicationview_" + this.m_name)
-                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);                                        
-
-        // Append a separate group for the text rectangles of the publication arrangement to be displayed
-        this.m_textGroup = this.m_groupOverlay.append("g")
-                                              .attr("class", "group_publicationview_text");
+        this.m_clusterSvgGroup = this.m_groupOverlay.append("g").attr("id", "clustersvg_group")
+                                                       .attr("width", this.m_size.width)
+                                                       .attr("height", this.m_size.height);
 
         // Make the bar text opaque initially
         this.m_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                    .style("opacity", 1.0);
+
+        // Load the publication-order JSON
+        this.Load();
+
+        // Add the corresponding text rectangles to the panel once the JSON is loaded
+        this.Start();
+
+        // Make the publication view draggable and resizable
+        this.MakeDraggable();
     });
 
     namespace.PublicationView.method("Start", function(){
 
-        // Wait till all JSON is loaded
-
-        // AddBarText based on the meta JSON
-
-        // Construct TextRectangles for each text in the arrangement with text tags
-        // The panel will be linked via setup so that mouseover of these rectangles
-        // is reflected in other views. 
+        // Extra Notes for future implementation
         // Draw lines/linkes between docs in order, when width exceeds panel width
         // draw ____| line down and to the left like this
-        var x = 0;
+        // Append TWiC object svg elements to the nodes with corresponding bound data        
+
+        // Wait till all JSON is loaded
+        this.m_level.m_queue.await(function(){        
+
+            // Add my text to the container's control bar
+            this.AddBarText();    
+
+            // Can only make resizable once control bar text is in place
+            this.MakeResizable(false);  
+
+            // Calculate mid-point positions for each page
+            var currentPage = 0;
+            var pageInfo = []; // {start: "", mid: ""} start is absolute to the panel, mid is relative to start            
+            var currentHeight = 0;
+
+            var pagesStartPosition = this.m_size.height >> 4; // Starting position for texts is 1/8 panel height
+            var pageSpacing = this.m_size.height >> 3;
+            var currentPagesOffset = pagesStartPosition;
+            var currentRadius = 0;
+            for ( var index = 0; index < this.m_twicObjects.length; index++ ){
+
+                if ( index + 1 < this.m_twicObjects.length && parseInt(this.m_data.texts[index].page) - 1 > currentPage ){
+
+                    pageInfo.push({start: currentPagesOffset, mid: currentHeight >> 1, r: currentRadius});
+                    currentPagesOffset += currentHeight + pageSpacing;
+                    currentHeight = 0;
+                    currentPage++
+                }
+
+                if ( this.m_twicObjects[index].m_size.height + (namespace.TopicRectangle.prototype.borderWidth * 2 * this.m_numberTopics) > currentHeight ){
+                    currentHeight = this.m_twicObjects[index].m_size.height + (namespace.TopicRectangle.prototype.borderWidth * 2 * this.m_numberTopics);
+                    currentRadius = this.m_twicObjects[index].m_radius;
+                }
+            }
+            pageInfo.push({start: currentPagesOffset, mid: currentHeight >> 1, r: currentRadius});
+
+            // Draw the text rectangles and resize the panel as necessary
+            var textSpacing = this.m_size.width >> 4; // Text spacing is 1/8 the width of the panel
+            var currentXOffset = textSpacing;
+            currentPage = 0;
+            for ( var index = 0; index < this.m_twicObjects.length; index++ ){
+
+                // Determine if texts are on the next "page"
+                if ( parseInt(this.m_data.texts[index].page) - 1 > currentPage ){
+
+                    currentPage++;
+                    currentXOffset = textSpacing;
+                }
+
+                // Determine the text coordinates via its page and item count
+                this.m_twicObjects[index].m_coordinates = { x: currentXOffset,
+                                                            y: pageInfo[currentPage].start + pageInfo[currentPage].mid - (this.m_twicObjects[index].m_size.height >> 1) };
+
+                // Draw the text rectangle and rectangular topic "bullseye"
+                this.m_twicObjects[index].Draw();
+
+                // Alter the svg, panel rectangle, and divs to the needed limits to fit all of the texts
+                if ( index + 1 == this.m_twicObjects.length ){
+
+                    // Resize the svg and panel rectangle
+                    var rectGrowth = pageInfo[currentPage].start + (2 * pageInfo[currentPage].mid) + (pageInfo[currentPage].r);
+                    this.m_svg.attr("height", rectGrowth)
+                              .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
+                    this.m_panelRectSvg.attr("height", rectGrowth)
+                                       .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
+                    this.m_container.m_div.selectAll(".rect_twic_graph").remove();
+                    this.m_panelRect = this.m_panelRectSvg.append("path")
+                                                          .attr("d", namespace.BottomRoundedRect(0, 
+                                                                                                 0,
+                                                                                                 this.m_size.width,
+                                                                                                 rectGrowth,
+                                                                                                 namespace.Panel.prototype.s_borderRadius))
+                                                          .attr("class", "rect_twic_graph")
+                                                          .attr("id", "rect_twic_graph_publicationview_" + this.m_name)
+                                                          .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                          .style("position", "absolute");
+                    this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                    this.m_panelRectDiv.style("border-radius", namespace.Panel.prototype.s_borderRadius);                                                              
+                }
+
+                currentXOffset += textSpacing + this.m_twicObjects[index].m_size.width + (namespace.TopicRectangle.prototype.borderWidth * 2 * this.m_numberTopics);
+            }
+
+            // Draw the lines in between texts and the titles for each text
+            currentPage = 0;
+            for ( var index = 0; index < this.m_twicObjects.length; index++ ){
+
+                // Determine if texts are on the next "page"
+                if ( parseInt(this.m_data.texts[index].page) - 1 > currentPage ){
+
+                    currentPage++;
+                }                
+
+                // Draw the line between this and the next text
+                if ( index + 1 < this.m_twicObjects.length && 
+                     this.m_data.texts[index + 1].page == this.m_data.texts[index].page){
+
+                    this.m_clusterSvgGroup.append("line")
+                                          .attr("stroke-linecap", "square")
+                                          .attr("x1", this.m_twicObjects[index].m_coordinates.x /*+ (this.m_twicObjects[index].m_size.width >> 1)*/ + this.m_twicObjects[index].m_size.width + (this.m_numberTopics * namespace.TopicRectangle.prototype.borderWidth))
+                                          .attr("y1", pageInfo[currentPage].start + pageInfo[currentPage].mid)
+                                          .attr("x2", this.m_twicObjects[index + 1].m_coordinates.x/* + (this.m_twicObjects[index + 1].m_size.width >> 1)*/ - (this.m_numberTopics * namespace.TopicRectangle.prototype.borderWidth))
+                                          .attr("y2", pageInfo[currentPage].start + pageInfo[currentPage].mid)
+                                          .style("stroke", namespace.Level.prototype.s_palette.gold)
+                                          .style("stroke-width", 5)                                    
+                                          .style("opacity", TWiC.TopicBullseye.s_semihighlightedOpacity);
+                }
+
+                // Add the title of the text below the text rectangle
+                this.m_twicObjects[index].AddTextTag(this.m_data.texts[index].title, 20, TWiC.Level.prototype.s_palette.gold,
+                                                     {x: this.m_twicObjects[index].m_coordinates.x - ((7 * this.m_data.texts[index].title.length) >> 1),
+                                                      y: this.m_twicObjects[index].m_coordinates.y + (2.85 * this.m_twicObjects[index].m_radius)},
+                                                     0.0);
+                                                     
+            }
+
+            // Re-append all text rectangles to the DOM to make sure they are above the joining lines
+            for ( var index = 0; index < this.m_twicObjects.length; index++ ){
+                var textRectGroup = d3.select("#textrect_node_" + this.m_twicObjects[index].m_name);
+                textRectGroup.node().parentNode.appendChild(textRectGroup.node());  
+            }
+
+            // Start with all data shapes highlights
+            this.HighlightAllDataShapes(true);
+            
+        }.bind(this));
     });
 
     namespace.PublicationView.method("Update", function(p_data, p_updateType){
@@ -3119,20 +3188,173 @@ var TWiC = (function(namespace){
         // Click freezes highlighting (handled in the datashape)
 
         // Doubleclick opens information on this text in the TBD doc information bar
-        var x = 0;
+        
+        if ( !this.m_paused ){
+
+            if ( p_updateType && namespace.Interaction.mouseover == p_updateType ){
+
+                if ( null != p_data ){
+                    this.HighlightAllDataShapesWithTopic(p_data);
+                // Otherwise, this is a mouseout from a text rectangle.
+                } else {
+                    this.HighlightAllDataShapes(true);
+                }
+            }
+        }        
     });
 
-    namespace.PublicationView.method("Load", function(p_filename){
+    namespace.PublicationView.method("DarkenAllDataShapes", function(){
+
+        // Darken all clusters
+        var allShapes = this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeClassSelect);
+        allShapes.each(function(d){
+
+            if ( "path" == this.nodeName || "circle" == this.nodeName ){
+                d3.select(this).style("fill", d.locolor)
+                               .style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+            } else if ( "rect" == this.nodeName ){
+                d3.select(this).style("stroke", d.locolor)
+                               .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+            } else if ( "g" == this.nodeName ){
+                d3.select(this).selectAll("rect").style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+                d3.select(this).selectAll("path").style("opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+            }
+        });
+
+        // Hide all text
+        this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeTextClassSelect)
+                  .selectAll("tspan")
+                  .style("opacity", 0.0);
+    });
+
+    namespace.PublicationView.method("HighlightAllDataShapes", function(p_showText){
+
+        // All shapes get highlighted
+        var allShapes = this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeClassSelect);
+        allShapes.each(function(d){
+
+            if ( "path" == this.nodeName || "circle" == this.nodeName ){
+                d3.select(this).style("fill", d.color)
+                               .style("opacity", 1.0);
+            } else if ( "rect" == this.nodeName ){
+                d3.select(this).style("stroke", d.color)
+                               .style("opacity", 1.0)
+                               .style("stroke-opacity", 1.0);
+                if ( d.shapeRef && d.shapeRef.m_textRect.classed("text_info_rect")){
+                    d.shapeRef.m_textRect.attr("opacity", 1.0)
+                                         .attr("stroke-opacity", 1.0);
+                }
+
+            } else if ( "g" == this.nodeName ) {
+                d3.select(this).selectAll("rect").style("opacity", 1.0);
+                d3.select(this).selectAll("path").style("opacity", 1.0);
+            }
+        });
+
+        // Text highlighting is optional
+        if ( p_showText ){
+            this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeTextClassSelect)
+                      .selectAll("tspan")
+                      .style("opacity", 1.0);      
+        } else {
+            this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeTextClassSelect)
+                      .selectAll("tspan")
+                      .style("opacity", 0.0);             
+        }
+    });
+
+    namespace.PublicationView.method("HighlightAllDataShapesWithTopic", function(p_data){
+
+        // Darken all shapes and text first
+        this.DarkenAllDataShapes();
+
+        // Highlight all shapes that represent the given topic
+        var filteredShapes = this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeClassSelect)
+                                       .filter(function(d){ return d.topicID == p_data.topicID; });
+        filteredShapes.each(function(d){
+
+            // Highlight all paths, circles, and rectangles 
+            if ( "path" == this.nodeName || "circle" == this.nodeName ){
+                d3.select(this).style("fill", d.color)
+                               .style("opacity", 1.0);
+            } else if ( "rect" == this.nodeName ){
+                d3.select(this).style("stroke", d.color)
+                               .style("opacity", 1.0)
+                               .style("stroke-opacity", 1.0);
+                d3.select(this.parentNode.parentNode.parentNode).selectAll(".text_info_rect").style("opacity", 1.0);
+                if ( d.shapeRef && d.shapeRef.m_textRect.classed("text_info_rect") && 
+                     d.shapeRef.m_textRect.datum().topicID != p_data.topicID ){
+                    d3.select(this.parentNode.parentNode.parentNode).selectAll(".text_info_rect").style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+                }
+            } else if ( "g" == this.nodeName ){
+                d3.select(this).selectAll("rect").style("opacity", 1.0);
+                d3.select(this).selectAll("path").style("opacity", 1.0);                
+            }
+            //d.shapeRef.m_textRect.attr("opacity", 1.0)
+                                 //.attr("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+
+            // Raise the opacity, but not color of shapes in the same datashape that do not represent the given topic
+            var nonHighlights = d3.select(this.parentNode)
+                                  .selectAll(TWiC.PublicationView.prototype.s_datashapeClassSelect)
+                                  .filter(function(d){return d.topicID != p_data.topicID; });
+            nonHighlights.each(function(d){
+                if ( "path" == this.nodeName || "circle" == this.nodeName ){
+                    d3.select(this).style("fill", d.locolor)
+                                   .style("opacity", 1.0);
+                } else if ( "rect" == this.nodeName ){
+                    d3.select(this).style("stroke", d.locolor)
+                        .style("stroke-opacity", 1.0);
+                } else if ( "g" == this.nodeName ){
+                    d3.select(this).selectAll("rect").style("opacity", 1.0);
+                    d3.select(this).selectAll("path").style("opacity", 1.0);                    
+                }
+            });
+
+            // Highlight the text of shapes with attached text
+            if ( d && d.shapeRef ){
+                d.shapeRef.m_textTag.selectAll("tspan")
+                                    .style("opacity", 1.0);
+            }
+        });
+    });
+
+    namespace.PublicationView.method("Load", function(){
 
         this.m_level.m_queue.defer(function(callback) {
 
-            d3.xhr("data/input/json/" + p_filename, function(error, data){
+            d3.json("data/input/json/" + this.m_filename, function(error, data){
 
-                var myJSON = data.response;
-                this.m_data = myJSON;
-                callback(null, myJSON);
+                this.m_data = data;
+
+                for ( var index = 0; index < this.m_data.count; index++ ){
+
+                    var topTopic = {id: 0, value: this.m_level.m_corpusInfo.file_info[this.m_data.texts[index].file][2][0] };
+                    for ( var index2 = 0; index2 < this.m_level.m_corpusInfo.file_info[this.m_data.texts[index].file][2].length; index2++ ){
+                        if ( this.m_level.m_corpusInfo.file_info[this.m_data.texts[index].file][2][index2] > topTopic.value ){
+                            topTopic.id = index2;
+                            topTopic.value = this.m_level.m_corpusInfo.file_info[this.m_data.texts[index].file][2][index2];
+                        }
+                    }
+                    var textRectangle = new TWiC.TopicRectangle({x:0,y:0}, {width:0,height:0},
+                                                               this.m_data.texts[index].file, this.m_level,
+                                                               this, this.m_linkedViews, 
+                                                               topTopic.id,
+                                                               this.m_numberTopics);
+
+                    // Load the individual JSON for this text
+                    textRectangle.Load();
+
+                    var textrect_json = {
+                        "name": this.m_data.texts[index].title,
+                        "topics": this.m_level.m_corpusInfo.file_info[this.m_data.texts[index].file][2],
+                    };
+
+                    this.m_objectsJSON.push(textrect_json);
+                    this.m_twicObjects.push(textRectangle); 
+                }
+
+                callback(null, data);
             }.bind(this));
-
         }.bind(this));
 
         // Will have to load the individual text JSONs as well here or elsewhere once the
@@ -3157,18 +3379,18 @@ var TWiC = (function(namespace){
                 this.m_controlBar.m_barText.selectAll("*").remove();
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html("TWiC:&nbsp;&nbsp;Publication View")
+                                      .html("TWiC:&nbsp;&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 21);
 
-                /*p_controlBar.m_barText.append("tspan")
-                                      .html("\"" + this.m_data.json.title + "\"")
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                p_controlBar.m_barText.append("tspan")
+                                      .html("\"" + this.m_data.title + "\"")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 23);
 
-                p_controlBar.m_barText.append("tspan")
+                /*p_controlBar.m_barText.append("tspan")
                                       .html("&nbsp;from&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
@@ -3195,10 +3417,10 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
-    namespace.TextView.prototype.s_datashapeClassName = "publication_shape";
-    namespace.TextView.prototype.s_datashapeClassSelect = ".publication_shape";
-    namespace.TextView.prototype.s_datashapeTextClassName = "publication_shape_text";
-    namespace.TextView.prototype.s_datashapeTextClassSelect = ".publication_shape_text";
+    namespace.PublicationView.prototype.s_datashapeClassName = "publication_shape";
+    namespace.PublicationView.prototype.s_datashapeClassSelect = ".publication_shape";
+    namespace.PublicationView.prototype.s_datashapeTextClassName = "publication_shape_text";
+    namespace.PublicationView.prototype.s_datashapeTextClassSelect = ".publication_shape_text";
 
     // Base for informational views
     namespace.InformationView = function(p_coordinates, p_size, p_name, p_level, p_linkedViews){
@@ -3405,12 +3627,6 @@ var TWiC = (function(namespace){
                 var numLines = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["lines"]
 
                 $(this.m_div[0][0]).scrollTop(dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement));
-                //this.m_div[0][0].scrollTop = dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement);
-                
-                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " " + dy + " " +
-                //                                 viewBoxArray[2] + " " +
-                //                                 viewBoxArray[3]);
 
                 // Save the current highlighted topic ID
                 this.m_level.m_currentSelection = p_data.topicID;
@@ -3420,11 +3636,8 @@ var TWiC = (function(namespace){
 
                 this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
                 this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
-                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " 0 " + viewBoxArray[2] + " " + viewBoxArray[3]);
                 
                 $(this.m_div[0][0]).scrollTop(0);
-                //this.m_div[0][0].scrollTop = 0;
 
                 // Reset the current selected topic to none
                 this.m_level.m_currentSelection = -1;
@@ -3433,11 +3646,8 @@ var TWiC = (function(namespace){
             if ( namespace.Interaction.click == p_updateType ){
                 this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
                 this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
-                //var viewBoxArray = this.m_div.select(".svg_twic_info").attr("viewBox").split(" ");
-                //this.m_div.select(".svg_twic_info").attr("viewBox", viewBoxArray[0] + " 0 " + viewBoxArray[2] + " " + viewBoxArray[3]);
                 
                 $(this.m_div[0][0]).scrollTop(0);
-                //this.m_div[0][0].scrollTop = 0;
 
                 // Reset the current selected topic to none
                 this.m_level.m_currentSelection = -1;

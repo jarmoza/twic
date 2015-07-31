@@ -358,8 +358,6 @@ class TWiC_MalletInterpret:
 
         return clusters_json
 
-
-
     @staticmethod
     def Build_CorpusMapJSON_Avg(corpus_name, corpus_topics, file_topic_proportions, output_dir):
 

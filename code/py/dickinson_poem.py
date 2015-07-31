@@ -109,6 +109,7 @@ class Poem:
     def GetStanza(self, stanza_number, with_formatting = False, use_alternate_lines = False):
 
         poem_text_soupclass = '<class \'bs4.element.NavigableString\'>'
+        poem_em_soupclass = '<class \'bs4.element.em\'>'
 
         # Account for zero-based requests
         if 0 == stanza_number:
@@ -163,6 +164,14 @@ class Poem:
                     for line_subpart in l_tags[index].contents:
                         if poem_text_soupclass == str(type(line_subpart)):
                             current_line_text += line_subpart.strip() + ' '
+                        elif 'em' == str(line_subpart.name):
+                            current_line_text += str(line_subpart.contents[0]) + ' '
+                        elif 'app' == str(line_subpart.name):
+                            for tag in line_subpart.contents:
+                                if 'rdg' == tag.name and len(tag.contents) > 0:
+                                    if poem_text_soupclass == str(type(tag.contents[0])):
+                                        current_line_text += str(tag.contents[0]) + ' '
+                                        break
 
                     stanzas[current_stanza_index].append(current_line_text.strip())
 
@@ -281,7 +290,7 @@ class Poem:
         return float(matches) / float(my_lines_count) > Poem.poem_match_threshhold
 
     @staticmethod
-    def GatherPoems(tei_source_dir, corpus_source_dir):
+    def GatherPoems(tei_source_dir, corpus_source_dir, remove_old_plaintext = False):
 
         first_poem_number = 1
         last_poem_number = 4825
@@ -296,16 +305,17 @@ class Poem:
         curated_poem_collection = { }
         poem_written_statuses = { }
 
-        print 'Removing old plaintext files...'
+        if remove_old_plaintext:
+            print 'Removing old plaintext files...'
 
-        # Clear all files in the plain text directory
-        for old_file in os.listdir(corpus_source_dir):
-            file_path = os.path.join(corpus_source_dir, old_file)
-            try:
-                if file_path.endswith('.txt') and os.path.isfile(file_path):
-                    os.unlink(file_path)
-            except Exception, e:
-                print e
+            # Clear all files in the plain text directory
+            for old_file in os.listdir(corpus_source_dir):
+                file_path = os.path.join(corpus_source_dir, old_file)
+                try:
+                    if file_path.endswith('.txt') and os.path.isfile(file_path):
+                        os.unlink(file_path)
+                except Exception, e:
+                    print e
 
         print 'Gathering poems into memory...'
 
@@ -321,6 +331,14 @@ class Poem:
         for index in range(first_poem_number, last_poem_number + 1):
 
             if poem_written_statuses[index]:
+                continue
+
+            # NOTE: Presently only interested in R.W. Franklin's 1998 Varorium edition poems
+            if '1998' == all_poem_collection[index].GetPublicationDate():
+                all_poem_collection[index].ConvertToPlainText(output_directory, output_filename.format(index))
+                poem_written_statuses[index] = True
+                continue               
+            else:
                 continue
 
             #print 'Gathering poems similar to {0}'.format(index)
@@ -364,8 +382,6 @@ class Poem:
                     poem_written_statuses[poem_index] = True
             # Else, just write out the poem
             else:
-                if all_poem_collection[similar_poems[0]].GetTitle() == 'Alone and in a circumstance':
-                    print '======== SOLE POEM ADDED ========'
                 all_poem_collection[similar_poems[0]].ConvertToPlainText(output_directory, output_filename.format(index))
                 poem_written_statuses[similar_poems[0]] = True
 

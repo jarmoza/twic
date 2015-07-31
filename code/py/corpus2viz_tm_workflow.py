@@ -1,5 +1,8 @@
 import os
 import sys
+
+import pico
+
 from mallet_script import MalletScript
 from dickinson_poem import Poem
 #from interpret_mallet_output import InterpretMalletOutput
@@ -27,7 +30,7 @@ def CreateMallet():
     # mallet_script.output_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/mallet-output/'
     mallet_script.output_dir = '../../data/output/mallet/'
     mallet_script.stopwords_dir = '../../data/output/stopwords/'
-    mallet_script.lda_dir = '/Users/PeregrinePickle/mallet-2.0.7/'
+    mallet_script.lda_dir = '../../lib/mallet-2.0.7/'
     #mallet_script.script_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/scripts/'
     mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = '100'
@@ -68,7 +71,7 @@ def Corpus2Vis(args):
 
     # Run parts of the corpus 2 visualization workflow
     if options_gather_poems in options:
-        mallet_script.GatherTexts(mallet_script.tei_source, mallet_script.corpus_source_dir)
+        mallet_script.GatherTexts(mallet_script.tei_source, mallet_script.corpus_source_dir, True)
     if options_clear_oldoutput in options:
         mallet_script.ClearOutputFiles()
     if options_run_mallet in options:
@@ -76,6 +79,7 @@ def Corpus2Vis(args):
     if options_interpret_output in options:
         mallet_script.InterpretMalletOutput(mallet_script)
 
+    return "Finished Corpus2Vis"
 
 def main(args):
 
