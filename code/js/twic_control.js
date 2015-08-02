@@ -72,37 +72,15 @@ var TWiC = (function(namespace){
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_control")
                                 .attr("id", "div_twic_control_" + this.m_name)
-                                //.style("left", this.m_coordinates.x)
-                                //.style("top", this.m_coordinates.y)
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("background", "transparent")
-                                //.style("float", "left")
+                                .style("float", "left")
                                 .style("margin", 0);
-                                /*.on("mousedown", function(d) {
-
-                                    $(this).parent().addClass('draggable').parents().on('mousemove', function(e) {
-
-                                        //console.log("Coords: " + coords[0] + "," + coords[1]);
-                                        console.log("PageX: " + e.pageX + " PageY: " + e.pageY);
-                                        console.log("================================");
-
-                                        $('.draggable').offset({
-                                            top: e.pageY - ($('.draggable').outerHeight() / 2),
-                                            //top: coords[1] - $('.draggable').position().top,
-                                            left: e.pageX - ($('.draggable').outerWidth() / 2)
-                                            //left: coords[0] - $('.draggable').position().left
-                                        })
-                                        .on('mouseup', function() {
-                                            $(this).removeClass('draggable');
-                                        });
-                                    });
-                                    //e.preventDefault();
-                                }).on('mouseup', function() {
-                                    $('.draggable').removeClass('draggable');
-                                });*/
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_control")
@@ -128,8 +106,14 @@ var TWiC = (function(namespace){
                                             //.attr("stroke", namespace.Level.prototype.s_palette.purple)
                                             //.attr("stroke-width", 4.5);
 
-        // Explanation '?' for demo
-        /*var helpBoxOffset = {x:this.m_size.width - 50, y:this.m_coordinates.y + 10};
+    });
+
+    namespace.Control.method("Update", function(p_data, p_updateType){});
+
+    namespace.Control.method("AddHelp", function(){
+
+        // Explanation '?'
+        var helpBoxOffset = { x: this.m_size.width - 50, y: this.m_coordinates.y + 10 };
         var helpBoxPath = "M" + this.m_
         this.m_helpBox = this.m_controlGroup.append("rect")
                                             .attr("x", helpBoxOffset.x)
@@ -139,22 +123,52 @@ var TWiC = (function(namespace){
                                             .attr("fill", TWiC.Level.prototype.s_palette.darkblue)
                                             .attr("rx", 5)
                                             .attr("ry", 5);
-       this.m_helpBoxText = this.m_controlGroup.append("text")
-                           .attr("x", helpBoxOffset.x)
-                           .attr("y", helpBoxOffset.y)
-                           .attr("dx", 11)
-                           .attr("dy", 23)
-                           .attr("width", 30)
-                           .attr("height", 30)
-                           .attr("fill", TWiC.Level.prototype.s_palette.lightpurple)
-                           .attr("rx", 5)
-                           .attr("ry", 5)
-                           .html("?")
-                           .style("font-family", namespace.Level.prototype.s_fontFamily)
-                           .style("font-size", 23);*/
+        this.m_helpBoxText = this.m_controlGroup.append("text")
+                                                .attr("x", helpBoxOffset.x)
+                                                .attr("y", helpBoxOffset.y)
+                                                .attr("dx", 11)
+                                                .attr("dy", 23)
+                                                .attr("width", 30)
+                                                .attr("height", 30)
+                                                .attr("fill", TWiC.Level.prototype.s_palette.lightpurple)
+                                                .attr("rx", 5)
+                                                .attr("ry", 5)
+                                                .html("?")
+                                                .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                .style("font-size", 23);
     });
 
-    namespace.Control.method("Update", function(p_data, p_updateType){});
+    namespace.Control.method("AddSearch", function(){
+
+      /*
+
+        <div id="search_section" class="control">
+          <form id="search_form" action=""  method="post">
+            <p class="search_title">Search <input type="text" class="text-input" id="search" value="" /></p>
+          </form>
+        </div>
+
+      */
+
+      this.m_searchDiv = this.m_div.append("div")
+                                            .attr("class", "control")
+                                            .attr("id", "searchbar_" + this.m_panel.m_name)
+                                            .style("position", "absolute")
+                                            .style("left", this.m_container.m_size.width - 150)
+                                            .style("top", 10);
+      this.m_searchForm = this.m_searchDiv.append("form")
+                                          .attr("class", "control_form")
+                                          .attr("id", "searchform_" + this.m_panel.m_name)
+                                          .attr("action", "")
+                                          .attr("method", "post");
+      this.m_searchInput = this.m_searchForm.append("p")
+                                            .attr("class", "control_title")
+                                            .append("input")
+                                            .attr("class", "control_input")
+                                            .attr("id", "searchinput_" + this.m_panel.m_name)
+                                            .attr("type", "text")
+                                            .attr("value", "");
+    });
 
     namespace.Control.method("AddText", function(p_addTextCallback){ 
 

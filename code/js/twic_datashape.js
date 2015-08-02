@@ -10,6 +10,21 @@ var TWiC = (function(namespace){
         this.m_panel = p_panel;
     };
 
+    namespace.DataShape.method("AllowInteractions", function(p_interactionType){
+
+        var allow = false;
+        switch ( p_interactionType ){
+            case namespace.Interaction.dblclick:
+                allow = this.m_allowDblclick;
+                break;
+            default:
+                allow = true;
+                break;
+        }
+
+        return allow;
+    });
+
     namespace.DataShape.method("Draw", function(p_node){ });
     
     namespace.DataShape.method("Load", function(){ });
@@ -47,6 +62,7 @@ var TWiC = (function(namespace){
         }
         
         // Other class members
+        this.m_allowDblclick = true;
         this.m_radius = this.m_size;
         this.m_scaledRadius = false;
         this.m_shapeGroup = null;   
@@ -79,7 +95,7 @@ var TWiC = (function(namespace){
                       .attr("x", p_position.x)
                       .attr("y", p_position.y)
                       .style("opacity", p_opacity);
-    });    
+    }); 
 
     namespace.TopicBullseye.method("Draw", function(p_node, p_filenames){
 
@@ -110,7 +126,9 @@ var TWiC = (function(namespace){
                                       }
                                     }.bind(this))
                                     .on(namespace.Interaction.dblclick, function(){
-                                        this.m_panel.Update(this, namespace.Interaction.dblclick);
+                                        if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
+                                            this.m_panel.Update(this, namespace.Interaction.dblclick);
+                                        }
                                     }.bind(this));
         this.m_level.m_objectCount += 1;
 
@@ -237,6 +255,7 @@ var TWiC = (function(namespace){
         this.startingPosition = {x: this.m_coordinates.x, y: this.m_coordinates.y};   
         this.m_clusterRectShapeGroup = null;
         this.m_shapeChar = namespace.TopicRectangle.prototype.s_shapeChar;
+        this.m_allowDblclick = true;
 
         var topicColorIndex = 0;
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index++ ) {
@@ -357,29 +376,31 @@ var TWiC = (function(namespace){
                                              }.bind(this))
                                              .on(namespace.Interaction.dblclick, function(){
 
-                                                 if ( !this.m_panel.IsUnderlyingPanelOpen() ){
+                                                 if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
+                                                     if ( !this.m_panel.IsUnderlyingPanelOpen() ){
 
-                                                     this.m_level.Update({ json: this.m_data, 
-                                                                           clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                           topicID: this.m_panel.m_clusterIndex },
-                                                                         namespace.Interaction.dblclick);
+                                                         this.m_level.Update({ json: this.m_data, 
+                                                                               clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                               topicID: this.m_panel.m_clusterIndex },
+                                                                             namespace.Interaction.dblclick);
 
-                                                 } else {
+                                                     } else {
 
-                                                     for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                                         
-                                                         if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                         for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
                                                              
-                                                             var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-                                                             if ( initialPauseState ){
-                                                                 this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                                             }
-                                                             this.m_panel.m_linkedViews[index].panel.Update({ json:this.m_data, 
-                                                                                                              clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                                              topicID: this.m_panel.m_clusterIndex },
-                                                                                                            namespace.Interaction.dblclick);
-                                                             if ( initialPauseState ){
-                                                                 this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                             if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                                 
+                                                                 var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
+                                                                 if ( initialPauseState ){
+                                                                     this.m_panel.m_linkedViews[index].panel.Pause(false);
+                                                                 }
+                                                                 this.m_panel.m_linkedViews[index].panel.Update({ json:this.m_data, 
+                                                                                                                  clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                                                                  topicID: this.m_panel.m_clusterIndex },
+                                                                                                                namespace.Interaction.dblclick);
+                                                                 if ( initialPauseState ){
+                                                                     this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                                 }
                                                              }
                                                          }
                                                      }
@@ -470,31 +491,33 @@ var TWiC = (function(namespace){
                                   .style("position", "absolute")
                                   .on(namespace.Interaction.dblclick, function(){
 
-                                      if ( !this.m_panel.IsUnderlyingPanelOpen() ) {
+                                      if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
+                                          if ( !this.m_panel.IsUnderlyingPanelOpen() ) {
 
-                                          this.m_level.Update({ json: this.m_data, 
-                                                                clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                topicID: this.m_panel.m_clusterIndex },
-                                                              namespace.Interaction.dblclick);
-                                       } else {                                  
+                                              this.m_level.Update({ json: this.m_data, 
+                                                                    clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                    topicID: this.m_panel.m_clusterIndex },
+                                                                  namespace.Interaction.dblclick);
+                                           } else {                                  
 
-                                           for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                               if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
-                                                   var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-                                                   if ( initialPauseState ){
-                                                       this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                                   }
-                                                   this.m_panel.m_linkedViews[index].panel.Update({ json: this.m_data, 
-                                                                                                    clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                                    topicID: this.m_panel.m_clusterIndex },
-                                                                                                  namespace.Interaction.dblclick);
-                                                   if ( initialPauseState ){
-                                                       this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                               for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                                   if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                       var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
+                                                       if ( initialPauseState ){
+                                                           this.m_panel.m_linkedViews[index].panel.Pause(false);
+                                                       }
+                                                       this.m_panel.m_linkedViews[index].panel.Update({ json: this.m_data, 
+                                                                                                        clusterIndex: this.m_panel.m_clusterIndex, 
+                                                                                                        topicID: this.m_panel.m_clusterIndex },
+                                                                                                      namespace.Interaction.dblclick);
+                                                       if ( initialPauseState ){
+                                                           this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                       }
                                                    }
                                                }
                                            }
                                        }
-                                    d3.event.stopPropagation();
+                                       d3.event.stopPropagation();
                                  }.bind(this))
                                  .on(namespace.Interaction.click, function(){
 

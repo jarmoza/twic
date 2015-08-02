@@ -120,6 +120,9 @@ var TWiC = (function(namespace){
         if ( this.m_controlBar && this.m_controlBar.m_barText ){
             var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
             var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
+            if ( resizeMinHeight < namespace.Panel.prototype.s_minimumPanelSize ){
+                resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;
+            }
         }
 
         $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .div_twic_control .twic_panel",
@@ -129,7 +132,9 @@ var TWiC = (function(namespace){
                                                 minHeight: resizeMinHeight,
                                                 maxWidth: this.m_level.m_size.width,
                                                 maxHeight: this.m_level.m_size.height,
+                                                handles: "n, s, e, w, nw, ne, sw, se",
                                                 resize: function(){ this.OnResize(); }.bind(this)});
+        $(this.m_container.m_div[0]).resizable("option","autoHide",true);
     });
 
     namespace.Panel.method("OnResize", function(){
@@ -144,7 +149,6 @@ var TWiC = (function(namespace){
             this.m_controlBar.m_div.style("width", containerWidth);
             this.m_controlBar.m_svg.attr("width", containerWidth)
                                    .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
-            this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
         }
 
         // Panel resize (vars for potentially faster access to the dimension values)
@@ -164,6 +168,16 @@ var TWiC = (function(namespace){
         this.m_panelRectSvg.attr("width", divWidth)
                            .attr("height", divHeight)
                            .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
+
+        if ( containerWidth > parseInt(this.m_div.style("max-width")) ) {
+            this.m_div.style("max-width", containerWidth);
+            this.m_panelRectDiv.style("max-width", containerWidth);
+        }
+        if ( containerHeight > parseInt(this.m_div.style("max-height") + controlBarHeight) ) {
+            this.m_div.style("max-height", containerHeight - controlBarHeight);
+            this.m_panelRectDiv.style("max-height", containerHeight - controlBarHeight);
+        }
+
         this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight, 
                                                                namespace.Panel.prototype.s_borderRadius));
 
@@ -173,7 +187,9 @@ var TWiC = (function(namespace){
         // Packery re-layout call
         $(this.m_level.m_div[0]).packery();
 
-        //$(this.m_container.m_div[0]).resizable("option","autoHide",true);
+        if ( this.m_controlBar ){
+            this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
+        }
     });
 
     namespace.Panel.method("OnResizeWithArgs", function(p_width, p_height){
@@ -271,7 +287,8 @@ var TWiC = (function(namespace){
     };
     
     namespace.Panel.prototype.s_borderRadius = 15;
-    namespace.Panel.prototype.s_minimumPanelSize = 250;
+    namespace.Panel.prototype.s_minimumPanelSize = 500;
+    namespace.Panel.prototype.s_panelLevelBuffer = 50;
 
 
     // Base for TWiC graph view
@@ -339,7 +356,8 @@ var TWiC = (function(namespace){
     namespace.CorpusView.method("Initialize", function(p_parentDiv){
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        // Control bar height is reduced by 1 to prevent pixel spacing between panel and control bar from dragging rounding-inaccuracy
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -441,7 +459,7 @@ var TWiC = (function(namespace){
                                         1.0);
 
         // Make all objects of this panel resizable and draggable
-        this.MakeResizable();
+        this.MakeResizable(false);
         this.MakeDraggable();      
     });
 
@@ -585,51 +603,6 @@ var TWiC = (function(namespace){
                   .style("fill", function(d){ return d.locolor; });
     });
 
-    namespace.CorpusView.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
-
-        // Create new CorpusClusterView panel
-        var corpusClusterView = new namespace.CorpusClusterView({ x: p_coordinates.x, y: p_coordinates.y },
-                                                                { width: p_size.width, height: p_size.height },
-                                                                this.m_level);
-
-        // Link the CorpusClusterView to all open information views via mouseover
-        for ( var index = 0; index < this.m_linkedViews.length; index++ ){
-
-            if ( this.m_linkedViews[index].panel instanceof namespace.InformationView ){
-                corpusClusterView.AddLinkedView(this.m_linkedViews[index].panel, namespace.Interaction.mouseover);
-            }
-        }
-        
-        // Link the CorpusView and CorpusClusterView panels via mouseover
-        this.AddLinkedView(corpusClusterView, namespace.Interaction.mouseover);
-        corpusClusterView.AddLinkedView(this, namespace.Interaction.mouseover);
-
-        // Link the TopicBar to the CorpusClusterView via click
-        this.m_level.m_infoViews[0].m_panel.AddLinkedView(corpusClusterView, namespace.Interaction.click);
-
-        // Initialize and Start the CorpusClusterView
-        corpusClusterView.m_container.Initialize(this.m_level.m_div);
-
-        // Fake transition to allow for loading of data time buffer (NOTE: Does this work?)
-        corpusClusterView.m_container.m_div.transition().delay(100).style("top", corpusClusterView.m_container.m_div.style("top"));
-        corpusClusterView.m_container.Start();
-        corpusClusterView.m_div.style("opacity", 0.0);        
-        corpusClusterView.m_controlBar.m_div.style("opacity", 0.0);
-        corpusClusterView.m_panelRectDiv.style("opacity", 0.0);
-        
-        corpusClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
-        corpusClusterView.m_controlBar.m_div.transition()
-                                            .delay(500).duration(3000)
-                                            .style("opacity", 1.0);
-        corpusClusterView.m_panelRectDiv.transition()
-                                        .delay(500).duration(3000)
-                                        .style("opacity", 1.0);
-        corpusClusterView.Pause(true);                                           
-        
-        // Indicate that the underlying panel for CorpusView has now been opened
-        this.m_underlyingPanelOpen = true;
-    });
-
     namespace.CorpusView.method("Move", function(p_transition, p_callbackTiming, p_callback){
 
         // Determine the traits of the given transition
@@ -663,7 +636,8 @@ var TWiC = (function(namespace){
                                    this.m_panelRectDiv.transition()
                                                       .duration(p_transition.duration)
                                                       .style("width", this.m_size.width)
-                                                      .style("height", this.m_size.height);
+                                                      .style("height", this.m_size.height)
+                                                      .style("border-radius", namespace.Panel.prototype.s_borderRadius);
                                    this.m_panelRectSvg.transition()
                                                       .duration(p_transition.duration)
                                                       .attr("width", this.m_size.width)
@@ -672,8 +646,7 @@ var TWiC = (function(namespace){
                                                       .each("end", function(){
                                                           this.m_panelRect.attr("d", this.GetRectPath("bottom"));
                                                       }.bind(this));
-                                   
-
+                                
                                    /*this.m_panelRect.transition()
                                                    .duration(p_transition.duration)
                                                    .attr("d", namespace.BottomRoundedRect(0, -50,
@@ -719,6 +692,51 @@ var TWiC = (function(namespace){
                                }.bind(this, p_transition));
     });
 
+    namespace.CorpusView.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
+
+        // Create new CorpusClusterView panel
+        var corpusClusterView = new namespace.CorpusClusterView({ x: p_coordinates.x, y: p_coordinates.y },
+                                                                { width: p_size.width, height: p_size.height },
+                                                                this.m_level);
+
+        // Link the CorpusClusterView to all open information views via mouseover
+        for ( var index = 0; index < this.m_linkedViews.length; index++ ){
+
+            if ( this.m_linkedViews[index].panel instanceof namespace.InformationView ){
+                corpusClusterView.AddLinkedView(this.m_linkedViews[index].panel, namespace.Interaction.mouseover);
+            }
+        }
+        
+        // Link the CorpusView and CorpusClusterView panels via mouseover
+        this.AddLinkedView(corpusClusterView, namespace.Interaction.mouseover);
+        corpusClusterView.AddLinkedView(this, namespace.Interaction.mouseover);
+
+        // Link the TopicBar to the CorpusClusterView via click
+        this.m_level.m_infoViews[0].m_panel.AddLinkedView(corpusClusterView, namespace.Interaction.click);
+
+        // Initialize and Start the CorpusClusterView
+        corpusClusterView.m_container.Initialize(this.m_level.m_div);
+
+        // Fake transition to allow for loading of data time buffer (NOTE: Does this work?)
+        corpusClusterView.m_container.m_div.transition().delay(100).style("top", corpusClusterView.m_container.m_div.style("top"));
+        corpusClusterView.m_container.Start();
+        corpusClusterView.m_div.style("opacity", 0.0);        
+        corpusClusterView.m_controlBar.m_div.style("opacity", 0.0);
+        corpusClusterView.m_panelRectDiv.style("opacity", 0.0);
+        
+        corpusClusterView.m_div.transition().delay(500).duration(3000).style("opacity", 1.0);
+        corpusClusterView.m_controlBar.m_div.transition()
+                                            .delay(500).duration(3000)
+                                            .style("opacity", 1.0);
+        corpusClusterView.m_panelRectDiv.transition()
+                                        .delay(500).duration(3000)
+                                        .style("opacity", 1.0);
+        corpusClusterView.Pause(true);                                           
+        
+        // Indicate that the underlying panel for CorpusView has now been opened
+        this.m_underlyingPanelOpen = true;
+    });
+
     namespace.CorpusView.prototype.s_datashapeClassName = "corpus_shape";
     namespace.CorpusView.prototype.s_datashapeClassSelect = ".corpus_shape";
     namespace.CorpusView.prototype.s_datashapeTextClassName = "corpus_shape_text";
@@ -748,7 +766,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -758,9 +776,8 @@ var TWiC = (function(namespace){
                                         .style("width", this.m_size.width)
                                         .style("height", this.m_size.height)
                                         .style("max-width", this.m_size.width)
-                                        .style("max-height", this.m_size.height);
-                                        //.style("max-width", this.m_level.m_size.width)
-                                        //.style("max-height", this.m_level.m_size.height);
+                                        .style("max-height", this.m_size.height)
+                                        .style("border-radius", namespace.Panel.prototype.s_borderRadius);
 
         this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
                                                  .attr("x", this.m_coordinates.x)
@@ -784,12 +801,13 @@ var TWiC = (function(namespace){
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_corpusclusterview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_corpusclusterview_" + this.m_name)
-                                .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
+                                //.style("left", this.m_coordinates.x)
+                                //.style("top", this.m_coordinates.y)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
-                                .style("height", this.m_size.height);
+                                .style("height", this.m_size.height)
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                                
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -798,7 +816,7 @@ var TWiC = (function(namespace){
                                .attr("y", this.m_coordinates.y)
                                .attr("width", this.m_size.width)
                                .attr("height", this.m_size.height)
-                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
+                               .attr("viewBox", "-50 -50 " + (this.m_size.width + 100) + " " + (this.m_size.height + 100));
 
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
@@ -820,6 +838,8 @@ var TWiC = (function(namespace){
                                      .style("opacity", 1.0);
         }
 
+        // Add search bar to the corpus cluster view's control bar
+        //this.m_controlBar.AddSearch();
 
         // Initialize the graph with TWiC bullseye nodes for a force-directed layout
         this.InitializeGraph(p_fadeInControlBar);
@@ -898,6 +918,7 @@ var TWiC = (function(namespace){
                                                  this.m_linkedViews, topTopicCount, topTopics,
                                                  this.m_nodes[0]["name"]);
         centralNode.SetScaledRadius(true);
+        centralNode.m_allowDblclick = false;
         this.m_twicObjects.push(centralNode);
         
 
@@ -1074,7 +1095,6 @@ var TWiC = (function(namespace){
                        .enter()
                        .append("line")
                        .attr("class", "link")
-                       //.style("stroke-width", function(d) { return Math.sqrt(d.value); })
                        .style("stroke-width", 0.5)
                        .style("stroke","lightgray")
                        .style("opacity", TWiC.TopicBullseye.s_semihighlightedOpacity);
@@ -1143,7 +1163,7 @@ var TWiC = (function(namespace){
         this.AddBarText();
 
         // Make all objects of this panel resizable and draggable
-        this.MakeResizable();
+        this.MakeResizable(false);
         this.MakeDraggable();      
     });
 
@@ -1428,10 +1448,12 @@ var TWiC = (function(namespace){
                                .each("start", function(p_transition, p_callbackTiming, p_callback){
 
                                    this.m_panelRect.transition()
-                                                  .duration(p_transition.duration)
-                                                   .attr("d", namespace.BottomRoundedRect(0, -50,
-                                    parseInt(this.m_svg.attr("width")), parseInt(this.m_svg.attr("height")) + 100,
-                                    namespace.Panel.prototype.s_borderRadius));
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0,
+                                                              -50,
+                                                              parseInt(this.m_svg.attr("width")),
+                                                              parseInt(this.m_svg.attr("height")) + 100,
+                                                              namespace.Panel.prototype.s_borderRadius));
 
                                    this.m_svg.transition()
                                              .duration(p_transition.duration)
@@ -1440,10 +1462,8 @@ var TWiC = (function(namespace){
                                              .each("end", function(){
 
                                                  if ( "end" == p_callbackTiming ){
-
                                                     p_callback();
                                                  }
-
                                              }.bind(this, p_callbackTiming, p_callback));
 
                                    if ( "start" == p_callbackTiming ){
@@ -1630,7 +1650,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -1681,7 +1701,8 @@ var TWiC = (function(namespace){
                                .attr("width", (this.m_level.m_size.width >> 1))
                                //.attr("height", this.m_size.height)
                                .attr("height", (this.m_level.m_size.height >> 1))
-                               .attr("viewBox", "0 0 " + (this.m_level.m_size.width >> 1) + " " + (this.m_level.m_size.height >> 1));
+                               .attr("viewBox", "-50 -50 " + ((this.m_level.m_size.width >> 1) + 100) +
+                                                " " + ((this.m_level.m_size.height >> 1) + 100));
 
         // Add group for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
@@ -1738,6 +1759,7 @@ var TWiC = (function(namespace){
         var centralNode = new TWiC.TopicBullseye({x: 0, y: 0}, 25 * 1.333, this.m_nodes[0]["name"], this.m_level, this, this.m_linkedViews,
                                                  topTopicCount, topTopics, this.m_nodes[0]["name"]);
         centralNode.SetScaledRadius(true);
+        centralNode.m_allowDblclick = false;
         this.m_twicObjects.push(centralNode);
         this.m_objectsJSON.push({ "name": centralNode.m_name, "dist2avg": 0.0, "topics": topTopics, "children":[] });        
 
@@ -1856,7 +1878,8 @@ var TWiC = (function(namespace){
                         } else {
                             // Adds a cluster circle in the center (with no attached filenames --> [])
                             this.m_twicObjects[index].Draw(this.m_svg.select(".node#node_" + index), []);
-                            var title = "Topic Cluster " + this.m_clusterIndex.toString(); 
+                            //var title = "Topic Cluster " + this.m_clusterIndex.toString(); 
+                            var title = "";
                         }
 
                         this.m_twicObjects[index].AddTextTag(title,
@@ -2374,7 +2397,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -2445,23 +2468,9 @@ var TWiC = (function(namespace){
                                    .style("opacity", 1.0);
 
         // Make all objects of this panel resizable and draggable
-        this.MakeResizable();
+        this.MakeResizable(false);
         this.MakeDraggable();                             
     });
-
-    /*namespace.TextView.method("Load", function(){
-
-        this.m_level.m_queue.defer(function(callback) {
-
-            d3.xhr("data/input/html/" + this.m_fileID + ".html", function(error, data){
-
-                htmlData = data.response;
-                this.m_HTML = htmlData;
-                callback(null, htmlData);
-            }.bind(this));
-
-        }.bind(this));
-    });*/
 
     namespace.TextView.method("Start", function(){ });
 
@@ -2497,161 +2506,116 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TextView.method("CreateTextSVGFromJSON", function(data){
+    namespace.TextView.method("AddBarText", function(){
 
-        var currentX = namespace.TextView.prototype.s_textStartPosition.x;
-        var currentY = namespace.TextView.prototype.s_textStartPosition.y;
-        var rectGrowth = this.m_size.height;
-        var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
+        this.m_controlBar.AddText(function(p_controlBar){
 
-        // Remove old texts from the view
-        //this.m_textGroup.selectAll("*").remove();
-        this.m_groupOverlay.selectAll("*").remove();
+            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                  .style("opacity", 1.0);
 
-        // Initial loop for path/panel rectangle resize (rectangle needs to be drawn first)
-        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
-            currentY += dy;
-            if ( currentY > this.m_size.height ){
-                rectGrowth += dy;
-            }
-        }
-
-        // Resize the svg and panel rectangle
-        /*this.m_svg.attr("height", rectGrowth);
-        this.m_groupOverlay.selectAll(".rect_twic_graph").remove();
-        this.m_panelRect = this.m_groupOverlay.append("path")
-                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
-                                              this.m_coordinates.y, this.m_size.width, rectGrowth, namespace.Panel.prototype.s_borderRadius))
-                                              .attr("class","rect_twic_graph")
-                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
-                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
-        this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);*/
-
-        // Resize the svg and panel rectangle
-        this.m_svg.attr("height", rectGrowth)
-                  .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
-        this.m_panelRectSvg.attr("height", rectGrowth)
-                           .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
-        this.m_container.m_div.selectAll(".rect_twic_graph").remove();
-        this.m_panelRect = this.m_panelRectSvg.append("path")
-                                              .attr("d", namespace.BottomRoundedRect(0, 
-                                                                                     0,
-                                                                                     this.m_size.width,
-                                                                                     rectGrowth,
-                                                                                     namespace.Panel.prototype.s_borderRadius))
-                                              .attr("class", "rect_twic_graph")
-                                              .attr("id", "rect_twic_graph_textview_" + this.m_name)
-                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                              .style("position", "absolute");
-        this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
-        this.m_panelRectDiv.style("border-radius", namespace.Panel.prototype.s_borderRadius);                                                              
-
-        // Re-add text groups
-        this.m_textGroup = this.m_groupOverlay.append("g")
-                                              .attr("class", "group_textview_text");
-        var containerGroup = this.m_textGroup.append("g").attr("class", "textview_container")
-                                                 .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
-                                                 .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
-                                                 .style("position", "absolute")
-                                                 .style("overflow", "auto");
-
-        // Build the HTML text
-        currentX = 50;
-        currentY = 100;
-        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
-
-            words = data.json.lines_and_colors[index][0].split(" ");
-            var lineText = "";
-
-            currentX = 50;
-            var text;
-
-            for ( var index2 = 0; index2 < words.length; index2++ ) {
-
-                // NOTE: undefined HACK
-                if ( "-1" == data.json.lines_and_colors[index][1][index2] ||
-                     undefined == data.json.lines_and_colors[index][1][index2] ){
-
-                    //var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorMidlight,
-                    //                             TWiC.Level.prototype.s_palette.gold);
-
-
-                    text = containerGroup.append("text").attr("class", "text_word")
-                                                 //.datum({locolor: dlocolor})
-                                                 .attr("x", currentX)
-                                                 .attr("y", currentY)
-                                                 .attr("dx", "0")
-                                                 .attr("dy", "0")
-                                                 .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                                 .style("font-size", 22)
-                                                 .style("position", "relative")
-                                                 .style("opacity", 1.0)
-                                                 .html(words[index2] + "&nbsp;");
-                }
-                else {
-
-                    var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                 this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]);
-
-                    text = containerGroup.append("text").attr("class", "text_coloredword")
-                                                 .datum({topicID: data.json.lines_and_colors[index][1][index2],
-                                                         locolor: dlocolor,
-                                                         color:this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]})
-                                                 .attr("x", currentX)
-                                                 .attr("y", currentY)
-                                                 .attr("dx", "0")
-                                                 .attr("dy", "0")
-                                                 .attr("fill", this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]])
-                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                                 .style("font-size", 22)
-                                                 .style("position", "relative")
-                                                 .style("opacity", 1.0)
-                                                 .html(words[index2] + "&nbsp;");
-                }
-
-                //currentX += text[0][0].offsetWidth * 0.67;
-                currentX += text[0][0].offsetWidth * 0.66;
-                //currentX += text[0][0].offsetWidth;
+            if ( null == p_controlBar.m_barText ) {
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", (p_controlBar.m_barThickness >> 1))
+                                                        .attr("y", (p_controlBar.m_barThickness * 0.65));
             }
 
-            currentY += dy;
-            if ( currentY > this.m_size.height ){
-                rectGrowth += dy;
+            if ( null != this.m_data ){
+
+                this.m_controlBar.m_barText.selectAll("*").remove();
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("\"" + this.m_data.json.title + "\"")
+                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 23);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;from&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 18);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Topic Cluster " + this.m_data.clusterIndex)
+                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 18);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;in&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 18);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_level.m_corpusMap["name"])
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 18);
             }
-        }
+        }.bind(this));
+    });
 
-        this.m_svg.selectAll(".text_coloredword")
-                  .on(namespace.Interaction.click, function(){
-                      // Pause/unpause my panel's Update() to keep
-                      // highlighting frozen or allow it to resume
-                      var initialPauseState = this.IsPaused();
-                      this.Pause(!initialPauseState);
+    namespace.TextView.method("AddHTMLAsForeignObject", function(){
 
-                      // Pause/unpause all of my panel's linked views as well
-                      for ( var index = 0; index < this.m_linkedViews.length;
-                            index++ ) {
-                          this.m_linkedViews[index].panel.Pause(!initialPauseState);
-                      }
-                  }.bind(this))
-                  .on(namespace.Interaction.mouseover, function(d){
+        this.m_groupOverlay.style("overflow", "auto").append("foreignObject")
+                        .attr("width", this.m_size.width)
+                        .attr("height", this.m_size.height)
+                        .append("xhtml:body")
+                        .style("background-color", namespace.Level.prototype.s_palette.darkblue)
+                        .style("font-family", namespace.Level.prototype.s_fontFamily)
+                        .style("font-size", 20)
+                        .style("color", namespace.Level.prototype.s_palette.gold)
+                        //.style("float", "left")
+                        .style("text-align", "left")
+                        .style("overflow", "auto")
+                        .html(this.m_HTML);
 
-                      this.Update(d, namespace.Interaction.mouseover);
-                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
-                          if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
-                              this.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
+        this.m_svg.select(".title")
+                  .style("font-size", "26")
+                  .style("text-align", "center");
+        this.m_svg.select(".left")
+                  .style("float","left")
+                  .style("position", "relative")
+                  .style("transform", "translateY(65%)")
+                  .style("top", "25%")
+                  .style("padding", "10")
+                  .style("margin-bottom", "25");
+        this.m_svg.select(".center")
+                  .style("float","left")
+                  .style("position", "relative")
+                  .style("margin", "0 auto !important")
+                  .style("display", "inline-block")
+                  .style("font-size", "18");
+        this.m_svg.select(".topics")
+                  .style("float","left")
+                  .style("position", "relative")
+                  .style("overflow", "auto");
+
+        myPanel = this;
+        this.m_svg.selectAll("span")
+                  .on(namespace.Interaction.mouseover, function(){
+                      var spanTopicID = this.title.split(" ")[1];
+                      var data = {topicID: spanTopicID, color:myPanel.m_level.m_topicColors[spanTopicID]};
+                      for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
+                          if ( namespace.Interaction.mouseover == myPanel.m_linkedViews[index].update ) {
+                              myPanel.m_linkedViews[index].panel.Update(data, namespace.Interaction.mouseover);
                           }
                       }
-                  }.bind(this))
+                  })
                   .on(namespace.Interaction.mouseout, function(){
-
-                      this.Update(null, namespace.Interaction.mouseover);
-                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
-                          if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
-                              this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                      for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
+                          if ( namespace.Interaction.mouseover == myPanel.m_linkedViews[index].update ) {
+                              myPanel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
                           }
                       }
-                  }.bind(this));
+                  });
     });
 
     namespace.TextView.method("CreateHTMLFromJSON", function(data){
@@ -2791,116 +2755,166 @@ var TWiC = (function(namespace){
                   });
     });
 
-    namespace.TextView.method("AddHTMLAsForeignObject", function(){
+    namespace.TextView.method("CreateTextSVGFromJSON", function(data){
 
-        this.m_groupOverlay.style("overflow", "auto").append("foreignObject")
-                        .attr("width", this.m_size.width)
-                        .attr("height", this.m_size.height)
-                        .append("xhtml:body")
-                        .style("background-color", namespace.Level.prototype.s_palette.darkblue)
-                        .style("font-family", namespace.Level.prototype.s_fontFamily)
-                        .style("font-size", 20)
-                        .style("color", namespace.Level.prototype.s_palette.gold)
-                        //.style("float", "left")
-                        .style("text-align", "left")
-                        .style("overflow", "auto")
-                        .html(this.m_HTML);
+        var currentX = namespace.TextView.prototype.s_textStartPosition.x;
+        var currentY = namespace.TextView.prototype.s_textStartPosition.y;
+        var rectGrowth = this.m_size.height;
+        //var rectGrowth = parseInt(this.m_svg.attr("height"));
+        var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
 
-        this.m_svg.select(".title")
-                  .style("font-size", "26")
-                  .style("text-align", "center");
-        this.m_svg.select(".left")
-                  .style("float","left")
-                  .style("position", "relative")
-                  .style("transform", "translateY(65%)")
-                  .style("top", "25%")
-                  .style("padding", "10")
-                  .style("margin-bottom", "25");
-        this.m_svg.select(".center")
-                  .style("float","left")
-                  .style("position", "relative")
-                  .style("margin", "0 auto !important")
-                  .style("display", "inline-block")
-                  .style("font-size", "18");
-        this.m_svg.select(".topics")
-                  .style("float","left")
-                  .style("position", "relative")
-                  .style("overflow", "auto");
+        // Remove old texts from the view
+        //this.m_textGroup.selectAll("*").remove();
+        this.m_groupOverlay.selectAll("*").remove();
 
-        myPanel = this;
-        this.m_svg.selectAll("span")
-                  .on(namespace.Interaction.mouseover, function(){
-                      var spanTopicID = this.title.split(" ")[1];
-                      var data = {topicID: spanTopicID, color:myPanel.m_level.m_topicColors[spanTopicID]};
-                      for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
-                          if ( namespace.Interaction.mouseover == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(data, namespace.Interaction.mouseover);
+        // Initial loop for path/panel rectangle resize (rectangle needs to be drawn first)
+        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
+            currentY += dy;
+            if ( currentY > this.m_size.height ){
+                rectGrowth += dy;
+            }
+        }
+
+        // Resize the svg and panel rectangle
+        /*this.m_svg.attr("height", rectGrowth);
+        this.m_groupOverlay.selectAll(".rect_twic_graph").remove();
+        this.m_panelRect = this.m_groupOverlay.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x,
+                                              this.m_coordinates.y, this.m_size.width, rectGrowth, namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class","rect_twic_graph")
+                                              .attr("id","rect_twic_graph_textview_" + this.m_name)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue);
+        this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);*/
+
+        // Resize the svg and panel rectangle
+        this.m_svg.attr("width", this.m_size.width)
+                  .attr("height", rectGrowth)
+                  .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
+        $(this.m_div[0][0]).scrollTop(0);                  
+        this.m_panelRectSvg.attr("height", rectGrowth)
+                           .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
+        this.m_container.m_div.selectAll(".rect_twic_graph").remove();
+        this.m_panelRect = this.m_panelRectSvg.append("path")
+                                              .attr("d", namespace.BottomRoundedRect(0, 
+                                                                                     0,
+                                                                                     this.m_size.width,
+                                                                                     rectGrowth,
+                                                                                     namespace.Panel.prototype.s_borderRadius))
+                                              .attr("class", "rect_twic_graph")
+                                              .attr("id", "rect_twic_graph_textview_" + this.m_name)
+                                              .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                              .style("position", "absolute");
+        this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
+        this.m_panelRectDiv.style("border-radius", namespace.Panel.prototype.s_borderRadius);                                                              
+
+        // Re-add text groups
+        this.m_textGroup = this.m_groupOverlay.append("g")
+                                              .attr("class", "group_textview_text");
+        this.m_containerGroup = this.m_textGroup.append("g")
+                                                .attr("class", "textview_container")
+                                                .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
+                                                .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
+                                                .style("position", "relative")
+                                                .style("overflow", "auto");
+
+        // Build the HTML text
+        currentX = 50;
+        currentY = 100;
+        for ( var index = 0; index < data.json.lines_and_colors.length; index++ ) {
+
+            words = data.json.lines_and_colors[index][0].split(" ");
+            var lineText = "";
+
+            currentX = 50;
+            var text;
+
+            for ( var index2 = 0; index2 < words.length; index2++ ) {
+
+                // NOTE: undefined HACK
+                if ( "-1" == data.json.lines_and_colors[index][1][index2] ||
+                     undefined == data.json.lines_and_colors[index][1][index2] ){
+
+                    //var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorMidlight,
+                    //                             TWiC.Level.prototype.s_palette.gold);
+
+
+                    text = this.m_containerGroup.append("text").attr("class", "text_word")
+                                                 //.datum({ locolor: dlocolor })
+                                                 .attr("x", currentX)
+                                                 .attr("y", currentY)
+                                                 .attr("dx", "0")
+                                                 .attr("dy", "0")
+                                                 .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                 .style("font-size", 22)
+                                                 .style("position", "relative")
+                                                 .style("opacity", 1.0)
+                                                 .html(words[index2] + "&nbsp;");
+                }
+                else {
+
+                    var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                 this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]);
+
+                    text = this.m_containerGroup.append("text").attr("class", "text_coloredword")
+                                                 .datum({topicID: data.json.lines_and_colors[index][1][index2],
+                                                         locolor: dlocolor,
+                                                         color:this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]})
+                                                 .attr("x", currentX)
+                                                 .attr("y", currentY)
+                                                 .attr("dx", "0")
+                                                 .attr("dy", "0")
+                                                 .attr("fill", this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]])
+                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                 .style("font-size", 22)
+                                                 .style("position", "relative")
+                                                 .style("opacity", 1.0)
+                                                 .html(words[index2] + "&nbsp;");
+                }
+
+                //currentX += text[0][0].offsetWidth * 0.67;
+                currentX += text[0][0].offsetWidth * 0.66;
+                //currentX += text[0][0].offsetWidth;
+            }
+
+            currentY += dy;
+            if ( currentY > this.m_size.height ){
+                rectGrowth += dy;
+            }
+        }
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .attr("height", rectGrowth)
+                  .on(namespace.Interaction.click, function(){
+                      // Pause/unpause my panel's Update() to keep
+                      // highlighting frozen or allow it to resume
+                      var initialPauseState = this.IsPaused();
+                      this.Pause(!initialPauseState);
+
+                      // Pause/unpause all of my panel's linked views as well
+                      for ( var index = 0; index < this.m_linkedViews.length;
+                            index++ ) {
+                          this.m_linkedViews[index].panel.Pause(!initialPauseState);
+                      }
+                  }.bind(this))
+                  .on(namespace.Interaction.mouseover, function(d){
+
+                      this.Update(d, namespace.Interaction.mouseover);
+                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                          if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                              this.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
                           }
                       }
-                  })
+                  }.bind(this))
                   .on(namespace.Interaction.mouseout, function(){
-                      for ( var index = 0; index < myPanel.m_linkedViews.length; index++ ) {
-                          if ( namespace.Interaction.mouseover == myPanel.m_linkedViews[index].update ) {
-                              myPanel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+
+                      this.Update(null, namespace.Interaction.mouseover);
+                      for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                          if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                              this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
                           }
                       }
-                  });
-    });
-
-    namespace.TextView.method("AddBarText", function(){
-
-        this.m_controlBar.AddText(function(p_controlBar){
-
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
-
-            if ( null == p_controlBar.m_barText ) {
-                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                        .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                        .attr("y", (p_controlBar.m_barThickness * 0.65));
-            }
-
-            if ( null != this.m_data ){
-
-                this.m_controlBar.m_barText.selectAll("*").remove();
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("TWiC:&nbsp;&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("\"" + this.m_data.json.title + "\"")
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 23);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;from&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("Topic Cluster " + this.m_data.clusterIndex)
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;in&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html(this.m_level.m_corpusMap["name"])
-                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-            }
-        }.bind(this));
+                  }.bind(this));
     });
 
     namespace.TextView.method("DarkenAllWords", function(){
@@ -2911,6 +2925,12 @@ var TWiC = (function(namespace){
         this.m_svg.selectAll(".text_coloredword")
                   .attr("fill", function(d){ return d.locolor; });
     });
+
+    namespace.TextView.method("DarkenTopicText", function(p_data){
+
+        this.m_svg.selectAll(".text_coloredword")
+                  .attr("fill", function(d){ return d.locolor; });
+    });    
 
     namespace.TextView.method("HighlightAllWords", function(){
 
@@ -2931,10 +2951,61 @@ var TWiC = (function(namespace){
                   .attr("fill", function(d){ return d.locolor; });
     });
 
-    namespace.TextView.method("DarkenTopicText", function(p_data){
+    namespace.TextView.method("OnResize", function(){
 
-        this.m_svg.selectAll(".text_coloredword")
-                  .attr("fill", function(d){ return d.locolor; });
+        var containerWidth = parseFloat(this.m_container.m_div.style("width"));
+        var containerHeight = parseFloat(this.m_container.m_div.style("height"));
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+
+        // Control bar resize
+        if ( this.m_controlBar ){
+            this.m_controlBar.m_size.width = containerWidth;
+            this.m_controlBar.m_div.style("width", containerWidth);
+            this.m_controlBar.m_svg.attr("width", containerWidth)
+                                   .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
+        }
+
+        // Panel resize (vars for potentially faster access to the dimension values)
+        this.m_size.width = containerWidth;
+        this.m_size.height = containerHeight - controlBarHeight;
+        var divWidth = this.m_size.width;
+        var divHeight = this.m_size.height;
+
+        this.m_div.style("width", divWidth)
+                  .style("height", divHeight);
+        //this.m_svg.attr("width", divWidth)
+        //          .attr("height", divHeight)
+        //          .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
+
+        // Panel rect resize
+        this.m_panelRectDiv.style("width", divWidth);
+        //                   .style("height", divHeight);
+        this.m_panelRectSvg.attr("width", divWidth)
+                           .attr("viewBox", "0 0 " + divWidth + " " + parseInt(this.m_panelRectSvg.attr("height")));
+        //                   .attr("height", divHeight)
+        //                   .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
+
+        if ( containerWidth > parseInt(this.m_div.style("max-width")) ) {
+            this.m_div.style("max-width", containerWidth);
+            this.m_panelRectDiv.style("max-width", containerWidth);
+        }
+        if ( containerHeight > parseInt(this.m_div.style("max-height") + controlBarHeight) ) {
+            this.m_div.style("max-height", containerHeight - controlBarHeight);
+            this.m_panelRectDiv.style("max-height", containerHeight - controlBarHeight);
+        }
+
+        this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight, 
+                                                               namespace.Panel.prototype.s_borderRadius));
+
+        // Re-append this container to the level div to bump up its z-order
+        this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
+
+        // Packery re-layout call
+        $(this.m_level.m_div[0]).packery();
+
+        if ( this.m_controlBar ){
+            this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
+        }
     });
 
     namespace.TextView.prototype.s_borderWidth = 5;
@@ -2943,6 +3014,7 @@ var TWiC = (function(namespace){
     namespace.TextView.prototype.s_datashapeClassSelect = ".text_shape";
     namespace.TextView.prototype.s_datashapeTextClassName = "text_shape_text";
     namespace.TextView.prototype.s_datashapeTextClassSelect = ".text_shape_text";
+
 
     namespace.PublicationView = function(p_coordinates, p_size, p_level, p_name, p_filename){
 
@@ -2969,7 +3041,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -3467,7 +3539,6 @@ var TWiC = (function(namespace){
                                .attr("y", this.m_coordinates.y)
                                .attr("width", this.m_size.width)
                                .attr("height", this.m_size.height);
-                               //.attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
 
 
         // Topic bar topic word list group
@@ -3503,18 +3574,13 @@ var TWiC = (function(namespace){
         var rectGrowth = 0;
         //for ( var index = 0, yPosition = TWiC_TopicBar.prototype.s_textInfo.yStart;
         //for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.yStart + namespace.TopicBar.prototype.s_textInfo.fontSize;
-        for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.fontSize;
-                  index < topicStrArray.length; index++ ){
+        for ( var index = 0, yPosition = namespace.TopicBar.prototype.s_textInfo.fontSize; index < topicStrArray.length; index++ ){
 
             // Append opaque rectangle that will be used as highlight for each topic word list
             var highlightRect = this.m_groupOverlay.append("rect")
                                              .attr("class", "topic_highlightrect")
                                              .attr("id", "topic_" + index)
                                              .attr("fill", this.m_level.m_topicColors[index]);
-                                             //.on(namespace.Interaction.click, function(p_data){
-                                             //    this.Update(p_data, namespace.Interaction.click);
-                                             //    for 
-                                             //}.bind(this));
 
             // Add the topic text element
             var topicText = this.m_groupOverlay.append("text")
@@ -3593,7 +3659,7 @@ var TWiC = (function(namespace){
         this.m_panelRect.attr("height", rectGrowth);
 
         // Make all objects of this panel resizable and draggable
-        this.MakeResizable();
+        this.MakeResizable(false);
         this.MakeDraggable();         
     });
 
@@ -3623,8 +3689,8 @@ var TWiC = (function(namespace){
 
                 this.m_svg.select(".topic_wordlist#topic_" + p_data.topicID).attr("fill", this.m_panelRect.attr("fill"));
                 this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).attr("fill", p_data.color).attr("opacity", 1.0);
-                var dy = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["dy"]
-                var numLines = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["lines"]
+                var dy = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["dy"];
+                var numLines = this.m_svg.select(".topic_highlightrect#topic_" + p_data.topicID).datum()["lines"];
 
                 $(this.m_div[0][0]).scrollTop(dy - (numLines * namespace.TopicBar.prototype.s_textInfo.yIncrement));
 
@@ -3655,46 +3721,36 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TopicBar.method("MakeResizable", function(){
+    namespace.TopicBar.method("MakeResizable", function(p_maintainAspectRatio){
 
+        if ( undefined === p_maintainAspectRatio ){
+            p_maintainAspectRatio = true;
+        }
+
+        // Minimum width is dependent on the width of the control bar's descriptive text
+        var resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
+        var resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;            
         if ( this.m_controlBar && this.m_controlBar.m_barText ){
             var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
             var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
-        } else {
-            var resizeMinWidth = namespace.Panel.s_minimumPanelSize;
-            var resizeMinHeight = namespace.Panel.s_minimumPanelSize;            
+            if ( resizeMinWidth < namespace.Panel.prototype.s_minimumPanelSize ){
+                resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
+            }            
+            if ( resizeMinHeight < namespace.Panel.prototype.s_minimumPanelSize ){
+                resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;
+            }
         }
-        // Make all objects of this panel resizable
-        $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " *",
-                                    aspectRatio: true,
-                                    autoHide: true,
-                                    maxWidth: this.m_level.m_size.width,
-                                    maxHeight: this.m_level.m_size.height,                                    
-                                    minWidth: resizeMinWidth,
-                                    minHeight: resizeMinHeight,
-                                    resize: function(){ 
 
-                                        // this.m_div.style("left", this.m_coordinates.x);
-                                        // this.m_div.style("top", this.m_coordinates.y);
-                                        // var newWidth = parseInt(this.m_div.style("width"));
-                                        // var newHeight = parseInt(this.m_div.style("height"));
-                                        // this.m_container.m_div.style("width", newWidth);
-                                        
-                                        // if ( this.m_controlBar ){
-                                        //     this.m_container.m_div.style("height", newHeight + parseInt(this.m_controlBar.m_div.style("height")));
-                                        //     this.m_controlBar.m_div.style("width", newWidth);                                      
-                                        //     this.m_controlBar.m_size.width = newWidth;
-                                        //     this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
-                                        // } else {
-                                        //     this.m_container.m_div.style("height", newHeight);
-                                        // }
-
-                                        // Re-append this container to the level div to bump up its z-order
-                                        this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
-
-                                        // Packery re-layout call
-                                        $(this.m_level.m_div[0]).packery();
-                                    }.bind(this)}); 
+        $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .twic_panel",
+                                                aspectRatio: p_maintainAspectRatio,
+                                                autoHide: true,
+                                                minWidth: resizeMinWidth,
+                                                minHeight: resizeMinHeight,
+                                                maxWidth: this.m_level.m_size.width,
+                                                maxHeight: this.m_level.m_size.height,
+                                                handles: "n, s, e, w, nw, ne, sw, se",
+                                                resize: function(){ this.OnResize(); }.bind(this)});
+        $(this.m_container.m_div[0]).resizable("option","autoHide",true);
     });
 
     namespace.TopicBar.method("Move", function(p_transition, p_callbackTiming, p_callback){
@@ -3709,19 +3765,17 @@ var TWiC = (function(namespace){
 
         // NOTE: CSS max-width, max-height changes in case the panel is grown
 
-        // Container transitions to its position/dimensions
+        // Transition the container div's position/size
         this.m_container.m_div.transition()
                               .duration(p_transition.duration)
                               .style("left", this.m_container.m_coordinates.x)
                               .style("top", this.m_container.m_coordinates.y)
                               .style("width", this.m_container.m_size.width)
-                              .style("height", this.m_container.m_size.height)
-                              .style("max-width", this.m_container.m_size.width)
-                              .style("max-height", this.m_container.m_size.height);                              
+                              .style("height", this.m_container.m_size.height);                            
                               
         // NOTE: Panels and control bars are relatively positioned in their parent container div
 
-        // Panel and its svg transition to new position/dimensions
+        // Transition the panel's div to new dimensions and call the provided callback
         this.m_div.transition().duration(p_transition.duration) 
                                .style("width", this.m_size.width)
                                .style("height", this.m_size.height)
@@ -3729,6 +3783,45 @@ var TWiC = (function(namespace){
 
         // Ensure the highlight remains at the top of the topic bar div
         $(this.m_div[0][0]).scrollTop();
+    });
+
+    namespace.TopicBar.method("OnResize", function(){
+
+        var containerWidth = parseFloat(this.m_container.m_div.style("width"));
+        var containerHeight = parseFloat(this.m_container.m_div.style("height"));
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+
+        // Control bar resize
+        if ( this.m_controlBar ){
+            this.m_controlBar.m_size.width = containerWidth;
+            this.m_controlBar.m_div.style("width", containerWidth);
+            this.m_controlBar.m_svg.attr("width", containerWidth)
+                                   .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
+        }
+
+        // Panel resize (vars for potentially faster access to the dimension values)
+        var oldSvgDims = { width: parseInt(this.m_svg.attr("width")), height: parseInt(this.m_svg.attr("height")) };
+        var oldToNewProportion = { width: containerWidth / this.m_size.width, height: containerHeight / this.m_size.height };
+        this.m_size.width = containerWidth;
+        this.m_size.height = containerHeight - controlBarHeight;
+        var divWidth = this.m_size.width;
+        var divHeight = this.m_size.height;
+
+        this.m_div.style("width", divWidth)
+                  .style("height", divHeight);
+                  
+        if ( containerWidth > parseInt(this.m_div.style("max-width")) ) {
+            this.m_div.style("max-width", containerWidth);
+        }
+        if ( containerHeight > parseInt(this.m_div.style("max-height") + controlBarHeight) ) {
+            this.m_div.style("max-height", containerHeight - controlBarHeight);
+        }
+
+        // Re-append this container to the level div to bump up its z-order
+        this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
+
+        // Packery re-layout call
+        $(this.m_level.m_div[0]).packery();
     });
 
     namespace.TopicBar.prototype.s_minHeight = 200;

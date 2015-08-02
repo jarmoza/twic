@@ -91,7 +91,8 @@ var TWiC = (function(namespace){
 
         // Add the container's div
         this.m_div = p_parentDiv.append("div")
-                                .attr("class", "div_twic_container ui-widget-content item")
+                                //.attr("class", "div_twic_container ui-widget-content item")
+                                .attr("class", "div_twic_container item")
                                 .attr("id", "div_twic_container_" + this.m_name)
                                 .style("position", "absolute")
                                 .style("left", this.m_coordinates.x)
@@ -183,8 +184,8 @@ var TWiC = (function(namespace){
             }
         } else {
             // Otherwise, panel and its container are the same size
-            this.m_size = {width: p_size.width, height: p_size.height};
-            this.m_panel.SetSize({width: p_size.width, height: p_size.height});
+            this.m_size = { width: p_size.width, height: p_size.height };
+            this.m_panel.SetSize({ width: p_size.width, height: p_size.height });
         }     
     });
 
@@ -496,8 +497,8 @@ var TWiC = (function(namespace){
 
                     // Perform the move of the original panel container
                     var transition = {
-                        position: {x: 0, y: 0},
-                        size: {width: containerWidth, height: containerHeight},
+                        position: { x: 0, y: 0 },
+                        size: { width: containerWidth, height: containerHeight },
                         duration: 2000
                     };
 
@@ -507,7 +508,6 @@ var TWiC = (function(namespace){
                     this.m_graphViews[0].SetSize({width: this.m_size.width, height: this.m_size.width});
                     this.m_graphViews[0].m_panel.m_panelRect.attr("d", this.m_graphViews[0].m_panel.GetRectPath("bottom"));
                                                             
-
                     // Original panel is put to top left and halved, and animated over to this position/size                    
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
@@ -521,9 +521,9 @@ var TWiC = (function(namespace){
 
                             // New panel is created, loaded in the background
                             this.m_graphViews[0].m_panel.OpenUnderlyingPanel(p_data, 
-                                                                             {x: p_containerWidth, y: 0},
-                                                                             {width: p_containerWidth,
-                                                                              height: p_containerHeight - namespace.Control.prototype.s_defaultThickness});
+                                                                             { x: p_containerWidth, y: 0 },
+                                                                             { width: p_containerWidth,
+                                                                               height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
                             // Update all panels as if they have had a datashape mouseover event, and then pause them
                             for ( var index = 0; index < this.m_graphViews.length; index++ ){
@@ -544,9 +544,9 @@ var TWiC = (function(namespace){
                             var levelAsContainer = $(this.m_div[0]);
                             levelAsContainer.packery("appended", [$(this.m_graphViews[1].m_div[0])]);
                             var itemElems = levelAsContainer.find('.item');
-                            itemElems.draggable();
+                            //itemElems.draggable();
                             levelAsContainer.packery('bindUIDraggableEvents', itemElems);
-                            levelAsContainer.packery("reloadItems");
+                            levelAsContainer.packery("reloadItems");                            
 
                             this.m_graphViews[1].m_panel.Pause(false);
                             this.m_graphViews[1].Update({ topicID: this.m_currentSelection,
@@ -569,51 +569,68 @@ var TWiC = (function(namespace){
                     // Panel height is half the level height minus the information view's height
                     var containerHeight = this.m_size.height >> 1;
 
-                    // Resize the topic bar to the bottom right
+                    // Reposition corpus and corpus cluster views
                     var transition = {
-                        position: { x: containerWidth, y: containerHeight },
+                        position: { x: 0, y: 0 },
                         size: { width: containerWidth, height: containerHeight },
                         duration: 2000
-                    };
+                    };                     
+                    this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
-                    this.m_infoViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
+                        transition = {
+                            position: { x: containerWidth, y: 0 },
+                            size: { width: containerWidth, height: containerHeight },
+                            duration: 2000
+                        };
+                        this.m_graphViews[1].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
-                        // Open the text cluster view based on the double-clicked cluster
-                        this.m_graphViews[1].m_panel.OpenUnderlyingPanel(p_data, 
-                                                                         { x: 0, y: p_containerHeight },
-                                                                         { width: p_containerWidth,
-                                                                           height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
+                            // Resize the topic bar to the bottom right
+                            transition = {
+                                position: { x: containerWidth, y: containerHeight },
+                                size: { width: containerWidth, height: containerHeight },
+                                duration: 2000
+                            };
 
-                        // Update all panels as if they have had a datashape mouseover event, and then pause them
-                        for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                            this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
+                            this.m_infoViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){                       
+
+                                // Open the text cluster view based on the double-clicked cluster
+                                this.m_graphViews[1].m_panel.OpenUnderlyingPanel(p_data, 
+                                                                                 { x: 0, y: p_containerHeight },
+                                                                                 { width: p_containerWidth,
+                                                                                   height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
+
+                                // Update all panels as if they have had a datashape mouseover event, and then pause them
+                                for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                                    this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
+                                                                      color: this.m_topicColors[this.m_currentSelection] },
+                                                                    namespace.Interaction.mouseover);
+                                    this.m_graphViews[index].m_panel.Pause(true);
+                                }
+
+                                for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                                   this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
+                                                                    color: this.m_topicColors[this.m_currentSelection] },
+                                                                  namespace.Interaction.mouseover);                                
+                                   this.m_infoViews[index].m_panel.Pause(true);
+                                }
+
+                                // Add this panel's container div to the packery list and reload the layout
+                                var levelAsContainer = $(this.m_div[0]);
+                                levelAsContainer.packery("appended", [$(this.m_graphViews[2].m_div[0])]);
+                                var itemElems = levelAsContainer.find('.item');
+                                //itemElems.draggable();
+                                levelAsContainer.packery('bindUIDraggableEvents', itemElems);
+                                levelAsContainer.packery("reloadItems");
+
+                                this.m_graphViews[2].m_panel.Pause(false);
+                                this.m_graphViews[2].Update({ topicID: this.m_currentSelection,
                                                               color: this.m_topicColors[this.m_currentSelection] },
                                                             namespace.Interaction.mouseover);
-                            this.m_graphViews[index].m_panel.Pause(true);
-                        }
+                                this.m_graphViews[2].m_panel.Pause(true);
 
-                        for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                           this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
-                                                            color: this.m_topicColors[this.m_currentSelection] },
-                                                          namespace.Interaction.mouseover);                                
-                           this.m_infoViews[index].m_panel.Pause(true);
-                        }
-
-                        // Add this panel's container div to the packery list and reload the layout
-                        var levelAsContainer = $(this.m_div[0]);
-                        levelAsContainer.packery("appended", [$(this.m_graphViews[2].m_div[0])]);
-                        var itemElems = levelAsContainer.find('.item');
-                        itemElems.draggable();
-                        levelAsContainer.packery('bindUIDraggableEvents', itemElems);
-                        levelAsContainer.packery("reloadItems");
-
-                        this.m_graphViews[2].m_panel.Pause(false);
-                        this.m_graphViews[2].Update({ topicID: this.m_currentSelection,
-                                                      color: this.m_topicColors[this.m_currentSelection] },
-                                                    namespace.Interaction.mouseover);
-                        this.m_graphViews[2].m_panel.Pause(true);
-
-                    }.bind(this, containerWidth, containerHeight, p_data));                    
+                            }.bind(this, containerWidth, containerHeight, p_data));
+                        }.bind(this, containerWidth, containerHeight, p_data));
+                    }.bind(this, containerWidth, containerHeight, p_data));
 
                     break;
 
@@ -688,7 +705,7 @@ var TWiC = (function(namespace){
                             var levelAsContainer = $(this.m_div[0]);
                             levelAsContainer.packery("appended", [$(this.m_graphViews[3].m_div[0])]);
                             var itemElems = levelAsContainer.find('.item');
-                            itemElems.draggable();
+                            //itemElems.draggable();
                             levelAsContainer.packery('bindUIDraggableEvents', itemElems);
                             levelAsContainer.packery("reloadItems");
 
@@ -712,6 +729,8 @@ var TWiC = (function(namespace){
         // Initialize Packery layout for this level container div
         var levelContainer = $(this.m_div[0]);
         levelContainer.packery({columnWidth: 0, rowHeight: 0});
+        //levelContainer.packery({ columnWidth: namespace.Panel.prototype.s_minimumPanelSize,
+        //                         rowHeight: namespace.Panel.prototype.s_minimumPanelSize });
 
         // Bind draggable events to Packery
         var panelContainers = levelContainer.find(".div_twic_container");
@@ -720,7 +739,10 @@ var TWiC = (function(namespace){
         //panelContainers.draggable();
         //panelContainers.resizable({autoHide: true, resize: function(){ levelContainer.packery(); }.bind(levelContainer)});
 
-        levelContainer.packery("bindUIDraggableEvents", panelContainers);              
+        levelContainer.packery("bindUIDraggableEvents", panelContainers);
+
+        // Packery will reorganize panels when window is resized
+        //levelContainer.packery("bindResize");            
     });
 
     namespace.Level.method("UseTransitions", function(p_state){ this.m_usingTransitions = p_state; });
