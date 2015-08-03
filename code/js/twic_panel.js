@@ -39,23 +39,36 @@ var TWiC = (function(namespace){
 
     namespace.Panel.method("Pause", function(p_state){ this.m_paused = p_state; });
     namespace.Panel.method("IsPaused", function(){ return this.m_paused; });
+
+    namespace.Panel.method("IsUnderlyingPanelOpen", function(){ return this.m_underlyingPanelOpen; });    
+
     namespace.Panel.method("UseEffects", function(p_state){ this.m_showEffects = p_state; });
     namespace.Panel.method("IsUsingEffects", function(){ return this.m_showEffects; });
     namespace.Panel.method("UseTransitions", function(p_state){ this.m_transitionWhenClicked = p_state; });
     namespace.Panel.method("IsUsingTransitions", function(){ return this.m_transitionWhenClicked; });
+
+    namespace.Panel.method("SetContainer", function(p_container){
+
+        // Saves a reference to the panel's TWiC container object and its control bar
+        this.m_container = p_container;
+        this.m_controlBar = this.m_container.m_controlBar;
+    });
+    namespace.Panel.method("SetPosition", function(p_coordinates){
+
+        this.m_coordinates.x = p_coordinates.x;
+        this.m_coordinates.y = p_coordinates.y;
+    });
+    namespace.Panel.method("SetSize", function(p_size){
+
+      this.m_size.width = p_size.width;
+      this.m_size.height = p_size.height;
+    });    
 
     namespace.Panel.method("AddBarText", function(){ });
 
     namespace.Panel.method("AddLinkedView", function(p_linkedPanel, p_linkType){
 
         this.m_linkedViews.push({panel:p_linkedPanel, update:p_linkType});
-    });
-
-    namespace.Panel.method("AddLinkedViews", function(p_linkedPanelMaps){
-
-        for ( var index = 0; index < p_linkedPanelMaps.length; index++ ){
-            this.m_linkedViews.push(p_linkedPanelMaps[index]);
-        }
     });
 
     namespace.Panel.method("GetRectPath", function(p_orientation){
@@ -117,13 +130,16 @@ var TWiC = (function(namespace){
         // Minimum width is dependent on the width of the control bar's descriptive text
         var resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
         var resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;            
-        if ( this.m_controlBar && this.m_controlBar.m_barText ){
+        /*if ( this.m_controlBar && this.m_controlBar.m_barText ){
             var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
             var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
             if ( resizeMinHeight < namespace.Panel.prototype.s_minimumPanelSize ){
                 resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;
             }
-        }
+            if ( resizeMinWidth < namespace.Panel.prototype.s_minimumPanelSize ){
+                resizeMinWidht = namespace.Panel.prototype.s_minimumPanelSize;
+            }
+        }*/
 
         $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .div_twic_control .twic_panel",
                                                 aspectRatio: p_maintainAspectRatio,
@@ -190,81 +206,16 @@ var TWiC = (function(namespace){
         if ( this.m_controlBar ){
             this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
         }
-    });
 
-    namespace.Panel.method("OnResizeWithArgs", function(p_width, p_height){
-
-        var containerWidth = p_width;
-        this.m_container.m_div.style("width", containerWidth);
-        var containerHeight = p_height;
-        this.m_container.m_div.style("height", containerHeight);
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
-
-        // Control bar resize
-        if ( this.m_controlBar ){
-            this.m_controlBar.m_size.width = containerWidth;
-            this.m_controlBar.m_div.style("width", containerWidth);
-            this.m_controlBar.m_svg.attr("width", containerWidth)
-                                   .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
-            this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
-        }
-
-        // Panel resize (vars for potentially faster access to the dimension values)
-        this.m_size.width = containerWidth;
-        this.m_size.height = containerHeight - controlBarHeight;
-        var divWidth = this.m_size.width;
-        var divHeight = this.m_size.height;
-
-        this.m_div.style("width", divWidth)
-                  .style("height", divHeight);
-        this.m_svg.attr("width", divWidth)
-                  .attr("height", divHeight);
-
-        // Panel rect resize
-        this.m_panelRectDiv.style("width", divWidth)
-                           .style("height", divHeight);
-        this.m_panelRectSvg.attr("width", divWidth)
-                           .attr("height", divHeight)
-                           .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
-        this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight, 
-                                                               namespace.Panel.prototype.s_borderRadius));
-
-        // Re-append this container to the level div to bump up its z-order
-        this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
-
-        // Packery re-layout call
-        $(this.m_level.m_div[0]).packery();
-
-        //$(this.m_container.m_div[0]).resizable("option","autoHide",true);
-    });
-
-    namespace.Panel.method("IsUnderlyingPanelOpen", function(){
-
-        return this.m_underlyingPanelOpen;
+        // Force SVG redraw (for datashapes scaling)
+        var oldSvgDisplay = this.m_svg.style("display");
+        this.m_svg.style("display", "none");
+        this.m_svg.style("display", oldSvgDisplay);
     });
 
     namespace.Panel.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
 
         return null;
-    });
-
-    namespace.Panel.method("SetContainer", function(p_container){
-
-        // Saves a reference to the panel's TWiC container object and its control bar
-        this.m_container = p_container;
-        this.m_controlBar = this.m_container.m_controlBar;
-    });
-
-    namespace.Panel.method("SetPosition", function(p_coordinates){
-
-        this.m_coordinates.x = p_coordinates.x;
-        this.m_coordinates.y = p_coordinates.y;
-    });
-
-    namespace.Panel.method("SetSize", function(p_size){
-
-      this.m_size.width = p_size.width;
-      this.m_size.height = p_size.height;
     });
 
     namespace.Panel.prototype.GetTopNTopics = function(p_topicList, p_topicCount){
@@ -635,6 +586,24 @@ var TWiC = (function(namespace){
 
                                    this.m_panelRectDiv.transition()
                                                       .duration(p_transition.duration)
+                                                      .style("width", p_transition.size.width)
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", p_transition.size.width)
+                                                      .attr("height", p_transition.size.height - this.m_controlBar.m_size.height)
+                                                      .attr("viewBox", "0 0 " +
+                                                                       p_transition.size.width + " " +
+                                                                       (p_transition.size.height - this.m_controlBar.m_size.height));
+                                   this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, 0,
+                                                                  p_transition.size.width,
+                                                                  p_transition.size.height - this.m_controlBar.m_size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius));
+
+                                   /*this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
                                                       .style("width", this.m_size.width)
                                                       .style("height", this.m_size.height)
                                                       .style("border-radius", namespace.Panel.prototype.s_borderRadius);
@@ -645,7 +614,7 @@ var TWiC = (function(namespace){
                                                       .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
                                                       .each("end", function(){
                                                           this.m_panelRect.attr("d", this.GetRectPath("bottom"));
-                                                      }.bind(this));
+                                                      }.bind(this));*/
                                 
                                    /*this.m_panelRect.transition()
                                                    .duration(p_transition.duration)
@@ -1447,13 +1416,24 @@ var TWiC = (function(namespace){
                                .style("height", this.m_size.height)
                                .each("start", function(p_transition, p_callbackTiming, p_callback){
 
-                                   this.m_panelRect.transition()
-                                                   .duration(p_transition.duration)
-                                                   .attr("d", namespace.BottomRoundedRect(0,
-                                                              -50,
-                                                              parseInt(this.m_svg.attr("width")),
-                                                              parseInt(this.m_svg.attr("height")) + 100,
-                                                              namespace.Panel.prototype.s_borderRadius));
+                                   this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", p_transition.size.width)
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", p_transition.size.width)
+                                                      .attr("height", p_transition.size.height - this.m_controlBar.m_size.height)
+                                                      .attr("viewBox", "0 0 " +
+                                                                       p_transition.size.width + " " +
+                                                                       (p_transition.size.height - this.m_controlBar.m_size.height));
+                                    this.m_panelRect.transition()
+                                                    .duration(p_transition.duration)
+                                                    .attr("d", namespace.BottomRoundedRect(0,
+                                                               0,
+                                                               p_transition.size.width,
+                                                               p_transition.size.height - this.m_controlBar.m_size.height,
+                                                               namespace.Panel.prototype.s_borderRadius));
 
                                    this.m_svg.transition()
                                              .duration(p_transition.duration)
@@ -1907,7 +1887,7 @@ var TWiC = (function(namespace){
             }.bind(this), 10);
 
             // Make all objects of this panel resizable and draggable
-            this.MakeResizable();
+            this.MakeResizable(false);
             this.MakeDraggable();
 
             // Update the panel for potential highlighting now that all SVG objects have been built
@@ -2204,11 +2184,23 @@ var TWiC = (function(namespace){
                                .style("height", this.m_size.height)
                                .each("start", function(p_transition, p_callbackTiming, p_callback){
 
+                                   this.m_panelRectDiv.transition()
+                                                   .duration(p_transition.duration)
+                                                   .style("width", p_transition.size.width)
+                                                   .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("width", p_transition.size.width)
+                                                   .attr("height", p_transition.size.height - this.m_controlBar.m_size.height)
+                                                   .attr("viewBox", "0 0 " + 
+                                                                    p_transition.size.width + " " +
+                                                                    (p_transition.size.height - this.m_controlBar.m_size.height));
                                    this.m_panelRect.transition()
-                                                  .duration(p_transition.duration)
-                                                   .attr("d", namespace.BottomRoundedRect(0, -50,
-                                    parseInt(this.m_svg.attr("width")), parseInt(this.m_svg.attr("height")) + 100,
-                                    namespace.Panel.prototype.s_borderRadius));
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, 0,
+                                                                  p_transition.size.width,
+                                                                  p_transition.size.height - this.m_controlBar.m_size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius));                                                                                                                                                                                      
 
                                    this.m_svg.transition()
                                              .duration(p_transition.duration)
@@ -2392,12 +2384,17 @@ var TWiC = (function(namespace){
         this.m_container.m_div.style("left", this.m_container.m_coordinates.x);
         this.m_container.m_div.style("top", this.m_container.m_coordinates.y);
 
+        // TextView's container has overflow hidden (for long texts)
+        this.m_container.m_div.style("overflow", "hidden");
+        this.m_container.m_div[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";
+
         // Top/left coordinates are relative to the containing div/level
         this.m_coordinates.x = 0;
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
+        // -borderRadius for overflow trick for long texts
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - namespace.Panel.prototype.s_borderRadius : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -2405,25 +2402,27 @@ var TWiC = (function(namespace){
                                         .style("left", this.m_coordinates.x)
                                         .style("top", this.m_coordinates.y + controlBarHeight)
                                         .style("width", this.m_size.width)
-                                        .style("height", this.m_size.height)
+                                        .style("height", this.m_size.height + namespace.Panel.prototype.s_borderRadius)
                                         //.style("max-width", this.m_size.width)
                                         //.style("max-height", this.m_size.height);
                                         .style("max-width", this.m_level.m_size.width)
-                                        .style("max-height", this.m_level.m_size.height);
+                                        .style("max-height", this.m_level.m_size.height)
+                                        .style("overflow", "hidden");
+        this.m_panelRectDiv[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";
 
         this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
                                                  .attr("x", this.m_coordinates.x)
                                                  .attr("y", this.m_coordinates.y)
                                                  .attr("width", this.m_size.width)
-                                                 .attr("height", this.m_size.height)
-                                                 .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
+                                                 .attr("height", this.m_size.height + namespace.Panel.prototype.s_borderRadius)
+                                                 .attr("viewBox", "0 0 " + this.m_size.width + " " + (this.m_size.height + namespace.Panel.prototype.s_borderRadius));
 
         // Add the rectangle where all graph data will sit
         this.m_panelRect = this.m_panelRectSvg.append("path")
                                               .attr("d", namespace.BottomRoundedRect(this.m_coordinates.x, 
                                                                                      this.m_coordinates.y, 
                                                                                      this.m_size.width,
-                                                                                     this.m_size.height,
+                                                                                     this.m_size.height + namespace.Panel.prototype.s_borderRadius,
                                                                                      namespace.Panel.prototype.s_borderRadius))
                                               .attr("class", "rect_twic_graph")
                                               .attr("id", "rect_twic_graph_textview_" + this.m_name)
@@ -2539,25 +2538,25 @@ var TWiC = (function(namespace){
                                       .html("&nbsp;from&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 18);
+                                      .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
                                       .html("Topic Cluster " + this.m_data.clusterIndex)
                                       .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 18);
+                                      .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
                                       .html("&nbsp;in&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 18);
+                                      .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
                                       .html(this.m_level.m_corpusMap["name"])
                                       .attr("fill", namespace.Level.prototype.s_palette.lightblue)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 18);
+                                      .style("font-size", 21);
             }
         }.bind(this));
     });
@@ -2759,7 +2758,7 @@ var TWiC = (function(namespace){
 
         var currentX = namespace.TextView.prototype.s_textStartPosition.x;
         var currentY = namespace.TextView.prototype.s_textStartPosition.y;
-        var rectGrowth = this.m_size.height;
+        var rectGrowth = this.m_size.height + namespace.Panel.prototype.s_borderRadius;
         //var rectGrowth = parseInt(this.m_svg.attr("height"));
         var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
 
@@ -2804,8 +2803,10 @@ var TWiC = (function(namespace){
                                               .attr("id", "rect_twic_graph_textview_" + this.m_name)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                               .style("position", "absolute");
+        //this.m_container.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius + "px");
+        this.m_container.m_div[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";                                              
         this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
-        this.m_panelRectDiv.style("border-radius", namespace.Panel.prototype.s_borderRadius);                                                              
+        this.m_panelRectDiv[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";
 
         // Re-add text groups
         this.m_textGroup = this.m_groupOverlay.append("g")
@@ -2915,6 +2916,11 @@ var TWiC = (function(namespace){
                           }
                       }
                   }.bind(this));
+
+        // Force container DIV redraw (for datashapes scaling)
+        var oldContainerDivDisplay = this.m_container.m_div.style("display");
+        this.m_container.m_div.style("display", "none");
+        this.m_container.m_div.style("display", oldContainerDivDisplay);                  
     });
 
     namespace.TextView.method("DarkenAllWords", function(){
@@ -2974,16 +2980,15 @@ var TWiC = (function(namespace){
         this.m_div.style("width", divWidth)
                   .style("height", divHeight);
         //this.m_svg.attr("width", divWidth)
-        //          .attr("height", divHeight)
+        //          .attr("height", divHeight);
         //          .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
 
         // Panel rect resize
-        this.m_panelRectDiv.style("width", divWidth);
-        //                   .style("height", divHeight);
+        this.m_panelRectDiv.style("width", divWidth)
+                           .style("height", divHeight + namespace.Panel.prototype.s_borderRadius);
         this.m_panelRectSvg.attr("width", divWidth)
-                           .attr("viewBox", "0 0 " + divWidth + " " + parseInt(this.m_panelRectSvg.attr("height")));
-        //                   .attr("height", divHeight)
-        //                   .attr("viewBox", "0 0 " + divWidth + " " + divHeight);
+                           .attr("height", divHeight + namespace.Panel.prototype.s_borderRadius)
+                           .attr("viewBox", "0 0 " + divWidth + " " + (divHeight + namespace.Panel.prototype.s_borderRadius));
 
         if ( containerWidth > parseInt(this.m_div.style("max-width")) ) {
             this.m_div.style("max-width", containerWidth);
@@ -2994,7 +2999,7 @@ var TWiC = (function(namespace){
             this.m_panelRectDiv.style("max-height", containerHeight - controlBarHeight);
         }
 
-        this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight, 
+        this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight + namespace.Panel.prototype.s_borderRadius, 
                                                                namespace.Panel.prototype.s_borderRadius));
 
         // Re-append this container to the level div to bump up its z-order
@@ -3730,7 +3735,7 @@ var TWiC = (function(namespace){
         // Minimum width is dependent on the width of the control bar's descriptive text
         var resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
         var resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;            
-        if ( this.m_controlBar && this.m_controlBar.m_barText ){
+        /*if ( this.m_controlBar && this.m_controlBar.m_barText ){
             var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
             var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
             if ( resizeMinWidth < namespace.Panel.prototype.s_minimumPanelSize ){
@@ -3739,7 +3744,7 @@ var TWiC = (function(namespace){
             if ( resizeMinHeight < namespace.Panel.prototype.s_minimumPanelSize ){
                 resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;
             }
-        }
+        }*/
 
         $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .twic_panel",
                                                 aspectRatio: p_maintainAspectRatio,

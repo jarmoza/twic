@@ -105,10 +105,16 @@ var TWiC = (function(namespace){
                                             // Path outline
                                             //.attr("stroke", namespace.Level.prototype.s_palette.purple)
                                             //.attr("stroke-width", 4.5);
-
     });
 
-    namespace.Control.method("Update", function(p_data, p_updateType){});
+    namespace.Control.method("Update", function(p_data, p_updateType){
+
+        // Update each control
+
+        // Help
+
+        // Search
+    });
 
     namespace.Control.method("AddHelp", function(){
 

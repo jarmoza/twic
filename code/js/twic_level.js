@@ -102,7 +102,8 @@ var TWiC = (function(namespace){
                                 .style("max-width", this.m_level.m_size.width)
                                 .style("max-height", this.m_level.m_size.height)                                
                                 .style("width", this.m_size.width)
-                                .style("height", this.m_size.height);
+                                .style("height", this.m_size.height)
+                                .style("overflow", "auto");
 
        // Make the container draggable
        //$(this.m_div[0]).drags();
@@ -505,8 +506,8 @@ var TWiC = (function(namespace){
                     // Change panel rect of original panel needs to be set to full level size here
                     // This is because its dimensions initially accomodate the topic bar at bottom,
                     // and will not scale properly to half the level height if its dimensions are not reset to the full level height
-                    this.m_graphViews[0].SetSize({width: this.m_size.width, height: this.m_size.width});
-                    this.m_graphViews[0].m_panel.m_panelRect.attr("d", this.m_graphViews[0].m_panel.GetRectPath("bottom"));
+                    //this.m_graphViews[0].SetSize({width: this.m_size.width, height: this.m_size.width});
+                    //this.m_graphViews[0].m_panel.m_panelRect.attr("d", this.m_graphViews[0].m_panel.GetRectPath("bottom"));
                                                             
                     // Original panel is put to top left and halved, and animated over to this position/size                    
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
@@ -755,7 +756,7 @@ var TWiC = (function(namespace){
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
                                             "beige": "#DFDAC4", "lightpurple":"#D8D8FF",
-                                            "logold":namespace.ShadeBlend(-0.50, "#FAFAD2") };
+                                            "logold": namespace.ShadeBlend(-0.50, "#FAFAD2") };
     namespace.Level.prototype.s_twicLevels = [];
 
     // Creating a Level instance also adds it to the TWiC level list
