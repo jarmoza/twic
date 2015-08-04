@@ -103,15 +103,13 @@ var TWiC = (function(namespace){
                                 .style("max-height", this.m_level.m_size.height)                                
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
-                                .style("overflow", "auto");
-
-       // Make the container draggable
-       //$(this.m_div[0]).drags();
-
-        /*window.onresize=function resizeit(){
-            var a=document.getElementById("twic_level_twic_dickinson");
-            a.style.height=a.offsetWidth+'px';
-        }.bind(this);*/       
+                                .style("overflow", "auto")
+                                .on("mouseup", function(){
+                                    if ( this.m_level.m_resizeOccurred ){
+                                        this.m_level.m_resizeOccurred = false;
+                                        this.m_level.OrganizePanels();
+                                    }
+                                }.bind(this));     
 
         // Initialize the panel and control bar
         if ( null != this.m_controlBar ) {
@@ -225,7 +223,9 @@ var TWiC = (function(namespace){
         // Keeps track of who the level is temporarily pausing/unpausing.
         // This way, panels can remain in charge of their own more permanent pause/unpause.
         this.m_graphPauseList = [];
-        this.m_infoPauseList = [];        
+        this.m_infoPauseList = [];
+
+        this.m_resizeOccurred = false;        
     };
 
     namespace.Level.method("AddControlBar", function(p_barThickness, p_barOrientation){
@@ -502,12 +502,6 @@ var TWiC = (function(namespace){
                         size: { width: containerWidth, height: containerHeight },
                         duration: 2000
                     };
-
-                    // Change panel rect of original panel needs to be set to full level size here
-                    // This is because its dimensions initially accomodate the topic bar at bottom,
-                    // and will not scale properly to half the level height if its dimensions are not reset to the full level height
-                    //this.m_graphViews[0].SetSize({width: this.m_size.width, height: this.m_size.width});
-                    //this.m_graphViews[0].m_panel.m_panelRect.attr("d", this.m_graphViews[0].m_panel.GetRectPath("bottom"));
                                                             
                     // Original panel is put to top left and halved, and animated over to this position/size                    
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
@@ -545,7 +539,6 @@ var TWiC = (function(namespace){
                             var levelAsContainer = $(this.m_div[0]);
                             levelAsContainer.packery("appended", [$(this.m_graphViews[1].m_div[0])]);
                             var itemElems = levelAsContainer.find('.item');
-                            //itemElems.draggable();
                             levelAsContainer.packery('bindUIDraggableEvents', itemElems);
                             levelAsContainer.packery("reloadItems");                            
 
@@ -619,7 +612,6 @@ var TWiC = (function(namespace){
                                 var levelAsContainer = $(this.m_div[0]);
                                 levelAsContainer.packery("appended", [$(this.m_graphViews[2].m_div[0])]);
                                 var itemElems = levelAsContainer.find('.item');
-                                //itemElems.draggable();
                                 levelAsContainer.packery('bindUIDraggableEvents', itemElems);
                                 levelAsContainer.packery("reloadItems");
 

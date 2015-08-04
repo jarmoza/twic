@@ -149,8 +149,10 @@ var TWiC = (function(namespace){
                                                 maxWidth: this.m_level.m_size.width,
                                                 maxHeight: this.m_level.m_size.height,
                                                 handles: "n, s, e, w, nw, ne, sw, se",
-                                                resize: function(){ this.OnResize(); }.bind(this)});
-        //$(this.m_container.m_div[0]).resizable("option","autoHide",true);
+                                                resize: function(){ 
+                                                    this.OnResize(false);
+                                                    this.m_level.m_resizeOccurred = true;
+                                                }.bind(this)});        
     });
 
     namespace.Panel.method("Maximize", function(){
@@ -202,7 +204,7 @@ var TWiC = (function(namespace){
         var packeryReorganize = true;
         if ( undefined !== p_packery ){
             packeryReorganize = p_packery;
-        }
+        }  
 
         var containerWidth = parseFloat(this.m_container.m_div.style("width"));
         var containerHeight = parseFloat(this.m_container.m_div.style("height"));
@@ -212,6 +214,7 @@ var TWiC = (function(namespace){
         if ( this.m_controlBar ){
             this.m_controlBar.m_size.width = containerWidth;
             this.m_controlBar.m_div.style("width", containerWidth);
+            this.m_controlBar.m_div.style("max-width", containerWidth);
             this.m_controlBar.m_svg.attr("width", containerWidth)
                                    .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
         }
@@ -258,10 +261,8 @@ var TWiC = (function(namespace){
             this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
         }
 
-        // Force SVG redraw (for datashapes scaling)
-        var oldSvgDisplay = this.m_svg.style("display");
-        this.m_svg.style("display", "none");
-        this.m_svg.style("display", oldSvgDisplay);
+        // Force level HTML redraw in order to overcome bug where SVG elements not resized until next redraw occurs
+        $(this.m_level.m_div.node().parentNode).hide().show(0);
     });
 
     namespace.Panel.method("OpenUnderlyingPanel", function(p_data, p_coordinates, p_size){
@@ -3788,19 +3789,9 @@ var TWiC = (function(namespace){
             p_maintainAspectRatio = true;
         }
 
-        // Minimum width is dependent on the width of the control bar's descriptive text
+        // Topic bar's minimum is less than normal (for space savings)
         var resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
-        var resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;            
-        /*if ( this.m_controlBar && this.m_controlBar.m_barText ){
-            var resizeMinWidth = (parseInt(this.m_controlBar.m_barText.attr("x")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().width;
-            var resizeMinHeight = (parseInt(this.m_controlBar.m_barText.attr("y")) << 1) + this.m_controlBar.m_barText[0][0].getBBox().height;
-            if ( resizeMinWidth < namespace.Panel.prototype.s_minimumPanelSize ){
-                resizeMinWidth = namespace.Panel.prototype.s_minimumPanelSize;
-            }            
-            if ( resizeMinHeight < namespace.Panel.prototype.s_minimumPanelSize ){
-                resizeMinHeight = namespace.Panel.prototype.s_minimumPanelSize;
-            }
-        }*/
+        var resizeMinHeight = namespace.TopicBar.prototype.s_minHeight;
 
         $(this.m_container.m_div[0]).resizable({alsoResize: "#" + $(this.m_container.m_div[0]).attr("id") + " .twic_panel",
                                                 aspectRatio: p_maintainAspectRatio,
@@ -3810,7 +3801,10 @@ var TWiC = (function(namespace){
                                                 maxWidth: this.m_level.m_size.width,
                                                 maxHeight: this.m_level.m_size.height,
                                                 handles: "n, s, e, w, nw, ne, sw, se",
-                                                resize: function(){ this.OnResize(); }.bind(this)});
+                                                resize: function(){ 
+                                                    this.OnResize(false);
+                                                    this.m_level.m_resizeOccurred = true; 
+                                                }.bind(this)});
         $(this.m_container.m_div[0]).resizable("option","autoHide",true);
     });
 
@@ -3846,7 +3840,12 @@ var TWiC = (function(namespace){
         $(this.m_div[0][0]).scrollTop();
     });
 
-    namespace.TopicBar.method("OnResize", function(){
+    namespace.TopicBar.method("OnResize", function(p_packery){
+
+        var packeryReorganize = true;
+        if ( undefined !== p_packery ){
+            packeryReorganize = p_packery;
+        }        
 
         var containerWidth = parseFloat(this.m_container.m_div.style("width"));
         var containerHeight = parseFloat(this.m_container.m_div.style("height"));
@@ -3882,7 +3881,12 @@ var TWiC = (function(namespace){
         this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
 
         // Packery re-layout call
-        $(this.m_level.m_div[0]).packery();
+        if ( packeryReorganize ){
+            $(this.m_level.m_div[0]).packery();
+        }
+
+        // Force level HTML redraw in order to overcome bug where SVG elements not resized until next redraw occurs
+        $(this.m_level.m_div.node().parentNode).hide().show(0);        
     });
 
     namespace.TopicBar.prototype.s_minHeight = 200;
