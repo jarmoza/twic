@@ -725,6 +725,11 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.Level.method("OrganizePanels", function(){
+
+        $(this.m_div[0]).packery();
+    });
+
     namespace.Level.method("Packery", function(){
 
         // Initialize Packery layout for this level container div
@@ -755,8 +760,10 @@ var TWiC = (function(namespace){
     namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
-                                            "beige": "#DFDAC4", "lightpurple":"#D8D8FF",
-                                            "logold": namespace.ShadeBlend(-0.50, "#FAFAD2") };
+                                            "beige": "#DFDAC4", "lightpurple": "#D8D8FF",
+                                            "logold": namespace.ShadeBlend(-0.50, "#FAFAD2"), 
+                                            "deeppurple": "#15053C",
+                                            "minimize": "#FDB124", "maximize": "#28C231" };
     namespace.Level.prototype.s_twicLevels = [];
 
     // Creating a Level instance also adds it to the TWiC level list

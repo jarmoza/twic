@@ -150,10 +150,59 @@ var TWiC = (function(namespace){
                                                 maxHeight: this.m_level.m_size.height,
                                                 handles: "n, s, e, w, nw, ne, sw, se",
                                                 resize: function(){ this.OnResize(); }.bind(this)});
-        $(this.m_container.m_div[0]).resizable("option","autoHide",true);
+        //$(this.m_container.m_div[0]).resizable("option","autoHide",true);
     });
 
-    namespace.Panel.method("OnResize", function(){
+    namespace.Panel.method("Maximize", function(){
+
+        var transition = {            
+            size: { width: this.m_level.m_size.width,
+                    height: this.m_level.m_size.height },
+            duration: 1500
+        };
+
+        this.m_container.m_div.transition()
+                              .duration(transition.duration)
+                              .style("width", transition.size.width)
+                              .style("height", transition.size.height)
+                              .tween("minimize-components", function(){
+                                  return function(){ 
+                                      this.OnResize(false);
+                                  }.bind(this);
+                              }.bind(this))
+                              .each("end", function(){
+                                  this.m_level.OrganizePanels();
+                              }.bind(this));     
+    });
+
+    namespace.Panel.method("Minimize", function(){
+
+        var transition = {
+            size: { width: namespace.Panel.prototype.s_minimumPanelSize,
+                    height: namespace.Panel.prototype.s_minimumPanelSize },
+            duration: 1500
+        };
+
+        this.m_container.m_div.transition()
+                              .duration(transition.duration)
+                              .style("width", transition.size.width)
+                              .style("height", transition.size.height)
+                              .tween("minimize-components", function(){
+                                  return function(){ 
+                                      this.OnResize(false);
+                                  }.bind(this);
+                              }.bind(this))
+                              .each("end", function(){
+                                  this.m_level.OrganizePanels();
+                              }.bind(this));                                   
+    });
+
+    namespace.Panel.method("OnResize", function(p_packery){
+
+        var packeryReorganize = true;
+        if ( undefined !== p_packery ){
+            packeryReorganize = p_packery;
+        }
 
         var containerWidth = parseFloat(this.m_container.m_div.style("width"));
         var containerHeight = parseFloat(this.m_container.m_div.style("height"));
@@ -201,7 +250,9 @@ var TWiC = (function(namespace){
         this.m_container.m_div.node().parentNode.appendChild(this.m_container.m_div.node());
 
         // Packery re-layout call
-        $(this.m_level.m_div[0]).packery();
+        if ( packeryReorganize ){
+            $(this.m_level.m_div[0]).packery();
+        }
 
         if ( this.m_controlBar ){
             this.m_controlBar.UpdateBarPath(this.m_controlBar.GetRectPath());
@@ -461,8 +512,8 @@ var TWiC = (function(namespace){
         this.m_controlBar.AddText(function(p_controlBar){
 
             p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                                .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                                .attr("y", (p_controlBar.m_barThickness * 0.65));
+                                                                .attr("x", p_controlBar.GetNextWidgetPos().x)
+                                                                .attr("y", p_controlBar.GetNextWidgetPos().y);
 
             p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                   .style("opacity", 1.0);
@@ -552,7 +603,7 @@ var TWiC = (function(namespace){
                   .filter(function(d){ return d.topicID != p_data.topicID; })
                   .style("opacity", 1.0)
                   .style("fill", function(d){ return d.locolor; });
-    });
+    });  
 
     namespace.CorpusView.method("Move", function(p_transition, p_callbackTiming, p_callback){
 
@@ -1192,8 +1243,8 @@ var TWiC = (function(namespace){
         this.m_controlBar.AddText(function(p_controlBar){
 
             p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                    .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                    .attr("y", (p_controlBar.m_barThickness * 0.65));
+                                                    .attr("x", p_controlBar.GetNextWidgetPos().x)
+                                                    .attr("y", p_controlBar.GetNextWidgetPos().y);
 
             p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                   .style("opacity", 1.0);
@@ -1971,8 +2022,8 @@ var TWiC = (function(namespace){
         this.m_controlBar.AddText(function(p_controlBar){
 
             p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                    .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                    .attr("y", (p_controlBar.m_barThickness * 0.65));
+                                                    .attr("x", p_controlBar.GetNextWidgetPos().x)
+                                                    .attr("y", p_controlBar.GetNextWidgetPos().y);
 
             p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue).style("opacity", 1.0);
 
@@ -2394,7 +2445,7 @@ var TWiC = (function(namespace){
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
         // -borderRadius for overflow trick for long texts
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - namespace.Panel.prototype.s_borderRadius : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - namespace.Panel.prototype.s_borderRadius + 4 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -2514,8 +2565,8 @@ var TWiC = (function(namespace){
 
             if ( null == p_controlBar.m_barText ) {
                 p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                        .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                        .attr("y", (p_controlBar.m_barThickness * 0.65));
+                                                        .attr("x", p_controlBar.GetNextWidgetPos().x)
+                                                        .attr("y", p_controlBar.GetNextWidgetPos().y);
             }
 
             if ( null != this.m_data ){
@@ -2920,7 +2971,12 @@ var TWiC = (function(namespace){
         // Force container DIV redraw (for datashapes scaling)
         var oldContainerDivDisplay = this.m_container.m_div.style("display");
         this.m_container.m_div.style("display", "none");
-        this.m_container.m_div.style("display", oldContainerDivDisplay);                  
+        this.m_container.m_div.style("display", oldContainerDivDisplay);
+
+        // Re-add the divs in proper order so that the control bar is over the panel divs
+        /*this.m_controlBar.m_div.node().parentNode.appendChild(this.m_controlBar.m_div.node());
+        this.m_panelRectDiv.node().parentNode.appendChild(this.m_panelRectDiv.node());
+        this.m_div.node().parentNode.appendChild(this.m_div.node());*/       
     });
 
     namespace.TextView.method("DarkenAllWords", function(){
@@ -3447,8 +3503,8 @@ var TWiC = (function(namespace){
 
             if ( null == p_controlBar.m_barText ) {
                 p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                        .attr("x", (p_controlBar.m_barThickness >> 1))
-                                                        .attr("y", (p_controlBar.m_barThickness * 0.65));
+                                                        .attr("x", p_controlBar.GetNextWidgetPos().x)
+                                                        .attr("y", p_controlBar.GetNextWidgetPos().y);
             }
 
             if ( null != this.m_data ){

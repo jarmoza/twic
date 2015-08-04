@@ -61,7 +61,19 @@ var TWiC = (function(namespace){
         this.m_controlGroup = null;
         this.m_barPath = null;
         this.m_barText = null;
+        this.m_nextControlWidgetPos = { x: this.m_barThickness >> 1, 
+                                        y: this.m_barThickness * 0.65 };
     };
+
+    namespace.Control.method("GetNextWidgetPos", function(){
+
+        return this.m_nextControlWidgetPos;
+    });
+    namespace.Control.method("SetNextWidgetPos", function(p_nextPos){
+
+        this.m_nextControlWidgetPos.x = p_nextPos.x;
+        this.m_nextControlWidgetPos.y = p_nextPos.y;
+    });
 
     namespace.Control.method("Initialize", function(p_parentDiv, p_fadeInControlBar){
 
@@ -74,10 +86,10 @@ var TWiC = (function(namespace){
                                 .attr("id", "div_twic_control_" + this.m_name)
                                 .style("left", this.m_coordinates.x)
                                 .style("top", this.m_coordinates.y)
-                                .style("max-width", this.m_size.width)
-                                .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
+                                .style("max-width", this.m_size.width)
+                                .style("max-height", this.m_size.height)                                
                                 .style("background", "transparent")
                                 .style("float", "left")
                                 .style("margin", 0);
@@ -105,6 +117,9 @@ var TWiC = (function(namespace){
                                             // Path outline
                                             //.attr("stroke", namespace.Level.prototype.s_palette.purple)
                                             //.attr("stroke-width", 4.5);
+
+        // Add minimizing and maximizing buttons to the control bar for the panel
+        this.AddPanelSizeControls();
     });
 
     namespace.Control.method("Update", function(p_data, p_updateType){
@@ -142,6 +157,33 @@ var TWiC = (function(namespace){
                                                 .html("?")
                                                 .style("font-family", namespace.Level.prototype.s_fontFamily)
                                                 .style("font-size", 23);
+    });
+
+    namespace.Control.method("AddPanelSizeControls", function(){
+
+        // Add the minimize button
+        this.m_controlGroup.append("circle")
+                           .attr("cx", this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("r", namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("fill", namespace.Level.prototype.s_palette.minimize)
+                           .on(namespace.Interaction.click, function(){
+                               this.m_panel.Minimize();
+                           }.bind(this));
+
+        // Add the maximize button
+        this.m_controlGroup.append("circle")
+                           .attr("cx", this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius))
+                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("r", namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("fill", namespace.Level.prototype.s_palette.maximize)
+                           .on(namespace.Interaction.click, function(){
+                               this.m_panel.Maximize();
+                           }.bind(this));
+
+        // Set the position for the next control to be added
+        this.SetNextWidgetPos({ x: this.m_nextControlWidgetPos.x + 4 + (6 * namespace.Control.prototype.s_sizeControlRadius),
+                                y: this.GetNextWidgetPos().y });
     });
 
     namespace.Control.method("AddSearch", function(){
@@ -263,6 +305,7 @@ var TWiC = (function(namespace){
 
     namespace.Control.prototype.s_defaultThickness = 50;
     namespace.Control.prototype.s_borderRadius = 15;
+    namespace.Control.prototype.s_sizeControlRadius = 12;
 
     return namespace;
 }(TWiC || {}));
