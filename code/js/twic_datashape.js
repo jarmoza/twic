@@ -33,11 +33,13 @@ var TWiC = (function(namespace){
     namespace.DataShape.prototype.s_colorMidlight = -0.25;
     namespace.DataShape.prototype.s_colorLolight = -0.50;
     namespace.DataShape.prototype.s_unhighlightedOpacity = 0.3;
-    namespace.DataShape.prototype.s_semihighlightedOpacity = 0.6;
-
+    //namespace.DataShape.prototype.s_semihighlightedOpacity = 0.6;
+    namespace.DataShape.prototype.s_semihighlightedOpacity = 0.3;
 
     // TWiC TopicBullseye (inherits from DataShape)
-    namespace.TopicBullseye = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_title){                                       
+    namespace.TopicBullseye = function(p_coordinates, p_size, p_nodeIndex, p_level,
+                                       p_panel, p_linkedViews, p_numberCircles, p_topics,
+                                       p_title, p_corpusBullseye){                                       
         
         // Apply the base class arguments
         namespace.DataShape.apply(this, arguments);
@@ -47,10 +49,13 @@ var TWiC = (function(namespace){
         this.m_numberCircles = p_numberCircles;                
 
         // Get the top N topics
+        this.m_fullTopicListRef = p_topics;
         this.m_topTopics = [];
+        this.m_topicProportionSum = 0;
         for ( var index = 0; index < this.m_numberCircles; index++ ){
             this.m_topTopics.push([]);
         }
+
         for ( index in p_topics ) {
 
             for ( var index2 = 0; index2 < this.m_numberCircles; index2++ ){
@@ -59,6 +64,7 @@ var TWiC = (function(namespace){
                     this.m_topTopics[index2] = [index, p_topics[index][1]];
                 }
             }
+            this.m_topicProportionSum += p_topics[index][1];
         }
         
         // Other class members
@@ -68,6 +74,20 @@ var TWiC = (function(namespace){
         this.m_shapeGroup = null;   
         this.m_title = p_title;
         this.m_shapeChar = namespace.TopicBullseye.prototype.s_shapeChar;
+
+        // Determine the number of texts this bullseye represents
+        this.m_isCorpusBullseye = p_corpusBullseye;
+        if ( this.m_isCorpusBullseye ){
+
+            this.m_textCount = 0;
+            var corpusTopicCount = this.m_level.m_corpusInfo.corpus_info[1].length;
+            for ( var index = 0; index < corpusTopicCount; index++ ){
+                this.m_textCount += this.m_level.m_corpusMap["children"][index]["children"].length;
+            }
+        } else {
+            this.m_textCount = this.m_level.m_corpusMap["children"][parseInt(p_title)]["children"].length;
+        }
+
     };
     namespace.TopicBullseye.inherits(namespace.DataShape);
 
@@ -102,9 +122,9 @@ var TWiC = (function(namespace){
         // Radii can optionally be scaled by top topic proportion and number of this TopicBullseye's siblings
         var currentRadius = this.m_size;
         if ( this.m_scaledRadius ){
+            var textCountForCalculation = ( this.m_isCorpusBullseye ) ? 50 : this.m_textCount;
             currentRadius = Math.max(this.m_size,
-                                     this.m_size + (this.m_level.m_corpusInfo.corpus_info[1][this.m_topTopics[0][0]]
-                                     * this.m_level.m_corpusMap["children"][this.m_topTopics[0][0]]["children"].length));
+                                     this.m_size + (textCountForCalculation * (this.m_level.m_corpusInfo.corpus_info[1][this.m_topTopics[0][0]])));
             this.m_size = this.m_radius = currentRadius;
         }
         var radiusReduction = currentRadius / this.m_numberCircles;
@@ -123,6 +143,11 @@ var TWiC = (function(namespace){
                                       // Pause/unpause all of my panel's linked views as well
                                       for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
                                           this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
+
+                                          if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                              this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this },
+                                                                                             namespace.Interaction.click);
+                                          }
                                       }
                                     }.bind(this))
                                     .on(namespace.Interaction.dblclick, function(){
@@ -180,7 +205,8 @@ var TWiC = (function(namespace){
                                       .endAngle(2 * Math.PI);
                 var ring = this.m_shapeGroup.append("path")
                                             .attr("d", arc)
-                                            .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," + this.m_coordinates.y.toString() + ")");
+                                            .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," +
+                                                                this.m_coordinates.y.toString() + ")");
             }
             else {
                 var ring = this.m_shapeGroup.append("circle")
@@ -237,6 +263,8 @@ var TWiC = (function(namespace){
 
     namespace.TopicBullseye.method("SetScaledRadius", function(p_state){ this.m_scaledRadius = p_state; });
 
+    namespace.TopicBullseye.method("SetTextCount", function(p_textCount){ this.m_textCount = p_textCount; });
+
     namespace.TopicBullseye.prototype.s_shapeChar == "b";
 
 
@@ -256,6 +284,7 @@ var TWiC = (function(namespace){
         this.m_clusterRectShapeGroup = null;
         this.m_shapeChar = namespace.TopicRectangle.prototype.s_shapeChar;
         this.m_allowDblclick = true;
+        this.m_fileID = p_filenumber;
 
         var topicColorIndex = 0;
         for ( var index = 0; index < this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"].length; index++ ) {
@@ -267,15 +296,20 @@ var TWiC = (function(namespace){
         }
 
         var p_topics = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][topicColorIndex]["topics"];
+        this.m_fullTopicListRef = p_topics;
+        this.m_topicProportionSum = 0;
+        for ( index in p_topics ){
+            this.m_topicProportionSum += p_topics[index][1];
+        }
+        //console.log("Topic rect propsum: " + this.m_topicProportionSum);
         this.m_numberRects = p_numberTopics;
         var topicsSorted = Object.keys(p_topics).sort(function(a, b) { return p_topics[a][1] - p_topics[b][1]; });
 
         // Should be topicsSorted.length - 2 since top topic rect will be represented by TopicRectangle stroke?
         this.m_topTopics = [];
-        for ( var index = topicsSorted.length - 2, rectCount = 0; index >= 0 && rectCount < this.m_numberRects; index--, rectCount++ ) {
-            this.m_topTopics.push([topicsSorted[index], p_topics[topicsSorted[index]]])
+        for ( var index = topicsSorted.length - 1, rectCount = 0; index >= 0 && rectCount < this.m_numberRects; index--, rectCount++ ) {
+            this.m_topTopics.push([topicsSorted[index], p_topics[topicsSorted[index]][1]])
         }  
-
     };
     namespace.TopicRectangle.inherits(namespace.DataShape);
 
@@ -371,41 +405,12 @@ var TWiC = (function(namespace){
                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length;
                                                        index++ ) {
                                                      this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
+
+                                                     if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                                         this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this },
+                                                                                                        namespace.Interaction.click);
+                                                     }                                                 
                                                  }
-                                                 d3.event.stopPropagation();
-                                             }.bind(this))
-                                             .on(namespace.Interaction.dblclick, function(){
-
-                                                 if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
-                                                     if ( !this.m_panel.IsUnderlyingPanelOpen() ){
-
-                                                         this.m_level.Update({ json: this.m_data, 
-                                                                               clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                               topicID: this.m_panel.m_clusterIndex },
-                                                                             namespace.Interaction.dblclick);
-
-                                                     } else {
-
-                                                         for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                                             
-                                                             if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
-                                                                 
-                                                                 var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-                                                                 if ( initialPauseState ){
-                                                                     this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                                                 }
-                                                                 this.m_panel.m_linkedViews[index].panel.Update({ json:this.m_data, 
-                                                                                                                  clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                                                  topicID: this.m_panel.m_clusterIndex },
-                                                                                                                namespace.Interaction.dblclick);
-                                                                 if ( initialPauseState ){
-                                                                     this.m_panel.m_linkedViews[index].panel.Pause(true);
-                                                                 }
-                                                             }
-                                                         }
-                                                     }
-                                                 }
-
                                                  d3.event.stopPropagation();
                                              }.bind(this));
         this.m_level.m_objectCount += 1;
@@ -468,7 +473,6 @@ var TWiC = (function(namespace){
 
                                             // Re-append the cluster circle group to bump up its z-order to top
                                             this.m_clusterRectShapeGroup.node().parentNode.parentNode.parentNode.parentNode.appendChild(this.m_clusterRectShapeGroup.node().parentNode.parentNode.parentNode);
-
                                         }.bind(this))
                                         .on("mouseout", function(d){
 
@@ -478,7 +482,44 @@ var TWiC = (function(namespace){
                                                     this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
                                                 }
                                             }
-                                        }.bind(this));                                                                                
+                                        }.bind(this))
+                                        .on(namespace.Interaction.dblclick, function(d){
+
+                                            if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
+                                                if ( !this.m_panel.IsUnderlyingPanelOpen() ){
+
+                                                    this.m_panel.Pause(true);
+                                                    var ci = ( undefined === this.m_panel.m_clusterIndex ) ? this.m_topTopics[0][0] : this.m_panel.m_clusterIndex;
+                                                    this.m_level.Update({ json: this.m_data, 
+                                                                          clusterIndex: d.topicID, 
+                                                                          topicID: d.topicID },
+                                                                        namespace.Interaction.dblclick);
+
+                                                } else {
+
+                                                    for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                                         
+                                                        if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ) {
+                                                             
+                                                            var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
+                                                            if ( initialPauseState ){
+                                                                this.m_panel.m_linkedViews[index].panel.Pause(false);
+                                                            }
+                                                            this.m_panel.m_linkedViews[index].panel.Update({ json:this.m_data, 
+                                                                                                             clusterIndex: d.topicID, 
+                                                                                                             topicID: d.topicID },
+                                                                                                           namespace.Interaction.dblclick);
+                                                            if ( initialPauseState ){
+                                                                this.m_panel.m_linkedViews[index].panel.Pause(true);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            d3.event.stopPropagation();
+                                        }.bind(this));
+
         }                            
     });
 
@@ -494,9 +535,11 @@ var TWiC = (function(namespace){
                                       if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
                                           if ( !this.m_panel.IsUnderlyingPanelOpen() ) {
 
+                                              this.m_panel.Pause(true);
+                                              var ci = ( undefined === this.m_panel.m_clusterIndex ) ? this.m_topTopics[0][0] : this.m_panel.m_clusterIndex;
                                               this.m_level.Update({ json: this.m_data, 
-                                                                    clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                    topicID: this.m_panel.m_clusterIndex },
+                                                                    clusterIndex: ci, 
+                                                                    topicID: ci },
                                                                   namespace.Interaction.dblclick);
                                            } else {                                  
 
@@ -506,9 +549,10 @@ var TWiC = (function(namespace){
                                                        if ( initialPauseState ){
                                                            this.m_panel.m_linkedViews[index].panel.Pause(false);
                                                        }
+                                                       var ci = ( undefined === this.m_panel.m_clusterIndex ) ? this.m_topTopics[0][0] : this.m_panel.m_clusterIndex;
                                                        this.m_panel.m_linkedViews[index].panel.Update({ json: this.m_data, 
-                                                                                                        clusterIndex: this.m_panel.m_clusterIndex, 
-                                                                                                        topicID: this.m_panel.m_clusterIndex },
+                                                                                                        clusterIndex: ci, 
+                                                                                                        topicID: ci },
                                                                                                       namespace.Interaction.dblclick);
                                                        if ( initialPauseState ){
                                                            this.m_panel.m_linkedViews[index].panel.Pause(true);
@@ -529,6 +573,11 @@ var TWiC = (function(namespace){
                                      // Pause/unpause all of my panel's linked views as well
                                      for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
                                          this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
+
+                                         if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                             this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this },
+                                                                                            namespace.Interaction.click);
+                                         }
                                      } 
                                  }.bind(this));
                                  
@@ -568,7 +617,7 @@ var TWiC = (function(namespace){
         var textRectGroup = this.m_shapeGroup.append("g")
                                              .attr("class", this.m_panel.s_datashapeClassName)
                                              .attr("id", "text_rect_group_" + this.m_clusterIndex)
-                                             .datum({"topicID": this.m_clusterIndex });                                
+                                             .datum({"topicID": this.m_clusterIndex, "shapeRef": this });                                
 
         this.m_textRect = textRectGroup.append("rect")
                                        .attr("class", "text_info_rect")
@@ -724,6 +773,10 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
+    namespace.TopicRectangle.method("SetTitle", function(p_title){
+        this.m_title = p_title;
+    })
+
     // Static members of TopicRectangle
     namespace.TopicRectangle.prototype.multiplier = 2;
     namespace.TopicRectangle.prototype.spaceAroundText = 2 * namespace.TopicRectangle.prototype.multiplier;
@@ -741,6 +794,190 @@ var TWiC = (function(namespace){
     namespace.TopicRectangle.prototype.jsonDirectory = "data/input/json/texts/";   
 
     namespace.TopicRectangle.prototype.s_shapeChar = "r";
+
+    // TWiC DataTile inherits from DataShape
+    namespace.DataTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape){
+
+        // Apply the base class arguments
+        namespace.DataShape.apply(this, arguments);
+
+        // DataTiles refer to another datashape to display its underlying information
+        this.m_dataShape = p_dataShape;
+    };
+    namespace.DataTile.inherits(namespace.DataShape);
+
+
+    // TWiC TopicTile inherits from DataTile
+    namespace.TopicTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape, p_topicID){
+
+        // Apply the base class arguments
+        namespace.DataTile.apply(this, arguments);
+
+        // Information about this topic
+        this.m_topicID = p_topicID;
+        for ( topicID in this.m_dataShape.m_fullTopicListRef ){
+            if ( this.m_topicID == topicID ){
+                this.m_topicProportion = this.m_dataShape.m_fullTopicListRef[topicID][1];
+            }
+        }
+        /*for ( var index = 0; index < this.m_dataShape.m_fullTopicListRef.length; index++ ){            
+            if ( this.m_topicID == this.m_dataShape.m_fullTopicListRef[index][0] ){                
+                this.m_topicProportion = this.m_dataShape.m_fullTopicListRef[index][1];
+                break;
+            }
+        }*/
+        this.m_topicProportion /= p_dataShape.m_topicProportionSum;
+        this.m_topicColor = this.m_level.m_topicColors[this.m_topicID];
+        this.m_topicWords = this.m_level.m_topicWordLists[this.m_topicID];
+    };
+    namespace.TopicTile.inherits(namespace.DataTile);
+
+    namespace.TopicTile.method("Draw", function(p_percentProportion){
+
+        // The basic group under which all drawn information objects will sit
+        this.m_shapeGroup = this.m_panel.m_tileGroup.append("g")
+                                              .attr("class", namespace.DataBar.prototype.s_datashapeClassName)
+                                              .attr("id", namespace.DataBar.prototype.s_datashapeClassName + "_" + this.m_name)
+                                              .datum({ "topicID": this.m_topicID,
+                                                       "color": this.m_level.m_topicColors[this.m_topicID],
+                                                       "tileRef": this })
+                                              .on(namespace.Interaction.click, function(d){
+                                                  // Pause/unpause my panel's Update() to keep highlighting frozen
+                                                  // or allow it to resume
+                                                  var initialPauseState = this.m_panel.IsPaused();
+                                                  this.m_panel.Pause(!initialPauseState);
+
+                                                  this.m_panel.Update(d, namespace.Interaction.click);
+                                                  // Pause/unpause all of my panel's linked views as well
+                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
+                                                      this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
+                                                  }
+                                              }.bind(this))
+                                              .on(namespace.Interaction.mouseover, function(d){
+                                
+                                                  this.m_panel.Update(d, namespace.Interaction.mouseover, true);
+                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                                      if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
+                                                          this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
+                                                      }
+                                                  }
+                                              }.bind(this))
+                                              .on(namespace.Interaction.mouseout, function(){
+                                
+                                                  this.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+                                                      if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
+                                                          this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                                      }
+                                                  }
+                                              }.bind(this));
+
+        // Underlying rectangle
+        this.m_shapeGroup.append("rect")
+                         .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("width", this.m_panel.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing))
+                         .attr("height", namespace.TopicTile.prototype.s_tileDims.height)
+                         .style("fill", namespace.Level.prototype.s_palette.tile);
+
+        // Highlight rectangle
+        this.m_highlightRect = this.m_shapeGroup.append("rect")
+                                                .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                                                .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                                                .attr("width", this.m_panel.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                                .attr("height", namespace.TopicTile.prototype.s_tileDims.height)
+                                                .style("fill", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorHighlight,
+                                                                                    namespace.Level.prototype.s_palette.tile))
+                                                .style("opacity", 0.0);
+
+        // Topic name
+        this.m_title = this.m_shapeGroup.append("text")
+                                        .attr("x", this.m_coordinates.x + (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                        .attr("y", this.m_coordinates.y + (3 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_title.append("tspan")
+                    .html("Topic&nbsp;")
+                    .attr("fill", namespace.Level.prototype.s_palette.gold)
+                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                    .style("font-size", 21);
+        this.m_title.append("tspan")
+                    .html(this.m_topicID)
+                    .attr("fill", this.m_level.m_topicColors[this.m_topicID])
+                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                    .style("font-size", 21);                    
+
+        // Topic proportion
+        var proportionWidth = p_percentProportion * (namespace.TopicTile.prototype.s_tileDims.width - (2 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_proportion = this.m_shapeGroup.append("rect")
+                                             .attr("x", this.m_coordinates.x + (3 * namespace.TopicTile.prototype.s_topicCircleRadius))
+                                             .attr("y", this.m_coordinates.y + (4 * namespace.DataBar.prototype.s_elementSpacing))
+                                             .attr("width", proportionWidth)
+                                             .attr("height", (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                             .style("fill", this.m_level.m_topicColors[this.m_topicID]);
+
+        // Topic proportion percentage
+        this.m_proportionText = this.m_shapeGroup.append("text")
+                                                 .attr("x", this.m_coordinates.x + proportionWidth + (4 * namespace.TopicTile.prototype.s_topicCircleRadius))
+                                                 .attr("y", this.m_coordinates.y + (5.5 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_proportionText.append("tspan")
+                             .html(((this.m_topicProportion * 100).toFixed(3)) + "&nbsp;%")
+                             .attr("fill", namespace.Level.prototype.s_palette.gold)
+                             .style("font-family", namespace.Level.prototype.s_fontFamily)
+                             .style("font-size", 21)
+                             .style("font-weight", "bold");
+    });
+
+    namespace.TopicTile.method("HighlightTile", function(p_doHighlight){
+
+        var opacity = ( p_doHighlight ) ? 1.0 : 0.0;
+        this.m_highlightRect.style("opacity", opacity);
+    });
+
+    namespace.TopicTile.prototype.s_tileDims = { width: 300, height: 100 };
+    namespace.TopicTile.prototype.s_topicCircleRadius = 15;
+
+    namespace.MetaDataTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape, p_text, p_value){
+
+        // Apply the base class arguments
+        namespace.DataTile.apply(this, arguments);
+
+        this.m_text = p_text;
+        this.m_value = p_value;
+    };
+    namespace.MetaDataTile.inherits(namespace.DataTile);
+
+    namespace.MetaDataTile.method("Draw", function(p_isFloatValue){
+
+        // The basic group under which all drawn information objects will sit
+        this.m_shapeGroup = this.m_panel.m_tileGroup.append("g")
+                                              .attr("class", namespace.DataBar.prototype.s_datashapeClassName)
+                                              .attr("id", namespace.DataBar.prototype.s_datashapeClassName + "_" + this.m_name);
+
+        // Underlying rectangle
+        this.m_shapeGroup.append("rect")
+                         .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("width", this.m_panel.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing))
+                         .attr("height", namespace.MetaDataTile.prototype.s_tileDims.height)
+                         .style("fill", namespace.Level.prototype.s_palette.tile);
+
+        // Descriptive text and value
+        this.m_title = this.m_shapeGroup.append("text")
+                                        .attr("x", this.m_coordinates.x + (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                        .attr("y", this.m_coordinates.y + (3 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_title.append("tspan")
+                    .html(this.m_text + ":&nbsp;")
+                    .attr("fill", namespace.Level.prototype.s_palette.gold)
+                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                    .style("font-size", 21);
+        this.m_title.append("tspan")
+                    .html(( p_isFloatValue ) ? this.m_value.toFixed(3) : this.m_value)
+                    .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                    .style("font-size", 21);                         
+    });
+
+    namespace.MetaDataTile.prototype.s_tileDims = { width: 300, height: 50 };
+    
 
     return namespace;
 

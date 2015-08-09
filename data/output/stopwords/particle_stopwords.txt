@@ -34,6 +34,7 @@ berry
 bethlehem
 billow
 bird
+blossom
 boy
 broker
 bryant
@@ -48,6 +49,7 @@ camel
 can
 cannon
 cap
+capsule
 cast
 cato
 cavern
@@ -77,6 +79,7 @@ deity
 delight
 desire
 despair
+devil
 did
 dieman
 diver
@@ -87,6 +90,7 @@ dollie
 doom
 dower
 drama
+duck
 dungeon
 e
 eagle
@@ -101,6 +105,7 @@ elijah
 emigrant
 emperor
 enemy
+errand
 eternity
 etna
 eve
@@ -290,6 +295,7 @@ smile
 snake
 snow
 so
+soe
 soldier
 somebody
 something
@@ -324,6 +330,7 @@ that
 their
 there
 they
+tho
 thom
 thomson
 thou
@@ -344,6 +351,7 @@ twould
 umbrella
 universe
 urchin
+vandyke
 vane
 vermin
 w

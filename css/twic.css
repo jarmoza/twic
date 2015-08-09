@@ -17,6 +17,18 @@ body {
     overflow: scroll;
 }
 
+.ui-resizable-se {
+    background-image: url("");
+}
+
+.ui-resizable-s {
+    background-image: url("");
+}
+
+.ui-resizable-e {
+    background-image: url("");
+}
+
 .div_twic_level{
   position: relative;
   width: 100%;
@@ -37,23 +49,18 @@ body {
 }
 
 .div_twic_container {
-  overflow:hidden;
-  resize:both; 
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-height: 100%;  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
 }
-
 
 .twic_panel {
   position: relative;
   overflow: auto;
   display: block;
-  resize:both;
 }
 
 .div_twic_graph {

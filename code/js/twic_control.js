@@ -305,7 +305,8 @@ var TWiC = (function(namespace){
 
     namespace.Control.prototype.s_defaultThickness = 50;
     namespace.Control.prototype.s_borderRadius = 15;
-    namespace.Control.prototype.s_sizeControlRadius = 12;
+    //namespace.Control.prototype.s_sizeControlRadius = 12;
+    namespace.Control.prototype.s_sizeControlRadius = 9;
 
     return namespace;
 }(TWiC || {}));

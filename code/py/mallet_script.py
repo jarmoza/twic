@@ -116,10 +116,10 @@ class MalletScript:
             '{0}'.format(self.corpus_source_dir),
             '--output',
             self.mallet_file,
+            '--token-regex [\p{L}\p{P}]*\p{L}',
             '--keep-sequence',
             '--remove-stopwords',
             '--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
-            # '--token-regex \"[\p{L}\p{P}]*\p{L}\"'
         ]
         subprocess.check_call(args, stdout=sys.stdout)
 

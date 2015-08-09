@@ -332,7 +332,7 @@ class TWiC_MalletInterpret:
                 cluster_topic_list.append([index, cluster_avg_topic_dist[index]])       
             cluster_topic_list = sorted(cluster_topic_list, key=lambda x:x[1], reverse=True)
             for rank in range(len(cluster_topic_list)):
-                clusters_json[topic_id]["topics"][cluster_topic_list[rank][0]][0] = rank
+                clusters_json[topic_id]["topics"][cluster_topic_list[rank][0]][0] = rank + 1
 
             # Now add the text-level children
             for index in range(len(texts_with_top_topic)):

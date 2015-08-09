@@ -301,7 +301,7 @@ var TWiC = (function(namespace){
 
         // Some panels may not have control bars
         var controlBar = null;
-        if ( p_panel instanceof namespace.GraphView ) {
+        if ( p_panel instanceof namespace.GraphView || p_panel instanceof namespace.DataBar ) {
             // (NOTE: Currently all graphical views use a 'top'-oriented control bar)
             controlBar = new namespace.Control(namespace.Control.prototype.s_defaultThickness, "top");
         }
@@ -755,7 +755,7 @@ var TWiC = (function(namespace){
                                             "beige": "#DFDAC4", "lightpurple": "#D8D8FF",
                                             "logold": namespace.ShadeBlend(-0.50, "#FAFAD2"), 
                                             "deeppurple": "#15053C",
-                                            "minimize": "#FDB124", "maximize": "#28C231" };
+                                            "minimize": "#FDB124", "maximize": "#28C231", "tile": "#0A2D50" };
     namespace.Level.prototype.s_twicLevels = [];
 
     // Creating a Level instance also adds it to the TWiC level list
