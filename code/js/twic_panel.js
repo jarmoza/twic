@@ -4372,7 +4372,7 @@ var TWiC = (function(namespace){
                         else if ( namespace.TextClusterView.prototype.s_infoFlavorText == p_data.shapeRef.m_name ){
 
                             panelTitle = p_data.shapeRef.m_name;
-                            panelTitleID = p_data.shapeRef.m_clusterIndex;
+                            panelTitleID = p_data.shapeRef.m_panel.m_clusterIndex;
                         }                
 
                         // Display the bullseye name
