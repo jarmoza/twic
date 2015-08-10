@@ -28,6 +28,8 @@ var TWiC = (function(namespace){
 
         this.m_underlyingPanelOpen = false;
 
+        this.m_hidden = false;
+
         if ( null != this.m_level ) {
             this.m_level.AddPanel(this);
         }
@@ -106,7 +108,44 @@ var TWiC = (function(namespace){
     namespace.Panel.method("GetViewBoxArray", function(p_element){ 
 
         return p_element.attr("viewBox").split(" ");
-    }); 
+    });
+
+    namespace.Panel.method("Hide", function(p_hide){
+
+        if ( p_hide ){
+
+            // Save the current dimensions for unhiding
+            this.m_recentDims = { width: this.m_container.m_size.width,
+                                  height: this.m_container.m_size.height };
+
+            // Transition will be to the minimum panel width and size of the control bar only
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: namespace.Panel.prototype.s_minimumPanelSize,
+                        height: namespace.Control.prototype.s_defaultThickness },
+                duration: 500
+            };
+        } else {
+
+            // Bring back to size before hiding
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: this.m_recentDims.width, height: this.m_recentDims.height },
+                duration: 500
+            };
+        }
+
+        // Save the current hidden state
+        this.m_hidden = p_hide;
+
+        // Change the control bar text
+        this.AddBarText(this.m_hidden);
+
+        // Resize the container
+        this.Move(transition, "end", function(){
+            $(this.m_level.m_div[0]).packery(); 
+        }.bind(this));
+    });
 
     namespace.Panel.method("MakeDraggable", function(){
 
@@ -198,6 +237,113 @@ var TWiC = (function(namespace){
                                   this.m_level.OrganizePanels();
                               }.bind(this));                                   
     });
+
+    namespace.Panel.method("Move", function(p_transition, p_callbackTiming, p_callback){
+
+        // Determine the traits of the given transition
+        if ( p_transition.position ){
+            this.m_container.SetPosition(p_transition.position);
+        }
+        if ( p_transition.size ) {
+            this.m_container.SetSize(p_transition.size);
+        }
+
+        // NOTE: CSS max-width, max-height never changes
+
+        // Container transitions to its position/dimensions
+        this.m_container.m_div.transition()
+                              .duration(p_transition.duration)
+                              .style("left", this.m_container.m_coordinates.x)
+                              .style("top", this.m_container.m_coordinates.y)
+                              .style("width", this.m_container.m_size.width)
+                              .style("height", this.m_container.m_size.height);
+
+        // NOTE: Panels and control bars are relatively positioned in their parent container div
+
+        // Panel and its svg transition to new position/dimensions
+        this.m_div.transition().duration(p_transition.duration) 
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", parseInt(this.m_controlBar.m_div.style("height")))
+                               .style("width", this.m_size.width)
+                               .style("height", this.m_size.height)
+                               .each("start", function(p_transition, p_callbackTiming, p_callback){
+
+                                   this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", p_transition.size.width)
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", p_transition.size.width)
+                                                      .attr("height", p_transition.size.height - this.m_controlBar.m_size.height)
+                                                      .attr("viewBox", "0 0 " +
+                                                                       p_transition.size.width + " " +
+                                                                       (p_transition.size.height - this.m_controlBar.m_size.height));
+                                   this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, 0,
+                                                                  p_transition.size.width,
+                                                                  p_transition.size.height - this.m_controlBar.m_size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius));
+
+                                   /*this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", this.m_size.width)
+                                                      .style("height", this.m_size.height)
+                                                      .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", this.m_size.width)
+                                                      .attr("height", this.m_size.height)
+                                                      .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
+                                                      .each("end", function(){
+                                                          this.m_panelRect.attr("d", this.GetRectPath("bottom"));
+                                                      }.bind(this));*/
+                                
+                                   /*this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, -50,
+                                    parseInt(this.m_svg.attr("width")), parseInt(this.m_svg.attr("height")) + 100,
+                                    namespace.Panel.prototype.s_borderRadius));*/
+
+                                   this.m_svg.transition()
+                                             .duration(p_transition.duration)
+                                             .attr("width", this.m_size.width)
+                                             .attr("height", this.m_size.height)
+                                             .each("end", function(){
+
+                                                 if ( "end" == p_callbackTiming ){
+
+                                                    p_callback();
+                                                 }
+
+                                             }.bind(this, p_callbackTiming, p_callback));
+
+                                   if ( "start" == p_callbackTiming ){
+                                       p_callback();
+                                   }
+
+                               }.bind(this, p_transition, p_callbackTiming, p_callback));
+
+        // Control bar and its path (not svg) transition to new position/width
+        this.m_controlBar.m_size.width = this.m_size.width;
+        this.m_controlBar.m_div.transition()
+                               .duration(p_transition.duration)
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", this.m_coordinates.y - parseInt(this.m_controlBar.m_div.style("height")) << 1)
+                               .style("width", this.m_size.width)
+                               .each("start", function(p_transition){
+                                
+                                   this.m_controlBar.m_barPath.transition()
+                                                              .duration(p_transition.duration)
+                                                              .attr("d", this.m_controlBar.GetRectPath());
+                                   this.m_controlBar.m_svg.transition()
+                                                          .duration(p_transition.duration)
+                                                          .attr("width", this.m_size.width)
+                                                          .attr("viewBox", "0 0 " + (this.m_size.width) + " " + this.m_controlBar.m_size.height);
+
+                               }.bind(this, p_transition));
+    });    
 
     namespace.Panel.method("OnResize", function(p_packery){
 
@@ -427,7 +573,7 @@ var TWiC = (function(namespace){
                                                       true);
 
         // Add my text to the container's control bar
-        this.AddBarText();
+        this.AddBarText(false);
     });
 
     namespace.CorpusView.method("Start", function(p_parentDiv){
@@ -504,69 +650,101 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.CorpusView.method("AddBarText", function(){
+    namespace.CorpusView.method("AddBarText", function(p_altText){
 
         this.m_controlBar.AddText(function(p_controlBar){
 
-            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                                .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                                .attr("y", p_controlBar.GetNextWidgetPos().y);
+            if ( p_controlBar.m_barText ){
+                p_controlBar.m_barText.selectAll("*").remove();
+            }
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
+            if ( !this.m_textFirstSet ){
+                this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                this.m_textFirstSet = true;
+            }
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("TWiC:&nbsp;&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 25);
+            if ( !p_altText ){
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("Top&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 25);
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                                    .attr("x", this.m_textPos.x)
+                                                                    .attr("y", this.m_textPos.y);
 
-            // NOTE: Topic count is currently hard-coded, TODO: parametrize
-            p_controlBar.m_barText.append("tspan")
-                                  .html(10)
-                                  .attr("fill", namespace.Level.prototype.s_palette.green)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 28);
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("&nbsp;topics in&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 25);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(this.m_level.m_corpusMap["name"])
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 25);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Top&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
 
-            /*var myTip = d3.tip().attr("class", "d3-tip")
-                                .direction("s")
-                                .offset([0,0])
-                                .html("Topic Words in Context: Corpus View<br><br>" +
-                                      "Actions:<br><br>" +
-                                      "Mouseover - Highlights topics in view<br>" +
-                                      "Click - Click on topic rings to pause viewing;<br>" +
-                                      "click again to resume.<br><br>" +
-                                      "Description:<br><br>" +
-                                      "&nbsp;&nbsp;Here is a representation of a familiar output from<br>" +
-                                      "MALLET, the top N topics of an entire corpus, which<br>" +
-                                      "itself is a calculated average of the topic distributions<br>" +
-                                      "of each document in the corpus.  As you mouse over the<br>" +
-                                      "bullseye-like shape, you move toward the most prevalent<br>" +
-                                      "topics of the corpus, the words of which can be seen in<br>" +
-                                      "the topic bar below. These topics, as they are distributed<br>" +
-                                      "throughout the corpus, can be seen as well as you mouseover.");
+                // NOTE: Topic count is currently hard-coded, TODO: parametrize
+                p_controlBar.m_barText.append("tspan")
+                                      .html(10)
+                                      .attr("fill", namespace.Level.prototype.s_palette.green)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 28);
 
-            this.m_svg.call(myTip);
-            this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
-                                           .on(namespace.Interaction.mouseout, myTip.hide);*/
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;topics in&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_level.m_corpusMap["name"])
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+
+                /*var myTip = d3.tip().attr("class", "d3-tip")
+                                    .direction("s")
+                                    .offset([0,0])
+                                    .html("Topic Words in Context: Corpus View<br><br>" +
+                                          "Actions:<br><br>" +
+                                          "Mouseover - Highlights topics in view<br>" +
+                                          "Click - Click on topic rings to pause viewing;<br>" +
+                                          "click again to resume.<br><br>" +
+                                          "Description:<br><br>" +
+                                          "&nbsp;&nbsp;Here is a representation of a familiar output from<br>" +
+                                          "MALLET, the top N topics of an entire corpus, which<br>" +
+                                          "itself is a calculated average of the topic distributions<br>" +
+                                          "of each document in the corpus.  As you mouse over the<br>" +
+                                          "bullseye-like shape, you move toward the most prevalent<br>" +
+                                          "topics of the corpus, the words of which can be seen in<br>" +
+                                          "the topic bar below. These topics, as they are distributed<br>" +
+                                          "throughout the corpus, can be seen as well as you mouseover.");
+
+                this.m_svg.call(myTip);
+                this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
+                                               .on(namespace.Interaction.mouseout, myTip.hide);*/
+            } else {
+
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                                    .attr("x", this.m_textPos.x)
+                                                                    .attr("y", this.m_textPos.y);
+
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Corpus View")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+            }
 
         }.bind(this));
     });
@@ -983,9 +1161,6 @@ var TWiC = (function(namespace){
                 "target": this.m_rootIndex,
                 "value": this.m_objectsJSON[index - 1]["dist2avg"]
             });
-            //console.log("Adding Node with index " + index + " and name " + this.m_objectsJSON[index - 1]["name"]);
-            //console.log("Source " + index + " Target " + this.m_rootIndex + " Value " + this.m_objectsJSON[index - 1]["dist2avg"]);
-            //console.log("============================================");
         }
 
         // Set up the force-directed graph
@@ -999,117 +1174,6 @@ var TWiC = (function(namespace){
                                 //.linkDistance(function(d){ return d.value * TWiC.CorpusClusterView.prototype.s_linkDistanceMod; });
                                 .linkDistance(function(d){ return d.value; });
     });
-
-
-    /*namespace.CorpusClusterView.method("InitializeGraph", function(p_fadeInControlBar){
-
-        // Set up the svg for the corpus cluster view
-        var viewBoxFactor = Object.keys(this.m_level.m_corpusMap["children"]).length / 5.0;
-        
-        // (AreafromBasicRadius * clusterCount / availablePixels)
-        var availSpaceRadiusScale =  viewBoxFactor * 
-                                     ((25 * 3.14 * 2) *
-                                     Object.keys(this.m_level.m_corpusMap["children"]).length) / (this.m_size.width * this.m_size.height);
-
-        var twic_objects = [];
-        var twic_cluster_json_list = [];
-        var clusterCount = Object.keys(this.m_level.m_corpusMap["children"]).length;
-
-        // Distance to ideal normalization via corpus map JSON data
-        var avg = 0.0;
-        for ( var index = 0; index < clusterCount; index++ ){
-            avg += this.m_level.m_corpusMap["children"][index]["dist2avg"];
-        }
-        avg /= Object.keys(this.m_level.m_corpusMap["children"]).length;
-
-        // Central Node
-
-        // Node zero for the force-directed graph will be a cluster circle representing
-        // the average topic distribution for this cluster
-        this.m_rootIndex = 0;
-        this.m_nodes.push({"index": this.m_rootIndex, "name": "", "radius": availSpaceRadiusScale * 25});
-
-        // Top N topics of this node
-        var topTopics = [];
-        var topTopicCount = 10;
-        for ( var index = 0; index < topTopicCount; index++ ) { topTopics.push([]) };
-        var topTopicID = "";
-        for ( var topic in this.m_level.m_corpusMap["topics"] ){
-            if ( this.m_level.m_corpusMap["topics"][topic][0] < topTopicCount + 1){
-                topTopics[this.m_level.m_corpusMap["topics"][topic][0] - 1] = [topic, this.m_level.m_corpusMap["topics"][topic][1]];
-            }
-        }        
-
-        var centralNode = new TWiC.TopicBullseye({ x: 0, y: 0 },
-                                                 availSpaceRadiusScale * 25, 
-                                                 namespace.CorpusClusterView.prototype.s_infoFlavorText,
-                                                 this.m_level,
-                                                 this, 
-                                                 this.m_linkedViews,
-                                                 topTopicCount,
-                                                 this.m_level.m_corpusMap["topics"],
-                                                 this.m_nodes[0]["name"],
-                                                 true);
-        centralNode.SetScaledRadius(true);
-        centralNode.m_allowDblclick = false;
-        this.m_twicObjects.push(centralNode);
-        this.m_nodes[0].radius = centralNode.m_size;
-
-        // Build all clusters
-        var linkDilation = 80;
-        for ( var index = 0; index < clusterCount; index++ ){
-
-            var twic_cluster = new TWiC.TopicBullseye({ x: 0, y: 0 },
-                                                      availSpaceRadiusScale * 25,
-                                                      this.m_level.m_corpusMap["children"][index]["name"],
-                                                      this.m_level,
-                                                      this,
-                                                      this.m_linkedViews,
-                                                      10,
-                                                      this.m_level.m_corpusMap["children"][index]["topics"],
-                                                      index.toString(),
-                                                      false);
-
-            // Cluster circles are scaled in the CorpusClusterView
-            twic_cluster.SetScaledRadius(true);
-
-            var twic_cluster_json = {
-                "name": this.m_level.m_corpusMap["children"][index]["name"],
-                "dist2avg": 2 + Math.abs((this.m_level.m_corpusMap["children"][index]["dist2avg"] - avg) * linkDilation),
-                "topics": this.m_level.m_corpusMap["children"][index]["topics"],
-                "children": []
-            };
-
-            this.m_objectsJSON.push(twic_cluster_json);
-            this.m_twicObjects.push(twic_cluster);
-        }
-
-        //var topTopics = namespace.Panel.prototype.GetTopNTopics(this.m_level.m_corpusMap["topics"], topTopicCount);
-
-        // Establish the rest of the nodes and edges for the force-directed graph
-        for ( var index = 1; index <= this.m_objectsJSON.length; index++ ){
-
-            this.m_nodes.push({"index": index, "name": this.m_objectsJSON[index - 1]["name"]});
-            this.m_links.push({
-                "source": index,
-                "target": this.m_rootIndex,
-                "value": this.m_objectsJSON[index - 1]["dist2avg"]
-            });
-            //console.log("Adding Node with index " + index + " and name " + this.m_objectsJSON[index - 1]["name"]);
-            //console.log("Source " + index + " Target " + this.m_rootIndex + " Value " + this.m_objectsJSON[index - 1]["dist2avg"]);
-            //console.log("============================================");
-        }
-
-        // Set up the force-directed graph
-        this.m_graph = d3.layout.force()
-                                .nodes(this.m_nodes)
-                                .links(this.m_links)
-                                .size([this.m_size.width, this.m_size.height])
-                                .charge(0.2)
-                                .gravity(0)
-                                //.chargeDistance(10)
-                                .linkDistance(function(d){ return d.value * TWiC.CorpusClusterView.prototype.s_linkDistanceMod; });
-    });*/
 
     namespace.CorpusClusterView.method("InitializeGraph_ArchimedeanSpiral", function(p_fadeInControlBar){
 
@@ -1333,7 +1397,7 @@ var TWiC = (function(namespace){
         //this.m_graph.start();
 
         // Add my text to the container's control bar
-        this.AddBarText();
+        this.AddBarText(false);
 
         // Make all objects of this panel resizable and draggable
         this.MakeResizable(false);
@@ -1391,71 +1455,103 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.CorpusClusterView.method("AddBarText", function(){
+    namespace.CorpusClusterView.method("AddBarText", function(p_altText){
 
         this.m_controlBar.AddText(function(p_controlBar){
 
-            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                    .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                    .attr("y", p_controlBar.GetNextWidgetPos().y);
+            if ( p_controlBar.m_barText ){
+                p_controlBar.m_barText.selectAll("*").remove();
+            }
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
+            if ( !this.m_textFirstSet ){
+                this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                this.m_textFirstSet = true;
+            }        
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("TWiC:&nbsp;&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+            if ( !p_altText ){
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("Texts Clustered by Top Topic in the ")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", this.m_textPos.x)
+                                                        .attr("y", this.m_textPos.y);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(Object.keys(this.m_level.m_topicColors).length)
-                                  .attr("fill", namespace.Level.prototype.s_palette.green)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 24);
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("&nbsp;topics of&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(this.m_level.m_corpusMap["name"])
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Texts Clustered by Top Topic in the ")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
 
-            /*var myTip = d3.tip().attr("class", "d3-tip")
-                                .direction("w")
-                                .offset([0,-300])
-                                .html("Topic Words in Context: Corpus Cluster View<br><br>" +
-                                      "Actions:<br>" +
-                                      "Mouseover - Highlight topics as they appear in text clusters<br>" +
-                                      "throughout the corpus.<br>" +
-                                      "Click - Click on topic rings to pause viewing;<br>" +
-                                      "click again to resume<br>" +
-                                      "Double Click - Reveals the underlying text cluster<br>" +
-                                      "in the Text Cluster View.<br><br>" +
-                                      "Description:<br><br>" +
-                                      "The corpus cluster view is one level below the corpus view.<br>" +
-                                      "Texts are clustered by their top topic represented with similar<br>" +
-                                      "bullseye abstraction, each of which shows the average top N topics<br>" +
-                                      "of that cluster. At the center of the graph lies the cluster<br>" +
-                                      "closest to the average corpus topic distribution (as visible in<br>" +
-                                      "the corpus view), the distribution against which which all clusters<br>" +
-                                      "of texts are compared and appropriately placed in space via<br>" +
-                                      "computed distance measure.");
+                p_controlBar.m_barText.append("tspan")
+                                      .html(Object.keys(this.m_level.m_topicColors).length)
+                                      .attr("fill", namespace.Level.prototype.s_palette.green)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 24);
 
-            this.m_svg.call(myTip);
-            this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
-                                           .on(namespace.Interaction.mouseout, myTip.hide);*/
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;topics of&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_level.m_corpusMap["name"])
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                /*var myTip = d3.tip().attr("class", "d3-tip")
+                                    .direction("w")
+                                    .offset([0,-300])
+                                    .html("Topic Words in Context: Corpus Cluster View<br><br>" +
+                                          "Actions:<br>" +
+                                          "Mouseover - Highlight topics as they appear in text clusters<br>" +
+                                          "throughout the corpus.<br>" +
+                                          "Click - Click on topic rings to pause viewing;<br>" +
+                                          "click again to resume<br>" +
+                                          "Double Click - Reveals the underlying text cluster<br>" +
+                                          "in the Text Cluster View.<br><br>" +
+                                          "Description:<br><br>" +
+                                          "The corpus cluster view is one level below the corpus view.<br>" +
+                                          "Texts are clustered by their top topic represented with similar<br>" +
+                                          "bullseye abstraction, each of which shows the average top N topics<br>" +
+                                          "of that cluster. At the center of the graph lies the cluster<br>" +
+                                          "closest to the average corpus topic distribution (as visible in<br>" +
+                                          "the corpus view), the distribution against which which all clusters<br>" +
+                                          "of texts are compared and appropriately placed in space via<br>" +
+                                          "computed distance measure.");
+
+                this.m_svg.call(myTip);
+                this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
+                                               .on(namespace.Interaction.mouseout, myTip.hide);*/
+            } else {
+
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", this.m_textPos.x)
+                                                        .attr("y", this.m_textPos.y);
+
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Corpus Cluster View")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+            }
         }.bind(this));
     });
 
@@ -1901,7 +1997,7 @@ var TWiC = (function(namespace){
 
 
         // Add my text to the container's control bar
-        this.AddBarText();
+        this.AddBarText(false);
 
         this.InitializeGraph();
     });
@@ -2150,7 +2246,8 @@ var TWiC = (function(namespace){
                     this.m_rootIndex = -1;
 
                     this.m_controlBar.m_barText.selectAll("*").remove();
-                    this.AddBarText(50, "top");
+                    //this.AddBarText(50, "top");
+                    this.AddBarText(false);
 
                     // Re-initialize and start the graph
                     this.InitializeGraph();
@@ -2175,58 +2272,88 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TextClusterView.method("AddBarText", function(){
+    namespace.TextClusterView.method("AddBarText", function(p_altText){
 
         this.m_controlBar.AddText(function(p_controlBar){
 
-            p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                    .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                    .attr("y", p_controlBar.GetNextWidgetPos().y);
+            if ( p_controlBar.m_barText ){
+                p_controlBar.m_barText.selectAll("*").remove();
+            }
+            if ( !this.m_textFirstSet ){
+                this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                this.m_textFirstSet = true;
+            }
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue).style("opacity", 1.0);
+            if ( !p_altText ){
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("TWiC:&nbsp;&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", this.m_textPos.x)
+                                                        .attr("y", this.m_textPos.y);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("Texts with Top Topic of&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue).style("opacity", 1.0);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(this.m_clusterIndex)
-                                  .attr("fill", this.m_level.m_topicColors[this.m_clusterIndex])
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 24);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("&nbsp;in&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Texts with Top Topic of&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(this.m_level.m_corpusMap["name"])
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightblue)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_clusterIndex)
+                                      .attr("fill", this.m_level.m_topicColors[this.m_clusterIndex])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 24);
 
-            /*var myTip = d3.tip().attr("class", "d3-tip")
-                                .direction("s")
-                                .offset([0,0])
-                                .html("Corpus-Cluster View: One level below the corpus view, texts are clustered by their top topic<br>" +
-                                      "represented with similar abstraction. At the center of the graph\nlies the central statistical<br>" +
-                                      "measure by which all clusters of texts are measured. In the case on display, the top 10 topics<br>" +
-                                      "of each cluster is shown through the bullseye-like shape (with the most central topic at its center),<br>" +
-                                      "and those clusters are shown at a computed distance from the average topic distribution of the corpus.");
+                p_controlBar.m_barText.append("tspan")
+                                      .html("&nbsp;in&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
 
-            this.m_svg.call(myTip);
-            this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
-                                           .on(namespace.Interaction.mouseout, myTip.hide);*/
+                p_controlBar.m_barText.append("tspan")
+                                      .html(this.m_level.m_corpusMap["name"])
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                /*var myTip = d3.tip().attr("class", "d3-tip")
+                                    .direction("s")
+                                    .offset([0,0])
+                                    .html("Corpus-Cluster View: One level below the corpus view, texts are clustered by their top topic<br>" +
+                                          "represented with similar abstraction. At the center of the graph\nlies the central statistical<br>" +
+                                          "measure by which all clusters of texts are measured. In the case on display, the top 10 topics<br>" +
+                                          "of each cluster is shown through the bullseye-like shape (with the most central topic at its center),<br>" +
+                                          "and those clusters are shown at a computed distance from the average topic distribution of the corpus.");
+
+                this.m_svg.call(myTip);
+                this.m_controlBar.m_helpBoxText.on(namespace.Interaction.mouseover, myTip.show)
+                                               .on(namespace.Interaction.mouseout, myTip.hide);*/
+            } else {
+
+                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                        .attr("x", this.m_textPos.x)
+                                                        .attr("y", this.m_textPos.y);
+
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue).style("opacity", 1.0);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Text Cluster View")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);
+            }
         }.bind(this));
     });
 
@@ -2709,7 +2836,7 @@ var TWiC = (function(namespace){
                 //this.AddHTMLAsForeignObject(data);
 
                 // Remove any old text and add my new text to the container's control bar
-                this.AddBarText();
+                this.AddBarText(false);
 
                 // Make all objects of this panel resizable and draggable
                 this.MakeResizable();
@@ -2722,56 +2849,79 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TextView.method("AddBarText", function(){
+    namespace.TextView.method("AddBarText", function(p_altText){
 
         this.m_controlBar.AddText(function(p_controlBar){
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
+            if ( !p_altText ){
 
-            if ( null == p_controlBar.m_barText ) {
-                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                        .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                        .attr("y", p_controlBar.GetNextWidgetPos().y);
-            }
+                if ( !this.m_textFirstSet ){
+                    this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                    this.m_textFirstSet = true;
+                }                
 
-            if ( null != this.m_data ){
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
 
-                this.m_controlBar.m_barText.selectAll("*").remove();
+                if ( null == p_controlBar.m_barText ) {
+                    p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                            .attr("x", this.m_textPos.x)
+                                                            .attr("y", this.m_textPos.y);
+                }
+
+                if ( null != this.m_data ){
+
+                    this.m_controlBar.m_barText.selectAll("*").remove();
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("TWiC:&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("\"" + this.m_data.json.title + "\"")
+                                          .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 23);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("&nbsp;from&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("Topic Cluster " + this.m_data.clusterIndex)
+                                          .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("&nbsp;in&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html(this.m_level.m_corpusMap["name"])
+                                          .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+                }
+            } else {
+
+                p_controlBar.m_barText.selectAll("*").remove();
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html("TWiC:&nbsp;&nbsp;")
+                                      .html("TWiC:&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html("\"" + this.m_data.json.title + "\"")
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 23);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;from&nbsp;")
+                                      .html("Text View")
                                       .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("Topic Cluster " + this.m_data.clusterIndex)
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;in&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html(this.m_level.m_corpusMap["name"])
-                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 21);
             }
@@ -3156,7 +3306,45 @@ var TWiC = (function(namespace){
 
         this.m_svg.selectAll(".text_coloredword")
                   .attr("fill", function(d){ return d.locolor; });
-    });    
+    });
+
+    namespace.TextView.method("Hide", function(p_hide){
+
+        if ( p_hide ){
+
+            // Save the current dimensions for unhiding
+            this.m_recentDims = { width: this.m_container.m_size.width,
+                                  height: this.m_container.m_size.height,
+                                  extendedHeight: parseFloat(this.m_svg.attr("height")) };
+
+            // Transition will be to the minimum panel width and size of the control bar only
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: namespace.Panel.prototype.s_minimumPanelSize,
+                        height: namespace.Control.prototype.s_defaultThickness },
+                duration: 250
+            };
+        } else {
+
+            // Bring back to size before hiding
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: this.m_recentDims.width, height: this.m_recentDims.height },
+                duration: 250
+            };
+        }
+
+        // Save the current hidden state
+        this.m_hidden = p_hide;
+
+        // Change the control bar text
+        this.AddBarText(this.m_hidden);
+
+        // Resize the container
+        this.Move(transition, "end", function(){
+            $(this.m_level.m_div[0]).packery(); 
+        }.bind(this), !this.m_hidden);
+    }); 
 
     namespace.TextView.method("HighlightAllWords", function(){
 
@@ -3176,6 +3364,114 @@ var TWiC = (function(namespace){
                   .filter(function(d){ return d.topicID != p_data.topicID; })
                   .attr("fill", function(d){ return d.locolor; });
     });
+
+    namespace.TextView.method("Move", function(p_transition, p_callbackTiming, p_callback, p_expand){
+
+        // Determine the traits of the given transition
+        if ( p_transition.position ){
+            this.m_container.SetPosition(p_transition.position);
+        }
+        if ( p_transition.size ) {
+            this.m_container.SetSize(p_transition.size);
+        }
+
+        // NOTE: CSS max-width, max-height never changes
+
+        // Container transitions to its position/dimensions
+        this.m_container.m_div.transition()
+                              .duration(p_transition.duration)
+                              .style("left", this.m_container.m_coordinates.x)
+                              .style("top", this.m_container.m_coordinates.y)
+                              .style("width", this.m_container.m_size.width)
+                              .style("height", this.m_container.m_size.height);
+
+        // NOTE: Panels and control bars are relatively positioned in their parent container div
+
+        // Panel and its svg transition to new position/dimensions
+        this.m_div.transition().duration(p_transition.duration) 
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", parseInt(this.m_controlBar.m_div.style("height")))
+                               .style("width", this.m_size.width)
+                               .style("height", this.m_size.height)
+                               .each("start", function(p_transition, p_callbackTiming, p_callback, p_expand){
+
+                                   this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", p_transition.size.width)
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", p_transition.size.width)
+                                                      .attr("height", (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height)
+                                                      .attr("viewBox", "0 0 " +
+                                                                       p_transition.size.width + " " +
+                                                                       ((( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height));
+                                   this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, 0,
+                                                                  p_transition.size.width,
+                                                                  (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius));
+
+                                   /*this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", this.m_size.width)
+                                                      .style("height", this.m_size.height)
+                                                      .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", this.m_size.width)
+                                                      .attr("height", this.m_size.height)
+                                                      .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
+                                                      .each("end", function(){
+                                                          this.m_panelRect.attr("d", this.GetRectPath("bottom"));
+                                                      }.bind(this));*/
+                                
+                                   /*this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, -50,
+                                    parseInt(this.m_svg.attr("width")), parseInt(this.m_svg.attr("height")) + 100,
+                                    namespace.Panel.prototype.s_borderRadius));*/
+
+                                   this.m_svg.transition()
+                                             .duration(p_transition.duration)
+                                             .attr("width", this.m_size.width)
+                                             .attr("height", ( p_expand ) ? this.m_recentDims.extendedHeight : this.m_size.height)
+                                             .each("end", function(){
+
+                                                 if ( "end" == p_callbackTiming ){
+
+                                                    p_callback();
+                                                 }
+
+                                             }.bind(this, p_callbackTiming, p_callback));
+
+                                   if ( "start" == p_callbackTiming ){
+                                       p_callback();
+                                   }
+
+                               }.bind(this, p_transition, p_callbackTiming, p_callback, p_expand));
+
+        // Control bar and its path (not svg) transition to new position/width
+        this.m_controlBar.m_size.width = this.m_size.width;
+        this.m_controlBar.m_div.transition()
+                               .duration(p_transition.duration)
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", this.m_coordinates.y - parseInt(this.m_controlBar.m_div.style("height")) << 1)
+                               .style("width", this.m_size.width)
+                               .each("start", function(p_transition){
+                                
+                                   this.m_controlBar.m_barPath.transition()
+                                                              .duration(p_transition.duration)
+                                                              .attr("d", this.m_controlBar.GetRectPath());
+                                   this.m_controlBar.m_svg.transition()
+                                                          .duration(p_transition.duration)
+                                                          .attr("width", this.m_size.width)
+                                                          .attr("viewBox", "0 0 " + (this.m_size.width) + " " + this.m_controlBar.m_size.height);
+
+                               }.bind(this, p_transition));
+    });    
+
 
     namespace.TextView.method("OnResize", function(p_packery){
 
@@ -3365,7 +3661,7 @@ var TWiC = (function(namespace){
         this.m_level.m_queue.await(function(){        
 
             // Add my text to the container's control bar
-            this.AddBarText();    
+            this.AddBarText(false);    
 
             // Can only make resizable once control bar text is in place
             this.MakeResizable(false);  
@@ -3510,58 +3806,81 @@ var TWiC = (function(namespace){
         }        
     });
 
-    namespace.PublicationView.method("AddBarText", function(){
+    namespace.PublicationView.method("AddBarText", function(p_altText){
 
         this.m_controlBar.AddText(function(p_controlBar){
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
+            if ( !p_altText ){ 
 
-            if ( null == p_controlBar.m_barText ) {
-                p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                        .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                        .attr("y", p_controlBar.GetNextWidgetPos().y);
-            }
+                if ( !this.m_textFirstSet ){
+                    this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                    this.m_textFirstSet = true;
+                }  
 
-            if ( null != this.m_data ){
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
+
+                if ( null == p_controlBar.m_barText ) {
+                    p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
+                                                            .attr("x", this.m_textPos.x)
+                                                            .attr("y", this.m_textPos.y);
+                }
+
+                if ( null != this.m_data ){
+
+                    this.m_controlBar.m_barText.selectAll("*").remove();
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("TWiC:&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("\"" + this.m_data.title + "\"")
+                                          .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 23);
+
+                    /*p_controlBar.m_barText.append("tspan")
+                                          .html("&nbsp;from&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("Topic Cluster " + this.m_data.clusterIndex)
+                                          .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("&nbsp;in&nbsp;")
+                                          .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+
+                    p_controlBar.m_barText.append("tspan")
+                                          .html(this.m_level.m_corpusMap["name"])
+                                          .attr("fill", namespace.Level.prototype.s_palette.lightblue)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);*/
+                }
+            } else {
 
                 this.m_controlBar.m_barText.selectAll("*").remove();
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html("TWiC:&nbsp;&nbsp;")
+                                      .html("TWiC:&nbsp;")
                                       .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 21);
 
                 p_controlBar.m_barText.append("tspan")
-                                      .html("\"" + this.m_data.title + "\"")
+                                      .html("Publication View")
                                       .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 23);
-
-                /*p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;from&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("Topic Cluster " + this.m_data.clusterIndex)
-                                      .attr("fill", this.m_level.m_topicColors[this.m_data.clusterIndex])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;in&nbsp;")
-                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);
-
-                p_controlBar.m_barText.append("tspan")
-                                      .html(this.m_level.m_corpusMap["name"])
-                                      .attr("fill", namespace.Level.prototype.s_palette.lightblue)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 21);*/
+                                      .style("font-size", 23);                
             }
         }.bind(this));
     });    
@@ -4376,7 +4695,7 @@ var TWiC = (function(namespace){
                         }                
 
                         // Display the bullseye name
-                        this.AddBarText(panelTitle, panelTitleID);
+                        this.AddBarText(panelTitle, panelTitleID, false);
 
                     } else if ( p_data.shapeRef instanceof namespace.TopicRectangle ){
 
@@ -4393,7 +4712,7 @@ var TWiC = (function(namespace){
                         }
 
                         // Display the rectangle name
-                        this.AddBarText(panelTitle, panelTitleID);
+                        this.AddBarText(panelTitle, panelTitleID, false);
                     }
 
                     // Display the distance of this datashape to the average of its cluster in-panel, if applicable
@@ -4410,6 +4729,7 @@ var TWiC = (function(namespace){
                     $(this.m_div[0][0]).scrollTop(0);                  
                     this.m_panelRectSvg.attr("height", rectGrowth)
                                        .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
+                    this.m_panelRectSvg.selectAll("*").remove();
                     this.m_panelRect = this.m_panelRectSvg.append("path")
                                                           .attr("d", namespace.BottomRoundedRect(0, 
                                                                          0,
@@ -4460,41 +4780,67 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.DataBar.method("AddBarText", function(p_barText, p_id){
+    namespace.DataBar.method("AddBarText", function(p_barText, p_id, p_altText){
 
-         this.m_controlBar.AddText(function(p_controlBar){
+        this.m_controlBar.AddText(function(p_controlBar){
 
             // Remove any former panel title first
             p_controlBar.m_controlGroup.selectAll("text").remove("*");
 
+            if ( !this.m_textFirstSet ){
+                this.m_textPos = { x: p_controlBar.GetNextWidgetPos().x, y: p_controlBar.GetNextWidgetPos().y };
+                this.m_textFirstSet = true;
+            }            
+
             p_controlBar.m_barText = p_controlBar.m_controlGroup.append("text")
-                                                                .attr("x", p_controlBar.GetNextWidgetPos().x)
-                                                                .attr("y", p_controlBar.GetNextWidgetPos().y);
+                                                                .attr("x", this.m_textPos.x)
+                                                                .attr("y", this.m_textPos.y);
 
-            p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                  .style("opacity", 1.0);
+            if ( !p_altText ){
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html("TWiC:&nbsp;")
-                                  .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 25);
+                this.m_recentPanelTitle = p_barText;
+                this.m_recentPanelID = p_id;
 
-            p_controlBar.m_barText.append("tspan")
-                                  .html(p_barText)
-                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
-                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                  .style("font-size", 21);
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
 
-            if ( "" !== p_id ){
                 p_controlBar.m_barText.append("tspan")
-                                      .html("&nbsp;" + p_id)
-                                      .attr("fill", this.m_level.m_topicColors[p_id])
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html(p_barText)
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
                                       .style("font-family", namespace.Level.prototype.s_fontFamily)
                                       .style("font-size", 21);
-            }
 
-        }.bind(this));   
+                if ( "" !== p_id ) {
+                    p_controlBar.m_barText.append("tspan")
+                                          .html("&nbsp;" + p_id)
+                                          .attr("fill", this.m_level.m_topicColors[p_id])
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 21);
+                }
+            } else {
+
+                p_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                      .style("opacity", 1.0);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("TWiC:&nbsp;")
+                                      .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 25);
+
+                p_controlBar.m_barText.append("tspan")
+                                      .html("Data Bar")
+                                      .attr("fill", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 21);                                                   
+            }
+         }.bind(this));   
     });
 
     namespace.DataBar.method("DrawMetaDataTiles", function(p_currentY, p_data, p_dist2avg, p_textCount){
@@ -4572,6 +4918,155 @@ var TWiC = (function(namespace){
 
         return p_currentY;
     });
+
+    namespace.DataBar.method("Hide", function(p_hide){
+
+        if ( p_hide ){
+
+            // Save the current dimensions for unhiding
+            this.m_recentDims = { width: this.m_container.m_size.width,
+                                  height: this.m_container.m_size.height,
+                                  extendedHeight: parseFloat(this.m_svg.attr("height")) };
+
+            // Transition will be to the minimum panel width and size of the control bar only
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: namespace.Panel.prototype.s_minimumPanelSize,
+                        height: namespace.Control.prototype.s_defaultThickness },
+                duration: 250
+            };
+        } else {
+
+            // Bring back to size before hiding
+            var transition = {
+                position: { x: this.m_container.m_coordinates.x, y: this.m_container.m_coordinates.y },
+                size: { width: this.m_recentDims.width, height: this.m_recentDims.height },
+                duration: 250
+            };
+        }
+
+        // Save the current hidden state
+        this.m_hidden = p_hide;
+
+        // Change the control bar text
+        if ( this.m_hidden ){
+            this.AddBarText("", 0, true);
+        } else {
+            this.AddBarText(this.m_recentPanelTitle, this.m_recentPanelID, false);
+        }
+
+        // Resize the container
+        this.Move(transition, "end", function(){
+            $(this.m_level.m_div[0]).packery(); 
+        }.bind(this), !this.m_hidden);
+    });
+
+    namespace.DataBar.method("Move", function(p_transition, p_callbackTiming, p_callback, p_expand){
+
+        // Determine the traits of the given transition
+        if ( p_transition.position ){
+            this.m_container.SetPosition(p_transition.position);
+        }
+        if ( p_transition.size ) {
+            this.m_container.SetSize(p_transition.size);
+        }
+
+        // NOTE: CSS max-width, max-height never changes
+
+        // Container transitions to its position/dimensions
+        this.m_container.m_div.transition()
+                              .duration(p_transition.duration)
+                              .style("left", this.m_container.m_coordinates.x)
+                              .style("top", this.m_container.m_coordinates.y)
+                              .style("width", this.m_container.m_size.width)
+                              .style("height", this.m_container.m_size.height);
+
+        // NOTE: Panels and control bars are relatively positioned in their parent container div
+
+        // Panel and its svg transition to new position/dimensions
+        this.m_div.transition().duration(p_transition.duration) 
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", parseInt(this.m_controlBar.m_div.style("height")))
+                               .style("width", this.m_size.width)
+                               .style("height", this.m_size.height)
+                               .each("start", function(p_transition, p_callbackTiming, p_callback, p_expand){
+
+                                   this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", p_transition.size.width)
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", p_transition.size.width)
+                                                      .attr("height", (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height)
+                                                      .attr("viewBox", "0 0 " +
+                                                                       p_transition.size.width + " " +
+                                                                       ((( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height));
+                                   this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, 0,
+                                                                  p_transition.size.width,
+                                                                  (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius));
+
+                                   /*this.m_panelRectDiv.transition()
+                                                      .duration(p_transition.duration)
+                                                      .style("width", this.m_size.width)
+                                                      .style("height", this.m_size.height)
+                                                      .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                   this.m_panelRectSvg.transition()
+                                                      .duration(p_transition.duration)
+                                                      .attr("width", this.m_size.width)
+                                                      .attr("height", this.m_size.height)
+                                                      .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height)
+                                                      .each("end", function(){
+                                                          this.m_panelRect.attr("d", this.GetRectPath("bottom"));
+                                                      }.bind(this));*/
+                                
+                                   /*this.m_panelRect.transition()
+                                                   .duration(p_transition.duration)
+                                                   .attr("d", namespace.BottomRoundedRect(0, -50,
+                                    parseInt(this.m_svg.attr("width")), parseInt(this.m_svg.attr("height")) + 100,
+                                    namespace.Panel.prototype.s_borderRadius));*/
+
+                                   this.m_svg.transition()
+                                             .duration(p_transition.duration)
+                                             .attr("width", this.m_size.width)
+                                             .attr("height", ( p_expand ) ? this.m_recentDims.extendedHeight : this.m_size.height)
+                                             .each("end", function(){
+
+                                                 if ( "end" == p_callbackTiming ){
+
+                                                    p_callback();
+                                                 }
+
+                                             }.bind(this, p_callbackTiming, p_callback));
+
+                                   if ( "start" == p_callbackTiming ){
+                                       p_callback();
+                                   }
+
+                               }.bind(this, p_transition, p_callbackTiming, p_callback, p_expand));
+
+        // Control bar and its path (not svg) transition to new position/width
+        this.m_controlBar.m_size.width = this.m_size.width;
+        this.m_controlBar.m_div.transition()
+                               .duration(p_transition.duration)
+                               //.style("left", this.m_coordinates.x)
+                               //.style("top", this.m_coordinates.y - parseInt(this.m_controlBar.m_div.style("height")) << 1)
+                               .style("width", this.m_size.width)
+                               .each("start", function(p_transition){
+                                
+                                   this.m_controlBar.m_barPath.transition()
+                                                              .duration(p_transition.duration)
+                                                              .attr("d", this.m_controlBar.GetRectPath());
+                                   this.m_controlBar.m_svg.transition()
+                                                          .duration(p_transition.duration)
+                                                          .attr("width", this.m_size.width)
+                                                          .attr("viewBox", "0 0 " + (this.m_size.width) + " " + this.m_controlBar.m_size.height);
+
+                               }.bind(this, p_transition));
+    });    
 
     namespace.DataBar.method("OnResize", function(p_packery){
 

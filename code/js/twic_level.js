@@ -755,7 +755,8 @@ var TWiC = (function(namespace){
                                             "beige": "#DFDAC4", "lightpurple": "#D8D8FF",
                                             "logold": namespace.ShadeBlend(-0.50, "#FAFAD2"), 
                                             "deeppurple": "#15053C",
-                                            "minimize": "#FDB124", "maximize": "#28C231", "tile": "#0A2D50" };
+                                            "hide": "#FB4645", "minimize": "#FDB124", "maximize": "#28C231",
+                                            "tile": "#0A2D50" };
     namespace.Level.prototype.s_twicLevels = [];
 
     // Creating a Level instance also adds it to the TWiC level list

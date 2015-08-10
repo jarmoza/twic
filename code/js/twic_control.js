@@ -63,6 +63,7 @@ var TWiC = (function(namespace){
         this.m_barText = null;
         this.m_nextControlWidgetPos = { x: this.m_barThickness >> 1, 
                                         y: this.m_barThickness * 0.65 };
+        this.m_textFirstSet = false;
     };
 
     namespace.Control.method("GetNextWidgetPos", function(){
@@ -161,9 +162,19 @@ var TWiC = (function(namespace){
 
     namespace.Control.method("AddPanelSizeControls", function(){
 
-        // Add the minimize button
+        // Add the hide button
         this.m_controlGroup.append("circle")
                            .attr("cx", this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("r", namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("fill", namespace.Level.prototype.s_palette.hide)
+                           .on(namespace.Interaction.click, function(){
+                               this.m_panel.Hide(!this.m_panel.m_hidden);
+                           }.bind(this));
+
+        // Add the minimize button
+        this.m_controlGroup.append("circle")
+                           .attr("cx", this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius))
                            .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.minimize)
@@ -173,7 +184,7 @@ var TWiC = (function(namespace){
 
         // Add the maximize button
         this.m_controlGroup.append("circle")
-                           .attr("cx", this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius))
+                           .attr("cx", this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius))
                            .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.maximize)
@@ -182,7 +193,7 @@ var TWiC = (function(namespace){
                            }.bind(this));
 
         // Set the position for the next control to be added
-        this.SetNextWidgetPos({ x: this.m_nextControlWidgetPos.x + 4 + (6 * namespace.Control.prototype.s_sizeControlRadius),
+        this.SetNextWidgetPos({ x: this.m_nextControlWidgetPos.x + 8 + (9 * namespace.Control.prototype.s_sizeControlRadius),
                                 y: this.GetNextWidgetPos().y });
     });
 
