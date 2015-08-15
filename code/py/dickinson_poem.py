@@ -327,6 +327,11 @@ class Poem:
 
         print 'Comparing poems...'
 
+        # Pre-1998 check
+        for index in range(first_poem_number, last_poem_number + 1):
+            if '1998' != all_poem_collection[index].GetPublicationDate():
+                poem_written_statuses[index] = True
+
         # Compare all poems to determine similarity matches and filter them out of final corpus
         for index in range(first_poem_number, last_poem_number + 1):
 
@@ -334,12 +339,18 @@ class Poem:
                 continue
 
             # NOTE: Presently only interested in R.W. Franklin's 1998 Varorium edition poems
-            if '1998' == all_poem_collection[index].GetPublicationDate():
-                all_poem_collection[index].ConvertToPlainText(output_directory, output_filename.format(index))
+            #if '1998' == all_poem_collection[index].GetPublicationDate():
+            #    all_poem_collection[index].ConvertToPlainText(output_directory, output_filename.format(index))
+            #    poem_written_statuses[index] = True
+            #    continue               
+            #else:
+            #    continue
+
+            if '1998' != all_poem_collection[index].GetPublicationDate():
                 poem_written_statuses[index] = True
-                continue               
-            else:
                 continue
+
+            print "Comparing poem {0} out of {1}".format(index, last_poem_number + 1)
 
             #print 'Gathering poems similar to {0}'.format(index)
 
@@ -347,7 +358,7 @@ class Poem:
             similar_poems = [index]
             for index2 in range(first_poem_number, last_poem_number + 1):
 
-                if index == index2 or poem_written_statuses[index2]:
+                if index == index2 or poem_written_statuses[index2] or '1998' != all_poem_collection[index2].GetPublicationDate():
                     continue
 
                 if Poem.IsPoemSimilar(all_poem_collection[index], all_poem_collection[index2]):
@@ -357,24 +368,18 @@ class Poem:
 
             # If poems bear similarity then determine which one to write out
             if len(similar_poems) > 1:
-                # found_alone = False
-                # for p in similar_poems:
-                #     if 'circumstance' in all_poem_collection[p].GetTitle():
-                #         found_alone = True
-                # if found_alone:
-                #     for p in similar_poems:
-                #         print '======== SIMILAR POEM {0} ========'.format(p)
-                #         print 'Publication date: {0}'.format(all_poem_collection[p].GetPublicationDate())
 
-                publication_date = 0
-                latest_poem_index = 0
-                for poem_index in similar_poems:
-                    if int(all_poem_collection[poem_index].GetPublicationDate()) > publication_date:
-                        latest_poem_index = poem_index
-                        publication_date = all_poem_collection[latest_poem_index].GetPublicationDate()
-                # if found_alone:
-                #     print all_poem_collection[latest_poem_index].GetPublicationDate()
-                #     print '================================'
+                print "Found {0} similar poems".format(len(similar_poems))
+
+                # publication_date = 0
+                # latest_poem_index = 0
+                # for poem_index in similar_poems:
+                #     if int(all_poem_collection[poem_index].GetPublicationDate()) > publication_date:
+                #         latest_poem_index = poem_index
+                #         publication_date = all_poem_collection[latest_poem_index].GetPublicationDate()
+
+                latest_poem_index = similar_poems[0]
+
 
                 # Write out the latest poem and skip the others
                 all_poem_collection[latest_poem_index].ConvertToPlainText(output_directory, output_filename.format(latest_poem_index))

@@ -13,6 +13,7 @@
                                          twicLevel); // Level reference*/
 
         var screenDims = TWiC.GetAvailableScreenSpace();
+        var topicBarDims = { width: screenDims.width, height: (2 * TWiC.TopicBar.prototype.s_minHeight) };
 
         /*var corpusView = new TWiC.CorpusView({x: 0, y: 0}, // Panel position
                                              {width: 1275, height: 635}, // Panel size
@@ -21,19 +22,19 @@
                                              10); // Number of topics to display*/
 
         var corpusView = new TWiC.CorpusView({ x: 0, y: 0 }, // Panel position
-                                             { width: screenDims.width, height: screenDims.height - (2 * TWiC.TopicBar.prototype.s_minHeight) }, // Panel size
-                                             twicLevel, // Level reference 
-                                             //225, // Bullseye radius
-                                             (screenDims.height - (2 * TWiC.TopicBar.prototype.s_minHeight)) / 3.0,
+                                             { width: (screenDims.width >> 1) + (screenDims.width >> 2),
+                                               height: screenDims.height - topicBarDims.height }, // Panel size
+                                             twicLevel, // Reference to Level instance 
+                                             (screenDims.height - topicBarDims.height) / 3.0, // Bullseye radius
                                              10); // Number of topics to display
 
-        var topicBar = new TWiC.TopicBar({ x: 0, y: screenDims.height - (2 * TWiC.TopicBar.prototype.s_minHeight) }, // Panel position
-                                         { width: screenDims.width, height: (2 * TWiC.TopicBar.prototype.s_minHeight) }, // Panel size
-                                         twicLevel); // Level reference
+        var topicBar = new TWiC.TopicBar({ x: 0, y: screenDims.height - topicBarDims.height }, // Panel position
+                                         { width: topicBarDims.width, height: topicBarDims.height }, // Panel size
+                                         twicLevel); // Reference to Level instance
 
-        var documentBar = new TWiC.DataBar({ x: 0, y: screenDims.height },
-                                               {width: screenDims.width >> 2, height: 1000},
-                                               twicLevel, []);        
+        var dataBar = new TWiC.DataBar({ x: corpusView.m_size.width, y: 0 }, // Panel position
+                                           { width: screenDims.width >> 2, height: screenDims.height - topicBarDims.height }, // Panel size
+                                           twicLevel); // Reference to Level instance        
 
 
         /*var corpusClusterView = new TWiC.CorpusClusterView({x: 1276, y: 0}, // Position
@@ -54,8 +55,8 @@
 
         // All views are linked to the topic bar
         corpusView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
-        corpusView.AddLinkedView(documentBar, TWiC.Interaction.mouseover);
-        //corpusView.AddLinkedView(documentBar, TWiC.Interaction.click);
+        corpusView.AddLinkedView(dataBar, TWiC.Interaction.mouseover);
+        //corpusView.AddLinkedView(dataBar, TWiC.Interaction.click);
         //corpusClusterView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
         //textClusterView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
         //textView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
@@ -90,12 +91,12 @@
 
         // Topic bar
         topicBar.AddLinkedView(corpusView, TWiC.Interaction.click);
-        topicBar.AddLinkedView(documentBar, TWiC.Interaction.click);
+        topicBar.AddLinkedView(dataBar, TWiC.Interaction.click);
 
         // Document bar
-        documentBar.AddLinkedView(corpusView, TWiC.Interaction.click);
-        documentBar.AddLinkedView(corpusView, TWiC.Interaction.mouseover);
-        documentBar.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
+        dataBar.AddLinkedView(corpusView, TWiC.Interaction.click);
+        dataBar.AddLinkedView(corpusView, TWiC.Interaction.mouseover);
+        dataBar.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
 
         // Initialize the level
         twicLevel.Initialize({x: 0, y: 0}, // Position

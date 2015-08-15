@@ -116,7 +116,9 @@ class MalletScript:
             '{0}'.format(self.corpus_source_dir),
             '--output',
             self.mallet_file,
-            '--token-regex [\p{L}\p{P}]*\p{L}',
+            #'--token-regex [\p{L}\p{P}]*\p{L}',
+            '--token-regex \p{L}+\p{P}*\p{L}+',
+            #'--token-regex \p{L}+\p{P}*([[a-r][t-z][A-Z]]+|[s]{2,})',
             '--keep-sequence',
             '--remove-stopwords',
             '--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)

@@ -44,6 +44,20 @@ var TWiC = (function(namespace){
            + "z";
     };
 
+    namespace.FullyRoundedRect = function(p_x, p_y, p_width, p_height, p_borderRadius){
+
+        return "M" + (p_x + p_borderRadius) + "," + p_y
+           + "h" + (p_width - 2 * p_borderRadius)
+           + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + p_borderRadius
+           + "v" + (p_height - 2 * p_borderRadius)
+           + "a" + -p_borderRadius + "," + p_borderRadius + " 0 0 1 " + -p_borderRadius + "," + p_borderRadius
+           + "h" + -(p_width - 2 * p_borderRadius)
+           + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + -p_borderRadius + "," + -p_borderRadius
+           + "v" + -(p_height - 2 * p_borderRadius)
+           + "a" + p_borderRadius + "," + p_borderRadius + " 0 0 1 " + p_borderRadius + "," + -p_borderRadius
+           + "z";
+    };
+
 
     namespace.Control = function(p_barThickness, p_orientation){
 
@@ -70,13 +84,14 @@ var TWiC = (function(namespace){
 
         return this.m_nextControlWidgetPos;
     });
+
     namespace.Control.method("SetNextWidgetPos", function(p_nextPos){
 
         this.m_nextControlWidgetPos.x = p_nextPos.x;
         this.m_nextControlWidgetPos.y = p_nextPos.y;
     });
 
-    namespace.Control.method("Initialize", function(p_parentDiv, p_fadeInControlBar){
+    namespace.Control.method("Initialize", function(p_parentDiv){
 
         // Get string for control bar path rect
         var path = this.GetRectPath();
@@ -130,6 +145,8 @@ var TWiC = (function(namespace){
         // Help
 
         // Search
+
+        var x = 0;
     });
 
     namespace.Control.method("AddHelp", function(){
@@ -168,9 +185,26 @@ var TWiC = (function(namespace){
                            .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.hide)
+                           .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                                namespace.Level.prototype.s_palette.hide))
+                           .attr("stroke-width", 1)                           
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Hide(!this.m_panel.m_hidden);
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseover, function(){
+                               this.HighlightPanelSizeControls(true);
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseout, function(){
+                               this.HighlightPanelSizeControls(false);                              
                            }.bind(this));
+
+        this.DrawChevron({ x: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
+                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
+                           "up");
+        this.DrawChevron({ x: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
+                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
+                           "down");
+
 
         // Add the minimize button
         this.m_controlGroup.append("circle")
@@ -178,9 +212,21 @@ var TWiC = (function(namespace){
                            .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.minimize)
+                           .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                                namespace.Level.prototype.s_palette.minimize))
+                           .attr("stroke-width", 1)                           
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Minimize();
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseover, function(){
+                               this.HighlightPanelSizeControls(true);
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseout, function(){
+                               this.HighlightPanelSizeControls(false);
                            }.bind(this));
+
+        this.DrawMinus({ x: this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius),
+                         y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
 
         // Add the maximize button
         this.m_controlGroup.append("circle")
@@ -188,9 +234,21 @@ var TWiC = (function(namespace){
                            .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.maximize)
+                           .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                                namespace.Level.prototype.s_palette.maximize))
+                           .attr("stroke-width", 1)
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Maximize();
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseover, function(){
+                               this.HighlightPanelSizeControls(true);
+                           }.bind(this))
+                           .on(namespace.Interaction.mouseout, function(){
+                               this.HighlightPanelSizeControls(false);
                            }.bind(this));
+
+        this.DrawPlus({ x: this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius),
+                        y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
 
         // Set the position for the next control to be added
         this.SetNextWidgetPos({ x: this.m_nextControlWidgetPos.x + 8 + (9 * namespace.Control.prototype.s_sizeControlRadius),
@@ -229,9 +287,9 @@ var TWiC = (function(namespace){
                                             .attr("value", "");
     });
 
-    namespace.Control.method("AddText", function(p_addTextCallback){ 
+    namespace.Control.method("AddText", function(p_addTextCallback){
 
-      p_addTextCallback(this);
+        p_addTextCallback(this);
     });
 
     namespace.Control.method("DetermineDimensions", function(){
@@ -258,13 +316,108 @@ var TWiC = (function(namespace){
         };
     });
 
+    namespace.Control.method("DrawChevron", function(p_coordinates, p_direction){
+
+        var barSize = namespace.Control.prototype.s_sizeControlRadius;
+
+        switch ( p_direction ){
+
+            case "up":
+
+                // Left bar
+                this.m_hideHighlightLU = this.m_controlGroup.append("line")
+                                                           .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 3))
+                                                           .attr("y1", p_coordinates.y + (barSize >> 1))
+                                                           .attr("x2", p_coordinates.x)
+                                                           .attr("y2", p_coordinates.y - (barSize >> 1))
+                                                           .attr("stroke", namespace.Level.prototype.s_palette.hide_highlight)
+                                                           .attr("stroke-width", 2)
+                                                           .style("opacity", 0);
+                // Right bar
+                this.m_hideHighlightRU = this.m_controlGroup.append("line")
+                                                           .attr("x1", p_coordinates.x)
+                                                           .attr("y1", p_coordinates.y - (barSize >> 1))
+                                                           .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 3))
+                                                           .attr("y2", p_coordinates.y + (barSize >> 1))
+                                                           .attr("stroke", namespace.Level.prototype.s_palette.hide_highlight)
+                                                           .attr("stroke-width", 2)
+                                                           .style("opacity", 0);
+                break;
+
+
+            case "down":
+
+                // Left bar
+                this.m_hideHighlightLD = this.m_controlGroup.append("line")
+                                                           .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 3))
+                                                           .attr("y1", p_coordinates.y - (barSize >> 2))
+                                                           .attr("x2", p_coordinates.x)
+                                                           .attr("y2", p_coordinates.y + (barSize >> 1) + (barSize >> 3))
+                                                           .attr("stroke", namespace.Level.prototype.s_palette.hide_highlight)
+                                                           .attr("stroke-width", 2)
+                                                           .style("opacity", 0);
+
+                // Right bar
+                this.m_hideHighlightRD = this.m_controlGroup.append("line")
+                                                           .attr("x1", p_coordinates.x)
+                                                           .attr("y1", p_coordinates.y + (barSize >> 1) + (barSize >> 3))
+                                                           .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 3))
+                                                           .attr("y2", p_coordinates.y - (barSize >> 2))
+                                                           .attr("stroke", namespace.Level.prototype.s_palette.hide_highlight)
+                                                           .attr("stroke-width", 2)
+                                                           .style("opacity", 0);
+
+                break;
+        }
+    });
+
+    namespace.Control.method("DrawMinus", function(p_coordinates){
+
+        var barSize = namespace.Control.prototype.s_sizeControlRadius;
+
+        // Horizontal bar
+        this.m_minHighlight = this.m_controlGroup.append("line")
+                                                 .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 3))
+                                                 .attr("y1", p_coordinates.y)
+                                                 .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 3))
+                                                 .attr("y2", p_coordinates.y)
+                                                 .attr("stroke", namespace.Level.prototype.s_palette.min_highlight)
+                                                 .attr("stroke-width", 2)
+                                                 .style("opacity", 0);        
+    });
+
+    namespace.Control.method("DrawPlus", function(p_coordinates){
+
+        var barSize = namespace.Control.prototype.s_sizeControlRadius;
+
+        // Horizontal bar
+        this.m_maxHighlightH = this.m_controlGroup.append("line")
+                                                  .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 3))
+                                                  .attr("y1", p_coordinates.y)
+                                                  .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 3))
+                                                  .attr("y2", p_coordinates.y)
+                                                  .attr("stroke", namespace.Level.prototype.s_palette.max_highlight)
+                                                  .attr("stroke-width", 2)
+                                                  .style("opacity", 0);
+
+        // Vertical bar
+        this.m_maxHighlightV = this.m_controlGroup.append("line")
+                                                  .attr("x1", p_coordinates.x)
+                                                  .attr("y1", p_coordinates.y - (barSize >> 1) - (barSize >> 3))
+                                                  .attr("x2", p_coordinates.x)
+                                                  .attr("y2", p_coordinates.y + (barSize >> 1) + (barSize >> 3))
+                                                  .attr("stroke", namespace.Level.prototype.s_palette.max_highlight)
+                                                  .attr("stroke-width", 2)
+                                                  .style("opacity", 0);
+    });
+
     namespace.Control.method("GetRectPath", function(){
       
         // Determine the type of partially-rounded rectangle to draw
         switch ( this.m_orientation ){
 
             case 'top':
-                var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.x,
+                var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                     this.m_size.width, this.m_size.height,
                                                     namespace.Control.prototype.s_borderRadius);
                 //this.m_panel.m_coordinates.y += this.m_size.height;
@@ -290,6 +443,51 @@ var TWiC = (function(namespace){
         return path;
     });
 
+    namespace.Control.method("HighlightPanelSizeControls", function(p_highlight){
+
+        // Highlight all
+        if ( p_highlight ){
+
+            // Hide control
+            if ( this.m_panel.m_hidden ){
+
+                this.m_hideHighlightLD.style("opacity", 1.0);
+                this.m_hideHighlightRD.style("opacity", 1.0);
+                this.m_hideHighlightLU.style("opacity", 0);
+                this.m_hideHighlightRU.style("opacity", 0);
+            } else {
+
+                this.m_hideHighlightLU.style("opacity", 1.0);
+                this.m_hideHighlightRU.style("opacity", 1.0);
+                this.m_hideHighlightLD.style("opacity", 0);
+                this.m_hideHighlightRD.style("opacity", 0);                               
+            }
+
+            // Minimize control
+            this.m_minHighlight.style("opacity", 1.0);
+
+            // Maximize control
+            this.m_maxHighlightH.style("opacity", 1.0);
+            this.m_maxHighlightV.style("opacity", 1.0);
+
+          // Unhighlight all        
+        } else {
+
+            // Hide control
+            this.m_hideHighlightLD.style("opacity", 0);
+            this.m_hideHighlightRD.style("opacity", 0);
+            this.m_hideHighlightLU.style("opacity", 0);
+            this.m_hideHighlightRU.style("opacity", 0);
+
+            // Minimize control
+            this.m_minHighlight.style("opacity", 0);
+
+            // Maximize control
+            this.m_maxHighlightH.style("opacity", 0);
+            this.m_maxHighlightV.style("opacity", 0);            
+        }
+    });
+
     namespace.Control.method("SetContainer", function(p_container){
 
         this.m_container = p_container;
@@ -302,7 +500,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = p_coordinates.y;
     });
 
-    namespace.Control.method("SetSize", function(p_size) {
+    namespace.Control.method("SetSize", function(p_size){
         
         this.m_size.width = p_size.width;
         this.m_size.height = p_size.height;
@@ -316,7 +514,6 @@ var TWiC = (function(namespace){
 
     namespace.Control.prototype.s_defaultThickness = 50;
     namespace.Control.prototype.s_borderRadius = 15;
-    //namespace.Control.prototype.s_sizeControlRadius = 12;
     namespace.Control.prototype.s_sizeControlRadius = 9;
 
     return namespace;

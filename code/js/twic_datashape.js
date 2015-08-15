@@ -25,9 +25,15 @@ var TWiC = (function(namespace){
         return allow;
     });
 
-    namespace.DataShape.method("Draw", function(p_node){ });
+    namespace.DataShape.method("Draw", function(p_node){
+
+        var x = 0;
+    });
     
-    namespace.DataShape.method("Load", function(){ });
+    namespace.DataShape.method("Load", function(){
+
+        var x = 0;
+    });
 
     namespace.DataShape.prototype.s_colorHighlight = 0.50;
     namespace.DataShape.prototype.s_colorMidlight = -0.25;
@@ -37,9 +43,7 @@ var TWiC = (function(namespace){
     namespace.DataShape.prototype.s_semihighlightedOpacity = 0.3;
 
     // TWiC TopicBullseye (inherits from DataShape)
-    namespace.TopicBullseye = function(p_coordinates, p_size, p_nodeIndex, p_level,
-                                       p_panel, p_linkedViews, p_numberCircles, p_topics,
-                                       p_title, p_corpusBullseye){                                       
+    namespace.TopicBullseye = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_title, p_corpusBullseye){
         
         // Apply the base class arguments
         namespace.DataShape.apply(this, arguments);
@@ -87,7 +91,6 @@ var TWiC = (function(namespace){
         } else {
             this.m_textCount = this.m_level.m_corpusMap["children"][parseInt(p_title)]["children"].length;
         }
-
     };
     namespace.TopicBullseye.inherits(namespace.DataShape);
 
@@ -261,9 +264,43 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TopicBullseye.method("SetScaledRadius", function(p_state){ this.m_scaledRadius = p_state; });
+    namespace.TopicBullseye.method("SetPanelNodeIndex", function(p_panelNodeIndex){
 
-    namespace.TopicBullseye.method("SetTextCount", function(p_textCount){ this.m_textCount = p_textCount; });
+        this.m_panelNodeIndex = p_panelNodeIndex;
+    });
+
+    namespace.TopicBullseye.method("SetScaledRadius", function(p_state){
+
+        this.m_scaledRadius = p_state;
+    });
+
+    namespace.TopicBullseye.method("SetX", function(p_newX){
+
+        this.m_coordinates.x = p_newX;
+
+        this.m_shapeGroup.selectAll("path")
+                         .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," +
+                                                           this.m_coordinates.y.toString() + ")");
+        this.m_shapeGroup.selectAll("circle")
+                         .attr("cx", this.m_coordinates.x);
+
+    });
+
+    namespace.TopicBullseye.method("SetY", function(p_newY){
+
+        this.m_coordinates.y = p_newY;
+
+        this.m_shapeGroup.selectAll("path")
+                         .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," +
+                                                           this.m_coordinates.y.toString() + ")");
+        this.m_shapeGroup.selectAll("circle")
+                         .attr("cy", this.m_coordinates.y);        
+    });    
+
+    namespace.TopicBullseye.method("SetTextCount", function(p_textCount){
+
+        this.m_textCount = p_textCount;
+    });
 
     namespace.TopicBullseye.prototype.s_shapeChar == "b";
 
@@ -336,7 +373,7 @@ var TWiC = (function(namespace){
                .style("opacity", p_opacity);
     });
 
-    namespace.TopicRectangle.method("BuildTipLines", function () {
+    namespace.TopicRectangle.method("BuildTipLines", function(){
 
         // Extract the lines of text
         var textLines = [];
@@ -364,24 +401,24 @@ var TWiC = (function(namespace){
         }
     });    
 
-    namespace.TopicRectangle.method("CalculateSize", function () {
+    namespace.TopicRectangle.method("CalculateSize", function(){
 
-        this.m_size = { "width": 0,
-                        "height": (this.m_data.lines_and_colors.length *
-                                   (namespace.TopicRectangle.prototype.strokeWidth + namespace.TopicRectangle.prototype.spaceBetweenLines)) +
-                                    (4 * namespace.TopicRectangle.prototype.borderWidth) - (2 * namespace.TopicRectangle.prototype.spaceBetweenLines) };
+        this.m_size = { width: 0,
+                        height: (this.m_data.lines_and_colors.length *
+                                 (namespace.TopicRectangle.prototype.strokeWidth + namespace.TopicRectangle.prototype.spaceBetweenLines)) +
+                                 (4 * namespace.TopicRectangle.prototype.borderWidth) - (2 * namespace.TopicRectangle.prototype.spaceBetweenLines) };
 
         for ( var index = 0; index < this.m_data.lines_and_colors.length; index ++ ) {
 
             var wordCountPixels = Object.keys(this.m_data.lines_and_colors[index][1]).length * namespace.TopicRectangle.prototype.wordLength;
             if ( wordCountPixels > this.m_size["width"] ) {
-                this.m_size["width"] = wordCountPixels;
+                this.m_size.width = wordCountPixels;
             }
         }
 
         this.m_radius = Math.sqrt(((this.m_size.width >> 1) * (this.m_size.width >> 1)) + ((this.m_size.height >> 1) * (this.m_size.height >> 1)));
 
-        this.m_size["width"] += (4 * namespace.TopicRectangle.prototype.spaceAroundText);
+        this.m_size.width += (4 * namespace.TopicRectangle.prototype.spaceAroundText);
 
         // Set local coordinates of based on calculated width and height
         this.m_coordinates.x -= this.m_size.width >> 1;
@@ -523,7 +560,7 @@ var TWiC = (function(namespace){
         }                            
     });
 
-    namespace.TopicRectangle.method("Draw", function() {
+    namespace.TopicRectangle.method("Draw", function(){
 
         // Append a new group element to the svg, this will represent the TopicRectangle's overall "node"
         this.m_node = this.m_panel.m_clusterSvgGroup.append("g")
@@ -746,15 +783,15 @@ var TWiC = (function(namespace){
         }
     });
 
-    namespace.TopicRectangle.method("IsPointInRect", function(p_point) {
+    namespace.TopicRectangle.method("IsPointInRect", function(p_point){
 
         return ( p_point[0] > this.m_coordinates.x && p_point[0] < this.m_size.width &&
                  p_point[1] > this.m_coordinates.y && p_point[1] < this.m_size.height );
     });
 
-    namespace.TopicRectangle.method("Load", function() {
+    namespace.TopicRectangle.method("Load", function(){
 
-        this.m_level.m_queue.defer(function(callback) {
+        this.m_level.m_queue.defer(function(callback){
 
             // Queue up loading of the text
             d3.json(namespace.TopicRectangle.prototype.jsonDirectory + this.m_name + ".json", function(error, data) {
@@ -773,15 +810,20 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
+    namespace.TopicRectangle.method("SetPanelNodeIndex", function(p_panelNodeIndex){
+
+        this.m_panelNodeIndex = p_panelNodeIndex;
+    });
+
     namespace.TopicRectangle.method("SetTitle", function(p_title){
+        
         this.m_title = p_title;
-    })
+    });
 
     // Static members of TopicRectangle
     namespace.TopicRectangle.prototype.multiplier = 2;
     namespace.TopicRectangle.prototype.spaceAroundText = 2 * namespace.TopicRectangle.prototype.multiplier;
-    namespace.TopicRectangle.prototype.borderWidth = 2 * namespace.TopicRectangle.prototype.multiplier;
-    //namespace.TopicRectangle.prototype.cornerRadius = 2 * namespace.TopicRectangle.prototype.multiplier;
+    namespace.TopicRectangle.prototype.borderWidth = 2 * namespace.TopicRectangle.prototype.multiplier;    
     namespace.TopicRectangle.prototype.cornerRadius = 0.025;
     namespace.TopicRectangle.prototype.s_borderRadius = 4;
 
@@ -935,6 +977,8 @@ var TWiC = (function(namespace){
     namespace.TopicTile.prototype.s_tileDims = { width: 300, height: 100 };
     namespace.TopicTile.prototype.s_topicCircleRadius = 15;
 
+
+    // TWiC MetaDataTile inherits from DataTile
     namespace.MetaDataTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape, p_text, p_value){
 
         // Apply the base class arguments
