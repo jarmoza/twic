@@ -548,7 +548,7 @@ var TWiC = (function(namespace){
                                                                     color: this.m_topicColors[this.m_currentSelection] },
                                                                   namespace.Interaction.mouseover);                                
                                    this.m_infoViews[index].m_panel.Pause(true);
-                                }   
+                                }  
 
                                 // Add this panel's container div to the packery list and reload the layout
                                 var levelAsContainer = $(this.m_div[0]);
@@ -600,9 +600,7 @@ var TWiC = (function(namespace){
                                 size: { width: p_containerWidth, height: p_containerHeight >> 1 },
                                 duration: 1500
                             };                            
-                            this.m_infoViews[1].m_panel.Move(transition, "end", function(){
-                                //this.m_infoViews[1].m_panel.Hide(true, false);
-                            }.bind(this));
+                            this.m_infoViews[1].m_panel.Move(transition, "end", function(){ });
 
                             // Resize the topic bar to the bottom right
                             transition = {
@@ -628,10 +626,10 @@ var TWiC = (function(namespace){
                                 }
 
                                 for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                                   this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
-                                                                    color: this.m_topicColors[this.m_currentSelection] },
-                                                                  namespace.Interaction.mouseover);                                
-                                   this.m_infoViews[index].m_panel.Pause(true);
+                                    this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
+                                                                     color: this.m_topicColors[this.m_currentSelection] },
+                                                                   namespace.Interaction.mouseover);
+                                    this.m_infoViews[index].m_panel.Pause(true);
                                 }
 
                                 // Add this panel's container div to the packery list and reload the layout
@@ -688,8 +686,8 @@ var TWiC = (function(namespace){
 
                     // Topic bar resizes to its minimum height and width of the level, moves to the center of the screen
                     transition = {
-                        position: { x: containerWidth, y: containerHeight + containerHeight - topicBarMinSize },
-                        size: { width: containerWidth, height: containerHeight },
+                        position: { x: containerWidth, y: this.m_size.height - namespace.TopicBar.prototype.s_minHeight },
+                        size: { width: containerWidth, height: namespace.TopicBar.prototype.s_minHeight },
                         duration: 1500
                     };
                     this.m_infoViews[0].m_panel.Move(transition, "end", function(p_data, p_containerWidth, p_containerHeight){
@@ -739,6 +737,7 @@ var TWiC = (function(namespace){
                     }.bind(this, p_data, containerWidth, containerHeight));                  
 
                     break;
+                
                 case 4:
                     // Top two at top, new panel in level center with topic bar beneath, bottom two on bottom
                     // Fifth panel is likely PublicationView currently

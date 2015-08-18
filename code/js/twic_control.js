@@ -180,14 +180,22 @@ var TWiC = (function(namespace){
     namespace.Control.method("AddPanelSizeControls", function(){
 
         // Add the hide button
+        var circleCenter = { cx: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
+                             cy: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) };
         this.m_controlGroup.append("circle")
-                           .attr("cx", this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius)
-                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("cx", circleCenter.cx)
+                           .attr("cy", circleCenter.cy)
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.hide)
                            .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
                                                                 namespace.Level.prototype.s_palette.hide))
-                           .attr("stroke-width", 1)                           
+                           .attr("stroke-width", 1);
+        this.m_controlGroup.append("rect")
+                           .attr("x", circleCenter.cx - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("y", circleCenter.cy - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("width", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("height", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .style("opacity", 0)
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Hide(!this.m_panel.m_hidden);
                            }.bind(this))
@@ -196,25 +204,33 @@ var TWiC = (function(namespace){
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
                                this.HighlightPanelSizeControls(false);                              
-                           }.bind(this));
-
+                           }.bind(this));                           
+                        
         this.DrawChevron({ x: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
-                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
+                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
                            "up");
         this.DrawChevron({ x: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
-                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
+                           y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
                            "down");
 
 
         // Add the minimize button
+        circleCenter = { cx: this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius),
+                         cy: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) };                          
         this.m_controlGroup.append("circle")
-                           .attr("cx", this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius))
-                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("cx", circleCenter.cx)
+                           .attr("cy", circleCenter.cy)
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.minimize)
                            .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
                                                                 namespace.Level.prototype.s_palette.minimize))
-                           .attr("stroke-width", 1)                           
+                           .attr("stroke-width", 1);
+        this.m_controlGroup.append("rect")
+                           .attr("x", circleCenter.cx - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("y", circleCenter.cy - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("width", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("height", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .style("opacity", 0)
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Minimize();
                            }.bind(this))
@@ -223,20 +239,28 @@ var TWiC = (function(namespace){
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
                                this.HighlightPanelSizeControls(false);
-                           }.bind(this));
+                           }.bind(this));                                                   
 
         this.DrawMinus({ x: this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius),
-                         y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
+                         y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
 
         // Add the maximize button
+        circleCenter = { cx: this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius),
+                         cy: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) };
         this.m_controlGroup.append("circle")
-                           .attr("cx", this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius))
-                           .attr("cy", this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("cx", circleCenter.cx)
+                           .attr("cy", circleCenter.cy)
                            .attr("r", namespace.Control.prototype.s_sizeControlRadius)
                            .attr("fill", namespace.Level.prototype.s_palette.maximize)
                            .attr("stroke", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
                                                                 namespace.Level.prototype.s_palette.maximize))
-                           .attr("stroke-width", 1)
+                           .attr("stroke-width", 1);
+        this.m_controlGroup.append("rect")
+                           .attr("x", circleCenter.cx - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("y", circleCenter.cy - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
+                           .attr("width", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .attr("height", 3 * namespace.Control.prototype.s_sizeControlRadius)
+                           .style("opacity", 0)                           
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Maximize();
                            }.bind(this))
@@ -245,10 +269,10 @@ var TWiC = (function(namespace){
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
                                this.HighlightPanelSizeControls(false);
-                           }.bind(this));
+                           }.bind(this));                           
 
         this.DrawPlus({ x: this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius),
-                        y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
+                        y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
 
         // Set the position for the next control to be added
         this.SetNextWidgetPos({ x: this.m_nextControlWidgetPos.x + 8 + (9 * namespace.Control.prototype.s_sizeControlRadius),
@@ -377,9 +401,9 @@ var TWiC = (function(namespace){
 
         // Horizontal bar
         this.m_minHighlight = this.m_controlGroup.append("line")
-                                                 .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 3))
+                                                 .attr("x1", p_coordinates.x - (barSize >> 1) - (barSize >> 2))
                                                  .attr("y1", p_coordinates.y)
-                                                 .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 3))
+                                                 .attr("x2", p_coordinates.x + (barSize >> 1) + (barSize >> 2))
                                                  .attr("y2", p_coordinates.y)
                                                  .attr("stroke", namespace.Level.prototype.s_palette.min_highlight)
                                                  .attr("stroke-width", 2)

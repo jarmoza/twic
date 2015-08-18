@@ -279,12 +279,19 @@ var TWiC = (function(namespace){
     namespace.Panel.method("Maximize", function(){
 
         // Make sure to flag this panel as not hidden, in case maximizing from hidden state
-        this.m_hidden = false;
+        if ( this.m_hidden ){
 
+            // Change the control bar text
+            this.m_hidden = false;
+            this.AddBarText(this.m_hidden);
+
+            // Make sure panel rect is visible
+            this.m_panelRectDiv.style("opacity", 1.0);            
+        }
         var transition = {            
             size: { width: this.m_level.m_size.width,
                     height: this.m_level.m_size.height },
-            duration: 1500
+            duration: 1000
         };
 
         this.m_container.m_div.transition()
@@ -304,7 +311,15 @@ var TWiC = (function(namespace){
     namespace.Panel.method("Minimize", function(){
 
         // Make sure to flag this panel as not hidden, in case minimizing from hidden state
-        this.m_hidden = false;        
+        if ( this.m_hidden ){
+
+            // Change the control bar text
+            this.m_hidden = false;
+            this.AddBarText(this.m_hidden);
+
+            // Make sure panel rect is visible
+            this.m_panelRectDiv.style("opacity", 1.0);            
+        }
 
         var transition = {
             size: { width: namespace.Panel.prototype.s_minimumPanelSize,
@@ -422,6 +437,7 @@ var TWiC = (function(namespace){
 
         // Control bar resize
         if ( this.m_controlBar ){
+
             this.m_controlBar.m_size.width = containerWidth;
             this.m_controlBar.m_div.style("width", containerWidth);
             this.m_controlBar.m_div.style("max-width", containerWidth);
@@ -569,6 +585,7 @@ var TWiC = (function(namespace){
 
         this.m_corpusCluster = null;
         this.m_nodes = [];
+        this.m_highlightedTopic = -1;
     };
     namespace.CorpusView.inherits(namespace.GraphView);
 
@@ -577,6 +594,8 @@ var TWiC = (function(namespace){
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
         // Control bar height is reduced by 1 to prevent pixel spacing between panel and control bar from dragging rounding-inaccuracy
         var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
+
+        // Add the div, svg, rectangle on top of which all graph data will sit
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -594,8 +613,6 @@ var TWiC = (function(namespace){
                                                  .attr("width", this.m_size.width)
                                                  .attr("height", this.m_size.height)
                                                  .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
-
-        // Add the rectangle where all graph data will sit
         this.m_panelRect = this.m_panelRectSvg.append("path")
                                               .attr("d", namespace.BottomRoundedRect(0, 0, this.m_size.width,
                                                                                      this.m_size.height,
@@ -604,7 +621,7 @@ var TWiC = (function(namespace){
                                               .attr("id", "rect_twic_graph_corpusview_" + this.m_name)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue);
 
-        // Set up the corpus view's div
+        // Set up the corpus view's div for its graph data
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_corpusview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_corpusview_" + this.m_name)
@@ -613,7 +630,10 @@ var TWiC = (function(namespace){
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("background", "transparent")
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                              
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y + controlBarHeight);                         
 
         // Set up the corpus view's svg
         this.m_svg = this.m_div.append("svg")
@@ -628,7 +648,30 @@ var TWiC = (function(namespace){
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_corpusview_overlay")
-                                        .attr("id", "group_twic_graph_corpusview_overlay_" + this.m_name);
+                                        .attr("id", "group_twic_graph_corpusview_overlay_" + this.m_name)
+                                        .on(namespace.Interaction.click, function(){
+
+                                            // Tell the corpus view and its linked views to dehighlight
+                                            // if a click comes outside of the corpus bullseye
+                                            this.Pause(false);
+                                            this.Update(null, namespace.Interaction.mouseover);
+                                            for ( var index = 0; index < this.m_linkedViews.length; index++ ){
+                                                if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                                                    this.m_linkedViews[index].panel.Pause(false);
+                                                    this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                                }
+                                            }                                          
+
+                                        }.bind(this));
+
+        // Transaprent rectangle to capture clicks outside of the corpus TWiC bullseye
+        this.m_clickRectangle = this.m_groupOverlay.append("rect")
+                                                   .attr("x", 0)
+                                                   .attr("y", 0)
+                                                   .attr("width", this.m_size.width)
+                                                   .attr("height", this.m_size.height)
+                                                   .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                   .style("opacity", 0);
 
         // Create the corpus TWiC bullseye
         this.m_corpusCluster = new TWiC.TopicBullseye({ x: this.m_size.width >> 1,
@@ -672,7 +715,7 @@ var TWiC = (function(namespace){
                                         namespace.Level.prototype.s_palette.gold,
                                         {x:this.m_corpusCluster.m_coordinates.x - (1.7 * this.m_corpusCluster.m_radius),
                                          y:this.m_corpusCluster.m_coordinates.y + this.m_corpusCluster.m_radius + (0.30 * this.m_corpusCluster.m_radius)},
-                                        1.0);
+                                        1.0, this.m_groupOverlay);
 
         // Make all objects of this panel resizable and draggable
         this.MakeResizable(false);
@@ -681,31 +724,20 @@ var TWiC = (function(namespace){
 
     namespace.CorpusView.method("Update", function(p_data, p_updateType){
 
-        if ( !this.m_paused ) {
+        // Mouseover updates
+        if ( namespace.Interaction.mouseover == p_updateType ){
+        
+            if ( !this.m_paused ) { 
 
-            // Mouseover updates
-            if ( namespace.Interaction.mouseover == p_updateType ){
-                
                 if ( null != p_data ){
                     this.HighlightAllDataShapesWithTopic(p_data);
                 } else {
                     this.HighlightAllDataShapes();
                 }
-            } else if ( namespace.Interaction.dblclick == p_updateType ){
-
-                // Tell the level to open the underlying panel (CorpusClusterView) if not open
-                if ( !this.IsUnderlyingPanelOpen() ){
-                    this.Pause(false);
-                    this.Update({ topicID: this.m_level.m_currentSelection,
-                                  color: this.m_level.m_topicColors[this.m_level.m_currentSelection] },
-                                namespace.Interaction.mouseover);
-                    this.Pause(true);
-                    this.m_level.m_infoViews[0].m_panel.Pause(true);
-                    this.m_level.Update(p_data, p_updateType);
-                }
             }
-        // Double-clicks can come through, even if the CorpusView is paused
         } else if ( namespace.Interaction.dblclick == p_updateType ){
+
+            // Double-clicks can come through, even if the CorpusView is paused
 
             // Tell the level to open the underlying panel (CorpusClusterView) if not open
             if ( !this.IsUnderlyingPanelOpen() ){
@@ -830,6 +862,9 @@ var TWiC = (function(namespace){
 
     namespace.CorpusView.method("HighlightAllDataShapes", function(){
 
+        // Reset saved topic highlight ID
+        this.m_highlightedTopic = -1;
+
         // Highlight all shapes
         this.m_svg.selectAll(TWiC.CorpusView.prototype.s_datashapeClassSelect)
                   .style("opacity", 1.0)
@@ -837,6 +872,9 @@ var TWiC = (function(namespace){
     });
 
     namespace.CorpusView.method("HighlightAllDataShapesWithTopic", function(p_data){
+
+        // Save the highlighted topic for future reference
+        this.m_highlightedTopic = p_data.topicID;        
 
         // Highlight the moused-over shape
         var filteredShapes = this.m_svg.selectAll(TWiC.CorpusView.prototype.s_datashapeClassSelect)
@@ -989,7 +1027,6 @@ var TWiC = (function(namespace){
     namespace.CorpusView.prototype.s_datashapeClassSelect = ".corpus_shape";
     namespace.CorpusView.prototype.s_datashapeTextClassName = "corpus_shape_text";
     namespace.CorpusView.prototype.s_datashapeTextClassSelect = ".corpus_shape_text";
-    namespace.CorpusView.prototype.s_scaleExtentLimits = [1, 16];    
 
 
     // Higher midlevel corpus bullseye cluster view (TWiC.CorpusClusterView)
@@ -1004,6 +1041,7 @@ var TWiC = (function(namespace){
         this.m_graph = null;
         this.b_positionsCalculated = false;
         this.m_rootIndex = -1;
+        this.m_highlightedTopic = -1;
     };
     namespace.CorpusClusterView.inherits(namespace.GraphView);
 
@@ -1052,13 +1090,14 @@ var TWiC = (function(namespace){
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_corpusclusterview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_corpusclusterview_" + this.m_name)
-                                //.style("left", this.m_coordinates.x)
-                                //.style("top", this.m_coordinates.y)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                                
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y + controlBarHeight);
 
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -1072,7 +1111,31 @@ var TWiC = (function(namespace){
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_corpusclusterview_overlay")
-                                        .attr("id", "group_twic_graph_corpusclusterview_overlay_" + this.m_name);
+                                        .attr("id", "group_twic_graph_corpusclusterview_overlay_" + this.m_name)
+                                        .on(namespace.Interaction.click, function(){
+
+                                            // Tell the corpus cluster view and its linked views to dehighlight
+                                            // if a click comes outside of the cluster bullseyes
+                                            this.Pause(false);
+                                            this.Update(null, namespace.Interaction.mouseover);
+                                            for ( var index = 0; index < this.m_linkedViews.length; index++ ){
+                                                if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                                                    this.m_linkedViews[index].panel.Pause(false);
+                                                    this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                                }
+                                            }                                          
+
+                                        }.bind(this));
+
+        // Transaprent rectangle to capture clicks outside of the TWiC cluster bullseyes
+        this.m_clickRectangle = this.m_groupOverlay.append("rect")
+                                                   .attr("x", -87)
+                                                   .attr("y", -50)
+                                                   .attr("width", this.m_size.width + 175)
+                                                   .attr("height", this.m_size.height + 100)
+                                                   .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                   .style("opacity", 0)
+                                                   .style("position", "absolute");
 
         // Add search bar to the corpus cluster view's control bar
         //this.m_controlBar.AddSearch();
@@ -1219,8 +1282,6 @@ var TWiC = (function(namespace){
 
         // Function arguments needed: svg, data, circleMax, padding, steps
         //this.ArchimedeanSpiral(this.m_svg, [], )
-
-        var x = 0;
     });
 
     namespace.CorpusClusterView.method("Start", function(){
@@ -1536,6 +1597,9 @@ var TWiC = (function(namespace){
 
     namespace.CorpusClusterView.method("HighlightAllDataShapes", function(){
 
+        // Reset saved topic highlight ID
+        this.m_highlightedTopic = -1;     
+
         // Highlight all shapes
         this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
                   .style("opacity", 1.0)
@@ -1561,6 +1625,9 @@ var TWiC = (function(namespace){
 
         // Start with all shapes darkened
         this.DarkenAllDataShapes();
+
+        // Save the highlighted topic for future reference
+        this.m_highlightedTopic = p_data.topicID;
 
         // Color all shapes that represent the given topic
         var filteredShapes = this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeClassSelect)
@@ -1830,7 +1897,6 @@ var TWiC = (function(namespace){
     namespace.CorpusClusterView.prototype.s_datashapeClassSelect = ".corpuscluster_shape";
     namespace.CorpusClusterView.prototype.s_datashapeTextClassName = "corpuscluster_shape_text";
     namespace.CorpusClusterView.prototype.s_datashapeTextClassSelect = ".corpuscluster_shape_text";
-    namespace.CorpusClusterView.prototype.s_scaleExtentLimits = [1, 16];
     namespace.CorpusClusterView.prototype.s_infoFlavorText = "Topic Avg. of Corpus Topic Clusters";
 
 
@@ -1849,6 +1915,7 @@ var TWiC = (function(namespace){
         this.m_rootIndex = -1;
         this.m_clusterSvgGroup = null;
         this.m_numberTopics = 5;
+        this.m_highlightedTopic = -1;
     };
     namespace.TextClusterView.inherits(namespace.GraphView);
 
@@ -1864,16 +1931,16 @@ var TWiC = (function(namespace){
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
         var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
-                                        .attr("class", "div_panel_rect")
-                                        .attr("id", "div_panel_rect_" + this.m_name)
-                                        .style("position", "absolute")
-                                        .style("left", this.m_coordinates.x)
-                                        .style("top", this.m_coordinates.y + controlBarHeight)
-                                        .style("width", this.m_size.width)
-                                        .style("height", this.m_size.height)
-                                        .style("max-width", this.m_size.width)
-                                        .style("max-height", this.m_size.height)
-                                        .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                         .attr("class", "div_panel_rect")
+                                         .attr("id", "div_panel_rect_" + this.m_name)
+                                         .style("position", "absolute")
+                                         .style("left", this.m_coordinates.x)
+                                         .style("top", this.m_coordinates.y + controlBarHeight)
+                                         .style("width", this.m_size.width)
+                                         .style("height", this.m_size.height)
+                                         .style("max-width", this.m_size.width)
+                                         .style("max-height", this.m_size.height)
+                                         .style("border-radius", namespace.Panel.prototype.s_borderRadius);
         this.m_panelRectSvg = this.m_panelRectDiv.append("svg")
                                                  .attr("x", this.m_coordinates.x)
                                                  .attr("y", this.m_coordinates.y)
@@ -1896,13 +1963,14 @@ var TWiC = (function(namespace){
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_textclusterview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_textclusterview_" + this.m_name)
-                                //.style("left", this.m_coordinates.x)
-                                //.style("top", this.m_coordinates.y)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute")
+                                .style("left", this.m_coordinates.x)
+                                .style("top", this.m_coordinates.y + controlBarHeight);                                
 
         // Set up the svg for the text cluster view
         this.m_svg = this.m_div.append("svg")
@@ -1917,7 +1985,30 @@ var TWiC = (function(namespace){
         // Add group for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_overlay")
-                                        .attr("id", "group_twic_graph_overlay_textclusterview_" + this.m_name);
+                                        .attr("id", "group_twic_graph_overlay_textclusterview_" + this.m_name)
+                                        .on(namespace.Interaction.click, function(){
+
+                                            // Tell the text cluster view and its linked views to dehighlight
+                                            // if a click comes outside of the topic rectangles
+                                            this.Pause(false);
+                                            this.Update(null, namespace.Interaction.mouseover);
+                                            for ( var index = 0; index < this.m_linkedViews.length; index++ ){
+                                                if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                                                    this.m_linkedViews[index].panel.Pause(false);
+                                                    this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                                }
+                                            }                                          
+
+                                        }.bind(this));
+
+        // Transaprent rectangle to capture clicks outside of the TWiC topic rectangles
+        this.m_clickRectangle = this.m_groupOverlay.append("rect")
+                                                   .attr("x", -50)
+                                                   .attr("y", -50)
+                                                   .attr("width", (this.m_size.width + 100))
+                                                   .attr("height", (this.m_size.height + 100))
+                                                   .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                   .style("opacity", 0);                                        
 
         this.m_clusterSvgGroup = this.m_groupOverlay.append("g").attr("id", "clustersvg_group")
                                                        .attr("width", this.m_size.width)
@@ -2372,6 +2463,9 @@ var TWiC = (function(namespace){
 
     namespace.TextClusterView.method("HighlightAllDataShapes", function(p_showText){
 
+        // Reset saved topic highlight ID
+        this.m_highlightedTopic = -1;
+
         // All shapes get highlighted
         var allShapes = this.m_svg.selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect);
         allShapes.each(function(d){
@@ -2416,6 +2510,9 @@ var TWiC = (function(namespace){
 
         // Darken all shapes and text first
         this.DarkenAllDataShapes();
+
+        // Save the highlighted topic for future reference
+        this.m_highlightedTopic = p_data.topicID;        
 
         // Highlight all shapes that represent the given topic
         var filteredShapes = this.m_svg.selectAll(TWiC.TextClusterView.prototype.s_datashapeClassSelect)
@@ -2606,7 +2703,7 @@ var TWiC = (function(namespace){
         this.m_level.m_infoViews[1].m_panel.AddLinkedView(textView, namespace.Interaction.mouseover); 
 
         // Initialize and Start the TextView
-        textView.m_container.Initialize(this.m_level.m_div);
+        textView.m_container.Initialize(this.m_level.m_div, true);
         textView.m_container.Start();
         textView.m_div.style("opacity", 0.0);        
         textView.m_controlBar.m_div.style("opacity", 0.0);
@@ -2620,7 +2717,12 @@ var TWiC = (function(namespace){
 
         // Update the view if a topic is already highlighted
         if ( -1 != this.m_level.m_currentSelection ){
+            var initialPauseState = textView.IsPaused();
+            textView.Pause(false);
             textView.Update(p_data, namespace.Interaction.mouseover);
+            if ( initialPauseState ){
+                textView.Pause(true);
+            }
         // Else, just highlight all words
         } else {
             textView.Update(null, namespace.Interaction.mouseover);
@@ -2713,6 +2815,7 @@ var TWiC = (function(namespace){
         namespace.GraphView.apply(this, arguments);
 
         this.m_data = null;
+        this.m_highlightedTopic = -1;
     };
     namespace.TextView.inherits(namespace.GraphView);
 
@@ -2742,8 +2845,6 @@ var TWiC = (function(namespace){
                                         .style("top", this.m_coordinates.y + controlBarHeight)
                                         .style("width", this.m_size.width)
                                         .style("height", this.m_size.height + namespace.Panel.prototype.s_borderRadius)
-                                        //.style("max-width", this.m_size.width)
-                                        //.style("max-height", this.m_size.height);
                                         .style("max-width", this.m_level.m_size.width)
                                         .style("max-height", this.m_level.m_size.height)
                                         .style("overflow", "hidden");
@@ -2766,22 +2867,20 @@ var TWiC = (function(namespace){
                                               .attr("class", "rect_twic_graph")
                                               .attr("id", "rect_twic_graph_textview_" + this.m_name)
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue)
-                                              .style("position", "absolute");                 
-
+                                              .style("position", "absolute");
 
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_textview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_textview_" + this.m_name)
                                 .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
+                                .style("top", this.m_coordinates.y + controlBarHeight)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
-                                //.style("max-width", this.m_size.width)
-                                //.style("max-height", this.m_size.height)
                                 .style("max-width", this.m_level.m_size.width)
                                 .style("max-height", this.m_level.m_size.height)                                
                                 .style("overflow", "scroll")
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute");
                                         
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
@@ -2799,7 +2898,30 @@ var TWiC = (function(namespace){
         this.m_groupOverlay = this.m_svg.append("g")
                                         .attr("class","group_twic_graph_overlay")
                                         .attr("id", "group_twic_graph_overlay_textview_" + this.m_name)
-                                        .style("position", "relative");
+                                        .style("position", "relative")
+                                      .on(namespace.Interaction.click, function(){
+
+                                          // Tell the text view and its linked views to dehighlight
+                                          // if a click comes outside of the topic words
+                                          this.Pause(false);
+                                          this.Update(null, namespace.Interaction.mouseover);
+                                          for ( var index = 0; index < this.m_linkedViews.length; index++ ){
+                                              if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ) {
+                                                  this.m_linkedViews[index].panel.Pause(false);
+                                                  this.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                              }
+                                          }                                          
+                                      }.bind(this));                                        
+
+        // Transaprent rectangle to capture clicks outside of the topic words in context
+        this.m_clickRectangle = this.m_groupOverlay.append("rect")
+                                                   .attr("x", 0)
+                                                   .attr("y", 0)
+                                                   .attr("width", this.m_size.width)
+                                                   .attr("height", this.m_size.height)
+                                                   .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                   .style("opacity", 0);                                        
+
 
         // Append a separate group for foreignObject tags for the text
         this.m_textGroup = this.m_groupOverlay.append("g")
@@ -3404,6 +3526,15 @@ var TWiC = (function(namespace){
         this.m_div.style("border-radius", namespace.Panel.prototype.s_borderRadius);
         this.m_panelRectDiv[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";
 
+        // Transaprent rectangle to capture clicks outside of the topic words in context
+        this.m_clickRectangle = this.m_groupOverlay.append("rect")
+                                                   .attr("x", 0)
+                                                   .attr("y", 0)
+                                                   .attr("width", this.m_size.width)
+                                                   .attr("height", rectGrowth)
+                                                   .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                                                   .style("opacity", 0);          
+
         // Re-add text groups
         this.m_textGroup = this.m_groupOverlay.append("g")
                                               .attr("class", "group_textview_text");
@@ -3545,6 +3676,8 @@ var TWiC = (function(namespace){
                             index++ ) {
                           this.m_linkedViews[index].panel.Pause(!initialPauseState);
                       }
+
+                      d3.event.stopPropagation();
                   }.bind(this))
                   .on(namespace.Interaction.mouseover, function(d){
 
@@ -3598,7 +3731,7 @@ var TWiC = (function(namespace){
             // Save the current dimensions for unhiding
             this.m_recentDims = { width: this.m_size.width,
                                   height: this.m_size.height + this.m_controlBar.m_size.height,
-                                  extendedHeight: parseFloat(this.m_panelRectSvg.attr("height")) };
+                                  extendedHeight: parseFloat(this.m_svg.attr("height")) };
             this.m_recentPos = { x: parseFloat(this.m_container.m_div.style("left")), 
                                  y: parseFloat(this.m_container.m_div.style("top")) };
 
@@ -3615,7 +3748,10 @@ var TWiC = (function(namespace){
         } else {
 
             this.m_recentPos = { x: parseFloat(this.m_container.m_div.style("left")), 
-                                 y: parseFloat(this.m_container.m_div.style("top")) };            
+                                 y: parseFloat(this.m_container.m_div.style("top")) };
+
+            // Make the panel rectangle visible again
+            this.m_panelRectDiv.style("opacity", 1.0);                                 
 
             // Bring back to size before hiding
             var transition = {
@@ -3655,8 +3791,10 @@ var TWiC = (function(namespace){
                                                                             namespace.Control.prototype.s_defaultThickness,
                                                                             namespace.Panel.prototype.s_borderRadius));
 
-                                         
-            }.bind(this), !this.m_hidden);
+                // Hide the panel rectangle
+                this.m_panelRectDiv.style("opacity", 0);                                           
+                         
+            }.bind(this), false);
         } else {
 
             this.m_controlBar.m_barPath.attr("d",
@@ -3671,7 +3809,8 @@ var TWiC = (function(namespace){
 
                 // Reorganize the panels
                 this.m_level.OrganizePanels();
-            }.bind(this), !this.m_hidden);            
+
+            }.bind(this), true);            
         }       
     }); 
 
@@ -3684,6 +3823,9 @@ var TWiC = (function(namespace){
     });
 
     namespace.TextView.method("HighlightTopicText", function(p_data){
+
+        // Save the highlighted topic for future reference
+        this.m_highlightedTopic = p_data.topicID;        
 
         this.m_svg.selectAll(".text_coloredword")
                   .filter(function(d){ return d.topicID == p_data.topicID; })
@@ -3725,38 +3867,28 @@ var TWiC = (function(namespace){
                                    this.m_panelRectDiv.transition()
                                                       .duration(p_transition.duration)
                                                       .style("width", p_transition.size.width)
-                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                                      .style("height", p_transition.size.height);
 
                                    this.m_panelRectSvg.transition()
                                                       .duration(p_transition.duration)
                                                       .attr("width", p_transition.size.width)
-                                                      .attr("height", (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height)
+                                                      .attr("height", p_transition.size.height)
                                                       .attr("viewBox", "0 0 " +
-                                                                       p_transition.size.width + " " +
-                                                                       ((( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height));
+                                                                       p_transition.size.width + " " + p_transition.size.height);
 
                                    this.m_panelRect.transition()
                                                    .duration(p_transition.duration)
                                                    .attr("d", namespace.BottomRoundedRect(0, 0,
                                                                   p_transition.size.width,
-                                                                  (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height,
-                                                                  namespace.Panel.prototype.s_borderRadius));
+                                                                  p_transition.size.height,
+                                                                  namespace.Panel.prototype.s_borderRadius))
+                                                    .each("end", function(){
+ 
+                                                        if ( "end" == p_callbackTiming ){
 
-                                   this.m_svg.transition()
-                                             .duration(p_transition.duration)
-                                             .attr("width", this.m_size.width)
-                                             .attr("height", ( p_expand ) ? this.m_recentDims.extendedHeight : this.m_size.height)
-                                             .attr("viewBox", "0 0 " + 
-                                                              p_transition.size.width + " " +
-                                                              ((( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height))                                             
-                                             .each("end", function(){
-
-                                                 if ( "end" == p_callbackTiming ){
-
-                                                    p_callback();
-                                                 }
-
-                                             }.bind(this, p_callbackTiming, p_callback));
+                                                            p_callback();
+                                                        }
+                                                    }.bind(this, p_callbackTiming, p_callback));
 
                                    if ( "start" == p_callbackTiming ){
                                        p_callback();
@@ -3787,16 +3919,18 @@ var TWiC = (function(namespace){
         var packeryReorganize = true;
         if ( undefined !== p_packery ){
             packeryReorganize = p_packery;
-        }        
+        }
 
         var containerWidth = parseFloat(this.m_container.m_div.style("width"));
         var containerHeight = parseFloat(this.m_container.m_div.style("height"));
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height : 0;     
 
         // Control bar resize
         if ( this.m_controlBar ){
+
             this.m_controlBar.m_size.width = containerWidth;
             this.m_controlBar.m_div.style("width", containerWidth);
+            this.m_controlBar.m_div.style("max-width", containerWidth); // - NEW
             this.m_controlBar.m_svg.attr("width", containerWidth)
                                    .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
         }
@@ -3807,11 +3941,12 @@ var TWiC = (function(namespace){
         var divWidth = this.m_size.width;
         var divHeight = this.m_size.height;
 
+        // Difference - TextView.OnResize() does not resize (and thus, scale) svg
         this.m_div.style("width", divWidth)
                   .style("height", divHeight);
 
         // Optional main div svg scaling
-        var changeSvgDims = false;
+        /*var changeSvgDims = false;
         var newSvgDims = { width: this.m_minDims.width, height: this.m_minDims.height };
         if ( divWidth > this.m_minDims.width ){
             newSvgDims.width = divWidth;
@@ -3830,15 +3965,16 @@ var TWiC = (function(namespace){
             this.m_svg.attr("width", newSvgDims.width)
                      .attr("height", newSvgDims.height)
                      .attr("viewBox", "0 0 " + newSvgDims.width + " " + newSvgDims.height);
-        }
+        }*/
 
-        // Panel rect resize
+        // Panel rect resize - Difference TextView: divHeight + namespace.Panel.prototype.s_borderRadius
         this.m_panelRectDiv.style("width", divWidth)
                            .style("height", divHeight + namespace.Panel.prototype.s_borderRadius);
         this.m_panelRectSvg.attr("width", divWidth)
                            .attr("height", divHeight + namespace.Panel.prototype.s_borderRadius)
                            .attr("viewBox", "0 0 " + divWidth + " " + (divHeight + namespace.Panel.prototype.s_borderRadius));
 
+        // Might be outdated resize code
         if ( containerWidth > parseInt(this.m_div.style("max-width")) ) {
             this.m_div.style("max-width", containerWidth);
             this.m_panelRectDiv.style("max-width", containerWidth);
@@ -3848,6 +3984,7 @@ var TWiC = (function(namespace){
             this.m_panelRectDiv.style("max-height", containerHeight - controlBarHeight);
         }
 
+        // Difference - divHeight + namespace.Panel.prototype.s_borderRadius
         this.m_panelRect.attr("d", namespace.BottomRoundedRect(0, 0, divWidth, divHeight + namespace.Panel.prototype.s_borderRadius, 
                                                                namespace.Panel.prototype.s_borderRadius));
 
@@ -3885,6 +4022,7 @@ var TWiC = (function(namespace){
         this.m_twicObjects = [];
 
         this.m_numberTopics = 5;
+        this.m_highlightedTopic = -1;
     };
     namespace.PublicationView.inherits(namespace.GraphView);
 
@@ -3936,13 +4074,14 @@ var TWiC = (function(namespace){
                                 .attr("class", "div_twic_graph_publicationview div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_publicationview_" + this.m_name)
                                 .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
+                                .style("top", this.m_coordinates.y + controlBarHeight)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("max-width", this.m_size.width)
                                 .style("max-height", this.m_size.height)
                                 .style("overflow", "scroll")
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                                        
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute");                                        
 
         // Set up the svg for the publication view
         this.m_svg = this.m_div.append("svg")
@@ -4278,6 +4417,9 @@ var TWiC = (function(namespace){
         // Darken all shapes and text first
         this.DarkenAllDataShapes();
 
+        // Save the highlighted topic for future reference
+        this.m_highlightedTopic = p_data.topicID;        
+
         // Highlight all shapes that represent the given topic
         var filteredShapes = this.m_svg.selectAll(TWiC.PublicationView.prototype.s_datashapeClassSelect)
                                        .filter(function(d){ return d.topicID == p_data.topicID; });
@@ -4511,6 +4653,7 @@ var TWiC = (function(namespace){
     namespace.PublicationView.prototype.s_datashapeTextClassName = "publication_shape_text";
     namespace.PublicationView.prototype.s_datashapeTextClassSelect = ".publication_shape_text";
 
+
     // Base for informational views
     namespace.InformationView = function(p_coordinates, p_size, p_level){
 
@@ -4539,11 +4682,8 @@ var TWiC = (function(namespace){
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_info_topicbar div_twic_info twic_panel")
                                 .attr("id", "div_twic_info_topicbar_" + this.m_name)
-                                //.style("left", this.m_coordinates.x)
-                                //.style("top", this.m_coordinates.y)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
-                                //.style("overflow", "scroll")
                                 .style("overflow", "auto")
                                 .style("border-radius", namespace.Panel.prototype.s_borderRadius)
                                 .style("position", "relative");                         
@@ -4730,7 +4870,7 @@ var TWiC = (function(namespace){
                 this.m_svg.selectAll(".topic_wordlist").attr("fill", function(d){ return this.m_level.m_topicColors[d.id]; }.bind(this));
                 this.m_svg.selectAll(".topic_highlightrect").attr("fill", this.m_panelRect.attr("fill")).attr("opacity", 0);
                 
-                $(this.m_div[0][0]).scrollTop(0);
+                //$(this.m_div[0][0]).scrollTop(0);
 
                 // Reset the current selected topic to none
                 this.m_level.m_currentSelection = -1;
@@ -4856,6 +4996,8 @@ var TWiC = (function(namespace){
         this.m_topicDataTiles = [];
         this.m_metaDataTiles = [];
         this.m_nextTilePos = { x: 0, y: 0 };
+        this.m_highlightIndex = -1;
+        this.m_highlightedTopic = -1;
     };
     namespace.DataBar.inherits(namespace.InformationView);
 
@@ -4873,7 +5015,7 @@ var TWiC = (function(namespace){
         this.m_coordinates.y = 0;
 
         // Div and svg for panel rect (required because of resizing behavior inconsistent with scaling data shapes)
-        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 1 : 0;
+        var controlBarHeight = ( this.m_controlBar ) ? this.m_controlBar.m_size.height - 2 : 0;
         this.m_panelRectDiv = p_parentDiv.append("div")
                                         .attr("class", "div_panel_rect")
                                         .attr("id", "div_panel_rect_" + this.m_name)
@@ -4905,19 +5047,20 @@ var TWiC = (function(namespace){
                                               .attr("fill", namespace.Level.prototype.s_palette.darkblue)
                                               .style("position", "absolute");
 
-        // Set up the div for the publication view
+        // Set up the div for the data bar
         this.m_div = p_parentDiv.append("div")
                                 .attr("class", "div_twic_graph_databar div_twic_graph twic_panel")
                                 .attr("id", "div_twic_graph_databar_" + this.m_name)
                                 .style("left", this.m_coordinates.x)
-                                .style("top", this.m_coordinates.y)
+                                .style("top", this.m_coordinates.y + controlBarHeight)
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("max-width", this.m_level.m_size.width)
                                 .style("max-height", this.m_level.m_size.height)
-                                .style("border-radius", namespace.Panel.prototype.s_borderRadius);                                     
+                                .style("border-radius", namespace.Panel.prototype.s_borderRadius)
+                                .style("position", "absolute");                                     
 
-        // Set up the svg for the publication view
+        // Set up the svg for the data bar
         this.m_svg = this.m_div.append("svg")
                                .attr("class", "svg_twic_graph")
                                .attr("id", "svg_twic_graph_databar_" + this.m_name)
@@ -4926,6 +5069,9 @@ var TWiC = (function(namespace){
                                .attr("width", this.m_size.width)
                                .attr("height", this.m_size.height)
                                .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
+
+        // Save the minimum width and height to preserve the initial svg size
+        this.m_minDims = { width: this.m_size.width, height: this.m_size.height };
 
         // Add group and rectangle for trapping mouse events in the graph
         this.m_groupOverlay = this.m_svg.append("g")
@@ -4953,8 +5099,16 @@ var TWiC = (function(namespace){
 
         // Data bar starts loaded with information about the corpus view bullseye
         // (2x to unpause the panel and its linked views)
-        this.m_level.m_graphViews[0].m_panel.m_corpusCluster.m_shapeGroup.on("click")();
-        this.m_level.m_graphViews[0].m_panel.m_corpusCluster.m_shapeGroup.on("click")();
+        
+        //this.m_level.m_graphViews[0].m_panel.m_corpusCluster.m_shapeGroup.on("click")();
+        //this.m_level.m_graphViews[0].m_panel.m_corpusCluster.m_shapeGroup.on("click")();
+
+        //var firstBullseyeRing = d3.select(this.m_level.m_graphViews[0].m_panel.m_svg.selectAll(namespace.CorpusView.prototype.s_datashapeClassSelect)[0][0]);
+        //firstBullseyeRing.on("click")();
+        //firstBullseyeRing.on("click")();
+
+        this.Update({ shapeRef: this.m_level.m_graphViews[0].m_panel.m_corpusCluster },
+                    namespace.Interaction.click);
     });
     
     namespace.DataBar.method("Update", function(p_data, p_updateType, p_tileUpdate){ 
@@ -4962,16 +5116,6 @@ var TWiC = (function(namespace){
         if ( namespace.Interaction.click == p_updateType ){
 
             if ( undefined === p_data.shapeRef ){
-
-                // Highlight/Unhighlight a topic tile, depending on pause state of the data bar
-                /*for ( var index = 0; index < this.m_topicDataTiles.length; index++ ){
-                    if ( p_data.topicID == this.m_topicDataTiles[index].m_topicID ){
-                        this.m_topicDataTiles[index].HighlightTile(!this.IsPaused());
-                        break;
-                    }
-                }*/
-
-                console.log("DataBar update with no included data shape.");
 
             } else {
 
@@ -5006,7 +5150,6 @@ var TWiC = (function(namespace){
                             panelTitleID = p_data.shapeRef.m_name;
                             var myPanel = p_data.shapeRef.m_panel;
                             // -2 to reduce inflated distance set at CorpusClusterView.InitializeGraph()
-                            //console.log("Distance for cluster " + p_data.shapeRef.m_title + ": " + p_data.shapeRef.m_panel.m_objectsJSON[parseInt(p_data.shapeRef.m_title)].dist2avg);
                             //dist2avg = p_data.shapeRef.m_panel.m_objectsJSON[parseInt(p_data.shapeRef.m_title)].dist2avg;
                             dist2avg = myPanel.m_adjustedDistances[parseInt(p_data.shapeRef.m_title)] - 
                                        (( myPanel.b_adjustDistances ) ? myPanel.m_linkDistLimits.min : 0);
@@ -5065,7 +5208,9 @@ var TWiC = (function(namespace){
                     this.m_svg.attr("width", this.m_size.width)
                               .attr("height", rectGrowth)
                               .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
-                    $(this.m_div[0][0]).scrollTop(0);                  
+                    this.m_minDims.width = this.m_size.width;
+                    this.m_minDims.height = rectGrowth;
+                    $(this.m_div[0][0]).scrollTop(0);                 
                     this.m_panelRectSvg.attr("height", rectGrowth)
                                        .attr("viewBox", "0 0 " + this.m_size.width + " " + rectGrowth);
                     this.m_panelRectSvg.selectAll("*").remove();
@@ -5098,6 +5243,8 @@ var TWiC = (function(namespace){
                         if ( p_data.topicID == this.m_topicDataTiles[index].m_topicID ){
                         
                             this.m_topicDataTiles[index].HighlightTile(true);
+                            this.m_highlightIndex = index;
+                            this.m_highlightedTopic = -1;
 
                             // Set the scroll position of the panel so that this tile is at the top
                             if ( undefined === p_tileUpdate ){
@@ -5111,6 +5258,8 @@ var TWiC = (function(namespace){
                     for ( var index = 0; index < this.m_topicDataTiles.length; index++ ){
                         this.m_topicDataTiles[index].HighlightTile(false);
                     }
+
+                    this.m_highlightIndex = -1;
                     
                     if ( undefined === p_tileUpdate ){
                         $(this.m_div[0][0]).scrollTop(0);
@@ -5377,13 +5526,13 @@ var TWiC = (function(namespace){
         // Panel and its svg transition to new position/dimensions
         this.m_div.transition().duration(p_transition.duration) 
                                .style("width", this.m_size.width)
-                               .style("height", this.m_size.height)                              
+                               .style("height", this.m_size.height - 2)                              
                                .each("start", function(p_transition, p_callbackTiming, p_callback, p_expand){
 
                                    this.m_panelRectDiv.transition()
                                                       .duration(p_transition.duration)
                                                       .style("width", p_transition.size.width)
-                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height);
+                                                      .style("height", p_transition.size.height - this.m_controlBar.m_size.height - 1);
                                    this.m_panelRectSvg.transition()
                                                       .duration(p_transition.duration)
                                                       .attr("width", p_transition.size.width)
@@ -5396,23 +5545,51 @@ var TWiC = (function(namespace){
                                                    .attr("d", namespace.BottomRoundedRect(0, 0,
                                                                   p_transition.size.width,
                                                                   (( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height,
-                                                                  namespace.Panel.prototype.s_borderRadius));
+                                                                  namespace.Panel.prototype.s_borderRadius))
+                                                    .each("end", function(){
 
-                                   this.m_svg.transition()
-                                             .duration(p_transition.duration)
-                                             .attr("width", this.m_size.width)
-                                             .attr("height", ( p_expand ) ? this.m_recentDims.extendedHeight : this.m_size.height)
-                                             .attr("viewBox", "0 0 " + 
-                                                              p_transition.size.width + " " +
-                                                              ((( p_expand ) ? this.m_recentDims.extendedHeight : p_transition.size.height) - this.m_controlBar.m_size.height))
-                                             .each("end", function(){
+                                                        if ( "end" == p_callbackTiming ){
 
-                                                 if ( "end" == p_callbackTiming ){
+                                                           p_callback();
+                                                        }
 
-                                                    p_callback();
-                                                 }
+                                                    }.bind(this, p_callbackTiming, p_callback));
 
-                                             }.bind(this, p_callbackTiming, p_callback));
+                                    // Optional main div svg scaling
+                                    var changeSvgDims = false;
+                                    var divWidth = this.m_size.width;
+                                    var divHeight = this.m_size.height;
+                                    var newSvgDims = { width: this.m_minDims.width, height: this.m_minDims.height };
+                                    if ( divWidth > this.m_minDims.width ){
+                                        newSvgDims.width = divWidth;
+                                        changeSvgDims = true;
+                                    }
+                                    /*if ( divHeight > this.m_minDims.height ){
+                                        newSvgDims.height = divHeight;
+                                        changeSvgDims = true;
+                                    }
+                                    if ( undefined !== this.m_recentDims &&
+                                         this.m_recentDims.extendedHeight > divHeight ){
+                                        newSvgDims.height = this.m_recentDims.extendedHeight;
+                                        changeSvgDims = true;
+                                    }*/
+                                    if ( changeSvgDims ){
+                                        this.m_svg.transition()
+                                                  .duration(p_transition.duration)
+                                                  .attr("width", newSvgDims.width)
+                                                  .attr("height", newSvgDims.height)
+                                                  .attr("viewBox", "0 0 " + newSvgDims.width + " " + newSvgDims.height);
+                                    }                                                    
+
+                                    // Resize data tiles
+                                    var tileTransition = { size: { width: p_transition.size.width - (2 * namespace.DataBar.prototype.s_elementSpacing) },
+                                                           duration: p_transition.duration, }
+                                    for ( var index = 0; index < this.m_metaDataTiles.length; index++ ){
+                                        this.m_metaDataTiles[index].ResizeOverTime(tileTransition);
+                                    }
+                                    for ( var index = 0; index < this.m_topicDataTiles.length; index++ ){
+                                        this.m_topicDataTiles[index].ResizeOverTime(tileTransition);
+                                    }                                    
 
                                    if ( "start" == p_callbackTiming ){
                                        p_callback();
@@ -5436,6 +5613,11 @@ var TWiC = (function(namespace){
                                                           .attr("viewBox", "0 0 " + (this.m_size.width) + " " + this.m_controlBar.m_size.height);
 
                                }.bind(this, p_transition));
+
+        // Ensure scroll bar stays with any highlighted topic tile at the top of the panel
+        if ( this.m_highlightIndex >= 0 ){
+            $(this.m_div[0][0]).scrollTop(this.m_topicDataTiles[this.m_highlightIndex].m_coordinates.y);
+        }
     });    
 
     namespace.DataBar.method("OnResize", function(p_packery){
@@ -5465,6 +5647,38 @@ var TWiC = (function(namespace){
 
         this.m_div.style("width", divWidth)
                   .style("height", divHeight);
+
+        // Optional main div svg scaling
+        var changeSvgDims = false;
+        var newSvgDims = { width: this.m_minDims.width, height: this.m_minDims.height };
+        if ( divWidth > this.m_minDims.width ){
+            newSvgDims.width = divWidth;
+            changeSvgDims = true;
+        }
+        /*if ( divHeight > this.m_minDims.height ){
+            newSvgDims.height = divHeight;
+            changeSvgDims = true;
+        }
+        if ( undefined !== this.m_recentDims &&
+             this.m_recentDims.extendedHeight > divHeight ){
+            newSvgDims.height = this.m_recentDims.extendedHeight;
+            changeSvgDims = true;
+        }*/
+        if ( changeSvgDims ){
+            this.m_svg.attr("width", newSvgDims.width)
+                     .attr("height", newSvgDims.height)
+                     .attr("viewBox", "0 0 " + newSvgDims.width + " " + newSvgDims.height);
+        }
+
+        // Resize data tiles
+        var tileTransition = { size: { width: this.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing) },
+                               duration: 5, }
+        for ( var index = 0; index < this.m_metaDataTiles.length; index++ ){
+            this.m_metaDataTiles[index].ResizeOverTime(tileTransition);
+        }
+        for ( var index = 0; index < this.m_topicDataTiles.length; index++ ){
+            this.m_topicDataTiles[index].ResizeOverTime(tileTransition);
+        }                                 
 
         // Panel rect resize
         this.m_panelRectDiv.style("width", divWidth)
@@ -5498,7 +5712,7 @@ var TWiC = (function(namespace){
         }
 
         // Force level HTML redraw in order to overcome bug where SVG elements not resized until next redraw occurs
-        $(this.m_level.m_div.node().parentNode).hide().show(0);        
+        $(this.m_level.m_div.node().parentNode).hide().show(0); 
     });
 
     namespace.DataBar.prototype.s_datashapeClassName = "databar_shape";
