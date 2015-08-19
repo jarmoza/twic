@@ -291,14 +291,14 @@ var TWiC = (function(namespace){
         var transition = {            
             size: { width: this.m_level.m_size.width,
                     height: this.m_level.m_size.height },
-            duration: 1000
+            duration: 1500
         };
 
         this.m_container.m_div.transition()
                               .duration(transition.duration)
                               .style("width", transition.size.width)
                               .style("height", transition.size.height)
-                              .tween("minimize-components", function(){
+                              .tween("maximize-components", function(){
                                   return function(){ 
                                       this.OnResize(false);
                                   }.bind(this);
@@ -440,7 +440,6 @@ var TWiC = (function(namespace){
 
             this.m_controlBar.m_size.width = containerWidth;
             this.m_controlBar.m_div.style("width", containerWidth);
-            this.m_controlBar.m_div.style("max-width", containerWidth);
             this.m_controlBar.m_svg.attr("width", containerWidth)
                                    .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
         }
@@ -3930,7 +3929,6 @@ var TWiC = (function(namespace){
 
             this.m_controlBar.m_size.width = containerWidth;
             this.m_controlBar.m_div.style("width", containerWidth);
-            this.m_controlBar.m_div.style("max-width", containerWidth); // - NEW
             this.m_controlBar.m_svg.attr("width", containerWidth)
                                    .attr("viewBox", "0 0 " + containerWidth + " " + controlBarHeight);
         }
