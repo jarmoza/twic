@@ -490,6 +490,18 @@ var TWiC = (function(namespace){
                     // Split the level in two evenly, current panel on left, new panel on right,
                     // topic bar centered beneath both
 
+                    // Unhide any hidden panels
+                    for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                        if ( this.m_graphViews[index].m_panel.IsHidden() ){
+                            this.m_graphViews[index].m_panel.Hide(false);
+                        }
+                    }
+                    for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                        if ( this.m_infoViews[index].m_panel.IsHidden() ){
+                            this.m_infoViews[index].m_panel.Hide(false);
+                        }
+                    }                    
+
                     // New panel container width will be half the level width
                     var containerWidth = this.m_size.width >> 1;
 
@@ -573,6 +585,18 @@ var TWiC = (function(namespace){
                     // Split the level in quarters, current two panels on top, new panel at bottom left,
                     // topic bar at bottom right
 
+                    // Unhide any hidden panels
+                    for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                        if ( this.m_graphViews[index].m_panel.IsHidden() ){
+                            this.m_graphViews[index].m_panel.Hide(false);
+                        }
+                    }
+                    for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                        if ( this.m_infoViews[index].m_panel.IsHidden() ){
+                            this.m_infoViews[index].m_panel.Hide(false);
+                        }
+                    }                    
+
                     // New panel container width will be half the level width
                     var containerWidth = this.m_size.width >> 1;
 
@@ -652,6 +676,18 @@ var TWiC = (function(namespace){
                     break;
 
                 case 3:
+
+                    // Unhide any hidden panels
+                    for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                        if ( this.m_graphViews[index].m_panel.IsHidden() ){
+                            this.m_graphViews[index].m_panel.Hide(false);
+                        }
+                    }
+                    for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                        if ( this.m_infoViews[index].m_panel.IsHidden() ){
+                            this.m_infoViews[index].m_panel.Hide(false);
+                        }
+                    }                
 
                     // Resize graphical panels 1-3 to a height of 1/2 level - 1/2 topic bar minimum size
                     var topicBarMinSize = namespace.TopicBar.prototype.s_minHeight;
