@@ -219,6 +219,9 @@ var TWiC = (function(namespace){
         this.m_infoPauseList = [];
 
         this.m_resizeOccurred = false;
+
+        // Reference to the level's data bar, if present
+        this.m_dataBar = null;
     };
 
     namespace.Level.method("AddControlBar", function(p_barThickness, p_barOrientation){
@@ -314,6 +317,15 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.Level.method("GetDataBar", function(){
+
+        return this.m_dataBar;
+    });
+    namespace.Level.method("SetDataBar", function(p_dataBar){
+
+        this.m_dataBar = p_dataBar;
+    });
+
     // Loads all JSON required for TWiC
     namespace.Level.method("LoadJSON", function(p_corpusInfoPath, p_corpusMapPath){
 
@@ -372,6 +384,11 @@ var TWiC = (function(namespace){
         // Add and setup the informational div and svg elements
         for ( var index = 0; index < this.m_infoViews.length; index++ ){
             this.m_infoViews[index].Initialize(this.m_div);
+
+            // Save a reference to the data bar if it exists
+            if ( this.m_infoViews[index].m_panel instanceof namespace.DataBar ){
+                this.SetDataBar(this.m_infoViews[index].m_panel);
+            }
         }
 
         // When browser resizes, level and its panels resize
@@ -782,7 +799,7 @@ var TWiC = (function(namespace){
         //levelContainer.packery("bindResize");
     });
 
-    namespace.Level.prototype.s_fontFamily = "Inconsolata";//"Archer";
+    namespace.Level.prototype.s_fontFamily = "Inconsolata"; //"Archer";
     namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",

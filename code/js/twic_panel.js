@@ -2862,6 +2862,7 @@ var TWiC = (function(namespace){
         namespace.GraphView.apply(this, arguments);
 
         this.m_data = null;
+        this.m_filename = "";
     };
     namespace.TextView.inherits(namespace.GraphView);
 
@@ -2976,7 +2977,9 @@ var TWiC = (function(namespace){
 
     namespace.TextView.method("Start", function(){
 
-        var x = 0;
+        if ( "" != this.m_filename ){
+            this.Load();
+        }
     });
 
     namespace.TextView.method("Update", function(p_data, p_updateType){
@@ -3595,7 +3598,6 @@ var TWiC = (function(namespace){
                      undefined == data.json.lines_and_colors[index][1][index2] ){
 
                     text = this.m_containerGroup.append("text").attr("class", "text_word")
-                                                 //.datum({ locolor: dlocolor })
                                                  .attr("x", currentX)
                                                  .attr("y", currentY)
                                                  .attr("dx", "0")
@@ -3603,7 +3605,6 @@ var TWiC = (function(namespace){
                                                  .attr("fill", namespace.Level.prototype.s_palette.gold)
                                                  .style("font-family", namespace.Level.prototype.s_fontFamily)
                                                  .style("font-size", 22)
-                                                 //.style("position", "relative")
                                                  .style("opacity", 1.0)
                                                  .html(words[index2] + "&nbsp;");
 
@@ -3839,6 +3840,35 @@ var TWiC = (function(namespace){
                   .attr("fill", function(d){ return d.locolor; });
     });
 
+    namespace.TextView.method("Load", function(){
+
+        //this.m_level.m_queue.defer(function(callback){
+
+            // Queue up loading of the text
+            d3.json(this.m_filename, function(error, data) {
+
+                // Save a reference to the JSON data
+                this.m_data = data.document;
+
+                var textData = { json: this.m_data,
+                                 clusterIndex: 0,
+                                 topicID: 0,
+                                 color: this.m_level.m_topicColors[0] };
+
+                // Update the panel to present the new text
+                var initialPauseState = this.IsPaused();
+                this.Pause(false);
+                this.Update(textData, namespace.Interaction.click);
+                if ( initialPauseState ){
+                    this.Pause(true);
+                }
+
+                //callback(null, this.m_data);
+
+            }.bind(this));
+        //}.bind(this));
+    });
+
     namespace.TextView.method("MouseBehavior", function(p_data, p_mouseEventType){
 
         // Unhighlighted
@@ -3940,6 +3970,7 @@ var TWiC = (function(namespace){
                             this.Pause(true);
                             for ( var index = 0; index < this.m_linkedViews.length; index++ ){
 
+                                this.m_linkedViews[index].panel.Pause(false);
                                 if ( namespace.Interaction.mouseover == this.m_linkedViews[index].update ){
 
                                     if ( this.m_linkedViews[index].panel instanceof namespace.DataBar ){
@@ -4154,6 +4185,12 @@ var TWiC = (function(namespace){
 
         // Force level HTML redraw in order to overcome bug where SVG elements not resized until next redraw occurs
         $(this.m_level.m_div.node().parentNode).hide().show(0);
+    });
+
+    namespace.TextView.method("SetText", function(p_name, p_isURL){
+
+        // Save the filename
+        this.m_filename = ( p_isURL ) ? p_name : namespace.TopicRectangle.prototype.jsonDirectory + p_name;
     });
 
     namespace.TextView.prototype.s_borderWidth = 5;
@@ -5553,6 +5590,11 @@ var TWiC = (function(namespace){
         }
 
         return p_currentY;
+    });
+
+    namespace.DataBar.method("GetCurrentShape", function(){
+
+        return this.m_currentShape;
     });
 
     namespace.DataBar.method("Hide", function(p_hide, p_optionalOrganize){

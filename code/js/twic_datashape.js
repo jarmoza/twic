@@ -385,7 +385,8 @@ var TWiC = (function(namespace){
                     case namespace.Interaction.click:
 
                         // (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
-                        if ( p_data.topicID == p_bullseye.m_level.m_highlightedTopic ){
+                        if ( p_data.topicID == p_bullseye.m_level.m_highlightedTopic &&
+                             p_bullseye == p_bullseye.m_level.GetDataBar().GetCurrentShape() ){
 
                             p_bullseye.m_panel.Pause(false);
                             p_bullseye.m_panel.Update(null, namespace.Interaction.mouseover);
@@ -421,6 +422,15 @@ var TWiC = (function(namespace){
                     // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
                     case namespace.Interaction.dblclick:
 
+                        // Update the data bar, if present
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                                break;
+                            }
+                        }
+
                         if ( p_bullseye.AllowInteractions(namespace.Interaction.dblclick) ){
                             // NOTE: p_data == p_bullseye??
                             p_bullseye.m_panel.Pause(false);
@@ -455,6 +465,15 @@ var TWiC = (function(namespace){
 
                     // (II) Click - Any ring/circle --> Pauses panel and linked panels
                     case namespace.Interaction.click:
+
+                        // Update the data bar, if present
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                                break;
+                            }
+                        }
 
                         p_bullseye.m_panel.Pause(true);
                         for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
@@ -903,7 +922,28 @@ var TWiC = (function(namespace){
         this.m_level.m_queue.defer(function(callback){
 
             // Queue up loading of the text
-            d3.json(namespace.TopicRectangle.prototype.jsonDirectory + this.m_name + ".json", function(error, data) {
+            d3.json(namespace.TopicRectangle.prototype.jsonDirectory + this.m_name + ".json", function(error, data){
+
+                this.m_data = data.document;
+
+                // Determine the rectangle dimensions now that the json is loaded
+                this.CalculateSize();
+
+                // Construct the tooltip highlights
+                //this.BuildTipLines();
+
+                callback(null, this.m_data);
+
+            }.bind(this));
+        }.bind(this));
+    });
+
+    namespace.TopicRectangle.method("LoadURL", function(p_url){
+
+        this.m_level.m_queue.defer(function(callback){
+
+            // Queue up loading of the text
+            d3.json(p_url, function(error, data){
 
                 this.m_data = data.document;
 
@@ -1062,7 +1102,8 @@ var TWiC = (function(namespace){
                     case namespace.Interaction.click:
 
                         // (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
-                        if ( p_data.topicID == p_rectangle.m_level.m_highlightedTopic ){
+                        if ( p_data.topicID == p_rectangle.m_level.m_highlightedTopic &&
+                             p_rectangle == p_rectangle.m_level.GetDataBar().GetCurrentShape() ){
 
                             p_rectangle.m_panel.Pause(false);
                             p_rectangle.m_panel.Update(null, namespace.Interaction.mouseover);
@@ -1097,6 +1138,15 @@ var TWiC = (function(namespace){
 
                     // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
                     case namespace.Interaction.dblclick:
+
+                        // Update the data bar, if present
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                                break;
+                            }
+                        }
 
                         if ( p_rectangle.AllowInteractions(namespace.Interaction.dblclick) ){
 
@@ -1157,6 +1207,15 @@ var TWiC = (function(namespace){
 
                     // (II) Click - Any ring/circle --> Pauses panel and linked panels
                     case namespace.Interaction.click:
+
+                        // Update the data bar, if present
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                                break;
+                            }
+                        }
 
                         p_rectangle.m_panel.Pause(true);
                         for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
