@@ -2,7 +2,7 @@ var TWiC = (function(namespace){
 
     namespace.s_domPrefix = "twic_";
     namespace.s_lastUsedID = -1;
-    
+
     namespace.Interaction = {
 
         mouseover: "mouseover",
@@ -16,7 +16,7 @@ var TWiC = (function(namespace){
         //return { width: screen.availWidth, height: screen.availHeight };
         return { width: window.innerWidth, height: window.innerHeight };
     };
-    
+
     namespace.GetUniqueID = function(){
 
         namespace.s_lastUsedID++;
@@ -34,7 +34,7 @@ var TWiC = (function(namespace){
         }
 
         return {width: e[a+'Width'] , height: e[a+'Height']}
-    } 
+    }
 
     // From http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
     namespace.ShadeBlend = function(p, c0, c1) {
@@ -53,7 +53,7 @@ var TWiC = (function(namespace){
             var f=w(c0.slice(1),16),t=w((c1?c1:p<0?"#000000":"#FFFFFF").slice(1),16),R1=f>>16,G1=f>>8&0x00FF,B1=f&0x0000FF;
             return "#"+(0x1000000+(u(((t>>16)-R1)*n)+R1)*0x10000+(u(((t>>8&0x00FF)-G1)*n)+G1)*0x100+(u(((t&0x0000FF)-B1)*n)+B1)).toString(16).slice(1)
         }
-    };    
+    };
 
     namespace.Container = function(p_coordinates, p_controlBar, p_panel){
 
@@ -89,9 +89,6 @@ var TWiC = (function(namespace){
             this.m_size = {width: this.m_panel.m_size.width, height: this.m_panel.m_size.height};
         }
 
-        // Now that the control bar size has been set
-        //this.DeterminePosition();
-
         // Add the container's div
         this.m_div = p_parentDiv.append("div")
                                 //.attr("class", "div_twic_container ui-widget-content item")
@@ -100,19 +97,17 @@ var TWiC = (function(namespace){
                                 .style("position", "absolute")
                                 .style("left", this.m_coordinates.x)
                                 .style("top", this.m_coordinates.y)
-                                //.style("max-width", this.m_size.width)
-                                //.style("max-height", this.m_size.height)
-                                .style("max-width", this.m_level.m_size.width)
-                                .style("max-height", this.m_level.m_size.height)                                
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
+                                .style("max-width", this.m_level.m_size.width)
+                                .style("max-height", this.m_level.m_size.height)
                                 .style("overflow", "auto")
                                 .on("mouseup", function(){
                                     if ( this.m_level.m_resizeOccurred ){
                                         this.m_level.m_resizeOccurred = false;
                                         this.m_level.OrganizePanels();
                                     }
-                                }.bind(this));     
+                                }.bind(this));
 
         // Initialize the panel and control bar
         if ( null != this.m_controlBar ) {
@@ -147,7 +142,7 @@ var TWiC = (function(namespace){
                 case "left":
                     this.m_coordinates.x -= this.m_controlBar.m_size.width;
                     break;
-                // If the orientation is "right" then the container size will be adjusted in Initialize()x
+                // If the orientation is "right" then the container size will be adjusted in Initialize()
                 // to accomodate the added size of the control bar
             }
         }
@@ -158,11 +153,11 @@ var TWiC = (function(namespace){
         // Changes the stored coordinates of the container
         // (no need to alter the coordinates of its components as they are relatively positioned)
         this.m_coordinates.x = p_coordinates.x;
-        this.m_coordinates.y = p_coordinates.y;    
+        this.m_coordinates.y = p_coordinates.y;
     });
 
     namespace.Container.method("SetSize", function(p_size){
-        
+
         // Panel dimensions do not include optional control bar
         if ( this.m_controlBar ){
 
@@ -175,20 +170,20 @@ var TWiC = (function(namespace){
                 case "bottom":
                     this.m_panel.SetSize({width: p_size.width, height: p_size.height - this.m_controlBar.m_size.height});
                     this.m_size.width = this.m_panel.m_size.width;
-                    this.m_size.height = this.m_panel.m_size.height + this.m_controlBar.m_size.height;                    
+                    this.m_size.height = this.m_panel.m_size.height + this.m_controlBar.m_size.height;
                     break;
                 case "left":
                 case "right":
                     this.m_panel.SetSize({width: p_size.width - this.m_controlBar.m_size.width, height: p_size.height});
                     this.m_size.width = this.m_panel.m_size.width + this.m_controlBar.m_size.width;
-                    this.m_size.height = this.m_panel.m_size.height;                    
+                    this.m_size.height = this.m_panel.m_size.height;
                     break;
             }
         } else {
             // Otherwise, panel and its container are the same size
             this.m_size = { width: p_size.width, height: p_size.height };
             this.m_panel.SetSize({ width: p_size.width, height: p_size.height });
-        }     
+        }
     });
 
 
@@ -204,7 +199,7 @@ var TWiC = (function(namespace){
         this.m_name = "";
         this.m_div = null;
         this.m_objectCount = 0;
-        this.m_currentSelection = -1;
+        this.m_highlightedTopic = -1;
 
         // Arrays of TWiC.Container objects
         this.m_graphViews = [];
@@ -216,11 +211,6 @@ var TWiC = (function(namespace){
         this.m_topicWordLists = {};
         this.m_topicColors = {};
 
-        // Fields for when transitions are in use
-        this.m_usingTransitions = false;
-        this.m_currentPanel = null;
-        this.m_panelList = [];
-
         this.m_controlBar = null;
 
         // Keeps track of who the level is temporarily pausing/unpausing.
@@ -228,7 +218,7 @@ var TWiC = (function(namespace){
         this.m_graphPauseList = [];
         this.m_infoPauseList = [];
 
-        this.m_resizeOccurred = false;   
+        this.m_resizeOccurred = false;
     };
 
     namespace.Level.method("AddControlBar", function(p_barThickness, p_barOrientation){
@@ -366,8 +356,6 @@ var TWiC = (function(namespace){
                                 .attr("class", "div_twic_level")
                                 .attr("id", "twic_level_" + this.m_name)
                                 .style("position", "relative")
-                                //.style("left", this.m_coordinates.x)
-                                //.style("top", this.m_coordinates.y)
                                 .style("width", levelDimsPercent.width)
                                 .style("height", levelDimsPercent.height)
                                 .style("max-width", levelDimsPercent.width)
@@ -378,18 +366,16 @@ var TWiC = (function(namespace){
 
         // Add and setup the graph div and svg elements
         for ( var index = 0; index < this.m_graphViews.length; index++ ){
-
             this.m_graphViews[index].Initialize(this.m_div);
         }
 
         // Add and setup the informational div and svg elements
         for ( var index = 0; index < this.m_infoViews.length; index++ ){
-
             this.m_infoViews[index].Initialize(this.m_div);
         }
 
         // When browser resizes, level and its panels resize
-        //$(this.m_div[0]).resizable({resize: function(){  
+        //$(this.m_div[0]).resizable({resize: function(){
         //}.bind(this)});
 
         /*window.addEventListener("resize", function(){
@@ -402,7 +388,7 @@ var TWiC = (function(namespace){
                 }
                 for ( var index = 0; index < this.m_infoViews.length; index++ ){
                     $(this.m_infoViews[index].m_div[0]).resize();
-                }                
+                }
                // $(this.m_div[0]).find(".div_twic_container").resize();
             }.bind(this));
         }.bind(this));*/
@@ -416,35 +402,18 @@ var TWiC = (function(namespace){
         // Ensure all initialization work is finished before starting up TWiC views
         this.m_queue.await(function(){
 
-            // Level starts based on whether or not transitions are being used
-            // NOTE (05/21/15): Non-transition behavior will open all graph panels currently,
-            // but should be changed to open new graph panels on double-click
-            if ( !this.IsUsingTransitions() ) {
-                for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                    this.m_graphViews[index].Start();
-                }
-                for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                    this.m_infoViews[index].Start();
-                }
-            } else {
-
-                // Start the first panel in the given panel list
-                if ( this.m_panelList.length ) {
-                    this.m_panelList[0].Start();
-                }
-
-                // Start up all listed info panels
-                for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                    this.m_infoViews[index].Start();
-                }
+            for ( var index = 0; index < this.m_graphViews.length; index++ ){
+                this.m_graphViews[index].Start();
             }
-
-        }.bind(this)); 
+            for ( var index = 0; index < this.m_infoViews.length; index++ ){
+                this.m_infoViews[index].Start();
+            }
+        }.bind(this));
     });
 
     namespace.Level.method("Pause", function(p_state){
 
-        for ( var index = 0; index < this.m_graphViews.length; index++ ){ 
+        for ( var index = 0; index < this.m_graphViews.length; index++ ){
 
             if ( p_state && !this.m_graphViews[index].m_panel.IsPaused() ){
                 this.m_graphPauseList.push(index);
@@ -500,7 +469,7 @@ var TWiC = (function(namespace){
                         if ( this.m_infoViews[index].m_panel.IsHidden() ){
                             this.m_infoViews[index].m_panel.Hide(false);
                         }
-                    }                    
+                    }
 
                     // New panel container width will be half the level width
                     var containerWidth = this.m_size.width >> 1;
@@ -517,8 +486,8 @@ var TWiC = (function(namespace){
                         size: { width: containerWidth, height: containerHeight },
                         duration: 2000
                     };
-                                                            
-                    // Original panel is put to top left and halved, and animated over to this position/size                    
+
+                    // Original panel is put to top left and halved, and animated over to this position/size
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
                         // The information view grows upward beneath the two panels
@@ -527,7 +496,7 @@ var TWiC = (function(namespace){
                             size: { width: (this.m_size.width >> 1) + (this.m_size.width >> 2),
                                     height: this.m_size.height - p_containerHeight},
                             duration: 2000
-                        };                        
+                        };
                         this.m_infoViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
                             // Move the data bar
@@ -539,39 +508,39 @@ var TWiC = (function(namespace){
                                 duration: 2000
                             };
 
-                            this.m_infoViews[1].m_panel.Move(transition, "end", function(p_containerWidth, p_containerHeight, p_data){                              
+                            this.m_infoViews[1].m_panel.Move(transition, "end", function(p_containerWidth, p_containerHeight, p_data){
 
                                 // New panel is created, loaded in the background
-                                this.m_graphViews[0].m_panel.OpenUnderlyingPanel(p_data, 
+                                this.m_graphViews[0].m_panel.OpenUnderlyingPanel(p_data,
                                                                                  { x: p_containerWidth, y: 0 },
                                                                                  { width: p_containerWidth,
                                                                                    height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
                                 // Update all panels as if they have had a datashape mouseover event, and then pause them
                                 for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                                    this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
-                                                                      color: this.m_topicColors[this.m_currentSelection] },
+                                    this.m_graphViews[index].Update({ topicID: this.m_highlightedTopic,
+                                                                      color: this.m_topicColors[this.m_highlightedTopic] },
                                                                     namespace.Interaction.mouseover);
                                     this.m_graphViews[index].m_panel.Pause(true);
                                 }
 
                                 for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                                   this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
-                                                                    color: this.m_topicColors[this.m_currentSelection] },
-                                                                  namespace.Interaction.mouseover);                                
+                                   this.m_infoViews[index].Update({ topicID: this.m_highlightedTopic,
+                                                                    color: this.m_topicColors[this.m_highlightedTopic] },
+                                                                  namespace.Interaction.mouseover);
                                    this.m_infoViews[index].m_panel.Pause(true);
-                                }  
+                                }
 
                                 // Add this panel's container div to the packery list and reload the layout
                                 var levelAsContainer = $(this.m_div[0]);
                                 levelAsContainer.packery("appended", [$(this.m_graphViews[1].m_div[0])]);
                                 var itemElems = levelAsContainer.find('.item');
                                 levelAsContainer.packery('bindUIDraggableEvents', itemElems);
-                                levelAsContainer.packery("reloadItems");                            
+                                levelAsContainer.packery("reloadItems");
 
                                 this.m_graphViews[1].m_panel.Pause(false);
-                                this.m_graphViews[1].Update({ topicID: this.m_currentSelection,
-                                                              color: this.m_topicColors[this.m_currentSelection] },
+                                this.m_graphViews[1].Update({ topicID: this.m_highlightedTopic,
+                                                              color: this.m_topicColors[this.m_highlightedTopic] },
                                                              namespace.Interaction.mouseover);
                                 this.m_graphViews[1].m_panel.Pause(true);
 
@@ -595,7 +564,7 @@ var TWiC = (function(namespace){
                         if ( this.m_infoViews[index].m_panel.IsHidden() ){
                             this.m_infoViews[index].m_panel.Hide(false);
                         }
-                    }                    
+                    }
 
                     // New panel container width will be half the level width
                     var containerWidth = this.m_size.width >> 1;
@@ -608,7 +577,7 @@ var TWiC = (function(namespace){
                         position: { x: 0, y: 0 },
                         size: { width: containerWidth, height: containerHeight },
                         duration: 2000
-                    };                     
+                    };
                     this.m_graphViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
                         transition = {
@@ -623,7 +592,7 @@ var TWiC = (function(namespace){
                                 position: { x: p_containerWidth, y: p_containerHeight },
                                 size: { width: p_containerWidth, height: p_containerHeight >> 1 },
                                 duration: 1500
-                            };                            
+                            };
                             this.m_infoViews[1].m_panel.Move(transition, "end", function(){ });
 
                             // Resize the topic bar to the bottom right
@@ -633,25 +602,27 @@ var TWiC = (function(namespace){
                                 duration: 2000
                             };
 
-                            this.m_infoViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){                       
+                            this.m_infoViews[0].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight, p_data){
 
                                 // Open the text cluster view based on the double-clicked cluster
-                                this.m_graphViews[1].m_panel.OpenUnderlyingPanel(p_data, 
+                                this.m_graphViews[1].m_panel.OpenUnderlyingPanel(p_data,
                                                                                  { x: 0, y: p_containerHeight },
                                                                                  { width: p_containerWidth,
                                                                                    height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
                                 // Update all panels as if they have had a datashape mouseover event, and then pause them
                                 for ( var index = 0; index < this.m_graphViews.length; index++ ){
-                                    this.m_graphViews[index].Update({ topicID: this.m_currentSelection,
-                                                                      color: this.m_topicColors[this.m_currentSelection] },
+                                    this.m_graphViews[index].m_panel.Pause(false);
+                                    this.m_graphViews[index].Update({ topicID: this.m_highlightedTopic,
+                                                                      color: this.m_topicColors[this.m_highlightedTopic] },
                                                                     namespace.Interaction.mouseover);
                                     this.m_graphViews[index].m_panel.Pause(true);
                                 }
 
                                 for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                                    this.m_infoViews[index].Update({ topicID: this.m_currentSelection,
-                                                                     color: this.m_topicColors[this.m_currentSelection] },
+                                    this.m_infoViews[index].m_panel.Pause(false);
+                                    this.m_infoViews[index].Update({ topicID: this.m_highlightedTopic,
+                                                                     color: this.m_topicColors[this.m_highlightedTopic] },
                                                                    namespace.Interaction.mouseover);
                                     this.m_infoViews[index].m_panel.Pause(true);
                                 }
@@ -664,8 +635,8 @@ var TWiC = (function(namespace){
                                 levelAsContainer.packery("reloadItems");
 
                                 this.m_graphViews[2].m_panel.Pause(false);
-                                this.m_graphViews[2].Update({ topicID: this.m_currentSelection,
-                                                              color: this.m_topicColors[this.m_currentSelection] },
+                                this.m_graphViews[2].Update({ topicID: this.m_highlightedTopic,
+                                                              color: this.m_topicColors[this.m_highlightedTopic] },
                                                             namespace.Interaction.mouseover);
                                 this.m_graphViews[2].m_panel.Pause(true);
 
@@ -687,7 +658,7 @@ var TWiC = (function(namespace){
                         if ( this.m_infoViews[index].m_panel.IsHidden() ){
                             this.m_infoViews[index].m_panel.Hide(false);
                         }
-                    }                
+                    }
 
                     // Resize graphical panels 1-3 to a height of 1/2 level - 1/2 topic bar minimum size
                     var topicBarMinSize = namespace.TopicBar.prototype.s_minHeight;
@@ -704,7 +675,7 @@ var TWiC = (function(namespace){
                             position: { x: p_containerWidth, y: 0 },
                             size: { width: p_containerWidth, height: p_containerHeight },
                             duration: 2000
-                        };                            
+                        };
                         this.m_graphViews[1].m_panel.Move(transition, "start", function(p_containerWidth, p_containerHeight){
 
                             transition = {
@@ -738,17 +709,17 @@ var TWiC = (function(namespace){
                             transition = {
                                 position: { x: p_containerWidth, y: p_containerHeight },
                                 size: { width: p_containerWidth, height: namespace.TopicBar.prototype.s_minHeight },
-                                duration: 500
+                                duration: 1000
                             };
                             this.m_infoViews[1].m_panel.Move(transition, "end", function(p_data, p_containerWidth, p_containerHeight){
 
                                 // New panel of size of panels 1-3 in bottom left (NOTE: height temporarily hacked to remove control bar height)
-                                this.m_graphViews[2].m_panel.OpenUnderlyingPanel(p_data, 
+                                this.m_graphViews[2].m_panel.OpenUnderlyingPanel(p_data,
                                                                                 { x: p_containerWidth, y: p_containerHeight + namespace.TopicBar.prototype.s_minHeight },
                                                                                 { width: p_containerWidth, height: p_containerHeight - namespace.Control.prototype.s_defaultThickness });
 
                                 // Update all panels as if they have had a datashape mouseover event, and then pause them
-                                var topicForUpdate = ( -1 == this.m_currentSelection ) ? p_data.topicID : this.m_currentSelection;
+                                var topicForUpdate = ( -1 == this.m_highlightedTopic ) ? p_data.topicID : this.m_highlightedTopic;
                                 var dataToViews = { json: p_data.json, clusterIndex: p_data.clusterIndex,
                                                     topicID: topicForUpdate, color: this.m_topicColors[topicForUpdate] };
                                 for ( var index = 0; index < this.m_graphViews.length; index++ ){
@@ -757,9 +728,9 @@ var TWiC = (function(namespace){
                                 }
 
                                 for ( var index = 0; index < this.m_infoViews.length; index++ ){
-                                   this.m_infoViews[index].Update(dataToViews, namespace.Interaction.mouseover);                                
+                                   this.m_infoViews[index].Update(dataToViews, namespace.Interaction.mouseover);
                                    this.m_infoViews[index].m_panel.Pause(true);
-                                }                              
+                                }
 
                                 // Add this panel's container div to the packery list and reload the layout
                                 var levelAsContainer = $(this.m_div[0]);
@@ -768,12 +739,12 @@ var TWiC = (function(namespace){
                                 //itemElems.draggable();
                                 levelAsContainer.packery('bindUIDraggableEvents', itemElems);
                                 levelAsContainer.packery("reloadItems");
-                            }.bind(this, p_data, p_containerWidth, p_containerHeight)); 
+                            }.bind(this, p_data, p_containerWidth, p_containerHeight));
                         }.bind(this, p_data, p_containerWidth, p_containerHeight));
-                    }.bind(this, p_data, containerWidth, containerHeight));                  
+                    }.bind(this, p_data, containerWidth, containerHeight));
 
                     break;
-                
+
                 case 4:
                     // Top two at top, new panel in level center with topic bar beneath, bottom two on bottom
                     // Fifth panel is likely PublicationView currently
@@ -808,15 +779,7 @@ var TWiC = (function(namespace){
         levelContainer.packery("bindUIDraggableEvents", panelContainers);
 
         // Packery will reorganize panels when window is resized
-        //levelContainer.packery("bindResize");            
-    });
-
-    namespace.Level.method("UseTransitions", function(p_state){ this.m_usingTransitions = p_state; });
-    namespace.Level.method("IsUsingTransitions", function(){ return this.m_usingTransitions; });
-
-    namespace.Level.method("PopulatePanelHierarchy", function(p_panelList){
-
-        this.m_panelList = p_panelList;
+        //levelContainer.packery("bindResize");
     });
 
     namespace.Level.prototype.s_fontFamily = "Inconsolata";//"Archer";
@@ -824,7 +787,7 @@ var TWiC = (function(namespace){
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
                                             "beige": "#DFDAC4", "lightpurple": "#D8D8FF",
-                                            "logold": namespace.ShadeBlend(-0.50, "#FAFAD2"), 
+                                            "logold": namespace.ShadeBlend(-0.50, "#FAFAD2"),
                                             "deeppurple": "#15053C",
                                             "hide": "#FB4645", "minimize": "#FDB124", "maximize": "#28C231",
                                             "hide_highlight": "#3B0002", "min_highlight": "#864502", "max_highlight": "#0B5401",

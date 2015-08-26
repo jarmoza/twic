@@ -75,7 +75,7 @@ var TWiC = (function(namespace){
         this.m_controlGroup = null;
         this.m_barPath = null;
         this.m_barText = null;
-        this.m_nextControlWidgetPos = { x: this.m_barThickness >> 1, 
+        this.m_nextControlWidgetPos = { x: this.m_barThickness >> 1,
                                         y: this.m_barThickness * 0.65 };
         this.m_textFirstSet = false;
     };
@@ -105,7 +105,7 @@ var TWiC = (function(namespace){
                                 .style("width", this.m_size.width)
                                 .style("height", this.m_size.height)
                                 .style("max-width", this.m_size.width)
-                                .style("max-height", this.m_size.height)                                
+                                .style("max-height", this.m_size.height)
                                 .style("background", "transparent")
                                 .style("float", "left")
                                 .style("margin", 0);
@@ -117,7 +117,7 @@ var TWiC = (function(namespace){
                                .attr("y", this.m_coordinates.y)
                                .attr("width", this.m_size.width)
                                .attr("height", this.m_size.height)
-                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);                               
+                               .attr("viewBox", "0 0 " + this.m_size.width + " " + this.m_size.height);
 
         // Make a group to hold the control bar components
         this.m_controlGroup = this.m_svg.append("g")
@@ -203,9 +203,9 @@ var TWiC = (function(namespace){
                                this.HighlightPanelSizeControls(true);
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
-                               this.HighlightPanelSizeControls(false);                              
-                           }.bind(this));                           
-                        
+                               this.HighlightPanelSizeControls(false);
+                           }.bind(this));
+
         this.DrawChevron({ x: this.m_nextControlWidgetPos.x + namespace.Control.prototype.s_sizeControlRadius,
                            y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1)},
                            "up");
@@ -216,7 +216,7 @@ var TWiC = (function(namespace){
 
         // Add the minimize button
         circleCenter = { cx: this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius),
-                         cy: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) };                          
+                         cy: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) };
         this.m_controlGroup.append("circle")
                            .attr("cx", circleCenter.cx)
                            .attr("cy", circleCenter.cy)
@@ -239,7 +239,7 @@ var TWiC = (function(namespace){
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
                                this.HighlightPanelSizeControls(false);
-                           }.bind(this));                                                   
+                           }.bind(this));
 
         this.DrawMinus({ x: this.m_nextControlWidgetPos.x + 4 + (4 * namespace.Control.prototype.s_sizeControlRadius),
                          y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
@@ -260,7 +260,7 @@ var TWiC = (function(namespace){
                            .attr("y", circleCenter.cy - namespace.Control.prototype.s_sizeControlRadius - (namespace.Control.prototype.s_sizeControlRadius >> 1))
                            .attr("width", 3 * namespace.Control.prototype.s_sizeControlRadius)
                            .attr("height", 3 * namespace.Control.prototype.s_sizeControlRadius)
-                           .style("opacity", 0)                           
+                           .style("opacity", 0)
                            .on(namespace.Interaction.click, function(){
                                this.m_panel.Maximize();
                            }.bind(this))
@@ -269,7 +269,7 @@ var TWiC = (function(namespace){
                            }.bind(this))
                            .on(namespace.Interaction.mouseout, function(){
                                this.HighlightPanelSizeControls(false);
-                           }.bind(this));                           
+                           }.bind(this));
 
         this.DrawPlus({ x: this.m_nextControlWidgetPos.x + 8 + (7 * namespace.Control.prototype.s_sizeControlRadius),
                         y: this.m_nextControlWidgetPos.y - (namespace.Control.prototype.s_sizeControlRadius >> 1) - (namespace.Control.prototype.s_sizeControlRadius >> 1) });
@@ -407,7 +407,7 @@ var TWiC = (function(namespace){
                                                  .attr("y2", p_coordinates.y)
                                                  .attr("stroke", namespace.Level.prototype.s_palette.min_highlight)
                                                  .attr("stroke-width", 2)
-                                                 .style("opacity", 0);        
+                                                 .style("opacity", 0);
     });
 
     namespace.Control.method("DrawPlus", function(p_coordinates){
@@ -436,7 +436,7 @@ var TWiC = (function(namespace){
     });
 
     namespace.Control.method("GetRectPath", function(){
-      
+
         // Determine the type of partially-rounded rectangle to draw
         switch ( this.m_orientation ){
 
@@ -444,19 +444,20 @@ var TWiC = (function(namespace){
                 var path = namespace.TopRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                     this.m_size.width, this.m_size.height,
                                                     namespace.Control.prototype.s_borderRadius);
-                //this.m_panel.m_coordinates.y += this.m_size.height;
                 break;
+
             case 'bottom':
                 var path = namespace.BottomRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                        this.m_size.width, this.m_size.height,
                                                        namespace.Control.prototype.s_borderRadius);
                 break;
+
             case 'left':
                 var path = namespace.LeftRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                      this.m_size.width, this.m_size.height,
                                                      namespace.Control.prototype.s_borderRadius);
-                //this.m_panel.m_coordinates.x += this.m_size.width;
                 break;
+
             case 'right':
                 var path = namespace.RightRoundedRect(this.m_coordinates.x, this.m_coordinates.y,
                                                       this.m_size.width, this.m_size.height,
@@ -484,7 +485,7 @@ var TWiC = (function(namespace){
                 this.m_hideHighlightLU.style("opacity", 1.0);
                 this.m_hideHighlightRU.style("opacity", 1.0);
                 this.m_hideHighlightLD.style("opacity", 0);
-                this.m_hideHighlightRD.style("opacity", 0);                               
+                this.m_hideHighlightRD.style("opacity", 0);
             }
 
             // Minimize control
@@ -494,7 +495,7 @@ var TWiC = (function(namespace){
             this.m_maxHighlightH.style("opacity", 1.0);
             this.m_maxHighlightV.style("opacity", 1.0);
 
-          // Unhighlight all        
+          // Unhighlight all
         } else {
 
             // Hide control
@@ -508,7 +509,7 @@ var TWiC = (function(namespace){
 
             // Maximize control
             this.m_maxHighlightH.style("opacity", 0);
-            this.m_maxHighlightV.style("opacity", 0);            
+            this.m_maxHighlightV.style("opacity", 0);
         }
     });
 
@@ -525,16 +526,16 @@ var TWiC = (function(namespace){
     });
 
     namespace.Control.method("SetSize", function(p_size){
-        
+
         this.m_size.width = p_size.width;
         this.m_size.height = p_size.height;
-    })    
+    })
 
     namespace.Control.method("UpdateBarPath", function(p_pathString){
 
         // Add the path for the control bar shape (the panel/owner will determine the text/controls itself)
         this.m_barPath.attr("d", p_pathString);
-    });    
+    });
 
     namespace.Control.prototype.s_defaultThickness = 50;
     namespace.Control.prototype.s_borderRadius = 15;

@@ -29,7 +29,7 @@ var TWiC = (function(namespace){
 
         var x = 0;
     });
-    
+
     namespace.DataShape.method("Load", function(){
 
         var x = 0;
@@ -43,13 +43,13 @@ var TWiC = (function(namespace){
 
     // TWiC TopicBullseye (inherits from DataShape)
     namespace.TopicBullseye = function(p_coordinates, p_size, p_nodeIndex, p_level, p_panel, p_linkedViews, p_numberCircles, p_topics, p_title, p_corpusBullseye){
-        
+
         // Apply the base class arguments
         namespace.DataShape.apply(this, arguments);
 
         // Save other TopicBullseye-specific parameters
         this.m_linkedViews = p_linkedViews;
-        this.m_numberCircles = p_numberCircles;                
+        this.m_numberCircles = p_numberCircles;
 
         // Get the top N topics
         this.m_fullTopicListRef = p_topics;
@@ -69,12 +69,12 @@ var TWiC = (function(namespace){
             }
             this.m_topicProportionSum += p_topics[index][1];
         }
-        
+
         // Other class members
         this.m_allowDblclick = true;
         this.m_radius = this.m_size;
         this.m_scaledRadius = false;
-        this.m_shapeGroup = null;   
+        this.m_shapeGroup = null;
         this.m_title = p_title;
         this.m_shapeChar = namespace.TopicBullseye.prototype.s_shapeChar;
 
@@ -97,7 +97,7 @@ var TWiC = (function(namespace){
 
         // Add the text tag to the shape's svg group
         var parentGroup = ( undefined === p_optionalGroup ) ? this.m_shapeGroup : p_optionalGroup;
-        
+
         this.m_textTag = parentGroup.append("text")
                                     .attr("class", "clustercircle_text")
                                     .attr("dx", "0")
@@ -119,7 +119,7 @@ var TWiC = (function(namespace){
                       .attr("x", p_position.x)
                       .attr("y", p_position.y)
                       .style("opacity", p_opacity);
-    }); 
+    });
 
     namespace.TopicBullseye.method("Draw", function(p_node, p_filenames){
 
@@ -136,88 +136,7 @@ var TWiC = (function(namespace){
         // Modify the given node to be a twic cluster group (extra parent group for smooth zoom-behavior)
         this.m_shapeGroup = p_node.append("g")
                                   .attr("class", "group_twic_datashape_smoothzooming")
-                                  .attr("id", "twic_clustercircle_" + this.m_level.m_objectCount)                                    
-                                  .on(namespace.Interaction.click, function(){
-
-                                    // Single click with timer to overcome on.click being fired before on.dblclick
-                                    if ( this.m_clickTimerID ){
-                                        
-                                        clearTimeout(this.m_clickTimerID);
-                                        this.m_clickTimerID = null;
-                                
-                                        // Do double click code here
-
-                                        // Ensure topic remains highlighted throughout the level
-                                        var topicData = { topicID: this.m_panel.m_highlightedTopic,
-                                                          color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic] };
-                                        this.m_panel.Update(topicData, namespace.Interaction.mouseover);
-                                        this.m_panel.Pause(true);
-                                        for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){                                            
-
-                                            // Puts this shape's data into the data bar
-                                            if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
-
-                                                this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this }, namespace.Interaction.click);
-                                            }                                            
-                                                                                 
-                                            this.m_panel.m_linkedViews[index].panel.Pause(false);
-                                            this.m_panel.m_linkedViews[index].panel.Update(topicData, namespace.Interaction.mouseover);
-                                            this.m_panel.m_linkedViews[index].panel.Pause(true);
-                                        }                                          
-
-                                        // If this shape allows double-clicks, initiate its double-click behavior
-                                        if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
-                                            this.m_panel.Update(this, namespace.Interaction.dblclick);
-                                        }                                                                            
-                                    }
-                                    else {
-                                        
-                                        this.m_clickTimerID = setTimeout(function(){ 
-
-                                            this.m_clickTimerID = null;
-                                            
-                                            // Do single click code here
-
-                                            // Pause/unpause my panel's Update() to keep highlighting frozen
-                                            // or allow it to resume
-                                            var initialPauseState = this.m_panel.IsPaused();
-                                            this.m_panel.Pause(!initialPauseState);
-
-                                            // Force mouseout behavior if unpausing
-                                            if ( initialPauseState ){
-                                                this.m_panel.Update(null, namespace.Interaction.mouseover);
-                                            } else {
-                                                // Make sure highlight is evident
-                                                this.m_panel.Update({ topicID: this.m_panel.m_highlightedTopic, 
-                                                                      color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic]},
-                                                                    namespace.Interaction.mouseover);
-                                            }                                   
-
-                                            // Pause/unpause all of my panel's linked views as well
-                                            for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-
-                                                this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
-
-                                                // If unpausing, update panel as if mouseout has occured
-                                                if ( initialPauseState ){
-                                                    this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                                                } else {
-
-                                                    // Make sure highlight is evident
-                                                    this.m_panel.m_linkedViews[index].panel.Update({ topicID: this.m_panel.m_highlightedTopic, 
-                                                                                                     color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic]},
-                                                                                                   namespace.Interaction.mouseover);                                                    
-                                                }
-
-                                                // Special click update for data bar
-                                                if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
-                                                    this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this },
-                                                                                                   namespace.Interaction.click);
-                                                }
-                                            }                                            
-                                        }.bind(this), 250);
-                                    }                                    
-                                }.bind(this));                          
+                                  .attr("id", "twic_clustercircle_" + this.m_level.m_objectCount);
 
         this.m_level.m_objectCount += 1;
 
@@ -227,42 +146,31 @@ var TWiC = (function(namespace){
             var data = {
 
                 // Color
-                "color" : this.m_level.m_topicColors[this.m_topTopics[index][0]],
-                
+                color: this.m_level.m_topicColors[this.m_topTopics[index][0]],
+
                 // Topic ID
-                "topicID" : this.m_topTopics[index][0],
-                
+                topicID: this.m_topTopics[index][0],
+
                 // Topic proportion
-                "prop" : this.m_topTopics[index][1],
-                
+                prop: this.m_topTopics[index][1],
+
                 // Filename for linked views reference
-                "texts" : p_filenames,
-                
+                texts: p_filenames,
+
                 // Reference to this shape
-                "shapeRef": this
+                shapeRef: this
             };
 
+            // Lolight color
             if ( 1 == this.m_numberCircles ){
-                 // Highlight color
-                 //data["hicolor"] = this.m_level.m_topicColors[this.m_topTopics[index][0]];
-                 // Lolight color
-                 data["locolor"] = this.m_level.m_topicColors[this.m_topTopics[index][0]];
+                data.locolor = this.m_level.m_topicColors[this.m_topTopics[index][0]];
             }
             else {
-                // Highlight color
-                //data["hicolor"] = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorHighlight,
-                //                                 this.m_level.m_topicColors[this.m_topTopics[index][0]]);
-
-                // Midlight color
-                //data["midcolor"] = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorMidlight,
-                //                                 this.m_level.m_topicColors[this.m_topTopics[index][0]]);
-
-                // Lolight color
-                data["locolor"] = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                       this.m_level.m_topicColors[this.m_topTopics[index][0]]);
+                data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                    this.m_level.m_topicColors[this.m_topTopics[index][0]]);
             }
 
-            if ( index > 0) {
+            if ( index > 0 ) {
                 var arc = d3.svg.arc().innerRadius(currentRadius - radiusReduction)
                                       .outerRadius(currentRadius)
                                       .startAngle(0)
@@ -287,12 +195,7 @@ var TWiC = (function(namespace){
                 .style("opacity", 1.0)
                 .on(namespace.Interaction.mouseover, function(d){
 
-                    this.m_panel.Update(d, namespace.Interaction.mouseover);
-                    for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                        if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                            this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
-                        }
-                    }
+                    namespace.TopicBullseye.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
 
                     // Re-append the cluster circle group to bump up its z-order to top
                     this.m_shapeGroup.node().parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode);
@@ -312,22 +215,29 @@ var TWiC = (function(namespace){
 
                 }.bind(this))
                 .on(namespace.Interaction.mouseout, function(d){
-
-                    this.m_panel.Update(null, namespace.Interaction.mouseover);
-                    for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                        if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                            this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                        }
-                    }
+                    namespace.TopicBullseye.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
                 }.bind(this))
                 .on(namespace.Interaction.click, function(d){
 
-                    if ( d.topicID != this.m_panel.m_highlightedTopic ){
+                    // Single click with timer to overcome on.click being fired before on.dblclick
+                    if ( this.m_clickTimerID ){
 
-                        // Save the newly clicked topic ID and the shape group on.click() will take care of the rest
-                        this.m_panel.m_highlightedTopic = d.topicID;
+                        clearTimeout(this.m_clickTimerID);
+                        this.m_clickTimerID = null;
+
+                        // Do double click code here
+                        namespace.TopicBullseye.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
+                    } else {
+
+                        this.m_clickTimerID = setTimeout(function(p_data){
+
+                            this.m_clickTimerID = null;
+
+                            // Do single click code here
+                            namespace.TopicBullseye.prototype.MouseBehavior(this, p_data, namespace.Interaction.click);
+                        }.bind(this, d), 250);
                     }
-                }.bind(this));                         
+                }.bind(this));
 
             // Decrement the current radius to draw the next inner most ring
             currentRadius -= radiusReduction;
@@ -363,13 +273,232 @@ var TWiC = (function(namespace){
                          .attr("transform", "translate(" + this.m_coordinates.x.toString() + "," +
                                                            this.m_coordinates.y.toString() + ")");
         this.m_shapeGroup.selectAll("circle")
-                         .attr("cy", this.m_coordinates.y);        
-    });    
+                         .attr("cy", this.m_coordinates.y);
+    });
 
     namespace.TopicBullseye.method("SetTextCount", function(p_textCount){
 
         this.m_textCount = p_textCount;
     });
+
+    namespace.TopicBullseye.prototype.MouseBehavior = function(p_bullseye, p_data, p_mouseEventType){
+
+        // Unhighlighted
+        if ( -1 == p_bullseye.m_level.m_highlightedTopic ){
+
+            // (1) Unhighlighted (Is Always Unpaused)
+            //   (A) Mouseover --> Highlights topic ring and topic elsewhere in linked panels
+            //   (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+            //   (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+            //   (D) Mouseout --> Nothing
+
+            switch ( p_mouseEventType ){
+
+                // (A) Mouseover --> Highlights topic ring and topic elsewhere in linked panels
+                case namespace.Interaction.mouseover:
+
+                    p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                    }
+
+                    break;
+
+                // (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+                case namespace.Interaction.click:
+
+                    p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    p_bullseye.m_panel.Pause(true);
+                    for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+
+                            if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                            }
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    break;
+
+                // (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+                case namespace.Interaction.dblclick:
+
+                    p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    p_bullseye.m_panel.Pause(true);
+                    for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+
+                            if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                            }
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    if ( p_bullseye.AllowInteractions(namespace.Interaction.dblclick) ){
+                        p_bullseye.m_panel.Update(p_bullseye, namespace.Interaction.dblclick);
+                    }
+
+                    break;
+
+                // (D) Mouseout --> Nothing
+                case namespace.Interaction.mouseout:
+
+                    break;
+            }
+        // Highlighted
+        } else {
+
+            // (2) Highlighted
+            //   (A) Paused
+            //     (I) Mouseover --> Nothing
+            //     (II) Click
+            //       (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
+            //       (b) Different ring --> Mimics click when unhighlighted (1.B)
+            //     (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //     (IV) Mouseout --> Nothing
+            //  (B) Unpaused
+            //    (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+            //    (II) Click - Any ring --> Pauses panel and linked panels
+            //    (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //    (IV) Mouseout --> Unhighlights current ring or entire bullseye
+
+            // Paused
+            if ( p_bullseye.m_panel.IsPaused() ){
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click
+                    case namespace.Interaction.click:
+
+                        // (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
+                        if ( p_data.topicID == p_bullseye.m_level.m_highlightedTopic ){
+
+                            p_bullseye.m_panel.Pause(false);
+                            p_bullseye.m_panel.Update(null, namespace.Interaction.mouseover);
+                            for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Pause(false);
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                            }
+                        // (b) Different ring --> Mimics click when unhighlighted (1.B)
+                        } else {
+
+                            p_bullseye.m_panel.Pause(false);
+                            p_bullseye.m_panel.Update(null, namespace.Interaction.mouseover);
+                            p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                            p_bullseye.m_panel.Pause(true);
+                            for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                                    }
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }
+
+                        break;
+
+                    // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+                    case namespace.Interaction.dblclick:
+
+                        if ( p_bullseye.AllowInteractions(namespace.Interaction.dblclick) ){
+                            // NOTE: p_data == p_bullseye??
+                            p_bullseye.m_panel.Pause(false);
+                            p_bullseye.m_panel.Update(p_bullseye, namespace.Interaction.dblclick);
+                            p_bullseye.m_panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Nothing
+                    case namespace.Interaction.mouseout:
+
+                        break;
+                }
+            // Unpaused
+            } else {
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+                    case namespace.Interaction.mouseover:
+
+                        p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                        }
+
+                        break;
+
+                    // (II) Click - Any ring/circle --> Pauses panel and linked panels
+                    case namespace.Interaction.click:
+
+                        p_bullseye.m_panel.Pause(true);
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+                    case namespace.Interaction.dblclick:
+
+                        p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        p_bullseye.m_panel.Pause(true);
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+
+                                if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                                }
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        if ( p_bullseye.AllowInteractions(namespace.Interaction.dblclick) ){
+                            p_bullseye.m_panel.Update(p_bullseye, namespace.Interaction.dblclick);
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Unhighlights entire bullseye
+                    case namespace.Interaction.mouseout:
+
+                        p_bullseye.m_panel.Update(null, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+                            p_bullseye.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                        }
+
+                        break;
+                }
+            }
+        }
+    };
 
     namespace.TopicBullseye.prototype.s_shapeChar == "b";
 
@@ -386,7 +515,7 @@ var TWiC = (function(namespace){
         this.m_size.width = this.m_size.width * namespace.TopicRectangle.prototype.multiplier;
         this.m_size.height = this.m_size.height * namespace.TopicRectangle.prototype.multiplier;
         this.m_clusterIndex = p_clusterIndex;
-        this.startingPosition = {x: this.m_coordinates.x, y: this.m_coordinates.y};   
+        this.startingPosition = {x: this.m_coordinates.x, y: this.m_coordinates.y};
         this.m_clusterRectShapeGroup = null;
         this.m_shapeChar = namespace.TopicRectangle.prototype.s_shapeChar;
         this.m_allowDblclick = true;
@@ -414,7 +543,7 @@ var TWiC = (function(namespace){
         this.m_topTopics = [];
         for ( var index = topicsSorted.length - 1, rectCount = 0; index >= 0 && rectCount < this.m_numberRects; index--, rectCount++ ) {
             this.m_topTopics.push([topicsSorted[index], p_topics[topicsSorted[index]][1]])
-        }  
+        }
     };
     namespace.TopicRectangle.inherits(namespace.DataShape);
 
@@ -467,7 +596,7 @@ var TWiC = (function(namespace){
             }
             this.m_tipLines.push(tipString);
         }
-    });    
+    });
 
     namespace.TopicRectangle.method("CalculateSize", function(){
 
@@ -493,122 +622,6 @@ var TWiC = (function(namespace){
         this.m_coordinates.y -= this.m_size.height >> 1;
     });
 
-    namespace.TopicRectangle.method("ClickBehavior", function(){
-
-        // Single click with timer to overcome on.click being fired before on.dblclick
-        if ( this.m_clickTimerID ){
-        
-            clearTimeout(this.m_clickTimerID);
-            this.m_clickTimerID = null;
-
-            // Do double click code here
-
-            // Ensure topic remains highlighted throughout the level
-            var topicData = { topicID: this.m_panel.m_highlightedTopic,
-                              color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic] };
-            this.m_panel.Update(topicData, namespace.Interaction.mouseover);
-            this.m_panel.Pause(true);
-            for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-
-                // Puts this shape's data into the data bar
-                if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
-                    this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this }, namespace.Interaction.click);
-                }
-                
-                this.m_panel.m_linkedViews[index].panel.Pause(false);
-                this.m_panel.m_linkedViews[index].panel.Update(topicData, namespace.Interaction.mouseover);
-                this.m_panel.m_linkedViews[index].panel.Pause(true);
-            }                                              
-
-            // If this shape allows double-clicks, initiate its double-click behavior
-            if ( this.AllowInteractions(namespace.Interaction.dblclick) ){
-
-                // See if the underlying panel is open yet, and if not update the level
-                // (Level update will take care of updating linked views)
-                if ( !this.m_panel.IsUnderlyingPanelOpen() ){
-                    
-                    var ci = ( undefined === this.m_panel.m_clusterIndex ) ? this.m_topTopics[0][0] : this.m_panel.m_clusterIndex;
-                    this.m_level.Update({ json: this.m_data, 
-                                          clusterIndex: ci, 
-                                          topicID: topicData.topicID },
-                                        namespace.Interaction.dblclick);
-                } else {
-
-                    // Trigger the double-click behavior of any linked views
-                    for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-
-                        if ( namespace.Interaction.dblclick == this.m_panel.m_linkedViews[index].update ){
-
-                            var initialPauseState = this.m_panel.m_linkedViews[index].panel.IsPaused();
-
-                            // Unpause the panel
-                            this.m_panel.m_linkedViews[index].panel.Pause(false);
-
-                            // Initiate the panel's double-click behavior
-                            var ci = ( undefined === this.m_panel.m_clusterIndex ) ? this.m_topTopics[0][0] : this.m_panel.m_clusterIndex;
-                            this.m_panel.m_linkedViews[index].panel.Update({ json: this.m_data, 
-                                                                             clusterIndex: ci, 
-                                                                             topicID: topicData.topicID },
-                                                                             namespace.Interaction.dblclick);
-
-                            // Re-pause the panel if necessary
-                            if ( initialPauseState ){
-                                this.m_panel.m_linkedViews[index].panel.Pause(true);
-                            }
-                        }
-                    }
-                }
-            }                                                                          
-        } else {
-
-            this.m_clickTimerID = setTimeout(function(){
-
-                this.m_clickTimerID = null;
-
-                // Do single click code here
-
-                // Pause/unpause my panel's Update() to keep highlighting frozen
-                // or allow it to resume
-                var initialPauseState = this.m_panel.IsPaused();
-                this.m_panel.Pause(!initialPauseState);
-
-                // Force mouseout behavior if unpausing
-                if ( initialPauseState ){
-                    this.m_panel.Update(null, namespace.Interaction.mouseover);
-                } else {
-                    // Make sure highlight is evident
-                    this.m_panel.Update({ topicID: this.m_panel.m_highlightedTopic, 
-                                          color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic]},
-                                        namespace.Interaction.mouseover);
-                }                                                 
-
-                // Pause/unpause all of my panel's linked views as well
-                for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-
-                    this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
-
-                    // If unpausing, update panel as if mouseout has occured
-                    if ( initialPauseState ){
-                        this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                    } else {
-                        // Make sure highlight is evident
-                        this.m_panel.m_linkedViews[index].panel.Update({ topicID: this.m_panel.m_highlightedTopic, 
-                                                                         color: this.m_level.m_topicColors[this.m_panel.m_highlightedTopic]},
-                                                                       namespace.Interaction.mouseover);                                                    
-                    }
-
-                    // Special click update for data bar
-                    if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
-                        this.m_panel.m_linkedViews[index].panel.Update({ shapeRef: this },
-                                                                       namespace.Interaction.click);
-                    }
-                }                                          
-            }.bind(this), 250);
-        }
-
-        d3.event.stopPropagation();
-    });
-
     namespace.TopicRectangle.method("CreateHighlightRectangles", function(p_node){
 
         // Modify the given node to be a twic cluster group (extra parent group for smooth zoom-behavior)
@@ -620,15 +633,15 @@ var TWiC = (function(namespace){
 
         // Add each topic rectangle, binding data to it (Index 0 will represent the TopicRectangle at the center)
         for ( var index = this.m_numberRects - 1, rectsDrawn = 0; index > 0; index--, rectsDrawn++ ){
-            
+
             var data = {
 
                 // Color
                 "color" : this.m_level.m_topicColors[this.m_topTopics[index][0]],
-                
+
                 // Topic ID
                 "topicID" : this.m_topTopics[index][0],
-                
+
                 // Topic proportion
                 "prop" : this.m_topTopics[index][1],
 
@@ -667,35 +680,36 @@ var TWiC = (function(namespace){
                                             if ( !this.m_panel.IsPaused() ){
                                                 this.m_shapeGroup.style("opacity", 1.0);
                                             }
-                                            this.m_panel.Update(d, namespace.Interaction.mouseover);
-                                            for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                                if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                    this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
-                                                }
-                                            }
+
+                                            namespace.TopicRectangle.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
 
                                             // Re-append the cluster circle group to bump up its z-order to top
                                             this.m_clusterRectShapeGroup.node().parentNode.parentNode.parentNode.parentNode.appendChild(this.m_clusterRectShapeGroup.node().parentNode.parentNode.parentNode);
                                         }.bind(this))
                                         .on(namespace.Interaction.mouseout, function(d){
-
-                                            this.m_panel.Update(null, namespace.Interaction.mouseover);
-                                            for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                                if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                    this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                                                }
-                                            }
+                                            namespace.TopicRectangle.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
                                         }.bind(this))
                                         .on(namespace.Interaction.click, function(d){
 
-                                           if ( !this.m_panel.IsPaused() &&
-                                                d.topicID != this.m_panel.m_highlightedTopic ){
+                                            if ( this.m_clickTimerID ){
 
-                                               // Save the newly clicked topic ID and the shape group on.click() will take care of the rest
-                                               this.m_panel.m_highlightedTopic = d.topicID;                                               
-                                           }                                            
+                                                clearTimeout(this.m_clickTimerID);
+                                                this.m_clickTimerID = null;
+
+                                                // Do double click code here
+                                                namespace.TopicRectangle.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
+                                            } else {
+
+                                                this.m_clickTimerID = setTimeout(function(p_data){
+
+                                                    this.m_clickTimerID = null;
+
+                                                    // Do single click code here
+                                                    namespace.TopicRectangle.prototype.MouseBehavior(this, p_data, namespace.Interaction.click);
+                                                }.bind(this, d), 250);
+                                            }
                                         }.bind(this));
-        }                            
+        }
     });
 
     namespace.TopicRectangle.method("Draw", function(){
@@ -703,7 +717,7 @@ var TWiC = (function(namespace){
         // Append a new group element to the svg, this will represent the TopicRectangle's overall "node"
         this.m_node = this.m_panel.m_clusterSvgGroup.append("g")
                                   .attr("class", "node")
-                                  .attr("id", "textrect_node_" + this.m_name)                                 
+                                  .attr("id", "textrect_node_" + this.m_name)
                                   .style("position", "absolute");
 
         // Bind the text data to a group element (children will access this via .parentNode.__data__)
@@ -711,19 +725,18 @@ var TWiC = (function(namespace){
                                        .attr("class", this.m_panel.s_datashapeClassName)
                                        .style("position", "absolute")
                                        .datum(this.m_data)
-                                       .style("opacity", 1.0)
-                                       .on(namespace.Interaction.click, function(){ this.ClickBehavior(); }.bind(this));
+                                       .style("opacity", 1.0);
 
-        // Add a "cluster rectangle" around this text rectangle which reflect the top N topics of this text        
+        // Add a "cluster rectangle" around this text rectangle which reflect the top N topics of this text
         var clusterRectGroup = this.m_shapeGroup.append("g").attr("id", "g_clusterrectgroup_" + this.m_name);
         this.CreateHighlightRectangles(clusterRectGroup);
 
         // Data structure for the text/text's top topic (for mouseover)
         var rect_data = {
-        
+
             // Color
             "color": this.m_level.m_topicColors[this.m_clusterIndex],
-            
+
             // Topic ID
             "topicID": this.m_clusterIndex,
 
@@ -743,7 +756,39 @@ var TWiC = (function(namespace){
         var textRectGroup = this.m_shapeGroup.append("g")
                                              .attr("class", this.m_panel.s_datashapeClassName)
                                              .attr("id", "text_rect_group_" + this.m_clusterIndex)
-                                             .datum({"topicID": this.m_clusterIndex, "shapeRef": this });                                
+                                             .datum(rect_data)
+                                       .on(namespace.Interaction.mouseover, function(d){
+
+                                           namespace.TopicRectangle.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
+
+                                           // Re-append the cluster circle group to bump up its z-order to top
+                                           var myGroup = d3.select("#textrect_node_" + this.m_name);
+                                           myGroup.node().parentNode.appendChild(myGroup.node());
+                                       }.bind(this))
+                                       .on(namespace.Interaction.mouseout, function(d){
+                                           namespace.TopicRectangle.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
+                                       }.bind(this))
+                                       .on(namespace.Interaction.click, function(d){
+
+                                            if ( this.m_clickTimerID ){
+
+                                                clearTimeout(this.m_clickTimerID);
+                                                this.m_clickTimerID = null;
+
+                                                // Do double click code here
+                                                namespace.TopicRectangle.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
+                                            } else {
+
+                                                this.m_clickTimerID = setTimeout(function(p_data){
+
+                                                    this.m_clickTimerID = null;
+
+                                                    // Do single click code here
+                                                    namespace.TopicRectangle.prototype.MouseBehavior(this, p_data, namespace.Interaction.click);
+                                                }.bind(this, d), 250);
+
+                                            }
+                                       }.bind(this));
 
         this.m_textRect = textRectGroup.append("rect")
                                        .attr("class", "text_info_rect")
@@ -757,41 +802,7 @@ var TWiC = (function(namespace){
                                        .style("stroke-width", namespace.TopicRectangle.prototype.borderWidth)
                                        .style("stroke", this.m_level.m_topicColors[this.m_clusterIndex])
                                        .style("fill", namespace.TopicRectangle.prototype.fillColor)
-                                       .style("position", "absolute")
-                                       .on(namespace.Interaction.mouseover, function(d){
-
-                                           this.m_panel.Update(d, namespace.Interaction.mouseover);
-                                           for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                        
-                                               if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                   this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
-                                               }
-                                           }
-
-                                           // Re-append the cluster circle group to bump up its z-order to top
-                                           var myGroup = d3.select("#textrect_node_" + this.m_name);
-                                           myGroup.node().parentNode.appendChild(myGroup.node());                             
-
-                                       }.bind(this))
-                                       .on(namespace.Interaction.mouseout, function(d){
-
-                                           this.m_panel.Update(null, namespace.Interaction.mouseover);
-                                           for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                             
-                                               if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                   this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                                               }
-                                           }
-                                       }.bind(this))
-                                       .on(namespace.Interaction.click, function(d){
-
-                                           if ( !this.m_panel.IsPaused() &&
-                                                d.topicID != this.m_panel.m_highlightedTopic ){
-
-                                               // Save the newly clicked topic ID and the shape group on.click() will take care of the rest
-                                               this.m_panel.m_highlightedTopic = d.topicID;                                               
-                                           }
-                                       }.bind(this));                                        
+                                       .style("position", "absolute");
 
         // Text lines starting point
         this.m_startingPosition = { x: this.m_coordinates.x + namespace.TopicRectangle.prototype.spaceAroundText,
@@ -813,7 +824,7 @@ var TWiC = (function(namespace){
                          .data(lcArray)
                          .enter()
                          .append("path")
-                         .attr("class", namespace.TopicRectangle.prototype.s_datashapeClassName)                         
+                         .attr("class", namespace.TopicRectangle.prototype.s_datashapeClassName)
                          .style("stroke", function(d) {
 
                              var topic_color_index = this.m_data.lines_and_colors[d.l][1][d.w];
@@ -828,7 +839,7 @@ var TWiC = (function(namespace){
                          .attr("d", function(d) {
 
                              if ( "0" == d.w ) {
-                             
+
                                  this.m_startingPosition.x = (2 * namespace.TopicRectangle.prototype.spaceAroundText) + this.m_coordinates.x;
                                  if ( d.l > 0 ) {
                                      this.m_startingPosition.y += namespace.TopicRectangle.prototype.spaceBetweenLines + namespace.TopicRectangle.prototype.strokeWidth;
@@ -836,9 +847,9 @@ var TWiC = (function(namespace){
                                      this.m_startingPosition.y += namespace.TopicRectangle.prototype.spaceAroundText;
                                  }
                              }
-                                 
-                             var pathString = "M " + this.m_startingPosition.x + "," + this.m_startingPosition.y + 
-                                              " " + (this.m_startingPosition.x + namespace.TopicRectangle.prototype.wordLength) + 
+
+                             var pathString = "M " + this.m_startingPosition.x + "," + this.m_startingPosition.y +
+                                              " " + (this.m_startingPosition.x + namespace.TopicRectangle.prototype.wordLength) +
                                               "," + this.m_startingPosition.y;
                              this.m_startingPosition.x += namespace.TopicRectangle.prototype.wordLength;
 
@@ -846,23 +857,23 @@ var TWiC = (function(namespace){
                          }.bind(this))
                          .style("position", "absolute")
                          .style("opacity", function(d){
-                                 
+
                              var topic_color_index = this.m_data.lines_and_colors[d.l][1][d.w];
                              if ( -1 == topic_color_index ){
                                  return 1.0;
                              } else {
                                  return 1.0;
                              }
-                         }.bind(this))
+                         }.bind(this));
                          /*.on(namespace.Interaction.mouseover, function(d){
 
                              var d = { topicID: this.m_data.lines_and_colors[d.l][1][d.w],
                                        color: this.m_level.m_topicColors[this.m_data.lines_and_colors[d.l][1][d.w]] };
-                              
+
                              if ( -1 != d.topicID ) {
-                             
+
                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                         
+
                                      if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
                                          this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
                                      }
@@ -870,9 +881,9 @@ var TWiC = (function(namespace){
                              }
                          }.bind(this))
                          .on(namespace.Interaction.mouseout, function(d){
-                                 
+
                              for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                             
+
                                  if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
                                      this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
                                  }
@@ -914,14 +925,312 @@ var TWiC = (function(namespace){
     });
 
     namespace.TopicRectangle.method("SetTitle", function(p_title){
-        
+
         this.m_title = p_title;
     });
 
     // Static members of TopicRectangle
+    namespace.TopicRectangle.prototype.MouseBehavior = function(p_rectangle, p_data, p_mouseEventType){
+
+        // Unhighlighted
+        if ( -1 == p_rectangle.m_level.m_highlightedTopic ){
+
+            // (1) Unhighlighted (Is Always Unpaused)
+            //   (A) Mouseover --> Highlights topic ring and topic elsewhere in linked panels
+            //   (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+            //   (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+            //   (D) Mouseout --> Nothing
+
+            switch ( p_mouseEventType ){
+
+                // (A) Mouseover --> Highlights topic ring and topic elsewhere in linked panels
+                case namespace.Interaction.mouseover:
+
+                    p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                    }
+
+                    break;
+
+                // (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+                case namespace.Interaction.click:
+
+                    p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    p_rectangle.m_panel.Pause(true);
+                    for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                            if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                            }
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    break;
+
+                // (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+                case namespace.Interaction.dblclick:
+
+                    p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    p_rectangle.m_panel.Pause(true);
+                    for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                            if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                            }
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    if ( p_rectangle.AllowInteractions(namespace.Interaction.dblclick) ){
+
+                        // See if the underlying panel is open yet, and if not update the level
+                        // (Level update will take care of updating linked views)
+                        if ( !p_rectangle.m_panel.IsUnderlyingPanelOpen() ){
+
+                            var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                            p_rectangle.m_level.Update({ json: p_rectangle.m_data,
+                                                         clusterIndex: ci,
+                                                         topicID: p_data.topicID,
+                                                         color: p_rectangle.m_level.m_topicColors[p_data.topicID] },
+                                                       namespace.Interaction.dblclick);
+                        } else {
+
+                            // Trigger the double-click behavior of any linked views
+                            for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.dblclick == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update({ json: p_rectangle.m_data,
+                                                                                            clusterIndex: ci,
+                                                                                            topicID: p_data.topicID,
+                                                                                            color: p_rectangle.m_level.m_topicColors[p_data.topicID] },
+                                                                                          namespace.Interaction.dblclick);
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                                }
+                            }
+                        }
+                    }
+
+                    break;
+
+                // (D) Mouseout --> Nothing
+                case namespace.Interaction.mouseout:
+
+                    break;
+            }
+        // Highlighted
+        } else {
+
+            // (2) Highlighted
+            //   (A) Paused
+            //     (I) Mouseover --> Nothing
+            //     (II) Click
+            //       (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
+            //       (b) Different ring --> Mimics click when unhighlighted (1.B)
+            //     (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //     (IV) Mouseout --> Nothing
+            //  (B) Unpaused
+            //    (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+            //    (II) Click - Any ring --> Pauses panel and linked panels
+            //    (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //    (IV) Mouseout --> Unhighlights current ring or entire bullseye
+
+            // Paused
+            if ( p_rectangle.m_panel.IsPaused() ){
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click
+                    case namespace.Interaction.click:
+
+                        // (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
+                        if ( p_data.topicID == p_rectangle.m_level.m_highlightedTopic ){
+
+                            p_rectangle.m_panel.Pause(false);
+                            p_rectangle.m_panel.Update(null, namespace.Interaction.mouseover);
+                            for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                            }
+                        // (b) Different ring --> Mimics click when unhighlighted (1.B)
+                        } else {
+
+                            p_rectangle.m_panel.Pause(false);
+                            p_rectangle.m_panel.Update(null, namespace.Interaction.mouseover);
+                            p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                            p_rectangle.m_panel.Pause(true);
+                            for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                                    }
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }
+
+                        break;
+
+                    // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+                    case namespace.Interaction.dblclick:
+
+                        if ( p_rectangle.AllowInteractions(namespace.Interaction.dblclick) ){
+
+                            // See if the underlying panel is open yet, and if not update the level
+                            // (Level update will take care of updating linked views)
+                            if ( !p_rectangle.m_panel.IsUnderlyingPanelOpen() ){
+
+                                var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                                p_rectangle.m_level.Update({ json: p_rectangle.m_data,
+                                                             clusterIndex: ci,
+                                                             topicID: p_rectangle.m_level.m_highlightedTopic,
+                                                             color: p_rectangle.m_level.m_topicColors[p_rectangle.m_level.m_highlightedTopic] },
+                                                           namespace.Interaction.dblclick);
+                            } else {
+
+                                // Trigger the double-click behavior of any linked views
+                                for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                    if ( namespace.Interaction.dblclick == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                        var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Update({ json: p_rectangle.m_data,
+                                                                                                clusterIndex: ci,
+                                                                                                topicID: p_rectangle.m_level.m_highlightedTopic,
+                                                                                                color: p_rectangle.m_level.m_topicColors[p_rectangle.m_level.m_highlightedTopic] },
+                                                                                              namespace.Interaction.dblclick);
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                                    }
+                                }
+                            }
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Nothing
+                    case namespace.Interaction.mouseout:
+
+                        break;
+                }
+            // Unpaused
+            } else {
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+                    case namespace.Interaction.mouseover:
+
+                        p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                        }
+
+                        break;
+
+                    // (II) Click - Any ring/circle --> Pauses panel and linked panels
+                    case namespace.Interaction.click:
+
+                        p_rectangle.m_panel.Pause(true);
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+                    case namespace.Interaction.dblclick:
+
+                        p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                            if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                                }
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        if ( p_rectangle.AllowInteractions(namespace.Interaction.dblclick) ){
+
+                            // See if the underlying panel is open yet, and if not update the level
+                            // (Level update will take care of updating linked views)
+                            if ( !p_rectangle.m_panel.IsUnderlyingPanelOpen() ){
+
+                                var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                                p_rectangle.m_level.Update({ json: p_rectangle.m_data,
+                                                             clusterIndex: ci,
+                                                             topicID: p_data.topicID },
+                                                           namespace.Interaction.dblclick);
+                            } else {
+
+                                // Trigger the double-click behavior of any linked views
+                                for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                    if ( namespace.Interaction.dblclick == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                        var ci = ( undefined === p_rectangle.m_panel.m_clusterIndex ) ? p_rectangle.m_topTopics[0][0] : p_rectangle.m_panel.m_clusterIndex;
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Update({ json: p_rectangle.m_data,
+                                                                                                clusterIndex: ci,
+                                                                                                topicID: p_data.topicID },
+                                                                                              namespace.Interaction.dblclick);
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                                    }
+                                }
+                            }
+                        }
+                        p_rectangle.m_panel.Pause(true);
+
+                        break;
+
+                    // (IV) Mouseout --> Unhighlights entire bullseye
+                    case namespace.Interaction.mouseout:
+
+                        p_rectangle.m_panel.Update(null, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+                            p_rectangle.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                        }
+
+                        break;
+                }
+            }
+        }
+    };
+
     namespace.TopicRectangle.prototype.multiplier = 2;
     namespace.TopicRectangle.prototype.spaceAroundText = 2 * namespace.TopicRectangle.prototype.multiplier;
-    namespace.TopicRectangle.prototype.borderWidth = 2 * namespace.TopicRectangle.prototype.multiplier;    
+    namespace.TopicRectangle.prototype.borderWidth = 2 * namespace.TopicRectangle.prototype.multiplier;
     namespace.TopicRectangle.prototype.cornerRadius = 0.025;
     namespace.TopicRectangle.prototype.s_borderRadius = 4;
 
@@ -931,7 +1240,7 @@ var TWiC = (function(namespace){
     namespace.TopicRectangle.prototype.spaceBetweenLines = 2 * namespace.TopicRectangle.prototype.multiplier;
 
     namespace.TopicRectangle.prototype.defaultFontColor = namespace.Level.prototype.s_palette.gold;
-    namespace.TopicRectangle.prototype.jsonDirectory = "data/input/json/texts/";   
+    namespace.TopicRectangle.prototype.jsonDirectory = "data/input/json/texts/";
 
     namespace.TopicRectangle.prototype.s_shapeChar = "r";
 
@@ -965,12 +1274,7 @@ var TWiC = (function(namespace){
                 this.m_topicProportion = this.m_dataShape.m_fullTopicListRef[topicID][1];
             }
         }
-        /*for ( var index = 0; index < this.m_dataShape.m_fullTopicListRef.length; index++ ){            
-            if ( this.m_topicID == this.m_dataShape.m_fullTopicListRef[index][0] ){                
-                this.m_topicProportion = this.m_dataShape.m_fullTopicListRef[index][1];
-                break;
-            }
-        }*/
+
         this.m_topicProportion /= p_dataShape.m_topicProportionSum;
         this.m_topicColor = this.m_level.m_topicColors[this.m_topicID];
         this.m_topicWords = this.m_level.m_topicWordLists[this.m_topicID];
@@ -987,34 +1291,30 @@ var TWiC = (function(namespace){
                                                        "color": this.m_level.m_topicColors[this.m_topicID],
                                                        "tileRef": this })
                                               .on(namespace.Interaction.click, function(d){
+                                                  if ( this.m_clickTimerID ){
 
-                                                  // Pause/unpause my panel's Update() to keep highlighting frozen
-                                                  // or allow it to resume
-                                                  var initialPauseState = this.m_panel.IsPaused();
-                                                  this.m_panel.Pause(!initialPauseState);
+                                                      clearTimeout(this.m_clickTimerID);
+                                                      this.m_clickTimerID = null;
 
-                                                  // Pause/unpause all of my panel's linked views as well
-                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ) {
-                                                      this.m_panel.m_linkedViews[index].panel.Pause(!initialPauseState);
+                                                      // Do double click code here
+                                                      namespace.TopicTile.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
+                                                  } else {
+
+                                                      this.m_clickTimerID = setTimeout(function(p_data){
+
+                                                          this.m_clickTimerID = null;
+
+                                                          // Do single click code here
+                                                          namespace.TopicTile.prototype.MouseBehavior(this, p_data, namespace.Interaction.click);
+                                                      }.bind(this, d), 250);
+
                                                   }
                                               }.bind(this))
                                               .on(namespace.Interaction.mouseover, function(d){
-                                
-                                                  this.m_panel.Update(d, namespace.Interaction.mouseover, true);
-                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                                      if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                          this.m_panel.m_linkedViews[index].panel.Update(d, namespace.Interaction.mouseover);
-                                                      }
-                                                  }
+                                                  namespace.TopicTile.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
                                               }.bind(this))
                                               .on(namespace.Interaction.mouseout, function(){
-                                
-                                                  this.m_panel.Update(null, namespace.Interaction.mouseover, true);
-                                                  for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
-                                                      if ( namespace.Interaction.mouseover == this.m_panel.m_linkedViews[index].update ) {
-                                                          this.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
-                                                      }
-                                                  }
+                                                  namespace.TopicTile.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
                                               }.bind(this));
 
         // Transaprent rectangle to maintain mouseover seamlessness between tiles
@@ -1057,7 +1357,7 @@ var TWiC = (function(namespace){
                     .html(this.m_topicID)
                     .attr("fill", this.m_level.m_topicColors[this.m_topicID])
                     .style("font-family", namespace.Level.prototype.s_fontFamily)
-                    .style("font-size", 21);                    
+                    .style("font-size", 21);
 
         // Topic proportion
         var proportionWidth = p_percentProportion * (namespace.TopicTile.prototype.s_tileDims.width - (2 * namespace.DataBar.prototype.s_elementSpacing));
@@ -1096,7 +1396,164 @@ var TWiC = (function(namespace){
                          .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
                          .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
                          .attr("width", p_transition.size.width);
-    });    
+    });
+
+    namespace.TopicTile.prototype.MouseBehavior = function(p_tile, p_data, p_mouseEventType){
+
+        // Unhighlighted
+        if ( -1 == p_tile.m_level.m_highlightedTopic ){
+
+            // (1) Unhighlighted (Is Always Unpaused)
+            //   (A) Mouseover --> Highlights topic tile and topic elsewhere in linked panels
+            //   (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+            //   (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+            //   (D) Mouseout --> Nothing
+
+            switch ( p_mouseEventType ){
+
+                // (A) Mouseover --> Highlights topic tile and topic elsewhere in linked panels
+                case namespace.Interaction.mouseover:
+
+                    p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                    for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                    }
+
+                    break;
+
+                // (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+                case namespace.Interaction.click:
+                // (C) Double-Click --> Mimics click when unhighlighted (b)
+                case namespace.Interaction.dblclick:
+
+                    p_tile.m_panel.Pause(false);
+                    p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                    p_tile.m_panel.Pause(true);
+                    for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    break;
+
+                // (D) Mouseout --> Nothing
+                case namespace.Interaction.mouseout:
+
+                    break;
+            }
+        // Highlighted
+        } else {
+
+            // (2) Highlighted
+            //   (A) Paused
+            //     (I) Mouseover --> Nothing
+            //     (II) Click
+            //       (a) Same tile --> Unpauses panel and linked panels --> Unhighlights all shapes
+            //       (b) Different tile --> Mimics click when unhighlighted (1.B)
+            //     (III) Double-Click --> Mimics Click (II)
+            //     (IV) Mouseout --> Nothing
+            //  (B) Unpaused
+            //    (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+            //    (II) Click - Any tile --> Pauses panel and linked panels
+            //    (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //    (IV) Mouseout --> Unhighlights current tile or entire bullseye
+
+            // Paused
+            if ( p_tile.m_panel.IsPaused() ){
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        // (a) Same tile --> Unpauses panel and linked panels --> Unhighlights all shapes
+                        if ( p_data.topicID == p_tile.m_level.m_highlightedTopic ){
+
+                            p_tile.m_panel.Pause(false);
+                            p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                            for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                                p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                                p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                            }
+                        // (b) Different tile --> Mimics click when unhighlighted (1.B)
+                        } else {
+
+                            p_tile.m_panel.Pause(false);
+                            p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                            p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                            p_tile.m_panel.Pause(true);
+                            for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+
+                                    p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_tile.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_tile.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_tile }, namespace.Interaction.click);
+                                    }
+                                    p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Nothing
+                    case namespace.Interaction.mouseout:
+
+                        break;
+                }
+            // Unpaused
+            } else {
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click - Any tile --> Pauses panel and linked panels
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        p_tile.m_panel.Pause(true);
+                        for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Unhighlights entire bullseye
+                    case namespace.Interaction.mouseout:
+
+                        p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                        for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                        }
+
+                        break;
+                }
+            }
+        }
+    };
 
     namespace.TopicTile.prototype.s_tileDims = { width: 300, height: 100 };
     namespace.TopicTile.prototype.s_topicCircleRadius = 15;
@@ -1141,7 +1598,7 @@ var TWiC = (function(namespace){
                     .html(( p_isFloatValue ) ? this.m_value.toFixed(3) : this.m_value)
                     .attr("fill", namespace.Level.prototype.s_palette.lightpurple)
                     .style("font-family", namespace.Level.prototype.s_fontFamily)
-                    .style("font-size", 21);                         
+                    .style("font-size", 21);
     });
 
     namespace.MetaDataTile.method("ResizeOverTime", function(p_transition){
@@ -1155,7 +1612,7 @@ var TWiC = (function(namespace){
     });
 
     namespace.MetaDataTile.prototype.s_tileDims = { width: 300, height: 50 };
-    
+
 
     return namespace;
 
