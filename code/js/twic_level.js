@@ -327,7 +327,7 @@ var TWiC = (function(namespace){
     });
 
     // Loads all JSON required for TWiC
-    namespace.Level.method("LoadJSON", function(p_corpusInfoPath, p_corpusMapPath){
+    namespace.Level.method("LoadJSON", function(p_corpusInfoPath, p_corpusMapPath, p_corpusWordWeightsPath){
 
         // Load the corpus information JSON
         var corpusInfo = null;
@@ -350,6 +350,16 @@ var TWiC = (function(namespace){
                 this.m_corpusMap = corpusDistanceMap;
                 callback(null, corpusDistanceMap);
             }.bind(this));
+        }.bind(this));
+
+        // Load the corpus word weight file
+        var corpusWordWeights = null;
+        this.m_queue.defer(function(callback){
+            d3.json(p_corpusWordWeightsPath, function(error, data){
+                corpusWordWeights = data;
+                this.m_corpusWordWeights = corpusWordWeights;
+                callback(null, corpusWordWeights);
+            }.bind(this))
         }.bind(this));
     });
 
@@ -801,6 +811,7 @@ var TWiC = (function(namespace){
 
     namespace.Level.prototype.s_fontFamily = "Inconsolata"; //"Archer";
     namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
+    namespace.Level.prototype.s_fontSpacing = { "Inconsolata": "-3px" }
     namespace.Level.prototype.s_palette = { "darkblue": "#002240", "gold": "#FAFAD2", "purple": "#7F3463",
                                             "brown": "#4C2F2E", "green": "#17A31A", "lightblue": "#19A2AE",
                                             "beige": "#DFDAC4", "lightpurple": "#D8D8FF",

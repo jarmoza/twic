@@ -4,6 +4,7 @@ import os
 import sys
 import string
 import glob
+import operator
 from numpy.linalg import norm
 from mallet_interpret_utils import Mallet_InterpretUtils
 clean_word = Mallet_InterpretUtils.CleanWord
@@ -39,6 +40,7 @@ class MalletScript:
         self.state_file = self.compressed_state_file[0 : self.compressed_state_file.rfind('.')]
         self.topics_file = '{0}{1}.topics.tsv'.format(self.output_dir, self.corpus_name)
         self.keys_file = '{0}{1}.keys.tsv'.format(self.output_dir, self.corpus_name)
+        self.wordweights_file = '{0}{1}.wordweights.tsv'.format(self.output_dir, self.corpus_name)
 
     def ClearOutputFiles(self):
 
@@ -144,6 +146,8 @@ class MalletScript:
             self.topics_file,
             '--output-topic-keys',
             self.keys_file,
+            '--topic-word-weights-file',
+            self.wordweights_file,
             '--optimize-interval',
             '{0}'.format(self.num_intervals)
         ]
@@ -248,6 +252,51 @@ class MalletScript:
                 tp_collection.append(tp)
 
         return tp_collection
+
+    def GetTopicWordWeights(self, normalize=True, precision=4):
+
+        # NOTE: If given precision is 'None' then full weight values will be returned
+
+        # Create a table of all wordweights from the topic model
+        full_wordweights_table = {}
+        wordweight_filehandle = open(self.wordweights_file, 'r')
+        wordweight_filelines = wordweight_filehandle.readlines()
+        wordweight_filehandle.close()
+        for line in wordweight_filelines:
+            parts = line.split('\t')
+            if parts[0] not in full_wordweights_table:
+                full_wordweights_table[parts[0]] = {}
+            full_wordweights_table[parts[0]][parts[1]] = float(parts[2].strip())
+
+        # Filter wordweights by removing most present weight
+        # (these will be words next to zero probability of appearing in the topic)
+        for topic_id in full_wordweights_table:
+
+            weight_buckets = {}
+            for word in full_wordweights_table[topic_id]:
+                if full_wordweights_table[topic_id][word] not in weight_buckets:
+                    weight_buckets[full_wordweights_table[topic_id][word]] = 0
+                else:
+                    weight_buckets[full_wordweights_table[topic_id][word]] += 1
+
+            mostfreq_weight = max(weight_buckets.iteritems(), key=operator.itemgetter(1))[0]
+            remove_list = [word for word in full_wordweights_table[topic_id] if mostfreq_weight == full_wordweights_table[topic_id][word]]
+            for word in remove_list:
+                del full_wordweights_table[topic_id][word]
+
+        # Normalize (and turn into proportion / 100%) the word weights if requested
+        if normalize:
+            for topic_id in full_wordweights_table:
+                weightsum = 0
+                for word in full_wordweights_table[topic_id]:
+                    weightsum += full_wordweights_table[topic_id][word]
+                for word in full_wordweights_table[topic_id]:
+                    full_wordweights_table[topic_id][word] = 100 * (full_wordweights_table[topic_id][word] / weightsum)
+                    if None != precision:
+                        full_wordweights_table[topic_id][word] = float(("{0:." + str(precision) + "}").format(full_wordweights_table[topic_id][word]))
+
+        # Return word weights table that has eliminated words not "in" each topic
+        return full_wordweights_table
 
 
     class Mallet_FileTopicProportions:

@@ -298,7 +298,7 @@ class TWiC_MalletInterpret:
         for topic_id in range(topic_count):
 
             print "\nProcessing cluster {0}".format(topic_id)
-            
+
             # Clusters have name, dist2avg, topics, and text-level children
             clusters_json[topic_id] = {
                 "name": topic_id,
@@ -329,7 +329,7 @@ class TWiC_MalletInterpret:
             cluster_topic_list = []
             for index in range(topic_count):
                 clusters_json[topic_id]["topics"][index] = [0, cluster_avg_topic_dist[index]]
-                cluster_topic_list.append([index, cluster_avg_topic_dist[index]])       
+                cluster_topic_list.append([index, cluster_avg_topic_dist[index]])
             cluster_topic_list = sorted(cluster_topic_list, key=lambda x:x[1], reverse=True)
             for rank in range(len(cluster_topic_list)):
                 clusters_json[topic_id]["topics"][cluster_topic_list[rank][0]][0] = rank + 1
@@ -373,7 +373,7 @@ class TWiC_MalletInterpret:
               // Clusters
               "children" : [
                   {
-                    "name":<cluster_name>, - Topic number                 
+                    "name":<cluster_name>, - Topic number
                     "dist2avg":<jd distance from cluster's average topic distribution
                                 to corpus (average) topic distribution>
                     "topics" : { // Average topic distribution (of all texts in the cluster)
@@ -422,7 +422,7 @@ class TWiC_MalletInterpret:
 
         # 3. Write out corpus map to JSON
         with open(output_dir + 'twic_corpusmap.json','w') as output_file:
-            output_file.write(json.dumps(twic_corpus_map))        
+            output_file.write(json.dumps(twic_corpus_map))
 
     @staticmethod
     def Build_CorpusMapJSON(corpus_name, corpus_topics, file_topic_proportions, output_dir):
@@ -773,7 +773,7 @@ class TWiC_MalletInterpret:
             for topic_index in range(0, topic_count):
                 json_output[file_info][tp.fileid][FI_TopicProportions].append(tp.topic_guide[str(topic_index)])
         for text in text_collection:
-            text_filename = text.GetFilename()            
+            text_filename = text.GetFilename()
             for fileid in json_output[file_info].keys():
                 if text_filename == json_output[file_info][fileid][FI_Filename]:
                     json_output[file_info][fileid][FI_TextTitle] = text.GetTitle()
@@ -786,6 +786,12 @@ class TWiC_MalletInterpret:
         # Output JSON
         with open(output_dir + "twic_corpusinfo.json", "w") as output_file:
             output_file.write(json.dumps(json_output))
+
+    @staticmethod
+    def Build_WordWeightJSON(ww_table, output_dir):
+
+        with open(output_dir + "twic_corpus_wordweights.json", "w") as output_file:
+            output_file.write(json.dumps(ww_table))
 
     @staticmethod
     def InterpretMalletOutput(mallet_script):
@@ -809,7 +815,10 @@ class TWiC_MalletInterpret:
 
         fwt_collection = mallet_script.GetStateFileData()
 
-        ###### 4. Build a text object for each text
+        ###### 4. Reading dickinson.wordweights.tsv
+        ww_table = mallet_script.GetTopicWordWeights()
+
+        ###### 5. Build a text object for each text
 
         print '\tBuilding text objects...'
 
@@ -824,13 +833,13 @@ class TWiC_MalletInterpret:
         # end_time = int(round(time.time() * 1000))
         # print 'Optimized: {0}ms'.format(end_time - start_time)
 
-        ###### 5. Generate a list of unique colors for each topic
+        ###### 6. Generate a list of unique colors for each topic
 
         print '\tCreating color list...'
 
         color_list = Color_Utils.Get_UniqueColorList(len(topic_keys.corpus_topic_proportions.keys()))
 
-        ###### 6. Build HTML and JSON files for each text for low and mid level TWiC representations
+        ###### 7. Build HTML and JSON files for each text for low and mid level TWiC representations
 
         print '\tCreating HTML and JSON files for TWiC views of texts...'
 
@@ -843,7 +852,7 @@ class TWiC_MalletInterpret:
             TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
                                      current_tp, fwt_collection, topic_keys, color_list, mallet_script)
 
-        ###### 7. Build JSON files for visualization
+        ###### 8. Build JSON files for visualization
 
         print '\tBuilding JSON map files for TWiC visualization...'
 
@@ -851,12 +860,15 @@ class TWiC_MalletInterpret:
         TWiC_MalletInterpret.Build_CorpusMapJSON_Avg(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
 
         # Output a JSON of the topic-color list
-        TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir + "json/")
+        # TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir + "json/")
 
         # Generate topic list JSON based on the used_topics_list
-        TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir + "json/")
+        # TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir + "json/")
 
         # New JSON format for client side
         TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir + "json/")
+
+        # Build a json that lists the distribution weights of words likely to appear in each topic
+        TWiC_MalletInterpret.Build_WordWeightJSON(ww_table, myoutput_dir + "json/")
 
 

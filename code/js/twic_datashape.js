@@ -30,9 +30,19 @@ var TWiC = (function(namespace){
         var x = 0;
     });
 
+    namespace.DataShape.method("GenerateDataTiles", function(){
+
+        return null;
+    });
+
     namespace.DataShape.method("Load", function(){
 
         var x = 0;
+    });
+
+    namespace.DataShape.method("ReappendShape", function(){
+
+        this.m_shapeGroup.node().parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode);
     });
 
     namespace.DataShape.prototype.s_colorHighlight = 0.50;
@@ -197,8 +207,12 @@ var TWiC = (function(namespace){
 
                     namespace.TopicBullseye.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
 
+                    // Re-add all cluster bullseyes here
+                    this.m_panel.ReappendShapes();
+
                     // Re-append the cluster circle group to bump up its z-order to top
-                    this.m_shapeGroup.node().parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode);
+                    this.ReappendShape();
+                    //this.m_shapeGroup.node().parentNode.parentNode.appendChild(this.m_shapeGroup.node().parentNode);
 
                     // Future animation - TBD
                     /*var ring = this.m_panel.m_svg.selectAll(this.m_panel.s_datashapeClassName).selectAll("#topic-" + d.topicID);
@@ -243,6 +257,51 @@ var TWiC = (function(namespace){
             currentRadius -= radiusReduction;
         }
     });
+
+    namespace.TopicBullseye.method("GenerateDataTiles", function(){
+
+        var dataBarInfo = {
+            dataTileGroups: [],
+            panelTitle: namespace.DataBar.prototype.s_defaultTitle,
+            panelTitleID: "",
+            dist2avg: 0
+        };
+
+        // Four possible data representations
+        // 1. Corpus Avg Bullseye
+        if ( this.m_level.m_corpusMap["name"] == this.m_name ){
+
+            dataBarInfo.panelTitle = this.m_name;
+        }
+        // 2. Corpus Cluster Bullseye (m_name will just be the topic ID number)
+        else if ( !isNaN(parseInt(this.m_name)) ){
+
+            dataBarInfo.panelTitle = "Topic Cluster";
+            dataBarInfo.panelTitleID = this.m_name;
+
+            //dist2avg = p_data.shapeRef.m_panel.m_objectsJSON[parseInt(p_data.shapeRef.m_title)].dist2avg;
+            dataBarInfo.dist2avg = this.m_panel.m_adjustedDistances[parseInt(this.m_title)] -
+                                   (( this.m_panel.b_adjustDistances ) ? this.m_panel.m_linkDistLimits.min : 0);
+            dataBarInfo.dist2avg = Math.abs(dataBarInfo.dist2avg);
+        }
+        // 3. Avg of Corpus Clusters Bullseye
+        else if ( namespace.CorpusClusterView.prototype.s_infoFlavorText == this.m_name ){
+
+            dataBarInfo.panelTitle = this.m_name;
+        }
+        // 4. Avg of Text Cluster Bullseye
+        else if ( namespace.TextClusterView.prototype.s_infoFlavorText == this.m_name ){
+
+            dataBarInfo.panelTitle = this.m_name;
+            dataBarInfo.panelTitleID = this.m_panel.m_clusterIndex;
+        }
+
+        // Generate the tile groups for this shape
+
+
+
+        return dataTiles;
+    })
 
     namespace.TopicBullseye.method("SetPanelNodeIndex", function(p_panelNodeIndex){
 
@@ -430,6 +489,27 @@ var TWiC = (function(namespace){
                                 break;
                             }
                         }
+
+                        /*if ( p_bullseye != p_bullseye.m_level.GetDataBar().GetCurrentShape() ){
+
+                            p_bullseye.m_panel.Pause(false);
+                            p_bullseye.m_panel.Update(null, namespace.Interaction.mouseover);
+                            p_bullseye.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                            p_bullseye.m_panel.Pause(true);
+                            for ( var index = 0; index < p_bullseye.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_bullseye.m_panel.m_linkedViews[index].update ){
+
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_bullseye.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_bullseye.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_bullseye }, namespace.Interaction.click);
+                                    }
+                                    p_bullseye.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_bullseye.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }*/
 
                         if ( p_bullseye.AllowInteractions(namespace.Interaction.dblclick) ){
                             // NOTE: p_data == p_bullseye??
@@ -1148,6 +1228,27 @@ var TWiC = (function(namespace){
                             }
                         }
 
+                        /*if ( p_rectangle != p_rectangle.m_level.GetDataBar().GetCurrentShape() ){
+
+                            p_rectangle.m_panel.Pause(false);
+                            p_rectangle.m_panel.Update(null, namespace.Interaction.mouseover);
+                            p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                            p_rectangle.m_panel.Pause(true);
+                            for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_rectangle.m_panel.m_linkedViews[index].update ){
+
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_rectangle.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_rectangle.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_rectangle }, namespace.Interaction.click);
+                                    }
+                                    p_rectangle.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_rectangle.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }*/
+
                         if ( p_rectangle.AllowInteractions(namespace.Interaction.dblclick) ){
 
                             // See if the underlying panel is open yet, and if not update the level
@@ -1302,6 +1403,342 @@ var TWiC = (function(namespace){
     namespace.TopicRectangle.prototype.jsonDirectory = "data/input/json/texts/";
 
     namespace.TopicRectangle.prototype.s_shapeChar = "r";
+
+    // TWiC TopicText (inherits from DataShape)
+    namespace.TopicText = function(p_coordinates, p_size, p_filename, p_level, p_panel, p_linkedViews, p_data){
+
+        // Apply the base class arguments
+        namespace.DataShape.apply(this, arguments);
+
+        // Save TopicText specific parameters
+        this.m_linkedViews = p_linkedViews;
+        this.m_data = p_data;
+
+    };
+    namespace.TopicText.inherits(namespace.DataShape);
+
+    namespace.TopicText.method("Draw", function(p_node){
+
+        // Spacing between (optional) title bar and text
+        p_node.append("p")
+              .append("span")
+              .style("font-family", namespace.Level.prototype.s_fontFamily)
+              .style("font-size", 22)
+              .html("&nbsp;")
+
+        var currentY = this.m_coordinates.y;
+
+        // Initialize size of the svg for the text (initial panel height + space for rounded corners)
+        var rectGrowth = this.m_size.height + namespace.Panel.prototype.s_borderRadius;
+
+        // Pixel space per line
+        var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
+
+        for ( var index = 0; index < this.m_data.json.lines_and_colors.length; index++ ) {
+
+            words = this.m_data.json.lines_and_colors[index][0].split(" ");
+            var lineText = "";
+
+            //var currentX = 50;
+            var currentX = this.m_coordinates.x;
+            var text;
+
+            var currentLine = p_node.append("p")
+                                    .style("word-spacing", namespace.Level.prototype.s_fontSpacing.Inconsolata22)
+                                    .style("display", "inline-block")
+                                    .style("line-height", "0px");
+
+            // Spacing between div edge and text
+            currentLine.append("span")
+                       .style("font-family", namespace.Level.prototype.s_fontFamily)
+                       .style("font-size", 22)
+                       .style("opacity", 1.0)
+                       .html("&nbsp;&nbsp;&nbsp;&nbsp;");
+
+            for ( var index2 = 0; index2 < words.length; index2++ ) {
+
+                // NOTE: undefined HACK
+                if ( "-1" == this.m_data.json.lines_and_colors[index][1][index2] ||
+                     undefined == this.m_data.json.lines_and_colors[index][1][index2] ){
+
+                    text = currentLine.append("span")
+                                      .attr("class", "text_word")
+                                      .style("color", namespace.Level.prototype.s_palette.gold)
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 22)
+                                      .style("opacity", 1.0)
+                                      .html(words[index2] + "&nbsp;");
+
+                    currentX += text[0][0].offsetWidth * 0.66;
+                }
+                else {
+
+                    var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                 this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]]);
+
+                    var quoteType = "";
+                    var quotePlace = "";
+                    var tempWord = words[index2];
+                    if ( "\"" == words[index2][0] || "\'" == words[index2][0] ){
+                        quoteType = words[index2][0];
+                        quotePlace = "b";
+                        tempWord = words[index2].substring(1, words[index2].length);
+                    } else if ( "\"" == words[index2][words[index2].length - 1] || "\'" == words[index2][words[index2].length - 1] ){
+                        quoteType = words[index2][words[index2].length - 1];
+                        quotePlace = "a";
+                        tempWord = words[index2].substring(0, words[index2].length - 1);
+                    }
+
+                    if ( "b" == quotePlace ){
+
+                        text = currentLine.append("span")
+                                                    .attr("class", "text_word")
+                                                    .style("color", namespace.Level.prototype.s_palette.gold)
+                                                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                                    .style("font-size", 22)
+                                                    .style("opacity", 1.0)
+                                                    .html(quoteType);
+
+                        currentX += text[0][0].offsetWidth * 0.66;
+                    }
+
+                    tempTempWord = ( quotePlace == "a" ) ? tempWord : tempWord + "&nbsp;";
+
+                    text = currentLine.append("span")
+                                      .attr("class", "text_coloredword")
+                                      .datum({ topicID: this.m_data.json.lines_and_colors[index][1][index2],
+                                               locolor: dlocolor,
+                                               color:this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]],
+                                               word: tempTempWord })
+                                      .style("color", this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]])
+                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      .style("font-size", 22)
+                                      .style("opacity", 1.0)
+                                      .html(tempTempWord);
+
+                    currentX += text[0][0].offsetWidth * 0.66;
+
+                    if ( "a" == quotePlace ){
+
+                        text = currentLine.append("span")
+                                          .attr("class", "text_word")
+                                          .style("color", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 22)
+                                          .style("opacity", 1.0)
+                                          .html(quoteType + "&nbsp;");
+
+                        currentX += text[0][0].offsetWidth * 0.66;
+                    }
+                }
+            }
+
+            currentY += dy;
+            if ( currentY > this.m_panel.m_size.height ){
+                rectGrowth += dy;
+            }
+
+            // Append a break so the next line is drawn beneath
+            p_node.append("br");
+        }
+
+        // Add mousover behavior for colored and non-colored words
+        this.m_panel.m_div
+                    .selectAll(".text_coloredword")
+                    .attr("height", rectGrowth)
+                    .on(namespace.Interaction.click, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.click);
+                        d3.event.stopPropagation();
+                    }.bind(this))
+                    .on(namespace.Interaction.mouseover, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
+                    }.bind(this))
+                    .on(namespace.Interaction.mouseout, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
+                    }.bind(this));
+
+        this.m_panel.m_div
+                    .selectAll(".text_word")
+                    .on(namespace.Interaction.click, function(d){
+                        if ( -1 != this.m_level.m_highlightedTopic ){
+                            namespace.TopicText.prototype.MouseBehavior(null, namespace.Interaction.click);
+                            d3.event.stopPropagation();
+                        }
+                    }.bind(this));
+    });
+
+    namespace.TopicText.prototype.MouseBehavior = function(p_text, p_data, p_mouseEventType){
+
+        // Unhighlighted
+        if ( -1 == p_text.m_level.m_highlightedTopic ){
+
+            // (1) Unhighlighted (Is Always Unpaused)
+            //   (A) Mouseover --> Highlights topic text and topic elsewhere in linked panels
+            //   (B) Click --> Mimics mouseover when unhighlighted (A) --> Pauses state of panel and linked panels
+            //   (C) Double-Click --> Mimics click when unhighlighted (B)
+            //   (D) Mouseout --> Nothing
+
+            switch ( p_mouseEventType ){
+
+                // (A) Mouseover --> Highlights topic text and topic elsewhere in linked panels
+                case namespace.Interaction.mouseover:
+
+                    p_text.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_text.m_linkedViews[index].update ){
+                            p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                    }
+
+                    break;
+
+                // (B) Click --> Mimics mouseover when unhighlighted (A) --> Pauses state of panel and linked panels
+                case namespace.Interaction.click:
+                // (C) Double-Click --> Mimics click when unhighlighted (B)
+                case namespace.Interaction.dblclick:
+
+                    p_text.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                    p_text.m_panel.Pause(true);
+                    for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_text.m_linkedViews[index].update ){
+
+                            if ( p_text.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.click);
+                            }
+                            p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_text.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    break;
+
+                // (D) Mouseout --> Nothing
+                case namespace.Interaction.mouseout:
+
+                    break;
+            }
+        // Highlighted
+        } else {
+
+            // (2) Highlighted
+            //   (A) Paused
+            //     (I) Mouseover --> Nothing
+            //     (II) Click
+            //       (a) Same ring --> Unpauses panel and linked panels --> Unhighlights all shapes
+            //       (b) Different ring --> Mimics click when unhighlighted (1.B)
+            //     (III) Double-Click --> Mimics Click (II)
+            //     (IV) Mouseout --> Nothing
+            //  (B) Unpaused
+            //    (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+            //    (II) Click - Any ring --> Pauses panel and linked panels
+            //    (III) Double-Click --> Mimics Click (II)
+            //    (IV) Mouseout --> Unhighlights all text
+            // Paused
+            if ( p_text.m_panel.IsPaused() ){
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        // (a) Same topic text --> Unpauses panel and linked panels --> Unhighlights all shapes
+                        if ( null == p_data || p_data.topicID == p_text.m_level.m_highlightedTopic ){
+
+                            p_text.m_panel.Pause(false);
+                            p_text.m_panel.Update(null, namespace.Interaction.mouseover);
+                            for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+
+                                p_text.m_linkedViews[index].panel.Pause(false);
+                                p_text.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                            }
+                        // (b) Different topic text --> Mimics click when unhighlighted (1.B)
+                        } else {
+
+                            p_text.m_panel.Pause(false);
+                            p_text.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                            p_text.m_panel.Pause(true);
+                            for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+
+                                p_text.m_linkedViews[index].panel.Pause(false);
+                                if ( namespace.Interaction.mouseover == p_text.m_linkedViews[index].update ){
+
+                                    if ( p_text.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.click);
+                                    }
+                                    p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_text.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Nothing
+                    case namespace.Interaction.mouseout:
+
+                        break;
+                }
+            // Unpaused
+            } else {
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+                    case namespace.Interaction.mouseover:
+
+                        p_text.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+
+                            if ( namespace.Interaction.mouseover == p_text.m_linkedViews[index].update ){
+                                p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                        }
+
+                        break;
+
+                    // (II) Click - Any topic text --> Pauses panel and linked panels
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        p_text.m_panel.Update(p_data, namespace.Interaction.mouseover);
+                        p_text.m_panel.Pause(true);
+                        for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+                            if ( namespace.Interaction.mouseover == p_text.m_linkedViews[index].update ){
+
+                                if ( p_text.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                    p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.click);
+                                }
+                                p_text.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                            }
+                            p_text.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Unhighlights all text
+                    case namespace.Interaction.mouseout:
+
+                        p_text.m_panel.Update(null, namespace.Interaction.mouseover);
+                        for ( var index = 0; index < p_text.m_linkedViews.length; index++ ){
+                            p_text.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                        }
+
+                        break;
+                }
+
+            }
+        }
+    };
 
     // TWiC DataTile inherits from DataShape
     namespace.DataTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape){
@@ -1633,8 +2070,8 @@ var TWiC = (function(namespace){
 
         // The basic group under which all drawn information objects will sit
         this.m_shapeGroup = this.m_panel.m_tileGroup.append("g")
-                                              .attr("class", namespace.DataBar.prototype.s_datashapeClassName)
-                                              .attr("id", namespace.DataBar.prototype.s_datashapeClassName + "_" + this.m_name);
+                                                    .attr("class", namespace.DataBar.prototype.s_datashapeClassName)
+                                                    .attr("id", namespace.DataBar.prototype.s_datashapeClassName + "_" + this.m_name);
 
         // Underlying rectangle
         this.m_shapeGroup.append("rect")
@@ -1671,6 +2108,291 @@ var TWiC = (function(namespace){
     });
 
     namespace.MetaDataTile.prototype.s_tileDims = { width: 300, height: 50 };
+
+
+    // TWiC WordWeightTile inherits from DataTile
+    namespace.WordWeightTile = function(p_coordinates, p_size, p_name, p_level, p_panel, p_dataShape, p_topicID, p_text, p_value){
+
+        // Apply the base class arguments
+        namespace.DataTile.apply(this, arguments);
+
+        this.m_topicID = p_topicID;
+        this.m_text = p_text;
+        this.m_value = p_value;
+    };
+    namespace.WordWeightTile.inherits(namespace.DataTile);
+
+    namespace.WordWeightTile.method("Draw", function(p_percentProportion){
+
+        // The basic group under which all drawn information objects will sit
+        this.m_shapeGroup = this.m_panel.m_tileGroup.append("g")
+                                              .attr("class", namespace.DataBar.prototype.s_datashapeClassName)
+                                              .attr("id", namespace.DataBar.prototype.s_datashapeClassName + "_" + this.m_name)
+                                              .datum({ "topicID": this.m_topicID,
+                                                       "color": this.m_level.m_topicColors[this.m_topicID],
+                                                       "tileRef": this })
+                                              .on(namespace.Interaction.click, function(d){
+                                                  if ( this.m_clickTimerID ){
+
+                                                      clearTimeout(this.m_clickTimerID);
+                                                      this.m_clickTimerID = null;
+
+                                                      // Do double click code here
+                                                      namespace.WordWeightTile.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
+                                                  } else {
+
+                                                      this.m_clickTimerID = setTimeout(function(p_data){
+
+                                                          this.m_clickTimerID = null;
+
+                                                          // Do single click code here
+                                                          namespace.WordWeightTile.prototype.MouseBehavior(this, p_data, namespace.Interaction.click);
+                                                      }.bind(this, d), 250);
+
+                                                  }
+                                              }.bind(this))
+                                              .on(namespace.Interaction.mouseover, function(d){
+                                                  namespace.WordWeightTile.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
+                                              }.bind(this))
+                                              .on(namespace.Interaction.mouseout, function(){
+                                                  namespace.WordWeightTile.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
+                                              }.bind(this));
+
+        // Transaprent rectangle to maintain mouseover seamlessness between tiles
+        this.m_shapeGroup.append("rect")
+                         .attr("x", this.m_coordinates.x)
+                         .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("width", this.m_panel.m_size.width)
+                         .attr("height", namespace.WordWeightTile.prototype.s_tileDims.height + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("fill", namespace.Level.prototype.s_palette.darkblue)
+                         .style("opacity", 0);
+
+        // Visible, underlying rectangle
+        this.m_shapeGroup.append("rect")
+                         .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("width", this.m_panel.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing))
+                         .attr("height", namespace.WordWeightTile.prototype.s_tileDims.height)
+                         .style("fill", namespace.Level.prototype.s_palette.tile);
+
+        // Highlight rectangle
+        this.m_highlightRect = this.m_shapeGroup.append("rect")
+                                                .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                                                .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                                                .attr("width", this.m_panel.m_size.width - (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                                .attr("height", namespace.WordWeightTile.prototype.s_tileDims.height)
+                                                .style("fill", namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorHighlight,
+                                                                                    namespace.Level.prototype.s_palette.tile))
+                                                .style("opacity", 0.0);
+
+        // Topic word
+        this.m_title = this.m_shapeGroup.append("text")
+                                        .attr("x", this.m_coordinates.x + (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                        .attr("y", this.m_coordinates.y + (3 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_title.append("tspan")
+                    .html(this.m_text)
+                    .attr("fill", this.m_level.m_topicColors[this.m_topicID])
+                    .style("font-family", namespace.Level.prototype.s_fontFamily)
+                    .style("font-size", 21);
+
+        // Topic word weight
+        var proportionWidth = (this.m_value / p_percentProportion) * (namespace.WordWeightTile.prototype.s_tileDims.width - (2 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_proportion = this.m_shapeGroup.append("rect")
+                                             .attr("class", "wordweight_tile_proportion")
+                                             .attr("x", this.m_coordinates.x + (3 * namespace.WordWeightTile.prototype.s_topicCircleRadius))
+                                             .attr("y", this.m_coordinates.y + (4 * namespace.DataBar.prototype.s_elementSpacing))
+                                             .attr("width", proportionWidth)
+                                             .attr("height", (2 * namespace.DataBar.prototype.s_elementSpacing))
+                                             .style("fill", this.m_level.m_topicColors[this.m_topicID]);
+
+        // Topic proportion percentage
+        this.m_proportionText = this.m_shapeGroup.append("text")
+                                                 .attr("x", this.m_coordinates.x + proportionWidth + (4 * namespace.WordWeightTile.prototype.s_topicCircleRadius))
+                                                 .attr("y", this.m_coordinates.y + (5.5 * namespace.DataBar.prototype.s_elementSpacing));
+        this.m_proportionText.append("tspan")
+                             .html(((this.m_value).toFixed(3)) + "&nbsp;%")
+                             .attr("fill", namespace.Level.prototype.s_palette.gold)
+                             .style("font-family", namespace.Level.prototype.s_fontFamily)
+                             .style("font-size", 21)
+                             .style("font-weight", "bold");
+    });
+
+    namespace.WordWeightTile.method("HighlightTile", function(p_doHighlight){
+
+        var opacity = ( p_doHighlight ) ? 1.0 : 0.0;
+        this.m_highlightRect.style("opacity", opacity);
+    });
+
+    namespace.WordWeightTile.method("ResizeOverTime", function(p_transition){
+
+        this.m_shapeGroup.selectAll("rect")
+                         .filter(function(){ return "wordweight_tile_proportion" != d3.select(this).attr("class"); })
+                         .transition()
+                         .duration(p_transition.duration)
+                         .attr("x", this.m_coordinates.x + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("y", this.m_coordinates.y + namespace.DataBar.prototype.s_elementSpacing)
+                         .attr("width", p_transition.size.width);
+    });
+
+    namespace.WordWeightTile.prototype.MouseBehavior = function(p_tile, p_data, p_mouseEventType){
+
+        // Unhighlighted
+        if ( -1 == p_tile.m_level.m_highlightedTopic ){
+
+            // (1) Unhighlighted (Is Always Unpaused)
+            //   (A) Mouseover --> Highlights wordweight tile and topic elsewhere in linked panels
+            //   (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+            //   (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
+            //   (D) Mouseout --> Nothing
+
+            switch ( p_mouseEventType ){
+
+                // (A) Mouseover --> Highlights wordweight tile and topic elsewhere in linked panels
+                case namespace.Interaction.mouseover:
+
+                    p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                    for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                    }
+
+                    break;
+
+                // (B) Click --> Mimics mouseover when unhighlighted (a) --> Pauses state of panel and linked panels
+                case namespace.Interaction.click:
+                // (C) Double-Click --> Mimics click when unhighlighted (b)
+                case namespace.Interaction.dblclick:
+
+                    p_tile.m_panel.Pause(false);
+                    p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                    p_tile.m_panel.Pause(true);
+                    for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                        if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                        }
+                        p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                    }
+
+                    break;
+
+                // (D) Mouseout --> Nothing
+                case namespace.Interaction.mouseout:
+
+                    break;
+            }
+        // Highlighted
+        } else {
+
+            // (2) Highlighted
+            //   (A) Paused
+            //     (I) Mouseover --> Nothing
+            //     (II) Click
+            //       (a) Same tile --> Unpauses panel and linked panels --> Unhighlights all shapes
+            //       (b) Different tile --> Mimics click when unhighlighted (1.B)
+            //     (III) Double-Click --> Mimics Click (II)
+            //     (IV) Mouseout --> Nothing
+            //  (B) Unpaused
+            //    (I) Mouseover --> Mimics Mouseover Unhighlighted (1.A)
+            //    (II) Click - Any tile --> Pauses panel and linked panels
+            //    (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
+            //    (IV) Mouseout --> Unhighlights current tile or entire bullseye
+
+            // Paused
+            if ( p_tile.m_panel.IsPaused() ){
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        // (a) Same tile --> Unpauses panel and linked panels --> Unhighlights all shapes
+                        if ( p_data.topicID == p_tile.m_level.m_highlightedTopic ){
+
+                            p_tile.m_panel.Pause(false);
+                            p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                            for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                                p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                                p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                            }
+                        // (b) Different tile --> Mimics click when unhighlighted (1.B)
+                        } else {
+
+                            p_tile.m_panel.Pause(false);
+                            p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                            p_tile.m_panel.Update(p_data, namespace.Interaction.mouseover, true);
+                            p_tile.m_panel.Pause(true);
+                            for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+
+                                if ( namespace.Interaction.mouseover == p_tile.m_panel.m_linkedViews[index].update ){
+
+                                    p_tile.m_panel.m_linkedViews[index].panel.Pause(false);
+                                    p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                                    if ( p_tile.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                                        p_tile.m_panel.m_linkedViews[index].panel.Update({ shapeRef: p_tile }, namespace.Interaction.click);
+                                    }
+                                    p_tile.m_panel.m_linkedViews[index].panel.Update(p_data, namespace.Interaction.mouseover);
+                                }
+                                p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                            }
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Nothing
+                    case namespace.Interaction.mouseout:
+
+                        break;
+                }
+            // Unpaused
+            } else {
+
+                switch ( p_mouseEventType ){
+
+                    // (I) Mouseover --> Nothing
+                    case namespace.Interaction.mouseover:
+
+                        break;
+
+                    // (II) Click - Any tile --> Pauses panel and linked panels
+                    case namespace.Interaction.click:
+                    // (III) Double-Click --> Mimics Click (II)
+                    case namespace.Interaction.dblclick:
+
+                        p_tile.m_panel.Pause(true);
+                        for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Pause(true);
+                        }
+
+                        break;
+
+                    // (IV) Mouseout --> Unhighlights entire bullseye
+                    case namespace.Interaction.mouseout:
+
+                        p_tile.m_panel.Update(null, namespace.Interaction.mouseover, true);
+                        for ( var index = 0; index < p_tile.m_panel.m_linkedViews.length; index++ ){
+                            p_tile.m_panel.m_linkedViews[index].panel.Update(null, namespace.Interaction.mouseover);
+                        }
+
+                        break;
+                }
+            }
+        }
+    };
+
+    namespace.WordWeightTile.prototype.s_tileDims = { width: 300, height: 100 };
+    namespace.WordWeightTile.prototype.s_topicCircleRadius = 15;
 
 
     return namespace;
