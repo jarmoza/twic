@@ -1,13 +1,23 @@
 import json
 import time
 import os
+import sys
 
-import jensen_shannon
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-from utils.color_utils import Utils_Color
-from twic_malletscript import TWiC_MalletScript
+load_src("utils_jensen_shannon", "../utils/utils_jensen_shannon.py")
+import utils_jensen_shannon
+
+load_src("utils_color", "../utils/utils_color.py")
+from utils_color import Utils_Color
+
+from general.twic_malletscript import TWiC_MalletScript
 from twic_text import TWiC_Text
-from utils.utils_malletinterpret import Utils_MalletInterpret
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
 clean_word = Utils_MalletInterpret.CleanWord
 
 
@@ -52,39 +62,60 @@ class TWiC_MalletInterpret:
         # Maps number index to lines, each of which contain another list/map of word-by-index to topic number
         line_wordtopic_map = []
 
-        # An array of arrays (each of which have two entries: a string and another array of topic ids)
+        # Building an array of arrays (each of which have two entries: a string and map of word index to topic ids)
         for line in data:
 
-            words = line.split(' ')
+            words = line.strip().split(' ')
             words[:] = [word for word in words if len(word) > 0]
 
+            # print "LINE FROM TXT FILE: {0}".format(line)
+
             # Add an entry to the line map
-            line_wordtopic_map.append([line, []])
+            line_wordtopic_map.append([line.strip().split(' '), []])
 
             if statefile_word_index < len(current_fwt.word_info):
                 lowercase_state_word = clean_word(current_fwt.word_info[statefile_word_index].word.lower())
 
+            # print "FIRST STATE WORD: {0}".format(lowercase_state_word)
+
             # Go through each word in the line
             for actual_word_index in range(len(words)):
+
+                # print "Going through words from txt file"
 
                 # Lowercase only for comparison
                 lowercase_word = clean_word(words[actual_word_index].lower())
 
-                # NOTE: Condition includes workaround for MALLET regex/punctuation issue with import-dir
+                # print "TXT FILE WORD: {0}".format(lowercase_word)
+
+                # If this word from the file matches the current statefile word
+                # print "TEST: SWI({0}) < LEN_FWT_WordInfo({1} and TFW({2}) == SW({3})".format(statefile_word_index, len(current_fwt.word_info), lowercase_word, lowercase_state_word)
                 if statefile_word_index < len(current_fwt.word_info) and (lowercase_word == lowercase_state_word):
+                   # NOTE: Extra condition was for workaround for MALLET regex/punctuation issue with import-dir
                    # or ("\'" in words[actual_word_index].lower() and lowercase_word != lowercase_state_word)):
+
+                    # print "PASS TEST"
 
                     statefile_word_index += 1
 
+                    # print "SWI incremented TEST: SWI({0}) < LEN_FWT_WordInfo({1})".format(statefile_word_index, len(current_fwt.word_info))
                     if statefile_word_index < len(current_fwt.word_info):
+
+                        # print "PASS 2ND TEST"
 
                         lowercase_state_word = clean_word(current_fwt.word_info[statefile_word_index].word.lower())
 
-                        # Add an entry for this word in the file and line maps for this topic
-                        line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(current_fwt.word_info[statefile_word_index].topic)
-                        file_wordtopic_map.append(current_fwt.word_info[statefile_word_index].topic)
+                        # print "NEW STATE WORD: {0}".format(lowercase_state_word)
+
+                    # print "LINE ENTRY ADDED FOR {0} with TOPIC {1}".format(clean_word(current_fwt.word_info[statefile_word_index - 1].word.lower()), current_fwt.word_info[statefile_word_index - 1].topic)
+
+                    # Add an entry for the matched word in the file and line maps for this topic
+                    line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(current_fwt.word_info[statefile_word_index - 1].topic)
+                    file_wordtopic_map.append(current_fwt.word_info[statefile_word_index - 1].topic)
 
                 else:
+
+                    # print "FAIL TEST. {0} is non-topic word".format(lowercase_word)
 
                     # Add a blank entry (-1) for this word in the file and line maps for this word
                     line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(-1)
@@ -92,9 +123,8 @@ class TWiC_MalletInterpret:
 
         return file_wordtopic_map, line_wordtopic_map
 
-
     @staticmethod
-    def ConvertTextToJSON(text, json_output_directory, mallet_script, state_file_data=None):
+    def ConvertTextToJSON(text, json_output_directory, mallet_script, state_file_data=None, write_json=True):
 
         json_data = { "document" : {} }
 
@@ -119,11 +149,11 @@ class TWiC_MalletInterpret:
             # Write out the data to a JSON file (format as seen in output/viz_input_docformat.json)
             with open(json_output_directory + text.GetFilename() + ".json", 'w') as fileptr:
                 fileptr.write(json.dumps(json_data))
-            return
+            return "No state file data"
 
         # Get topic word indexes for this text
         # filepath = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/source/plaintext/' + text.GetFilename() + ".txt"
-        filepath = mallet_script.corpus_source_dir + text.GetFilename().split("_")[1] + ".txt"
+        filepath = mallet_script.corpus_source_dir + text.GetFilename() + ".txt"
         file_wordtopic_map, line_wordtopic_map = TWiC_MalletInterpret.Build_WordTopicFileIndices(filepath, state_file_data)
 
         line_index = 0
@@ -134,10 +164,12 @@ class TWiC_MalletInterpret:
 
         for line in line_wordtopic_map:
 
-            line_entry = [line[0].strip(), {}]
+            #line_entry = [line[0].strip(), {}]
+            line_entry = [line[0], {}]
 
             for index in range(0,len(line_wordtopic_map[line_index][1])):
-                line_entry[1][str(index)] = str(line_wordtopic_map[line_index][1][index])
+                if -1 != line_wordtopic_map[line_index][1][index]:
+                    line_entry[1][str(index)] = str(line_wordtopic_map[line_index][1][index])
 
             json_data["document"]["lines_and_colors"].append(line_entry)
 
@@ -145,8 +177,11 @@ class TWiC_MalletInterpret:
             # TO BE CONTINUED HERE
 
         # Write out the data to a JSON file (format as seen in output/viz_input_docformat.json)
-        with open(json_output_directory + text.GetFilename() + ".json", 'w') as fileptr:
-            fileptr.write(json.dumps(json_data))
+        if write_json:
+            with open(json_output_directory + text.GetFilename() + ".json", 'w') as fileptr:
+                fileptr.write(json.dumps(json_data))
+
+        return json_data
 
     @staticmethod
     def DetermineCorpusClusters(file_topic_proportions, corpus_topic_proportions):
@@ -215,7 +250,7 @@ class TWiC_MalletInterpret:
                 if doc.id == top_proportions[key][0]:
                     jsd_buckets[key][doc.id] = 0
                 else:
-                    jsd_buckets[key][doc.id] = jensen_shannon.jensen_shannon_distance(top_file_probdistr, prob_distributions[doc.id])
+                    jsd_buckets[key][doc.id] = utils_jensen_shannon.jensen_shannon_distance(top_file_probdistr, prob_distributions[doc.id])
 
         # 3.
 
@@ -251,7 +286,7 @@ class TWiC_MalletInterpret:
             file_id = top_proportions[int(topic_id)][0]
             doc_distribution = prob_distributions[file_id]
             #print 'Doc Dist Len: {0}\nDoc Dist: {1}'.format(len(doc_distribution), doc_distribution)
-            distance = jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)
+            distance = utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)
             distance2cdist_map[file_id] = distance
 
         # Create a JSON file for document clusters with the following format:
@@ -318,12 +353,13 @@ class TWiC_MalletInterpret:
             cluster_avg_topic_dist = [0 for index in range(topic_count)]
             for index in range(len(texts_with_top_topic)):
                 for index2 in range(topic_count):
+                    #print "TOPIC GUIDE:\n{0}".format(file_topic_proportions[texts_with_top_topic[index]].topic_guide)
                     cluster_avg_topic_dist[index2] += file_topic_proportions[texts_with_top_topic[index]].topic_guide[str(index2)]
             for index in range(topic_count):
                 cluster_avg_topic_dist[index] /= topic_count
 
             # Get its distance from the corpus distribution
-            clusters_json[topic_id]["dist2avg"] = jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, cluster_avg_topic_dist)
+            clusters_json[topic_id]["dist2avg"] = utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, cluster_avg_topic_dist)
 
             # Sort and store the average topic distribution for this cluster
             clusters_json[topic_id]["topics"] = {}
@@ -349,7 +385,7 @@ class TWiC_MalletInterpret:
 
                 # Calculate the distance between the cluster's average topic distribution and this text's topic distribution
                 text_topic_distribution = [current_ftp.topic_guide[str(index)] for index in range(len(corpus_topic_proportions))]
-                text_json["dist2avg"] = jensen_shannon.jensen_shannon_distance(cluster_avg_topic_dist, text_topic_distribution)
+                text_json["dist2avg"] = utils_jensen_shannon.jensen_shannon_distance(cluster_avg_topic_dist, text_topic_distribution)
 
                 # Add this text to the cluster json
                 clusters_json[topic_id]["children"].append(text_json)
@@ -515,7 +551,7 @@ class TWiC_MalletInterpret:
                 int_topic_id = int(doc_topics[index][0])
                 doc_distribution[int_topic_id] = doc_topics[index][1]
             #print 'Doc distr:{0}\nCorp distr:{1}'.format(doc_distribution, corpus_topic_proportions)
-            distances_to_ideal.append([doc.id, jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)])
+            distances_to_ideal.append([doc.id, utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)])
         distances_to_ideal = sorted(distances_to_ideal, key=lambda x:x[1], reverse=False)
 
         # Save the text closest to that average distribution and its distance from that average
@@ -587,6 +623,71 @@ class TWiC_MalletInterpret:
         # 4. Write out corpus map to JSON
         with open(output_dir + 'twic_corpusmap.json','w') as output_file:
             output_file.write(json.dumps(twic_corpus_map))
+
+    @staticmethod
+    def Build_JSONForTextwithForeignObject(text, output_dir, css_filename, current_tp, fwt_collection, topic_keys, color_list, mallet_script, split_filename=False):
+
+        file_id = text.GetFilename()
+        if split_filename:
+            file_id = text.GetFilename().split("_")[0]
+
+        # Figure out the possible topics for each word based on the topic state file
+        current_fwt = None
+        for fwt in fwt_collection:
+            fwt_file_id = Utils_MalletInterpret.GetFilename(fwt.GetFilename())
+            if split_filename:
+                fwt_file_id = Utils_MalletInterpret.GetFilenameWithUnderscore(fwt.GetFilename())
+            if fwt_file_id == file_id:
+                current_fwt = fwt
+                break
+
+        # Retrieve json data of a line-word-topic map from ConvertTextToJSON
+        json_data = TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json/texts/", mallet_script, current_fwt, False)
+
+        if "No state file data" == json_data:
+            print "No state file data for {0}".format(text.GetFilename())
+            return
+
+        # Output text will be partial html to be inserted inside foreignObject tag
+        output_text = []
+
+        # Add an initial spacing span between the panel's control bar and the body
+        output_text.append("<xhtml:p class=\"text_p\"><xhtml:span class=\"text_edgespan\">&nbsp;</xhtml:span></xhtml:p>")
+
+        # Build up HTML lines that will be inserted as a foreignObject client-side
+        #print "FILENAME: {0}".format(text.GetFilename())
+        #print "L&C LEN: {0}".format(len(json_data["document"]["lines_and_colors"]))
+        #for lc_index in range(len(json_data["document"]["lines_and_colors"])):
+        #    print json_data["document"]["lines_and_colors"][lc_index]
+
+        for lc_index in range(len(json_data["document"]["lines_and_colors"])):
+
+            entry = json_data["document"]["lines_and_colors"][lc_index]
+
+            output_text.append("<xhtml:p class=\"text_p\">")
+            output_text.append("<xhtml:span class=\"text_edgespan\">&nbsp;&nbsp;&nbsp;&nbsp;</xhtml:span>")
+            for index in range(len(entry[0])):
+                if str(index) in entry[1]:
+                    output_text.append("<xhtml:span class=\"text_coloredword\" style=\"color:{0}\">{1}&nbsp;</xhtml:span>".format(\
+                        color_list[int(entry[1][str(index)])], entry[0][index]))
+                else:
+                    output_text.append("<xhtml:span class=\"text_word\">{0}&nbsp;</xhtml:span>".format(entry[0][index]))
+            output_text.append("</xhtml:p>")
+            #output_text.append("<xhtml:br></xhtml:br>")
+
+        # Add the foreignObject HTML to the JSON
+        json_data["document"]["full_text"] = ''.join([str(output_text_line) for output_text_line in output_text])
+
+        # Save the number of lines in the text for panel height size client-side
+        json_data["document"]["line_count"] = len(json_data["document"]["lines_and_colors"])
+
+        # Dereference the lines and colors array for garbage collection
+        #json_data["document"].pop("lines_and_colors", None)
+
+        # Write the JSON file for this text
+        with open(output_dir + "json/texts/" + text.GetFilename() + ".json", 'w') as fileptr:
+            #print "Writing {0}".format(output_dir + "json/texts/" + text.GetFilename() + ".json")
+            fileptr.write(json.dumps(json_data))
 
     @staticmethod
     def Build_HTMLandJSONForText(text, output_dir, css_filename, current_tp, fwt_collection, topic_keys, color_list, mallet_script, split_filename=False):
@@ -803,14 +904,14 @@ class TWiC_MalletInterpret:
 
         print 'Interpreting MALLET output for visualization...'
 
-        # myoutput_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/myviz-output/'
-        myoutput_dir = '../../data/input/'
+        myoutput_dir = '../../../data/input/'
 
         print '\tReading in MALLET output...'
 
         ####### 1. Reading dickinson.topics.tsv
 
-        tp_collection = mallet_script.GetTopicsFileData()
+        # tp_collection = mallet_script.GetTopicsFileData("2.0.7")
+        tp_collection = mallet_script.GetTopicsFileData("2.0.8")
 
         ###### 2. Reading dickinson.keys.tsv
 
@@ -846,7 +947,7 @@ class TWiC_MalletInterpret:
 
         ###### 7. Build HTML and JSON files for each text for low and mid level TWiC representations
 
-        print '\tCreating HTML and JSON files for TWiC views of texts...'
+        print '\tCreating JSON files for TWiC views of texts...'
 
         for text in textobj_collection:
             current_tp = None
@@ -854,8 +955,11 @@ class TWiC_MalletInterpret:
                 if text.GetFilename().split("_")[0] == Utils_MalletInterpret.GetFilenameWithUnderscore(tp.filename):
                     current_tp = tp
                     break
-            TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
+            # TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
+            #                          current_tp, fwt_collection, topic_keys, color_list, mallet_script, True)
+            TWiC_MalletInterpret.Build_JSONForTextwithForeignObject(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
                                      current_tp, fwt_collection, topic_keys, color_list, mallet_script, True)
+
 
         ###### 8. Build JSON files for visualization
 

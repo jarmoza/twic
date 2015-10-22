@@ -176,8 +176,9 @@ var TWiC = (function(namespace){
                 data.locolor = this.m_level.m_topicColors[this.m_topTopics[index][0]];
             }
             else {
-                data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                    this.m_level.m_topicColors[this.m_topTopics[index][0]]);
+                //data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                //                                    this.m_level.m_topicColors[this.m_topTopics[index][0]]);
+                data.locolor = this.m_level.m_topicColorsLoBlend[this.m_topTopics[index][0]];
             }
 
             if ( index > 0 ) {
@@ -699,14 +700,19 @@ var TWiC = (function(namespace){
 
     namespace.TopicRectangle.method("CalculateSize", function(){
 
+        var maxLineCount = this.m_data.lines_and_colors.length;
+        if ( maxLineCount > namespace.TopicRectangle.prototype.s_maxLinesInRect ){
+            maxLineCount = namespace.TopicRectangle.prototype.s_maxLinesInRect;
+        }
+
         this.m_size = { width: 0,
-                        height: (this.m_data.lines_and_colors.length *
+                        height: (maxLineCount *
                                  (namespace.TopicRectangle.prototype.strokeWidth + namespace.TopicRectangle.prototype.spaceBetweenLines)) +
                                  (4 * namespace.TopicRectangle.prototype.borderWidth) - (2 * namespace.TopicRectangle.prototype.spaceBetweenLines) };
 
-        for ( var index = 0; index < this.m_data.lines_and_colors.length; index ++ ) {
+        for ( var index = 0; index < maxLineCount; index ++ ) {
 
-            var wordCountPixels = Object.keys(this.m_data.lines_and_colors[index][1]).length * namespace.TopicRectangle.prototype.wordLength;
+            var wordCountPixels = Object.keys(this.m_data.lines_and_colors[index][0]).length * namespace.TopicRectangle.prototype.wordLength;
             if ( wordCountPixels > this.m_size["width"] ) {
                 this.m_size.width = wordCountPixels;
             }
@@ -755,8 +761,9 @@ var TWiC = (function(namespace){
             if ( 1 == this.m_numberRects ){
                  data.locolor = this.m_level.m_topicColors[this.m_topTopics[index][0]];
             } else {
-                data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                    this.m_level.m_topicColors[this.m_topTopics[index][0]]);
+                //data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                //                                    this.m_level.m_topicColors[this.m_topTopics[index][0]]);
+                data.locolor = this.m_level.m_topicColorsLoBlend[this.m_topTopics[index][0]];
             }
 
             var rectRadius = index * namespace.TopicRectangle.prototype.s_borderRadius;
@@ -847,8 +854,9 @@ var TWiC = (function(namespace){
         if ( 1 == this.m_numberRects ){
             rect_data.locolor = this.m_level.m_topicColors[this.m_clusterIndex];
         } else {
-            rect_data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                     this.m_level.m_topicColors[this.m_clusterIndex]);
+            //rect_data.locolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+            //                                         this.m_level.m_topicColors[this.m_clusterIndex]);
+            rect_data.locolor = this.m_level.m_topicColorsLoBlend[this.m_clusterIndex];
         };
 
         // Create a rounded rectangle on the svg under the lines, sized to the max length of the lines (for now)
@@ -869,7 +877,11 @@ var TWiC = (function(namespace){
                                        }.bind(this))
                                        .on(namespace.Interaction.click, function(d){
 
+                                            console.log("Topic rectangle click event");
+
                                             if ( this.m_clickTimerID ){
+
+                                                console.log("Clear time out");
 
                                                 clearTimeout(this.m_clickTimerID);
                                                 this.m_clickTimerID = null;
@@ -878,7 +890,11 @@ var TWiC = (function(namespace){
                                                 namespace.TopicRectangle.prototype.MouseBehavior(this, d, namespace.Interaction.dblclick);
                                             } else {
 
+                                                console.log("setTimeout case");
+
                                                 this.m_clickTimerID = setTimeout(function(p_data){
+
+                                                    console.log("setTimeout callback");
 
                                                     this.m_clickTimerID = null;
 
@@ -908,12 +924,20 @@ var TWiC = (function(namespace){
                                     y: this.m_coordinates.y + namespace.TopicRectangle.prototype.spaceBetweenLines };
 
         // Create a path element for each word on each line (NOTE: We'll see how expensive this is)
-        for ( var index = 0; index < this.m_data.lines_and_colors.length; index++ ) {
+        // New check for max lines allowable in rect
+        for ( var index = 0; index < this.m_data.lines_and_colors.length &&
+              index < namespace.TopicRectangle.prototype.s_maxLinesInRect; index++ ) {
 
             var lcArray = [];
-            var wordIndices = Object.keys(this.m_data.lines_and_colors[index][1]);
-            for ( var index2 = 0; index2 < wordIndices.length; index2++ ) {
-                lcArray.push({ "l": index, "w": wordIndices[index2] });
+            //var wordIndices = Object.keys(this.m_data.lines_and_colors[index][1]);
+            var lineLength = this.m_data.lines_and_colors[index][0].length;
+            for ( var index2 = 0; index2 < lineLength; index2++ ) {
+                /*if ( undefined !== wordIndices[index2] ){
+                    lcArray.push({ "l": index, "w": wordIndices[index2] });
+                } else {
+                    lcArray.push({"l": index, "w": index2 })
+                }*/
+                lcArray.push({"l": index, "w": index2});
             }
 
             textRectGroup.append("g")
@@ -927,7 +951,8 @@ var TWiC = (function(namespace){
                          .style("stroke", function(d) {
 
                              var topic_color_index = this.m_data.lines_and_colors[d.l][1][d.w];
-                             if ( -1 == topic_color_index ){
+                             //if ( -1 == topic_color_index ){
+                             if ( undefined == topic_color_index ){
                                  return namespace.TopicRectangle.prototype.defaultFontColor;
                              }
                              else {
@@ -958,7 +983,8 @@ var TWiC = (function(namespace){
                          .style("opacity", function(d){
 
                              var topic_color_index = this.m_data.lines_and_colors[d.l][1][d.w];
-                             if ( -1 == topic_color_index ){
+                             //if ( -1 == topic_color_index ){
+                             if ( undefined == topic_color_index ){
                                  return 1.0;
                              } else {
                                  return 1.0;
@@ -1052,6 +1078,8 @@ var TWiC = (function(namespace){
     // Static members of TopicRectangle
     namespace.TopicRectangle.prototype.MouseBehavior = function(p_rectangle, p_data, p_mouseEventType){
 
+        console.log("Topic Rectangle MouseBehavior");
+
         // Unhighlighted
         if ( -1 == p_rectangle.m_level.m_highlightedTopic ){
 
@@ -1097,6 +1125,8 @@ var TWiC = (function(namespace){
 
                 // (C) Double-Click --> Mimics click when unhighlighted (b) --> Opens underlying panel if not already open
                 case namespace.Interaction.dblclick:
+
+                    console.log("Unhighlighted doubleclick case");
 
                     p_rectangle.m_panel.Update(p_data, namespace.Interaction.mouseover);
                     p_rectangle.m_panel.Pause(true);
@@ -1218,6 +1248,8 @@ var TWiC = (function(namespace){
 
                     // (III) Double-Click --> Mimics Double-Click Unhighlighted (1.C)
                     case namespace.Interaction.dblclick:
+
+                        console.log("Highlighted doubleclick case");
 
                         // Update the data bar, if present
                         for ( var index = 0; index < p_rectangle.m_panel.m_linkedViews.length; index++ ){
@@ -1400,9 +1432,12 @@ var TWiC = (function(namespace){
     namespace.TopicRectangle.prototype.spaceBetweenLines = 2 * namespace.TopicRectangle.prototype.multiplier;
 
     namespace.TopicRectangle.prototype.defaultFontColor = namespace.Level.prototype.s_palette.gold;
-    namespace.TopicRectangle.prototype.jsonDirectory = "data/input/json/texts/";
+    namespace.TopicRectangle.prototype.jsonDirectory = TWiC.Level.prototype.s_jsonDirectory + "texts/";
 
     namespace.TopicRectangle.prototype.s_shapeChar = "r";
+
+    // New static member for general corpus usage. Max lines in rectangle is 10 - 10-12-15 J.Armoza
+    namespace.TopicRectangle.prototype.s_maxLinesInRect = 10;
 
     // TWiC TopicText (inherits from DataShape)
     namespace.TopicText = function(p_coordinates, p_size, p_filename, p_level, p_panel, p_linkedViews, p_data){
@@ -1418,6 +1453,68 @@ var TWiC = (function(namespace){
     namespace.TopicText.inherits(namespace.DataShape);
 
     namespace.TopicText.method("Draw", function(p_node){
+
+        // Vars for growing the panel div to the appropriate size for the text
+        var currentY = this.m_coordinates.y;
+
+        // Initialize size (initial panel height + space for rounded corners)
+        var rectGrowth = this.m_size.height + namespace.Panel.prototype.s_borderRadius;
+
+        // Pixel space per line
+        var dy = namespace.TopicBar.prototype.s_textInfo.yIncrement;
+
+        // Some calculations for extended div height for texts larger than the current panel size
+        for ( var index = 0; index < this.m_data.json.line_count; index++ ){
+            currentY += dy;
+            if ( currentY > this.m_panel.m_size.height ){
+                rectGrowth += dy;
+            }
+        }
+
+        // Append the full text as a foreignObject (data for topic words to be added on the fly by TextView)
+        var foreignObject = p_node.append("foreignObject")
+                                  .attr("width", this.m_size.width)
+                                  .attr("height", rectGrowth);
+        /*foreignObject.append("xhtml:head")
+                     .append("link")
+                     .attr("rel", "stylesheet")
+                     .attr("type", "text/css")
+                     .attr("href", "css/twic.css");
+        foreignObject.append("link")
+                     .attr("rel", "stylesheet")
+                     .attr("type", "text/css")
+                     .attr("href", "http://fonts.googleapis.com/css?family=Podkova:400|Inconsolata:400,700");*/
+        foreignObject.append("xhtml:body")
+                     .style("background-color", namespace.Level.prototype.s_palette.darkblue)
+                     .html(this.m_data.json.full_text);
+
+        // Add mousover behavior for colored and non-colored words
+        this.m_panel.m_div
+                    .attr("height", rectGrowth)
+                    .selectAll(".text_coloredword")
+                    .on(namespace.Interaction.click, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.click);
+                        d3.event.stopPropagation();
+                    }.bind(this))
+                    .on(namespace.Interaction.mouseover, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
+                    }.bind(this))
+                    .on(namespace.Interaction.mouseout, function(d){
+                        namespace.TopicText.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
+                    }.bind(this));
+
+        this.m_panel.m_div
+                    .selectAll(".text_word")
+                    .on(namespace.Interaction.click, function(d){
+                        if ( -1 != this.m_level.m_highlightedTopic ){
+                            namespace.TopicText.prototype.MouseBehavior(null, namespace.Interaction.click);
+                            d3.event.stopPropagation();
+                        }
+                    }.bind(this));
+    });
+
+
+    namespace.TopicText.method("OldDraw", function(p_node){
 
         // Spacing between (optional) title bar and text
         p_node.append("p")
@@ -1436,47 +1533,61 @@ var TWiC = (function(namespace){
 
         for ( var index = 0; index < this.m_data.json.lines_and_colors.length; index++ ) {
 
+            console.log("New novel line");
+
+            // COST: Split per line - Had python split into array server-side
             words = this.m_data.json.lines_and_colors[index][0].split(" ");
+            //words = this.m_data.json.lines_and_colors[index][0];
+
+
             var lineText = "";
 
             //var currentX = 50;
             var currentX = this.m_coordinates.x;
             var text;
 
+            //var currentLine = p_node.append("p")
+            //                        .style("word-spacing", namespace.Level.prototype.s_fontSpacing.Inconsolata22)
+            //                        .style("display", "inline-block")
+            //                        .style("line-height", "0px");
             var currentLine = p_node.append("p")
-                                    .style("word-spacing", namespace.Level.prototype.s_fontSpacing.Inconsolata22)
-                                    .style("display", "inline-block")
-                                    .style("line-height", "0px");
+                                    .attr("class", "text_p");
 
             // Spacing between div edge and text
             currentLine.append("span")
-                       .style("font-family", namespace.Level.prototype.s_fontFamily)
-                       .style("font-size", 22)
-                       .style("opacity", 1.0)
+                       .attr("class", "text_edgespan")
+                       //.style("font-family", namespace.Level.prototype.s_fontFamily)
+                       //.style("font-size", 22)
+                       //.style("opacity", 1.0)
                        .html("&nbsp;&nbsp;&nbsp;&nbsp;");
 
+            // COST: (O(n^2) territory)
             for ( var index2 = 0; index2 < words.length; index2++ ) {
 
                 // NOTE: undefined HACK
-                if ( "-1" == this.m_data.json.lines_and_colors[index][1][index2] ||
-                     undefined == this.m_data.json.lines_and_colors[index][1][index2] ){
+                // COST: Double conditional check
+                if ( "-1" == this.m_data.json.lines_and_colors[index][1][index2]
+                    || undefined == this.m_data.json.lines_and_colors[index][1][index2] ){
 
+                    // COST: Append uncolored word
                     text = currentLine.append("span")
                                       .attr("class", "text_word")
-                                      .style("color", namespace.Level.prototype.s_palette.gold)
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 22)
-                                      .style("opacity", 1.0)
+                                      //.style("color", namespace.Level.prototype.s_palette.gold)
+                                      //.style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      //.style("font-size", 22)
+                                      //.style("opacity", 1.0)
                                       .html(words[index2] + "&nbsp;");
 
                     currentX += text[0][0].offsetWidth * 0.66;
                 }
                 else {
 
-                    var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                 this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]]);
+                    //var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                    //                             this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]]);
+                    var dlocolor = this.m_level.m_topicColorsLoBlend[this.m_data.json.lines_and_colors[index][1][index2]];
 
-                    var quoteType = "";
+                    // COST: Dealing with quotes client-side
+                    /*var quoteType = "";
                     var quotePlace = "";
                     var tempWord = words[index2];
                     if ( "\"" == words[index2][0] || "\'" == words[index2][0] ){
@@ -1491,35 +1602,41 @@ var TWiC = (function(namespace){
 
                     if ( "b" == quotePlace ){
 
+                        // COST: Appending before-quote separately
                         text = currentLine.append("span")
-                                                    .attr("class", "text_word")
-                                                    .style("color", namespace.Level.prototype.s_palette.gold)
-                                                    .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                                    .style("font-size", 22)
-                                                    .style("opacity", 1.0)
-                                                    .html(quoteType);
+                                          .attr("class", "text_word")
+                                          .style("color", namespace.Level.prototype.s_palette.gold)
+                                          .style("font-family", namespace.Level.prototype.s_fontFamily)
+                                          .style("font-size", 22)
+                                          .style("opacity", 1.0)
+                                          .html(quoteType);
 
                         currentX += text[0][0].offsetWidth * 0.66;
                     }
 
-                    tempTempWord = ( quotePlace == "a" ) ? tempWord : tempWord + "&nbsp;";
+                    // COST: Quote after determination
+                    tempTempWord = ( quotePlace == "a" ) ? tempWord : tempWord + "&nbsp;";*/
 
+                    // COST: Append colored word with datum (word count x 2 + (3 * strings))
                     text = currentLine.append("span")
                                       .attr("class", "text_coloredword")
                                       .datum({ topicID: this.m_data.json.lines_and_colors[index][1][index2],
                                                locolor: dlocolor,
                                                color:this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]],
-                                               word: tempTempWord })
+                                               //word: tempTempWord })
+                                               word: words[index2]})
                                       .style("color", this.m_level.m_topicColors[this.m_data.json.lines_and_colors[index][1][index2]])
-                                      .style("font-family", namespace.Level.prototype.s_fontFamily)
-                                      .style("font-size", 22)
-                                      .style("opacity", 1.0)
-                                      .html(tempTempWord);
+                                      //.style("font-family", namespace.Level.prototype.s_fontFamily)
+                                      //.style("font-size", 22)
+                                      //.style("opacity", 1.0)
+                                      //.html(tempTempWord);
+                                      .html(words[index2]  + "&nbsp;")
 
                     currentX += text[0][0].offsetWidth * 0.66;
 
-                    if ( "a" == quotePlace ){
+                    /*if ( "a" == quotePlace ){
 
+                        // COST: Appending after-quote separately
                         text = currentLine.append("span")
                                           .attr("class", "text_word")
                                           .style("color", namespace.Level.prototype.s_palette.gold)
@@ -1529,7 +1646,7 @@ var TWiC = (function(namespace){
                                           .html(quoteType + "&nbsp;");
 
                         currentX += text[0][0].offsetWidth * 0.66;
-                    }
+                    }*/
                 }
             }
 

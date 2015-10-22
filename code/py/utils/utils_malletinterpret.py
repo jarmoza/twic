@@ -1,6 +1,13 @@
 from datetime import datetime
 import string
 
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("unidecode", "../lib/unidecode.py")
+from unidecode import unidecode
+
 class Utils_MalletInterpret:
 
     @staticmethod
@@ -61,3 +68,16 @@ class Utils_MalletInterpret:
         # Run finishes here
         complete_time = datetime.now() - start_time
         print '{0} time to completion: {1:.10f}'.format(function.__name__, complete_time.total_seconds())
+
+
+    @staticmethod
+    def Translate_With_Unidecode(p_text):
+
+        new_text = ""
+        for ch in p_text:
+            try:
+                ch.decode('utf-8')
+                new_text += ch
+            except UnicodeDecodeError:
+                new_text += unidecode(unichr(ord(ch)))
+        return new_text

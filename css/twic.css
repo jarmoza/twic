@@ -131,4 +131,28 @@ body {
   border-radius: 5px;
 }
 
+.text_p {
+    display: inline-block;
+    line-height: 32px;
+}
+
+.text_edgespan {
+    font-family: Inconsolata;
+    font-size: 22;
+    opacity: 1.0;
+}
+
+.text_word {
+    font-family: Inconsolata;
+    font-size: 22;
+    opacity: 1.0;
+    color: #FAFAD2;
+}
+
+.text_coloredword {
+    font-family: Inconsolata;
+    font-size: 22;
+    opacity: 1.0;
+}
+
 

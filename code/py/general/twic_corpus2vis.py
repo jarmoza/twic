@@ -1,7 +1,13 @@
 import os
 import sys
 
-from utils.utils_malletinterpret import Utils_MalletInterpret
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
+
 from twic_malletscript import TWiC_MalletScript
 from twic_malletinterpret import TWiC_MalletInterpret
 from twic_text import TWiC_Text
@@ -14,16 +20,19 @@ def CreateMallet():
     # Set up variables necessary for script run
     mallet_script.TextClass = TWiC_Text
 
+    twic_relative_root = "../../../"
+
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Text.GatherTexts
     mallet_script.user_source_dir = ""
-    mallet_script.corpus_source_dir = "../../data/input/txt/"
+    mallet_script.corpus_source_dir = twic_relative_root + "data/input/txt/"
 
     # For RunMallet
     mallet_script.corpus_name = "default corpus name"
-    mallet_script.output_dir = "../../data/output/mallet/"
-    mallet_script.stopwords_dir = "../../data/output/stopwords/"
-    mallet_script.lda_dir = "../../lib/mallet-2.0.7/"
+    mallet_script.output_dir = twic_relative_root + "data/output/mallet/"
+    mallet_script.stopwords_dir = twic_relative_root + "data/output/stopwords/"
+    #mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
+    mallet_script.lda_dir = twic_relative_root + "lib/Mallet-master/"
     mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = "100"
     mallet_script.num_intervals = "100"
@@ -37,17 +46,24 @@ def CreateMallet():
     return mallet_script
 
 
-def Model2Vis(args):
+def Corpus2Vis(args):
 
     if (len(args) < 2) or (len(args) and "--help" in args):
-        print "Usage: python twic_model2vis.py [gmci] [user_text_source_directory] [short_corpus_title] [full_corpus_title]"
+        print "Usage: python twic_model2vis.py [gkcmi] [user_text_source_directory] [short_corpus_title] [full_corpus_title]"
+        print "Options: {0}".format("\ng - Gather texts from user source directory\n" +\
+                                    "k - Keep current txt files in corpus source directory" +\
+                                    "c - Clear recent MALLET output files\n" +\
+                                    "m - Run MALLET\n" +\
+                                    "i - Interpret MALLET's output\n")
         return
 
-    # Options: g - Gather texts, m - Run MALLET, i - Interpret MALLET's output
+    # Options: g - Gather texts, c - Clear recent MALLET output, m - Run MALLET, i - Interpret MALLET's output,
+    # k - Keep current txt files in corpus source directory
     options_gather_texts = "g"
     options_clear_oldoutput = "c"
     options_run_mallet = "m"
     options_interpret_output = "i"
+    options_keep_corpus_source = "k"
 
     # Create a TWiC_MalletScript object
     mallet_script = CreateMallet()
@@ -67,6 +83,9 @@ def Model2Vis(args):
 
     # Run parts of the corpus 2 visualization workflow
     if options_gather_texts in options:
+        # Clears previous files in the corpus source directory if not directed otherwise
+        if options_keep_corpus_source not in options:
+            mallet_script.ClearCorpusSourceDirectory()
         mallet_script.GatherTexts(mallet_script.user_source_dir, mallet_script.corpus_source_dir, True)
     if options_clear_oldoutput in options:
         mallet_script.ClearOutputFiles()
@@ -75,12 +94,10 @@ def Model2Vis(args):
     if options_interpret_output in options:
         mallet_script.InterpretMalletOutput(mallet_script)
 
-    return "Finished Model2Vis"
-
 
 def main(args):
 
-    Utils_MalletInterpret.TimeAndRun(Model2Vis, args)
+    Utils_MalletInterpret.TimeAndRun(Corpus2Vis, args)
 
 
 if '__main__' == __name__:

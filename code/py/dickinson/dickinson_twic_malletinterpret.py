@@ -2,13 +2,31 @@ import json
 import time
 import os
 
-import .utils.jensen_shannon
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-from .utils.color_utils import Color_Utils
-from .twic_malletscript import TWiC_MalletScript
+load_src("utils_color", "../utils/utils_color.py")
+from utils_color import Utils_Color
+
+load_src("utils_jensen_shannon", "../utils/utils_jensen_shannon.py")
+import utils_jensen_shannon
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
+clean_word = Utils_MalletInterpret.CleanWord
+
+load_src("twic_malletscript", "../general/twic_malletscript.py")
+from twic_malletscript import TWiC_MalletScript
+
 from dickinson_twic_poem import TWiC_Poem
-from .utils.mallet_interpret_utils import Mallet_InterpretUtils
-clean_word = Mallet_InterpretUtils.CleanWord
+
+# from utils.utils_color import Utils_Color
+# import utils.utils_jensen_shannon
+# from utils.utils_malletinterpret import Utils_MalletInterpret
+# clean_word = Utils_MalletInterpret.CleanWord
+# from general.twic_malletscript import TWiC_MalletScript
+# from dickinson.dickinson_twic_poem import TWiC_Poem
 
 
 class TWiC_MalletInterpret:
@@ -19,7 +37,7 @@ class TWiC_MalletInterpret:
         textobj_collection = []
         for current_tp in tp_collection:
 
-            filename = Mallet_InterpretUtils.GetFilename(current_tp.filename)
+            filename = Utils_MalletInterpret.GetFilename(current_tp.filename)
             textobj_collection.append(TextClass('{0}{1}.tei'.format(mallet_script.tei_source, filename)))
 
         return textobj_collection
@@ -27,9 +45,15 @@ class TWiC_MalletInterpret:
     @staticmethod
     def Build_TextObjects_Opt(TextClass, mallet_script, tp_collection):
 
-        getfilename = Mallet_InterpretUtils.GetFilename
+        getfilename = Utils_MalletInterpret.GetFilename
         tei_name_format = '{0}{1}.tei'.format
         tei_source = mallet_script.tei_source
+
+        for tp in tp_collection:
+            if 0 == len(getfilename(tp.filename)):
+                print tp.filename
+                print getfilename(tp.filename)
+                print "======================"
 
         return [TextClass(tei_name_format(tei_source, getfilename(tp.filename))) for tp in tp_collection]
 
@@ -52,39 +76,60 @@ class TWiC_MalletInterpret:
         # Maps number index to lines, each of which contain another list/map of word-by-index to topic number
         line_wordtopic_map = []
 
-        # An array of arrays (each of which have two entries: a string and another array of topic ids)
+        # Building an array of arrays (each of which have two entries: a string and map of word index to topic ids)
         for line in data:
 
-            words = line.split(' ')
+            words = line.strip().split(' ')
             words[:] = [word for word in words if len(word) > 0]
 
+            print "LINE FROM TXT FILE: {0}".format(line)
+
             # Add an entry to the line map
-            line_wordtopic_map.append([line, []])
+            line_wordtopic_map.append([line.strip().split(' '), []])
 
             if statefile_word_index < len(current_fwt.word_info):
                 lowercase_state_word = clean_word(current_fwt.word_info[statefile_word_index].word.lower())
 
+            print "FIRST STATE WORD: {0}".format(lowercase_state_word)
+
             # Go through each word in the line
             for actual_word_index in range(len(words)):
+
+                print "Going through words from txt file"
 
                 # Lowercase only for comparison
                 lowercase_word = clean_word(words[actual_word_index].lower())
 
-                # NOTE: Condition includes workaround for MALLET regex/punctuation issue with import-dir
+                print "TXT FILE WORD: {0}".format(lowercase_word)
+
+                # If this word from the file matches the current statefile word
+                print "TEST: SWI({0}) < LEN_FWT_WordInfo({1} and TFW({2}) == SW({3})".format(statefile_word_index, len(current_fwt.word_info), lowercase_word, lowercase_state_word)
                 if statefile_word_index < len(current_fwt.word_info) and (lowercase_word == lowercase_state_word):
+                   # NOTE: Extra condition was for workaround for MALLET regex/punctuation issue with import-dir
                    # or ("\'" in words[actual_word_index].lower() and lowercase_word != lowercase_state_word)):
+
+                    print "PASS TEST"
 
                     statefile_word_index += 1
 
+                    print "SWI incremented TEST: SWI({0}) < LEN_FWT_WordInfo({1})".format(statefile_word_index, len(current_fwt.word_info))
                     if statefile_word_index < len(current_fwt.word_info):
+
+                        print "PASS 2ND TEST"
 
                         lowercase_state_word = clean_word(current_fwt.word_info[statefile_word_index].word.lower())
 
-                        # Add an entry for this word in the file and line maps for this topic
-                        line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(current_fwt.word_info[statefile_word_index].topic)
-                        file_wordtopic_map.append(current_fwt.word_info[statefile_word_index].topic)
+                        print "NEW STATE WORD: {0}".format(lowercase_state_word)
+
+                    print "LINE ENTRY ADDED FOR {0} with TOPIC {1}".format(clean_word(current_fwt.word_info[statefile_word_index - 1].word.lower()), current_fwt.word_info[statefile_word_index - 1].topic)
+
+                    # Add an entry for the matched word in the file and line maps for this topic
+                    line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(current_fwt.word_info[statefile_word_index - 1].topic)
+                    file_wordtopic_map.append(current_fwt.word_info[statefile_word_index - 1].topic)
 
                 else:
+
+                    print "FAIL TEST. {0} is non-topic word".format(lowercase_word)
 
                     # Add a blank entry (-1) for this word in the file and line maps for this word
                     line_wordtopic_map[len(line_wordtopic_map) - 1][1].append(-1)
@@ -133,9 +178,11 @@ class TWiC_MalletInterpret:
 
         for line in line_wordtopic_map:
 
-            line_entry = [line[0].strip(), {}]
+            #line_entry = [line[0].strip(), {}]
+            line_entry = [line[0], {}]
 
-            for index in range(0,len(line_wordtopic_map[line_index][1])):
+            for index in range(0, len(line_wordtopic_map[line_index][1])):
+                #if -1 != line_wordtopic_map[line_index][1][index]:
                 line_entry[1][str(index)] = str(line_wordtopic_map[line_index][1][index])
 
             json_data["document"]["lines_and_colors"].append(line_entry)
@@ -214,7 +261,7 @@ class TWiC_MalletInterpret:
                 if doc.id == top_proportions[key][0]:
                     jsd_buckets[key][doc.id] = 0
                 else:
-                    jsd_buckets[key][doc.id] = jensen_shannon.jensen_shannon_distance(top_file_probdistr, prob_distributions[doc.id])
+                    jsd_buckets[key][doc.id] = utils_jensen_shannon.jensen_shannon_distance(top_file_probdistr, prob_distributions[doc.id])
 
         # 3.
 
@@ -250,7 +297,7 @@ class TWiC_MalletInterpret:
             file_id = top_proportions[int(topic_id)][0]
             doc_distribution = prob_distributions[file_id]
             #print 'Doc Dist Len: {0}\nDoc Dist: {1}'.format(len(doc_distribution), doc_distribution)
-            distance = jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)
+            distance = utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)
             distance2cdist_map[file_id] = distance
 
         # Create a JSON file for document clusters with the following format:
@@ -322,7 +369,7 @@ class TWiC_MalletInterpret:
                 cluster_avg_topic_dist[index] /= topic_count
 
             # Get its distance from the corpus distribution
-            clusters_json[topic_id]["dist2avg"] = jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, cluster_avg_topic_dist)
+            clusters_json[topic_id]["dist2avg"] = utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, cluster_avg_topic_dist)
 
             # Sort and store the average topic distribution for this cluster
             clusters_json[topic_id]["topics"] = {}
@@ -348,7 +395,7 @@ class TWiC_MalletInterpret:
 
                 # Calculate the distance between the cluster's average topic distribution and this text's topic distribution
                 text_topic_distribution = [current_ftp.topic_guide[str(index)] for index in range(len(corpus_topic_proportions))]
-                text_json["dist2avg"] = jensen_shannon.jensen_shannon_distance(cluster_avg_topic_dist, text_topic_distribution)
+                text_json["dist2avg"] = utils_jensen_shannon.jensen_shannon_distance(cluster_avg_topic_dist, text_topic_distribution)
 
                 # Add this text to the cluster json
                 clusters_json[topic_id]["children"].append(text_json)
@@ -514,7 +561,7 @@ class TWiC_MalletInterpret:
                 int_topic_id = int(doc_topics[index][0])
                 doc_distribution[int_topic_id] = doc_topics[index][1]
             #print 'Doc distr:{0}\nCorp distr:{1}'.format(doc_distribution, corpus_topic_proportions)
-            distances_to_ideal.append([doc.id, jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)])
+            distances_to_ideal.append([doc.id, utils_jensen_shannon.jensen_shannon_distance(corpus_topic_proportions, doc_distribution)])
         distances_to_ideal = sorted(distances_to_ideal, key=lambda x:x[1], reverse=False)
 
         # Save the text closest to that average distribution and its distance from that average
@@ -610,7 +657,7 @@ class TWiC_MalletInterpret:
         # Figure out the possible topics for each word based on the topic state file
         current_fwt = None
         for fwt in fwt_collection:
-            fwt_file_id = Mallet_InterpretUtils.GetFilename(fwt.GetFilename())
+            fwt_file_id = Utils_MalletInterpret.GetFilename(fwt.GetFilename())
             if fwt_file_id == file_id:
                 current_fwt = fwt
                 break
@@ -768,7 +815,7 @@ class TWiC_MalletInterpret:
             json_output[file_info][tp.fileid] = []
             json_output[file_info][tp.fileid] = [0 for index in range(FI_FieldCount)]
             # json_output[file_info][tp.fileid][FI_Filename] = tp.filename
-            json_output[file_info][tp.fileid][FI_Filename] = Mallet_InterpretUtils.GetFilename(tp.filename)
+            json_output[file_info][tp.fileid][FI_Filename] = Utils_MalletInterpret.GetFilename(tp.filename)
             json_output[file_info][tp.fileid][FI_TopicProportions] = []
             for topic_index in range(0, topic_count):
                 json_output[file_info][tp.fileid][FI_TopicProportions].append(tp.topic_guide[str(topic_index)])
@@ -799,7 +846,7 @@ class TWiC_MalletInterpret:
         print 'Interpreting MALLET output for visualization...'
 
         # myoutput_dir = '/Users/PeregrinePickle/Documents/Programming/Corpora/Dickinson/output/myviz-output/'
-        myoutput_dir = '../../data/input/'
+        myoutput_dir = '../../../data/dickinson/input/'
 
         print '\tReading in MALLET output...'
 
@@ -837,7 +884,7 @@ class TWiC_MalletInterpret:
 
         print '\tCreating color list...'
 
-        color_list = Color_Utils.Get_UniqueColorList(len(topic_keys.corpus_topic_proportions.keys()))
+        color_list = Utils_Color.Get_UniqueColorList(len(topic_keys.corpus_topic_proportions.keys()))
 
         ###### 7. Build HTML and JSON files for each text for low and mid level TWiC representations
 
@@ -846,7 +893,7 @@ class TWiC_MalletInterpret:
         for text in textobj_collection:
             current_tp = None
             for tp in tp_collection:
-                if text.GetFilename() == Mallet_InterpretUtils.GetFilename(tp.filename):
+                if text.GetFilename() == Utils_MalletInterpret.GetFilename(tp.filename):
                     current_tp = tp
                     break
             TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \

@@ -4,7 +4,15 @@ import re
 import string
 import urllib2
 
-from utils.utils_malletinterpret import Utils_MalletInterpret
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
+
+load_src("unidecode", "../lib/unidecode.py")
+from unidecode import unidecode
 
 
 class TWiC_Text:
@@ -42,10 +50,13 @@ class TWiC_Text:
 
             output_lines = self.GetPreparedLines()[0]
             for output_line in output_lines:
-                print "Output line: "
-                print output_line
-                plaintext_output_file.write(output_line + "\n")
-                #plaintext_output_file.write(output_line + "\n").encode("utf-8")
+                #line_to_write = ""
+                #try:
+                #    line_to_write = output_line.decode('utf-8')
+                #except UnicodeDecodeError:
+                #    line_to_write = Utils_MalletInterpret.Translate_With_Unidecode(output_line)
+                plaintext_output_file.write(unidecode(output_line) + u"\n")
+                #plaintext_output_file.write(line_to_write + "\n").encode("utf-8")
 
 
     def GetCleanLine(self, line):

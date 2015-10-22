@@ -11,6 +11,22 @@ var TWiC = (function(namespace){
         dblclick: "dblclick"
     };
 
+    // From http://haacked.com/archive/2009/12/29/convert-rgb-to-hex.aspx/
+    namespace.ColorToHex = function(p_color) {
+
+        if ( p_color.substr(0, 1) === '#' ) {
+            return p_color;
+        }
+        var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(p_color);
+
+        var red = parseInt(digits[2]);
+        var green = parseInt(digits[3]);
+        var blue = parseInt(digits[4]);
+
+        var rgb = blue | (green << 8) | (red << 16);
+        return digits[1] + '#' + rgb.toString(16);
+    };
+
     namespace.GetAvailableScreenSpace = function(){
 
         //return { width: screen.availWidth, height: screen.availHeight };
@@ -293,6 +309,25 @@ var TWiC = (function(namespace){
         }.bind(this));
     });
 
+    namespace.Level.method("AddDataToSpanBasedOnColor", function(p_tag){
+
+        // Find the topic ID based on the span color
+        var newTopicID = this.FindTopicIDByColor(p_tag.style.color);
+
+        // Create a new data object
+        var newData = {
+            color: p_tag.style.color,
+            topicID: newTopicID,
+            locolor: this.m_topicColorsLoBlend[newTopicID],
+            word: p_tag.html };
+
+        // Add the data to the span
+        d3.select(p_tag).datum(newData);
+
+        // Return the new data object
+        return newData;
+    });
+
     namespace.Level.method("AddPanel", function(p_panel){
 
         // Some panels may not have control bars
@@ -317,6 +352,20 @@ var TWiC = (function(namespace){
         }
     });
 
+    namespace.Level.method("FindTopicIDByColor", function(p_color){
+
+        // Look for the topic ID of the given color
+        var hexString = TWiC.ColorToHex(p_color);
+        for ( var index = 0; index < this.m_topicColors.length; index++ ){
+            if ( hexString == this.m_topicColors[index] ){
+                return index;
+            }
+        }
+
+        // No color matches in the topic color list
+        return -1;
+    });
+
     namespace.Level.method("GetDataBar", function(){
 
         return this.m_dataBar;
@@ -338,6 +387,7 @@ var TWiC = (function(namespace){
                 this.m_corpusInfo = corpusInfo;
                 this.m_topicWordLists = corpusInfo.topic_info[0];
                 this.m_topicColors = corpusInfo.topic_info[1];
+                this.PreblendTopicColors();
                 callback(null, corpusInfo);
             }.bind(this));
         }.bind(this));
@@ -809,6 +859,19 @@ var TWiC = (function(namespace){
         //levelContainer.packery("bindResize");
     });
 
+    namespace.Level.method("PreblendTopicColors", function(){
+
+        // Once the corpus topic color list has been loaded,
+        // blend these colors with the data shape lolight filter for faster
+        // datashape Draw() calls
+
+        this.m_topicColorsLoBlend = [];
+        for ( var index = 0; index < this.m_topicColors.length; index++ ){
+            this.m_topicColorsLoBlend.push(namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                                                           this.m_topicColors[index]));
+        }
+    });
+
     namespace.Level.prototype.s_fontFamily = "Inconsolata"; //"Archer";
     namespace.Level.prototype.s_fontFamilyAlt = "Fenwick";
     namespace.Level.prototype.s_fontSpacing = { "Inconsolata": "-3px" }
@@ -821,6 +884,8 @@ var TWiC = (function(namespace){
                                             "hide_highlight": "#3B0002", "min_highlight": "#864502", "max_highlight": "#0B5401",
                                             "tile": "#0A2D50", "link": "lightgray" };
     namespace.Level.prototype.s_twicLevels = [];
+    //namespace.Level.prototype.s_jsonDirectory = "data/dickinson/input/json/";
+    namespace.Level.prototype.s_jsonDirectory = "data/input/json/";
 
     // Creating a Level instance also adds it to the TWiC level list
     namespace.Level.prototype.Instance = function(){

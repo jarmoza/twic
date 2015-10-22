@@ -8,11 +8,16 @@ import sys
 
 from numpy.linalg import norm
 
-from utils.utils_malletinterpret import Utils_MalletInterpret
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
 clean_word = Utils_MalletInterpret.CleanWord
 
 
-class MalletScript:
+class TWiC_MalletScript:
 
     def __init__(self):
 
@@ -43,6 +48,18 @@ class MalletScript:
         self.topics_file = '{0}{1}.topics.tsv'.format(self.output_dir, self.corpus_name)
         self.keys_file = '{0}{1}.keys.tsv'.format(self.output_dir, self.corpus_name)
         self.wordweights_file = '{0}{1}.wordweights.tsv'.format(self.output_dir, self.corpus_name)
+
+    def ClearCorpusSourceDirectory(self):
+
+        # Gather names of all the txt files in the corpus source directory
+        txt_filelist = []
+        for input_filename in glob.glob(self.corpus_source_dir + "*.txt"):
+            txt_filelist.append(input_filename)
+
+        # Delete all txt files in the corpus source directory
+        for input_filename in txt_filelist:
+            if os.path.isfile(input_filename):
+                os.unlink(input_filename)
 
     def ClearOutputFiles(self):
 
@@ -121,11 +138,18 @@ class MalletScript:
             '--output',
             self.mallet_file,
             #'--token-regex [\p{L}\p{P}]*\p{L}',
-            '--token-regex \p{L}+\p{P}*\p{L}+',
+            # Most recently used
+            #'--token-regex \p{L}+\p{P}*\p{L}+',
+
+            #'--token-regex \p{L}+[\p{P}\p{L}]*',
+
+            '--token-regex \p{L}[\p{L}\p{P}]*\p{L}',
+
+
             #'--token-regex \p{L}+\p{P}*([[a-r][t-z][A-Z]]+|[s]{2,})',
             '--keep-sequence',
             '--remove-stopwords',
-            '--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
+            #'--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
         ]
         subprocess.check_call(args, stdout=sys.stdout)
 
@@ -172,7 +196,7 @@ class MalletScript:
 
         print 'Running MALLET...'
 
-        self.CreateParticleStopwordList(self.corpus_source_dir, self.stopwords_dir)
+        #self.CreateParticleStopwordList(self.corpus_source_dir, self.stopwords_dir)
         self.ImportDir()
         self.TrainTopics()
         if decompress_state_file:
@@ -185,7 +209,7 @@ class MalletScript:
         with open(self.keys_file, 'r') as input_file:
             data = input_file.readlines()
 
-        topic_keys = MalletScript.Mallet_TopicKeys()
+        topic_keys = TWiC_MalletScript.Mallet_TopicKeys()
         for line in data:
 
             line_pieces = line.split('\t')
@@ -215,7 +239,7 @@ class MalletScript:
             if not line.startswith(current_filenumber):
                 if current_filewordtopics:
                     fwt_collection.append(current_filewordtopics)
-                current_filewordtopics = MalletScript.Mallet_FileWordTopics.Create(line)
+                current_filewordtopics = TWiC_MalletScript.Mallet_FileWordTopics.Create(line)
                 current_filenumber = current_filewordtopics.GetFilenumber()
                 current_filewordtopics.AddNextWord(line)
             else:
@@ -223,7 +247,7 @@ class MalletScript:
 
         return fwt_collection
 
-    def GetTopicsFileData(self):
+    def GetTopicsFileData(self, p_mallet_version):
 
         tp_collection = []
         with open(self.topics_file, 'r') as input_file:
@@ -236,23 +260,44 @@ class MalletScript:
 
             for line in data:
 
-                line_pieces = line.split('\t')
+                # Mallet 2.0.7 includes unsorted list that includes [topic id, topic weight] pairs
+                if "2.0.7" == p_mallet_version:
 
-                tp = MalletScript.Mallet_FileTopicProportions()
-                tp.id = line_pieces[0]
-                tp.filename = line_pieces[1][5:]
-                print "TP FILE NAME TP FILE NAME: {0}".format(tp.filename)
-                tp.fileid = tp.filename[tp.filename.rfind('/') + 1:tp.filename.rfind('.')]
-                for index in range(2, len(line_pieces) - 2):
-                    if index % 2 == 1:
-                        continue
-                    topic_id = line_pieces[index]
-                    topic_proportion = float(line_pieces[index + 1])
-                    tp.topic_guide[topic_id] = topic_proportion
-                    tp.sorted_topic_list.append([topic_id, topic_proportion])
-                tp.sorted_topic_list = sorted(tp.sorted_topic_list, key=lambda x:x[1], reverse=True)
+                    line_pieces = line.split('\t')
 
-                tp_collection.append(tp)
+                    tp = TWiC_MalletScript.Mallet_FileTopicProportions()
+                    tp.id = line_pieces[0]
+                    tp.filename = line_pieces[1][5:]
+                    tp.fileid = tp.filename[tp.filename.rfind('/') + 1:tp.filename.rfind('.')]
+                    for index in range(2, len(line_pieces) - 2):
+                        if index % 2 == 1:
+                            continue
+                        topic_id = line_pieces[index]
+                        topic_proportion = float(line_pieces[index + 1])
+                        tp.topic_guide[topic_id] = topic_proportion
+                        tp.sorted_topic_list.append([topic_id, topic_proportion])
+                    tp.sorted_topic_list = sorted(tp.sorted_topic_list, key=lambda x:x[1], reverse=True)
+
+                    tp_collection.append(tp)
+                # Mallet 2.0.8 and higher includes a sorted list of topic weights
+                # (assumption is that they are in ascending order by topic ID)
+                else:
+
+                    line_pieces = line.split('\t')
+
+                    tp = TWiC_MalletScript.Mallet_FileTopicProportions()
+                    tp.id = line_pieces[0]
+                    tp.filename = line_pieces[1][5:]
+                    tp.fileid = tp.filename[tp.filename.rfind('/') + 1:tp.filename.rfind('.')]
+                    for index in range(2, len(line_pieces)):
+                        topic_id = str(index - 2)
+                        topic_proportion = float(line_pieces[index])
+                        tp.topic_guide[topic_id] = topic_proportion
+                        tp.sorted_topic_list.append([topic_id, topic_proportion])
+                    tp.sorted_topic_list = sorted(tp.sorted_topic_list, key=lambda x:x[1], reverse=True)
+
+                    tp_collection.append(tp)
+
 
         return tp_collection
 
@@ -340,7 +385,7 @@ class MalletScript:
         def AddNextWord(self, statefile_line, save_type_index=None, save_word_index=None):
 
             line_pieces = statefile_line.strip().split(' ')
-            self.word_info.append(MalletScript.Mallet_WordInfo(line_pieces[4], line_pieces[5]))
+            self.word_info.append(TWiC_MalletScript.Mallet_WordInfo(line_pieces[4], line_pieces[5]))
             if save_type_index:
                 self.word_info[len(self.word_info) - 1].type_index = line_pieces[3]
             if save_word_index:
@@ -356,7 +401,7 @@ class MalletScript:
         def Create(statefile_line):
 
             line_pieces = statefile_line.strip().split(' ')
-            return MalletScript.Mallet_FileWordTopics(line_pieces[0], line_pieces[1])
+            return TWiC_MalletScript.Mallet_FileWordTopics(line_pieces[0], line_pieces[1])
 
     class Mallet_WordInfo:
 

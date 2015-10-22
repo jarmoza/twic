@@ -30,7 +30,15 @@ except NameError:
 
 BACKEND = 'python'
 
-from .six import exec_, print_
+
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("six", "./six.py")
+from six import exec_, print_
+
+# from .six import exec_, print_
 
 if not python3:
     MPZ = long

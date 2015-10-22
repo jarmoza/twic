@@ -2137,6 +2137,9 @@ var TWiC = (function(namespace){
             }
             this.m_adjustedDistances.push(adjDistance);
         }
+        if ( this.m_linkDistLimits.min == 0 ){
+            this.m_linkDistLimits.min += 100;
+        }
 
         // Subtract min from distances and convert to scale of 1-100
         var linkLimitScaleFactor = 100.0 / (this.m_linkDistLimits.max - this.m_linkDistLimits.min);
@@ -2226,10 +2229,14 @@ var TWiC = (function(namespace){
 
             //var tempRadius = Math.sqrt(((this.m_twicObjects[index].m_size.width >> 1) * (this.m_twicObjects[index].m_size.width >> 1)) + ((this.m_twicObjects[index].m_size.height >> 1) * (this.m_twicObjects[index].m_size.height >> 1)));
             this.m_nodes.push({ "index": index, "name": this.m_objectsJSON[index]["name"] });
+            var tempDist = this.m_objectsJSON[index]["dist2avg"];
+            if ( tempDist < avgDataShapeRadius4Center ){
+                tempDist = avgDataShapeRadius4Center;
+            }
             this.m_links.push({
                 "source": index,
                 "target": this.m_rootIndex,
-                "value": this.m_objectsJSON[index]["dist2avg"]
+                "value": tempDist
             });
         }
 
@@ -2294,7 +2301,16 @@ var TWiC = (function(namespace){
 
                             this.m_twicObjects[index].Draw();
                             var fileID = this.m_level.m_corpusMap["children"][this.m_clusterIndex]["children"][index - 1]["name"];
-                            var title = this.m_level.m_corpusInfo.file_info[parseInt(fileID)][1];
+
+                            // Checking for full filename with underscore
+                            /*var underscoreIndex = fileID.indexOf("_")
+                            if ( -1 != underscoreIndex ){
+                                fileID = fileID.substring(0, underscoreIndex)
+                            }*/
+
+                            //var title = this.m_level.m_corpusInfo.file_info[parseInt(fileID)][1];
+
+                            var title = this.m_level.m_corpusInfo.file_info[fileID][1];
 
                             // Save the title for later reference/use
                             this.m_twicObjects[index].SetTitle(title);
@@ -2981,9 +2997,9 @@ var TWiC = (function(namespace){
                                                    }.bind(this));
 
         // Append a separate group for foreignObject tags for the text
-        this.m_textGroup = this.m_groupOverlay.append("g")
-                                              .attr("class", "group_textview_text")
-                                              .style("relative");
+        //this.m_textGroup = this.m_groupOverlay.append("g")
+        //                                      .attr("class", "group_textview_text")
+        //                                      .style("relative");
 
         // Make the bar text opaque initially
         this.m_controlBar.m_barPath.attr("fill", namespace.Level.prototype.s_palette.darkblue)
@@ -3176,9 +3192,9 @@ var TWiC = (function(namespace){
         this.m_panelRectDiv[0][0].style["border-radius"] = namespace.Panel.prototype.s_borderRadius + "px";
 
         // 4. Re-add text svg groups
-        this.m_textGroup = this.m_groupOverlay.append("g")
-                                              .attr("class", "group_textview_text");
-        this.m_containerGroup = this.m_textGroup.append("g")
+        //this.m_textGroup = this.m_groupOverlay.append("g")
+        //                                      .attr("class", "group_textview_text");
+        this.m_containerGroup = this.m_groupOverlay.append("g")
                                                 .attr("class", "textview_container")
                                                 .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
                                                 .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
@@ -3417,9 +3433,9 @@ var TWiC = (function(namespace){
                                                    }.bind(this));
 
         // 4. Re-add text svg groups
-        this.m_textGroup = this.m_groupOverlay.append("g")
-                                              .attr("class", "group_textview_text");
-        this.m_containerGroup = this.m_textGroup.append("g")
+        //this.m_textGroup = this.m_groupOverlay.append("g")
+        //                                      .attr("class", "group_textview_text");
+        this.m_containerGroup = this.m_groupOverlay.append("g")
                                                 .attr("class", "textview_container")
                                                 .style("width", this.m_size.width - namespace.TextView.prototype.s_borderWidth)
                                                 .style("height", this.m_size.height - namespace.TextView.prototype.s_borderWidth)
@@ -3458,8 +3474,9 @@ var TWiC = (function(namespace){
                 }
                 else {
 
-                    var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
-                                                 this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]);
+                    //var dlocolor = namespace.ShadeBlend(TWiC.DataShape.prototype.s_colorLolight,
+                    //                             this.m_level.m_topicColors[data.json.lines_and_colors[index][1][index2]]);
+                    var dlocolor = this.m_level.m_topicColorsLoBlend[data.json.lines_and_colors[index][1][index2]];
 
                     var quoteType = "";
                     var quotePlace = "";
@@ -3570,10 +3587,23 @@ var TWiC = (function(namespace){
         this.m_svg.selectAll(".text_coloredword")
                   .attr("fill", function(d){ return d.locolor; });*/
 
+        // Reference to the current level for D3 functions
+        var myLevel = this.m_level;
+
         this.m_div.selectAll(".text_word")
                   .style("color", namespace.Level.prototype.s_palette.logold);
+        var myLevel = this.m_level;
         this.m_div.selectAll(".text_coloredword")
-                  .style("color", function(d){ return d.locolor; });
+                  .style("color", function(d){
+
+                    // Trick: Initially recover topic ID from span style color
+                    if ( undefined == d ){
+                        var newData = myLevel.AddDataToSpanBasedOnColor(this);
+                        return newData.locolor;
+                    } else {
+                        return d.locolor;
+                    }
+                });
     });
 
     namespace.TextView.method("DarkenTopicText", function(p_data){
@@ -3683,16 +3713,31 @@ var TWiC = (function(namespace){
         this.m_svg.selectAll(".text_coloredword")
                   .attr("fill", function(d){ return d.color; });*/
 
+        // Reference to the current level for D3 functions
+        var myLevel = this.m_level;
+
         this.m_div.selectAll(".text_word")
                   .style("color", namespace.Level.prototype.s_palette.gold);
         this.m_div.selectAll(".text_coloredword")
-                  .style("color", function(d){ return d.color; });
+                  .style("color", function(d){
+
+                    // Trick: Initially recover topic ID from span style color
+                    if ( undefined == d ){
+                        var newData = myLevel.AddDataToSpanBasedOnColor(this);
+                        return newData.color;
+                    } else {
+                        return d.color;
+                    }
+                });
     });
 
     namespace.TextView.method("HighlightTopicText", function(p_data){
 
         // Save the highlighted topic for future reference
         this.m_level.m_highlightedTopic = p_data.topicID;
+
+        // Reference to the current level for D3 functions
+        var myLevel = this.m_level;
 
         /*this.m_svg.selectAll(".text_coloredword")
                   .filter(function(d){ return d.topicID == p_data.topicID; })
@@ -3703,11 +3748,30 @@ var TWiC = (function(namespace){
                   .attr("fill", function(d){ return d.locolor; });*/
 
         this.m_div.selectAll(".text_coloredword")
-                  .filter(function(d){ return d.topicID == p_data.topicID; })
+                  .filter(function(d){
+
+                    // Trick: Initially recover topic ID from span style
+                    if ( undefined == d ){
+                        var newData = myLevel.AddDataToSpanBasedOnColor(this);
+                        return newData.topicID == p_data.topicID;
+                    } else {
+                        return d.topicID == p_data.topicID;
+                    }
+                  })
                   .style("color", function(d){ return d.color; });
 
         this.m_div.selectAll(".text_coloredword")
-                  .filter(function(d){ return d.topicID != p_data.topicID; })
+                  .filter(function(d){
+
+                    // Trick: Initially recover topic ID from span style
+                    if ( undefined == d ){
+                        var newData = myLevel.AddDataToSpanBasedOnColor(this, myLevel);
+                        return newData.topicID != p_data.topicID;
+                    }
+                    else {
+                        return d.topicID != p_data.topicID;
+                    }
+                  })
                   .style("color", function(d){ return d.locolor; });
     });
 
@@ -4541,7 +4605,7 @@ var TWiC = (function(namespace){
 
         this.m_level.m_queue.defer(function(callback) {
 
-            d3.json("data/input/json/" + this.m_filename, function(error, data){
+            d3.json(TWiC.Level.prototype.s_jsonDirectory + this.m_filename, function(error, data){
 
                 this.m_data = data;
 

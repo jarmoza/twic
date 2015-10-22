@@ -23,10 +23,23 @@ import json
 
 # "Newton" division c/o http://fredrik-j.blogspot.ca/2008/07/making-division-in-python-faster.html
 
-from .lib.mpmath.mpmathparent.mpmath.libmp.libintmath import giant_steps, lshift, rshift
-from .lib.mpmath.mpmathparent.mpmath.libmp.backend import gmpy, MPZ
-#from math import log
-from .twic_malletscript import TWiC_MalletScript
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("libintmath", "../lib/mpmath/mpmathparent/mpmath/libmp/libintmath.py")
+from libintmath import giant_steps, lshift, rshift
+
+load_src("backend", "../lib/mpmath/mpmathparent/mpmath/libmp/backend.py")
+from backend import gmpy, MPZ
+
+# from lib.mpmath.mpmathparent.mpmath.libmp.libintmath import giant_steps, lshift, rshift
+# from lib.mpmath.mpmathparent.mpmath.libmp.backend import gmpy, MPZ
+
+load_src("twic_malletscript", "../general/twic_malletscript.py")
+from twic_malletscript import TWiC_MalletScript
+
+# from general.twic_malletscript import TWiC_MalletScript
 Mallet_FileTopicProportions = TWiC_MalletScript.Mallet_FileTopicProportions
 
 

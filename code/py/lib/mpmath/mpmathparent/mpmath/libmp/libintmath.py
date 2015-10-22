@@ -9,8 +9,16 @@ here from settings.py
 import math
 from bisect import bisect
 
-from .backend import xrange
-from .backend import BACKEND, gmpy, sage, sage_utils, MPZ, MPZ_ONE, MPZ_ZERO
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("backend", "./backend.py")
+from backend import xrange
+from backend import BACKEND, gmpy, sage, sage_utils, MPZ, MPZ_ONE, MPZ_ZERO
+
+# from .backend import xrange
+# from .backend import BACKEND, gmpy, sage, sage_utils, MPZ, MPZ_ONE, MPZ_ZERO
 
 def giant_steps(start, target, n=2):
     """

@@ -3,10 +3,24 @@ import sys
 
 import pico
 
-from .twic_malletscript import TWiC_MalletScript
+def load_src(name, fpath):
+    import os, imp
+    return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
+
+load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+from utils_malletinterpret import Utils_MalletInterpret
+
+load_src("twic_malletscript", "../general/twic_malletscript.py")
+from twic_malletscript import TWiC_MalletScript
+
 from dickinson_twic_poem import TWiC_Poem
+
 from dickinson_twic_malletinterpret import TWiC_MalletInterpret
-from .utils.mallet_interpret_utils import Mallet_InterpretUtils
+
+# from utils.utils_malletinterpret import Utils_MalletInterpret
+# from general.twic_malletscript import TWiC_MalletScript
+# from dickinson.dickinson_twic_poem import TWiC_Poem
+# from dickinson.dickinson_twic_malletinterpret import TWiC_MalletInterpret
 
 
 def CreateMallet():
@@ -22,13 +36,13 @@ def CreateMallet():
 
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Poem.GatherPoems
-    mallet_script.tei_source = twic_relative_root + "data/input/tei/"
-    mallet_script.corpus_source_dir = twic_relative_root + "data/input/txt/"
+    mallet_script.tei_source = twic_relative_root + "data/dickinson/input/tei/"
+    mallet_script.corpus_source_dir = twic_relative_root + "data/dickinson/input/txt/"
 
     # For RunMallet
     mallet_script.corpus_name = "dickinson"
-    mallet_script.output_dir = twic_relative_root + "data/output/mallet/"
-    mallet_script.stopwords_dir = twic_relative_root + "data/output/stopwords/"
+    mallet_script.output_dir = twic_relative_root + "data/dickinson/output/mallet/"
+    mallet_script.stopwords_dir = twic_relative_root + "data/dickinson/output/stopwords/"
     mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
     mallet_script.script_dir = os.getcwd()
 
@@ -86,7 +100,7 @@ def Corpus2Vis(args):
 
 def main(args):
 
-    Mallet_InterpretUtils.TimeAndRun(Corpus2Vis, args)
+    Utils_MalletInterpret.TimeAndRun(Corpus2Vis, args)
 
 
 if '__main__' == __name__:

@@ -1,8 +1,9 @@
 (function(){
-  
+
     var twicLevel = TWiC.Level.prototype.Instance();
-    twicLevel.LoadJSON("data/input/json/twic_corpusinfo.json",
-                       "data/input/json/twic_corpusmap.json");
+    twicLevel.LoadJSON(TWiC.Level.prototype.s_jsonDirectory + "twic_corpusinfo.json",
+                       TWiC.Level.prototype.s_jsonDirectory + "twic_corpusmap.json",
+                       TWiC.Level.prototype.s_jsonDirectory + "twic_corpus_wordweights.json");
 
     // Once JSON has loaded, create and start the level
     twicLevel.m_queue.await(function(){
@@ -20,7 +21,7 @@
                                          twicLevel); // Level reference
 
         publicationView.AddLinkedView(topicBar, TWiC.Interaction.mouseover);
-        topicBar.AddLinkedView(publicationView, TWiC.Interaction.click);                                        
+        topicBar.AddLinkedView(publicationView, TWiC.Interaction.click);
 
         // Initialize the level
         twicLevel.Initialize({x: 0, y: 0}, // Position
