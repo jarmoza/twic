@@ -1,0 +1,4769 @@
+< Shakespeare -- LOVE'S LABOUR'S LOST >
+< from Online Library of Liberty (http://oll.libertyfund.org) >
+< Unicode .txt version by Mike Scott (http://www.lexically.net) >
+< from "The Complete Works of William Shakespeare" >
+< ed. with a glossary by W.J. Craig M.A. >
+< (London: Oxford University Press, 1916) >
+<STAGE DIR>
+<Scene.—Navarre.>
+</STAGE DIR>
+<ACT 1>
+<SCENE 1>
+<The King of Navarre's Park.>
+<STAGE DIR>
+<Enter the King, Berowne, Longaville, and Dumaine.>
+</STAGE DIR>
+<KING>	<0%>
+Let fame, that all hunt after in their lives,
+Live register'd upon our brazen tombs,
+And then grace us in the disgrace of death;
+When, spite of cormorant devouring Time,
+The endeavour of this present breath may buy
+That honour which shall bate his scythe's keen edge,
+And make us heirs of all eternity.
+Therefore, brave conquerors,—for so you are,
+That war against your own affections
+And the huge army of the world's desires,—
+Our late edict shall strongly stand in force:
+Navarre shall be the wonder of the world;
+Our court shall be a little academe,
+Still and contemplative in living art.
+You three, Berowne, Dumaine, and Longaville,
+Have sworn for three years' term to live with me,
+My fellow-scholars, and to keep those statutes
+That are recorded in this schedule here:
+Your oaths are pass'd; and now subscribe your names,
+That his own hand may strike his honour down
+That violates the smallest branch herein.
+If you are arm'd to do, as sworn to do,
+Subscribe to your deep oaths, and keep it too.
+</KING>
+<LONGAVILLE>	<1%>
+I am resolv'd; 'tis but a three years' fast:
+The mind shall banquet, though the body pine:
+Fat paunches have lean pates, and dainty bits
+Make rich the ribs, but bankrupt quite the wits.
+</LONGAVILLE>
+<DUMAINE>	<1%>
+My loving lord, Dumaine is mortified:
+The grosser manner of these world's delights
+He throws upon the gross world's baser slaves:
+To love, to wealth, to pomp, I pine and die;
+With all these living in philosophy.
+</DUMAINE>
+<BEROWNE>	<1%>
+I can but say their protestation over;
+So much, dear liege, I have already sworn,
+That is, to live and study here three years.
+But there are other strict observances;
+As, not to see a woman in that term,
+Which I hope well is not enrolled there:
+And one day in a week to touch no food,
+And but one meal on every day beside;
+The which I hope is not enrolled there:
+And then, to sleep but three hours in the night,
+And not be seen to wink of all the day,—
+When I was wont to think no harm all night
+And make a dark night too of half the day,—
+Which I hope well is not enrolled there.
+O! these are barren tasks, too hard to keep,
+Not to see ladies, study, fast, not sleep.
+</BEROWNE>
+<KING>	<2%>
+Your oath is pass'd to pass away from these.
+</KING>
+<BEROWNE>	<2%>
+Let me say no, my liege, an if you please.
+I only swore to study with your Grace,
+And stay here in your court for three years' space.
+</BEROWNE>
+<LONGAVILLE>	<2%>
+You swore to that, Berowne, and to the rest.
+</LONGAVILLE>
+<BEROWNE>	<2%>
+By yea and nay, sir, then I swore in jest.
+What is the end of study? let me know.
+</BEROWNE>
+<KING>	<2%>
+Why, that to know which else we should not know.
+</KING>
+<BEROWNE>	<2%>
+Things hid and barr'd, you mean, from common sense?
+</BEROWNE>
+<KING>	<2%>
+Ay, that is study's god-like recompense.
+</KING>
+<BEROWNE>	<2%>
+Come on then; I will swear to study so,
+To know the thing I am forbid to know;
+As thus: to study where I well may dine,
+When I to feast expressly am forbid;
+Or study where to meet some mistress fine,
+When mistresses from common sense are hid;
+Or, having sworn too hard-a-keeping oath,
+Study to break it, and not break my troth.
+If study's gain be thus, and this be so,
+Study knows that which yet it doth not know.
+Swear me to this, and I will ne'er say no.
+</BEROWNE>
+<KING>	<3%>
+These be the stops that hinder study quite,
+And train our intellects to vain delight.
+</KING>
+<BEROWNE>	<3%>
+Why, all delights are vain; but that most vain
+Which, with pain purchas'd doth inherit pain:
+As, painfully to pore upon a book,
+To seek the light of truth; while truth the while
+Doth falsely blind the eyesight of his look:
+Light seeking light doth light of light beguile:
+So, ere you find where light in darkness lies,
+Your light grows dark by losing of your eyes.
+Study me how to please the eye indeed,
+By fixing it upon a fairer eye,
+Who dazzling so, that eye shall be his heed,
+And give him light that it was blinded by.
+Study is like the heaven's glorious sun,
+That will not be deep-search'd with saucy looks;
+Small have continual plodders ever won,
+Save base authority from others' books.
+These earthly godfathers of heaven's lights
+That give a name to every fixed star,
+Have no more profit of their shining nights
+Than those that walk and wot not what they are.
+Too much to know is to know nought but fame;
+And every godfather can give a name.
+</BEROWNE>
+<KING>	<4%>
+How well he's read, to reason against reading!
+</KING>
+<DUMAINE>	<4%>
+Proceeded well, to stop all good proceeding!
+</DUMAINE>
+<LONGAVILLE>	<4%>
+He weeds the corn, and still lets grow the weeding.
+</LONGAVILLE>
+<BEROWNE>	<4%>
+The spring is near, when green geese are a-breeding.
+</BEROWNE>
+<DUMAINE>	<4%>
+How follows that?
+</DUMAINE>
+<BEROWNE>	<4%>
+Fit in his place and time.
+</BEROWNE>
+<DUMAINE>	<4%>
+In reason nothing.
+</DUMAINE>
+<BEROWNE>	<4%>
+Something then, in rime.
+</BEROWNE>
+<KING>	<4%>
+Berowne is like an envious sneaping frost
+That bites the first-born infants of the spring.
+</KING>
+<BEROWNE>	<4%>
+Well, say I am: why should proud summer boast
+Before the birds have any cause to sing?
+Why should I joy in an abortive birth?
+At Christmas I no more desire a rose
+Than wish a snow in May's new-fangled mirth;
+But like of each thing that in season grows.
+So you, to study now it is too late,
+Climb o'er the house to unlock the little gate.
+</BEROWNE>
+<KING>	<4%>
+Well, sit you out: go home, Berowne: adieu!
+</KING>
+<BEROWNE>	<4%>
+No, my good lord; I have sworn to stay with you:
+And though I have for barbarism spoke more
+Than for that angel knowledge you can say,
+Yet confident I'll keep to what I swore,
+And bide the penance of each three years' day.
+Give me the paper; let me read the same;
+And to the strict'st decrees I'll write my name.
+</BEROWNE>
+<KING>	<4%>
+How well this yielding rescues thee from shame!
+</KING>
+<BEROWNE>	<5%>
+Item, That no woman shall come within a mile of my court. Hath this been proclaimed?
+</BEROWNE>
+<LONGAVILLE>	<5%>
+Four days ago.
+</LONGAVILLE>
+<BEROWNE>	<5%>
+Let's see the penalty. On pain of losing her tongue. Who devised this penalty?
+</BEROWNE>
+<LONGAVILLE>	<5%>
+Marry, that did I.
+</LONGAVILLE>
+<BEROWNE>	<5%>
+Sweet lord, and why?
+</BEROWNE>
+<LONGAVILLE>	<5%>
+To fright them hence with that dread penalty.
+</LONGAVILLE>
+<BEROWNE>	<5%>
+A dangerous law against gentility!
+Item. If any man be seen to talk with a woman within the term of three years, he shall endure such public shame as the rest of the court can possibly devise.
+This article, my liege, yourself must break;
+For well you know here comes in embassy
+The French king's daughter with yourself to speak—
+A maid of grace and complete majesty—
+About surrender up of Aquitaine
+To her decrepit, sick, and bed-rid father:
+Therefore this article is made in vain,
+Or vainly comes th' admired princess hither.
+</BEROWNE>
+<KING>	<5%>
+What say you, lords? why, this was quite forgot.
+</KING>
+<BEROWNE>	<5%>
+So study evermore is overshot:
+While it doth study to have what it would,
+It doth forget to do the thing it should;
+And when it hath the thing it hunteth most,
+'Tis won as towns with fire; so won, so lost.
+</BEROWNE>
+<KING>	<5%>
+We must of force dispense with this decree;
+She must lie here on mere necessity.
+</KING>
+<BEROWNE>	<5%>
+Necessity will make us all forsworn
+Three thousand times within this three years' space;
+For every man with his affects is born,
+Not by might master'd, but by special grace.
+If I break faith this word shall speak for me,
+I am forsworn 'on mere necessity.'
+So to the laws at large I write my name:
+<STAGE DIR>
+<Subscribes.>
+</STAGE DIR>
+And he that breaks them in the least degree
+Stands in attainder of eternal shame:
+Suggestions are to others as to me;
+But I believe, although I seem so loath,
+I am the last that will last keep his oath.
+But is there no quick recreation granted?
+</BEROWNE>
+<KING>	<6%>
+Ay, that there is. Our court, you know, is haunted
+With a refined traveller of Spain;
+A man in all the world's new fashion planted,
+That hath a mint of phrases in his brain;
+One whom the music of his own vain tongue
+Doth ravish like enchanting harmony;
+A man of complements, whom right and wrong
+Have chose as umpire of their mutiny:
+This child of fancy, that Armado hight,
+For interim to our studies shall relate
+In high-born words the worth of many a knight
+From tawny Spain lost in the world's debate.
+How you delight, my lords, I know not, I;
+But, I protest, I love to hear him lie,
+And I will use him for my minstrelsy.
+</KING>
+<BEROWNE>	<6%>
+Armado is a most illustrious wight,
+A man of fire-new words, fashion's own knight.
+</BEROWNE>
+<LONGAVILLE>	<6%>
+Costard the swain and he shall be our sport;
+And, so to study, three years is but short.
+</LONGAVILLE>
+<STAGE DIR>
+<Enter Dull, with a letter, and Costard.>
+</STAGE DIR>
+<DULL>	<7%>
+Which is the duke's own person?
+</DULL>
+<BEROWNE>	<7%>
+This, fellow. What wouldst?
+</BEROWNE>
+<DULL>	<7%>
+I myself reprehend his own person, for I am his Grace's tharborough: but I would see his own person in flesh and blood.
+</DULL>
+<BEROWNE>	<7%>
+This is he.
+</BEROWNE>
+<DULL>	<7%>
+Signior Arm—Arm—commends you. There's villany abroad: this letter will tell you more.
+</DULL>
+<COSTARD>	<7%>
+Sir, the contempts thereof are as touching me.
+</COSTARD>
+<KING>	<7%>
+A letter from the magnificent Armado.
+</KING>
+<BEROWNE>	<7%>
+How long soever the matter, I hope in God for high words.
+</BEROWNE>
+<LONGAVILLE>	<7%>
+A high hope for a low heaven: God grant us patience!
+</LONGAVILLE>
+<BEROWNE>	<7%>
+To hear, or forbear laughing?
+</BEROWNE>
+<LONGAVILLE>	<7%>
+To hear meekly, sir, and to laugh moderately; or to forbear both.
+</LONGAVILLE>
+<BEROWNE>	<7%>
+Well, sir, be it as the style shall give us cause to climb in the merriness.
+</BEROWNE>
+<COSTARD>	<7%>
+The matter is to me, sir, as concerning Jaquenetta. The manner of it is, I was taken with the manner.
+</COSTARD>
+<BEROWNE>	<7%>
+In what manner?
+</BEROWNE>
+<COSTARD>	<7%>
+In manner and form following, sir; all those three: I was seen with her in the manor-house, sitting with her upon the form, and taken following her into the park; which, put together, is, in manner and form following. Now, sir, for the manner,—it is the manner of a man to speak to a woman, for the form,—in some form.
+</COSTARD>
+<BEROWNE>	<8%>
+For the following, sir?
+</BEROWNE>
+<COSTARD>	<8%>
+As it shall follow in my correction; and God defend the right!
+</COSTARD>
+<KING>	<8%>
+Will you hear this letter with attention?
+</KING>
+<BEROWNE>	<8%>
+As we would hear an oracle.
+</BEROWNE>
+<COSTARD>	<8%>
+Such is the simplicity of man to hearken after the flesh.
+</COSTARD>
+<KING>	<8%>
+Great deputy, the welkin's vicegerent, and sole dominator of Navarre, my soul's earth's God, and body's fostering patron,
+</KING>
+<COSTARD>	<8%>
+Not a word of Costard yet.
+</COSTARD>
+<KING>	<8%>
+So it is,—
+</KING>
+<COSTARD>	<8%>
+It may be so; but if he say it is so, he is, in telling true, but so.—
+</COSTARD>
+<KING>	<8%>
+Peace!
+</KING>
+<COSTARD>	<8%>
+Be to me and every man that dares not fight.
+</COSTARD>
+<KING>	<8%>
+No words!
+</KING>
+<COSTARD>	<8%>
+Of other men's secrets, I beseech you.
+</COSTARD>
+<KING>	<8%>
+So it is, besieged with sable-coloured melancholy, I did commend the black-oppressing humour to the most wholesome physic of thy health-giving air; and, as I am a gentleman, betook myself to walk. The time when? About the sixth hour; when beasts most graze, birds best peck, and men sit down to that nourishment which is called supper: so much for the time when. Now for the ground which; which, I mean, I walked upon: it is ycleped thy park. Then for the place where; where, I mean, I did encounter that most obscene and preposterous event, that draweth from my snow-white pen the ebon-coloured ink, which here thou viewest, beholdest, surveyest, or seest. But to the place where, it standeth north-north-east and by east from the west corner of thy curious-knotted garden: there did I see that low-spirited swain, that base minnow of thy mirth,—
+</KING>
+<COSTARD>	<9%>
+Me.
+</COSTARD>
+<KING>	<9%>
+that unlettered small-knowing soul,—
+</KING>
+<COSTARD>	<9%>
+Me.
+</COSTARD>
+<KING>	<9%>
+that shallow vessel,—
+</KING>
+<COSTARD>	<9%>
+Still me.
+</COSTARD>
+<KING>	<9%>
+which, as I remember, hight Costard,—
+</KING>
+<COSTARD>	<9%>
+O me.
+</COSTARD>
+<KING>	<9%>
+sorted and consorted, contrary to thy established proclaimed edict and continent canon, with—with,—O! with but with this I passion to say wherewith,—
+</KING>
+<COSTARD>	<9%>
+With a wench.
+</COSTARD>
+<KING>	<9%>
+with a child of our grandmother Eve, a female; or, for thy more sweet understanding, a woman. Him, I,—as my everesteemed duty pricks me on,—have sent to thee, to receive the meed of punishment, by thy sweet Grace's officer, Antony Dull; a man of good repute, carriage, bearing, and estimation.
+</KING>
+<DULL>	<9%>
+Me, an't please you; I am Antony Dull.
+</DULL>
+<KING>	<9%>
+For Jaquenetta,—so is the weaker vessel called which I apprehended with the aforesaid swain,—I keep her as a vessel of thy law's fury; and shall, at the least of thy sweet notice, bring her to trial. Thine, in all compliments of devoted and heart-burning heat of duty,
+</KING>
+<DON ADRIANO DE ARMADO.>
+<BEROWNE>	<10%>
+This is not so well as I looked for, but the best that ever I heard.
+</BEROWNE>
+<KING>	<10%>
+Ay, the best for the worst. But, sirrah, what say you to this?
+</KING>
+<COSTARD>	<10%>
+Sir, I confess the wench.
+</COSTARD>
+<KING>	<10%>
+Did you hear the proclamation?
+</KING>
+<COSTARD>	<10%>
+I do confess much of the hearing it, but little of the marking of it.
+</COSTARD>
+<KING>	<10%>
+It was proclaimed a year's imprisonment to be taken with a wench.
+</KING>
+<COSTARD>	<10%>
+I was taken with none, sir: I was taken with a damosel.
+</COSTARD>
+<KING>	<10%>
+Well, it was proclaimed 'damosel.'
+</KING>
+<COSTARD>	<10%>
+This was no damosel neither, sir: she was a 'virgin.'
+</COSTARD>
+<KING>	<10%>
+It is so varied too; for it was proclaimed 'virgin.'
+</KING>
+<COSTARD>	<10%>
+If it were, I deny her virginity: I was taken with a maid.
+</COSTARD>
+<KING>	<10%>
+This maid will not serve your turn, sir.
+</KING>
+<COSTARD>	<10%>
+This maid will serve my turn, sir.
+</COSTARD>
+<KING>	<10%>
+Sir, I will pronounce your sentence: you shall fast a week with bran and water.
+</KING>
+<COSTARD>	<10%>
+I had rather pray a month with mutton and porridge.
+</COSTARD>
+<KING>	<10%>
+And Don Armado shall be your keeper.
+My Lord Berowne, see him deliver'd o'er:
+And go we, lords, to put in practice that
+Which each to other hath so strongly sworn.
+</KING>
+<STAGE DIR>
+<Exeunt King, Longaville, and Dumaine.>
+</STAGE DIR>
+<BEROWNE>	<10%>
+I'll lay my head to any good man's hat,
+These oaths and laws will prove an idle scorn.
+Sirrah, come on.
+</BEROWNE>
+<COSTARD>	<11%>
+I suffer for the truth, sir: for true it is I was taken with Jaquenetta, and Jaquenetta is a true girl; and therefore welcome the sour cup of prosperity! Affliction may one day smile again; and till then, sit thee down, sorrow!
+</COSTARD>
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</SCENE 1>
+<SCENE 2>
+<The Same.>
+<STAGE DIR>
+<Enter Armado and Moth.>
+</STAGE DIR>
+<ARMADO>	<11%>
+Boy, what sign is it when a man of great spirit grows melancholy?
+</ARMADO>
+<MOTH>	<11%>
+A great sign, sir, that he will look sad.
+</MOTH>
+<ARMADO>	<11%>
+Why, sadness is one and the self-same thing, dear imp.
+</ARMADO>
+<MOTH>	<11%>
+No, no; O Lord, sir, no.
+</MOTH>
+<ARMADO>	<11%>
+How canst thou part sadness and melancholy, my tender juvenal?
+</ARMADO>
+<MOTH>	<11%>
+By a familiar demonstration of the working, my tough senior.
+</MOTH>
+<ARMADO>	<11%>
+Why tough senior? why tough senior?
+</ARMADO>
+<MOTH>	<11%>
+Why tender juvenal? why tender juvenal?
+</MOTH>
+<ARMADO>	<11%>
+I spoke it, tender juvenal, as a congruent epitheton appertaining to thy young days, which we may nominate tender.
+</ARMADO>
+<MOTH>	<11%>
+And I, tough senior, as an appertinent title to your old time, which we may name tough.
+</MOTH>
+<ARMADO>	<11%>
+Pretty, and apt.
+</ARMADO>
+<MOTH>	<11%>
+How mean you, sir? I pretty, and my saying apt? or I apt, and my saying pretty?
+</MOTH>
+<ARMADO>	<11%>
+Thou pretty, because little.
+</ARMADO>
+<MOTH>	<11%>
+Little pretty, because little. Wherefore apt?
+</MOTH>
+<ARMADO>	<11%>
+And therefore apt, because quick.
+</ARMADO>
+<MOTH>	<12%>
+Speak you this in my praise, master?
+</MOTH>
+<ARMADO>	<12%>
+In thy condign praise.
+</ARMADO>
+<MOTH>	<12%>
+I will praise an eel with the same praise.
+</MOTH>
+<ARMADO>	<12%>
+What! that an eel is ingenious?
+</ARMADO>
+<MOTH>	<12%>
+That an eel is quick.
+</MOTH>
+<ARMADO>	<12%>
+I do say thou art quick in answers: thou heatest my blood.
+</ARMADO>
+<MOTH>	<12%>
+I am answered, sir.
+</MOTH>
+<ARMADO>	<12%>
+I love not to be crossed.
+</ARMADO>
+<MOTH>	<12%>
+<STAGE DIR>
+<Aside.>
+</STAGE DIR> He speaks the mere contrary: crosses love not him.
+</MOTH>
+<ARMADO>	<12%>
+I have promised to study three years with the duke.
+</ARMADO>
+<MOTH>	<12%>
+You may do it in an hour, sir.
+</MOTH>
+<ARMADO>	<12%>
+Impossible.
+</ARMADO>
+<MOTH>	<12%>
+How many is one thrice told?
+</MOTH>
+<ARMADO>	<12%>
+I am ill at reckoning; it fitteth the spirit of a tapster.
+</ARMADO>
+<MOTH>	<12%>
+You are a gentleman and a gamester, sir.
+</MOTH>
+<ARMADO>	<12%>
+I confess both: they are both the varnish of a complete man.
+</ARMADO>
+<MOTH>	<12%>
+Then, I am sure you know how much the gross sum of deuce-ace amounts to.
+</MOTH>
+<ARMADO>	<12%>
+It doth amount to one more than two.
+</ARMADO>
+<MOTH>	<12%>
+Which the base vulgar do call three.
+</MOTH>
+<ARMADO>	<12%>
+True.
+</ARMADO>
+<MOTH>	<12%>
+Why, sir, is this such a piece of study? Now, here's three studied, ere you'll thrice wink; and how easy it is to put 'years' to the word 'three,' and study three years in two words, the dancing horse will tell you.
+</MOTH>
+<ARMADO>	<12%>
+A most fine figure!
+</ARMADO>
+<MOTH>	<12%>
+To prove you a cipher.
+</MOTH>
+<ARMADO>	<12%>
+I will hereupon confess I am in love; and as it is base for a soldier to love, so am I in love with a base wench. If drawing my sword against the humour of affection would deliver me from the reprobate thought of it, I would take Desire prisoner, and ransom him to any French courtier for a new devised curtsy. I think scorn to sigh: methinks I should outswear Cupid. Comfort me, boy: what great men have been in love?
+</ARMADO>
+<MOTH>	<13%>
+Hercules, master.
+</MOTH>
+<ARMADO>	<13%>
+Most sweet Hercules! More authority, dear boy, name more; and, sweet my child, let them be men of good repute and carriage.
+</ARMADO>
+<MOTH>	<13%>
+Samson, master: he was a man of good carriage, great carriage, for he carried the towngates on his back like a porter; and he was in love.
+</MOTH>
+<ARMADO>	<13%>
+O well-knit Samson! strong-jointed Samson! I do excel thee in my rapier as much as thou didst me in carrying gates. I am in love too. Who was Samson's love, my dear Moth?
+</ARMADO>
+<MOTH>	<13%>
+A woman, master.
+</MOTH>
+<ARMADO>	<13%>
+Of what complexion?
+</ARMADO>
+<MOTH>	<13%>
+Of all the four, or the three, or the two, or one of the four.
+</MOTH>
+<ARMADO>	<13%>
+Tell me precisely of what complexion.
+</ARMADO>
+<MOTH>	<13%>
+Of the sea-water green, sir.
+</MOTH>
+<ARMADO>	<13%>
+Is that one of the four complexions?
+</ARMADO>
+<MOTH>	<13%>
+As I have read, sir; and the best of them too.
+</MOTH>
+<ARMADO>	<13%>
+Green indeed is the colour of lovers; but to have a love of that colour, methinks Samson had small reason for it. He surely affected her for her wit.
+</ARMADO>
+<MOTH>	<14%>
+It was so, sir, for she had a green wit.
+</MOTH>
+<ARMADO>	<14%>
+My love is most immaculate white and red.
+</ARMADO>
+<MOTH>	<14%>
+Most maculate thoughts, master, are masked under such colours.
+</MOTH>
+<ARMADO>	<14%>
+Define, define, well-educated infant.
+</ARMADO>
+<MOTH>	<14%>
+My father's wit, and my mother's tongue, assist me!
+</MOTH>
+<ARMADO>	<14%>
+Sweet invocation of a child; most pretty and pathetical!
+</ARMADO>
+<MOTH>	<14%>
+If she be made of white and red,
+Her faults will ne'er be known,
+For blushing cheeks by faults are bred,
+And fears by pale white shown:
+Then if she fear, or be to blame,
+By this you shall not know,
+For still her cheeks possess the same
+Which native she doth owe.
+A dangerous rime, master, against the reason of white and red.
+</MOTH>
+<ARMADO>	<14%>
+Is there not a ballad, boy, of the King and the Beggar?
+</ARMADO>
+<MOTH>	<14%>
+The world was very guilty of such a ballad some three ages since; but I think now 'tis not to be found; or, if it were, it would neither serve for the writing nor the tune.
+</MOTH>
+<ARMADO>	<14%>
+I will have that subject newly writ o'er, that I may example my digression by some mighty precedent. Boy, I do love that country girl that I took in the park with the rational hind Costard: she deserves well.
+</ARMADO>
+<MOTH>	<14%>
+<STAGE DIR>
+<Aside.>
+</STAGE DIR> To be whipped; and yet a better love than my master.
+</MOTH>
+<ARMADO>	<15%>
+Sing, boy: my spirit grows heavy in love.
+</ARMADO>
+<MOTH>	<15%>
+And that's great marvel, loving a light wench.
+</MOTH>
+<ARMADO>	<15%>
+I say, sing.
+</ARMADO>
+<MOTH>	<15%>
+Forbear till this company be past.
+</MOTH>
+<STAGE DIR>
+<Enter Dull, Costard, and Jaquenetta.>
+</STAGE DIR>
+<DULL>	<15%>
+Sir, the duke's pleasure is, that you keep Costard safe: and you must let him take no delight nor no penance, but a' must fast three days a week. For this damsel, I must keep her at the park; she is allowed for the day-woman.
+Fare you well.
+</DULL>
+<ARMADO>	<15%>
+I do betray myself with blushing. Maid!
+</ARMADO>
+<JAQUENETTA>	<15%>
+Man?
+</JAQUENETTA>
+<ARMADO>	<15%>
+I will visit thee at the lodge.
+</ARMADO>
+<JAQUENETTA>	<15%>
+That's hereby.
+</JAQUENETTA>
+<ARMADO>	<15%>
+I know where it is situate.
+</ARMADO>
+<JAQUENETTA>	<15%>
+Lord, how wise you are!
+</JAQUENETTA>
+<ARMADO>	<15%>
+I will tell thee wonders.
+</ARMADO>
+<JAQUENETTA>	<15%>
+With that face?
+</JAQUENETTA>
+<ARMADO>	<15%>
+I love thee.
+</ARMADO>
+<JAQUENETTA>	<15%>
+So I heard you say.
+</JAQUENETTA>
+<ARMADO>	<15%>
+And so farewell.
+</ARMADO>
+<JAQUENETTA>	<15%>
+Fair weather after you!
+</JAQUENETTA>
+<DULL>	<15%>
+Come, Jaquenetta, away!
+</DULL>
+<STAGE DIR>
+<Exeunt Dull and Jaquenetta.>
+</STAGE DIR>
+<ARMADO>	<15%>
+Villain, thou shalt fast for thy offences ere thou be pardoned.
+</ARMADO>
+<COSTARD>	<15%>
+Well, sir, I hope, when I do it, I shall do it on a full stomach.
+</COSTARD>
+<ARMADO>	<15%>
+Thou shalt be heavily punished.
+</ARMADO>
+<COSTARD>	<15%>
+I am more bound to you than your fellows, for they are but lightly rewarded.
+</COSTARD>
+<ARMADO>	<15%>
+Take away this villain: shut him up.
+</ARMADO>
+<MOTH>	<16%>
+Come, you transgressing slave: away!
+</MOTH>
+<COSTARD>	<16%>
+Let me not be pent up, sir: I will fast, being loose.
+</COSTARD>
+<MOTH>	<16%>
+No, sir; that were fast and loose: thou shalt to prison.
+</MOTH>
+<COSTARD>	<16%>
+Well, if ever I do see the merry days of desolation that I have seen, some shall see—
+</COSTARD>
+<MOTH>	<16%>
+What shall some see?
+</MOTH>
+<COSTARD>	<16%>
+Nay, nothing, Master Moth, but what they look upon. It is not for prisoners to be too silent in their words; and therefore I will say nothing: I thank God I have as little patience as another man, and therefore I can be quiet.
+</COSTARD>
+<STAGE DIR>
+<Exeunt Moth and Costard.>
+</STAGE DIR>
+<ARMADO>	<16%>
+I do affect the very ground, which is base, where her shoe, which is baser, guided by her foot, which is basest, doth tread. I shall be forsworn,—which is a great argument of falsehood,—if I love. And how can that be true love which is falsely attempted? Love is a familiar; Love is a devil: there is no evil angel but Love. Yet was Samson so tempted, and he had an excellent strength; yet was Solomon so seduced, and he had a very good wit. Cupid's butt-shaft is too hard for Hercules' club, and therefore too much odds for a Spaniard's rapier. The first and second clause will not serve my turn; the passado he respects not, the duello he regards not: his disgrace is to be called boy, but his glory is, to subdue men. Adieu, valour! rust, rapier! be still, drum! for your manager is in love; yea, he loveth. Assist me some extemporal god of rime, for I am sure I shall turn sonneter. Devise, wit; write, pen; for I am for whole volumes in folio.
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+</ARMADO>
+</SCENE 2>
+</ACT 1>
+<ACT 2>
+<SCENE 1>
+<The King of Navarre's Park. A Pavilion and Tents at a distance.>
+<STAGE DIR>
+<Enter the Princess of France, Rosaline, Maria, Katharine, Boyet, Lords, and other Attendants.>
+</STAGE DIR>
+<BOYET>	<17%>
+Now, madam, summon up your dearest spirits:
+Consider whom the king your father sends,
+To whom he sends, and what's his embassy:
+Yourself, held precious in the world's esteem,
+To parley with the sole inheritor
+Of all perfections that a man may owe,
+Matchless Navarre; the plea of no less weight
+Than Aquitaine, a dowry for a queen.
+Be now as prodigal of all dear grace
+As Nature was in making graces dear
+When she did starve the general world beside,
+And prodigally gave them all to you.
+</BOYET>
+<PRINCESS>	<17%>
+Good Lord Boyet, my beauty, though but mean,
+Needs not the painted flourish of your praise:
+Beauty is bought by judgment of the eye,
+Not utter'd by base sale of chapmen's tongues.
+I am less proud to hear you tell my worth
+Than you much willing to be counted wise
+In spending your wit in the praise of mine.
+But now to task the tasker: good Boyet,
+You are not ignorant, all-telling fame
+Doth noise abroad, Navarre hath made a vow,
+Till painful study shall out-wear three years,
+No woman may approach his silent court:
+Therefore to us seemth it a needful course,
+Before we enter his forbidden gates,
+To know his pleasure; and in that behalf,
+Bold of your worthiness, we single you
+As our best-moving fair solicitor.
+Tell him, the daughter of the King of France,
+On serious business, craving quick dispatch,
+Importunes personal conference with his Grace.
+Haste, signify so much; while we attend,
+Like humble-visag'd suitors, his high will.
+</PRINCESS>
+<BOYET>	<18%>
+Proud of employment, willingly I go.
+</BOYET>
+<PRINCESS>	<18%>
+All pride is willing pride, and yours is so.
+<STAGE DIR>
+<Exit Boyet.>
+</STAGE DIR>
+Who are the votaries, my loving lords,
+That are vow-fellows with this virtuous duke?
+</PRINCESS>
+<LORD 1>	<18%>
+Lord Longaville is one.
+</LORD 1>
+<PRINCESS>	<18%>
+Know you the man?
+</PRINCESS>
+<MARIA>	<18%>
+I know him, madam: at a marriage feast,
+Between Lord Perigort and the beauteous heir
+Of Jacques Falconbridge, solemnized
+In Normandy, saw I this Longaville.
+A man of sovereign parts he is esteem'd;
+Well fitted in the arts, glorious in arms:
+Nothing becomes him ill that he would well.
+The only soil of his fair virtue's gloss,—
+If virtue's gloss will stain with any soil,—
+Is a sharp wit match'd with too blunt a will;
+Whose edge hath power to cut, whose will still wills
+It should none spare that come within his power.
+</MARIA>
+<PRINCESS>	<19%>
+Some merry mocking lord, belike; is't so?
+</PRINCESS>
+<MARIA>	<19%>
+They say so most that most his humours know.
+</MARIA>
+<PRINCESS>	<19%>
+Such short-liv'd wits do wither as they grow.
+Who are the rest?
+</PRINCESS>
+<KATHARINE>	<19%>
+The young Dumaine, a well-accomplish'd youth,
+Of all that virtue love for virtue lov'd:
+Most power to do most harm, least knowing ill,
+For he hath wit to make an ill shape good,
+And shape to win grace though he had no wit.
+I saw him at the Duke Alençon's once;
+And much too little of that good I saw
+Is my report to his great worthiness.
+</KATHARINE>
+<ROSALINE>	<19%>
+Another of these students at that time
+Was there with him, if I have heard a truth:
+Berowne they call him; but a merrier man,
+Within the limit of becoming mirth,
+I never spent an hour's talk withal.
+His eye begets occasion for his wit;
+For every object that the one doth catch
+The other turns to a mirth-moving jest,
+Which his fair tongue, conceit's expositor,
+Delivers in such apt and gracious words,
+That aged ears play truant at his tales,
+And younger hearings are quite ravished;
+So sweet and voluble is his discourse.
+</ROSALINE>
+<PRINCESS>	<19%>
+God bless my ladies! are they all in love,
+That every one her own hath garnished
+With such bedecking ornaments of praise?
+</PRINCESS>
+<LORD 1>	<20%>
+Here comes Boyet.
+</LORD 1>
+<STAGE DIR>
+<Re-enter Boyet.>
+</STAGE DIR>
+<PRINCESS>	<20%>
+Now, what admittance, lord?
+</PRINCESS>
+<BOYET>	<20%>
+Navarre had notice of your fair approach;
+And he and his competitors in oath
+Were all address'd to meet you, gentle lady,
+Before I came. Marry, thus much I have learnt;
+He rather means to lodge you in the field,
+Like one that comes here to besiege his court,
+Than seek a dispensation for his oath,
+To let you enter his unpeeled house.
+Here comes Navarre.
+<STAGE DIR>
+<The Ladies mask.>
+</STAGE DIR>
+</BOYET>
+<STAGE DIR>
+<Enter King, Longaville, Dumaine, Berowne, and Attendants.>
+</STAGE DIR>
+<KING>	<20%>
+Fair princess, welcome to the court of Navarre.
+</KING>
+<PRINCESS>	<20%>
+'Fair,' I give you back again; and 'welcome' I have not yet: the roof of this court is too high to be yours, and welcome to the wide fields too base to be mine.
+</PRINCESS>
+<KING>	<20%>
+You shall be welcome, madam, to my court.
+</KING>
+<PRINCESS>	<20%>
+I will be welcome, then: conduct me thither.
+</PRINCESS>
+<KING>	<20%>
+Hear me, dear lady; I have sworn an oath.
+</KING>
+<PRINCESS>	<20%>
+Our Lady help my lord! he'll be forsworn.
+</PRINCESS>
+<KING>	<20%>
+Not for the world, fair madam, by my will.
+</KING>
+<PRINCESS>	<20%>
+Why, will shall break it; will, and nothing else.
+</PRINCESS>
+<KING>	<20%>
+Your ladyship is ignorant what it is.
+</KING>
+<PRINCESS>	<20%>
+Were my lord so, his ignorance were wise,
+Where now his knowledge must prove ignorance.
+I hear your grace hath sworn out house-keeping:
+'Tis deadly sin to keep that oath, my lord,
+And sin to break it.
+But pardon me, I am too sudden-bold:
+To teach a teacher ill beseemeth me.
+Vouchsafe to read the purpose of my coming,
+And suddenly resolve me in my suit.
+</PRINCESS>
+<STAGE DIR>
+<Gives a paper.>
+</STAGE DIR>
+<KING>	<21%>
+Madam, I will, if suddenly I may.
+</KING>
+<PRINCESS>	<21%>
+You will the sooner that I were away,
+For you'll prove perjur'd if you make me stay.
+</PRINCESS>
+<BEROWNE>	<21%>
+Did not I dance with you in Brabant once?
+</BEROWNE>
+<ROSALINE>	<21%>
+Did not I dance with you in Brabant once?
+</ROSALINE>
+<BEROWNE>	<21%>
+I know you did.
+</BEROWNE>
+<ROSALINE>	<21%>
+How needless was it then
+To ask the question!
+</ROSALINE>
+<BEROWNE>	<21%>
+You must not be so quick.
+</BEROWNE>
+<ROSALINE>	<21%>
+'Tis 'long of you that spur me with such questions.
+</ROSALINE>
+<BEROWNE>	<21%>
+Your wit's too hot, it speeds too fast, 'twill tire.
+</BEROWNE>
+<ROSALINE>	<21%>
+Not till it leave the rider in the mire.
+</ROSALINE>
+<BEROWNE>	<21%>
+What time o' day?
+</BEROWNE>
+<ROSALINE>	<21%>
+The hour that fools should ask.
+</ROSALINE>
+<BEROWNE>	<21%>
+Now fair befall your mask!
+</BEROWNE>
+<ROSALINE>	<21%>
+Fair fall the face it covers!
+</ROSALINE>
+<BEROWNE>	<21%>
+And send you many lovers!
+</BEROWNE>
+<ROSALINE>	<21%>
+Amen, so you be none.
+</ROSALINE>
+<BEROWNE>	<21%>
+Nay, then I will be gone.
+</BEROWNE>
+<KING>	<21%>
+Madam, your father here doth intimate
+The payment of a hundred thousand crowns;
+Being but the one half of an entire sum
+Disbursed by my father in his wars.
+But say that he, or we,—as neither have,—
+Receiv'd that sum, yet there remains unpaid
+A hundred thousand more; in surety of the which,
+One part of Aquitaine is bound to us,
+Although not valu'd to the money's worth.
+If then the king your father will restore
+But that one half which is unsatisfied,
+We will give up our right in Aquitaine,
+And hold fair friendship with his majesty.
+But that it seems, he little purposeth,
+For here he doth demand to have repaid
+A hundred thousand crowns; and not demands,
+On payment of a hundred thousand crowns,
+To have his title live in Aquitaine;
+Which we much rather had depart withal,
+And have the money by our father lent,
+Than Aquitaine, so gelded as it is.
+Dear princess, were not his requests so far
+From reason's yielding, your fair self should make
+A yielding 'gainst some reason in my breast,
+And go well satisfied to France again.
+</KING>
+<PRINCESS>	<22%>
+You do the king my father too much wrong
+And wrong the reputation of your name,
+In so unseeming to confess receipt
+Of that which hath so faithfully been paid.
+</PRINCESS>
+<KING>	<22%>
+I do protest I never heard of it;
+And if you prove it, I'll repay it back
+Or yield up Aquitaine.
+</KING>
+<PRINCESS>	<22%>
+We arrest your word.
+Boyet, you can produce acquittances
+For such a sum from special officers
+Of Charles his father.
+</PRINCESS>
+<KING>	<23%>
+Satisfy me so.
+</KING>
+<BOYET>	<23%>
+So please your Grace, the packet is not come
+Where that and other specialties are bound:
+To-morrow you shall have a sight of them.
+</BOYET>
+<KING>	<23%>
+It shall suffice me: at which interview
+All liberal reason I will yield unto.
+Meantime, receive such welcome at my hand
+As honour, without breach of honour, may
+Make tender of to thy true worthiness.
+You may not come, fair princess, in my gates;
+But here without you shall be so receiv'd,
+As you shall deem yourself lodg'd in my heart,
+Though so denied fair harbour in my house.
+Your own good thoughts excuse me, and farewell:
+To-morrow shall we visit you again.
+</KING>
+<PRINCESS>	<23%>
+Sweet health and fair desires consort your Grace!
+</PRINCESS>
+<KING>	<23%>
+Thy own wish wish I thee in every place!
+</KING>
+<STAGE DIR>
+<Exeunt King and his Train.>
+</STAGE DIR>
+<BEROWNE>	<23%>
+Lady, I will commend you to mine own heart.
+</BEROWNE>
+<ROSALINE>	<23%>
+Pray you, do my commendations; I would be glad to see it.
+</ROSALINE>
+<BEROWNE>	<23%>
+I would you heard it groan.
+</BEROWNE>
+<ROSALINE>	<23%>
+Is the fool sick?
+</ROSALINE>
+<BEROWNE>	<23%>
+Sick at the heart.
+</BEROWNE>
+<ROSALINE>	<23%>
+Alack! let it blood.
+</ROSALINE>
+<BEROWNE>	<23%>
+Would that do it good?
+</BEROWNE>
+<ROSALINE>	<23%>
+My physic says, 'ay.'
+</ROSALINE>
+<BEROWNE>	<23%>
+Will you prick't with your eye?
+</BEROWNE>
+<ROSALINE>	<23%>
+No point, with my knife.
+</ROSALINE>
+<BEROWNE>	<23%>
+Now, God save thy life!
+</BEROWNE>
+<ROSALINE>	<23%>
+And yours from long living!
+</ROSALINE>
+<BEROWNE>	<23%>
+I cannot stay thanksgiving.
+</BEROWNE>
+<STAGE DIR>
+<Retiring.>
+</STAGE DIR>
+<DUMAINE>	<24%>
+Sir, I pray you, a word: what lady is that same?
+</DUMAINE>
+<BOYET>	<24%>
+The heir of Alençon, Katharine her name.
+</BOYET>
+<DUMAINE>	<24%>
+A gallant lady. Monsieur, fare you well.
+</DUMAINE>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<LONGAVILLE>	<24%>
+I beseech you a word: what is she in the white?
+</LONGAVILLE>
+<BOYET>	<24%>
+A woman sometimes, an you saw her in the light.
+</BOYET>
+<LONGAVILLE>	<24%>
+Perchance light in the light. I desire her name.
+</LONGAVILLE>
+<BOYET>	<24%>
+She hath but one for herself; to desire that, were a shame.
+</BOYET>
+<LONGAVILLE>	<24%>
+Pray you, sir, whose daughter?
+</LONGAVILLE>
+<BOYET>	<24%>
+Her mother's, I have heard.
+</BOYET>
+<LONGAVILLE>	<24%>
+God's blessing on your beard!
+</LONGAVILLE>
+<BOYET>	<24%>
+Good sir, be not offended.
+She is an heir of Falconbridge.
+</BOYET>
+<LONGAVILLE>	<24%>
+Nay, my choler is ended.
+She is a most sweet lady.
+</LONGAVILLE>
+<BOYET>	<24%>
+Not unlike, sir; that may be.
+</BOYET>
+<STAGE DIR>
+<Exit Longaville.>
+</STAGE DIR>
+<BEROWNE>	<24%>
+What's her name, in the cap?
+</BEROWNE>
+<BOYET>	<24%>
+Rosaline, by good hap.
+</BOYET>
+<BEROWNE>	<24%>
+Is she wedded or no?
+</BEROWNE>
+<BOYET>	<24%>
+To her will, sir, or so.
+</BOYET>
+<BEROWNE>	<24%>
+You are welcome, sir. Adieu.
+</BEROWNE>
+<BOYET>	<24%>
+Farewell to me, sir, and welcome to you.
+</BOYET>
+<STAGE DIR>
+<Exit Berowne.—Ladies unmask.>
+</STAGE DIR>
+<MARIA>	<24%>
+That last is Berowne, the merry mad-cap lord:
+Not a word with him but a jest.
+</MARIA>
+<BOYET>	<24%>
+And every jest but a word.
+</BOYET>
+<PRINCESS>	<24%>
+It was well done of you to take him at his word.
+</PRINCESS>
+<BOYET>	<25%>
+I was as willing to grapple, as he was to board.
+</BOYET>
+<MARIA>	<25%>
+Two hot sheeps, marry!
+</MARIA>
+<BOYET>	<25%>
+And wherefore not ships?
+No sheep, sweet lamb, unless we feed on your lips.
+</BOYET>
+<MARIA>	<25%>
+You sheep, and I pasture: shall that finish the jest?
+</MARIA>
+<BOYET>	<25%>
+So you grant pasture for me.
+</BOYET>
+<STAGE DIR>
+<Offering to kiss her.>
+</STAGE DIR>
+<MARIA>	<25%>
+Not so, gentle beast.
+My lips are no common, though several they be.
+</MARIA>
+<BOYET>	<25%>
+Belonging to whom?
+</BOYET>
+<MARIA>	<25%>
+To my fortunes and me.
+</MARIA>
+<PRINCESS>	<25%>
+Good wits will be jangling; but, gentles, agree.
+This civil war of wits were much better us'd
+On Navarre and his book-men, for here 'tis abus'd.
+</PRINCESS>
+<BOYET>	<25%>
+If my observation,—which very seldom lies,—
+By the heart's still rhetoric disclosed with eyes,
+Deceive me not now, Navarre is infected.
+</BOYET>
+<PRINCESS>	<25%>
+With what?
+</PRINCESS>
+<BOYET>	<25%>
+With that which we lovers entitle affected.
+</BOYET>
+<PRINCESS>	<25%>
+Your reason.
+</PRINCESS>
+<BOYET>	<25%>
+Why, all his behaviours did make their retire
+To the court of his eye, peeping thorough desire;
+His heart, like an agate, with your print impress'd,
+Proud with his form, in his eye pride express'd:
+His tongue, all impatient to speak and not see,
+Did stumble with haste in his eyesight to be;
+All senses to that sense did make their repair,
+To feel only looking on fairest of fair,
+Methought all his senses were lock'd in his eye,
+As jewels in crystal for some prince to buy;
+Who, tend'ring their own worth from where they were glass'd,
+Did point you to buy them, along as you pass'd.
+His face's own margent did quote such amazes,
+That all eyes saw his eyes enchanted with gazes.
+I'll give you Aquitaine, and all that is his,
+An' you give him for my sake but one loving kiss.
+</BOYET>
+<PRINCESS>	<26%>
+Come to our pavilion: Boyet is dispos'd.
+</PRINCESS>
+<BOYET>	<26%>
+But to speak that in words which his eye hath disclos'd.
+I only have made a mouth of his eye,
+By adding a tongue which I know will not he.
+</BOYET>
+<ROSALINE>	<26%>
+Thou art an old love-monger, and speak'st skilfully.
+</ROSALINE>
+<MARIA>	<26%>
+He is Cupid's grandfather and learns news of him.
+</MARIA>
+<ROSALINE>	<26%>
+Then was Venus like her mother, for her father is but grim.
+</ROSALINE>
+<BOYET>	<26%>
+Do you hear, my mad wenches?
+</BOYET>
+<MARIA>	<26%>
+No.
+</MARIA>
+<BOYET>	<26%>
+What, then, do you see?
+</BOYET>
+<ROSALINE>	<26%>
+Ay, our way to be gone.
+</ROSALINE>
+<BOYET>	<26%>
+You are too hard for me.
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</BOYET>
+</SCENE 1>
+</ACT 2>
+<ACT 3>
+<SCENE 1>
+<The King of Navarre's Park.>
+<STAGE DIR>
+<Enter Armado and Moth.>
+</STAGE DIR>
+<ARMADO>	<26%>
+Warble, child; make passionate my sense of hearing.
+</ARMADO>
+<MOTH>	<26%>
+<STAGE DIR>
+<Singing.>
+</STAGE DIR> Concolinel,—
+</MOTH>
+<ARMADO>	<26%>
+Sweet air! Go, tenderness of years; take this key, give enlargement to the swain, bring him festinately hither; I must employ him in a letter to my love.
+</ARMADO>
+<MOTH>	<27%>
+Master, will you win your love with a French brawl?
+</MOTH>
+<ARMADO>	<27%>
+How meanest thou? brawling in French?
+</ARMADO>
+<MOTH>	<27%>
+No, my complete master; but to jig off a tune at the tongue's end, canary to it with your feet, humour it with turning up your eyelids, sigh a note and sing a note, sometime through the throat, as if you swallowed love by singing love, sometime through the nose, as if you snuffed up love by smelling love; with your hat penthouse-like o'er the shop of your eyes; with your arms crossed on your thin belly-doublet like a rabbit on a spit; or your hands in your pocket like a man after the old painting; and keep not too long in one tune, but a snip and away. These are complements, these are humours, these betray nice wenches, that would be betrayed without these; and make them men of note,—do you note me?—that most are affected to these.
+</MOTH>
+<ARMADO>	<27%>
+How hast thou purchased this experience?
+</ARMADO>
+<MOTH>	<27%>
+By my penny of observation.
+</MOTH>
+<ARMADO>	<27%>
+But O—but O,—
+</ARMADO>
+<MOTH>	<27%>
+'The hobby-horse is forgot.'
+</MOTH>
+<ARMADO>	<27%>
+Callest thou my love 'hobby-horse?'
+</ARMADO>
+<MOTH>	<27%>
+No, master; the hobby-horse is but a colt, and your love perhaps, a hackney. But have you forgot your love?
+</MOTH>
+<ARMADO>	<27%>
+Almost I had.
+</ARMADO>
+<MOTH>	<27%>
+Negligent student! learn her by heart.
+</MOTH>
+<ARMADO>	<28%>
+By heart, and in heart, boy.
+</ARMADO>
+<MOTH>	<28%>
+And out of heart, master: all those three I will prove.
+</MOTH>
+<ARMADO>	<28%>
+What wilt thou prove?
+</ARMADO>
+<MOTH>	<28%>
+A man, if I live; and this, by, in, and without, upon the instant: by heart you love her, because your heart cannot come by her; in heart you love her, because your heart is in love with her; and out of heart you love her, being out of heart that you cannot enjoy her.
+</MOTH>
+<ARMADO>	<28%>
+I am all these three.
+</ARMADO>
+<MOTH>	<28%>
+And three times as much more, and yet nothing at all.
+</MOTH>
+<ARMADO>	<28%>
+Fetch hither the swain: he must carry me a letter.
+</ARMADO>
+<MOTH>	<28%>
+A message well sympathized: a horse to be ambassador for an ass.
+</MOTH>
+<ARMADO>	<28%>
+Ha, ha! what sayest thou?
+</ARMADO>
+<MOTH>	<28%>
+Marry, sir, you must send the ass upon the horse, for he is very slow-gaited. But I go.
+</MOTH>
+<ARMADO>	<28%>
+The way is but short: away!
+</ARMADO>
+<MOTH>	<28%>
+As swift as lead, sir.
+</MOTH>
+<ARMADO>	<28%>
+Thy meaning, pretty ingenious?
+Is not lead a metal heavy, dull, and slow?
+</ARMADO>
+<MOTH>	<28%>
+Minime, honest master; or rather, master, no.
+</MOTH>
+<ARMADO>	<28%>
+I say, lead is slow.
+</ARMADO>
+<MOTH>	<28%>
+You are too swift, sir, to say so:
+Is that lead slow which is fir'd from a gun?
+</MOTH>
+<ARMADO>	<28%>
+Sweet smoke of rhetoric!
+He reputes me a cannon; and the bullet, that's he:
+I shoot thee at the swain.
+</ARMADO>
+<MOTH>	<28%>
+Thump then, and I flee.
+</MOTH>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<ARMADO>	<29%>
+A most acute juvenal; volable and free of grace!
+By thy favour, sweet welkin, I must sigh in thy face:
+Most rude melancholy, valour gives thee place.
+My herald is return'd.
+</ARMADO>
+<STAGE DIR>
+<Re-enter Moth with Costard.>
+</STAGE DIR>
+<MOTH>	<29%>
+A wonder, master! here's a costard broken in a shin.
+</MOTH>
+<ARMADO>	<29%>
+Some enigma, some riddle: come, thy l'envoy; begin.
+</ARMADO>
+<COSTARD>	<29%>
+No egma, no riddle, no l'envoy; no salve in the mail, sir. O! sir, plantain, a plain plantain: no l'envoy, no l'envoy: no salve, sir, but a plantain.
+</COSTARD>
+<ARMADO>	<29%>
+By virtue, thou enforcest laughter; thy silly thought, my spleen; the heaving of my lungs provokes me to ridiculous smiling: O! pardon me, my stars. Doth the inconsiderate take salve for l'envoy, and the word l'envoy for a salve?
+</ARMADO>
+<MOTH>	<29%>
+Do the wise think them other? is not l'envoy a salve?
+</MOTH>
+<ARMADO>	<29%>
+No, page: it is an epilogue or discourse, to make plain
+Some obscure precedence that hath tofore been sain.
+I will example it:
+The fox, the ape, and the humble-bee
+Were still at odds, being but three.
+There's the moral. Now the l'envoy.
+</ARMADO>
+<MOTH>	<29%>
+I will add the l'envoy. Say the moral again.
+</MOTH>
+<ARMADO>	<29%>
+The fox, the ape, and the humble-bee,
+Were still at odds, being but three.
+</ARMADO>
+<MOTH>	<29%>
+Until the goose came out of door,
+And stay'd the odds by adding four.
+Now will I begin your moral, and do you follow with my l'envoy.
+The fox, the ape, and the humble-bee,
+Were still at odds, being but three.
+</MOTH>
+<ARMADO>	<30%>
+Until the goose came out of door,
+Staying the odds by adding four.
+</ARMADO>
+<MOTH>	<30%>
+A good l'envoy, ending in the goose.
+Would you desire more?
+</MOTH>
+<COSTARD>	<30%>
+The boy hath sold him a bargain, a goose, that's flat.
+Sir, your pennyworth is good an your goose be fat.
+To sell a bargain well is as cunning as fast and loose:
+Let me see; a fat l'envoy; ay, that's a fat goose.
+</COSTARD>
+<ARMADO>	<30%>
+Come hither, come hither. How did this argument begin?
+</ARMADO>
+<MOTH>	<30%>
+By saying that a costard was broken in a shin.
+Then call'd you for the l'envoy.
+</MOTH>
+<COSTARD>	<30%>
+True, and I for a plantain: thus came your argument in;
+Then the boy's fat l'envoy, the goose that you bought;
+And he ended the market.
+</COSTARD>
+<ARMADO>	<30%>
+But tell me; how was there a costard broken in a shin?
+</ARMADO>
+<MOTH>	<30%>
+I will tell you sensibly.
+</MOTH>
+<COSTARD>	<30%>
+Thou hast no feeling of it, Moth: I will speak that l'envoy:
+I, Costard, running out, that was safely within,
+Fell over the threshold and broke my shin.
+</COSTARD>
+<ARMADO>	<30%>
+We will talk no more of this matter.
+</ARMADO>
+<COSTARD>	<30%>
+Till there be more matter in the shin.
+</COSTARD>
+<ARMADO>	<30%>
+Sirrah Costard, I will enfranchise thee.
+</ARMADO>
+<COSTARD>	<30%>
+O! marry me to one Frances: I smell some l'envoy, some goose, in this.
+</COSTARD>
+<ARMADO>	<31%>
+By my sweet soul, I mean setting thee at liberty, enfreedoming thy person: thou wert immured, restrained, captivated, bound.
+</ARMADO>
+<COSTARD>	<31%>
+True, true, and now you will be my purgation and let me loose.
+</COSTARD>
+<ARMADO>	<31%>
+I give thee thy liberty, set thee from durance; and in lieu thereof, impose upon thee nothing but this:—<STAGE DIR>
+<Giving a letter.>
+</STAGE DIR> Bear this significant to the country maid Jaquenetta. <span class="stage>[Giving money.] There is remuneration; for the best ward of mine honour is rewarding my dependents. Moth, follow.
+</ARMADO>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<MOTH>	<31%>
+Like the sequel, I. Signior Costard, adieu.
+</MOTH>
+<COSTARD>	<31%>
+My sweet ounce of man's flesh! my incony Jew!
+<STAGE DIR>
+<Exit Moth.>
+</STAGE DIR>
+Now will I look to his remuneration. Remuneration! O! that's the Latin word for three farthings: three farthings, remuneration. 'What's the price of this inkle?' 'One penny.' 'No, I'll give you a remuneration:' why, it carries it Remuneration! why, it is a fairer name than French crown. I will never buy and sell out of this word.
+</COSTARD>
+<STAGE DIR>
+<Enter Berowne.>
+</STAGE DIR>
+<BEROWNE>	<31%>
+O! my good knave Costard, exceedingly well met.
+</BEROWNE>
+<COSTARD>	<31%>
+Pray you, sir, how much carnation riband may a man buy for a remuneration?
+</COSTARD>
+<BEROWNE>	<31%>
+What is a remuneration?
+</BEROWNE>
+<COSTARD>	<32%>
+Marry, sir, halfpenny farthing.
+</COSTARD>
+<BEROWNE>	<32%>
+Why then, three-farthing-worth of silk.
+</BEROWNE>
+<COSTARD>	<32%>
+I thank your worship. God be wi' you!
+</COSTARD>
+<BEROWNE>	<32%>
+Stay, slave; I must employ thee:
+As thou wilt win my favour, good my knave,
+Do one thing for me that I shall entreat.
+</BEROWNE>
+<COSTARD>	<32%>
+When would you have it done, sir?
+</COSTARD>
+<BEROWNE>	<32%>
+O, this afternoon.
+</BEROWNE>
+<COSTARD>	<32%>
+Well, I will do it, sir! fare you well.
+</COSTARD>
+<BEROWNE>	<32%>
+O, thou knowest not what it is.
+</BEROWNE>
+<COSTARD>	<32%>
+I shall know, sir, when I have done it.
+</COSTARD>
+<BEROWNE>	<32%>
+Why, villain, thou must know first.
+</BEROWNE>
+<COSTARD>	<32%>
+I will come to your worship to-morrow morning.
+</COSTARD>
+<BEROWNE>	<32%>
+It must be done this afternoon. Hark, slave, it is but this:
+The princess comes to hunt here in the park,
+And in her train there is a gentle lady:
+When tongues speak sweetly, then they name her name,
+And Rosaline they call her: ask for her
+And to her white hand see thou do commend
+This seal'd-up counsel. <STAGE DIR>
+<Gives him a shilling.>
+</STAGE DIR> There's thy guerdon: go.
+</BEROWNE>
+<COSTARD>	<32%>
+Gardon, O sweet gardon! better than remuneration; a 'leven-pence farthing better.
+Most sweet gardon! I will do it, sir, in print
+Gardon! remuneration!
+</COSTARD>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<BEROWNE>	<32%>
+And I,—
+Forsooth, in love! I, that have been love's whip;
+A very beadle to a humorous sigh;
+A critic, nay, a night-watch constable,
+A domineering pedant o'er the boy,
+Than whom no mortal so magnificent!
+This wimpled, whining, purblind, wayward boy,
+This senior-junior, giant-dwarf, Dan Cupid;
+Regent of love-rimes, lord of folded arms,
+The anointed sovereign of sighs and groans,
+Liege of all loiterers and malecontents,
+Dread prince of plackets, king of codpieces,
+Sole imperator and great general
+Of trotting 'paritors: O my little heart!
+And I to be a corporal of his field,
+And wear his colours like a tumbler's hoop!
+What I! I love! I sue! I seek a wife!
+A woman that is like a German clock,
+Still a-repairing, ever out of frame,
+And never going aright, being a watch,
+But being watch'd that it may still go right!
+Nay, to be perjur'd, which is worst of all;
+And, among three, to love the worst of all;
+A wightly wanton with a velvet brow,
+With two pitch balls stuck in her face for eyes;
+Ay, and, by heaven, one that will do the deed
+Though Argus were her eunuch and her guard:
+And I to sigh for her! to watch for her!
+To pray for her! Go to; it is a plague
+That Cupid will impose for my neglect
+Of his almighty dreadful little might.
+Well, I will love, write, sigh, pray, sue, and groan:
+Some men must love my lady, and some Joan.
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+</BEROWNE>
+</SCENE 1>
+</ACT 3>
+<ACT 4>
+<SCENE 1>
+<The King of Navarre's Park.>
+<STAGE DIR>
+<Enter the Princess, Rosaline, Maria, Katharine, Boyet, Lords, Attendants, and a Forester.>
+</STAGE DIR>
+<PRINCESS>	<34%>
+Was that the king, that spurr'd his horse so hard
+Against the steep uprising of the hill?
+</PRINCESS>
+<BOYET>	<34%>
+I know not; but I think it was not he.
+</BOYET>
+<PRINCESS>	<34%>
+Whoe'er a' was, a' show'd a mounting mind.
+Well, lords, to-day we shall have our dispatch;
+On Saturday we will return to France.
+Then, forester, my friend, where is the bush
+That we must stand and play the murderer in?
+</PRINCESS>
+<FORESTER>	<34%>
+Hereby, upon the edge of yonder coppice;
+A stand where you may make the fairest shoot.
+</FORESTER>
+<PRINCESS>	<34%>
+I thank my beauty, I am fair that shoot,
+And thereupon thou speak'st the fairest shoot.
+</PRINCESS>
+<FORESTER>	<34%>
+Pardon me, madam, for I meant not so.
+</FORESTER>
+<PRINCESS>	<34%>
+What, what? first praise me, and again say no?
+O short-liv'd pride! Not fair? alack for woe!
+</PRINCESS>
+<FORESTER>	<34%>
+Yes, madam, fair.
+</FORESTER>
+<PRINCESS>	<34%>
+Nay, never paint me now:
+Where fair is not, praise cannot mend the brow.
+Here, good my glass:—<STAGE DIR>
+<Gives money.>
+</STAGE DIR> Take this for telling true:
+Fair payment for foul words is more than due.
+</PRINCESS>
+<FORESTER>	<34%>
+Nothing but fair is that which you inherit.
+</FORESTER>
+<PRINCESS>	<34%>
+See, see! my beauty will be sav'd by merit.
+O heresy in fair, fit for these days!
+A giving hand, though foul, shall have fair praise.
+But come, the bow: now mercy goes to kill,
+And shooting well is then accounted ill.
+Thus will I save my credit in the shoot:
+Not wounding, pity would not let me do't;
+If wounding, then it was to show my skill,
+That more for praise than purpose meant to kill.
+And out of question so it is sometimes,
+Glory grows guilty of detested crimes,
+When, for fame's sake, for praise, an outward part,
+We bend to that the working of the heart;
+As I for praise alone now seek to spill
+The poor deer's blood, that my heart means no ill.
+</PRINCESS>
+<BOYET>	<35%>
+Do not curst wives hold that self-sovereignty
+Only for praise' sake, when they strive to be
+Lords o'er their lords?
+</BOYET>
+<PRINCESS>	<35%>
+Only for praise; and praise we may afford
+To any lady that subdues a lord.
+</PRINCESS>
+<STAGE DIR>
+<Enter Costard.>
+</STAGE DIR>
+<BOYET>	<35%>
+Here comes a member of the commonwealth.
+</BOYET>
+<COSTARD>	<35%>
+God dig-you-den all! Pray you, which is the head lady?
+</COSTARD>
+<PRINCESS>	<35%>
+Thou shalt know her, fellow, by the rest that have no heads.
+</PRINCESS>
+<COSTARD>	<35%>
+Which is the greatest lady, the highest?
+</COSTARD>
+<PRINCESS>	<35%>
+The thickest, and the tallest.
+</PRINCESS>
+<COSTARD>	<35%>
+The thickest, and the tallest! it is so; truth is truth.
+An your waist, mistress, were as slender as my wit,
+One o'these maids' girdles for your waist should be fit.
+Are not you the chief woman? you are the thickest here.
+</COSTARD>
+<PRINCESS>	<36%>
+What's your will, sir? what's your will?
+</PRINCESS>
+<COSTARD>	<36%>
+I have a letter from Monsieur Berowne to one Lady Rosaline.
+</COSTARD>
+<PRINCESS>	<36%>
+O! thy letter, thy letter; he's a good friend of mine.
+Stand aside, good bearer. Boyet, you can carve;
+Break up this capon.
+</PRINCESS>
+<BOYET>	<36%>
+I am bound to serve.
+This letter is mistook; it importeth none here:
+It is writ to Jaquenetta.
+</BOYET>
+<PRINCESS>	<36%>
+We will read it, I swear.
+Break the neck of the wax, and every one give ear.
+</PRINCESS>
+<BOYET>	<36%>
+By heaven, that thou art fair, is most infallible; true, that thou art beauteous; truth itself, that thou art lovely. More fairer than fair, beautiful than beauteous, truer than truth itself, have commiseration on thy heroical vassal! The magnanimous and most illustrate king Cophetua set eye upon the pernicious and indubitate beggar Zenelophon, and he it was that might rightly say veni, vidi, vici; which to anatomize in the vulgar—O base and obscure vulgar!—videlicet, he came, saw, and overcame: he came, one; saw, two; overcame, three. Who came? the king: Why did he come? to see: Why did he see? to overcome: To whom came he? to the beggar: What saw he? the beggar. Whom overcame he? the beggar. The conclusion is victory: on whose side? the king's; the captive is enriched: on whose side? the beggar's. The catastrophe is a nuptial: on whose side? the king's, no, on both in one, or one in both. I am the king, for so stands the comparison; thou the beggar, for so witnesseth thy lowliness. Shall I command thy love? I may: Shall I enforce thy love? I could: Shall I entreat thy love? I will. What shalt thou exchange for rags? robes; for tittles? titles; for thyself? me. Thus, expecting thy reply, I profane my lips on thy foot, my eyes on thy picture, and my heart on thy every part.
+Thine, in the dearest design of Industry, DON ADRIANO DE ARMADO.
+Thus dost thou hear the Nemean lion roar
+'Gainst thee, thou lamb, that standest as his prey:
+Submissive fall his princely feet before,
+And he from forage will incline to play.
+But if thou strive, poor soul, what art thou then?
+Food for his rage, repasture for his den.
+</BOYET>
+<PRINCESS>	<37%>
+What plume of feathers is he that indited this letter?
+What vane? what weathercock? did you ever hear better?
+</PRINCESS>
+<BOYET>	<37%>
+I am much deceiv'd but I remember the style.
+</BOYET>
+<PRINCESS>	<37%>
+Else your memory is bad, going o'er it erewhile.
+</PRINCESS>
+<BOYET>	<37%>
+This Armado is a Spaniard, that keeps here in court;
+A phantasime, a Monarcho, and one that makes sport
+To the prince and his book-mates.
+</BOYET>
+<PRINCESS>	<37%>
+Thou, fellow, a word.
+Who gave thee this letter?
+</PRINCESS>
+<COSTARD>	<37%>
+I told you; my lord.
+</COSTARD>
+<PRINCESS>	<37%>
+To whom shouldst thou give it?
+</PRINCESS>
+<COSTARD>	<38%>
+From my lord to my lady.
+</COSTARD>
+<PRINCESS>	<38%>
+From which lord, to which lady?
+</PRINCESS>
+<COSTARD>	<38%>
+From my lord Berowne, a good master of mine,
+To a lady of France, that he call'd Rosaline.
+</COSTARD>
+<PRINCESS>	<38%>
+Thou hast mistaken his letter. Come, lords, away.
+Here, sweet, put up this: 'twill be thine another day.
+</PRINCESS>
+<STAGE DIR>
+<Exeunt Princess and Train.>
+</STAGE DIR>
+<BOYET>	<38%>
+Who is the suitor? who is the suitor?
+</BOYET>
+<ROSALINE>	<38%>
+Shall I teach you to know?
+</ROSALINE>
+<BOYET>	<38%>
+Ay, my continent of beauty.
+</BOYET>
+<ROSALINE>	<38%>
+Why, she that bears the bow.
+Finely put off!
+</ROSALINE>
+<BOYET>	<38%>
+My lady goes to kill horns; but, if thou marry,
+Hang me by the neck if horns that year miscarry.
+Finely put on!
+</BOYET>
+<ROSALINE>	<38%>
+Well then, I am the shooter.
+</ROSALINE>
+<BOYET>	<38%>
+And who is your deer?
+</BOYET>
+<ROSALINE>	<38%>
+If we choose by the horns, yourself: come not near.
+Finely put on, indeed!
+</ROSALINE>
+<MARIA>	<38%>
+You still wrangle with her, Boyet, and she strikes at the brow.
+</MARIA>
+<BOYET>	<38%>
+But she herself is hit lower: have I hit her now?
+</BOYET>
+<ROSALINE>	<38%>
+Shall I come upon thee with an old saying, that was a man when King Pepin of France was a little boy, as touching the hit it?
+</ROSALINE>
+<BOYET>	<38%>
+So may I answer thee with one as old, that was a woman when Queen Guinever of Britain was a little wench, as touching the hit it.
+</BOYET>
+<ROSALINE>	<38%>
+Thou canst not hit it, hit it, hit it,
+Thou canst not hit it, my good man.
+</ROSALINE>
+<BOYET>	<39%>
+An I cannot, cannot, cannot,
+An I cannot, another can.
+</BOYET>
+<STAGE DIR>
+<Exeunt Rosaline and Katharine.>
+</STAGE DIR>
+<COSTARD>	<39%>
+By my troth, most pleasant: how both did fit it!
+</COSTARD>
+<MARIA>	<39%>
+A mark marvellous well shot, for they both did hit it.
+</MARIA>
+<BOYET>	<39%>
+A mark! O! mark but that mark; a mark, says my lady!
+Let the mark have a prick in't, to mete at, if it may be.
+</BOYET>
+<MARIA>	<39%>
+Wide o' the bow hand! i' faith your hand is out.
+</MARIA>
+<COSTARD>	<39%>
+Indeed a' must shoot nearer, or he'll ne'er hit the clout.
+</COSTARD>
+<BOYET>	<39%>
+An' if my hand be out, then belike your hand is in.
+</BOYET>
+<COSTARD>	<39%>
+Then will she get the upshoot by cleaving the pin.
+</COSTARD>
+<MARIA>	<39%>
+Come, come, you talk greasily; your lips grow foul.
+</MARIA>
+<COSTARD>	<39%>
+She's too hard for you at pricks, sir: challenge her to bowl.
+</COSTARD>
+<BOYET>	<39%>
+I fear too much rubbing. Good night, my good owl.
+</BOYET>
+<STAGE DIR>
+<Exeunt Boyet and Maria.>
+</STAGE DIR>
+<COSTARD>	<39%>
+By my soul, a swain! a most simple clown!
+Lord, lord how the ladies and I have put him down!
+O' my troth, most sweet jests! most incony vulgar wit!
+When it comes so smoothly off, so obscenely, as it were, so fit,
+Armado, o' the one side, O! a most dainty man.
+To see him walk before a lady, and to bear her fan!
+To see him kiss his hand! and how most sweetly a' will swear!
+And his page o' t'other side, that handful of wit!
+Ah! heavens, it is a most pathetical nit.
+<STAGE DIR>
+<Shouting within.>
+</STAGE DIR> Sola, sola!
+</COSTARD>
+<STAGE DIR>
+<Exit running.>
+</STAGE DIR>
+</SCENE 1>
+<SCENE 2>
+<The Same.>
+<STAGE DIR>
+<Enter Holofernes, Sir Nathaniel, and Dull.>
+</STAGE DIR>
+<NATHANIEL>	<40%>
+Very reverend sport, truly: and done in the testimony of a good conscience.
+</NATHANIEL>
+<HOLOFERNES>	<40%>
+The deer was, as you know, sanguis, in blood; ripe as a pomewater, who now hangeth like a jewel in the ear of cælo, the sky, the welkin, the heaven; and anon falleth like a crab on the face of terra, the soil, the land, the earth.
+</HOLOFERNES>
+<NATHANIEL>	<40%>
+Truly, Master Holofernes, the epithets are sweetly varied, like a scholar at the least: but, sir, I assure ye, it was a buck of the first head.
+</NATHANIEL>
+<HOLOFERNES>	<40%>
+Sir Nathaniel, haud credo.
+</HOLOFERNES>
+<DULL>	<40%>
+'Twas not a haud credo; 'twas a pricket.
+</DULL>
+<HOLOFERNES>	<40%>
+Most barbarous intimation! yet a kind of insinuation, as it were, in via, in way, of explication; facere, as it were, replication, or, rather, ostentare, to show, as it were, his inclination,—after his undressed, unpolished, uneducated, unpruned, untrained, or, rather, unlettered, or, ratherest, unconfirmed fashion,—to insert again my haud credo for a deer.
+</HOLOFERNES>
+<DULL>	<40%>
+I said the deer was not a haud credo; 'twas a pricket.
+</DULL>
+<HOLOFERNES>	<40%>
+Twice sod simplicity, bis coctus!
+O! thou monster Ignorance, how deformed dost thou look!
+</HOLOFERNES>
+<NATHANIEL>	<41%>
+Sir, he hath not fed of the dainties that are bred of a book;
+he hath not eat paper, as it were; he hath not drunk ink: his intellect is not replenished; he is only an animal, only sensible in the duller parts:
+And such barren plants are set before us, that we thankful should be,
+Which we of taste and feeling are, for those parts that do fructify in us more than he;
+For as it would ill become me to be vain, indiscreet, or a fool:
+So, were there a patch set on learning, to see him in a school:
+But, omne bene, say I; being of an old Father's mind,
+Many can brook the weather that love not the wind.
+</NATHANIEL>
+<DULL>	<41%>
+You two are book-men: can you tell by your wit,
+What was a month old at Cain's birth, that's not five weeks old as yet?
+</DULL>
+<HOLOFERNES>	<41%>
+Dictynna, goodman Dull: Dictynna, goodman Dull.
+</HOLOFERNES>
+<DULL>	<41%>
+What is Dictynna?
+</DULL>
+<NATHANIEL>	<41%>
+A title to Phœbe, to Luna, to the moon.
+</NATHANIEL>
+<HOLOFERNES>	<41%>
+The moon was a month old when Adam was no more;
+And raught not to five weeks when he came to five-score.
+The allusion holds in the exchange.
+</HOLOFERNES>
+<DULL>	<41%>
+'Tis true indeed: the collusion holds in the exchange.
+</DULL>
+<HOLOFERNES>	<41%>
+God comfort thy capacity! I say, the allusion holds in the exchange.
+</HOLOFERNES>
+<DULL>	<41%>
+And I say the pollusion holds in the exchange, for the moon is never but a month old; and I say beside that 'twas a pricket that the princess killed.
+</DULL>
+<HOLOFERNES>	<42%>
+Sir Nathaniel, will you hear an extemporal epitaph on the death of the deer? and, to humour the ignorant, I have call'd the deer the princess killed, a pricket.
+</HOLOFERNES>
+<NATHANIEL>	<42%>
+Perge, good Master Holofernes, perge; so it shall please you to abrogate scurrility.
+</NATHANIEL>
+<HOLOFERNES>	<42%>
+I will something affect the letter; for it argues facility.
+The preyful princess pierc'd and prick'd a pretty pleasing pricket;
+Some say a sore; but not a sore, till now made sore with shooting.
+The dogs did yell; put l to sore, then sorel jumps from thicket;
+Or pricket, sore, or else sorel; the people fall a hooting.
+If sore be sore, then l to sore makes fifty sores one sorel!
+Of one sore I a hundred make, by adding but one more l.
+</HOLOFERNES>
+<NATHANIEL>	<42%>
+A rare talent!
+</NATHANIEL>
+<DULL>	<42%>
+<STAGE DIR>
+<Aside.>
+</STAGE DIR> If a talent be a claw, look how he claws him with a talent.
+</DULL>
+<HOLOFERNES>	<42%>
+This is a gift that I have, simple, simple; a foolish extravagant spirit, full of forms, figures, shapes, objects, ideas, apprehensions, motions, revolutions: these are begot in the ventricle of memory, nourished in the womb of pia mater, and delivered upon the mellowing of occasion. But the gift is good in those in whom it is acute, and I am thankful for it.
+</HOLOFERNES>
+<NATHANIEL>	<42%>
+Sir, I praise the Lord for you, and so may my parishioners; for their sons are well tutored by you, and their daughters profit very greatly under you: you are a good member of the commonwealth.
+</NATHANIEL>
+<HOLOFERNES>	<43%>
+Mehercle! if their sons be ingenuous, they shall want no instruction; if their daughters be capable, I will put it to them. But, vir sapit qui pauca loquitur. A soul feminine saluteth us.
+</HOLOFERNES>
+<STAGE DIR>
+<Enter Jaquenetta and Costard.>
+</STAGE DIR>
+<JAQUENETTA>	<43%>
+God give you good morrow, Master parson.
+</JAQUENETTA>
+<HOLOFERNES>	<43%>
+Master parson, quasi pers-on. An if one should be pierced, which is the one?
+</HOLOFERNES>
+<COSTARD>	<43%>
+Marry, Master schoolmaster, he that is likest to a hogshead.
+</COSTARD>
+<HOLOFERNES>	<43%>
+Piercing a hogshead! a good lustre of conceit in a turf of earth; fire enough for a flint, pearl enough for a swine: 'tis pretty; it is well.
+</HOLOFERNES>
+<JAQUENETTA>	<43%>
+Good Master parson <STAGE DIR>
+<giving a letter to Nathaniel],>
+</STAGE DIR> be so good as read me this letter: it was given me by Costard, and sent me from Don Armado: I beseech you, read it.
+</JAQUENETTA>
+<HOLOFERNES>	<43%>
+Fauste, precor gelida quando pecus omne sub umbra Ruminat, and so forth. Ah! good old Mantuan. I may speak of thee as the traveller doth of Venice:
+—Venetia, Venetia,
+Chi non te vede, non te pretia.
+Old Mantuan! old Mantuan! Who understandeth thee not, loves thee not. Ut, re, sol, la, mi, fa. Under pardon, sir, what are the contents? or, rather, as Horace says in his—What, my soul, verses?
+</HOLOFERNES>
+<NATHANIEL>	<44%>
+Ay, sir, and very learned.
+</NATHANIEL>
+<HOLOFERNES>	<44%>
+Let me hear a staff, a stanze, a verse: lege, domine.
+</HOLOFERNES>
+<NATHANIEL>	<44%>
+If love make me forsworn, how shall I swear to love?
+Ah! never faith could hold, if not to beauty vow'd;
+Though to myself forsworn, to thee I'll faithful prove;
+Those thoughts to me were oaks, to thee like osiers bow'd
+Study his bias leaves and makes his book thine eyes.
+Where all those pleasures live that art would comprehend:
+If knowledge be the mark, to know thee shall suffice
+Well learned is that tongue that well can thee commend;
+All ignorant that soul that sees thee without wonder;
+Which is to me some praise that I thy parts admire
+Thy eye Jove's lightning bears, thy voice his dreadful thunder,
+Which, not to anger bent, is music and sweet fire.
+Celestial as thou art, O! pardon love this wrong.
+That sings heaven's praise with such an earthly tongue!
+</NATHANIEL>
+<HOLOFERNES>	<44%>
+You find not the apostrophas, and so miss the accent: let me supervise the canzonet. Here are only numbers ratified; but, for the elegancy, facility, and golden cadence of poesy, caret. Ovidius Naso was the man: and why, indeed, Naso, but for smelling out the odoriferous flowers of fancy, the jerks of invention? Imitari is nothing; so doth the hound his master, the ape his keeper, the 'tired horse his rider. But, damosella virgin, was this directed to you?
+</HOLOFERNES>
+<JAQUENETTA>	<45%>
+Ay, sir; from one Monsieur Berowne, one of the strange queen's lords.
+</JAQUENETTA>
+<HOLOFERNES>	<45%>
+I will overglance the superscript. To the snow-white hand of the most beauteous Lady Rosaline. I will look again on the intellect of the letter, for the nomination of the party writing to the person written unto: Your ladyship's, in all desired employment, <BEROWNE.—SIR NATHANIEL, THIS BEROWNE IS ONE OF THE...>
+</HOLOFERNES>
+<... VOTARIES WITH THE KING; AND HERE HE HATH FRAMED...>
+<... A LETTER TO A SEQUENT OF THE STRANGER QUEEN'S,...>
+<... WHICH, ACCIDENTALLY, OR BY THE WAY OF PROGRESSION,...>
+<... HATH MISCARRIED. TRIP AND GO, MY SWEET; DELIVER...>
+<... THIS PAPER INTO THE ROYAL HAND OF THE KING; IT...>
+<... MAY CONCERN MUCH. STAY NOT THY COMPLIMENT; I FORGIVE THY DUTY: ADIEU.>
+<JAQUENETTA>	<45%>
+Good Costard, go with me. Sir, God save your life!
+</JAQUENETTA>
+<COSTARD>	<45%>
+Have with thee, my girl.
+</COSTARD>
+<STAGE DIR>
+<Exeunt Costard and Jaquenetta.>
+</STAGE DIR>
+<NATHANIEL>	<45%>
+Sir, you have done this in the fear of God, very religiously; and, as a certain Father saith—
+</NATHANIEL>
+<HOLOFERNES>	<45%>
+Sir, tell not me of the Father; I do fear colourable colours. But to return to the verses: did they please you, Sir Nathaniel?
+</HOLOFERNES>
+<NATHANIEL>	<45%>
+Marvellous well for the pen.
+</NATHANIEL>
+<HOLOFERNES>	<46%>
+I do dine to-day at the father's of a certain pupil of mine; where, if before repast it shall please you to gratify the table with a grace, I will, on my privilege I have with the parents of the foresaid child or pupil, undertake your ben venuto; where I will prove those verses to be very unlearned, neither savouring of poetry, wit, nor invention. I beseech your society.
+</HOLOFERNES>
+<NATHANIEL>	<46%>
+And thank you too; for society—saith the text—is the happiness of life.
+</NATHANIEL>
+<HOLOFERNES>	<46%>
+And, certes, the text most infallibly concludes it.—[To <DULL.] SIR, I DO INVITE YOU TOO: YOU SHALL NOT SAY...>
+</HOLOFERNES>
+<... ME NAY: PAUCA VERBA. AWAY! THE GENTLES ARE AT THEIR GAME, AND WE WILL TO OUR RECREATION.>
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</SCENE 2>
+<SCENE 3>
+<The Same.>
+<STAGE DIR>
+<Enter Berowne, with a paper.>
+</STAGE DIR>
+<BEROWNE>	<46%>
+The king he is hunting the deer; I am coursing myself: they have pitched a toil; I am toiling in a pitch,—pitch that defiles: defile! a foul word! Well, sit thee down, sorrow! for so they say the fool said, and so say I, and I the fool: well proved, wit! By the Lord, this love is as mad as Ajax: it kills sheep: it kills me, I a sheep: well proved again o' my side! I will not love; if I do, hang me; i' faith, I will not. O! but her eye,—by this light, but for her eye, I would not love her; yes, for her two eyes. Well, I do nothing in the world but lie, and lie in my throat. By heaven, I do love, and it hath taught me to rime, and to be melancholy; and here is part of my rime, and here my melancholy. Well, she hath one o' my sonnets already: the clown bore it, the fool sent it, and the lady hath it: sweet clown, sweeter fool, sweetest lady! By the world, I would not care a pin if the other three were in. Here comes one with a paper: God give him grace to groan!
+<STAGE DIR>
+<Gets up into a tree.>
+</STAGE DIR>
+</BEROWNE>
+<STAGE DIR>
+<Enter the King, with a paper.>
+</STAGE DIR>
+<KING>	<47%>
+Ah me!
+</KING>
+<BEROWNE>	<47%>
+<STAGE DIR>
+<Aside.>
+</STAGE DIR> Shot, by heaven! Proceed, sweet Cupid: thou hast thumped him with thy bird-bolt under the left pap. In faith, secrets!
+</BEROWNE>
+<KING>	<47%>
+So sweet a kiss the golden sun gives not
+To those fresh morning drops upon the rose,
+As thy eye-beams, when their fresh rays have smote
+The night of dew that on my cheeks down flows:
+Nor shines the silver moon one half so bright
+Through the transparent bosom of the deep,
+As doth thy face through tears of mine give light,
+Thou shin'st in every tear that I do weep.
+No drop but as a coach doth carry thee;
+So ridest thou triumphing in my woe.
+Do but behold the tears that swell in me,
+And they thy glory through my grief will show
+But do not love thyself, then thou wilt keep
+My tears for glasses, and still make me weep.
+O queen of queens! how far thou dost excel,
+No thought can think, nor tongue of mortal tell
+How shall she know my griefs? I'll drop the paper:
+Sweet leaves, shade folly. Who is he comes here?
+<STAGE DIR>
+<Steps aside.>
+</STAGE DIR>
+What, Longaville! and reading! listen, ear.
+</KING>
+<STAGE DIR>
+<Enter Longaville, with a paper.>
+</STAGE DIR>
+<BEROWNE>	<48%>
+Now, in thy likeness, one more fool appear!
+</BEROWNE>
+<LONGAVILLE>	<48%>
+Ay me! I am forsworn.
+</LONGAVILLE>
+<BEROWNE>	<48%>
+Why, he comes in like a perjure, wearing papers.
+</BEROWNE>
+<KING>	<48%>
+In love, I hope: sweet fellowship in shame!
+</KING>
+<BEROWNE>	<48%>
+One drunkard loves another of the name.
+</BEROWNE>
+<LONGAVILLE>	<48%>
+Am I the first that have been perjur'd so?
+</LONGAVILLE>
+<BEROWNE>	<48%>
+I could put thee in comfort: not by two that I know:
+Thou mak'st the triumviry, the corner-cap of society,
+The shape of love's Tyburn, that hangs up simplicity.
+</BEROWNE>
+<LONGAVILLE>	<48%>
+I fear these stubborn lines lack power to move.
+O sweet Maria, empress of my love!
+These numbers will I tear, and write in prose.
+</LONGAVILLE>
+<BEROWNE>	<48%>
+O! rimes are guards on wanton Cupid's hose:
+Disfigure not his slop.
+</BEROWNE>
+<LONGAVILLE>	<48%>
+This same shall go.
+Did not the heavenly rhetoric of thine eye,
+'Gainst whom the world cannot hold argument,
+Persuade my heart to this false perjury?
+Vows for thee broke deserve not punishment.
+A woman I forswore; but I will prove,
+Thou being a goddess, I forswore not thee:
+My vow was earthly, thou a heavenly love;
+Thy grace, being gain'd, cures all disgrace in me.
+Vows are but breath, and breath a vapour is:
+Then thou, fair sun, which on my earth dost shine,
+Exhal'st this vapour-vow; in thee it is:
+If broken, then, it is no fault of mine:
+If by me broke, what fool is not so wise
+To lose an oath to win a paradise!
+</LONGAVILLE>
+<BEROWNE>	<49%>
+This is the liver-vein, which makes flesh a deity;
+A green goose a goddess; pure, pure idolatry.
+God amend us, God amend! we are much out o' the way.
+</BEROWNE>
+<LONGAVILLE>	<49%>
+By whom shall I send this?—Company! stay.
+</LONGAVILLE>
+<STAGE DIR>
+<Steps aside.>
+</STAGE DIR>
+<BEROWNE>	<49%>
+All hid, all hid; an old infant play.
+Like a demi-god here sit I in the sky,
+And wretched fools' secrets heedfully o'er-eye.
+More sacks to the mill! O heavens! I have my wish.
+</BEROWNE>
+<STAGE DIR>
+<Enter Dumaine, with a paper.>
+</STAGE DIR>
+Dumaine transform'd: four woodcocks in a dish!
+<DUMAINE>	<49%>
+O most divine Kate!
+</DUMAINE>
+<BEROWNE>	<49%>
+O most profane coxcomb!
+</BEROWNE>
+<DUMAINE>	<49%>
+By heaven, the wonder of a mortal eye!
+</DUMAINE>
+<BEROWNE>	<49%>
+By earth, she is but corporal; there you lie.
+</BEROWNE>
+<DUMAINE>	<49%>
+Her amber hairs for foul have amber quoted.
+</DUMAINE>
+<BEROWNE>	<49%>
+An amber-colour'd raven was well noted.
+</BEROWNE>
+<DUMAINE>	<49%>
+As upright as the cedar.
+</DUMAINE>
+<BEROWNE>	<50%>
+Stoop, I say;
+Her shoulder is with child.
+</BEROWNE>
+<DUMAINE>	<50%>
+As fair as day.
+</DUMAINE>
+<BEROWNE>	<50%>
+Ay, as some days; but then no sun must shine.
+</BEROWNE>
+<DUMAINE>	<50%>
+O! that I had my wish.
+</DUMAINE>
+<LONGAVILLE>	<50%>
+And I had mine!
+</LONGAVILLE>
+<KING>	<50%>
+And I mine too, good Lord!
+</KING>
+<BEROWNE>	<50%>
+Amen, so I had mine. Is not that a good word?
+</BEROWNE>
+<DUMAINE>	<50%>
+I would forget her; but a fever she
+Reigns in my blood, and will remember'd be.
+</DUMAINE>
+<BEROWNE>	<50%>
+A fever in your blood! why, then incision
+Would let her out in saucers: sweet misprision!
+</BEROWNE>
+<DUMAINE>	<50%>
+Once more I'll read the ode that I have writ.
+</DUMAINE>
+<BEROWNE>	<50%>
+Once more I'll mark how love can vary wit.
+</BEROWNE>
+<DUMAINE>	<50%>
+On a day, alack the day!
+Love, whose month is ever May,
+Spied a blossom passing fair
+Playing in the wanton air:
+Through the velvet leaves the wind,
+All unseen, 'gan passage find;
+That the lover, sick to death,
+Wish'd himself the heaven's breath.
+Air, quoth he, thy cheeks may blow;
+Air, would I might triumph so!
+But alack! my hand is sworn
+Ne'er to pluck thee from thy thorn:
+Vow, alack! for youth unmeet,
+Youth so apt to pluck a sweet.
+Do not call it sin in me,
+That I am forsworn for thee;
+Thou for whom e'en Jove would swear
+Juno but an Ethiop were;
+And deny himself for Jove,
+Turning mortal for thy love.
+This will I send, and something else more plain,
+That shall express my true love's fasting pain.
+O! would the King, Berowne, and Longaville
+Were lovers too. Ill, to example ill,
+Would from my forehead wipe a perjur'd note;
+For none offend where all alike do dote.
+</DUMAINE>
+<LONGAVILLE>	<51%>
+<STAGE DIR>
+<Advancing.>
+</STAGE DIR> Dumaine, thy love is far from charity,
+That in love's grief desir'st society:
+You may look pale, but I should blush, I know,
+To be o'erheard and taken napping so.
+</LONGAVILLE>
+<KING>	<51%>
+<STAGE DIR>
+<Advancing.>
+</STAGE DIR> Come, sir, you blush: as his your case is such;
+You chide at him, offending twice as much:
+You do not love Maria; Longaville
+Did never sonnet for her sake compile,
+Nor never lay his wreathed arms athwart
+His loving bosom to keep down his heart.
+I have been closely shrouded in this bush,
+And mark'd you both, and for you both did blush.
+I heard your guilty rimes, observ'd your fashion,
+Saw sighs reek from you, noted well your passion:
+Ay me! says one; O Jove! the other cries;
+One, her hairs were gold, crystal the other's eyes:
+<STAGE DIR>
+<To Longaville.>
+</STAGE DIR> You would for paradise break faith and troth;
+<STAGE DIR>
+<To Dumaine.>
+</STAGE DIR> And Jove, for your love, would infringe an oath.
+What will Berowne say, when that he shall hear
+A faith infringed, which such zeal did swear?
+How will he scorn! how will he spend his wit!
+How will he triumph, leap and laugh at it!
+For all the wealth that ever I did see,
+I would not have him know so much by me.
+</KING>
+<BEROWNE>	<52%>
+Now step I forth to whip hypocrisy.
+<STAGE DIR>
+<Descends from the tree.>
+</STAGE DIR>
+Ah! good my liege, I pray thee, pardon me:
+Good heart! what grace hast thou, thus to reprove
+These worms for loving, that art most in love?
+Your eyes do make no coaches; in your tears
+There is no certain princess that appears:
+You'll not be perjur'd, 'tis a hateful thing:
+Tush! none but minstrels like of sonneting.
+But are you not asham'd? nay, are you not,
+All three of you, to be thus much o'ershot?
+You found his mote; the king your mote did see;
+But I a beam do find in each of three.
+O! what a scene of foolery have I seen,
+Of sighs, of groans, of sorrow, and of teen;
+O me! with what strict patience have I sat,
+To see a king transformed to a gnat;
+To see great Hercules whipping a gig,
+And profound Solomon to tune a jig,
+And Nestor play at push-pin with the boys,
+And critic Timon laugh at idle toys!
+Where lies thy grief? O! tell me, good Dumaine,
+And, gentle Longaville, where lies thy pain?
+And where my liege's? all about the breast:
+A caudle, ho!
+</BEROWNE>
+<KING>	<52%>
+Too bitter is thy jest.
+Are we betray'd thus to thy over-view?
+</KING>
+<BEROWNE>	<52%>
+Not you to me, but I betray'd by you:
+I, that am honest; I, that hold it sin
+To break the vow I am engaged in;
+I am betray'd, by keeping company
+With men like men, men of inconstancy.
+When shall you see me write a thing in rime?
+Or groan for Joan? or spend a minute's time
+In pruning me? When shall you hear that I
+Will praise a hand, a foot, a face, an eye,
+A gait, a state, a brow, a breast, a waist, leg, a limb?—
+</BEROWNE>
+<KING>	<53%>
+Soft! Whither away so fast? true man or a thief that gallops so?
+</KING>
+<BEROWNE>	<53%>
+I post from love; good lover, let me go.
+</BEROWNE>
+<STAGE DIR>
+<Enter Jaquenetta and Costard.>
+</STAGE DIR>
+<JAQUENETTA>	<53%>
+God bless the king!
+</JAQUENETTA>
+<KING>	<53%>
+What present hast thou there?
+</KING>
+<COSTARD>	<53%>
+Some certain treason.
+</COSTARD>
+<KING>	<53%>
+What makes treason here?
+</KING>
+<COSTARD>	<53%>
+Nay, it makes nothing, sir.
+</COSTARD>
+<KING>	<53%>
+If it mar nothing neither,
+The treason and you go in peace away together.
+</KING>
+<JAQUENETTA>	<53%>
+I beseech your Grace, let this letter be read:
+Our parson misdoubts it; 'twas treason, he said.
+</JAQUENETTA>
+<KING>	<53%>
+Berowne, read it over—
+<STAGE DIR>
+<Giving the letter to him.>
+</STAGE DIR>
+There hadst thou it?
+</KING>
+<JAQUENETTA>	<53%>
+Of Costard.
+</JAQUENETTA>
+<KING>	<53%>
+Where hadst thou it?
+</KING>
+<COSTARD>	<53%>
+Of Dun Adramadio, Dun Adramadio.
+</COSTARD>
+<STAGE DIR>
+<Berowne tears the letter.>
+</STAGE DIR>
+<KING>	<53%>
+How now! what is in you? why dost thou tear it?
+</KING>
+<BEROWNE>	<53%>
+A toy, my liege, a toy: your Grace needs not fear it.
+</BEROWNE>
+<LONGAVILLE>	<54%>
+It did move him to passion, and therefore let's hear it.
+</LONGAVILLE>
+<DUMAINE>	<54%>
+<STAGE DIR>
+<Picking up the pieces.>
+</STAGE DIR> It is Berowne's writing, and here is his name.
+</DUMAINE>
+<BEROWNE>	<54%>
+<STAGE DIR>
+<To Costard.>
+</STAGE DIR> Ah, you whoreson logger-head, you were born to do me shame.
+Guilty, my lord, guilty; I confess, I confess.
+</BEROWNE>
+<KING>	<54%>
+What?
+</KING>
+<BEROWNE>	<54%>
+That you three fools lack'd me fool to make up the mess;
+He, he, and you, and you my liege, and I,
+Are pick-purses in love, and we deserve to die.
+O! dismiss this audience, and I shall tell you more.
+</BEROWNE>
+<DUMAINE>	<54%>
+Now the number is even.
+</DUMAINE>
+<BEROWNE>	<54%>
+True, true; we are four.
+Will these turtles be gone?
+</BEROWNE>
+<KING>	<54%>
+Hence, sirs; away!
+</KING>
+<COSTARD>	<54%>
+Walk aside the true folk, and let the traitors stay.
+</COSTARD>
+<STAGE DIR>
+<Exeunt Costard and Jaquenetta.>
+</STAGE DIR>
+<BEROWNE>	<54%>
+Sweet lords, sweet lovers, O! let us embrace.
+As true we are as flesh and blood can be:
+The sea will ebb and flow, heaven show his face;
+Young blood doth not obey an old decree:
+We cannot cross the cause why we were born;
+Therefore, of all hands must we be forsworn.
+</BEROWNE>
+<KING>	<54%>
+What! did these rent lines show some love of thine?
+</KING>
+<BEROWNE>	<54%>
+'Did they,' quoth you? Who sees the heavenly Rosaline,
+That, like a rude and savage man of Inde,
+At the first opening of the gorgeous east,
+Bows not his vassal head, and, strucken blind,
+Kisses the base ground with obedient breast?
+What peremptory eagle-sighted eye
+Dares look upon the heaven of her brow,
+That is not blinded by her majesty?
+</BEROWNE>
+<KING>	<55%>
+What zeal, what fury hath inspir'd thee now?
+My love, her mistress, is a gracious moon;
+She, an attending star, scarce seen a light.
+</KING>
+<BEROWNE>	<55%>
+My eyes are then no eyes, nor I Berowne:
+O! but for my love, day would turn to night.
+Of all complexions the cull'd sovereignty
+Do meet, as at a fair, in her fair cheek;
+Where several worthies make one dignity,
+Where nothing wants that want itself doth seek.
+Lend me the flourish of all gentle tongues,—
+Fie, painted rhetoric! O! she needs it not:
+To things of sale a seller's praise belongs;
+She passes praise; then praise too short doth blot.
+A wither'd hermit, five-score winters worn,
+Might shake off fifty, looking in her eye:
+Beauty doth varnish age, as if new-born,
+And gives the crutch the cradle's infancy.
+O! 'tis the sun that maketh all things shine.
+</BEROWNE>
+<KING>	<55%>
+By heaven, thy love is black as ebony.
+</KING>
+<BEROWNE>	<55%>
+Is ebony like her? O wood divine!
+A wife of such wood were felicity.
+O! who can give an oath? where is a book?
+That I may swear beauty doth beauty lack,
+If that she learn not of her eye to look:
+No face is fair that is not full so black.
+</BEROWNE>
+<KING>	<56%>
+O paradox! Black is the badge of hell,
+The hue of dungeons and the scowl of night;
+And beauty's crest becomes the heavens well.
+</KING>
+<BEROWNE>	<56%>
+Devils soonest tempt, resembling spirits of light.
+O! if in black my lady's brows be deck'd,
+It mourns that painting and usurping hair
+Should ravish doters with a false aspect;
+And therefore is she born to make black fair.
+Her favour turns the fashion of the days,
+For native blood is counted painting now:
+And therefore red, that would avoid dispraise,
+Paints itself black, to imitate her brow.
+</BEROWNE>
+<DUMAINE>	<56%>
+To look like her are chimney-sweepers black.
+</DUMAINE>
+<LONGAVILLE>	<56%>
+And since her time are colliers counted bright.
+</LONGAVILLE>
+<KING>	<56%>
+And Ethiops of their sweet complexion crack.
+</KING>
+<DUMAINE>	<56%>
+Dark needs no candles now, for dark is light.
+</DUMAINE>
+<BEROWNE>	<56%>
+Your mistresses dare never come in rain,
+For fear their colours should be wash'd away.
+</BEROWNE>
+<KING>	<56%>
+'Twere good yours did; for, sir, to tell you plain,
+I'll find a fairer face not wash'd to-day.
+</KING>
+<BEROWNE>	<56%>
+I'll prove her fair, or talk till doomsday here.
+</BEROWNE>
+<KING>	<56%>
+No devil will fright thee then so much as she.
+</KING>
+<DUMAINE>	<56%>
+I never knew man hold vile stuff so dear.
+</DUMAINE>
+<LONGAVILLE>	<56%>
+Look, here's thy love: <STAGE DIR>
+<Showing his shoe.>
+</STAGE DIR> my foot and her face see.
+</LONGAVILLE>
+<BEROWNE>	<56%>
+O! if the streets were paved with thine eyes,
+Her feet were much too dainty for such tread.
+</BEROWNE>
+<DUMAINE>	<57%>
+O vile! then, as she goes, what upward lies
+The street should see as she walk'd over head.
+</DUMAINE>
+<KING>	<57%>
+But what of this? Are we not all in love?
+</KING>
+<BEROWNE>	<57%>
+Nothing so sure; and thereby all forsworn.
+</BEROWNE>
+<KING>	<57%>
+Then leave this chat; and good Berowne, now prove
+Our loving lawful, and our faith not torn.
+</KING>
+<DUMAINE>	<57%>
+Ay, marry, there; some flattery for this evil.
+</DUMAINE>
+<LONGAVILLE>	<57%>
+O! some authority how to proceed;
+Some tricks, some quillets, how to cheat the devil.
+</LONGAVILLE>
+<DUMAINE>	<57%>
+Some salve for perjury.
+</DUMAINE>
+<BEROWNE>	<57%>
+O, 'tis more than need.
+Have at you, then, affection's men-at-arms:
+Consider what you first did swear unto,
+To fast, to study, and to see no woman;
+Flat treason 'gainst the kingly state of youth.
+Say, can you fast? your stomachs are too young,
+And abstinence engenders maladies.
+And where that you have vow'd to study, lords,
+In that each of you hath forsworn his book,
+Can you still dream and pore and thereon look?
+For when would you, my lord, or you, or you,
+Have found the ground of study's excellence
+Without the beauty of a woman's face?
+From women's eyes this doctrine I derive:
+They are the ground, the books, the academes,
+From whence doth spring the true Promethean fire.
+Why, universal plodding poisons up
+The nimble spirits in the arteries,
+As motion and long-during action tires
+The sinewy vigour of the traveller.
+Now, for not looking on a woman's face,
+You have in that forsworn the use of eyes,
+And study too, the causer of your vow;
+For where is any author in the world
+Teaches such beauty as a woman's eye?
+Learning is but an adjunct to ourself,
+And where we are our learning likewise is:
+Then when ourselves we see in ladies' eyes,
+Do we not likewise see our learning there?
+O! we have made a vow to study, lords,
+And in that vow we have forsworn our books:
+For when would you, my liege, or you, or you,
+In leaden contemplation have found out
+Such fiery numbers as the prompting eyes
+Of beauty's tutors have enrich'd you with?
+Other slow arts entirely keep the brain,
+And therefore, finding barren practisers,
+Scarce show a harvest of their heavy toil;
+But love, first learned in a lady's eyes,
+Lives not alone immured in the brain,
+But, with the motion of all elements,
+Courses as swift as thought in every power,
+And gives to every power a double power,
+Above their functions and their offices.
+It adds a precious seeing to the eye;
+A lover's eyes will gaze an eagle blind;
+A lover's ear will hear the lowest sound,
+When the suspicious head of theft is stopp'd:
+Love's feeling is more soft and sensible
+Than are the tender horns of cockled snails:
+Love's tongue proves dainty Bacchus gross in taste.
+For valour, is not Love a Hercules,
+Still climbing trees in the Hesperides?
+Subtle as Sphinx; as sweet and musical
+As bright Apollo's lute, strung with his hair;
+And when Love speaks, the voice of all the gods
+Makes heaven drowsy with the harmony.
+Never durst poet touch a pen to write
+Until his ink were temper'd with Love's sighs;
+O! then his lines would ravish savage ears,
+And plant in tyrants mild humility.
+From women's eyes this doctrine I derive:
+They sparkle still the right Promethean fire;
+They are the books, the arts, the academes,
+That show, contain, and nourish all the world;
+Else none at all in aught proves excellent.
+Then fools you were these women to forswear,
+Or, keeping what is sworn, you will prove fools.
+For wisdom's sake, a word that all men love,
+Or for love's sake, a word that loves all men,
+Or for men's sake, the authors of these women;
+Or women's sake, by whom we men are men,
+Let us once lose our oaths to find ourselves,
+Or else we lose ourselves to keep our oaths.
+It is religion to be thus forsworn;
+For charity itself fulfils the law;
+And who can sever love from charity?
+</BEROWNE>
+<KING>	<59%>
+Saint Cupid, then! and, soldiers, to the field!
+</KING>
+<BEROWNE>	<59%>
+Advance your standards, and upon them, lords!
+Pell-mell, down with them! but be first advis'd,
+In conflict that you get the sun of them.
+</BEROWNE>
+<LONGAVILLE>	<60%>
+Now to plain-dealing; lay these glozes by;
+Shall we resolve to woo these girls of France?
+</LONGAVILLE>
+<KING>	<60%>
+And win them too: therefore let us devise
+Some entertainment for them in their tents.
+</KING>
+<BEROWNE>	<60%>
+First, from the park let us conduct them thither;
+Then homeward every man attach the hand
+Of his fair mistress: in the afternoon
+We will with some strange pastime solace them,
+Such as the shortness of the time can shape;
+For revels, dances, masks, and merry hours,
+Forerun fair Love, strewing her way with flowers.
+</BEROWNE>
+<KING>	<60%>
+Away, away! no time shall be omitted,
+That will betime, and may by us be fitted.
+</KING>
+<BEROWNE>	<60%>
+Allons! allons! Sow'd cockle reap'd no corn;
+And justice always whirls in equal measure:
+Light wenches may prove plagues to men forsworn;
+If so, our copper buys no better treasure.
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</BEROWNE>
+</SCENE 3>
+</ACT 4>
+<ACT 5>
+<SCENE 1>
+<The King of Navarre's Park.>
+<STAGE DIR>
+<Enter Holofernes, Sir Nathaniel, and Dull.>
+</STAGE DIR>
+<HOLOFERNES>	<60%>
+Satis quod sufficit.
+</HOLOFERNES>
+<NATHANIEL>	<60%>
+I praise God for you, sir: your reasons at dinner have been sharp and sententious; pleasant without scurrility, witty without affection, audacious without impudency, learned without opinion, and strange without heresy. I did converse this quondam day with a companion of the king's, who is intituled, nominated, or called, Don Adriano de Armado.
+</NATHANIEL>
+<HOLOFERNES>	<61%>
+Novi hominem tanquam te: his humour is lofty, his discourse peremptory, his tongue field, his eye ambitious, his gait majestical, and his general behaviour vain, ridiculous, and thrasonical. He is too picked, too spruce, too affected, too odd, as it were, too peregrinate, as I may call it.
+</HOLOFERNES>
+<NATHANIEL>	<61%>
+A most singular and choice epithet.
+</NATHANIEL>
+<STAGE DIR>
+<Draws out his table-book.>
+</STAGE DIR>
+<HOLOFERNES>	<61%>
+He draweth out the thread of his verbosity finer than the staple of his argument. I abhor such fanatical phantasimes, such insociable and point-devise companions; such rackers of orthography, as to speak dout, fine, when he should say, doubt; det, when he should pronounce, debt,—d, e, b, t, not d, e, t: he clepeth a calf, cauf; half, hauf; neighbour vocatur nebour, neigh abbreviated ne. This is abhominable, which he would call abominable,—it insinuateth me of insanie: anne intelligis, domine? To make frantic, lunatic.
+</HOLOFERNES>
+<NATHANIEL>	<61%>
+Laus Deo bone intelligo.
+</NATHANIEL>
+<HOLOFERNES>	<61%>
+Bone? bone, for bene: Priscian a little scratched; 'twill serve.
+</HOLOFERNES>
+<STAGE DIR>
+<Enter Armado, Moth, and Costard.>
+</STAGE DIR>
+<NATHANIEL>	<61%>
+Videsne quis venit?
+</NATHANIEL>
+<HOLOFERNES>	<61%>
+Video, et gaudeo.
+</HOLOFERNES>
+<ARMADO>	<61%>
+<STAGE DIR>
+<To Moth.>
+</STAGE DIR> Chirrah!
+</ARMADO>
+<HOLOFERNES>	<62%>
+Quare Chirrah, not sirrah?
+</HOLOFERNES>
+<ARMADO>	<62%>
+Men of peace, well encountered.
+</ARMADO>
+<HOLOFERNES>	<62%>
+Most military sir, salutation.
+</HOLOFERNES>
+<MOTH>	<62%>
+<STAGE DIR>
+<Aside to Costard.>
+</STAGE DIR> They have been at a great feast of languages, and stolen the scraps.
+</MOTH>
+<COSTARD>	<62%>
+O! they have lived long on the almsbasket of words. I marvel thy master hath not eaten thee for a word; for thou art not so long by the head as honorificabilitudinitatibus: thou art easier swallowed than a flap-dragon.
+</COSTARD>
+<MOTH>	<62%>
+Peace! the peal begins.
+</MOTH>
+<ARMADO>	<62%>
+<STAGE DIR>
+<To Holofernes.>
+</STAGE DIR> Monsieur, are you not lettered?
+</ARMADO>
+<MOTH>	<62%>
+Yes, yes; he teaches boys the hornbook. What is a, b, spelt backward, with the horn on his head?
+</MOTH>
+<HOLOFERNES>	<62%>
+Ba, pueritia, with a horn added.
+</HOLOFERNES>
+<MOTH>	<62%>
+Ba! most silly sheep with a horn. You hear his learning.
+</MOTH>
+<HOLOFERNES>	<62%>
+Quis, quis, thou consonant?
+</HOLOFERNES>
+<MOTH>	<62%>
+The third of the five vowels, if you repeat them; or the fifth, if I.
+</MOTH>
+<HOLOFERNES>	<62%>
+I will repeat them,—a, e, i,—
+</HOLOFERNES>
+<MOTH>	<62%>
+The sheep; the other two concludes it,—o, u.
+</MOTH>
+<ARMADO>	<62%>
+Now, by the salt wave of the Mediterraneum, a sweet touch, a quick venew of wit! snip, snap, quick and home! it rejoiceth my intellect: true wit!
+</ARMADO>
+<MOTH>	<62%>
+Offered by a child to an old man; which is wit-old.
+</MOTH>
+<HOLOFERNES>	<62%>
+What is the figure? what is the figure?
+</HOLOFERNES>
+<MOTH>	<63%>
+Horns.
+</MOTH>
+<HOLOFERNES>	<63%>
+Thou disputest like an infant; go, whip thy gig.
+</HOLOFERNES>
+<MOTH>	<63%>
+Lend me your horn to make one, and I will whip about your infamy circum circa. A gig of a cuckold's horn.
+</MOTH>
+<COSTARD>	<63%>
+An I had but one penny in the world, thou shouldst have it to buy gingerbread. Hold, there is the very remuneration I had of thy master, thou halfpenny purse of wit, thou pigeon-egg of discretion. O! an the heavens were so pleased that thou wert but my bastard, what a joyful father wouldst thou make me. Go to; thou hast it ad dunghill, at the fingers' ends, as they say.
+</COSTARD>
+<HOLOFERNES>	<63%>
+O! I smell false Latin; dunghill for unguem.
+</HOLOFERNES>
+<ARMADO>	<63%>
+Arts-man, præambula: we will be singled from the barbarous. Do you not educate youth at the charge-house on the top of the mountain?
+</ARMADO>
+<HOLOFERNES>	<63%>
+Or mons, the hill.
+</HOLOFERNES>
+<ARMADO>	<63%>
+At your sweet pleasure, for the mountain.
+</ARMADO>
+<HOLOFERNES>	<63%>
+I do, sans question.
+</HOLOFERNES>
+<ARMADO>	<63%>
+Sir, it is the king's most sweet pleasure and affection to congratulate the princess at her pavilion in the posteriors of this day, which the rude multitude call the afternoon.
+</ARMADO>
+<HOLOFERNES>	<63%>
+The posterior of the day, most generous sir, is liable, congruent, and measurable for the afternoon: the word is well culled, chose, sweet and apt, I do assure you, sir; I do assure.
+</HOLOFERNES>
+<ARMADO>	<63%>
+Sir, the king is a noble gentleman, and my familiar, I do assure ye, very good friend. For what is inward between us, let it pass: I do beseech thee, remember thy curtsy; I beseech thee, apparel thy head: and among other importunate and most serious designs, and of great import indeed, too, but let that pass: for I must tell thee, it will please his Grace, by the world, sometime to lean upon my poor shoulder, and with his royal finger, thus dally with my excrement, with my mustachio: but, sweet heart, let that pass. By the world, I recount no fable: some certain special honours it pleaseth his greatness to impart to Armado, a soldier, a man of travel, that hath seen the world: but let that pass. The very all of all is, but, sweet heart, I do implore secrecy, that the king would have me present the princess, sweet chuck, with some delightful ostentation, or show, or pageant, or antick, or fire-work. Now, understanding that the curate and your sweet self are good at such eruptions and sudden breaking out of mirth, as it were, I have acquainted you withal, to the end to crave your assistance.
+</ARMADO>
+<HOLOFERNES>	<64%>
+Sir, you shall present before her the Nine Worthies. Sir Nathaniel, as concerning some entertainment of time, some show in the posterior of this day, to be rendered by our assistance, at the king's command, and this most gallant, illustrate, and learned gentleman, before the princess; I say, none so fit as to present the Nine Worthies.
+</HOLOFERNES>
+<NATHANIEL>	<65%>
+Where will you find men worthy enough to present them?
+</NATHANIEL>
+<HOLOFERNES>	<65%>
+Joshua, yourself; myself, or this gallant gentleman, Judas Maccabæus; this swain, because of his great limb, or joint, shall pass Pompey the Great; the page, Hercules,—
+</HOLOFERNES>
+<ARMADO>	<65%>
+Pardon, sir; error: he is not quantity enough for that Worthy's thumb: he is not so big as the end of his club.
+</ARMADO>
+<HOLOFERNES>	<65%>
+Shall I have audience? he shall present Hercules in minority: his enter and exit shall be strangling a snake; and I will have an apology for that purpose.
+</HOLOFERNES>
+<MOTH>	<65%>
+An excellent device! so, if any of the audience hiss, you may cry, 'Well done, Hercules! now thou crushest the snake!' that is the way to make an offence gracious, though few have the grace to do it.
+</MOTH>
+<ARMADO>	<65%>
+For the rest of the Worthies?—
+</ARMADO>
+<HOLOFERNES>	<65%>
+I will play three myself.
+</HOLOFERNES>
+<MOTH>	<65%>
+Thrice-worthy gentleman!
+</MOTH>
+<ARMADO>	<65%>
+Shall I tell you a thing?
+</ARMADO>
+<HOLOFERNES>	<65%>
+We attend.
+</HOLOFERNES>
+<ARMADO>	<65%>
+We will have, if this fadge not, an antick. I beseech you, follow.
+</ARMADO>
+<HOLOFERNES>	<65%>
+Via, goodman Dull! thou hast spoken no word all this while.
+</HOLOFERNES>
+<DULL>	<65%>
+Nor understood none neither, sir.
+</DULL>
+<HOLOFERNES>	<65%>
+Allons! we will employ thee.
+</HOLOFERNES>
+<DULL>	<65%>
+I'll make one in a dance, or so; or I will play the tabor to the Worthies, and let them dance the hay.
+</DULL>
+<HOLOFERNES>	<66%>
+Most dull, honest Dull, to our sport, away!
+</HOLOFERNES>
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</SCENE 1>
+<SCENE 2>
+<The same. Before the Princess's Pavilion.>
+<STAGE DIR>
+<Enter the Princess, Katharine, Rosaline, and Maria.>
+</STAGE DIR>
+<PRINCESS>	<66%>
+Sweet hearts, we shall be rich ere we depart,
+If fairings come thus plentifully in: lady wall'd about with diamonds!
+Look you what I have from the loving king.
+</PRINCESS>
+<ROSALINE>	<66%>
+Madam, came nothing else along with that?
+</ROSALINE>
+<PRINCESS>	<66%>
+Nothing but this! yes, as much love in rime
+As would be cramm'd up in a sheet of paper,
+Writ o' both sides the leaf, margent and all,
+That he was fain to seal on Cupid's name.
+</PRINCESS>
+<ROSALINE>	<66%>
+That was the way to make his godhead wax;
+For he hath been five thousand years a boy.
+</ROSALINE>
+<KATHARINE>	<66%>
+Ay, and a shrewd unhappy gallows too.
+</KATHARINE>
+<ROSALINE>	<66%>
+You'll ne'er be friends with him: a' kill'd your sister.
+</ROSALINE>
+<KATHARINE>	<66%>
+He made her melancholy, sad, and heavy;
+And so she died: had she been light, like you,
+Of such a merry, nimble, stirring spirit,
+She might ha' been a grandam ere she died;
+And so may you, for a light heart lives long.
+</KATHARINE>
+<ROSALINE>	<66%>
+What's your dark meaning, mouse, of this light word?
+</ROSALINE>
+<KATHARINE>	<66%>
+A light condition in a beauty dark.
+</KATHARINE>
+<ROSALINE>	<66%>
+We need more light to find your meaning out.
+</ROSALINE>
+<KATHARINE>	<66%>
+You'll mar the light by taking it in snuff;
+Therefore, I'll darkly end the argument.
+</KATHARINE>
+<ROSALINE>	<67%>
+Look, what you do, you do it still i' the dark.
+</ROSALINE>
+<KATHARINE>	<67%>
+So do not you, for you are a light wench.
+</KATHARINE>
+<ROSALINE>	<67%>
+Indeed I weigh not you, and therefore light.
+</ROSALINE>
+<KATHARINE>	<67%>
+You weigh me not. O! that's you care not for me.
+</KATHARINE>
+<ROSALINE>	<67%>
+Great reason; for, 'past cure is still past care.'
+</ROSALINE>
+<PRINCESS>	<67%>
+Well bandied both; a set of wit well play'd.
+But Rosaline, you have a favour too:
+Who sent it? and what is it?
+</PRINCESS>
+<ROSALINE>	<67%>
+I would you knew:
+An if my face were but as fair as yours,
+My favour were as great; be witness this.
+Nay, I have verses too, I thank Berowne:
+The numbers true; and, were the numb'ring too,
+I were the fairest goddess on the ground:
+I am compar'd to twenty thousand fairs.
+O! he hath drawn my picture in his letter.
+</ROSALINE>
+<PRINCESS>	<67%>
+Anything like?
+</PRINCESS>
+<ROSALINE>	<67%>
+Much in the letters, nothing in the praise.
+</ROSALINE>
+<PRINCESS>	<67%>
+Beauteous as ink; a good conclusion.
+</PRINCESS>
+<KATHARINE>	<67%>
+Fair as a text B in a copy-book.
+</KATHARINE>
+<ROSALINE>	<67%>
+'Ware pencils! how? let me not die your debtor.
+My red dominical, my golden letter:
+O, that your face were not so full of O's!
+</ROSALINE>
+<KATHARINE>	<67%>
+A pox of that jest! and beshrew all shrows!
+</KATHARINE>
+<PRINCESS>	<67%>
+But what was sent to you from fair Dumaine?
+</PRINCESS>
+<KATHARINE>	<67%>
+Madam, this glove.
+</KATHARINE>
+<PRINCESS>	<67%>
+Did he not send you twain?
+</PRINCESS>
+<KATHARINE>	<67%>
+Yes, madam; and moreover,
+Some thousand verses of a faithful lover:
+A huge translation of hypocrisy,
+Vilely compil'd, profound simplicity.
+</KATHARINE>
+<MARIA>	<68%>
+This, and these pearls to me sent Longaville:
+The letter is too long by half a mile.
+</MARIA>
+<PRINCESS>	<68%>
+I think no less. Dost thou not wish in heart
+The chain were longer and the letter short?
+</PRINCESS>
+<MARIA>	<68%>
+Ay, or I would these hands might never part.
+</MARIA>
+<PRINCESS>	<68%>
+We are wise girls to mock our lovers so.
+</PRINCESS>
+<ROSALINE>	<68%>
+They are worse fools to purchase mocking so.
+That same Berowne I'll torture ere I go.
+O that I knew he were but in by the week!
+How I would make him fawn, and beg, and seek,
+And wait the season, and observe the times,
+And spend his prodigal wits in bootless rimes,
+And shape his service wholly to my hests,
+And make him proud to make me proud that jests!
+So perttaunt-like would I o'ersway his state
+That he should be my fool, and I his fate.
+</ROSALINE>
+<PRINCESS>	<68%>
+None are so surely caught, when they are catch'd,
+As wit turn'd fool: folly, in wisdom hatch'd,
+Hath wisdom's warrant and the help of school
+And wit's own grace to grace a learned fool.
+</PRINCESS>
+<ROSALINE>	<68%>
+The blood of youth burns not with such excess
+As gravity's revolt to wantonness.
+</ROSALINE>
+<MARIA>	<68%>
+Folly in fools bears not so strong a note
+As foolery in the wise, when wit doth dote;
+Since all the power thereof it doth apply
+To prove, by wit, worth in simplicity.
+</MARIA>
+<STAGE DIR>
+<Enter Boyet.>
+</STAGE DIR>
+<PRINCESS>	<69%>
+Here comes Boyet, and mirth is in his face.
+</PRINCESS>
+<BOYET>	<69%>
+O! I am stabb'd with laughter. Where's her Grace?
+</BOYET>
+<PRINCESS>	<69%>
+Thy news, Boyet?
+</PRINCESS>
+<BOYET>	<69%>
+Prepare, madam, prepare!—
+Arm, wenches, arm! encounters mounted are
+Against your peace: Love doth approach disguis'd,
+Armed in arguments; you'll be surpris'd:
+Muster your wits; stand in your own defence;
+Or hide your heads like cowards, and fly hence.
+</BOYET>
+<PRINCESS>	<69%>
+Saint Denis to Saint Cupid! What are they
+That charge their breath against us? say, scout, say.
+</PRINCESS>
+<BOYET>	<69%>
+Under the cool shade of a sycamore
+I thought to close mine eyes some half an hour,
+When, lo! to interrupt my purpos'd rest,
+Toward that shade I might behold addrest
+The king and his companions: warily
+I stole into a neighbour thicket by,
+And overheard what you shall overhear;
+That, by and by, disguis'd they will be here.
+Their herald is a pretty knavish page,
+That well by heart hath conn'd his embassage:
+Action and accent did they teach him there;
+'Thus must thou speak, and thus thy body bear.'
+And ever and anon they made a doubt
+Presence majestical would put him out;
+'For,' quoth the king, 'an angel shalt thou see;
+Yet fear not thou, but speak audaciously.'
+The boy replied, 'An angel is not evil;
+I should have fear'd her had she been a devil.'
+With that all laugh'd and clapp'd him on the shoulder,
+Making the bold wag by their praises bolder.
+One rubb'd his elbow thus, and fleer'd, and swore
+A better speech was never spoke before;
+Another, with his finger and his thumb,
+Cry'd 'Via! we will do't, come what will come;'
+The third he caper'd and cried, 'All goes well;'
+The fourth turn'd on the toe, and down he fell.
+With that, they all did tumble on the ground,
+With such a zealous laughter, so profound,
+That in this spleen ridiculous appears,
+To check their folly, passion's solemn tears.
+</BOYET>
+<PRINCESS>	<70%>
+But what, but what, come they to visit us?
+</PRINCESS>
+<BOYET>	<70%>
+They do, they do; and are apparell'd thus,
+Like Muscovites or Russians, as I guess.
+Their purpose is to parle, to court and dance;
+And every one his love-feat will advance
+Unto his several mistress, which they'll know
+By favours several which they did bestow.
+</BOYET>
+<PRINCESS>	<70%>
+And will they so? the gallants shall be task'd:
+For, ladies, we will every one be mask'd,
+And not a man of them shall have the grace,
+Despite of suit, to see a lady's face.
+Hold, Rosaline, this favour thou shalt wear,
+And then the king will court thee for his dear:
+Hold, take thou this, my sweet, and give me thine,
+So shall Berowne take me for Rosaline,
+And change you favours too; so shall your loves
+Woo contrary, deceiv'd by these removes.
+</PRINCESS>
+<ROSALINE>	<71%>
+Come on, then; wear the favours most in sight.
+</ROSALINE>
+<KATHARINE>	<71%>
+But in this changing what is your intent?
+</KATHARINE>
+<PRINCESS>	<71%>
+The effect of my intent is, to cross theirs:
+They do it but in mocking merriment;
+And mock for mock is only my intent.
+Their several counsels they unbosom shall
+To loves mistook and so be mock'd withal
+Upon the next occasion that we meet,
+With visages display'd, to talk and greet.
+</PRINCESS>
+<ROSALINE>	<71%>
+But shall we dance, if they desire us to't?
+</ROSALINE>
+<PRINCESS>	<71%>
+No, to the death, we will not move a foot:
+Nor to their penn'd speech render we no grace;
+But while 'tis spoke each turn away her face.
+</PRINCESS>
+<BOYET>	<71%>
+Why, that contempt will kill the speaker's heart,
+And quite divorce his memory from his part.
+</BOYET>
+<PRINCESS>	<71%>
+Therefore I do it; and I make no doubt,
+The rest will ne'er come in, if he be out.
+There's no such sport as sport by sport o'erthrown,
+To make theirs ours and ours none but our own:
+So shall we stay, mocking intended game,
+And they, well mock'd, depart away with shame.
+</PRINCESS>
+<STAGE DIR>
+<Trumpets sound within.>
+</STAGE DIR>
+<BOYET>	<71%>
+The trumpet sounds: be mask'd; the maskers come.
+<STAGE DIR>
+<The Ladies mask.>
+</STAGE DIR>
+</BOYET>
+<STAGE DIR>
+<Enter Blackmoors with music; Moth; the King, Berowne,...>
+<... Longaville, and Dumaine in Russian habits, and masked.>
+</STAGE DIR>
+<MOTH>	<72%>
+All hail, the richest beauties on the earth!
+</MOTH>
+<BOYET>	<72%>
+Beauties no richer than rich taffeta.
+</BOYET>
+<MOTH>	<72%>
+A holy parcel of the fairest dames,
+<STAGE DIR>
+<The Ladies turn their backs to him.>
+</STAGE DIR>
+That ever turn'd their—backs—to mortal views!
+</MOTH>
+<BEROWNE>	<72%>
+'Their eyes,' villain, 'their eyes.'
+</BEROWNE>
+<MOTH>	<72%>
+That ever turn'd their eyes to mortal views!
+Out—
+</MOTH>
+<BOYET>	<72%>
+True; 'out,' indeed.
+</BOYET>
+<MOTH>	<72%>
+'Out of your favours, heavenly spirits, vouchsafe
+Not to behold'—
+</MOTH>
+<BEROWNE>	<72%>
+'Once to behold,' rogue.
+</BEROWNE>
+<MOTH>	<72%>
+'Once to behold with your sun-beamed eyes,
+—with your sun-beamed eyes'—
+</MOTH>
+<BOYET>	<72%>
+They will not answer to that epithet;
+You were best call it 'daughter-beamed eyes.'
+</BOYET>
+<MOTH>	<72%>
+They do not mark me, and that brings me out.
+</MOTH>
+<BEROWNE>	<72%>
+Is this your perfectness? be gone, you rogue!
+</BEROWNE>
+<STAGE DIR>
+<Exit Moth.>
+</STAGE DIR>
+<ROSALINE>	<72%>
+What would these strangers? know their minds, Boyet:
+If they do speak our language, 'tis our will
+That some plain man recount their purposes:
+Know what they would.
+</ROSALINE>
+<BOYET>	<72%>
+What would you with the princess?
+</BOYET>
+<BEROWNE>	<72%>
+Nothing but peace and gentle visitation.
+</BEROWNE>
+<ROSALINE>	<72%>
+What would they, say they?
+</ROSALINE>
+<BOYET>	<72%>
+Nothing but peace and gentle visitation.
+</BOYET>
+<ROSALINE>	<72%>
+Why, that they have; and bid them so be gone.
+</ROSALINE>
+<BOYET>	<73%>
+She says, you have it, and you may be gone.
+</BOYET>
+<KING>	<73%>
+Say to her, we have measur'd many miles,
+To tread a measure with her on this grass.
+</KING>
+<BOYET>	<73%>
+They say, that they have measur'd many a mile,
+To tread a measure with you on this grass.
+</BOYET>
+<ROSALINE>	<73%>
+It is not so. Ask them how many inches
+Is in one mile: if they have measur'd many,
+The measure then of one is easily told.
+</ROSALINE>
+<BOYET>	<73%>
+If to come hither you have measur'd miles,
+And many miles, the princess bids you tell
+How many inches do fill up one mile.
+</BOYET>
+<BEROWNE>	<73%>
+Tell her we measure them by weary steps.
+</BEROWNE>
+<BOYET>	<73%>
+She hears herself.
+</BOYET>
+<ROSALINE>	<73%>
+How many weary steps,
+Of many weary miles you have o'ergone,
+Are number'd in the travel of one mile?
+</ROSALINE>
+<BEROWNE>	<73%>
+We number nothing that we spend for you:
+Our duty is so rich, so infinite,
+That we may do it still without accompt.
+Vouchsafe to show the sunshine of your face,
+That we, like savages, may worship it.
+</BEROWNE>
+<ROSALINE>	<73%>
+My face is but a moon, and clouded too.
+</ROSALINE>
+<KING>	<73%>
+Blessed are clouds, to do as such clouds do!
+Vouchsafe, bright moon, and these thy stars, to shine,
+Those clouds remov'd, upon our wat'ry eyne.
+</KING>
+<ROSALINE>	<73%>
+O vain petitioner! beg a greater matter;
+Thou now request'st but moonshine in the water.
+</ROSALINE>
+<KING>	<73%>
+Then, in our measure but vouchsafe one change.
+Thou bid'st me beg; this begging is not strange.
+</KING>
+<ROSALINE>	<74%>
+Play, music, then! Nay, you must do it soon.
+<STAGE DIR>
+<Music plays.>
+</STAGE DIR>
+Not yet! no dance! thus change I like the moon.
+</ROSALINE>
+<KING>	<74%>
+Will you not dance? How come you thus estrang'd?
+</KING>
+<ROSALINE>	<74%>
+You took the moon at full, but now she's chang'd.
+</ROSALINE>
+<KING>	<74%>
+Yet still she is the moon, and I the man.
+The music plays; vouchsafe some motion to it.
+</KING>
+<ROSALINE>	<74%>
+Our ears vouchsafe it.
+</ROSALINE>
+<KING>	<74%>
+But your legs should do it.
+</KING>
+<ROSALINE>	<74%>
+Since you are strangers, and come here by chance,
+We'll not be nice: take hands: we will not dance.
+</ROSALINE>
+<KING>	<74%>
+Why take we hands then?
+</KING>
+<ROSALINE>	<74%>
+Only to part friends.
+Curtsy, sweet hearts; and so the measure ends.
+</ROSALINE>
+<KING>	<74%>
+More measure of this measure: be not nice.
+</KING>
+<ROSALINE>	<74%>
+We can afford no more at such a price.
+</ROSALINE>
+<KING>	<74%>
+Prize you yourselves? what buys your company?
+</KING>
+<ROSALINE>	<74%>
+Your absence only.
+</ROSALINE>
+<KING>	<74%>
+That can never be.
+</KING>
+<ROSALINE>	<74%>
+Then cannot we be bought: and so, adieu;
+Twice to your visor, and half once to you!
+</ROSALINE>
+<KING>	<74%>
+If you deny to dance, let's hold more chat.
+</KING>
+<ROSALINE>	<74%>
+In private, then.
+</ROSALINE>
+<KING>	<74%>
+I am best pleas'd with that.
+</KING>
+<STAGE DIR>
+<They converse apart.>
+</STAGE DIR>
+<BEROWNE>	<74%>
+White-handed mistress, one sweet word with thee.
+</BEROWNE>
+<PRINCESS>	<74%>
+Honey, and milk, and sugar; there are three.
+</PRINCESS>
+<BEROWNE>	<75%>
+Nay then, two treys, an if you grow so nice,
+Metheglin, wort, and malmsey: well run, dice!
+There's half a dozen sweets.
+</BEROWNE>
+<PRINCESS>	<75%>
+Seventh sweet, adieu:
+Since you can cog, I'll play no more with you.
+</PRINCESS>
+<BEROWNE>	<75%>
+One word in secret.
+</BEROWNE>
+<PRINCESS>	<75%>
+Let it not be sweet.
+</PRINCESS>
+<BEROWNE>	<75%>
+Thou griev'st my gall.
+</BEROWNE>
+<PRINCESS>	<75%>
+Gall! bitter.
+</PRINCESS>
+<BEROWNE>	<75%>
+Therefore meet.
+</BEROWNE>
+<STAGE DIR>
+<They converse apart.>
+</STAGE DIR>
+<DUMAINE>	<75%>
+Will you vouchsafe with me to change a word?
+</DUMAINE>
+<MARIA>	<75%>
+Name it.
+</MARIA>
+<DUMAINE>	<75%>
+Fair lady,—
+</DUMAINE>
+<MARIA>	<75%>
+Say you so? Fair lord,
+Take that for your fair lady.
+</MARIA>
+<DUMAINE>	<75%>
+Please it you,
+As much in private, and I'll bid adieu.
+</DUMAINE>
+<STAGE DIR>
+<They converse apart.>
+</STAGE DIR>
+<KATHARINE>	<75%>
+What! was your visor made without a tongue?
+</KATHARINE>
+<LONGAVILLE>	<75%>
+I know the reason, lady, why you ask.
+</LONGAVILLE>
+<KATHARINE>	<75%>
+O! for your reason; quickly, sir; I long.
+</KATHARINE>
+<LONGAVILLE>	<75%>
+You have a double tongue within your mask,
+And would afford my speechless visor half.
+</LONGAVILLE>
+<KATHARINE>	<75%>
+'Veal,' quoth the Dutchman. Is not 'veal' a calf?
+</KATHARINE>
+<LONGAVILLE>	<75%>
+A calf, fair lady!
+</LONGAVILLE>
+<KATHARINE>	<75%>
+No, a fair lord calf.
+</KATHARINE>
+<LONGAVILLE>	<75%>
+Let's part the word.
+</LONGAVILLE>
+<KATHARINE>	<75%>
+No, I'll not be your half:
+Take all, and wean it: it may prove an ox.
+</KATHARINE>
+<LONGAVILLE>	<75%>
+Look, how you butt yourself in these sharp mocks.
+Will you give horns, chaste lady? do not so.
+</LONGAVILLE>
+<KATHARINE>	<76%>
+Then die a calf, before your horns do grow.
+</KATHARINE>
+<LONGAVILLE>	<76%>
+One word in private with you, ere I die.
+</LONGAVILLE>
+<KATHARINE>	<76%>
+Bleat softly then; the butcher hears you cry.
+</KATHARINE>
+<STAGE DIR>
+<They converse apart.>
+</STAGE DIR>
+<BOYET>	<76%>
+The tongues of mocking wenches are as keen
+As is the razor's edge invisible,
+Cutting a smaller hair than may be seen,
+Above the sense of sense; so sensible
+Seemeth their conference; their conceits have wings
+Fleeter than arrows, bullets, wind, thought, swifter things.
+</BOYET>
+<ROSALINE>	<76%>
+Not one word more, my maids: break off, break off.
+</ROSALINE>
+<BEROWNE>	<76%>
+By heaven, all dry-beaten with pure scoff!
+</BEROWNE>
+<KING>	<76%>
+Farewell, mad wenches: you have simple wits.
+</KING>
+<PRINCESS>	<76%>
+Twenty adieus, my frozen Muscovits.
+<STAGE DIR>
+<Exeunt King, Lords, Music, and Attendants.>
+</STAGE DIR>
+Are these the breed of wits so wonder'd at?
+</PRINCESS>
+<BOYET>	<76%>
+Tapers they are, with your sweet breaths puff'd out.
+</BOYET>
+<ROSALINE>	<76%>
+Well-liking wits they have; gross, gross; fat, fat.
+</ROSALINE>
+<PRINCESS>	<76%>
+O poverty in wit, kingly-poor flout!
+Will they not, think you, hang themselves to-night?
+Or ever, but in visors, show their faces?
+This pert Berowne was out of countenance quite.
+</PRINCESS>
+<ROSALINE>	<76%>
+O! they were all in lamentable cases.
+The king was weeping-ripe for a good word.
+</ROSALINE>
+<PRINCESS>	<76%>
+Berowne did swear himself out of all suit.
+</PRINCESS>
+<MARIA>	<76%>
+Dumaine was at my service, and his sword:
+'No point,' quoth I: my servant straight was mute.
+</MARIA>
+<KATHARINE>	<77%>
+Lord Longaville said, I came o'er his heart;
+And trow you what he call'd me?
+</KATHARINE>
+<PRINCESS>	<77%>
+Qualm, perhaps.
+</PRINCESS>
+<KATHARINE>	<77%>
+Yes, in good faith.
+</KATHARINE>
+<PRINCESS>	<77%>
+Go, sickness as thou art!
+</PRINCESS>
+<ROSALINE>	<77%>
+Well, better wits have worn plain statutecaps.
+But will you hear? the king is my love sworn.
+</ROSALINE>
+<PRINCESS>	<77%>
+And quick Berowne hath plighted faith to me.
+</PRINCESS>
+<KATHARINE>	<77%>
+And Longaville was for my service born.
+</KATHARINE>
+<MARIA>	<77%>
+Dumaine is mine, as sure as bark on tree.
+</MARIA>
+<BOYET>	<77%>
+Madam, and pretty mistresses, give ear:
+Immediately they will again be here
+In their own shapes; for it can never be
+They will digest this harsh indignity.
+</BOYET>
+<PRINCESS>	<77%>
+Will they return?
+</PRINCESS>
+<BOYET>	<77%>
+They will, they will, God knows;
+And leap for joy, though they are lame with blows:
+Therefore change favours; and, when they repair,
+Blow like sweet roses in this summer air.
+</BOYET>
+<PRINCESS>	<77%>
+How blow? how blow? speak to be understood.
+</PRINCESS>
+<BOYET>	<77%>
+Fair ladies mask'd, are roses in their bud:
+Dismask'd, their damask sweet commixture shown,
+Are angels vailing clouds, or roses blown.
+</BOYET>
+<PRINCESS>	<77%>
+Avaunt perplexity! What shall we do
+If they return in their own shapes to woo?
+</PRINCESS>
+<ROSALINE>	<77%>
+Good madam, if by me you'll be advis'd,
+Let's mock them still, as well known as disguis'd.
+Let us complain to them what fools were here,
+Disguis'd like Muscovites, in shapeless gear;
+And wonder what they were, and to what end
+Their shallow shows and prologue vilely penn'd,
+And their rough carriage so ridiculous,
+Should be presented at our tent to us.
+</ROSALINE>
+<BOYET>	<78%>
+Ladies, withdraw: the gallants are at hand.
+</BOYET>
+<PRINCESS>	<78%>
+Whip to your tents, as roes run over land.
+<STAGE DIR>
+<Exeunt Princess, Ros., Kath., and Maria.>
+</STAGE DIR>
+</PRINCESS>
+<STAGE DIR>
+<Enter the King, Berowne, Longaville, and Dumaine in their proper habits.>
+</STAGE DIR>
+<KING>	<78%>
+Fair sir, God save you! Where is the princess?
+</KING>
+<BOYET>	<78%>
+Gone to her tent. Please it your majesty,
+Command me any service to her thither?
+</BOYET>
+<KING>	<78%>
+That she vouchsafe me audience for one word.
+</KING>
+<BOYET>	<78%>
+I will; and so will she, I know, my lord.
+</BOYET>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<BEROWNE>	<78%>
+This fellow pecks up wit, as pigeons pease,
+And utters it again when God doth please:
+He is wit's pedlar, and retails his wares
+At wakes and wassails, meetings, markets, fairs;
+And we that sell by gross, the Lord doth know,
+Have not the grace to grace it with such show.
+This gallant pins the wenches on his sleeve;
+Had he been Adam, he had tempted Eve:
+He can carve too, and lisp: why, this is he
+That kiss'd his hand away in courtesy;
+This is the ape of form, monsieur the nice,
+That, when he plays at tables, chides the dice
+In honourable terms: nay, he can sing
+A mean most meanly, and in ushering
+Mend him who can: the ladies call him, sweet;
+The stairs, as he treads on them, kiss his feet.
+This is the flower that smiles on every one,
+To show his teeth as white as whales-bone;
+And consciences, that will not die in debt,
+Pay him the due of honey-tongu'd Boyet.
+</BEROWNE>
+<KING>	<79%>
+A blister on his sweet tongue, with my heart,
+That put Armado's page out of his part!
+</KING>
+<STAGE DIR>
+<Re-enter the Princess, ushered by Boyet; Rosaline, Maria, Katharine, and Attendants.>
+</STAGE DIR>
+<BEROWNE>	<79%>
+See where it comes! Behaviour, what wert thou,
+Till this man show'd thee? and what art thou now?
+</BEROWNE>
+<KING>	<79%>
+All hail, sweet madam, and fair time of day!
+</KING>
+<PRINCESS>	<79%>
+'Fair,' in 'all hail,' is foul, as I conceive.
+</PRINCESS>
+<KING>	<79%>
+Construe my speeches better, if you may.
+</KING>
+<PRINCESS>	<79%>
+Then wish me better: I will give you leave.
+</PRINCESS>
+<KING>	<79%>
+We came to visit you, and purpose now
+To lead you to our court: vouchsafe it then.
+</KING>
+<PRINCESS>	<79%>
+This field shall hold me, and so hold your vow:
+Nor God, nor I, delights in perjur'd men.
+</PRINCESS>
+<KING>	<79%>
+Rebuke me not for that which you provoke:
+The virtue of your eye must break my oath.
+</KING>
+<PRINCESS>	<79%>
+You nick-name virtue; vice you should have spoke;
+For virtue's office never breaks men's troth.
+Now, by my maiden honour, yet as pure
+As the unsullied lily, I protest,
+A world of torments though I should endure,
+I would not yield to be your house's guest;
+So much I hate a breaking cause to be
+Of heavenly oaths, vow'd with integrity.
+</PRINCESS>
+<KING>	<80%>
+O! you have liv'd in desolation here,
+Unseen, unvisited, much to our shame.
+</KING>
+<PRINCESS>	<80%>
+Not so, my lord; it is not so, I swear;
+We have had pastime here and pleasant game.
+A mess of Russians left us but of late.
+</PRINCESS>
+<KING>	<80%>
+How, madam! Russians?
+</KING>
+<PRINCESS>	<80%>
+Ay, in truth, my lord;
+Trim gallants, full of courtship and of state.
+</PRINCESS>
+<ROSALINE>	<80%>
+Madam, speak true. It is not so, my lord:
+My lady, to the manner of the days,
+In courtesy gives undeserving praise.
+We four, indeed, confronted were with four
+In Russian habit: here they stay'd an hour,
+And talk'd apace; and in that hour, my lord,
+They did not bless us with one happy word.
+I dare not call them fools; but this I think,
+When they are thirsty, fools would fam have drink.
+</ROSALINE>
+<BEROWNE>	<80%>
+This jest is dry to me. Fair gentle sweet,
+Your wit makes wise things foolish: when we greet,
+With eyes best seeing, heaven's fiery eye,
+By light we lose light: your capacity
+Is of that nature that to your huge store
+Wise things seem foolish and rich things but poor.
+</BEROWNE>
+<ROSALINE>	<80%>
+This proves you wise and rich, for in my eye—
+</ROSALINE>
+<BEROWNE>	<81%>
+I am a fool, and full of poverty.
+</BEROWNE>
+<ROSALINE>	<81%>
+But that you take what doth to you belong,
+It were a fault to snatch words from my tongue.
+</ROSALINE>
+<BEROWNE>	<81%>
+O! I am yours, and all that I possess.
+</BEROWNE>
+<ROSALINE>	<81%>
+All the fool mine?
+</ROSALINE>
+<BEROWNE>	<81%>
+I cannot give you less.
+</BEROWNE>
+<ROSALINE>	<81%>
+Which of the visors was it that you wore?
+</ROSALINE>
+<BEROWNE>	<81%>
+Where? when? what visor? why demand you this?
+</BEROWNE>
+<ROSALINE>	<81%>
+There, then, that visor; that superfluous case
+That hid the worse, and show'd the better face.
+</ROSALINE>
+<KING>	<81%>
+We are descried: they'll mock us now downright.
+</KING>
+<DUMAINE>	<81%>
+Let us confess, and turn it to a jest.
+</DUMAINE>
+<PRINCESS>	<81%>
+Amaz'd, my lord? Why looks your highness sad?
+</PRINCESS>
+<ROSALINE>	<81%>
+Help! hold his brows! he'll swound.
+Why look you pale?
+Sea-sick, I think, coming from Muscovy.
+</ROSALINE>
+<BEROWNE>	<81%>
+Thus pour the stars down plagues for perjury.
+Can any face of brass hold longer out?—
+Here stand I, lady; dart thy skill at me;
+Bruise me with scorn, confound me with a flout;
+Thrust thy sharp wit quite through my ignorance;
+Cut me to pieces with thy keen conceit;
+And I will wish thee never more to dance,
+Nor never more in Russian habit wait.
+O! never will I trust to speeches penn'd,
+Nor to the motion of a school-boy's tongue,
+Nor never come in visor to my friend,
+Nor woo in rime, like a blind harper's song,
+Taffeta phrases, silken terms precise,
+Three-pil'd hyperboles, spruce affectation,
+Figures pedantical; these summer flies
+Have blown me full of maggot ostentation:
+I do forswear them; and I here protest,
+By this white glove,—how white the hand,
+God knows,—
+Henceforth my wooing mind shall be express'd
+In russet yeas and honest kersey noes:
+And, to begin, wench,—so God help me, la!—
+My love to thee is sound, sans crack or flaw.
+</BEROWNE>
+<ROSALINE>	<82%>
+Sans 'sans,' I pray you.
+</ROSALINE>
+<BEROWNE>	<82%>
+Yet I have a trick
+Of the old rage: bear with me, I am sick;
+I'll leave it by degrees. Soft! let us see:
+Write, 'Lord have mercy on us' on those three;
+They are infected, in their hearts it lies;
+They have the plague, and caught it of your eyes:
+These lords are visited; you are not free,
+For the Lord's tokens on you do I see.
+</BEROWNE>
+<PRINCESS>	<82%>
+No, they are free that gave these tokens to us.
+</PRINCESS>
+<BEROWNE>	<82%>
+Our states are forfeit: seek not to undo us.
+</BEROWNE>
+<ROSALINE>	<82%>
+It is not so. For how can this be true,
+That you stand forfeit, being those that sue?
+</ROSALINE>
+<BEROWNE>	<82%>
+Peace! for I will not have to do with you.
+</BEROWNE>
+<ROSALINE>	<82%>
+Nor shall not, if I do as I intend.
+</ROSALINE>
+<BEROWNE>	<82%>
+Speak for yourselves: my wit is at an end.
+</BEROWNE>
+<KING>	<82%>
+Teach us, sweet madam, for our rude transgression
+Some fair excuse.
+</KING>
+<PRINCESS>	<82%>
+The fairest is confession.
+Were you not here, but even now, disguis'd?
+</PRINCESS>
+<KING>	<83%>
+Madam, I was.
+</KING>
+<PRINCESS>	<83%>
+And were you well advis'd?
+</PRINCESS>
+<KING>	<83%>
+I was, fair madam.
+</KING>
+<PRINCESS>	<83%>
+When you then were here,
+What did you whisper in your lady's ear?
+</PRINCESS>
+<KING>	<83%>
+That more than all the world I did respect her.
+</KING>
+<PRINCESS>	<83%>
+When she shall challenge this, you will reject her.
+</PRINCESS>
+<KING>	<83%>
+Upon mine honour, no.
+</KING>
+<PRINCESS>	<83%>
+Peace! peace! forbear;
+Your oath once broke, you force not to forswear.
+</PRINCESS>
+<KING>	<83%>
+Despise me, when I break this oath of mine.
+</KING>
+<PRINCESS>	<83%>
+I will; and therefore keep it. Rosaline,
+What did the Russian whisper in your ear?
+</PRINCESS>
+<ROSALINE>	<83%>
+Madam, he swore that he did hold me dear
+As precious eyesight, and did value me
+Above this world; adding thereto, moreover,
+That he would wed me, or else die my lover.
+</ROSALINE>
+<PRINCESS>	<83%>
+God give thee joy of him! the noble lord
+Most honourably doth uphold his word.
+</PRINCESS>
+<KING>	<83%>
+What mean you, madam? by my life, my troth,
+I never swore this lady such an oath.
+</KING>
+<ROSALINE>	<83%>
+By heaven you did; and to confirm it plain,
+You gave me this: but take it, sir, again.
+</ROSALINE>
+<KING>	<83%>
+My faith and this the princess I did give:
+I knew her by this jewel on her sleeve.
+</KING>
+<PRINCESS>	<83%>
+Pardon me, sir, this jewel did she wear;
+And Lord Berowne, I thank him, is my dear.
+What, will you have me, or your pearl again?
+</PRINCESS>
+<BEROWNE>	<83%>
+Neither of either; I remit both twain.
+I see the trick on't: here was a consent,
+Knowing aforehand of our merriment,
+To dash it like a Christmas comedy.
+Some carry-tale, some please-man, some slight zany,
+Some mumble-news, some trencher-knight, some Dick,
+That smiles his cheek in years, and knows the trick
+To make my lady laugh when she's dispos'd,
+Told our intents before; which once disclos'd,
+The ladies did change favours, and then we,
+Following the signs, woo'd but the sign of she.
+Now, to our perjury to add more terror,
+We are again forsworn, in will and error.
+Much upon this it is: <STAGE DIR>
+<To Boyet.>
+</STAGE DIR> and might not you
+Forestall our sport, to make us thus untrue?
+Do not you know my lady's foot by the squire,
+And laugh upon the apple of her eye?
+And stand between her back, sir, and the fire,
+Holding a trencher, jesting merrily?
+You put our page out: go, you are allow'd;
+Die when you will, a smock shall be your shroud.
+You leer upon me, do you? there's an eye
+Wounds like a leaden sword.
+</BEROWNE>
+<BOYET>	<84%>
+Full merrily
+Hath this brave manage, this career, been run.
+</BOYET>
+<BEROWNE>	<84%>
+Lo! he is tilting straight. Peace! I have done.
+</BEROWNE>
+<STAGE DIR>
+<Enter Costard.>
+</STAGE DIR>
+Welcome, pure wit! thou partest a fair fray.
+<COSTARD>	<84%>
+O Lord, sir, they would know
+Whether the three Worthies shall come in or no.
+</COSTARD>
+<BEROWNE>	<84%>
+What, are there but three?
+</BEROWNE>
+<COSTARD>	<85%>
+No, sir; but it is vara fine,
+For every one pursents three.
+</COSTARD>
+<BEROWNE>	<85%>
+And three times thrice is nine.
+</BEROWNE>
+<COSTARD>	<85%>
+Not so, sir; under correction, sir, I hope, it is not so.
+You cannot beg us, sir, I can assure you, sir; we know what we know:
+I hope, sir, three times thrice, sir,—
+</COSTARD>
+<BEROWNE>	<85%>
+Is not nine.
+</BEROWNE>
+<COSTARD>	<85%>
+Under correction, sir, we know whereuntil it doth amount.
+</COSTARD>
+<BEROWNE>	<85%>
+By Jove, I always took three threes for nine.
+</BEROWNE>
+<COSTARD>	<85%>
+O Lord, sir! it were pity you should get your living by reckoning, sir.
+</COSTARD>
+<BEROWNE>	<85%>
+How much is it?
+</BEROWNE>
+<COSTARD>	<85%>
+O Lord, sir! the parties themselves, the actors, sir, will show whereuntil it doth amount: for mine own part, I am, as they say, but to parfect one man in one poor man, Pompion the Great, sir.
+</COSTARD>
+<BEROWNE>	<85%>
+Art thou one of the Worthies?
+</BEROWNE>
+<COSTARD>	<85%>
+It pleased them to think me worthy of Pompion the Great: for mine own part, I know not the degree of the Worthy, but I am to stand for him.
+</COSTARD>
+<BEROWNE>	<85%>
+Go, bid them prepare.
+</BEROWNE>
+<COSTARD>	<85%>
+We will turn it finely off, sir; we will take some care.
+</COSTARD>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<KING>	<85%>
+Berowne, they will shame us; let them not approach.
+</KING>
+<BEROWNE>	<85%>
+We are shame-proof, my lord; and 'tis some policy
+To have one show worse than the king's and his company.
+</BEROWNE>
+<KING>	<85%>
+I say they shall not come.
+</KING>
+<PRINCESS>	<86%>
+Nay, my good lord, let me o'errule you now.
+That sport best pleases that doth least know how;
+Where zeal strives to content, and the contents
+Die in the zeal of those which it presents;
+Their form confounded makes most form in mirth,
+When great things labouring perish in their birth.
+</PRINCESS>
+<BEROWNE>	<86%>
+A right description of our sport, my lord.
+</BEROWNE>
+<STAGE DIR>
+<Enter Armado.>
+</STAGE DIR>
+<ARMADO>	<86%>
+Anointed, I implore so much expense of thy royal sweet breath as will utter a brace of words.
+</ARMADO>
+<STAGE DIR>
+<Armado converses with the King, and delivers a paper to him.>
+</STAGE DIR>
+<PRINCESS>	<86%>
+Doth this man serve God?
+</PRINCESS>
+<BEROWNE>	<86%>
+Why ask you?
+</BEROWNE>
+<PRINCESS>	<86%>
+He speaks not like a man of God's making,
+</PRINCESS>
+<ARMADO>	<86%>
+That's all one, my fair, sweet, honey monarch; for, I protest, the schoolmaster is exceeding fantastical; too-too vain; too-too vain: but we will put it, as they say, to fortuna de la guerra. I wish you the peace of mind, most royal couplement!
+</ARMADO>
+<STAGE DIR>
+<Exit.>
+</STAGE DIR>
+<KING>	<86%>
+Here is like to be a good presence of Worthies. He presents Hector of Troy; the swain, Pompey the Great; the parish curate, Alexander; Armado's page, Hercules; the pedant, Judas Maccabæus:
+And if these four Worthies in their first show thrive,
+These four will change habits and present the other five.
+</KING>
+<BEROWNE>	<86%>
+There is five in the first show.
+</BEROWNE>
+<KING>	<87%>
+You are deceived, 'tis not so.
+</KING>
+<BEROWNE>	<87%>
+The pedant, the braggart, the hedgepriest, the fool, and the boy:—
+Abate throw at novum, and the whole world again
+Cannot pick out five such, take each one in his vein.
+</BEROWNE>
+<KING>	<87%>
+The ship is under sail, and here she comes amain.
+</KING>
+<STAGE DIR>
+<Enter Costard armed, for Pompey.>
+</STAGE DIR>
+<COSTARD>	<87%>
+I Pompey am,—
+</COSTARD>
+<BOYET>	<87%>
+You lie, you are not he.
+</BOYET>
+<COSTARD>	<87%>
+I Pompey am,—
+</COSTARD>
+<BOYET>	<87%>
+With libbard's head on knee.
+</BOYET>
+<BEROWNE>	<87%>
+Well said, old mocker: I must needs be friends with thee.
+</BEROWNE>
+<COSTARD>	<87%>
+I Pompey am, Pompey surnam'd the Big,—
+</COSTARD>
+<DUMAINE>	<87%>
+'The Great.'
+</DUMAINE>
+<COSTARD>	<87%>
+It is 'Great,' sir; Pompey surnam'd the Great;
+That oft in field, with targe and shield, did make my foe to sweat:
+And travelling along this coast, I here am come by chance,
+And lay my arms before the legs of this sweet lass of France.
+If your ladyship would say, 'Thanks, Pompey,' I had done.
+</COSTARD>
+<PRINCESS>	<87%>
+Great thanks, great Pompey.
+</PRINCESS>
+<COSTARD>	<87%>
+'Tis not so much worth; but I hope I was perfect. I made a little fault in 'Great.'
+</COSTARD>
+<BEROWNE>	<87%>
+My hat to a halfpenny, Pompey proves the best Worthy.
+</BEROWNE>
+<STAGE DIR>
+<Enter Sir Nathaniel armed, for Alexander.>
+</STAGE DIR>
+<NATHANIEL>	<87%>
+When in the world I liv'd, I was the world's commander;
+By east, west, north, and south, I spread my conquering might:
+My scutcheon plain declares that I am Alisander,—
+</NATHANIEL>
+<BOYET>	<88%>
+Your nose says, no, you are not; for it stands too right.
+</BOYET>
+<BEROWNE>	<88%>
+Your nose smells 'no,' in this, most tender-smelling knight.
+</BEROWNE>
+<PRINCESS>	<88%>
+The conqueror is dismay'd. Proceed, good Alexander.
+</PRINCESS>
+<NATHANIEL>	<88%>
+When in the world I liv'd, I was the world's commander;—
+</NATHANIEL>
+<BOYET>	<88%>
+Most true; 'tis right: you were so, Alisander.
+</BOYET>
+<BEROWNE>	<88%>
+Pompey the Great,—
+</BEROWNE>
+<COSTARD>	<88%>
+Your servant, and Costard.
+</COSTARD>
+<BEROWNE>	<88%>
+Take away the conqueror, take away Alisander.
+</BEROWNE>
+<COSTARD>	<88%>
+<STAGE DIR>
+<To Nathaniel.] O! sir, you have overthrown Alisander...>
+<... the conqueror! You will be scraped out of the...>
+<... painted cloth for this: your lion, that holds...>
+<... his poll-axe sitting on a close-stool, will be...>
+<... given to Ajax: he will be the ninth Worthy. A...>
+<... conqueror, and afeard to speak! run away for shame, Alisander! [Nathaniel retires.>
+</STAGE DIR> There, an't shall please you: a foolish mild man; an honest man, look you, and soon dashed! He is a marvellous good neighbour, faith, and a very good bowler; but, for Alisander,—alas, you see how 'tis,—a little o'erparted. But there are Worthies a-coming will speak their mind in some other sort.
+</COSTARD>
+<PRINCESS>	<88%>
+Stand aside, good Pompey.
+</PRINCESS>
+<STAGE DIR>
+<Enter Holofernes armed, for Judas; and Moth armed, for Hercules.>
+</STAGE DIR>
+<HOLOFERNES>	<89%>
+Great Hercules is presented by this imp,
+Whose club kill'd Cerberus, that three-headed canis;
+And, when he was a babe, a child, a shrimp,
+Thus did he strangle serpents in his manus.
+Quoniam, he seemeth in minority,
+Ergo, I come with this apology.
+Keep some state in thy exit, and vanish.—
+<STAGE DIR>
+<Moth retires.>
+</STAGE DIR>
+Judas I am.—
+</HOLOFERNES>
+<DUMAINE>	<89%>
+A Judas!
+</DUMAINE>
+<HOLOFERNES>	<89%>
+Not Iscariot, sir.
+Judas I am, ycleped Maccabæus.
+</HOLOFERNES>
+<DUMAINE>	<89%>
+Judas Maccabæus clipt is plain Judas.
+</DUMAINE>
+<BEROWNE>	<89%>
+A kissing traitor. How art thou prov'd Judas?
+</BEROWNE>
+<HOLOFERNES>	<89%>
+Judas I am.—
+</HOLOFERNES>
+<DUMAINE>	<89%>
+The more shame for you, Judas.
+</DUMAINE>
+<HOLOFERNES>	<89%>
+What mean you, sir?
+</HOLOFERNES>
+<BOYET>	<89%>
+To make Judas hang himself.
+</BOYET>
+<HOLOFERNES>	<89%>
+Begin, sir; you are my elder.
+</HOLOFERNES>
+<BEROWNE>	<89%>
+Well follow'd: Judas was hanged on an elder.
+</BEROWNE>
+<HOLOFERNES>	<89%>
+I will not be put out of countenance.
+</HOLOFERNES>
+<BEROWNE>	<89%>
+Because thou hast no face.
+</BEROWNE>
+<HOLOFERNES>	<89%>
+What is this?
+</HOLOFERNES>
+<BOYET>	<89%>
+A cittern-head.
+</BOYET>
+<DUMAINE>	<89%>
+The head of a bodkin.
+</DUMAINE>
+<BEROWNE>	<89%>
+A death's face in a ring.
+</BEROWNE>
+<LONGAVILLE>	<89%>
+The face of an old Roman coin, scarce seen.
+</LONGAVILLE>
+<BOYET>	<89%>
+The pommel of Cæsar's falchion.
+</BOYET>
+<DUMAINE>	<89%>
+The carved-bone face on a flask.
+</DUMAINE>
+<BEROWNE>	<89%>
+Saint George's half-cheek in a brooch.
+</BEROWNE>
+<DUMAINE>	<89%>
+Ay, and in a brooch of lead.
+</DUMAINE>
+<BEROWNE>	<89%>
+Ay, and worn in the cap of a toothdrawer.
+And now forward; for we have put thee in countenance.
+</BEROWNE>
+<HOLOFERNES>	<90%>
+You have put me out of countenance.
+</HOLOFERNES>
+<BEROWNE>	<90%>
+False: we have given thee faces.
+</BEROWNE>
+<HOLOFERNES>	<90%>
+But you have outfaced them all.
+</HOLOFERNES>
+<BEROWNE>	<90%>
+An thou wert a lion, we would do so.
+</BEROWNE>
+<BOYET>	<90%>
+Therefore, as he is an ass, let him go.
+And so adieu, sweet Jude! nay, why dost thou stay?
+</BOYET>
+<DUMAINE>	<90%>
+For the latter end of his name.
+</DUMAINE>
+<BEROWNE>	<90%>
+For the ass to the Jude? give it him:—Jud-as, away!
+</BEROWNE>
+<HOLOFERNES>	<90%>
+This is not generous, not gentle, not humble.
+</HOLOFERNES>
+<BOYET>	<90%>
+A light for Monsieur Judas! it grows dark, he may stumble.
+</BOYET>
+<PRINCESS>	<90%>
+Alas! poor Maccabæus, how hath he been baited.
+</PRINCESS>
+<STAGE DIR>
+<Enter Armado armed, for Hector.>
+</STAGE DIR>
+<BEROWNE>	<90%>
+Hide thy head, Achilles: here comes Hector in arms.
+</BEROWNE>
+<DUMAINE>	<90%>
+Though my mocks come home by me, I will now be merry.
+</DUMAINE>
+<KING>	<90%>
+Hector was but a Troyan in respect of this.
+</KING>
+<BOYET>	<90%>
+But is this Hector?
+</BOYET>
+<KING>	<90%>
+I think Hector was not so clean-timbered.
+</KING>
+<LONGAVILLE>	<90%>
+His calf is too big for Hector.
+</LONGAVILLE>
+<DUMAINE>	<90%>
+More calf, certain.
+</DUMAINE>
+<BOYET>	<90%>
+No; he is best indued in the small.
+</BOYET>
+<BEROWNE>	<90%>
+This cannot be Hector.
+</BEROWNE>
+<DUMAINE>	<90%>
+He's a god or a painter; for he makes faces.
+</DUMAINE>
+<ARMADO>	<90%>
+The armipotent Mars, of lances the almighty,
+Gave Hector a gift,—
+</ARMADO>
+<DUMAINE>	<90%>
+A gilt nutmeg.
+</DUMAINE>
+<BEROWNE>	<90%>
+A lemon.
+</BEROWNE>
+<LONGAVILLE>	<90%>
+Stuck with cloves.
+</LONGAVILLE>
+<DUMAINE>	<91%>
+No, cloven.
+</DUMAINE>
+<ARMADO>	<91%>
+Peace!
+The armipotent Mars, of lances the almighty, Gave Hector a gift, the heir of Ilion;
+A man so breath'd, that certain he would fight ye
+From morn till night, out of his pavilion.
+I am that flower,—
+</ARMADO>
+<DUMAINE>	<91%>
+That mint.
+</DUMAINE>
+<LONGAVILLE>	<91%>
+That columbine.
+</LONGAVILLE>
+<ARMADO>	<91%>
+Sweet Lord Longaville, rein thy tongue.
+</ARMADO>
+<LONGAVILLE>	<91%>
+I must rather give it the rein, for it runs against Hector.
+</LONGAVILLE>
+<DUMAINE>	<91%>
+Ay, and Hector's a greyhound.
+</DUMAINE>
+<ARMADO>	<91%>
+The sweet war-man is dead and rotten; sweet chucks, beat not the bones of the buried; when he breathed, he was a man. But I will forward with my device. <STAGE DIR>
+<To the Princess.>
+</STAGE DIR> Sweet royalty, bestow on me the sense of hearing.
+</ARMADO>
+<PRINCESS>	<91%>
+Speak, brave Hector; we are much delighted.
+</PRINCESS>
+<ARMADO>	<91%>
+I do adore thy sweet Grace's slipper.
+</ARMADO>
+<BOYET>	<91%>
+<STAGE DIR>
+<Aside to Dumaine.>
+</STAGE DIR> Loves her by the foot.
+</BOYET>
+<DUMAINE>	<91%>
+<STAGE DIR>
+<Aside to Boyet.>
+</STAGE DIR> He may not by the yard.
+</DUMAINE>
+<ARMADO>	<91%>
+This Hector far surmounted Hannibal,—
+</ARMADO>
+<COSTARD>	<91%>
+The party is gone; fellow Hector, she is gone; she is two months on her way.
+</COSTARD>
+<ARMADO>	<91%>
+What meanest thou?
+</ARMADO>
+<COSTARD>	<91%>
+Faith, unless you play the honest Troyan, the poor wench is cast away: she's quick; the child brags in her belly already: 'tis yours.
+</COSTARD>
+<ARMADO>	<91%>
+Dost thou infamonize me among potentates? Thou shalt die.
+</ARMADO>
+<COSTARD>	<92%>
+Then shall Hector be whipped for Jaquenetta that is quick by him, and hanged for Pompey that is dead by him.
+</COSTARD>
+<DUMAINE>	<92%>
+Most rare Pompey!
+</DUMAINE>
+<BOYET>	<92%>
+Renowned Pompey!
+</BOYET>
+<BEROWNE>	<92%>
+Greater than great, great, great, great Pompey! Pompey the Huge!
+</BEROWNE>
+<DUMAINE>	<92%>
+Hector trembles.
+</DUMAINE>
+<BEROWNE>	<92%>
+Pompey is moved. More Ates, more Ates! stir them on! stir them on!
+</BEROWNE>
+<DUMAINE>	<92%>
+Hector will challenge him.
+</DUMAINE>
+<BEROWNE>	<92%>
+Ay, if a' have no more man's blood in's belly than will sup a flea.
+</BEROWNE>
+<ARMADO>	<92%>
+By the north pole, I do challenge thee.
+</ARMADO>
+<COSTARD>	<92%>
+I will not fight with a pole, like a northern man: I'll slash; I'll do it by the sword. I bepray you, let me borrow my arms again.
+</COSTARD>
+<DUMAINE>	<92%>
+Room for the incensed Worthies!
+</DUMAINE>
+<COSTARD>	<92%>
+I'll do it in my shirt.
+</COSTARD>
+<DUMAINE>	<92%>
+Most resolute Pompey!
+</DUMAINE>
+<MOTH>	<92%>
+Master, let me take you a button-hole lower. Do you not see Pompey is uncasing for the combat? What mean you? you will lose your reputation.
+</MOTH>
+<ARMADO>	<92%>
+Gentlemen and soldiers, pardon me; I will not combat in my shirt.
+</ARMADO>
+<DUMAINE>	<92%>
+You may not deny it; Pompey hath made the challenge.
+</DUMAINE>
+<ARMADO>	<92%>
+Sweet bloods, I both may and will.
+</ARMADO>
+<BEROWNE>	<92%>
+What reason have you for't?
+</BEROWNE>
+<ARMADO>	<92%>
+The naked truth of it is, I have no shirt. I go woolward for penance.
+</ARMADO>
+<BOYET>	<92%>
+True, and it was enjoined him in Rome for want of linen; since when, I'll be sworn, he wore none but a dish-clout of Jaquenetta's, and that a' wears next his heart for a favour.
+</BOYET>
+<STAGE DIR>
+<Enter Monsieur Marcade, a Messenger.>
+</STAGE DIR>
+<MARIA>	<93%>
+God save you, madam!
+</MARIA>
+<PRINCESS>	<93%>
+Welcome, Marcade;
+But that thou interrupt'st our merriment.
+</PRINCESS>
+<MARIA>	<93%>
+I am sorry, madam; for the news I bring
+Is heavy in my tongue. The king your father—
+</MARIA>
+<PRINCESS>	<93%>
+Dead, for my life!
+</PRINCESS>
+<MARIA>	<93%>
+Even so: my tale is told.
+</MARIA>
+<BEROWNE>	<93%>
+Worthies, away! The scene begins to cloud.
+</BEROWNE>
+<ARMADO>	<93%>
+For my own part, I breathe free breath. I have seen the day of wrong through the little hole of discretion, and I will right myself like a soldier.
+</ARMADO>
+<STAGE DIR>
+<Exeunt Worthies.>
+</STAGE DIR>
+<KING>	<93%>
+How fares your majesty?
+</KING>
+<PRINCESS>	<93%>
+Boyet, prepare: I will away to-night.
+</PRINCESS>
+<KING>	<93%>
+Madam, not so: I do beseech you, stay.
+</KING>
+<PRINCESS>	<93%>
+Prepare, I say. I thank you, gracious lords,
+For all your fair endeavours; and entreat,
+Out of a new-sad soul, that you vouchsafe
+In your rich wisdom to excuse or hide
+The liberal opposition of our spirits,
+If over-boldly we have borne ourselves
+In the converse of breath; your gentleness
+Was guilty of it. Farewell, worthy lord!
+A heavy heart bears not a nimble tongue,
+Excuse me so, coming so short of thanks
+For my great suit so easily obtain'd.
+</PRINCESS>
+<KING>	<94%>
+The extreme part of time extremely forms
+All causes to the purpose of his speed,
+And often, at his very loose, decides
+That which long process could not arbitrate:
+And though the mourning brow of progeny
+Forbid the smiling courtesy of love
+The holy suit which fain it would convince;
+Yet, since love's argument was first on foot,
+Let not the cloud of sorrow justle it
+From what it purpos'd; since, to wail friends lost
+Is not by much so wholesome-profitable
+As to rejoice at friends but newly found.
+</KING>
+<PRINCESS>	<94%>
+I understand you not: my griefs are double.
+</PRINCESS>
+<BEROWNE>	<94%>
+Honest plain words best pierce the ear of grief;
+And by these badges understand the king.
+For your fair sakes have we neglected time,
+Play'd foul play with our oaths. Your beauty, ladies,
+Hath much deform'd us, fashioning our humours
+Even to the opposed end of our intents;
+And what in us hath seem'd ridiculous,—
+As love is full of unbefitting strains;
+All wanton as a child, skipping and vain;
+Form'd by the eye, and, therefore, like the eye,
+Full of stray shapes, of habits and of forms,
+Varying in subjects, as the eye doth roll
+To every varied object in his glance:
+Which parti-coated presence of loose love
+Put on by us, if, in your heavenly eyes,
+Have misbecome our oaths and gravities,
+Those heavenly eyes, that look into these faults,
+Suggested us to make. Therefore, ladies,
+Our love being yours, the error that love makes
+Is likewise yours: we to ourselves prove false,
+By being once false for ever to be true
+To those that make us both,—fair ladies, you:
+And even that falsehood, in itself a sin,
+Thus purifies itself and turns to grace.
+</BEROWNE>
+<PRINCESS>	<95%>
+We have receiv'd your letters full of love;
+Your favours, the embassadors of love;
+And, in our maiden council, rated them
+At courtship, pleasant jest, and courtesy,
+As bombast and as lining to the time.
+But more devout than this in our respects
+Have we not been; and therefore met your loves
+In their own fashion, like a merriment.
+</PRINCESS>
+<DUMAINE>	<95%>
+Our letters, madam, show'd much more than jest.
+</DUMAINE>
+<LONGAVILLE>	<95%>
+So did our looks.
+</LONGAVILLE>
+<ROSALINE>	<95%>
+We did not quote them so.
+</ROSALINE>
+<KING>	<95%>
+Now, at the latest minute of the hour,
+Grant us your loves.
+</KING>
+<PRINCESS>	<95%>
+A time, methinks, too short
+To make a world-without-end bargain in.
+No, no, my lord, your Grace is perjur'd much,
+Full of dear guiltiness; and therefore this:
+If for my love,—as there is no such cause,—
+You will do aught, this shall you do for me:
+Your oath I will not trust; but go with speed
+To some forlorn and naked hermitage,
+Remote from all the pleasures of the world;
+There stay, until the twelve celestial signs
+Have brought about their annual reckoning.
+If this austere insociable life
+Change not your offer made in heat of blood;
+If frosts and fasts, hard lodging and thin weeds,
+Nip not the gaudy blossoms of your love,
+But that it bear this trial and last love;
+Then, at the expiration of the year,
+Come challenge me, challenge me by these deserts,
+And, by this virgin palm now kissing thine,
+I will be thine; and, till that instant, shut
+My woful self up in a mourning house,
+Raining the tears of lamentation
+For the remembrance of my father's death.
+If this thou do deny, let our hands part;
+Neither intitled in the other's heart.
+</PRINCESS>
+<KING>	<96%>
+If this, or more than this, I would deny,
+To flatter up these powers of mine with rest,
+The sudden hand of death close up mine eye!
+Hence ever then my heart is in thy breast.
+</KING>
+<BEROWNE>	<96%>
+And what to me, my love? and what to me?
+</BEROWNE>
+<ROSALINE>	<96%>
+You must be purged too, your sins are rack'd:
+You are attaint with faults and perjury;
+Therefore, if you my favour mean to get,
+A twelvemonth shall you spend, and never rest,
+But seek the weary beds of people sick.
+</ROSALINE>
+<DUMAINE>	<96%>
+But what to me, my love? but what to me?
+</DUMAINE>
+<KATHARINE>	<96%>
+A wife! A beard, fair health, and honesty;
+With three-fold love I wish you all these three.
+</KATHARINE>
+<DUMAINE>	<96%>
+O! shall I say, I thank you, gentle wife?
+</DUMAINE>
+<KATHARINE>	<96%>
+Not so, my lord. A twelvemonth and a day
+I'll mark no words that smooth-fac'd wooers say:
+Come when the king doth to my lady come;
+Then, if I have much love, I'll give you some.
+</KATHARINE>
+<DUMAINE>	<97%>
+I'll serve thee true and faithfully till then.
+</DUMAINE>
+<KATHARINE>	<97%>
+Yet swear not, lest you be forsworn again.
+</KATHARINE>
+<LONGAVILLE>	<97%>
+What says Maria?
+</LONGAVILLE>
+<MARIA>	<97%>
+At the twelvemonth's end
+I'll change my black gown for a faithful friend.
+</MARIA>
+<LONGAVILLE>	<97%>
+I'll stay with patience; but the time is long.
+</LONGAVILLE>
+<MARIA>	<97%>
+The liker you; few taller are so young.
+</MARIA>
+<BEROWNE>	<97%>
+Studies my lady? mistress, look on me.
+Behold the window of my heart, mine eye,
+What humble suit attends thy answer there;
+Impose some service on me for thy love.
+</BEROWNE>
+<ROSALINE>	<97%>
+Oft have I heard of you, my Lord Berowne,
+Before I saw you, and the world's large tongue
+Proclaims you for a man replete with mocks;
+Full of comparisons and wounding flouts,
+Which you on all estates will execute
+That lie within the mercy of your wit:
+To weed this wormwood from your fruitful brain,
+And therewithal to win me, if you please,—
+Without the which I am not to be won,—
+You shall this twelvemonth term, from day to day,
+Visit the speechless sick, and still converse
+With groaning wretches; and your task shall be,
+With all the fierce endeavour of your wit
+To enforce the pained impotent to smile.
+</ROSALINE>
+<BEROWNE>	<97%>
+To move wild laughter in the throat of death?
+It cannot be; it is impossible:
+Mirth cannot move a soul in agony.
+</BEROWNE>
+<ROSALINE>	<98%>
+Why, that's the way to choke a gibing spirit,
+Whose influence is begot of that loose grace
+Which shallow laughing hearers give to fools.
+A jest's prosperity lics in the ear
+Of him that hears it, never in the tongue
+Of him that makes it: then, if sickly ears,
+Deaf'd with the clamours of their own dear groans,
+Will hear your idle scorns, continue them,
+And I will have you and that fault withal;
+But if they will not, throw away that spirit,
+And I shall find you empty of that fault,
+Right joyful of your reformation.
+</ROSALINE>
+<BEROWNE>	<98%>
+A twelvemonth! well, befall what will befall,
+I'll jest a twelvemonth in a hospital.
+</BEROWNE>
+<PRINCESS>	<98%>
+<STAGE DIR>
+<To the King.>
+</STAGE DIR> Ay, sweet my lord; and so I take my leave.
+</PRINCESS>
+<KING>	<98%>
+No, madam; we will bring you on your way.
+</KING>
+<BEROWNE>	<98%>
+Our wooing doth not end like an old play;
+Jack hath not Jill; these ladies' courtesy
+Might well have made our sport a comedy.
+</BEROWNE>
+<KING>	<98%>
+Come, sir, it wants a twelvemonth and a day,
+And then 'twill end.
+</KING>
+<BEROWNE>	<98%>
+That's too long for a play.
+</BEROWNE>
+<STAGE DIR>
+<Enter Armado.>
+</STAGE DIR>
+<ARMADO>	<98%>
+Sweet majesty, vouchsafe me,—
+</ARMADO>
+<PRINCESS>	<98%>
+Was not that Hector?
+</PRINCESS>
+<DUMAINE>	<98%>
+The worthy knight of Troy.
+</DUMAINE>
+<ARMADO>	<98%>
+I will kiss thy royal finger, and take leave. I am a votary; I have vowed to Jaquenetta to hold the plough for her sweet love three years. But, most esteemed greatness, will you hear the dialogue that the two learned men have compiled in praise of the owl and the cuckoo? it should have followed in the end of our show.
+</ARMADO>
+<KING>	<99%>
+Call them forth quickly; we will do so.
+</KING>
+<ARMADO>	<99%>
+Holla! approach.
+<STAGE DIR>
+<Re-enter Holofernes, Nathaniel, Moth, Costard, and others.>
+</STAGE DIR>
+This side is Hiems, Winter; this Ver, the Spring; the one maintained by the owl, the other by the cuckoo. Ver, begin.
+SPRING.
+I
+When daisies pied and violets blue
+And lady-smocks all silver-white
+And cuckoo-buds of yellow hue
+Do paint the meadows with delight,
+The cuckoo then, on every tree,
+Mocks married men; for thus sings he,
+Cuckoo,
+Cuckoo, cuckoo: O, word of fear,
+Unpleasing to a married ear!
+II.
+When shepherds pipe on oaten straws,
+And merry larks are ploughmen's clocks,
+When turtles tread, and rooks, and daws,
+And maidens bleach their summer smocks,
+The cuckoo then, on every tree,
+Mocks married men; for thus sings he,
+Cuckoo;
+Cuckoo, cuckoo: O, word of fear,
+Unpleasing to a married ear!
+WINTER.
+III.
+When icicles hang by the wall,
+And Dick the shepherd blows his nail,
+And Tom bears logs into the hall,
+And milk comes frozen home in pail,
+When blood is nipp'd, and ways be foul,
+Then nightly sings the staring owl,
+Tu-who;
+Tu-whit, tu-who—a merry note,
+While greasy Joan doth keel the pot.
+IV
+When all aloud the wind doth blow,
+And coughing drowns the parson's saw,
+And birds sit brooding in the snow,
+And Marian's nose looks red and raw,
+When roasted crabs hiss in the bowl,
+Then nightly sings the staring owl,
+Tu-who;
+Tu-whit, tu-who—a merry note,
+While greasy Joan doth keel the pot.
+</ARMADO>
+<ARMADO>	<100%>
+The words of Mercury are harsh after the songs of Apollo. You, that way: we, this way.
+</ARMADO>
+<STAGE DIR>
+<Exeunt.>
+</STAGE DIR>
+</SCENE 2>
+</ACT 5>
+

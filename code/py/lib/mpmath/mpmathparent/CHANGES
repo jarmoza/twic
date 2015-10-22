@@ -1,0 +1,880 @@
+--0.18--
+Released December 31, 2013
+
+Linear algebra:
+* added qr() for matrix QR factorization (contributed by Ken Allen)
+* added functions eigsy(), eighe(), eig() to compute matrix
+  eigenvalues (contributed by Timo Hartmann)
+* added functions svd(), svd_r(), svd_c() for singular value
+  decomposition of matrices (contributed by Timo Hartmann)
+* added calculation of Gaussian quadrature rules for various weight
+  functions (contributed by Timo Hartmann)
+* improved precision selection in exp_pade() (contributed by
+  Mario Pernici)
+
+Special functions:
+* fixed ellippi() to return an inf instead of raising an exception
+* fixed a crash in zeta() with huge arguments
+* added functions for computing Stirling numbers
+  (stirling1(), stirling2())
+* improved the computation of zeros of zeta at high precision
+  (contributed by Juan Arias de Reyna)
+* fixed zeta(-x) raising an exception for tiny x
+* recognize when lerchphi() can call zeta() or polylog(),
+  handling those cases faster
+
+Compatibility:
+* fixed gmpy2 compatibility issues (contributed by Case Van Horsen)
+* better solutions for python 2/3 compatibility,
+  using Benjamin Peterson's six.py
+* fixes to allow mpmath to run in non-sage mode when sage is available
+* support abstract base classes (contributed by Stefan Krastanov)
+* use new-style classes to improve pypy performance
+
+Other:
+* added Levin, Sidi-S and Cohen/Villegas/Zagier series
+  transformations (contributed by Timo Hartmann)
+* added isfinite() utility function
+* fixed a problem with bisection root-finding
+* fixed several documentation errors
+* corrected number of coefficients returned by diffs() with
+  method='quad'
+* fixed repr(constant) being slow at high precision
+* made intervals hashable
+
+--0.17--
+Released February 1, 2011
+
+Compatibility:
+
+* Python 3 is now supported
+* Dropped Python 2.4 compatibility
+* Fixed Python 2.5 compatibility in matrix slicing code
+* Implemented Python 3.2-compatible hashing, making mpmath numbers
+  hash compatible with extremely large integers and with fractions
+  in Python versions >= 3.2 (contributed by Case Vanhorsen)
+
+Special functions:
+
+* Implemented the von Mangoldt function (mangoldt())
+* Implemented the "secondary zeta function" (secondzeta()) (contributed
+  by Juan Arias de Reyna).
+* Implemented zeta zero counting (nzeros()) and the Backlund S function
+  (backlunds()) (contributed by Juan Arias de Reyna)
+* Implemented derivatives of order 1-4 for siegelz() and siegeltheta()
+  (contributed by Juan Arias de Reyna)
+* Improved Euler-Maclaurin summation for zeta() to give more accurate
+  results in the right half-plane when the reflection formula
+  cannot be used
+* Implemented the Lerch transcendent (lerchphi())
+* Fixed polygamma function to return a complex NaN at complex
+  infinity or NaN, instead of raising an unrelated exception.
+
+
+--0.16--
+Released September 24, 2010
+
+Backends and distribution:
+
+* Added Sage hooks for Cython versions of exp, ln, cos, sin,
+  hypergeometric series, and some related functions
+* Fixed imports for gmpy2 compatibility (contributed by Case Van Horsen)
+* Removed documentation from main mpmath package to save space (a separate
+  tar.gz file is now provided for the documentation sources)
+* Fixed matplotlib version detection
+* Converted files to Unix line endings
+
+Special functions:
+
+* Started adding plots of special functions to the documentation
+* Added Anger and Weber functions (angerj(), webere())
+* Added Lommel functions (lommels1(), lommels2())
+* Added interval versions of gamma(), loggamma(), rgamma() and
+  factorial()
+* Rewritten Airy functions to improve speed and accuracy
+* Support for arbitrary-order derivatives of airyai(), airybi()
+* Added Airy function zeros (airyaizero(), airybizero())
+* Added Scorer functions (scorergi(), scorerhi())
+* Added computation of Bessel function zeros and Bessel function
+  derivative zeros (besseljzero(), besselyzero())
+* Fixed besselj(mpc(n), z)
+* Rewritten lambertw() to fix various subtle bugs and robustly handle
+  numerical difficulties near branch cuts and branch points.
+* Fixed fp.lambertw() to behave the same on branch cuts on systems with
+  and without signed-zero floats
+* Added Carlson symmetric incomplete elliptic integrals
+  (elliprf(), elliprc(), elliprj(), elliprd(), elliprg())
+* Added Legendre incomplete elliptic integrals (ellipf(), ellippi(),
+  ellipe() with two arguments)
+* Implemented Parabolic cylinder functions (pcfd(), pcfu(), pcfv(),
+  pcfw())
+* Implemented Euler-Maclaurin summation for hypergeometric functions
+  of order (p,p-1) to support evaluation with z close to 1 in remaining cases
+* Fixed a bug in hypergeometric series summation, causing occasional
+  inaccurate results and incorrect detection of zeros
+* Fixed qfrom(m=...)
+
+Calculus:
+
+* Implemented generators diffs_exp(), diffs_prod() for composing
+  derivatives
+* Implemented Abel-Plana summation for infinite series (sumap())
+
+Basic arithmetic and functions:
+
+* Implemented matrix slice indexing, supporting submatrix
+  extraction and assignment (contributed by Ioannis Tziakos)
+* Added missing constant fp.glaisher
+* Fixed a bug preventing internal rational numbers from being
+  hashable
+* Fixed bug in isnpint()
+* Fixed a bug in cos_sin() for pure imaginary argument
+* Slightly improved performance for elementary functions of pure
+  real or pure imaginary mpc inputs
+* Fixed plot() with real-valued mpc instances
+* Fixed cplot() to work with endpoints of other type than float/int
+
+
+--0.15--
+Released June 6, 2010
+
+Basic transcendental functions:
+
+* Reimplemented all elementary functions except log, reducing
+  overhead and giving asymptotic speedups at high precision
+* Reimplemented gamma() and loggamma(), improving speed and
+  fixing accuracy in corner cases
+* Added rgamma() (reciprocal gamma function)
+* Added a stress test suite for the gamma function
+* Provided top-level functions cos_sin() and cospi_sinpi() for fast
+  simultaneous computation
+
+Riemann zeta function:
+
+* New zetazeros() implementation, supporting arbitrarily large indices
+  (contributed by Juan Arias de Reyna)
+* Tuned algorithm selection in zeta() for complex arguments
+  (contributed by Juan Arias de Reyna)
+* Accelerated computation of zeta function series using sieving
+
+Special functions:
+
+* Added qfrom(), qbarfrom(), mfrom(), kfrom(), taufrom() for elliptic
+  argument conversion
+* Merged jsn(), jcn(), jdn() -> ellipfun() and generalized it to compute
+  all 12 Jacobi elliptic functions
+* Implemented the Klein j-invariant (kleinj())
+* Implemented the q-Pochhammer symbol (qp())
+* Implemented q-factorial (qfac()) and q--gamma (qgamma())
+* Implemented q-hypergeometric series (qhyper())
+* Implemented bilateral hypergeometric series (bihyper())
+* Implemented Appell 2D hypergeometric series F2-F4 (appellf2()-appellf4())
+* Implemented generalized 2D hypergeometric series (hyper2d())
+* Fixed gammainc() for integer-valued complex argument (contributed by
+  Juan Arias de Reyna)
+* Fixed asymptotic expansion of hyp1f1() (contributed by Juan Arias de Reyna)
+
+Numerical calculus:
+
+* Added support for multidimensional series in nsum()
+* Made nprod() faster by default by extrapolating directly instead of
+  calling nsum()
+* Changed some options for diff()/diffs()
+* Made taylor() chop tiny coefficients by default
+* Added support for partial derivatives in diff()
+
+Interval arithmetic:
+
+* All interval arithmetic functionality moved to a separate context
+  namespace (iv)
+* Preliminary support for complex intervals (iv.mpc)
+* Fixed interval cos/sin to support intervals overlapping zeros/extreme points
+* Implemented interval atan2
+* Implemented exp/log/cos/sin for complex intervals
+* Some other interface changes to interval code
+
+Utility functions:
+
+* Made chop() use relative rather than absolute tolerance for
+  real/imaginary parts
+* Optimized floor(), ceil(), isinf(), isnan(), isint()
+* Implemented nint(), frac(), isnormal()
+* Fixed and documented semantics for isinf(), isin(), isnan()
+* Added utility functions autoprec(), maxcalls(), memoize()
+
+Miscellaneous tweaks and fixes:
+
+* Support complex conjugation in fdot()
+* Added support for Cholesky decomposition of complex matrices
+* Fixed a small precision bug in linear algebra functions
+* Suppress NoConvergence exception when plotting
+* Removed some dirty code to improve PyPy compatibility
+* Fixed plotting to work with mpmath numbers in the interval specification
+* Fixed fp arithmetic on systems where math.log and math.sqrt return NaN
+  instead of raising an exception
+* Fixed fp.conj for Python 2.4 and 2.5
+* Fixed quadrature to work with reversed infinite intervals such as [0,-inf]
+* Renamed modf() -> fmod() for consistency
+
+--0.14--
+Released February 5, 2010
+
+General changes:
+
+* Fully separated the code into "low-level" and "high-level", permitting the
+  use of alternative contexts (the mpmath.mp object provides the default
+  implementation)
+* Implemented a context for fast double-precision arithmetic using Python
+  types (mpmath.fp) 
+* Implemented hooks for importing a faster version of mp arithmetic from Sage
+* Implemented optimized fp versions of certain functions (including erf, erfc,
+  gamma, digamma, ei, e1)
+* Renamed and reorganized various internal modules and methods (including
+  merging low-level modules into mpmath.libmp). This should not affect most
+  external code using top-level imports.
+
+Plotting:
+
+* Implemented splot() for 3D surface plots (contributed by Jorn Baayen)
+* Permit calling plot functions with custom axes (contributed by Jorn Baayen)
+
+Matrices:
+
+* Fixed lu_solve for overdetermined systems (contributed by Vinzent Steinberg)
+* Added conjugate matrix transpose (contributed by Vinzent Steinberg)
+* Implemented matrix functions (expm, cosm, sinm, sqrtm, logm, powm)
+
+Miscellaneous:
+
+* Prettier printing of numbers with leading zeros at small precisions
+* Made nstr pass on kwargs, permitting more formatting options
+* Fixed wrong directed rounding of addition of numbers with large magnitude
+  differences
+* Fixed several docstring typos (contributed by Chris Smith)
+* Fixed a bug that prevented caching of quadrature nodes to work optimally.
+
+Special functions:
+
+* Implemented fast evaluation for large imaginary heights of the Riemann zeta
+  function, Z function and derived functions using the Riemann-Siegel
+  (contributed by Juan Arias de Reyna)
+* Unified the zeta() and hurwitz() functions, automatically selecting a fast
+  algorithm
+* Improved altzeta() to fall back to zeta() for large arguments
+* Fixed accuracy of zeta(s) for s ~= 1
+* Implemented exact evaluation of Euler numbers (contributed by Juan Arias
+  de Reyna)
+* Implemented numerical evaluation of Euler numbers and Euler polynomials
+  (eulernum(), eulerpoly())
+* Fixed bernpoly() and eulerpoly() to compute accurate values for large
+  parameters
+* Fixed accuracy problems for hypergeometric functions with large parameters
+* Faster evaluation of hypergeometric series using on-the-fly code generation
+* Optimized hypercomb to detect certain zero terms symbolically
+* Removed the djtheta function (jtheta() accepts a derivative parameter)
+* Implemented li(x, offset=True) to compute the offset logarithmic integral
+* Fixed wrong branch in Lambert W function for certain complex inputs
+* Implemented the reflection formula for the Barnes G-function,
+  superfactorials, hyperfactorials, permitting large arguments in the left
+  half-plane
+* Implemented analytic continuation to |z| >= 1 for hypergeometric functions
+  pFq with p=q+1; added hyp3f2()
+* Implemented Borel summation of divergent pFq functions with p > q+1
+* Implemented automatic degree reduction of hypergeometric functions with
+  repeated parameters
+* Added convenience functions expj(), expjpi()
+* Use Mathematica's convention for the continuation of the Meijer G-function
+* Added phase(), polar(), rect() functions for compatibility with the
+  Python 2.6 cmath module
+* Implemented spherical harmonics (spherharm())
+* Optimized ci(), si(), chi(), shi() for complex arguments by evaluating
+  them in terms of ei()
+* Optimized hyp2f1 for z ~= -1
+
+--0.13--
+Released August 13, 2009
+
+New special functions:
+
+* The generalized exponential integral E_n (expint(), e1() for E_1)
+* The generalized incomplete beta function (betainc())
+* Whittaker functions (whitm(), whitw())
+* Struve functions (struveh(), struvel())
+* Kelvin functions (ber(), bei(), ker(), kei())
+* Cyclotomic polynomials (cyclotomic())
+* The Meijer G-function (meijerg())
+* Clausen functions (clsin(), clcos())
+* The Appell F1 hypergeometric function of two variables (appellf1())
+* The Hurwitz zeta function, with nth order derivatives (hurwitz())
+* Dirichlet L-series (dirichlet())
+* Coulomb wave functions (coulombf(), coulombg(), coulombc())
+* Associated Legendre functions of 1st and 2nd kind (legenp(), legenq())
+* Hermite polynomials (hermite())
+* Gegenbauer polynomials (gegenbauer())
+* Associated Laguerre polynomials (laguerre())
+* Hypergeometric functions hyp1f2(), hyp2f2(), hyp2f3(), hyp2f0(), hyperu()
+
+Evaluation of hypergeometric functions:
+
+* Added the function hypercomb() for evaluating expressions containing
+  hypergeometric series, with automatic handling of limits
+* The available hypergeometric series (of orders up to and including 2F3)
+  implement asymptotic expansions with respect to the last argument z, allowing
+  fast and accurate evaluation anywhere in the complex plane. A massive number
+  of functions, including Bessel functions, error functions, etc., have been
+  updated to take advantage of this to support fast and accurate evaluation
+  anywhere in the complex plane.
+* Fixed hyp2f1 to handle z close to and on the unit circle (supporting
+  evaluation anywhere in the complex plane)
+* hyper() handles the 0F0 and 1F0 cases exactly
+* hyper() eventually raises NoConvergence instead of getting stuck in
+  an infinite loop if given a divergent or extremely slowly convergent series
+
+Other improvements and bug fixes to special functions:
+
+* gammainc is much faster for large arguments and avoids catastrophic
+  cancellation
+* Implemented specialized code for ei(x), e1(x), expint(n,x) and gammainc(n,x)
+  for small integers n, making evaluation much faster
+* Extended the domain of polylog
+* Fixed accuracy for asin(x) near x = 1
+* Fast evaluation of Bernoulli polynomials for large z
+* Fixed Jacobi polynomials to handle some poles
+* Some Bessel functions support computing nth order derivatives
+* A set of "torture tests" for special functions is available as
+  tests/torture.py
+
+Other:
+* Implemented the differint() function for fractional differentiaton / iterated
+  integration
+* Added functions fadd, fsub, fneg, fmul, fdiv for high-level arithmetic with
+  controllable precision and rounding
+* Added the function mag() for quick order-of-magnitude estimates of numbers
+* Implemented powm1() for accurate calculation of x^y-1
+* Improved speed and accuracy for raising a pure imaginary number to
+  an integer power
+* nthroot() renamed to root(); root() optionally computes any of
+  the non-principal roots of a number
+* Implemented unitroots() for generating all (primitive) roots of unity
+* Added the mp.pretty option for nicer repr output
+
+--0.12--
+Released June 9, 2009
+
+General
+* It is now possible to create multiple context objects and use context-local
+  methods instead of global state/functions (e.g. mp2=mp.clone(); mp2.dps=50;
+  mp2.cos(3)). Not all functions have been converted to context methods, and
+  there are some bugs, so this feature is currently experimental.
+* If mpmath is installed in Sage 4.0 or later, mpmath will now use sage.Integer
+  instead of Python long internally.
+* Removed instances of old-style integer division from the codebase.
+* runtests.py can be run with -coverage to generate coverage statistics.
+
+Types and basic arithmetic
+
+* Fixed comparison with -inf.
+* Changed repr format of the mpi interval type to make eval(repr(x)) == x.
+* Improved printing of intervals, with configurable output format (contributed
+  by Vinzent Steinberg based on code by Don Peterson).
+* Intervals supported by mpmathify() and nstr() (contributed by Vinzent
+  Steinberg).
+* mpc is now hashable.
+* Added more formatting options to the internal function to_str.
+* Faster pure-Python square root.
+* Fix trailing whitespace giving wrong values in str->mpf conversion.
+
+Calculus
+
+* Fixed nsum() with Euler-Maclaurin summation which would previously
+  ignore the starting index and sum from n=1.
+* Implemented Newton's method for findroot() (contributed  by Vinzent
+  Steinberg).
+
+Linear algebra
+
+* Fixed LU_decomp() to recognize singular matrices (contributed by Jorn Baayen).
+* The various norm functions were replaced by the generic vector norm
+  function norm(x,p) and the generic matrix norm function mnorm(x,p).
+
+Special functions:
+
+* Some internal caches were changed to always slightly overallocate
+  precision. This fixes worst-case behavior where previously the cached
+  value had to be recomputed on every function call.
+* Fixed log(tiny number) returning nonsense at high precision.
+* Fixed gamma() and derivative functions such as binomial() returning
+  wrong results at integer inputs being divisible by a large power of 2.
+* Fixed asin() not to raise an exception at high precision (contributed
+  by Vinzent Steinberg).
+* Optimized the AGM code for the natural logarithm, making the previously
+  used Newton method at intermediate precisions obsolete.
+* The arithmetic-geometric mean function agm() is now an order of magnitude
+  faster at low precision.
+* Faster implementations of ellipk() and ellipe().
+* Analytic continuation of ellipe() to |x| >= 1 implemented.
+* Implemented the log gamma function (loggamma()) with correct branch
+  cuts (slow, placeholder implementation).
+* Fixed branch cuts of hyperfac().
+* Implemented the Riemann-Siegel Z-function (siegelz()).
+* Implemented the Riemann-Siegel theta function (siegeltheta()).
+* Implemented calculation of Gram points (grampoint()).
+* Implemented calculation of Riemann zeta function zeros (zetazero()).
+* Implemented the prime counting function: a slow, exact version (primepi()).
+  and a fast approximate version (primepi2()) that gives a bounding interval.
+* Implemented the Riemann R prime counting function (riemannr()).
+* Implemented Bell numbers and polynomials (bell()).
+* Implemented the expm1() function.
+* Implemented the 'polyexponential function' (polyexp()).
+* Implemented the twin prime constant (twinprime) and Mertens' constant
+  (mertens).
+* Implemented the prime zeta function (primezeta()).
+
+
+--0.11--
+Released January 26, 2009
+
+General:
+
+* Most of the documentation is now generated from docstrings
+  using Sphinx' autodoc feature, and proper LaTeX is used
+  for mathematical formulas. A large amount of new documentation
+  has been written.
+* Improved gmpy backend. Using gmpy-1.04 gives a ~30% unit tests
+  speedup over 1.03, with speedups in the range of 2-3x for
+  specific operations (contributed by Case van Horsen and
+  Mario Pernici).
+* Mpmath imports slightly faster due to not trying to
+  load the 'random' library
+
+Numerical calculus, etc:
+
+* Implemented a fast high-precision ODE solver (to replace the slow
+  and low-accuracy RK4 algorithm) (odefun())
+* Created an intelligent function nsum() to replace sumrich/sumsh
+* Implemented nprod() for computing infinite products
+* Rewrote limit() to use the same adaptive extrapolation algorithm
+  as nsum()
+* Multidimensional nonlinear solving with Newton's method
+  implemented in findroot() (contributed by Vinzent Steinberg)
+* Simplified the implementation and interface of sumem()
+* Reimplemented Shanks transformation for nsum using Wynn's epsilon
+  algorithm (shanks())
+* Reimplemented Richardson extrapolation slightly more simply and
+  efficiently (richardson())
+* Prevent shanks() from exiting prematurely by adding
+  random noise to zeros
+* Removed the obsolete secant() function (see findroot())
+* Implemented high-order derivatives (diff(), diffs())
+* Implemented calculation of Taylor series (taylor())
+* Implemented calculation of Fourier series (fourier(), fourierval())
+* Implemented Pade approximation (pade()) (contributed by
+  Mario Pernici)
+* Better cancel condition for findroot() (contributed by
+  Vinzent Steinberg)
+* Some refactoring of numerical integration code
+* Fix erroneous nodes for 0-th order Gauss-Legendre quadrature,
+  which was causing unnecessary slowness
+* Quadrature nodes are cached for arbitrary intervals, giving a
+  30% speedup for repeated integrations
+* Unified interface and added more options for identify(), pslq(), findpoly()
+
+New special functions:
+
+* Implemented polylogarithms (polylog())
+* Implemented Bernoulli polynomials (bernpoly())
+* Implemented the Barnes G-function (barnesg())
+* Implemented double factorials (fac2())
+* Implemented superfactorials (superfac())
+* Implemented hyperfactorials (hyperfac())
+* Replaced lower_gamma and upper_gamma with a more versatile
+  function gammainc() for computing the generalized (and optionally
+  regularized) incomplete gamma function
+* Implemented sinc() and sincpi()
+* Implemented Fibonacci numbers (fib())
+* Implemented the Dirichlet eta function (altzeta())
+* Implemented the inverse error function (erfinv())
+* Jacobi theta functions and elliptic functions were essentially
+  rewritten from scratch, making them much faster and more
+  general. Renamed Jacobi theta functions: jacobi_theta -> jtheta,
+  etc. (contributed by Mario Pernici)
+* Implemented derivatives of jtheta (djtheta) (contributed by
+  Mario Pernici)
+* Implemented Bessel Y, I, K functions (bessely, besseli,
+  besselk; Bessel J functions were also renamed to besselj)
+  also renamed)
+* Generalized Stieltjes constants can now be computed,
+  with stieltjes(n,a)
+* Implemented Hankel functions (hankel1, hankel2)
+
+Speed improvements and bugfixes to special functions:
+* Fast logarithm at very high precision using the formula by
+  Sasaki and Kanada (contributed by Mario Pernici)
+* Slightly faster logarithm at low precision (contributed by
+  Mario Pernici)
+* Faster exponential function at high precision, using
+  Newton's method (contributed by Mario Pernici)
+* Faster computation of ln2 and ln10 by means of binary splitting
+  (contributed by Mario Pernici)
+* Fixed accuracy problems in sinpi() and cospi()
+* Correct evaluation of beta() at limits
+* Much faster evaluation of stieltjes(n), using an improved integral
+  formula
+* Fixed bernoulli() being inaccurate for large n and low precision,
+  and being needlessly slow for small n and huge precision
+* Fixed accuracy of zeta(s) for large negative re(s)
+* Fixed accuracy problems for asinh, atanh and tanh
+* Fixed accuracy of airyai() for large x.real
+* Fixed bug in nthroot() for very large arguments (contributed by
+  Mario Pernici)
+* Fixed accuracy of log(x) for complex |x| ~= 1
+* Fixed accuracy of exp(n), n a huge integer and prec >= 600
+* Slightly faster hypergeometric functions with rational parameters
+  (contributed by Mario Pernici)
+* Faster and more accurate calculation of ci(x), si(x)
+* Faster and more accurate calculation of ei(x) for large x,
+  using an asymptotic expansion (contributed by Mario Pernici)
+* Fixed accuracy bugs in theta functions (contributed by
+  Mario Pernici)
+* The Lambert W function returns more appropriate values at infinities
+
+Arithmetic and basic interface:
+* Square roots are now rounded correctly
+* Made float(huge) -> inf and float(1/huge) -> 0 instead of
+  raising OverflowError
+* Renamed convert_lossless -> mpmathify
+* mpmathify() accepts strings representing fractions or complex
+  numbers (contributed by Vinzent Steinberg)
+* Fixed a bug in interval multiplication giving wrong signs
+* Added monitor() to monitor function evaluation
+* Implemented a chop() utility function for deletion of numerical noise
+* Added re(), im(), conj(), fabs(), mpf.conjugate()
+* Fixed the != operator for intervals
+* Added functions fsum, fprod, fdot for efficient computation of
+  sums, products and dot products of lists of mpf:s or mpc:s
+
+Matrices:
+
+* Generation of Hilbert matrices (hilbert()) (contributed by
+  Vinzent Steinberg)
+* Added lu_solve_mat() to solve a*x=b where a and b are matrices (contributed
+  by Mario Pernici)
+* Implemented computation of matrix exponentials (exp_pade()) (contributed
+  by Mario Pernici)
+* Prettier repr of complex matrices (contributed by Vinzent Steinberg)
+* Speedups by using fdot and fsum (contributed by Vinzent Steinberg)
+
+--0.10--
+Released October 15, 2008
+
+Interface / general:
+* Mpmath now works with Python 2.6
+* Implemented function plotting via 'plot' and 'cplot' (requires
+  matplotlib)
+* Removed global rounding mode (always rounding to nearest by default)
+* Instead added 'prec', 'dps', 'rounding' keyword arguments to
+  standard functions, for optional fine-grained control over precision
+  and rounding
+* Implemented isinf, isnan, isint, utility functions
+* A large number of internal functions were moved and/or renamed to
+  improve consistency. This particularly affects low-level mpf
+  functions (lib.fadd -> libmpf.mpf_add, etc).
+* Syntax for some operations was changed (see details below)
+* The test runner (runtests.py) was updated to support running
+  isolated tests and to allow a local import of mpmath
+* Unit tests can now be run with import mpmath; mpmath.runtests()
+* Implicit imports are no longer used internally in the main codebase.
+  (This will hopefully make the source easier to read, and can catch
+  installation problems more cleanly.)
+
+Added linear algebra functions (contributed by Vinzent Steinberg):
+* Provided a matrix class
+* Computation of powers, inverses, determinants
+* Linear system solving using LU, QR and Cholesky
+* Vector and matrix norms
+* Calculation of condition numbers
+
+Improvements to interval arithmetic:
+* Fixed rounding direction for negative numbers and related
+  spurious bugs
+* Fix interval exponentiation (all cases should work now)
+* Basic interval arithmetic is up to 10x faster
+* sqrt, exp, log, sin, cos and a few other functions
+  accept interval arguments
+* Intervals supported in matrices
+
+Changes to root-finding code:
+* secant renamed to findroot
+* findroot was made more general; many useful alternative root-finding
+  algorithms were implemented (contributed by Vinzent Steinberg)
+
+Improvements to special functions:
+* Implemented polygamma functions
+* Implemented harmonic numbers
+* Implemented Stieltjes constants
+* Made gamma more accurate for huge arguments and/or precision
+* Made zeta more accurate in various cases
+* Made zeta typically 2-5x faster
+* Much more efficient computation of zeta for huge s (zeta(s) ~= 1)
+* Optimized numerical calculation of Bernoulli numbers
+* Fast exact calculation of huge Bernoulli numbers via zeta and the
+  von Staudt-Clausen theorem
+* Using AGM to compute ellipk, which is much faster and works
+  in the entire complex plane
+* Allow single-argument form agm(x) = agm(1,x)
+* Faster and more accurate computation of erf
+* Added fast and accurate implementation of erfc
+* Normal probability functions npdf, ncdf
+* Fixed directed rounding in corner cases for various functions
+
+Improvements to numerical integration:
+* Changed syntax for integration (quad(f, [a, b], options))
+* Implemented Gauss-Legendre quadrature
+* Direct support for triple integrals (quad(f, X, Y, Z))
+* Interval can be a list of several points, to split integration
+  into subintervals
+* Oscillatory quadrature uses Gauss-Legendre instead of tanh-sinh,
+  since this is typically faster
+* Fixed minor rounding bug in tanh-sinh quadrature not giving
+  complete symmetry in the nodes
+* Implemented quadrature rules in classes for improved extensibility
+
+Various speed improvements:
+* Up to 3x faster computation of log(x) at low precision, due to using
+  Taylor series with argument reduction and partial caching
+* About 2x faster log(x) at very high precision due to more efficient
+  computation of exp in the Newton iteration
+* Up to 10x faster computation of atan(x) at low to medium precision,
+  due to using Taylor series with argument reduction and partial caching
+* Faster pickling due to using hex() instead of long()
+* Optimized code for Khinchin's constant (2.5x faster at 1000 digits)
+* Optimized code for Glaisher's constant (1.5x faster at 1000 digits)
+* Faster algorithm for Euler's constant (10x faster at 10000 digits)
+* Rewrote PSLQ to use fixed-point arithmetic, giving a ~7x speedup
+  in pslq, findpoly and identify
+
+Miscellaneous bugfixes:
+* Fixed nthroot for n = -1, 0, 1
+* Fixed inf/2**n and nan/2**n returning zero
+
+--0.9--
+Released August 23, 2008
+
+* gmpy mpzs are used instead of python ints when available, for
+  huge speedups at high precision (contributed by Case Van Horsen)
+* using binary splitting to compute pi and e near-optimally
+* mpmath includes __version__ information
+* arange behaves more like range (contributed by Vinzent Steinberg)
+* asymptotically faster trigonometric functions via Brent's trick
+  (contributed by Mario Pernici)
+* asymptotically faster inverse trigonometric functions via Newton's
+  method (contributed by Mario Pernici)
+* added Jacobi elliptic functions 1-4, sn, cn, dn (contributed by Mike
+  Taschuk)
+* polyval, polyroots and related functions now use the same order
+  for coefficients as scipy and matlab (i.e. the reverse order of what
+  was used previously in mpmath)
+* fixed polyroots for degree-0 polynomials (contributed by Nimish Telang)
+* added convenience functions (log10, degrees, radians, frexp, modf, ln,
+  arg, sign)
+* added fast cbrt and nthroot functions for computing nth roots
+  (contributed by (Mario Pernici)
+* added various exponential integrals (ei, li, si, ci, shi, chi, erfi)
+* added airy functions (airyai, airybi)
+* more __op__ and __rop__ methods return NotImplemented where
+  appropriate
+* external classes can define a special method _mpmath_ to interact
+  with mpmath numbers and functions
+* fixed some corner cases in atan2
+* faster rand()
+
+--0.8--
+Released April 20, 2008
+
+New features:
+* the full set of reciprocal trigonometric and hyperbolic functions
+  and their inverses (cotangent, secant, etc) is available
+* oscillatory quadrature algorithm
+* the PSLQ algorithm and constant recognition functions
+* Richardson and Shanks transformations for computing limits and series
+* Euler-Maclaurin summation of series
+* basic ODE solvers (contributed by Ondrej Certik)
+* the Lambert W function
+* arithmetic-geometric mean function
+* generic hypergeometric series and some special hypergeometric
+  functions (elliptic integrals, orthogonal polynomials)
+* several more mathematical constants
+* fast sequential computation of integer logarithms and Bernoulli
+  numbers
+* Bessel function jv works for complex arguments and noninteger v
+* support for trapping complex results
+* using Sphinx to generate HTML documentation
+
+Bugfixes, speed enhancements, and other improvements:
+* compatibility tests should now pass on systems where Python is
+  compiled to use 80-bit registers for floating point operations
+* fixed mpmath to work with some versions of Python 2.4 where a
+  list indexing bug is present in the Python core
+* better algorithms for various complex elementary functions
+  (tan and tanh by Fredrik; sqrt, acos, asin, acosh and asinh
+  improved by Mario Pernici)
+* multiplication and integer powers for complex numbers is faster
+  and more accurate
+* miscellaneous speed improvements to complex arithmetic (contributed
+  by Mario Pernici)
+* faster computation of cos and sin when only one of them is needed
+  (contributed by Mario Pernici)
+* slightly faster square roots at low precision (contributed by
+  Mario Pernici)
+* fixed computation of exp(n) for negative integers and x**y for
+  negative half integers y
+* mpf ** complex now works
+* faster generation of quadrature nodes (contributed by Mario Pernici)
+* faster change of variables for quadrature
+* comparisons and conversions have been optimized slightly.
+  comparisons with float(nan) also work as intended.
+* str() is several times faster at very high precision
+* implementations of most elementary functions moved to the lib
+  and libmpc modules for cleaner separation of functionality
+* the rounding argument for lib and libmpc functions, and for
+  some functions also the the prec argument, are now optional,
+  resulting in cleaner and slightly faster lib code
+* gamma and factorial are about 2x faster
+* polyroots returns nicer results
+* pickling now works for mpf and mpc instances
+
+--0.7--
+Released March 12, 2008
+
+* the interface for switching precision and rounding modes has been
+  changed. instead of changing mpf.prec, there is a new object mp
+  which holds the precision as mp.prec. this change improves
+  flexibility in the implementation. it will unfortunately break
+  any existing code written for mpmath, but the broken code should
+  be trivial to update.
+* the functions workprec, workdps, extraprec, extradps have been
+  introduced for switching precision in a more safe manner,
+  ensuring that the precision gets reset when finished. they can
+  be used with the 'with' statement available in python 2.5
+* improved documentation (manual.html)
+* the round-half-down and round-half-up modes have been deprecated,
+  since they added complexity without being particularly useful.
+  round-half-even has been renamed to round-nearest.
+* implemented the functions nstr, nprint for printing numbers with
+  a small or custom number of digits
+* accuracy of cos and sin near roots has been fixed. computing
+  sin(x) or cos(x) where x is huge is also much faster
+* implemented a magical constant eps that gives the "machine"
+  epsilon
+* additional mathematical functions: implemented Catalan's constant
+  and Bessel functions J_n(x) for integer n and real x
+* new functions diff and diffc for numerical differentiation
+* implemented the ldexp function for fast multiplication by 2**n
+* mpf uses rich comparison methods (contributed by Pearu Peterson)
+* epydoc-friendly docstrings (contributed by Pearu Peterson)
+* support creating mpf from float nan or inf
+* fixed printing of complex numbers with negative imaginary part
+* flattened package structure to simplify inclusion of mpmath in other
+  packages
+* external classes can interoperate with mpf and mpc instances
+  by defining _mpf_ or _mpc_ properties
+* renamed lib.fpow -> lib.fpowi and implemented lib.fpow for general
+  real powers. <mpf> ** <mpf> should now be slightly faster and more
+  robust
+* the internal number representation has been changed to include
+  an explicit sign bit. as a result of this change and other small
+  tweaks, arithmetic is up to 20% faster and the total running
+  time for mpmath's unit tests has dropped 10%.
+* miscellaneous speed improvements:
+  * <mpf> ** <int> is 2-3 times faster (contributed by Mario Pernici)
+  * <mpf> * <int> and <int> * <mpf> is roughly twice as fast
+  * <int> / <mpf> is roughly twice as fast (contributed by Mario
+    Pernici)
+  * exp and log are about 10% faster
+  * fast computation of e and exp(n) when precision is extremely high
+
+--0.6--
+Released January 13, 2008
+
+* added the mpi type for interval arithmetic
+* powers with integer exponents are computed with directed rounding
+  all the way through to preserve interval bounds more robustly
+  (however, the code is not fully tested and may have some bugs)
+* string input to mpf.__new__() can now be unicode
+* mpf.__eq__ now works in pypy
+* infs and nans are now implemented in mpmath.lib, resulting in
+  considerable simplification of the mpf class implementation
+* partial support for infs and nans in functions, e.g.
+  exp(inf) -> inf and exp(-inf) -> 0 now work.
+* renamed several files. created mpmath.apps and moved tests into
+  the main mpmath directory
+* wrote script to permit running unit tests without py.test available
+* improved bit counting code in fadd, fmul and fdiv, plus other
+  small performance tweaks, resulting in a 20-30% speedup for
+  arithmetic
+
+--0.5--
+Released November 24, 2007
+
+* added the quad module for arbitrary-precision numerical integration
+* floor and ceil functions available
+* implemented __mod__ and __rmod__ for the mpf class
+* partial support for the special numbers +inf, -inf and nan
+* faster multiplication and division (up to 40% faster with psyco)
+* simplified syntax for conversion function (from_int instead of
+  from_int_exact, etc)
+* renamed cgamma to euler
+* more documentation strings
+
+--0.4--
+Released November 3, 2007
+
+* new string conversion code (much faster; unlimited exponents)
+* fixed bug in factorial (it gave the wrong value, though gamma worked)
+* division now uses a rigorous algorithm for directed rounding
+  (mpmath previously used a heuristic that got the last bit wrong
+  in 1/10000 of cases)
+* misc. performance improvements (arithmetic is 15% faster)
+* refactored parts of the code; added many more docstrings and tests
+* added a function rand() for generating full-precision random numbers
+* rewrote the benchmark script to compare against Decimal and to
+  automatically generate timings with psyco both disabled and enabled
+* rewrote unit tests to use py.test
+
+--0.3--
+Released October 5, 2007
+
+* fixed high-precision accuracy problem in complex sqrt
+* fixed high-precision accuracy problem in atan and complex log
+* fixed directed rounding for sqrt (always rounded to nearest)
+* implemented all hyperbolic and inverse functions (there are some
+  accuracy issues left to sort out)
+* included gamma, factorial, erf, zeta incomplete gamma functions
+* made sin and tan more accurate for complex input very close to 0
+* more docstrings
+* many more tests
+* including a benchmark script
+
+-- 0.2 --
+Released October 2, 2007
+
+* 50% faster exponential function
+* faster mpf <-> int ops
+* fixed import error in pidigits.py; added demos to source distribution
+* __rmul__ was missing on mpf
+* fixed bitcount bug also for -(2**n-1)
+* more docstrings
+* more tests; tests included in source distribution
+* approximate equality testing (.ae method) supported
+* implemented atan and atan2 functions
+* tan works for both mpfs and mpcs
+* complex logarithms and complex powers supported
+* more details in README
+
+-- 0.1 --
+Released September 27, 2007
+
+* imported code from SymPy's numerics module
+* renamed functions and restructured various parts of the code
+* fixed erroneous bitcount for 2**n-1 mantissa with directed rounding
+* various small speed improvements and bug fixes
