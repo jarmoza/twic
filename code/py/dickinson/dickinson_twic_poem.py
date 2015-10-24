@@ -354,7 +354,7 @@ class TWiC_Poem:
                 poem_written_statuses[index] = True
                 continue
 
-            print "Comparing poem {0} out of {1}".format(index, last_poem_number + 1)
+            #print "Comparing poem {0} out of {1}".format(index, last_poem_number + 1)
 
             #print 'Gathering poems similar to {0}'.format(index)
 
@@ -373,7 +373,7 @@ class TWiC_Poem:
             # If poems bear similarity then determine which one to write out
             if len(similar_poems) > 1:
 
-                print "Found {0} similar poems".format(len(similar_poems))
+                #print "Found {0} similar poems".format(len(similar_poems))
 
                 # publication_date = 0
                 # latest_poem_index = 0

@@ -13,7 +13,7 @@ import utils_jensen_shannon
 load_src("utils_color", "../utils/utils_color.py")
 from utils_color import Utils_Color
 
-from general.twic_malletscript import TWiC_MalletScript
+from twic_malletscript import TWiC_MalletScript
 from twic_text import TWiC_Text
 
 load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
@@ -327,13 +327,13 @@ class TWiC_MalletInterpret:
         topic_count = len(corpus_topic_proportions)
         file_count = len(file_topic_proportions)
 
-        print "============================"
-        print "DetermineCorpusClusters_Avg"
-        print "\nTopic Count:{0}\nFile Count: {1}".format(topic_count, file_count)
+        # print "============================"
+        # print "DetermineCorpusClusters_Avg"
+        # print "\nTopic Count:{0}\nFile Count: {1}".format(topic_count, file_count)
 
         for topic_id in range(topic_count):
 
-            print "\nProcessing cluster {0}".format(topic_id)
+            # print "\nProcessing cluster {0}".format(topic_id)
 
             # Clusters have name, dist2avg, topics, and text-level children
             clusters_json[topic_id] = {
@@ -347,7 +347,7 @@ class TWiC_MalletInterpret:
                 if topic_id == int(file_topic_proportions[index].sorted_topic_list[0][0]):
                     texts_with_top_topic.append(index)
 
-            print "Texts with top topic {0}: {1}".format(topic_id, texts_with_top_topic)
+            # print "Texts with top topic {0}: {1}".format(topic_id, texts_with_top_topic)
 
             # Get the average topic distribution for this cluster
             cluster_avg_topic_dist = [0 for index in range(topic_count)]
@@ -391,7 +391,7 @@ class TWiC_MalletInterpret:
                 clusters_json[topic_id]["children"].append(text_json)
 
 
-        print "============================"
+        # print "============================"
 
         return clusters_json
 
@@ -645,7 +645,7 @@ class TWiC_MalletInterpret:
         json_data = TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json/texts/", mallet_script, current_fwt, False)
 
         if "No state file data" == json_data:
-            print "No state file data for {0}".format(text.GetFilename())
+            print "Warning: No state file data for {0}".format(text.GetFilename())
             return
 
         # Output text will be partial html to be inserted inside foreignObject tag
@@ -911,7 +911,7 @@ class TWiC_MalletInterpret:
         ####### 1. Reading dickinson.topics.tsv
 
         # tp_collection = mallet_script.GetTopicsFileData("2.0.7")
-        tp_collection = mallet_script.GetTopicsFileData("2.0.8")
+        tp_collection = mallet_script.GetTopicsFileData("2.0.9")
 
         ###### 2. Reading dickinson.keys.tsv
 

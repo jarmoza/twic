@@ -17,11 +17,6 @@ from dickinson_twic_poem import TWiC_Poem
 
 from dickinson_twic_malletinterpret import TWiC_MalletInterpret
 
-# from utils.utils_malletinterpret import Utils_MalletInterpret
-# from general.twic_malletscript import TWiC_MalletScript
-# from dickinson.dickinson_twic_poem import TWiC_Poem
-# from dickinson.dickinson_twic_malletinterpret import TWiC_MalletInterpret
-
 
 def CreateMallet():
 
@@ -43,7 +38,7 @@ def CreateMallet():
     mallet_script.corpus_name = "dickinson"
     mallet_script.output_dir = twic_relative_root + "data/dickinson/output/mallet/"
     mallet_script.stopwords_dir = twic_relative_root + "data/dickinson/output/stopwords/"
-    mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
+    mallet_script.lda_dir = twic_relative_root + "lib/Mallet-master/"
     mallet_script.script_dir = os.getcwd()
 
     # Default topic and interval count

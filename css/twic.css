@@ -132,7 +132,7 @@ body {
 }
 
 .text_p {
-    display: inline-block;
+    display: block;
     line-height: 32px;
 }
 
