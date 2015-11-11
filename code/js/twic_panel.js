@@ -1653,9 +1653,11 @@ var TWiC = (function(namespace){
                   .style("fill", function(d){ return d.color; });
 
         // Highlight all inner text rectangles
-        this.m_svg.selectAll(".text_info_rect")
+        //this.m_svg.selectAll(".text_info_rect")
+        //this.m_svg.selectAll(".topicbullseye_text")
+        this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeTextClassSelect)
                   .style("opacity", 1.0)
-                  .style("stroke-opacity", TWiC.DataShape.prototype.s_semihighlightedOpacity);
+                  .style("stroke-opacity", /*TWiC.DataShape.prototype.s_semihighlightedOpacity*/1.0);
 
         // Highlight all text
         this.m_svg.selectAll(TWiC.CorpusClusterView.prototype.s_datashapeTextClassSelect)

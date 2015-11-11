@@ -109,7 +109,8 @@ var TWiC = (function(namespace){
         var parentGroup = ( undefined === p_optionalGroup ) ? this.m_shapeGroup : p_optionalGroup;
 
         this.m_textTag = parentGroup.append("text")
-                                    .attr("class", "clustercircle_text")
+                                    //.attr("class", "topicbullseye_text")
+                                    .attr("class", this.m_panel.s_datashapeTextClassName)
                                     .attr("dx", "0")
                                     .attr("dy", "0")
                                     .attr("fill", p_color)
