@@ -1495,13 +1495,23 @@ var TWiC = (function(namespace){
                     .selectAll(".text_coloredword")
                     .on(namespace.Interaction.click, function(d){
                         namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.click);
+                        this.UnhighlightTilesInDataBar();
+                        this.FindAndHighlightInDataBar(d);
+                        var dataBarRef = this.GetDataBarRef();
+                        dataBarRef.Pause(!dataBarRef.IsPaused());
                         d3.event.stopPropagation();
                     }.bind(this))
                     .on(namespace.Interaction.mouseover, function(d){
                         namespace.TopicText.prototype.MouseBehavior(this, d, namespace.Interaction.mouseover);
+                        if ( !this.GetDataBarRef().IsPaused() ){
+                            this.FindAndHighlightInDataBar(d);
+                        }
                     }.bind(this))
                     .on(namespace.Interaction.mouseout, function(d){
                         namespace.TopicText.prototype.MouseBehavior(this, null, namespace.Interaction.mouseout);
+                        if ( !this.GetDataBarRef().IsPaused() ){
+                            this.UnhighlightTilesInDataBar();
+                        }
                     }.bind(this));
 
         this.m_panel.m_div
@@ -1509,6 +1519,7 @@ var TWiC = (function(namespace){
                     .on(namespace.Interaction.click, function(d){
                         if ( -1 != this.m_level.m_highlightedTopic ){
                             namespace.TopicText.prototype.MouseBehavior(null, namespace.Interaction.click);
+                            this.UnhighlightTilesInDataBar();
                             d3.event.stopPropagation();
                         }
                     }.bind(this));
@@ -1683,6 +1694,57 @@ var TWiC = (function(namespace){
                             d3.event.stopPropagation();
                         }
                     }.bind(this));
+    });
+
+    namespace.TopicText.method("GetDataBarRef", function(){
+
+        // Get a reference to the data bar
+        var dataBarRef = null;
+        for ( var index = 0; index < this.m_panel.m_linkedViews.length; index++ ){
+            if ( this.m_panel.m_linkedViews[index].panel instanceof namespace.DataBar ){
+                dataBarRef = this.m_panel.m_linkedViews[index].panel;
+                break;
+            }
+        }
+        return dataBarRef;
+    });
+
+    namespace.TopicText.method("FindAndHighlightInDataBar", function(p_data){
+
+        // Get a reference to the data bar and word weight tiles
+        var dataBarRef = this.GetDataBarRef();
+        var dataTilesRef = dataBarRef.m_wordWeightDataTiles;
+
+        // Normalize the word for comparison (strip ws, punctuation, and to lowercase)
+        var clean_word = p_data.word.trim();
+        clean_word = clean_word.replace(/\b\W/, "");
+        clean_word = clean_word.replace(/\W\b/, "");
+        clean_word = clean_word.trim();
+        clean_word = clean_word.toLowerCase();
+
+        // Find the word in the data bar and highlight it and scroll to it
+        for ( var index = 0; index < dataTilesRef.length; index++ ){
+            if ( clean_word == dataTilesRef[index].m_text ){
+                dataBarRef.Pause();
+                dataTilesRef[index].HighlightTile(true);
+                $(dataBarRef.m_div[0][0]).scrollTop(dataTilesRef[index].m_coordinates.y);
+                break;
+            }
+        }
+    });
+
+    namespace.TopicText.method("UnhighlightTilesInDataBar", function(p_data){
+
+        // Get a reference to the data bar and word weight tiles
+        var dataBarRef = this.GetDataBarRef();
+        var dataTilesRef = dataBarRef.m_wordWeightDataTiles;
+
+        // Unhighlight all tiles and scroll to the top of the data bar
+        for ( var index = 0; index < dataTilesRef.length; index++ ){
+            dataTilesRef[index].HighlightTile(false);
+        }
+        dataBarRef.m_highlightIndex = -1;
+        $(dataBarRef.m_div[0][0]).scrollTop(0);
     });
 
     namespace.TopicText.prototype.MouseBehavior = function(p_text, p_data, p_mouseEventType){
