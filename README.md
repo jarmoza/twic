@@ -120,9 +120,9 @@ TWiC presents users with a research environment for examining topic models that 
 <br/>
 <span style="color:black;">**1.** Download and unzip TWiC's [master zip file](https://github.com/jarmoza/twic/archive/master.zip) and place in the directory where you would like run the visualization.
 <br/>
-**2.** Insert your corpus (in .txt file form, preferably chunked up to 1000 words or so) into the twic/data/input/txt/ directory
+**2.** Insert your corpus (in .txt file form) into the twic/data/input/txt/ directory
 <br/>
-**3.** Run the python script in code/py/general: twic_corpus2vis.py with the argument "mi"
+**3.** Run the python script in code/py/general: twic_corpus2vis.py with the argument "gmi"
 <br/>
 **--a.** Alter the number of topics or intervals in twic_corpus2vis.py if you want
 <br/>
