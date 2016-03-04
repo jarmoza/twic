@@ -122,7 +122,7 @@ TWiC presents users with a research environment for examining topic models that 
 <br/>
 **2.** Insert your corpus (in .txt file form) into the twic/data/input/txt/ directory
 <br/>
-**3.** Run the python script in code/py/general: twic_corpus2vis.py with the argument "gmi"
+**3.** Run the python script in code/py/general: twic_corpus2vis.py with the arguments "gmi" followed by the full path of your plain text files. For ex. in Python 2: "python twic_corpus2vis.py gmi [full_corpus_path]"
 <br/>
 **--a.** Alter the number of topics or intervals in twic_corpus2vis.py if you want
 <br/>
