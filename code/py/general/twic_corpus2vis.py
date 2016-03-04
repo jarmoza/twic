@@ -1,5 +1,6 @@
 import os
 import sys
+import yaml
 
 def load_src(name, fpath):
     import os, imp
@@ -36,6 +37,7 @@ def CreateMallet():
     mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = "100"
     mallet_script.num_intervals = "100"
+    mallet_script.text_chunk_size_words = 5000
 
     # For InterpretMalletOutput
     mallet_script.BuildOutputNames()
@@ -44,6 +46,12 @@ def CreateMallet():
 
     # Return the now-configured TWiC_MalletScript object
     return mallet_script
+
+
+def ReadTWiCYAML(p_script_filename):
+
+    twic_config_filename = "twic_config.yaml"
+    twic_config_path = p_os.path.abspath(os.path.dirname(p_script_filename))
 
 
 def Corpus2Vis(args):
@@ -74,7 +82,7 @@ def Corpus2Vis(args):
     if len(args):
         options = args[0]
         user_source_dir = args[1]
-        if len(args) >= 2:
+        if len(args) > 2:
             mallet_script.corpus_name = args[2]
             if len(args) >= 3:
                 mallet_script.corpus_title = args[3]
@@ -87,10 +95,13 @@ def Corpus2Vis(args):
         if options_keep_corpus_source not in options:
             mallet_script.ClearCorpusSourceDirectory()
         mallet_script.GatherTexts(mallet_script.user_source_dir, mallet_script.corpus_source_dir, True)
+
     if options_clear_oldoutput in options:
         mallet_script.ClearOutputFiles()
+
     if options_run_mallet in options:
         mallet_script.RunMallet()
+
     if options_interpret_output in options:
         mallet_script.InterpretMalletOutput(mallet_script)
 
