@@ -51,6 +51,8 @@ class TWiC_MalletScript:
 
     def ClearCorpusSourceDirectory(self):
 
+        print "Clearing all txt files from TWiC's local source directory..."
+
         # Gather names of all the txt files in the corpus source directory
         txt_filelist = []
         for input_filename in glob.glob(self.corpus_source_dir + "*.txt"):
@@ -126,6 +128,10 @@ class TWiC_MalletScript:
 
     def ImportDir(self):
 
+        # Quick check and remove for OSX .DS_Store and .gitignore files in corpus source directory
+        # (prevents MALLET from including .DS_Store in the model)
+        self.RemoveKnownHiddenFiles()
+
         print '\tImporting files...'
 
         # bin/mallet import-dir --input ~/Documents/Programming/PythonPlayground/latest_poems/ --output ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.mallet --keep-sequence --remove-stopwords
@@ -149,7 +155,9 @@ class TWiC_MalletScript:
             #'--token-regex \p{L}+\p{P}*([[a-r][t-z][A-Z]]+|[s]{2,})',
             '--keep-sequence',
             '--remove-stopwords',
+
             #'--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
+            '--extra-stopwords {0}'.format(self.stopwords_dir + "added_stopwords_2016.txt")
         ]
         subprocess.check_call(args, stdout=sys.stdout)
 
@@ -166,6 +174,8 @@ class TWiC_MalletScript:
             self.mallet_file,
             '--num-topics',
             '{0}'.format(self.num_topics),
+            '--num-iterations',
+            '{0}'.format(self.num_intervals),
             '--output-state',
             self.compressed_state_file,
             '--output-doc-topics',
@@ -345,6 +355,13 @@ class TWiC_MalletScript:
 
         # Return word weights table that has eliminated words not "in" each topic
         return full_wordweights_table
+
+    def RemoveKnownHiddenFiles(self):
+
+        if os.path.isfile(self.corpus_source_dir + ".DS_Store"):
+            os.unlink(self.corpus_source_dir + ".DS_Store")
+        if os.path.isfile(self.corpus_source_dir + ".gitignore"):
+            os.unlink(self.corpus_source_dir + ".gitignore")
 
 
     class Mallet_FileTopicProportions:

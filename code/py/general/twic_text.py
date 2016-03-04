@@ -24,20 +24,20 @@ class TWiC_Text:
         self.__m_file_name, self.__m_file_ext = os.path.splitext(self.__m_file_path)
         self.__m_file_name = os.path.basename(self.__m_file_name)
         self.__full_text = self.__get_full_text()
-        self.PrepareForComparison()
+        self.PrepareForComparison(True)
 
 
     def __get_full_text(self):
 
         full_text = ""
-        fullpath_cleanedspaces = urllib2.unquote(self.__m_file_path)
-        lastSlash = fullpath_cleanedspaces.rfind("/")
-        filepath = fullpath_cleanedspaces[0:lastSlash]
-        filename = fullpath_cleanedspaces[lastSlash:]
-        firstUnderscore = filename.find("_")
-        filename = filename[firstUnderscore + 1:]
+        # fullpath_cleanedspaces = urllib2.unquote(self.__m_file_path)
+        # lastSlash = fullpath_cleanedspaces.rfind("/")
+        # filepath = fullpath_cleanedspaces[0:lastSlash]
+        # filename = fullpath_cleanedspaces[lastSlash:]
+        # firstUnderscore = filename.find("_")
+        # filename = filename[firstUnderscore + 1:]
 
-        with open(filepath + "/" + filename, "rU") as textfile_ptr:
+        with open(self.__m_file_path, "rU") as textfile_ptr:
             lines = textfile_ptr.readlines()
             for line in lines:
                 full_text += line.strip() + "\n"
@@ -45,6 +45,7 @@ class TWiC_Text:
 
 
     def ConvertToPlainText(self, output_filepath):
+
 
         with open(output_filepath, 'w') as plaintext_output_file:
 
@@ -57,6 +58,30 @@ class TWiC_Text:
                 #    line_to_write = Utils_MalletInterpret.Translate_With_Unidecode(output_line)
                 plaintext_output_file.write(unidecode(output_line) + u"\n")
                 #plaintext_output_file.write(line_to_write + "\n").encode("utf-8")
+
+
+    def ConvertToPlainText_Chunks(self, p_output_dir, p_file_number, p_chunk=True, p_chunk_size=5000):
+
+        file_name = self.GetFilename()
+        file_ext = self.GetFileExtension()
+        output_lines = self.GetPreparedLines()
+
+        # Optional line chunking
+        chunks = []
+        if p_chunk:
+            # print "CHUNKING {0}".format(file_name)
+            chunks = Utils_MalletInterpret.GetChunkedLines(output_lines, p_chunk_size)
+        else:
+            chunks.append(output_lines)
+
+        # Write out files
+        for index in range(len(chunks)):
+            with open("{0}{1}_{2}_{3}{4}".format(p_output_dir, p_file_number, file_name, index, file_ext), 'w') as plaintext_output_file:
+                for line in chunks[index]:
+                    plaintext_output_file.write(unidecode(line) + u"\n")
+            p_file_number += 1
+
+        return len(chunks)
 
 
     def GetCleanLine(self, line):
@@ -123,9 +148,11 @@ class TWiC_Text:
         # In current implemenation for general texts, no publication data is listed
         return ""
 
+
     def GetTitle(self):
 
-        return self.GetFilename().split("_")[1]
+        # return self.GetFilename().split("_")[1]
+        return self.GetFilename()[self.GetFilename().find("_") + 1:]
 
 
     def IsTextPreparedForComparision(self):
@@ -133,9 +160,12 @@ class TWiC_Text:
         return None != self.__my_lines
 
 
-    def PrepareForComparison(self):
+    def PrepareForComparison(self, p_keep_multinewline = False):
 
-        self.__my_lines = [re.sub(r'[\n]+', '\n', self.GetFullText()).split('\n')]
+        if p_keep_multinewline:
+            self.__my_lines = self.GetFullText().split("\n")
+        else:
+            self.__my_lines = [re.sub(r'[\n]+', '\n', self.GetFullText()).split('\n')]
         #for index in range(len(self.__my_lines)):
         #    self.__my_lines[index].append(self.__my_lines[index][0].strip().split(' '))
 
@@ -165,11 +195,12 @@ class TWiC_Text:
         for user_filename in glob.glob(user_source_dir + "*.txt"):
 
             user_text = TWiC_Text(user_filename)
-            user_text.ConvertToPlainText("{0}{1}_{2}{3}".format(corpus_source_dir,\
-                                                                source_file_counter,\
-                                                                user_text.GetFilename(),\
-                                                                user_text.GetFileExtension()))
-            source_file_counter += 1
+            #user_text.ConvertToPlainText("{0}{1}_{2}{3}".format(corpus_source_dir,\
+            #                                                    source_file_counter,\
+            #                                                    user_text.GetFilename(),\
+            #                                                    user_text.GetFileExtension()))
+            #source_file_counter += 1
+            source_file_counter += user_text.ConvertToPlainText_Chunks(corpus_source_dir, source_file_counter)
 
 
     @staticmethod

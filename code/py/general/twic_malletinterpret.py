@@ -1,3 +1,4 @@
+import glob
 import json
 import time
 import os
@@ -37,11 +38,15 @@ class TWiC_MalletInterpret:
     @staticmethod
     def Build_TextObjects_Opt(TextClass, mallet_script, tp_collection):
 
-        getfilename = Utils_MalletInterpret.GetFilename
-        txt_name_format = '{0}{1}.txt'.format
-        user_source_dir = mallet_script.user_source_dir
+        # Old
+        # getfilename = Utils_MalletInterpret.GetFilename
+        # txt_name_format = '{0}{1}.txt'.format
+        # #user_source_dir = mallet_script.user_source_dir
+        # source_dir = mallet_script.corpus_source_dir
+        # return [TextClass(txt_name_format(source_dir, getfilename(tp.filename))) for tp in tp_collection]
 
-        return [TextClass(txt_name_format(user_source_dir, getfilename(tp.filename))) for tp in tp_collection]
+        return [TextClass(tp.filename) for tp in tp_collection]
+
 
     @staticmethod
     def Build_WordTopicFileIndices(filename, current_fwt):
@@ -902,52 +907,62 @@ class TWiC_MalletInterpret:
     @staticmethod
     def InterpretMalletOutput(mallet_script):
 
-        print 'Interpreting MALLET output for visualization...'
+        print "Interpreting MALLET output for TWiC visualization..."
 
-        myoutput_dir = '../../../data/input/'
+        myoutput_dir = "../../../data/input/"
 
-        print '\tReading in MALLET output...'
+        print "\tReading in MALLET output..."
 
-        ####### 1. Reading dickinson.topics.tsv
+        ####### 1. Reading corpus.topics.tsv
+
+        print "\t\tLoading topics for texts..."
 
         # tp_collection = mallet_script.GetTopicsFileData("2.0.7")
         tp_collection = mallet_script.GetTopicsFileData("2.0.9")
 
-        ###### 2. Reading dickinson.keys.tsv
+        ###### 2. Reading corpus.keys.tsv
+
+        print "\t\tLoading topic keys..."
 
         topic_keys = mallet_script.GetKeysFileData()
 
-        ###### 3. Reading dickinson.topic-state.tsv
+        ###### 3. Reading corpus.topic-state.tsv
+
+        print "\t\tLoading topic words state file..."
 
         fwt_collection = mallet_script.GetStateFileData()
 
-        ###### 4. Reading dickinson.wordweights.tsv
+        ###### 4. Reading corpus.wordweights.tsv
+
+        print "\t\tLoading topic word weights..."
+
         ww_table = mallet_script.GetTopicWordWeights()
 
         ###### 5. Build a text object for each text
 
-        print '\tBuilding text objects...'
+        print "\tBuilding text objects..."
 
         # start_time = int(round(time.time() * 1000))
         # textobj_collection = TWiC_MalletInterpret.Build_TextObjects(TWiC_Poem, mallet_script, tp_collection)
         # end_time = int(round(time.time() * 1000))
-        # print 'Unoptimized: {0}ms'.format(end_time - start_time)
+        # print "Unoptimized: {0}ms".format(end_time - start_time)
 
         # start_time = int(round(time.time() * 1000))
         # text_obj_collection_opt = TWiC_MalletInterpret.Build_TextObjects_Opt(TWiC_Poem, mallet_script, tp_collection)
         textobj_collection = TWiC_MalletInterpret.Build_TextObjects_Opt(TWiC_Text, mallet_script, tp_collection)
         # end_time = int(round(time.time() * 1000))
-        # print 'Optimized: {0}ms'.format(end_time - start_time)
+        # print "Optimized: {0}ms".format(end_time - start_time)
 
         ###### 6. Generate a list of unique colors for each topic
 
-        print '\tCreating color list...'
+        print "\tCreating color list..."
 
         color_list = Utils_Color.Get_UniqueColorList(len(topic_keys.corpus_topic_proportions.keys()))
+        # color_list = Utils_Color.HCL_Fluo
 
         ###### 7. Build HTML and JSON files for each text for low and mid level TWiC representations
 
-        print '\tCreating JSON files for TWiC views of texts...'
+        print "\tCreating JSON files for TWiC views of individual texts..."
 
         for text in textobj_collection:
             current_tp = None
@@ -955,15 +970,15 @@ class TWiC_MalletInterpret:
                 if text.GetFilename().split("_")[0] == Utils_MalletInterpret.GetFilenameWithUnderscore(tp.filename):
                     current_tp = tp
                     break
-            # TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
+            # TWiC_MalletInterpret.Build_HTMLandJSONForText(text, myoutput_dir, "{0}.css".format(mallet_script.corpus_name), \
             #                          current_tp, fwt_collection, topic_keys, color_list, mallet_script, True)
-            TWiC_MalletInterpret.Build_JSONForTextwithForeignObject(text, myoutput_dir, '{0}.css'.format(mallet_script.corpus_name), \
+            TWiC_MalletInterpret.Build_JSONForTextwithForeignObject(text, myoutput_dir, "{0}.css".format(mallet_script.corpus_name), \
                                      current_tp, fwt_collection, topic_keys, color_list, mallet_script, True)
 
 
         ###### 8. Build JSON files for visualization
 
-        print '\tBuilding JSON map files for TWiC visualization...'
+        print "\tBuilding corpus-level JSON map files..."
 
         # Build a json that shows the hierarchy of Corpus -> Text clusters -> Texts based on Jensen-Shannon Distance
         TWiC_MalletInterpret.Build_CorpusMapJSON_Avg(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
@@ -979,5 +994,7 @@ class TWiC_MalletInterpret:
 
         # Build a json that lists the distribution weights of words likely to appear in each topic
         TWiC_MalletInterpret.Build_WordWeightJSON(ww_table, myoutput_dir + "json/")
+
+        print "Finished processing {0} for TWiC.".format(mallet_script.corpus_title)
 
 
