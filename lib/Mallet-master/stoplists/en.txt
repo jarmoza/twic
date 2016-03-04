@@ -213,6 +213,7 @@ into
 inward
 is
 it
+it's
 its
 itself
 j
@@ -252,6 +253,7 @@ mean
 meanwhile
 merely
 might
+mine
 more
 moreover
 most
@@ -302,6 +304,7 @@ one
 ones
 only
 onto
+opon
 or
 other
 others
@@ -405,6 +408,7 @@ thanx
 that
 thats
 the
+thee
 their
 theirs
 them
@@ -426,12 +430,15 @@ this
 thorough
 thoroughly
 those
+thou
 though
 three
 through
 throughout
 thru
 thus
+till
+tis
 to
 together
 too
@@ -443,6 +450,7 @@ tries
 truly
 try
 trying
+twas
 twice
 two
 u
