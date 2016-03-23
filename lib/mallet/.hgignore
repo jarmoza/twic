@@ -1,0 +1,18 @@
+syntax: glob
+*.class
+*~
+CVS
+unpack
+mallet.jar
+*.diff
+.cvsignore
+lib/jython/Lib/test/output/
+doc
+class
+*.DS_Store
+
+# Eclipse config files
+.project
+.classpath
+.settings
+.distfiles

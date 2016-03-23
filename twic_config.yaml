@@ -1,0 +1,6 @@
+corpus_path: /Users/PeregrinePickle/Documents/Programming/D3Playground/projects/twic/data/dickinson/input/txt/
+corpus_short_name: dickinson
+corpus_full_name: The Poems of Emily Dickinson
+num_topics: 100
+num_intervals: 100
+text_chunk_size_words: 5000

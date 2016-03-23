@@ -33,7 +33,7 @@ def CreateMallet():
     mallet_script.output_dir = twic_relative_root + "data/output/mallet/"
     mallet_script.stopwords_dir = twic_relative_root + "data/output/stopwords/"
     #mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
-    mallet_script.lda_dir = twic_relative_root + "lib/Mallet-master/"
+    mallet_script.lda_dir = twic_relative_root + "lib/mallet/"
     mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = "100"
     mallet_script.num_intervals = "100"

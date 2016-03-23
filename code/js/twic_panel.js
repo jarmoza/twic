@@ -4250,6 +4250,9 @@ var TWiC = (function(namespace){
 
         // Make the publication view draggable and resizable
         this.MakeDraggable();
+
+        // Text View will be open
+        this.m_underlyingPanelOpen = true;
     });
 
     namespace.PublicationView.method("Start", function(){
@@ -4404,6 +4407,34 @@ var TWiC = (function(namespace){
                 } else {
                     this.HighlightAllDataShapes(true);
                 }
+            }
+            else if ( p_updateType && namespace.Interaction.dblclick == p_updateType ){
+
+                // Pass the double click to linked panels
+                for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                    if ( namespace.Interaction.dblclick == this.m_linkedViews[index].update ) {
+                        this.m_linkedViews[index].panel.Update(p_data, p_updateType);
+                    }
+                }
+
+                // Stop the click from passing through to other objects
+                d3.event.stopPropagation();
+            }
+        }
+        else {
+
+         if ( p_updateType && namespace.Interaction.dblclick == p_updateType ){
+
+                // Pass the double click to linked panels
+                for ( var index = 0; index < this.m_linkedViews.length; index++ ) {
+                    if ( namespace.Interaction.dblclick == this.m_linkedViews[index].update ) {
+                        this.m_linkedViews[index].panel.Update(p_data, p_updateType);
+                    }
+                }
+
+                // Stop the click from passing through to other objects
+                d3.event.stopPropagation();
+
             }
         }
     });
@@ -4628,6 +4659,7 @@ var TWiC = (function(namespace){
 
                     // Load the individual JSON for this text
                     textRectangle.Load();
+                    textRectangle.SetTitle(this.m_data.texts[index].title);
 
                     var textrect_json = {
                         "name": this.m_data.texts[index].title,
@@ -5367,9 +5399,11 @@ var TWiC = (function(namespace){
                             }
                         }*/
                         var myPanel = p_data.shapeRef.m_panel;
-                        dist2avg = myPanel.m_adjustedDistances[p_data.shapeRef.m_panelNodeIndex] -
-                                   (( myPanel.b_adjustDistances ) ? myPanel.m_linkDistLimits.min : 0);
-                        dist2avg = Math.abs(dist2avg);
+                        if ( myPanel.m_adjustedDistances ){
+                            dist2avg = myPanel.m_adjustedDistances[p_data.shapeRef.m_panelNodeIndex] -
+                                       (( myPanel.b_adjustDistances ) ? myPanel.m_linkDistLimits.min : 0);
+                            dist2avg = Math.abs(dist2avg);
+                        }
 
                         // Display the rectangle name
                         this.AddBarText(panelTitle, panelTitleID, false);
@@ -5457,6 +5491,9 @@ var TWiC = (function(namespace){
     namespace.DataBar.method("AddBarText", function(p_barText, p_id, p_altText){
 
         this.m_controlBar.AddText(function(p_barText, p_id, p_altText){
+
+            console.log("Bar Text");
+            console.log(p_barText);
 
             // Remove any former panel title first
             this.m_controlGroup.selectAll("text").remove("*");
