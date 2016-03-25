@@ -884,8 +884,8 @@ var TWiC = (function(namespace){
                                             "hide_highlight": "#3B0002", "min_highlight": "#864502", "max_highlight": "#0B5401",
                                             "tile": "#0A2D50", "link": "lightgray" };
     namespace.Level.prototype.s_twicLevels = [];
-    //namespace.Level.prototype.s_jsonDirectory = "data/dickinson/input/json/";
-    namespace.Level.prototype.s_jsonDirectory = "data/input/json/";
+    namespace.Level.prototype.s_jsonDirectory = "data/dickinson/input/json/";
+    //namespace.Level.prototype.s_jsonDirectory = "data/input/json/";
 
     // Creating a Level instance also adds it to the TWiC level list
     namespace.Level.prototype.Instance = function(){
