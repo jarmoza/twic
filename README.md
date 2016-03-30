@@ -255,11 +255,21 @@ Don't worry though. This setup step just require a familiarity with how to acces
 
 ####Basic Steps
 
+Steps **1-3** below only need to be done when first setting up TWiC. Steps **4-5** however will need to be run whenever you want to rerun the modeler or adjust its parameters.
+
 1. **Download** TWiC from [github.com/jarmoza/twic](github.com/jarmoza/twic).
 
 2. **Unzip** the download to where you want the TWiC folder.
 
-3. **Edit** the file `twic_config.yaml` with a text editor.
+3. **Make MALLET** 
+
+    i. At the terminal/command line navigate to where you placed the `twic` folder.
+  
+    ii. Change directory (`cd`) to the `lib/mallet` folder.
+    
+    iii. Run `make` in that folder (If you have issues building MALLET with `make`, see the [Notes section](#howtouse_python_notes).
+
+4. **Edit** the file `twic_config.yaml` with a text editor.
 	
 	i. _(Required)_ Set the path for the text collection field (ex. `user_source_path: /Users/MyUserName/MyCorpusFolder/`).
 	
@@ -269,7 +279,7 @@ Don't worry though. This setup step just require a familiarity with how to acces
 	
 	iv. _(Optional)_ Set the full and short corpus names. The full name is how your text will be referred to in the visualization (ex. `corpus_full_name: My Collection Name`. The short name is just an internal identifier for TWiC and MALLET (ex. `corpus_short_name: mycollection`). This will be the name of your MALLET output files, located in `twic/data/output/mallet`.
 	
-4. **Run** TWiC's main Python script `twic_corpus2vis.py`.
+5. **Run** TWiC's main Python script `twic_corpus2vis.py`.
 
 	i. At the terminal/command line navigate to where you placed the `twic` folder.
 	
@@ -280,7 +290,10 @@ Don't worry though. This setup step just require a familiarity with how to acces
 	
 **With that done, you are ready to launch TWiC in your web browser!** 
 
+<a name="howtouse_python_notes"></a>
 ####Notes
+
+Sometimes there are issues building MALLET via the `make` command. This is usually attributable to the version of Java on your system. You may need to download the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
  
 Running `twic_corpus2vis.py` can take a considerable amount of time, depending on the size of the corpus you are asking MALLET to model. Once modeling is complete however, the script that reinterprets MALLET's outputs executes comparatively more quickly.
 
