@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tie the strings to my life, my Lord </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F338A">
+                <lg type="stanza">
+                    <l>Tie the strings to my Life,<app type="division"><lem><lb/></lem></app>
+ My Lord,</l>
+                    <l>Then, I am ready to go!  </l>
+                    <l>Just a look at the Horses - </l>
+                    <l>Rapid! That will do!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Put me in on the firmest<app type="division"><lem><lb/></lem></app>
+ side -</l>
+                    <l>So I shall never fall - </l>
+                    <l>For we must ride to the<app type="division"><lem><lb/></lem></app>
+ Judgment - </l>
+                    <l><add type="alternate" extent="And it&#x27;s partly,">And it&#x27;s many a mile -</add>
+And it's partly, down Hill - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But never I mind the<add type="alternate" extent="steepest">Bridges</add>
+ steepest - </l>
+                    <l>And never I mind the Sea -</l>
+                    <l>Held fast in Everlasting Race - </l>
+                    <l>By my own Choice, and Thee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Good bye to the Life I used to live - </l>
+                    <l>And the World I used to know -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l><add type="alternate" extent="And kiss the Hills, for me, just once -">Here&#x27;s a keepsake for the Hills</add>
+And kiss the Hills, for me, just once -</l>
+                    <l><add type="alternate" extent="Then">Now</add>
+Then - I am ready to go!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

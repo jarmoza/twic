@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I watched her face to see which way 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1667">
+                <lg type="stanza">
+                    <l>I watched her face to see which way</l>
+                    <l>She took the awful news</l>
+                    <l>Whether she died before she heard</l>
+                    <l>Or in protracted bruise</l>
+                    <l>Remained a few slow years with us</l>
+                    <l>Each heavier than the last</l>
+                    <l>A further afternoon to fail</l>
+                    <l>As Flower at fall of Frost --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

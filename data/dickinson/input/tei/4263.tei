@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>BEQUEST</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-28">
+                <lg type="stanza">
+                    <l>You left me, sweet, two legacies, </l>
+                    <l>A legacy of love</l>
+                    <l>A Heavenly Father would content,</l>
+                    <l>Had He the offer of;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You left me boundaries of pain</l>
+                    <l>Capacious as the sea,</l>
+                    <l>Between eternity and time,</l>
+                    <l>Your consciousness and me.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

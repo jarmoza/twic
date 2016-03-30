@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SUPERIORITY TO FATE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-2">
+                <lg type="stanza">
+                    <l>Superiority to fate</l>
+                    <l>Is difficult to learn.</l>
+                    <l>'T is not conferred by any,</l>
+                    <l>But possible to earn</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A pittance at a time,</l>
+                    <l>Until, to her surprise,</l>
+                    <l>The soul with strict economy</l>
+                    <l>Subsists till Paradise.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

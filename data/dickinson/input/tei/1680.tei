@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He preached about breadth till we knew he  was narrow </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1266A">
+                <lg type="stanza">
+                    <l>He preached<add type="alternate" extent="about">opon</add>
+ about<app type="division"><lem><lb/></lem></app>
+ Breadth till<add type="alternate" extent="we knew he was">it argued him</add>
+ we knew<app type="division"><lem><lb/></lem></app>
+ he was narrow </l>
+                    <l>The Broad are too<app type="division"><lem><lb/></lem></app>
+ broad to define </l>
+                    <l>And of Truth until<app type="division"><lem><lb/></lem></app>
+ it proclaimed him<app type="division"><lem><lb/></lem></app>
+ a Liar </l>
+                    <l>The Truth never<add type="alternate" extent="hoisted">flaunted</add>
+ hoisted<app type="division"><lem><lb/></lem></app>
+ a sign - </l>
+                    <l>Simplicity fled from his<app type="division"><lem><lb/></lem></app>
+ counterfeit presence</l>
+                    <l>As Gold the Pyrites<app type="division"><lem><lb/></lem></app>
+ would shun </l>
+                    <l>What confusion would<app type="division"><lem><lb/></lem></app>
+ cover the innocent<app type="division"><lem><lb/></lem></app>
+ Jesus </l>
+                    <l><add type="alternate" extent="To meet">at meeting</add>
+To meet<add type="alternate" extent="so learned">so accomplished &amp;#x2022; [so</add>
+ so<add type="alternate" extent="learned">Religious &amp;#x2022; enabled</add>
+ learned<app type="division"><lem><lb/></lem></app>
+ a man - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

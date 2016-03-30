@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Spring comes on the world </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F999A">
+                <lg type="stanza">
+                    <l>Spring comes on the<app type="division"><lem><lb/></lem></app>
+ World -</l>
+                    <l>I sight the Aprils - </l>
+                    <l>Hueless to me, until<app type="division"><lem><lb/></lem></app>
+ thou come </l>
+                    <l>As, till the Bee </l>
+                    <l>Blossoms stand negative,</l>
+                    <l>Touched to Conditions </l>
+                    <l>By a Hum - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

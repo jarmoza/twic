@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Let me not mar that perfect dream </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1361A">
+                <lg type="stanza">
+                    <l>Let me<app type="division"><lem><lb/></lem></app>
+ not mar<app type="division"><lem><lb/></lem></app>
+ that perfect<app type="division"><lem><lb/></lem></app>
+ Dream </l>
+                    <l>By an Auroral<app type="division"><lem><lb/></lem></app>
+ stain </l>
+                    <l>But so<app type="division"><lem><lb/></lem></app>
+ adjust my<app type="division"><lem><lb/></lem></app>
+ daily Night </l>
+                    <l>That it will<app type="division"><lem><lb/></lem></app>
+ come again.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not when we<app type="division"><lem><lb/></lem></app>
+ know, the<app type="division"><lem><lb/></lem></app>
+ Power accosts -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>The Garment<app type="division"><lem><lb/></lem></app>
+ of Surprise </l>
+                    <l>Was all<app type="division"><lem><lb/></lem></app>
+ our timid<app type="division"><lem><lb/></lem></app>
+ Mother wore </l>
+                    <l>At Home -<app type="division"><lem><lb/></lem></app>
+ in Paradise.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

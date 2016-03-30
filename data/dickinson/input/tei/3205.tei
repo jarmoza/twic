@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Renunciation -- is a piercing Virtue -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J745">
+                <lg type="stanza">
+                    <l>Renunciation -- is a piercing Virtue --</l>
+                    <l>The letting go</l>
+                    <l>A Presence -- for an Expectation --</l>
+                    <l>Not now --</l>
+                    <l>The putting Out of Eyes --</l>
+                    <l>Just Sunrise --</l>
+                    <l>Lest Day --</l>
+                    <l>Day's Great Progenitor --</l>
+                    <l><app type="revision"><lem>Outshow --</lem><rdg>Outshow --</rdg></app>
+<app type="revision"><lem>Outglow --</lem><rdg>Outglow --</rdg></app>
+Outvie</l>
+                    <l>Renunciation -- is the Choosing</l>
+                    <l>Against itself --</l>
+                    <l>Itself to justify</l>
+                    <l>Unto itself --</l>
+                    <l>When larger function --</l>
+                    <l>Make that appear --</l>
+                    <l>Smaller -- that Covered Vision -- Here --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

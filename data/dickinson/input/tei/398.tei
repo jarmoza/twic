@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Again his voice is at the door </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F274A">
+                <lg type="stanza">
+                    <l>Again - his voice is at<app type="division"><lem><lb/></lem></app>
+ the door - </l>
+                    <l>I feel the old <em>Degree</em> - </l>
+                    <l>I hear him ask the<app type="division"><lem><lb/></lem></app>
+ servant </l>
+                    <l>For such an one - as me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I take a<app type="division"><lem><lb/></lem></app>
+ <em>flower</em> - as I go -</l>
+                    <l>My face to <em>justify</em> - </l>
+                    <l>He never <em>saw</em> me - in<app type="division"><lem><lb/></lem></app>
+ <em>this life</em> - </l>
+                    <l>I might <em>surprise</em> his<app type="division"><lem><lb/></lem></app>
+ eye!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I cross the Hall<app type="division"><lem><lb/></lem></app>
+ with <em>mingled</em> steps -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>I -<add type="alternate" extent="silent">speechless</add>
+ silent - pass the<app type="division"><lem><lb/></lem></app>
+ door -</l>
+                    <l>I look on all this<app type="division"><lem><lb/></lem></app>
+ world <em>contains</em> - </l>
+                    <l><em>Just his face</em> - nothing<app type="division"><lem><lb/></lem></app>
+ more!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We talk in<app type="division"><lem><lb/></lem></app>
+ <em><add type="alternate" extent="careless">venture</add>
+careless</em> - and in <em>toss</em> - </l>
+                    <l>A kind of <em>plummet<app type="division"><lem><lb/></lem></app>
+</em> strain - </l>
+                    <l>Each - sounding - shily -</l>
+                    <l>Just - how - deep - </l>
+                    <l>The <em>other's</em><add type="alternate" extent="one - had been">foot had been</add>
+ one - had been - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We <em>walk</em> - I<app type="division"><lem><lb/></lem></app>
+ leave my Dog -<add type="alternate" extent="at home">behind</add>
+ at home -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A <em>tender - thoughtful<app type="division"><lem><lb/></lem></app>
+</em> Moon </l>
+                    <l>Goes with us - just<app type="division"><lem><lb/></lem></app>
+ a little way -</l>
+                    <l>And - then - we are<app type="division"><lem><lb/></lem></app>
+ <em>alone</em> - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><em>Alone</em> - if <em>Angels<app type="division"><lem><lb/></lem></app>
+</em> are &quot;alone&quot; - </l>
+                    <l><em>First time</em> they <em>try</em> the<app type="division"><lem><lb/></lem></app>
+ <em>sky!</em> </l>
+                    <l><em>Alone</em> - if those &quot;vailed faces&quot; - be - </l>
+                    <l><em>We</em> cannot <em>count</em> -</l>
+                    <l>On High!  </l>
+                    <l>I'd give - to live that<app type="division"><lem><lb/></lem></app>
+ hour - <em>again</em> - </l>
+                    <l>The <em>purple - in my<app type="division"><lem><lb/></lem></app>
+ Vein</em> - </l>
+                    <l>But <em>He</em><add type="alternate" extent="must">should</add>
+ must <em>count <app type="division"><lem><lb/></lem></app>
+the drops - himself</em> - </l>
+                    <l><em>My price</em> for <em>every <app type="division"><lem><lb/></lem></app>
+stain!</em></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

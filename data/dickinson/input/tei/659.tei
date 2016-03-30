@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We pray to heaven </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F476A">
+                <lg type="stanza">
+                    <l>We pray - to Heaven -</l>
+                    <l>We prate - of Heaven - </l>
+                    <l>Relate - when Neighbors die - </l>
+                    <l>At what o'clock to Heaven -<app type="division"><lem><lb/></lem></app>
+ they fled - </l>
+                    <l>Who saw them - Wherefore<app type="division"><lem><lb/></lem></app>
+ fly?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is Heaven a Place - a Sky -<app type="division"><lem><lb/></lem></app>
+ a Tree?  </l>
+                    <l>Location's narrow way is for<app type="division"><lem><lb/></lem></app>
+ Ourselves - </l>
+                    <l>Unto the Dead </l>
+                    <l>There's no Geography - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But State - Endowal - Focus -</l>
+                    <l>Where - Omnipresence - fly?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

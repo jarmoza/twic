@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We cover thee, sweet face.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-110">
+                <lg type="stanza">
+                    <l>We cover thee, sweet face.</l>
+                    <l>Not that we tire of thee,</l>
+                    <l>But that thyself fatigue of us;</l>
+                    <l>Remember, as thou flee,</l>
+                    <l>We follow thee until</l>
+                    <l>Thou notice us no more,</l>
+                    <l>And then, reluctant, turn away</l>
+                    <l>To con thee o'er and o'er,</l>
+                    <l>And blame the scanty love</l>
+                    <l>We were content to show,</l>
+                    <l>Augmented, sweet, a hundred fold</l>
+                    <l>If thou would'st take it now.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

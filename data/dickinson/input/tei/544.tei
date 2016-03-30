@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>All the letters I could write </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F380A">
+                <lg type="stanza">
+                    <l>All the letters I could<app type="division"><lem><lb/></lem></app>
+ write, </l>
+                    <l>Were not fair as this - </l>
+                    <l>Syllables of Velvet - </l>
+                    <l>Sentences of Plush - </l>
+                    <l>Depths of Ruby, undrained -</l>
+                    <l>Hid, Lip, for Thee,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Play it were a<app type="division"><lem><lb/></lem></app>
+ Humming Bird </l>
+                    <l>And sipped just<app type="division"><lem><lb/></lem></app>
+ Me - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

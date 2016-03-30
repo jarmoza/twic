@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To learn the transport by the pain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F178B">
+                <lg type="stanza">
+                    <l>To learn the Transport by the Pain -</l>
+                    <l>As Blind Men learn the sun!  </l>
+                    <l>To die of thirst - suspecting </l>
+                    <l>That Brooks in Meadows run!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To stay the homesick - homesick feet</l>
+                    <l>Opon a foreign shore - </l>
+                    <l>Haunted by native lands, the while - </l>
+                    <l>And blue - beloved Air!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>This is the sovreign Anguish!  </l>
+                    <l>This - the signal wo!</l>
+                    <l>These are the patient &quot;Laureates&quot; </l>
+                    <l>Whose voices - trained - below - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ascend in ceaseless Carol - </l>
+                    <l>Inaudible, indeed, </l>
+                    <l>To us - the duller scholars</l>
+                    <l>Of the Mysterious Bard!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

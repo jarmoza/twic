@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>LOST</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-111">
+                <lg type="stanza">
+                    <l>I lost a world the other day.</l>
+                    <l>Has anybody found?</l>
+                    <l>You'll know it by the row of stars</l>
+                    <l>Around its forehead bound.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A rich man might not notice it;</l>
+                    <l>Yet to my frugal eye</l>
+                    <l>Of more esteem than ducats.</l>
+                    <l>Oh, find it, sir, for me!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

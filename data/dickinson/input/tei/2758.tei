@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Alone, I cannot be --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J298">
+                <lg type="stanza">
+                    <l>Alone, I cannot be --</l>
+                    <l><app type="revision"><lem>for --</lem><rdg>for --</rdg></app>
+The Hosts -- do visit me --</l>
+                    <l>Recordless Company --</l>
+                    <l>Who baffle Key --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They have no Robes, nor Names --</l>
+                    <l>No Almanacs -- nor Climes --</l>
+                    <l>But general Homes</l>
+                    <l>Like Gnomes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their Coming, may be known</l>
+                    <l>By Couriers within --</l>
+                    <l>Their going -- is not --</l>
+                    <l>For they're never gone --</l>
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

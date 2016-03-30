@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Robin&#x27;s my Criterion for Tune -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J285">
+                <lg type="stanza">
+                    <l>The Robin's my Criterion for Tune --</l>
+                    <l>Because I grow -- where Robins do --</l>
+                    <l>But, were I Cuckoo born --</l>
+                    <l>I'd swear by him --</l>
+                    <l>The ode familiar -- rules the Noon --</l>
+                    <l>The Buttercup's, my Whim for Bloom --</l>
+                    <l>Because, we're Orchard sprung --</l>
+                    <l>But, were I Britain born,</l>
+                    <l>I'd <app type="revision"><lem>Clovers -- scorn --</lem><rdg>Clovers -- scorn --</rdg></app>
+Daisies spurn --</l>
+                    <l>None but the Nut -- October fit --</l>
+                    <l>Because, through dropping it,</l>
+                    <l>The Seasons flit -- I'm taught --</l>
+                    <l>Without the Snow's Tableau</l>
+                    <l>Winter, were lie -- to me --</l>
+                    <l>Because I see -- New Englandly --</l>
+                    <l>The Queen, discerns like me --</l>
+                    <l>Provincially --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>At half past three a single bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1099C">
+                <lg type="stanza">
+                    <l>At Half past<app type="division"><lem><lb/></lem></app>
+ Three </l>
+                    <l>A Single Bird </l>
+                    <l>Unto a silent sky </l>
+                    <l>Propounded but<app type="division"><lem><lb/></lem></app>
+ a single term </l>
+                    <l>Of cautious<app type="division"><lem><lb/></lem></app>
+ Melody.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>At Half past<app type="division"><lem><lb/></lem></app>
+ Four </l>
+                    <l>Experiment had<app type="division"><lem><lb/></lem></app>
+ subjugated test<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And lo, her<app type="division"><lem><lb/></lem></app>
+ silver principle </l>
+                    <l>Supplanted all<app type="division"><lem><lb/></lem></app>
+ the rest.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>At Half past<app type="division"><lem><lb/></lem></app>
+ Seven</l>
+                    <l>Element nor<app type="division"><lem><lb/></lem></app>
+ implement be<app type="division"><lem><lb/></lem></app>
+ seen </l>
+                    <l>And Place was<app type="division"><lem><lb/></lem></app>
+ where the<app type="division"><lem><lb/></lem></app>
+ Presence was<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Circumference <app type="division"><lem><lb/></lem></app>
+between </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

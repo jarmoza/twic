@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My best Acquaintances are those 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J932">
+                <lg type="stanza">
+                    <l>My best Acquaintances are those</l>
+                    <l>With Whom I spoke no Word --</l>
+                    <l>The Stars that stated come to Town</l>
+                    <l>Esteemed Me never rude</l>
+                    <l>Although to their Celestial Call</l>
+                    <l>I failed to make reply --</l>
+                    <l>My constant -- reverential Face</l>
+                    <l>Sufficient Courtesy.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

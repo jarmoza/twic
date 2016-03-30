@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Remember me&quot; implored the Thief! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1180">
+                <lg type="stanza">
+                    <l>"Remember me" implored the Thief!</l>
+                    <l>Oh Hospitality!</l>
+                    <l>My Guest "Today in Paradise"</l>
+                    <l>I give thee guaranty.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Courtesy will fair remain</l>
+                    <l>When the Delight is Dust</l>
+                    <l>With which we cite this mightiest case</l>
+                    <l>Of compensated Trust.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of all we are allowed to hope</l>
+                    <l>But Affidavit stands</l>
+                    <l>That this was due where most we fear</l>
+                    <l>Be unexpected Friends.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

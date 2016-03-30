@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ve dropped my brain - My soul is numb </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1088A">
+                <lg type="stanza">
+                    <l>I've dropped my Brain -<app type="division"><lem><lb/></lem></app>
+ My Soul is numb -</l>
+                    <l>The Veins that used to run </l>
+                    <l>Stop palsied - 'tis Paralysis </l>
+                    <l>Done perfecter in stone - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Vitality is Carved and<app type="division"><lem><lb/></lem></app>
+ cool -</l>
+                    <l>My nerve in marble lies - </l>
+                    <l>A Breathing Woman </l>
+                    <l>Yesterday - endowed with<app type="division"><lem><lb/></lem></app>
+ Paradise.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not dumb - I had a<app type="division"><lem><lb/></lem></app>
+ sort that moved - </l>
+                    <l>A Sense that smote<app type="division"><lem><lb/></lem></app>
+ and stirred -</l>
+                    <l>Instincts for Dance -<app type="division"><lem><lb/></lem></app>
+ a caper part - </l>
+                    <l>An Aptitude for Bird -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who wrought Carrara<app type="division"><lem><lb/></lem></app>
+ in me </l>
+                    <l>And chiselled all<app type="division"><lem><lb/></lem></app>
+ my tune </l>
+                    <l>Were it a witchcraft -<app type="division"><lem><lb/></lem></app>
+ were it Death -</l>
+                    <l>I've still a chance<app type="division"><lem><lb/></lem></app>
+ to strain </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Being, somewhere -<app type="division"><lem><lb/></lem></app>
+ Motion - Breath - </l>
+                    <l>Though Centuries beyond, </l>
+                    <l>And every limit a<app type="division"><lem><lb/></lem></app>
+ Decade - </l>
+                    <l>I'll shiver, satisfied.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

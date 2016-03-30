@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not in this World to see his face -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J418">
+                <lg type="stanza">
+                    <l>Not in this World to see his face --</l>
+                    <l>Sounds long -- until I read the place</l>
+                    <l>Where this -- is said to be</l>
+                    <l>But just the Primer -- to a life --</l>
+                    <l>Unopened -- rare -- Upon the Shelf --</l>
+                    <l>Clasped yet -- to Him -- and me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And yet -- My Primer suits me so</l>
+                    <l>I would not choose -- a Book to know</l>
+                    <l>Than that -- be sweeter wise --</l>
+                    <l>Might some one else -- so learned -- be --</l>
+                    <l>And leave me -- just my A -- B -- C --</l>
+                    <l>Himself -- could have the Skies --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

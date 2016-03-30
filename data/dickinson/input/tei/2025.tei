@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Go not too near a house of rose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1479A">
+                <lg type="stanza">
+                    <l>Go not too near<app type="division"><lem><lb/></lem></app>
+ a House of Rose - </l>
+                    <l>The depredation<app type="division"><lem><lb/></lem></app>
+ of a Breeze </l>
+                    <l>Or inundation<app type="division"><lem><lb/></lem></app>
+ of a Dew </l>
+                    <l>Alarm it's Walls<app type="division"><lem><lb/></lem></app>
+ away -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Nor try to tie<app type="division"><lem><lb/></lem></app>
+ the Butterfly,</l>
+                    <l>Nor climb the<app type="division"><lem><lb/></lem></app>
+ Bars of Ecstasy - </l>
+                    <l>In insecurity<app type="division"><lem><lb/></lem></app>
+ to lie </l>
+                    <l>Is Joy's insuring<app type="division"><lem><lb/></lem></app>
+ quality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To One denied to drink 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J490">
+                <lg type="stanza">
+                    <l>To One denied to drink</l>
+                    <l>To tell what Water is</l>
+                    <l>Would be acuter, would it not</l>
+                    <l>Than letting Him surmise?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To lead Him to the Well</l>
+                    <l>And let Him hear it drip</l>
+                    <l>Remind Him, would it not, somewhat</l>
+                    <l>Of His condemned lip?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

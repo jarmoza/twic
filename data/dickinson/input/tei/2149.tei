@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His oriental heresies </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1562B">
+                <lg type="stanza">
+                    <l>His oriental heresies </l>
+                    <l>Exhilirate the Bee, </l>
+                    <l>And filling all the<app type="division"><lem><lb/></lem></app>
+ Earth and Air </l>
+                    <l>With gay apostasy </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fatigued at last, a<app type="division"><lem><lb/></lem></app>
+ Clover plain</l>
+                    <l>Allures his jaded<app type="division"><lem><lb/></lem></app>
+ Eye </l>
+                    <l>That lowly Breast where<app type="division"><lem><lb/></lem></app>
+ Butterflies </l>
+                    <l>Have felt it meet to die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

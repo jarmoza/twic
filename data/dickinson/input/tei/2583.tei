@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In lands I never saw -- they say 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J124">
+                <lg type="stanza">
+                    <l>In lands I never saw -- they say</l>
+                    <l>Immortal Alps look down --</l>
+                    <l>Whose Bonnets touch the firmament --</l>
+                    <l>Whose Sandals touch the town --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Meek at whose everlasting feet</l>
+                    <l>A Myriad Daisy play --</l>
+                    <l>Which, Sir, are you and which am I</l>
+                    <l>Upon an August day?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

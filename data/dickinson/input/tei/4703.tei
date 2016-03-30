@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The missing All prevented me</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-21">
+                <lg type="stanza">
+                    <l>The missing All prevented me</l>
+                    <l>From missing minor things.</l>
+                    <l>If nothing larger than a World's</l>
+                    <l>Departure from a hinge,</l>
+                    <l>Or Sun's extinction be observed,</l>
+                    <l>'Twas not so large that I</l>
+                    <l>Could lift my forehead from my work</l>
+                    <l>For curiosity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

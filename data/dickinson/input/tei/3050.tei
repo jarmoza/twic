@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Did you ever stand in a Cavern&#x27;s Mouth -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J590">
+                <lg type="stanza">
+                    <l>Did you ever stand in a Cavern's Mouth --</l>
+                    <l>Widths out of the Sun --</l>
+                    <l>And look -- and shudder, and block your breath --</l>
+                    <l>And deem to be alone</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In such a place, what horror,</l>
+                    <l>How Goblin it would be --</l>
+                    <l>And fly, as 'twere pursuing you?</l>
+                    <l>Then Loneliness -- looks so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Did you ever look in a Cannon's face --</l>
+                    <l>Between whose Yellow eye --</l>
+                    <l>And your's -- the Judgment intervened --</l>
+                    <l>The Question of "To die" --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Extemporizing in your ear</l>
+                    <l><app type="revision"><lem>distinct --</lem><rdg>distinct --</rdg></app>
+As cool as Satyr's Drums --</l>
+                    <l>If you remember, and were saved --</l>
+                    <l>It's liker so -- it seems --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

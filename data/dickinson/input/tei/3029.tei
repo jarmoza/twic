@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I reckon -- when I count at all -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J569">
+                <lg type="stanza">
+                    <l>I reckon -- when I count at all --</l>
+                    <l>First -- Poets -- Then the Sun --</l>
+                    <l>Then Summer -- Then the Heaven of God --</l>
+                    <l>And then -- the List is done --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But, looking back -- the First so seems</l>
+                    <l>To Comprehend the Whole --</l>
+                    <l>The Others look a needless Show --</l>
+                    <l>So I write -- Poets -- All --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their Summer -- lasts a Solid Year --</l>
+                    <l>They can afford a Sun</l>
+                    <l>The East -- would deem extravagant --</l>
+                    <l>And if the <app type="revision"><lem>Other -- I final</lem><rdg>Other -- I final</rdg></app>
+Further Heaven --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Be Beautiful as they <app type="revision"><lem>Disclose</lem><rdg>Disclose</rdg></app>
+prepare</l>
+                    <l><app type="revision"><lem>to --</lem><rdg>to --</rdg></app>
+For Those who <app type="revision"><lem>Trust in</lem><rdg>Trust in</rdg></app>
+<app type="revision"><lem>Ask of --</lem><rdg>Ask of --</rdg></app>
+worship Them --</l>
+                    <l>It is too difficult a Grace --</l>
+                    <l>To justify the Dream --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

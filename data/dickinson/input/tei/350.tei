@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What shall I do - it whimpers so </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F237A">
+                <lg type="stanza">
+                    <l>What shall I do -<app type="division"><lem><lb/></lem></app>
+ it whimpers so - </l>
+                    <l>This little Hound<app type="division"><lem><lb/></lem></app>
+ within the Heart </l>
+                    <l>All day and night<app type="division"><lem><lb/></lem></app>
+ with bark and start - </l>
+                    <l>And yet, it will not go - </l>
+                    <l>Would you <em>untie</em> it, were<app type="division"><lem><lb/></lem></app>
+ you me -</l>
+                    <l>Would it stop whining -<app type="division"><lem><lb/></lem></app>
+ if to Thee - </l>
+                    <l>I sent it - even now?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It should not teaze you - </l>
+                    <l>By your chair -<app type="division"><lem><pb/></lem></app>
+ or, on the mat - </l>
+                    <l>Or if it dare - to<app type="division"><lem><lb/></lem></app>
+ climb your dizzy knee -</l>
+                    <l>Or - sometimes at your<app type="division"><lem><lb/></lem></app>
+ side to run - </l>
+                    <l>When you were willing - </l>
+                    <l>Shall it come?  </l>
+                    <l>Tell Carlo - </l>
+                    <l><em>He'</em>ll tell <em>me!</em></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

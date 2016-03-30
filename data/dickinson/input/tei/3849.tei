@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Touch lightly Nature&#x27;s sweet Guitar 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1389">
+                <lg type="stanza">
+                    <l>Touch lightly Nature's sweet Guitar</l>
+                    <l>Unless thou know'st the Tune</l>
+                    <l>Or every Bird will point at thee</l>
+                    <l><app type="revision"><lem>That wert a Bard too soon</lem><rdg>That wert a Bard too soon</rdg></app>
+<app type="revision"><lem>The Bard to silence born --</lem><rdg>The Bard to silence born --</rdg></app>
+Because a Bard too soon --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

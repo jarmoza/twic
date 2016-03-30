@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dying! Dying in the night! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J158">
+                <lg type="stanza">
+                    <l>Dying! Dying in the night!</l>
+                    <l>Wont somebody bring the light</l>
+                    <l>So I can see which way to go</l>
+                    <l>Into the everlasting snow?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And "Jesus"! Where is Jesus gone?</l>
+                    <l>They said that Jesus -- always came --</l>
+                    <l>Perhaps he does'nt know the House --</l>
+                    <l>This way, Jesus, Let him pass!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Somebody run to the great gate</l>
+                    <l>And see if Dollie's coming! Wait!</l>
+                    <l>I hear her feet upon the stair!</l>
+                    <l>Death wont hurt -- now Dollie's here!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

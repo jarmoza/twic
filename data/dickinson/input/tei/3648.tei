@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas fighting for his Life he was -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1188">
+                <lg type="stanza">
+                    <l>'Twas fighting for his Life he was --</l>
+                    <l>That sort accomplish well --</l>
+                    <l>The Ordnance of Vitality</l>
+                    <l>Is frugal of it's Ball.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It aims once -- kills once -- conquers once --</l>
+                    <l>There is no second War</l>
+                    <l>In that Campaign inscrutable</l>
+                    <l>Of the Interior.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

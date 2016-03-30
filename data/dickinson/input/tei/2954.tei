@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Going to Him! Happy letter! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J494">
+                <lg type="stanza">
+                    <l>Going to Him! Happy letter!</l>
+                    <l>Tell Him --</l>
+                    <l>Tell Him the page I did'nt write --</l>
+                    <l>Tell Him -- I only said the Syntax --</l>
+                    <l>And left the Verb and the pronoun out --</l>
+                    <l>Tell Him just how the fingers hurried --</l>
+                    <l>Then -- how they waded -- slow -- slow --</l>
+                    <l>And then you wished you had eyes in your pages --</l>
+                    <l>So you could see what moved them so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell Him -- it was'nt a Practised Writer --</l>
+                    <l>You guessed -- from the way the sentence toiled --</l>
+                    <l>You could hear the Boddice tug, behind you --</l>
+                    <l>As if it held but the might of a child --</l>
+                    <l>You almost pitied it -- you -- it worked so --</l>
+                    <l>Tell Him -- no -- you may quibble there --</l>
+                    <l>For it would split His Heart, to know it --</l>
+                    <l>And then you and I, were silenter.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell Him -- Night finished -- before we finished --</l>
+                    <l>And the Old Clock kept neighing "Day"!</l>
+                    <l>And you -- got sleepy -- and begged to be ended --</l>
+                    <l>What could it hinder so -- to say?</l>
+                    <l>Tell Him -- just how she sealed you -- Cautious!</l>
+                    <l>But -- if He ask where you are hid</l>
+                    <l>Until tomorrow -- Happy letter!</l>
+                    <l>Gesture Coquette -- and shake your Head!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Version 1</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Going -- to -- Her!</l>
+                    <l>Happy -- Letter! Tell Her --</l>
+                    <l>Tell Her -- the page I never wrote!</l>
+                    <l>Tell Her, I only said -- the Syntax --</l>
+                    <l>And left the Verb and the Pronoun -- out!</l>
+                    <l>Tell Her just how the fingers -- hurried --</l>
+                    <l>Then -- how they -- stammered -- slow -- slow --</l>
+                    <l>And then -- you wished you had eyes -- in your pages --</l>
+                    <l>So you could see -- what moved -- them -- so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell Her -- it was'nt a practised writer --</l>
+                    <l>You guessed --</l>
+                    <l>From the way the sentence -- toiled --</l>
+                    <l>You could hear the Boddice -- tug -- behind you --</l>
+                    <l>As if it held but the might of a child!</l>
+                    <l>You almost pitied -- it -- you -- it worked so --</l>
+                    <l>Tell Her -- No -- you may quibble -- there --</l>
+                    <l>For it would split Her Heart -- to know it --</l>
+                    <l>And then -- you and I -- were silenter!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell Her -- Day -- finished -- before we -- finished --</l>
+                    <l>And the old Clock kept neighing -- "Day"!</l>
+                    <l>And you -- got sleepy -- and begged to be ended --</l>
+                    <l>What could -- it hinder so -- to say?</l>
+                    <l>Tell Her -- just how she sealed -- you -- Cautious!</l>
+                    <l>But -- if she ask "where you are hid" -- until the evening -- Ah!</l>
+                    <l>Be bashful!</l>
+                    <l>Gesture Coquette</l>
+                    <l>And shake your Head!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Version II</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

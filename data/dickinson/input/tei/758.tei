@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a languor of the life </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F552A">
+                <lg type="stanza">
+                    <l>There is a Languor of<app type="division"><lem><lb/></lem></app>
+ the Life</l>
+                    <l>More imminent than Pain - </l>
+                    <l>'Tis Pain's Successor - When<app type="division"><lem><lb/></lem></app>
+ the Soul </l>
+                    <l>Has suffered all it can - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Drowsiness - diffuses -</l>
+                    <l>A Dimness like a Fog </l>
+                    <l>Envelopes Consciousness - </l>
+                    <l>As Mists - obliterate a Crag.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Surgeon - does not<app type="division"><lem><lb/></lem></app>
+ blanch - at pain - </l>
+                    <l>His Habit - is severe -</l>
+                    <l>But tell him that it<app type="division"><lem><lb/></lem></app>
+ ceased to feel - </l>
+                    <l>The Creature lying there - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And he will tell you -<app type="division"><lem><lb/></lem></app>
+ Skill is late -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A Mightier than He - </l>
+                    <l>Has ministered before Him -</l>
+                    <l>There's no Vitality </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Knock with tremor </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1333A">
+                <lg type="stanza">
+                    <l>Knock with<app type="division"><lem><lb/></lem></app>
+ tremor - </l>
+                    <l>These are Caesars - </l>
+                    <l>Should they be at Home </l>
+                    <l>Flee as if you<app type="division"><lem><lb/></lem></app>
+ trod unthinking </l>
+                    <l>On the Foot of Doom -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>These seceded<app type="division"><lem><lb/></lem></app>
+ from your summits </l>
+                    <l>Centuries ago - </l>
+                    <l>Should they<app type="division"><lem><lb/></lem></app>
+ rend you with &quot;How are you&quot; </l>
+                    <l>What have you to show?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

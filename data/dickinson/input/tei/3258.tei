@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She staked her Feathers -- Gained an Arc -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J798">
+                <lg type="stanza">
+                    <l>She staked her <app type="revision"><lem>Wings --</lem><rdg>Wings --</rdg></app>
+Feathers -- Gained an Arc --</l>
+                    <l>Debated -- Rose again --</l>
+                    <l>This time -- beyond the estimate</l>
+                    <l>Of Envy, or of Men --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And now, among Circumference --</l>
+                    <l>Her steady Boat he seen --</l>
+                    <l>At <app type="revision"><lem>ease</lem><rdg>ease</rdg></app>
+home -- among the Billows -- As</l>
+                    <l>The Bough where she was born --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The bone that has no marrow;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-44">
+                <lg type="stanza">
+                    <l>The bone that has no marrow;</l>
+                    <l>What ultimate for that?</l>
+                    <l>It is not fit for table,</l>
+                    <l>For beggar, or for cat.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A bone has obligations,</l>
+                    <l>A being has the same;</l>
+                    <l>A marrowless assembly</l>
+                    <l>Is culpabler than shame.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But how shall finished creatures</l>
+                    <l>A function fresh obtain? </l>
+                    <l>Old Nicodemus' phantom</l>
+                    <l>Confronting us again!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

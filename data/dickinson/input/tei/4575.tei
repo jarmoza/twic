@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SATISFIED</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-59">
+                <lg type="stanza">
+                    <l>One blessing had I, than the rest</l>
+                    <l>So larger to my eyes</l>
+                    <l>That I stopped gauging, satisfied,</l>
+                    <l>For this enchanted size.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It was the limit of my dream,</l>
+                    <l>The focus of my prayer, </l>
+                    <l>A perfect, paralyzing bliss</l>
+                    <l>Contented as despair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I knew no more of want or cold,</l>
+                    <l>Phantasms both become,</l>
+                    <l>For this new value in the soul,</l>
+                    <l>Supremest earthly sum.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The heaven below the heaven above</l>
+                    <l>Obscured with ruddier hue.</l>
+                    <l>Life's latitude leant over-full;</l>
+                    <l>The judgment perished, too.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Why joys so scantily disburse,</l>
+                    <l>Why Paradise defer,</l>
+                    <l>Why floods are served to us in bowls, </l>
+                    <l>I speculate no more.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

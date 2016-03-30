@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Good morning - midnight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F382A">
+                <lg type="stanza">
+                    <l>Good Morning - Midnight -</l>
+                    <l>I'm coming Home - </l>
+                    <l>Day - got tired of Me - </l>
+                    <l>How could I - of Him?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sunshine was a sweet place -</l>
+                    <l>I liked to stay - </l>
+                    <l>But Morn - did'nt want me - now - </l>
+                    <l>So - Good night - Day!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I can look - cant I - </l>
+                    <l>When the East is Red?</l>
+                    <l>The Hills - have a way - then - </l>
+                    <l>That puts the Heart - abroad - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>You - are not so fair - Midnight - </l>
+                    <l>I chose - Day - </l>
+                    <l>But - please take a little Girl -</l>
+                    <l>He turned away!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

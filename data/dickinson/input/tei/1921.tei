@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How fits his umber coat </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1414A">
+                <lg type="stanza">
+                    <l>How fits his Umber<app type="division"><lem><lb/></lem></app>
+ Coat </l>
+                    <l>The Tailor of the Nut?  </l>
+                    <l>Combined without a<app type="division"><lem><lb/></lem></app>
+ seam </l>
+                    <l>Like Raiment of a<app type="division"><lem><lb/></lem></app>
+ Dream - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who spun the Auburn<app type="division"><lem><lb/></lem></app>
+ Cloth?</l>
+                    <l>Computed how the girth?  </l>
+                    <l>The Chestnut aged<app type="division"><lem><lb/></lem></app>
+ grows </l>
+                    <l>In those primeval<app type="division"><lem><lb/></lem></app>
+ Clothes - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We know that we<app type="division"><lem><lb/></lem></app>
+ are wise - </l>
+                    <l>Accomplished in Surprise -</l>
+                    <l>Yet by this Countryman - </l>
+                    <l>This nature - how undone!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

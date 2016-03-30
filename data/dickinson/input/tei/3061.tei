@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A still -- Volcano -- Life -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J601">
+                <lg type="stanza">
+                    <l>A still -- Volcano -- Life --</l>
+                    <l>That flickered in the night --</l>
+                    <l>When it was dark enough to <app type="revision"><lem>show</lem><rdg>show</rdg></app>
+do</l>
+                    <l>Without <app type="revision"><lem>endangering</lem><rdg>endangering</rdg></app>
+erasing sight --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A quiet -- Earthquake Style --</l>
+                    <l>Too <app type="revision"><lem>smouldering</lem><rdg>smouldering</rdg></app>
+subtle to suspect</l>
+                    <l>By natures this side Naples --</l>
+                    <l>The North cannot detect</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Solemn -- Torrid -- Symbol --</l>
+                    <l>The lips that never lie --</l>
+                    <l>Whose hissing Corals part -- and shut --</l>
+                    <l>And Cities -- <app type="revision"><lem>slip --</lem><rdg>slip --</rdg></app>
+<app type="revision"><lem>slide --</lem><rdg>slide --</rdg></app>
+<app type="revision"><lem>melt --</lem><rdg>melt --</rdg></app>
+ooze away --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

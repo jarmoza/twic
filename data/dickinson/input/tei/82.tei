@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A day! Help! Help! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F58A">
+                <lg type="stanza">
+                    <l>A Day! Help! Help!</l>
+                    <l>Another Day!  </l>
+                    <l>Your prayers - Oh Passer by!  </l>
+                    <l>From such a common ball as this </l>
+                    <l>Might date a Victory!</l>
+                    <l>From marshallings as simple </l>
+                    <l>The flags of nations swang.  </l>
+                    <l>Steady - my soul! What issues </l>
+                    <l>Opon thine arrow hang!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

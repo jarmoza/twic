@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The wind did&#x27;nt come from the orchard today </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F494B">
+                <lg type="stanza">
+                    <l>The Wind did'nt come<app type="division"><lem><lb/></lem></app>
+ from the Orchard - today -</l>
+                    <l>Further than that - </l>
+                    <l>Nor stop to play with<app type="division"><lem><lb/></lem></app>
+ the Hay - </l>
+                    <l>Nor threaten a Hat - </l>
+                    <l>He's a transitive fellow -<app type="division"><lem><lb/></lem></app>
+ very -</l>
+                    <l>Rely on that - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If He leave a Bur at the<app type="division"><lem><lb/></lem></app>
+ door </l>
+                    <l>We know He has climbed<app type="division"><lem><lb/></lem></app>
+ a Fir - </l>
+                    <l>But the Fir is Where -<app type="division"><lem><lb/></lem></app>
+ Declare - </l>
+                    <l>Were you ever there?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If He bring Odors of Clovers - </l>
+                    <l>And that is His business -<app type="division"><lem><lb/></lem></app>
+ not Our's -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Then He has been with<app type="division"><lem><lb/></lem></app>
+ the Mowers - </l>
+                    <l>Whetting away the Hours </l>
+                    <l>To sweet pauses of Hay -</l>
+                    <l>His Way - of a June Day - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If He fling Sand, and<app type="division"><lem><lb/></lem></app>
+ Pebble - </l>
+                    <l>Little <app type="emendation"><lem>Boys</lem><rdg>Boy&#x27;s</rdg></app>
+ Hats - and<app type="division"><lem><lb/></lem></app>
+ stubble - </l>
+                    <l>With an occasional<app type="division"><lem><lb/></lem></app>
+ steeple - </l>
+                    <l>And a hoarse &quot;Get out<app type="division"><lem><lb/></lem></app>
+ of the Way, I say&quot;,</l>
+                    <l>Who'd be the fool to stay?  </l>
+                    <l>Would you - Say - </l>
+                    <l>Would you be the fool to stay?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

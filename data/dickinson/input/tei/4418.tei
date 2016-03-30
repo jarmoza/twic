@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE LOVERS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-68">
+                <lg type="stanza">
+                    <l>The rose did caper on her cheek,</l>
+                    <l>Her bodice rose and fell,</l>
+                    <l>Her pretty speech, like drunken men,</l>
+                    <l>Did stagger pitiful.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her fingers fumbled at her work, </l>
+                    <l>Her needle would not go;</l>
+                    <l>What ailed so smart a little maid</l>
+                    <l>It puzzled me to know,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till opposite I spied a cheek</l>
+                    <l>That bore another rose;</l>
+                    <l>Just opposite, another speech</l>
+                    <l>That like the drunkard goes;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A vest that, like the bodice, danced</l>
+                    <l>To the immortal tune, </l>
+                    <l>Till those two troubled little clocks</l>
+                    <l>Ticked softly into one.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Few get enough,  enough is one;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-21">
+                <lg type="stanza">
+                    <l>Few get enough,  enough is one;</l>
+                    <l>To that ethereal throng</l>
+                    <l>Have not each one of us the right</l>
+                    <l>To stealthily belong?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

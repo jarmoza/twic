@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I died for beauty, but was scarce</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-85">
+                <lg type="stanza">
+                    <l>I died for beauty, but was scarce</l>
+                    <l>Adjusted in the tomb,</l>
+                    <l>When one who died for truth was lain</l>
+                    <l>In an adjoining room.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He questioned softly why I failed?</l>
+                    <l>"For beauty," I replied.</l>
+                    <l>"And I for truth,  the two are one;</l>
+                    <l>We brethren are," he said.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so, as kinsmen met a night,</l>
+                    <l>We talked between the rooms,</l>
+                    <l>Until the moss had reached our lips,</l>
+                    <l>And covered up our names.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

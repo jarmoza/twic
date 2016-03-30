@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I stepped from Plank to Plank 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J875">
+                <lg type="stanza">
+                    <l>I stepped from Plank to Plank</l>
+                    <l>A slow and cautious way</l>
+                    <l>The Stars about my Head I felt</l>
+                    <l>About my Feet the Sea.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I knew not but the next</l>
+                    <l>Would be my final inch --</l>
+                    <l>This gave me that precarious Gait</l>
+                    <l>Some call Experience..</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If I may have it, when it&#x27;s dead, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J577">
+                <lg type="stanza">
+                    <l>If I may have it, when it's dead,</l>
+                    <l>I'll be contented -- <app type="revision"><lem>now --</lem><rdg>now --</rdg></app>
+so --</l>
+                    <l>If just as soon as Breath is out</l>
+                    <l>It shall belong to me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Until they lock it in the Grave,</l>
+                    <l>'Tis <app type="revision"><lem>Wealth I cannot weigh</lem><rdg>Wealth I cannot weigh</rdg></app>
+Bliss I cannot weigh --</l>
+                    <l>For tho' they lock Thee in the Grave,</l>
+                    <l>Myself -- can <app type="revision"><lem>hold</lem><rdg>hold</rdg></app>
+own the key --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Think of it Lover! I and Thee</l>
+                    <l>Permitted -- face to face to be --</l>
+                    <l>After a Life -- a Death -- We'll say --</l>
+                    <l>For Death was That</l>
+                    <l>And This -- is Thee --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll tell Thee All -- how <app type="revision"><lem>Blank --</lem><rdg>Blank --</rdg></app>
+Bald it grew --</l>
+                    <l>How Midnight felt, at first -- to me --</l>
+                    <l>How all the Clocks stopped in the World --</l>
+                    <l>And Sunshine pinched me -- 'Twas so cold --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then how the Grief got sleepy -- some --</l>
+                    <l>As if my Soul were deaf and dumb --</l>
+                    <l>Just making signs -- <app type="revision"><lem>it seemed</lem><rdg>it seemed</rdg></app>
+across -- to Thee --</l>
+                    <l>That this way -- thou could'st <app type="revision"><lem>speak to --</lem><rdg>speak to --</rdg></app>
+notice me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll tell you how I tried to keep</l>
+                    <l>A smile, to show you, when this Deep</l>
+                    <l>All Waded -- We look back for Play,</l>
+                    <l>At those Old Times -- in Calvary.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Forgive me, if the Grave come slow --</l>
+                    <l>For Coveting to look at Thee --</l>
+                    <l>Forgive me, if to stroke thy frost</l>
+                    <l>Outvisions Paradise!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

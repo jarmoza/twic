@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Rests at Night 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J714">
+                <lg type="stanza">
+                    <l>Rests at Night</l>
+                    <l>The Sun from shining,</l>
+                    <l>Nature -- and some Men --</l>
+                    <l>Rest at Noon -- some Men --</l>
+                    <l>While Nature</l>
+                    <l>And the Sun -- go on --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

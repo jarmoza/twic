@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I have a bird in spring </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F4B">
+                <lg type="stanza">
+                    <l>Then will I not repine, </l>
+                    <l>knowing <app type="division"><lem><lb/></lem></app>
+ that bird of mine,<app type="division"><lem><lb rend="none"/></lem></app>
+</l>
+                    <l>tho' flown - </l>
+                    <l>learneth beyond the sea,<app type="division"><lem><lb rend="none"/></lem></app>
+</l>
+                    <l>melody <app type="division"><lem><lb/></lem></app>
+ new for me,<app type="division"><lem><lb rend="none"/></lem></app>
+</l>
+                    <l>and will return.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

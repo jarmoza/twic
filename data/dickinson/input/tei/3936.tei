@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His voice decrepit was with Joy -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1476">
+                <lg type="stanza">
+                    <l>His voice decrepit was with Joy --</l>
+                    <l>Her words did totter so</l>
+                    <l>How old the News of Love <app type="revision"><lem>should</lem><rdg>should</rdg></app>
+must be</l>
+                    <l>To make Lips elderly</l>
+                    <l>That purled a moment since with Glee --</l>
+                    <l>Is it Delight or Woe --</l>
+                    <l>Or Terror -- that do <app type="revision"><lem>celebrate</lem><rdg>celebrate</rdg></app>
+<app type="revision"><lem>generate --</lem><rdg>generate --</rdg></app>
+decorate</l>
+                    <l>This livid interview --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

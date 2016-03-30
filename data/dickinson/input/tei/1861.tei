@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The last of summer is a time </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1380E">
+                <lg type="stanza">
+                    <l>The last of<app type="division"><lem><lb/></lem></app>
+ Summer is<app type="division"><lem><lb/></lem></app>
+ Delight</l>
+                    <l>Deterred by<app type="division"><lem><lb/></lem></app>
+ Retrospect - </l>
+                    <l>'Tis Ecstasy's<app type="division"><lem><lb/></lem></app>
+ revealed Review - </l>
+                    <l>Enchantment's <app type="division"><lem><lb/></lem></app>
+Syndicate.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To meet it -<app type="division"><lem><lb/></lem></app>
+ nameless as it<app type="division"><lem><lb/></lem></app>
+ is</l>
+                    <l>Without celestial<app type="division"><lem><lb/></lem></app>
+ Mail - </l>
+                    <l>Audacious as<app type="division"><lem><lb/></lem></app>
+ without a knock </l>
+                    <l>To walk within<app type="division"><lem><lb/></lem></app>
+ the Vail.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

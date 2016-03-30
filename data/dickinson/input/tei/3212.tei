@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So the Eyes accost -- and sunder 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J752">
+                <lg type="stanza">
+                    <l>So the Eyes accost -- and sunder</l>
+                    <l>In an Audience --</l>
+                    <l>Stamped -- occasionally -- forever --</l>
+                    <l>So <app type="revision"><lem>can --</lem><rdg>can --</rdg></app>
+may Countenance</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Entertain -- without addressing</l>
+                    <l>Countenance of One</l>
+                    <l>In a Neighboring Horizon --</l>
+                    <l>Gone -- as soon as known --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>3.occasionally] in instances</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

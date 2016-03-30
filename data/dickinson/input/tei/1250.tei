@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As imperceptibly as grief </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F935E">
+                <lg type="stanza">
+                    <l>As imperceptibly<app type="division"><lem><lb/></lem></app>
+ as Grief </l>
+                    <l>The Summer<app type="division"><lem><lb/></lem></app>
+ lapsed away - </l>
+                    <l>Too imperceptible<app type="division"><lem><lb/></lem></app>
+ at last </l>
+                    <l>To seem like<app type="division"><lem><lb/></lem></app>
+ Perfidy - </l>
+                    <l>A Quietness<app type="division"><lem><lb/></lem></app>
+ distilled</l>
+                    <l>As Twilight<app type="division"><lem><lb/></lem></app>
+ long begun, </l>
+                    <l>Or Nature <app type="emendation"><lem>spen - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ding</lem><rdg>spending</rdg></app>
+ with herself </l>
+                    <l>Sequestered <app type="division"><lem><lb/></lem></app>
+Afternoon -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Dusk<app type="division"><lem><lb/></lem></app>
+ drew earlier in - </l>
+                    <l>The Morning<app type="division"><lem><lb/></lem></app>
+ foreign shone -</l>
+                    <l>A courteous, yet<app type="division"><lem><lb/></lem></app>
+ harrowing Grace, </l>
+                    <l>As Guest, that<app type="division"><lem><lb/></lem></app>
+ would be gone - </l>
+                    <l>And thus, without<app type="division"><lem><lb/></lem></app>
+ a Wing </l>
+                    <l>Or service of<app type="division"><lem><lb/></lem></app>
+ a Keel </l>
+                    <l>Our Summer<app type="division"><lem><lb/></lem></app>
+ made her light<app type="division"><lem><lb/></lem></app>
+ escape</l>
+                    <l>Into the<app type="division"><lem><lb/></lem></app>
+ Beautiful - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

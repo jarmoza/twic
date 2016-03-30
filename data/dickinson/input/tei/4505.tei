@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PRECEDENCE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-155">
+                <lg type="stanza">
+                    <l>Wait till the majesty of Death</l>
+                    <l>Invests so mean a brow!</l>
+                    <l>Almost a powdered footman</l>
+                    <l>Might dare to touch it now!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wait till in everlasting robes</l>
+                    <l>This democrat is dressed,</l>
+                    <l>Then prate about "preferment"</l>
+                    <l>And "station" and the rest!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Around this quiet courtier</l>
+                    <l>Obsequious angels wait!</l>
+                    <l>Full royal is his retinue,</l>
+                    <l>Full purple is his state!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A lord might dare to lift the hat</l>
+                    <l>To such a modest clay,</l>
+                    <l>Since that my Lord, "the Lord of lords"</l>
+                    <l>Receives unblushingly!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

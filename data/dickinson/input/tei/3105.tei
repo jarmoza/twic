@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bereavement in their death to feel 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J645">
+                <lg type="stanza">
+                    <l>Bereavement in their death to feel</l>
+                    <l>Whom We have never seen --</l>
+                    <l>A Vital Kinsmanship import</l>
+                    <l>Our Soul and their's -- between --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Stranger -- Strangers do not mourn --</l>
+                    <l>There be Immortal friends</l>
+                    <l>Whom Death see first -- 'tis news of this</l>
+                    <l>That paralyze Ourselves</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who, vital only to Our Thought --</l>
+                    <l>Such Presence bear away</l>
+                    <l>In dying -- 'tis as if Our <app type="revision"><lem>World --</lem><rdg>World --</rdg></app>
+<app type="revision"><lem>Sun r</lem><rdg>Sun r</rdg></app>
+<app type="revision"><lem>Selves --</lem><rdg>Selves --</rdg></app>
+Souls</l>
+                    <l>Absconded -- suddenly --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

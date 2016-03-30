@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To flee from memory
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1242">
+                <lg type="stanza">
+                    <l>To flee from memory</l>
+                    <l>Had we the Wings</l>
+                    <l>Many would <app type="revision"><lem>soar</lem><rdg>soar</rdg></app>
+fly</l>
+                    <l>Inured to <app type="revision"><lem>other</lem><rdg>other</rdg></app>
+slower things</l>
+                    <l>Birds with <app type="revision"><lem>surprise</lem><rdg>surprise</rdg></app>
+dismay</l>
+                    <l>Would scan the mighty van</l>
+                    <l>Of men escaping</l>
+                    <l>From the mind of man</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

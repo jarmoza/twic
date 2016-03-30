@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not all die early dying young </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F937C">
+                <lg type="stanza">
+                    <l>Not all die early,<app type="division"><lem><lb/></lem></app>
+ dying young -</l>
+                    <l>Maturity of Fate </l>
+                    <l>Is consummated equally </l>
+                    <l>In Ages, or a Night - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Hoary Boy, I've<app type="division"><lem><lb/></lem></app>
+ known to drop</l>
+                    <l>Whole statured - by the<app type="division"><lem><lb/></lem></app>
+ side </l>
+                    <l>Of Junior of Fourscore -<app type="division"><lem><lb/></lem></app>
+ 'twas Act </l>
+                    <l>Not Period - that died.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

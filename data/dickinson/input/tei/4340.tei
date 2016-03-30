@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Except to heaven, she is nought;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-105">
+                <lg type="stanza">
+                    <l>Except to heaven, she is nought;</l>
+                    <l>Except for angels, lone;</l>
+                    <l>Except to some wide-wandering bee,</l>
+                    <l>A flower superfluous blown;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Except for winds, provincial;</l>
+                    <l>Except by butterflies,</l>
+                    <l>Unnoticed as a single dew</l>
+                    <l>That on the acre lies.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The smallest housewife in the grass,</l>
+                    <l>Yet take her from the lawn,</l>
+                    <l>And somebody has lost the face</l>
+                    <l>That made existence home!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

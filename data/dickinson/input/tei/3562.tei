@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His Bill is clasped -- his Eye forsook -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1102">
+                <lg type="stanza">
+                    <l>His Bill is <app type="revision"><lem>locked</lem><rdg>locked</rdg></app>
+clasped -- his Eye <app type="revision"><lem>estranged</lem><rdg>estranged</rdg></app>
+forsook --</l>
+                    <l>His Feathers wilted low --</l>
+                    <l>The Claws that clung, like lifeless Gloves</l>
+                    <l>Indifferent <app type="revision"><lem>gathered</lem><rdg>gathered</rdg></app>
+hanging now --</l>
+                    <l>The Joy that in his happy Throat</l>
+                    <l><app type="revision"><lem>Assembled</lem><rdg>Assembled</rdg></app>
+Was waiting to be poured</l>
+                    <l>Gored through and through with Death, to be</l>
+                    <l>Assassin of a Bird</l>
+                    <l>Resembles to my outraged mind</l>
+                    <l>The firing in Heaven,</l>
+                    <l>On Angels -- squandering for you</l>
+                    <l>Their Miracles of Tune --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bees are black with gilt surcingles </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1426B">
+                <lg type="stanza">
+                    <l>Bees are Black -<app type="division"><lem><lb/></lem></app>
+ with Gilt<app type="division"><lem><lb/></lem></app>
+ Surcingles - </l>
+                    <l>Buccaneers of<app type="division"><lem><lb/></lem></app>
+ Buzz - </l>
+                    <l>Ride abroad<app type="division"><lem><lb/></lem></app>
+ in ostentation<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And subsist<app type="division"><lem><lb/></lem></app>
+ on Fuzz - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fuzz ordained -<app type="division"><lem><lb/></lem></app>
+ not Fuzz<app type="division"><lem><lb/></lem></app>
+ contingent -</l>
+                    <l>Marrows of<app type="division"><lem><lb/></lem></app>
+ the Hill.  </l>
+                    <l>Jugs - a<app type="division"><lem><lb/></lem></app>
+ Universe's fracture </l>
+                    <l>Could not<app type="division"><lem><lb/></lem></app>
+ jar or spill.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

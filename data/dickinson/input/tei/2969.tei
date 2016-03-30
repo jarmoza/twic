@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If anybody&#x27;s friend be dead 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J509">
+                <lg type="stanza">
+                    <l>If anybody's friend be dead</l>
+                    <l>It's sharpest of the theme</l>
+                    <l>The thinking how they walked alive --</l>
+                    <l>At such and such a time --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their costume, of a Sunday,</l>
+                    <l>Some manner of the Hair --</l>
+                    <l>A prank nobody knew but them</l>
+                    <l>Lost, in the Sepulchre --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How warm, they were, on such a day,</l>
+                    <l>You almost feel the date --</l>
+                    <l>So short way off it seems --</l>
+                    <l>And now -- they're Centuries from that --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How pleased they <app type="revision"><lem>looked</lem><rdg>looked</rdg></app>
+were, at what you said --</l>
+                    <l>You try to <app type="revision"><lem>reach</lem><rdg>reach</rdg></app>
+touch the smile</l>
+                    <l>And <app type="revision"><lem>mix</lem><rdg>mix</rdg></app>
+dip your fingers in the frost --</l>
+                    <l>When was it -- Can you tell --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You asked the Company to tea --</l>
+                    <l>Acquaintance -- just a few --</l>
+                    <l>And chatted close wide this Grand Thing</l>
+                    <l>That dont remember you --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Past Bows, and Invitations --</l>
+                    <l>Past Interview, and Vow --</l>
+                    <l>Past what Ourself can <app type="revision"><lem>understand</lem><rdg>understand</rdg></app>
+estimate --</l>
+                    <l>That -- makes the Quick of Wo!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

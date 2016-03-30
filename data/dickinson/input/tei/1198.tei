@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Further in summer than the birds </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F895D">
+                <lg type="stanza">
+                    <l>Further in Summer<app type="division"><lem><lb/></lem></app>
+ than the Birds </l>
+                    <l>Pathetic from<app type="division"><lem><lb/></lem></app>
+ the Grass </l>
+                    <l>A minor Nation<app type="division"><lem><lb/></lem></app>
+ celebrates </l>
+                    <l>It's unobtrusive Mass.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Ordinance be<app type="division"><lem><lb/></lem></app>
+ seen</l>
+                    <l>So gradual the<app type="division"><lem><lb/></lem></app>
+ Grace </l>
+                    <l>A pensive Custom<app type="division"><lem><lb/></lem></app>
+ it becomes </l>
+                    <l>Enlarging Loneliness.<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Antiquest felt<app type="division"><lem><lb/></lem></app>
+ at Noon </l>
+                    <l>When August<app type="division"><lem><lb/></lem></app>
+ burning low</l>
+                    <l>Arise this spectral<app type="division"><lem><lb/></lem></app>
+ Canticle </l>
+                    <l>Repose to typify </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Remit as yet<app type="division"><lem><lb/></lem></app>
+ no Grace </l>
+                    <l>No Furrow on the<app type="division"><lem><lb/></lem></app>
+ Glow </l>
+                    <l>Yet a Druidic<app type="division"><lem><lb/></lem></app>
+ Difference</l>
+                    <l>Enhances Nature now </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It came his turn to beg -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1500">
+                <lg type="stanza">
+                    <l>It came his turn to beg --</l>
+                    <l>The begging for the life</l>
+                    <l>Is different from another Alms</l>
+                    <l>'Tis Penury in Chief --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I scanned his narrow realm</l>
+                    <l>I gave him leave to live</l>
+                    <l>Lest Gratitude revive <app type="revision"><lem>my thought</lem><rdg>my thought</rdg></app>
+the snake</l>
+                    <l>Though smuggled <app type="revision"><lem>my</lem><rdg>my</rdg></app>
+his reprieve</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

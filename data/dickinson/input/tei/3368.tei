@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis Sunrise -- Little Maid -- Hast Thou 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J908">
+                <lg type="stanza">
+                    <l>'Tis Sunrise -- Little Maid -- Hast Thou</l>
+                    <l>No Station in the Day?</l>
+                    <l>'Twas not thy wont, to hinder so --</l>
+                    <l>Retrieve thine industry --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Noon -- My little Maid --</l>
+                    <l>Alas -- and art thou sleeping yet?</l>
+                    <l>The Lily -- waiting to be Wed --</l>
+                    <l>The Bee -- Hast thou forgot?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My little Maid -- 'Tis Night -- Alas</l>
+                    <l>That Night should be to thee</l>
+                    <l>Instead of Morning -- Had'st thou broached</l>
+                    <l>Thy little Plan to Die --</l>
+                    <l>Dissuade thee, if I c'd not, Sweet,</l>
+                    <l>I might have aided -- thee --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

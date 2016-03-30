@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It was a grave yet bore no stone </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F852C">
+                <lg type="stanza">
+                    <l>It was a Grave, yet<app type="division"><lem><lb/></lem></app>
+ bore no Stone</l>
+                    <l>Enclosed 'twas not of<app type="division"><lem><lb/></lem></app>
+ Rail </l>
+                    <l>A Consciousness it's<app type="division"><lem><lb/></lem></app>
+ Acre, and </l>
+                    <l>It held a Human Soul - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Entombed by whom,<app type="division"><lem><lb/></lem></app>
+ for what offence</l>
+                    <l>If Home or Foreign born - </l>
+                    <l>Had I the curiosity </l>
+                    <l>'Twere not appeased<app type="division"><lem><lb/></lem></app>
+ of men </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till Resurrection, I<app type="division"><lem><lb/></lem></app>
+ must guess </l>
+                    <l>Denied the small desire</l>
+                    <l>A Rose opon it's Ridge<app type="division"><lem><lb/></lem></app>
+ to sow </l>
+                    <l>Or take away a Briar - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;T&#x27;is not the swaying frame we miss, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1597">
+                <lg type="stanza">
+                    <l>'T'is not the swaying frame we miss,</l>
+                    <l>It is the steadfast Heart,</l>
+                    <l>That had it beat a thousand years,</l>
+                    <l>With Love alone <app type="revision"><lem>were</lem><rdg>were</rdg></app>
+had bent,</l>
+                    <l>It's fervor the electric Oar,</l>
+                    <l>That bore it through the Tomb,</l>
+                    <l>Ourselves, denied the privilege,</l>
+                    <l>Consolelessly presume --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

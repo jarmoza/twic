@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One dignity delays for all,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-76">
+                <lg type="stanza">
+                    <l>One dignity delays for all,</l>
+                    <l>One mitred afternoon.</l>
+                    <l>None can avoid this purple,</l>
+                    <l>None evade this crown.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Coach it insures, and footmen,</l>
+                    <l>Chamber and state and throng;</l>
+                    <l>Bells, also, in the village,</l>
+                    <l>As we ride grand along.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What dignified attendants,</l>
+                    <l>What service when we pause!</l>
+                    <l>How loyally at parting</l>
+                    <l>Their hundred hats they raise!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How pomp surpassing ermine,</l>
+                    <l>When simple you and I</l>
+                    <l>Present our meek escutcheon,</l>
+                    <l>And claim the rank to die!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

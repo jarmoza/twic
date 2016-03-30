@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Faith -- is the Pierless Bridge 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J915">
+                <lg type="stanza">
+                    <l>Faith -- is the Pierless Bridge</l>
+                    <l>Supporting what We see</l>
+                    <l>Unto the Scene that We do not --</l>
+                    <l>Too slender for the eye</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It bears the Soul as bold</l>
+                    <l>As it were rocked in Steel</l>
+                    <l>With Arms of Steel at either side --</l>
+                    <l>It joins -- behind the Vail</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To what, could We presume</l>
+                    <l>The Bridge would cease to be</l>
+                    <l>To Our far, vascillating Feet</l>
+                    <l>A first Nescessity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

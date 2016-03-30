@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Where bells no more affright the morn </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F114A">
+                <lg type="stanza">
+                    <l>Where bells no more affright the morn -</l>
+                    <l>Where scrabble never comes - </l>
+                    <l>Where very nimble Gentlemen </l>
+                    <l>Are forced to keep their rooms - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Where tired Children placid sleep</l>
+                    <l>Thro' centuries of noon </l>
+                    <l>This place is Bliss - this town is Heaven - </l>
+                    <l>Please, Pater, pretty soon!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Oh could we climb where Moses stood, </l>
+                    <l>And view the Landscape o'er&quot;</l>
+                    <l>Not Father's bells - nor Factories - </l>
+                    <l>Could scare us any more!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

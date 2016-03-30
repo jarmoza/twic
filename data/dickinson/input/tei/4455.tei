@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>GOSSIP</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-105">
+                <lg type="stanza">
+                    <l>The leaves, like women, interchange</l>
+                    <l>Sagacious confidence;</l>
+                    <l>Somewhat of nods, and somewhat of</l>
+                    <l>Portentous inference,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The parties in both cases</l>
+                    <l>Enjoining secrecy, </l>
+                    <l>Inviolable compact</l>
+                    <l>To notoriety.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

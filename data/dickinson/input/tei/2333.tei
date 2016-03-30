@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Take all I have away </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1671D">
+                <lg type="stanza">
+                    <l>Take all away<app type="division"><lem><lb/></lem></app>
+ from me, but<app type="division"><lem><lb/></lem></app>
+ leave me Ecstasy </l>
+                    <l>And I am richer<app type="division"><lem><lb/></lem></app>
+ <app type="emendation"><lem>then I am</lem><rdg>then</rdg></app>
+ </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A spider sewed at night </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1163B">
+                <lg type="stanza">
+                    <l>A Spider sewed at night </l>
+                    <l>Without a light </l>
+                    <l><app type="emendation"><lem>Upon</lem><rdg>Opon</rdg></app>
+ an Arc of White - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If Ruff it was of Dame </l>
+                    <l>Or Shroud of Gnome</l>
+                    <l>Himself himself inform - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Immortality </l>
+                    <l>His strategy </l>
+                    <l>Was Physiognomy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

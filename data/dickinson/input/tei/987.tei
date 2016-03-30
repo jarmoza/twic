@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Behind me dips eternity </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F743A">
+                <lg type="stanza">
+                    <l>Behind Me - dips Eternity -</l>
+                    <l>Before Me - Immortality - </l>
+                    <l>Myself - the Term between - </l>
+                    <l>Death but the Drift of<app type="division"><lem><lb/></lem></app>
+ Eastern Gray, </l>
+                    <l>Dissolving into Dawn away,</l>
+                    <l>Before the West begin - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Kingdoms - afterward - they<app type="division"><lem><lb/></lem></app>
+ say - </l>
+                    <l>In perfect - pauseless Monarchy - </l>
+                    <l>Whose Prince - is Son of none - </l>
+                    <l>Himself - His Dateless Dynasty -</l>
+                    <l>Himself - Himself diversify - </l>
+                    <l>In Duplicate divine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Miracle before Me - then - </l>
+                    <l>'Tis Miracle behind - between - </l>
+                    <l>A Crescent in the Sea -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>With Midnight to the<app type="division"><lem><lb/></lem></app>
+ North of Her - </l>
+                    <l>And Midnight to the<app type="division"><lem><lb/></lem></app>
+ South of Her - </l>
+                    <l>And Maelstrom - in the Sky - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

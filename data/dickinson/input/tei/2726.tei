@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This -- is the land -- the Sunset washes -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J266">
+                <lg type="stanza">
+                    <l>This -- is the land -- the Sunset washes --</l>
+                    <l>These -- are the Banks of the Yellow Sea --</l>
+                    <l>Where it rose -- or whither it rushes --</l>
+                    <l>These -- are the Western Mystery!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Night after Night</l>
+                    <l>Her purple traffic</l>
+                    <l>Strews the landing with Opal Bales --</l>
+                    <l>Merchantmen -- poise upon Horizons --</l>
+                    <l>Dip -- and vanish like Orioles!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

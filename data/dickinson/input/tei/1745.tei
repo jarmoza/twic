@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I saw that the flake was on it </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1304B">
+                <lg type="stanza">
+                    <l>I saw that the<app type="division"><lem><lb/></lem></app>
+ Flake was on it </l>
+                    <l>But plotted with<app type="division"><lem><lb/></lem></app>
+ Time to dispute - </l>
+                    <l>&quot;Unchanged&quot; I urged<app type="division"><lem><lb/></lem></app>
+ with a candor </l>
+                    <l>That cost me my<app type="division"><lem><lb/></lem></app>
+ honest Heart - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But &quot;you&quot; - she<app type="division"><lem><lb/></lem></app>
+ returned with valor</l>
+                    <l>Sagacious of my<app type="division"><lem><lb/></lem></app>
+ mistake </l>
+                    <l>&quot;Have altered -<app type="division"><lem><lb/></lem></app>
+ Accept the pillage </l>
+                    <l>For the progress'<app type="division"><lem><lb/></lem></app>
+ sake&quot; - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

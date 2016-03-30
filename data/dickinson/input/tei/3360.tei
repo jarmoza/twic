@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What did They do since I saw Them? 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J900">
+                <lg type="stanza">
+                    <l>What did They do since I saw Them?</l>
+                    <l>Were They industrious?</l>
+                    <l>So many questions to put Them</l>
+                    <l>Have I the eagerness</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That could I snatch Their Faces</l>
+                    <l>That could Their lips reply</l>
+                    <l>Not till the last was answered</l>
+                    <l>Should They start for the Sky.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not if Their Party were waiting,</l>
+                    <l>Not if to talk with Me</l>
+                    <l>Were to Them now, Homesickness</l>
+                    <l>After Eternity.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not if the Just suspect me</l>
+                    <l>And offer a Reward</l>
+                    <l>Would I restore my Booty</l>
+                    <l>To that Bold Person, God --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

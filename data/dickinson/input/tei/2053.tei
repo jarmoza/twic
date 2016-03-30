@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Secrets&quot; is a daily word </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1494A">
+                <lg type="stanza">
+                    <l>&quot;Secrets&quot; is a daily<app type="division"><lem><lb/></lem></app>
+ word </l>
+                    <l>Yet does not exist - </l>
+                    <l>Muffled - it<add type="alternate" extent="remits">resists -</add>
+ remits<app type="division"><lem><lb/></lem></app>
+ surmise - </l>
+                    <l>Murmured - it has<app type="division"><lem><lb/></lem></app>
+ ceased - </l>
+                    <l>Dungeoned in the<app type="division"><lem><lb/></lem></app>
+ Human Breast</l>
+                    <l>Doubtless secrets lie - </l>
+                    <l>But that Grate<app type="division"><lem><pb/></lem></app>
+ inviolate - </l>
+                    <l>Comes nor goes away </l>
+                    <l>Nothing with a<app type="division"><lem><lb/></lem></app>
+ Tongue or Ear - </l>
+                    <l>Secrets stapled<app type="division"><lem><lb/></lem></app>
+ there</l>
+                    <l>Will<add type="alternate" extent="emerge">decamp -</add>
+ emerge but<app type="division"><lem><lb/></lem></app>
+ once - and<add type="alternate" extent="dumb">armed -</add>
+ dumb - </l>
+                    <l>To the Sepulchre - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

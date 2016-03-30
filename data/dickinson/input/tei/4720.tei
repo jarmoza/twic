@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A little madness in the Spring</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-38">
+                <lg type="stanza">
+                    <l>A little madness in the Spring</l>
+                    <l>Is wholesome even for the King,</l>
+                    <l>But God be with the Clown,</l>
+                    <l>Who ponders this tremendous scene --</l>
+                    <l>This whole experiment of green,</l>
+                    <l>As if it were his own!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

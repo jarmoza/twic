@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The morning after wo </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F398A">
+                <lg type="stanza">
+                    <l>The Morning after Wo -</l>
+                    <l>'Tis frequently the Way - </l>
+                    <l>Surpasses all that rose before - </l>
+                    <l>For utter Jubilee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As Nature did not Care -</l>
+                    <l>And piled her Blossoms on - </l>
+                    <l>The further to parade a Joy </l>
+                    <l>Her Victim stared opon - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Birds declaim their Tunes - </l>
+                    <l>Pronouncing every word</l>
+                    <l>Like Hammers - Did they<app type="division"><lem><lb/></lem></app>
+ know they fell </l>
+                    <l>Like Litanies of Lead - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>On here and there - a creature - </l>
+                    <l>They'd modify the Glee </l>
+                    <l>To fit some Crucifixal Clef -</l>
+                    <l>Some key of Calvary - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

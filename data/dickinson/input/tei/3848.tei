@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Those Cattle smaller than a Bee 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1388">
+                <lg type="stanza">
+                    <l>Those Cattle smaller than a Bee</l>
+                    <l>That herd upon the eye --</l>
+                    <l>Whose <app type="revision"><lem>pasture</lem><rdg>pasture</rdg></app>
+tillage is the <app type="revision"><lem>wandering</lem><rdg>wandering</rdg></app>
+passing Crumb --</l>
+                    <l>Those Cattle are the Fly --</l>
+                    <l>Of Barns for Winter -- <app type="revision"><lem>ignorant</lem><rdg>ignorant</rdg></app>
+blameless --</l>
+                    <l>Extemporaneous stalls</l>
+                    <l>They found to our <app type="revision"><lem>abhorrence</lem><rdg>abhorrence</rdg></app>
+objection --</l>
+                    <l>On eligible walls --</l>
+                    <l>Reserving the presumption</l>
+                    <l>To suddenly descend</l>
+                    <l>And gallop on the Furniture --</l>
+                    <l>Or <app type="revision"><lem>otherwise</lem><rdg>otherwise</rdg></app>
+<app type="revision"><lem>fataller --</lem><rdg>fataller --</rdg></app>
+odiouser offend --</l>
+                    <l>Of their peculiar calling</l>
+                    <l>Unqualified to judge</l>
+                    <l>To Nature we remand them</l>
+                    <l>To justify or scourge --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

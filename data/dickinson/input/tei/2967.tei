@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She sights a Bird -- she chuckles -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J507">
+                <lg type="stanza">
+                    <l>She sights a Bird -- she chuckles --</l>
+                    <l>She flattens -- then she crawls --</l>
+                    <l>She runs without the look of feet --</l>
+                    <l>Her eyes increase to Balls</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Jaws stir -- twitching -- hungry --</l>
+                    <l>Her Teeth can hardly stand --</l>
+                    <l>She leaps, but Robin leaped the first --</l>
+                    <l>Ah, Pussy, of the Sand,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Hopes so juicy ripening --</l>
+                    <l>You almost bathed your Tongue --</l>
+                    <l>When Bliss disclosed a hundred Toes --</l>
+                    <l>And fled with every one --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

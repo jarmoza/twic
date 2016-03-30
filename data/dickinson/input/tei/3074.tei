@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In falling Timbers buried --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J614">
+                <lg type="stanza">
+                    <l>In falling Timbers buried --</l>
+                    <l>There breathed a Man</l>
+                    <l><app type="revision"><lem>Without</lem><rdg>Without</rdg></app>
+Outside -- the spades -- were plying --</l>
+                    <l>The Lungs -- within --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Could He -- know -- they sought Him --</l>
+                    <l>Could They -- know -- He <app type="revision"><lem>lived</lem><rdg>lived</rdg></app>
+breathed --</l>
+                    <l>Horrid Sand Partition --</l>
+                    <l>Neither -- could be heard --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never slacked the Diggers --</l>
+                    <l>But when Spades had done --</l>
+                    <l>Oh, Reward of Anguish,</l>
+                    <l>It was dying -- Then --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Many Things -- are fruitless --</l>
+                    <l>'Tis a Baffling Earth --</l>
+                    <l>But there is no Gratitude</l>
+                    <l>Like the Grace -- of Death --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>1.falling] crashing</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

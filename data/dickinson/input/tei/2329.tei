@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The jay his castanet has struck </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1670A">
+                <lg type="stanza">
+                    <l>The Jay his Castanet has struck </l>
+                    <l>Put on your muff for Winter </l>
+                    <l><add type="alternate" extent="">The [Tippet] that resists his voice</add>
+The Tippet that ignores his voice </l>
+                    <l>is impudent to nature </l>
+                    <l>Of Swarthy Days he is the close</l>
+                    <l>His Lotus is a chestnut </l>
+                    <l>The Cricket drops a sable line </l>
+                    <l>No more from your's at present </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

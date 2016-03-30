@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On this long storm the rainbow rose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F216A">
+                <lg type="stanza">
+                    <l>On this long storm the Rainbow rose -</l>
+                    <l>On this late morn - the sun - </l>
+                    <l>The Clouds - like listless Elephants - </l>
+                    <l>Horizons - straggled down - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Birds rose smiling, in their nests -</l>
+                    <l>The gales - indeed - were done - </l>
+                    <l>Alas, how heedless were the eyes - </l>
+                    <l>On whom the summer shone!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The quiet nonchalance of death - </l>
+                    <l>No Daybreak - can bestir -</l>
+                    <l>The slow - Archangel's syllables </l>
+                    <l>Must awaken <em>her!</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

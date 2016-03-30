@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Take all I have away </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1671A">
+                <lg type="stanza">
+                    <l>Take all I<app type="division"><lem><lb/></lem></app>
+ have away </l>
+                    <l>But leave<app type="division"><lem><lb/></lem></app>
+ me Ecstasy </l>
+                    <l>and I am<app type="division"><lem><lb/></lem></app>
+ richer then </l>
+                    <l>than all<app type="division"><lem><lb/></lem></app>
+ my fellow<app type="division"><lem><lb/></lem></app>
+ men </l>
+                    <l>Is it becoming<app type="division"><lem><lb/></lem></app>
+ me to<app type="division"><lem><lb/></lem></app>
+ dwell so<app type="division"><lem><lb/></lem></app>
+ wealthily</l>
+                    <l>When by my<app type="division"><lem><lb/></lem></app>
+ very Door </l>
+                    <l>Are these<app type="division"><lem><lb/></lem></app>
+ possessing more </l>
+                    <l>in abject<app type="division"><lem><lb/></lem></app>
+ poverty - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

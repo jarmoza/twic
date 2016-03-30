@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This is the land the sunset washes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F297A">
+                <lg type="stanza">
+                    <l>This - is the land - the<app type="division"><lem><lb/></lem></app>
+ Sunset washes -</l>
+                    <l>These - are the Banks of<app type="division"><lem><lb/></lem></app>
+ the Yellow Sea - </l>
+                    <l>Where it rose - or whither<app type="division"><lem><lb/></lem></app>
+ it rushes - </l>
+                    <l>These - are the Western<app type="division"><lem><lb/></lem></app>
+ Mystery!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Night after Night</l>
+                    <l>Her Purple traffic </l>
+                    <l>Strews the landing - with<app type="division"><lem><lb/></lem></app>
+ Opal Bales - </l>
+                    <l>Merchantmen - poise opon<app type="division"><lem><lb/></lem></app>
+ Horizons - </l>
+                    <l>Dip - and vanish like<app type="division"><lem><lb/></lem></app>
+ Orioles!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

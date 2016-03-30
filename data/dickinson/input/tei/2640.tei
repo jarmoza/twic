@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As if some little Arctic flower 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J180">
+                <lg type="stanza">
+                    <l>As if some little Arctic flower</l>
+                    <l>Upon the polar hem --</l>
+                    <l>Went wandering down the Latitudes</l>
+                    <l>Until it puzzled came</l>
+                    <l>To continents of summer --</l>
+                    <l>To firmaments of sun --</l>
+                    <l>To strange, bright crowds of flowers --</l>
+                    <l>And birds, of foreign tongue!</l>
+                    <l>I say, As if this little flower</l>
+                    <l>To Eden, wandered in --</l>
+                    <l>What then? Why nothing,</l>
+                    <l>Only, your inference therefrom!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

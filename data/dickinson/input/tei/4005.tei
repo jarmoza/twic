@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bible is an antique Volume -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1545">
+                <lg type="stanza">
+                    <l>The Bible is an antique Volume --</l>
+                    <l>Written by faded Men</l>
+                    <l>At the suggestion of Holy Spectres --</l>
+                    <l>Subjects -- Bethlehem --</l>
+                    <l>Eden -- the ancient Homestead --</l>
+                    <l>Satan -- the Brigadier --</l>
+                    <l>Judas -- the Great Defaulter --</l>
+                    <l>David -- the Troubadour --</l>
+                    <l>Sin -- a distinguished Precipice</l>
+                    <l>Others must resist --</l>
+                    <l>Boys that "believe" are very lonesome --</l>
+                    <l>Other Boys are "lost" --</l>
+                    <l>Had but the Tale a warbling Teller --</l>
+                    <l>All the Boys would come --</l>
+                    <l>Orpheus' Sermon captivated --</l>
+                    <l>It did not condemn --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

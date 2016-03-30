@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The robin is a troubadour </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1520A">
+                <lg type="stanza">
+                    <l>The Robin is<app type="division"><lem><lb/></lem></app>
+ a Troubadour</l>
+                    <l>In humble<app type="division"><lem><lb/></lem></app>
+ Circumstances - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Guests of<app type="division"><lem><lb/></lem></app>
+ perspicacity -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A fugitive<app type="division"><lem><lb/></lem></app>
+ Renown -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One day is there of the series </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1110A">
+                <lg type="stanza">
+                    <l>One Day is there of<app type="division"><lem><lb/></lem></app>
+ the Series</l>
+                    <l>Termed Thanksgiving Day - </l>
+                    <l>Celebrated part at<app type="division"><lem><lb/></lem></app>
+ Table </l>
+                    <l>Part, in Memory - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Neither Patriarch nor<app type="division"><lem><lb/></lem></app>
+ Pussy</l>
+                    <l>I dissect the Play - </l>
+                    <l>Seems it to my<app type="division"><lem><lb/></lem></app>
+ Hooded thinking </l>
+                    <l>Reflex Holiday - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had there been no<app type="division"><lem><lb/></lem></app>
+ sharp Subtraction </l>
+                    <l>From the early Sum -</l>
+                    <l>Not an Acre or a<app type="division"><lem><lb/></lem></app>
+ Caption </l>
+                    <l>Where was once a Room -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not a mention, whose<app type="division"><lem><lb/></lem></app>
+ small Pebble </l>
+                    <l>Wrinkled any Sea, </l>
+                    <l>Unto Such, were<app type="division"><lem><lb/></lem></app>
+ such Assembly,</l>
+                    <l>'Twere Thanksgiving Day.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

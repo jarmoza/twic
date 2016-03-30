@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My worthiness is all my doubt </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F791A">
+                <lg type="stanza">
+                    <l>My Worthiness is all my<app type="division"><lem><lb/></lem></app>
+ Doubt -</l>
+                    <l>His Merit - all my fear - </l>
+                    <l>Contrasting which, my<app type="division"><lem><lb/></lem></app>
+ quality </l>
+                    <l>Do lowlier - appear - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Lest I should insufficient<app type="division"><lem><lb/></lem></app>
+ prove</l>
+                    <l>For His beloved Need - </l>
+                    <l>The Chiefest Apprehension </l>
+                    <l>Opon my<add type="alternate" extent="thronging">crowded - &amp;#x2022; happy</add>
+ thronging Mind - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis true - that Deity to<app type="division"><lem><lb/></lem></app>
+ stoop </l>
+                    <l>Inherently incline -</l>
+                    <l>For nothing higher than<app type="division"><lem><lb/></lem></app>
+ Itself </l>
+                    <l>Itself can<add type="alternate" extent="rest">lift - &amp;#x2022; base -</add>
+ rest opon -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So I - the Undivine Abode </l>
+                    <l>Of His Elect Content - </l>
+                    <l>Conform my Soul - as<app type="division"><lem><lb/></lem></app>
+ 'twere a Church,</l>
+                    <l>Unto Her Sacrament - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

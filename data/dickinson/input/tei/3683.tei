@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who goes to dine must take his Feast
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1223">
+                <lg type="stanza">
+                    <l>Who goes to dine must take his Feast</l>
+                    <l>Or find the Banquet mean --</l>
+                    <l>The Table is not laid without</l>
+                    <l>Till it is laid within.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Pattern is the Mind bestowed</l>
+                    <l>That imitating her</l>
+                    <l>Our most ignoble Services</l>
+                    <l>Exhibit worthier.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

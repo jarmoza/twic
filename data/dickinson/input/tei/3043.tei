@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Toad, can die of Light --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J583">
+                <lg type="stanza">
+                    <l>A Toad, can die of Light --</l>
+                    <l>Death is the <app type="revision"><lem>mutual --</lem><rdg>mutual --</rdg></app>
+<app type="revision"><lem>equal --</lem><rdg>equal --</rdg></app>
+Common Right</l>
+                    <l>Of Toads and Men --</l>
+                    <l>Of Earl and Midge</l>
+                    <l>The privilege --</l>
+                    <l>Why swagger, then?</l>
+                    <l>The Gnat's supremacy is large as Thine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life -- is <app type="revision"><lem>Another</lem><rdg>Another</rdg></app>
+a different Thing --</l>
+                    <l>So measure Wine --</l>
+                    <l>Naked of Flask -- Naked of Cask --</l>
+                    <l>Bare Rhine</l>
+                    <l>Which ruby's mine?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

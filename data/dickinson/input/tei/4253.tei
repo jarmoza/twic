@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE BOOK OF MARTYRS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-18">
+                <lg type="stanza">
+                    <l>Read, sweet, how others strove,</l>
+                    <l>Till we are stouter;</l>
+                    <l>What they renounced,</l>
+                    <l>Till we are less afraid;</l>
+                    <l>How many times they bore</l>
+                    <l>The faithful witness,</l>
+                    <l>Till we are helped,</l>
+                    <l>As if a kingdom cared!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Read then of faith</l>
+                    <l>That shone above the fagot;</l>
+                    <l>Clear strains of hymn</l>
+                    <l>The river could not drown;</l>
+                    <l>Brave names of men</l>
+                    <l>And celestial women,</l>
+                    <l>Passed out of record</l>
+                    <l>Into renown!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

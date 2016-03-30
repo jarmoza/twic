@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Deprived of other Banquet, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J773">
+                <lg type="stanza">
+                    <l>Deprived of other Banquet,</l>
+                    <l>I entertained Myself --</l>
+                    <l>At first -- a <app type="revision"><lem>plain Regaling</lem><rdg>plain Regaling</rdg></app>
+scant nutrition --</l>
+                    <l><app type="revision"><lem>An innutritious Loaf</lem><rdg>An innutritious Loaf</rdg></app>
+An insufficient Loaf --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But grown by slender addings</l>
+                    <l>To so esteemed a size</l>
+                    <l>'Tis sumptuous enough for me --</l>
+                    <l>And almost to suffice</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Robin's famine able --</l>
+                    <l>Red Pilgrim, He and I --</l>
+                    <l>A Berry from our table</l>
+                    <l>Reserve -- for charity --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

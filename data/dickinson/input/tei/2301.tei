@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The pedigree of honey </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1650A">
+                <lg type="stanza">
+                    <l>The pedigree<app type="division"><lem><lb/></lem></app>
+ of Honey </l>
+                    <l>Does not <app type="emendation"><lem>con - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ cern</lem><rdg>concern</rdg></app>
+ the Bee, </l>
+                    <l>Nor lineage<app type="division"><lem><lb/></lem></app>
+ of Ecstasy </l>
+                    <l>Delay the Butterfly </l>
+                    <l>On spangled<app type="division"><lem><lb/></lem></app>
+ journeys to the<app type="division"><lem><lb/></lem></app>
+ peak</l>
+                    <l>Of some <app type="emendation"><lem>per - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ceiveless</lem><rdg>perceiveless</rdg></app>
+ Thing - </l>
+                    <l>The right of<app type="division"><lem><lb/></lem></app>
+ way to Tripoli </l>
+                    <l>A more essential<app type="division"><lem><lb/></lem></app>
+ thing - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

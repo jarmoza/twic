@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Day! Help! Help! Another Day! 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J42">
+                <lg type="stanza">
+                    <l>A Day! Help! Help! Another Day!</l>
+                    <l>Your prayers, oh Passer by!</l>
+                    <l>From such a common ball as this</l>
+                    <l>Might date a Victory!</l>
+                    <l>From marshallings as simple</l>
+                    <l>The flags of nations swang.</l>
+                    <l>Steady -- my soul: What issues</l>
+                    <l>Upon thine arrow hang!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

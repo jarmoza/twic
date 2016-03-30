@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I know where wells grow - droughtless wells </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F695A">
+                <lg type="stanza">
+                    <l>I know Where Wells grow - Droughtless Wells -</l>
+                    <l>Deep dug - for Summer days - </l>
+                    <l>Where Mosses go no more<app type="division"><lem><lb/></lem></app>
+ away - </l>
+                    <l>And Pebble - safely plays - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's made of Fathoms - and<app type="division"><lem><lb/></lem></app>
+ a Belt -</l>
+                    <l>A Belt of jagged Stone - </l>
+                    <l>Inlaid with Emerald - half<app type="division"><lem><lb/></lem></app>
+ way down - </l>
+                    <l>And Diamonds - jumbled on - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It has no Bucket -<app type="division"><lem><lb/></lem></app>
+ were I rich </l>
+                    <l>A Bucket I would buy -</l>
+                    <l>I'm often thirsty - but my<app type="division"><lem><lb/></lem></app>
+ lips </l>
+                    <l>Are so high up - You see -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I read in an Old fashioned<app type="division"><lem><lb/></lem></app>
+ Book </l>
+                    <l>That People &quot;thirst no more&quot; - </l>
+                    <l>The Wells have Buckets<app type="division"><lem><lb/></lem></app>
+ to them there -</l>
+                    <l>It must mean that - I'm sure - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Shall We remember Parching -<app type="division"><lem><lb/></lem></app>
+ then?  </l>
+                    <l>Those Waters sound so<app type="division"><lem><lb/></lem></app>
+ grand - </l>
+                    <l>I think a little Well -<app type="division"><lem><lb/></lem></app>
+ like Mine - </l>
+                    <l>Dearer to understand -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

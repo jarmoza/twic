@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An antiquated grace </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1367A">
+                <lg type="stanza">
+                    <l>An antiquated Grace </l>
+                    <l>Becomes that<add type="alternate" extent="cherished">magic</add>
+ cherished<app type="division"><lem><lb/></lem></app>
+ Face </l>
+                    <l><add type="alternate" extent="As well as">&lt;u&gt;better than&lt;/u&gt;</add>
+As well as prime </l>
+                    <l>Enjoining us to part </l>
+                    <l><add type="alternate" extent="">We and our &lt;u&gt;pouting Heart&lt;/u&gt;</add>
+We and our<add type="alternate" extent="plotting Heart">gaudy Heart &amp;#x2022; scheming [Heart</add>
+ plotting Heart<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Good friends with time </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

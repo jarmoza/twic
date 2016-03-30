@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Each second is the last </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F927A">
+                <lg type="stanza">
+                    <l>Each Second is the<app type="division"><lem><lb/></lem></app>
+ last</l>
+                    <l>Perhaps, recalls the Man </l>
+                    <l>Just measuring <app type="emendation"><lem>uncon - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ sciousness</lem><rdg>unconsciousness</rdg></app>
+ </l>
+                    <l>The Sea and Spar<app type="division"><lem><lb/></lem></app>
+ between - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To fail within a<app type="division"><lem><lb/></lem></app>
+ chance -</l>
+                    <l>How terribler a thing </l>
+                    <l>Than perish from<app type="division"><lem><lb/></lem></app>
+ the chance's list </l>
+                    <l>Before the Perishing!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

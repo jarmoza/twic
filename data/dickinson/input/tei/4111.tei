@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Word made Flesh is seldom
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1651">
+                <lg type="stanza">
+                    <l>A Word made Flesh is seldom</l>
+                    <l>And tremblingly partook</l>
+                    <l>Nor then perhaps reported</l>
+                    <l>But have I not mistook</l>
+                    <l>Each one of us has tasted</l>
+                    <l>With ecstasies of stealth</l>
+                    <l>The very food debated</l>
+                    <l>To our specific strength --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Word that breathes distinctly</l>
+                    <l>Has not the power to die</l>
+                    <l>Cohesive as the Spirit</l>
+                    <l>It may expire if He --</l>
+                    <l>"Made Flesh and dwelt among us</l>
+                    <l>Could condescension be</l>
+                    <l>Like this consent of Language</l>
+                    <l>This loved Philology</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

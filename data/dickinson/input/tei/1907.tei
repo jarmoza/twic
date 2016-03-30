@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In many and reportless places </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1404A">
+                <lg type="stanza">
+                    <l>In many and reportless<app type="division"><lem><lb/></lem></app>
+ places </l>
+                    <l>We feel a Joy - </l>
+                    <l>Reportless, also, but<app type="division"><lem><lb/></lem></app>
+ sincere as Nature </l>
+                    <l>Or Deity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It comes, without a<app type="division"><lem><lb/></lem></app>
+ consternation -</l>
+                    <l>Dissolves - the same - </l>
+                    <l>But leaves a<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="sumptuous">blissful</add>
+ sumptuous Destitution - </l>
+                    <l>Without a Name - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Profane it by<add type="alternate" extent="a search">pursuit</add>
+ a<app type="division"><lem><lb/></lem></app>
+ search - we cannot - </l>
+                    <l>It has no home -</l>
+                    <l>Nor we who having<app type="division"><lem><lb/></lem></app>
+ once<add type="alternate" extent="inhaled it">&lt;u&gt;waylaid it&lt;/u&gt;</add>
+ inhaled it - </l>
+                    <l>thereafter roam.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

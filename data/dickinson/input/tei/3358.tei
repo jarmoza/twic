@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How happy I was if I could forget 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J898">
+                <lg type="stanza">
+                    <l>How happy I was if I could forget</l>
+                    <l>To remember how sad I am</l>
+                    <l>Would be an easy adversity</l>
+                    <l>But the recollecting of Bloom</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Keeps making November difficult</l>
+                    <l>Till I who was almost bold</l>
+                    <l>Lose my way like a little Child</l>
+                    <l>And perish of the cold.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

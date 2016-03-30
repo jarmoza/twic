@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His mind of man, a secret makes 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1663">
+                <lg type="stanza">
+                    <l>His mind of man, a secret makes</l>
+                    <l>I meet him with a start</l>
+                    <l>He carries a circumference</l>
+                    <l>In which I have no part</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or even if I deem I do</l>
+                    <l>He otherwise may know</l>
+                    <l>Impregnable to inquest</l>
+                    <l>However neighborly --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

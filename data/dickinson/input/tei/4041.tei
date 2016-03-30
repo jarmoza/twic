@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The farthest Thunder that I heard 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1581">
+                <lg type="stanza">
+                    <l>The farthest Thunder that I heard</l>
+                    <l>Was nearer than the Sky</l>
+                    <l>And rumbles still, though torrid Noons</l>
+                    <l>Have lain their missiles by --</l>
+                    <l>The Lightning that preceded it</l>
+                    <l>Struck no one but myself --</l>
+                    <l>But I would not exchange the Bolt</l>
+                    <l>For all the rest of Life --</l>
+                    <l>Indebtedness to Oxygen</l>
+                    <l>The Happy may repay,</l>
+                    <l>But not the obligation</l>
+                    <l>To Electricity --</l>
+                    <l>It founds the Homes and decks the Days</l>
+                    <l>And every clamor bright</l>
+                    <l>Is but the gleam concomitant</l>
+                    <l>Of that waylaying Light --</l>
+                    <l>The Thought is quiet as a Flake --</l>
+                    <l>A Crash without a Sound,</l>
+                    <l>How Life's reverberation</l>
+                    <l>It's Explanation found --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

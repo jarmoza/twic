@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So give me back to death </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1653A">
+                <lg type="stanza">
+                    <l>So give me<app type="division"><lem><lb/></lem></app>
+ back to Death - </l>
+                    <l>The Death<app type="division"><lem><lb/></lem></app>
+ I never feared </l>
+                    <l>Except that<app type="division"><lem><lb/></lem></app>
+ it deprived<app type="division"><lem><lb/></lem></app>
+ of thee - </l>
+                    <l>And now, by<app type="division"><lem><lb/></lem></app>
+ Life deprived, </l>
+                    <l>In my own<app type="division"><lem><lb/></lem></app>
+ Grave I breathe</l>
+                    <l>And estimate<app type="division"><lem><lb/></lem></app>
+ it's size - </l>
+                    <l>It's size is<app type="division"><lem><lb/></lem></app>
+ all that Hell<app type="division"><lem><lb/></lem></app>
+ can guess - </l>
+                    <l>And all<app type="division"><lem><lb/></lem></app>
+ that Heaven<app type="division"><lem><lb/></lem></app>
+ was - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

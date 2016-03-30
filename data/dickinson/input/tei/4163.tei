@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>T&#x27;was comfort in her Dying Room 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1703">
+                <lg type="stanza">
+                    <l>T'was comfort in her Dying Room</l>
+                    <l>To hear the living Clock</l>
+                    <l>A short relief to have the wind</l>
+                    <l>Walk boldly up and knock</l>
+                    <l>Diversion from the Dying Theme</l>
+                    <l>To hear the children play</l>
+                    <l>But wrong the more</l>
+                    <l>That these could live</l>
+                    <l>And this of ours must die</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

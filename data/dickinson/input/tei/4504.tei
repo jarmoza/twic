@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>VANISHED</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-154">
+                <lg type="stanza">
+                    <l>She died,  this was the way she died;</l>
+                    <l>And when her breath was done,</l>
+                    <l>Took up her simple wardrobe</l>
+                    <l>And started for the sun.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her little figure at the gate</l>
+                    <l>The angels must have spied,</l>
+                    <l>Since I could never find her</l>
+                    <l>Upon the mortal side.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

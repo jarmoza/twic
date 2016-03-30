@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot meet the spring unmoved </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1122A">
+                <lg type="stanza">
+                    <l>I cannot meet<app type="division"><lem><lb/></lem></app>
+ the Spring - unmoved - </l>
+                    <l>I feel the old desire - </l>
+                    <l>A Hurry with a<app type="division"><lem><lb/></lem></app>
+ lingering, mixed, </l>
+                    <l>A Warrant to be fair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Competition in my<app type="division"><lem><lb/></lem></app>
+ sense</l>
+                    <l>With something, hid<app type="division"><lem><lb/></lem></app>
+ in Her - </l>
+                    <l>And as she vanishes,<app type="division"><lem><lb/></lem></app>
+ Remorse </l>
+                    <l>I saw no more of<app type="division"><lem><lb/></lem></app>
+ Her - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

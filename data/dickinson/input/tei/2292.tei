@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sunset that screens reveals </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1644A">
+                <lg type="stanza">
+                    <l>Sunset that screens,<app type="division"><lem><lb/></lem></app>
+ reveals </l>
+                    <l>Retarding what<app type="division"><lem><lb/></lem></app>
+ we see </l>
+                    <l>By obstacles<app type="division"><lem><lb/></lem></app>
+ of swarthy<app type="division"><lem><lb/></lem></app>
+ gold </l>
+                    <l>And amber mystery - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

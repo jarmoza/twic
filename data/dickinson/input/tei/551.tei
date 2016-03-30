@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ll clutch and clutch </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F385A">
+                <lg type="stanza">
+                    <l>I'll clutch - and clutch -</l>
+                    <l>Next - One - Might be the<app type="division"><lem><lb/></lem></app>
+ golden touch - </l>
+                    <l>Could take it - </l>
+                    <l>Diamonds - Wait - </l>
+                    <l>I'm diving - just a little<app type="division"><lem><lb/></lem></app>
+ late -</l>
+                    <l>But stars - go slow - for night - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll string you - in fine necklace - </l>
+                    <l>Tiaras - make - of some - </l>
+                    <l>Wear you on Hem - </l>
+                    <l>Loop up a Countess - with you -</l>
+                    <l>Make - a Diadem - and mend<app type="division"><lem><lb/></lem></app>
+ my old One - </l>
+                    <l>Count - Hoard - then lose - </l>
+                    <l>And doubt that you are mine - </l>
+                    <l>To have the joy of feeling<app type="division"><lem><lb/></lem></app>
+ it - again - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll show you at the Court -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Bear you - for Ornament </l>
+                    <l>Where Women breathe - </l>
+                    <l>That every sigh - may lift<app type="division"><lem><lb/></lem></app>
+ you </l>
+                    <l>Just as high - as I - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And - when I die -</l>
+                    <l>In meek array - display you - </l>
+                    <l>Still to show - how rich I go - </l>
+                    <l>Lest Skies impeach a wealth<app type="division"><lem><lb/></lem></app>
+ so wonderful - </l>
+                    <l>And banish me - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

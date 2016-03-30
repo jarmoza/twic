@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lest they should come is all my fear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1204A">
+                <lg type="stanza">
+                    <l>Lest they should<app type="division"><lem><lb/></lem></app>
+ come - is all my<app type="division"><lem><lb/></lem></app>
+ fear </l>
+                    <l>When sweet<app type="division"><lem><lb/></lem></app>
+ incarcerated - here </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

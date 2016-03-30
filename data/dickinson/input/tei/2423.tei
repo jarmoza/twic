@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He was my host - he was my guest</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1754A">
+                <lg type="stanza">
+                    <l>He was my host - he was my guest,</l>
+                    <l>I never to this day</l>
+                    <l>If I invited him could tell,</l>
+                    <l>Or he invited me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So infinite our intercourse</l>
+                    <l>So intimate, indeed,</l>
+                    <l>Analysis<add type="alternate" extent="as">like</add>
+ as capsule seemed</l>
+                    <l>To keeper of the seed.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

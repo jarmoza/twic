@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of tribulation these are they </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F328A">
+                <lg type="stanza">
+                    <l>Of Tribulation, these are They,</l>
+                    <l>Denoted by the White - </l>
+                    <l>The Spangled Gowns, a lesser Rank </l>
+                    <l>Of Victors - designate - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>All these - did Conquer -</l>
+                    <l>But the ones who overcame<app type="division"><lem><lb/></lem></app>
+ most times - </l>
+                    <l>Wear nothing commoner than snow - </l>
+                    <l>No Ornament, but Palms - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Surrender - is a sort unknown - </l>
+                    <l>On this superior soil -</l>
+                    <l>Defeat - an outgrown Anguish - </l>
+                    <l>Remembered, as the Mile </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our panting Ancle barely passed - </l>
+                    <l>When Night devoured the Road - </l>
+                    <l>But we - stood whispering in<app type="division"><lem><lb/></lem></app>
+ the House -</l>
+                    <l>And all we said - was &quot;Saved&quot;!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

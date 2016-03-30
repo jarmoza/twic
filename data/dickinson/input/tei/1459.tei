@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These are the signs to nature&#x27;s inns </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1106A">
+                <lg type="stanza">
+                    <l>These are the Signs to<app type="division"><lem><lb/></lem></app>
+ Nature's Inns -</l>
+                    <l>Her invitation broad </l>
+                    <l>To Whosoever famishing </l>
+                    <l>To taste her mystic<app type="division"><lem><lb/></lem></app>
+ Bread - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>These are the rites<app type="division"><lem><lb/></lem></app>
+ of Nature's House -</l>
+                    <l>The Hospitality </l>
+                    <l>That opens with an<app type="division"><lem><lb/></lem></app>
+ equal width </l>
+                    <l>To Beggar and to Bee </l>
+                </lg>
+                <lg type="stanza">
+                    <l>For Sureties of her<app type="division"><lem><lb/></lem></app>
+ staunch Estate </l>
+                    <l>Her undecaying Cheer</l>
+                    <l>The Purple in the<app type="division"><lem><lb/></lem></app>
+ East is set </l>
+                    <l>And in the North, the<app type="division"><lem><lb/></lem></app>
+ Star - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

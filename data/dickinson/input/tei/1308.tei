@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>His feet are shod with gauze </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F979A">
+                <lg type="stanza">
+                    <l>His Feet are shod<app type="division"><lem><lb/></lem></app>
+ with Gauze -</l>
+                    <l>His Helmet, is of<app type="division"><lem><lb/></lem></app>
+ Gold, </l>
+                    <l>His Breast, a single<app type="division"><lem><lb/></lem></app>
+ Onyx </l>
+                    <l>With Chrysophras, inlaid - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His Labor is a Chant -</l>
+                    <l>His Idleness - a Tune - </l>
+                    <l>Oh, for a Bee's<app type="division"><lem><lb/></lem></app>
+ experience </l>
+                    <l>Of Clovers, and of<app type="division"><lem><lb/></lem></app>
+ Noon!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

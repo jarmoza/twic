@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Escaping backward to perceive </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F969A">
+                <lg type="stanza">
+                    <l>Escaping backward to<app type="division"><lem><lb/></lem></app>
+ perceive</l>
+                    <l>The Sea opon our place - </l>
+                    <l>Escaping forward, to<app type="division"><lem><lb/></lem></app>
+ confront </l>
+                    <l>His glittering Embrace - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Retreating up, a Billow's<app type="division"><lem><lb/></lem></app>
+ hight</l>
+                    <l>Retreating blinded down </l>
+                    <l>Our undermining feet<app type="division"><lem><lb/></lem></app>
+ to meet </l>
+                    <l>Instructs to the Divine.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

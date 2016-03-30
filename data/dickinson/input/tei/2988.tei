@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mine -- by the Right of the White Election!
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J528">
+                <lg type="stanza">
+                    <l>Mine -- by the Right of the White Election!</l>
+                    <l>Mine -- by the Royal Seal!</l>
+                    <l>Mine -- by the Sign in the Scarlet prison --</l>
+                    <l><app type="revision"><lem>Bolts</lem><rdg>Bolts</rdg></app>
+Bars -- cannot conceal!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mine -- here -- in Vision -- and in Veto!</l>
+                    <l>Mine -- by the Grave's Repeal</l>
+                    <l>Titled -- Confirmed --</l>
+                    <l><app type="revision"><lem>Good affidavit --</lem><rdg>Good affidavit --</rdg></app>
+Delirious Charter!</l>
+                    <l>Mine -- <app type="revision"><lem>while</lem><rdg>while</rdg></app>
+long as Ages steal!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

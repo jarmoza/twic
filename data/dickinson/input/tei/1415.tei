@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of consciousness, her awful mate </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1076A">
+                <lg type="stanza">
+                    <l>Of Consciousness, her<app type="division"><lem><lb/></lem></app>
+ awful mate</l>
+                    <l>The Soul cannot be rid - </l>
+                    <l>As easy the secreting<app type="division"><lem><lb/></lem></app>
+ her </l>
+                    <l>Behind the eyes of God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The deepest hid is<app type="division"><lem><lb/></lem></app>
+ sighted first</l>
+                    <l>And scant to Him<app type="division"><lem><lb/></lem></app>
+ the Crowd - </l>
+                    <l>What triple Lenses<app type="division"><lem><lb/></lem></app>
+ burn opon </l>
+                    <l>The Escapade from God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

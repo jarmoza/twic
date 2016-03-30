@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Delight&#x27;s Despair at setting
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1299">
+                <lg type="stanza">
+                    <l>Delight's Despair at setting</l>
+                    <l>Is that Delight is less</l>
+                    <l>Than the sufficing Longing</l>
+                    <l>That so impoverish.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Enchantment's Perihelion</l>
+                    <l>Mistaken oft has been</l>
+                    <l>For the Authentic orbit</l>
+                    <l>Of it's Anterior Sun.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

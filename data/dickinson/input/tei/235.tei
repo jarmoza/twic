@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If pain for peace prepares </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F155B">
+                <lg type="stanza">
+                    <l>If pain for peace prepares</l>
+                    <l>Lo, what &quot;Augustan&quot; years </l>
+                    <l>Our feet await!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If springs from winter rise.  </l>
+                    <l><em>Can</em> the Anemones</l>
+                    <l>Be reckoned up?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If night stands first - <em>then</em> noon </l>
+                    <l>To gird us for the sun - </l>
+                    <l>What gaze!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When from a thousand skies</l>
+                    <l>On our <em>developed</em> eyes </l>
+                    <l>Noons blaze!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

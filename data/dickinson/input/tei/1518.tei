@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis my first night beneath the sun </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1151A">
+                <lg type="stanza">
+                    <l>'Tis my first night<app type="division"><lem><lb/></lem></app>
+ beneath the Sun </l>
+                    <l>If I should spend<app type="division"><lem><lb/></lem></app>
+ it here - </l>
+                    <l>Above him is too<app type="division"><lem><lb/></lem></app>
+ low a hight </l>
+                    <l>For his Barometer </l>
+                    <l>Who Airs of<app type="division"><lem><lb/></lem></app>
+ expectation breathes</l>
+                    <l>And takes the<app type="division"><lem><lb/></lem></app>
+ Wind at prime - </l>
+                    <l>But Distance his<app type="division"><lem><lb/></lem></app>
+ Delights confides </l>
+                    <l>To those who visit him </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

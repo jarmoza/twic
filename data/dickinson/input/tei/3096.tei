@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Way I read a Letter&#x27;s -- this -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J636">
+                <lg type="stanza">
+                    <l>The Way I read a Letter's -- <app type="revision"><lem>so</lem><rdg>so</rdg></app>
+this --</l>
+                    <l>'Tis first -- I lock the Door --</l>
+                    <l>And push it with my fingers -- next --</l>
+                    <l>For transport it be sure --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then I go the furthest off</l>
+                    <l>To counteract a knock --</l>
+                    <l>Then draw my little Letter forth</l>
+                    <l>And <app type="revision"><lem>slily</lem><rdg>slily</rdg></app>
+<app type="revision"><lem>softly</lem><rdg>softly</rdg></app>
+slowly pick the lock --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then -- glancing narrow, at the Wall --</l>
+                    <l>And narrow at the <app type="revision"><lem>door</lem><rdg>door</rdg></app>
+floor</l>
+                    <l>For firm Conviction of a Mouse</l>
+                    <l>Not exorcised before --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Peruse how infinite I am</l>
+                    <l>To no one that You -- know --</l>
+                    <l>And sigh for lack of Heaven --</l>
+                    <l>but not The Heaven God bestow --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I could suffice for him I knew </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F712A">
+                <lg type="stanza">
+                    <l>I could suffice for Him,<app type="division"><lem><lb/></lem></app>
+ I knew -</l>
+                    <l>He - could suffice for Me - </l>
+                    <l>Yet Hesitating Fractions - Both </l>
+                    <l>Surveyed Infinity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Would I be Whole&quot; He<app type="division"><lem><lb/></lem></app>
+ sudden broached -</l>
+                    <l>My Syllable rebelled - </l>
+                    <l>'Twas face to face with<app type="division"><lem><lb/></lem></app>
+ Nature - forced - </l>
+                    <l>'Twas face to face with God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Withdrew the Sun - to other<app type="division"><lem><lb/></lem></app>
+ Wests - </l>
+                    <l>Withdrew the furthest Star</l>
+                    <l>Before Decision - stooped to<app type="division"><lem><lb/></lem></app>
+ speech - </l>
+                    <l>And then - be audibler<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Answer of the Sea<app type="division"><lem><lb/></lem></app>
+ unto </l>
+                    <l>The Motion of the Moon - </l>
+                    <l>Herself adjust Her Tides - unto -</l>
+                    <l>Could I - do else - with Mine?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

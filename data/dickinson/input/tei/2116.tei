@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The savior must have been </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1538C.2">
+                <lg type="stanza">
+                    <l>The Savior must have been a docile Gentleman 
+</l>
+                    <l>To come so far, so cold a night </l>
+                    <l>For little fellow men.  </l>
+                    <l>The road to Bethlehem  </l>
+                    <l>Since He and I were boys </l>
+                    <l>Has <app type="emendation"><lem>levelled</lem><rdg>leveled</rdg></app>
+  but for that 'twould be </l>
+                    <l>A rugged billion miles.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

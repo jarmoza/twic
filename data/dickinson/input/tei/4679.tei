@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SLEEPING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-163">
+                <lg type="stanza">
+                    <l>A long, long sleep, a famous sleep</l>
+                    <l>That makes no show for dawn</l>
+                    <l>By stretch of limb or stir of lid, </l>
+                    <l>An independent one.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was ever idleness like this?</l>
+                    <l>Within a hut of stone</l>
+                    <l>To bask the centuries away</l>
+                    <l>Nor once look up for noon?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

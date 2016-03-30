@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Reportless subjects, to the quick </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1118A">
+                <lg type="stanza">
+                    <l>Reportless Subjects, to<app type="division"><lem><lb/></lem></app>
+ the Quick</l>
+                    <l>Continual addressed - </l>
+                    <l>But foreign as the<app type="division"><lem><lb/></lem></app>
+ Dialect </l>
+                    <l>Of Danes, unto the rest.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Reportless Measures, to<app type="division"><lem><lb/></lem></app>
+ the Ear</l>
+                    <l>Susceptive - stimulus - </l>
+                    <l>But like an Oriental<app type="division"><lem><lb/></lem></app>
+ Tale </l>
+                    <l>To others, fabulous - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

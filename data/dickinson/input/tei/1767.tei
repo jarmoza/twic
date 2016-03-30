@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dear March - come in </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1320A">
+                <lg type="stanza">
+                    <l>Dear March - Come in - </l>
+                    <l>How glad I am - </l>
+                    <l>I hoped for you before - </l>
+                    <l>Put down your Hat - </l>
+                    <l>You must have walked -</l>
+                    <l>How out of Breath you<app type="division"><lem><lb/></lem></app>
+ are - </l>
+                    <l>Dear March, how are<app type="division"><lem><lb/></lem></app>
+ you, and the Rest - </l>
+                    <l>Did you leave Nature<app type="division"><lem><lb/></lem></app>
+ well - </l>
+                    <l>Oh March, Come right<app type="division"><lem><lb/></lem></app>
+ up stairs with me - </l>
+                    <l>I have so much to tell -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got your Letter, and<app type="division"><lem><lb/></lem></app>
+ the Birds - </l>
+                    <l>The Maples never knew<app type="division"><lem><lb/></lem></app>
+ that you were coming - </l>
+                    <l><add type="alternate" extent="I declare">till I called</add>
+I declare - how Red their<app type="division"><lem><lb/></lem></app>
+ Faces grew - </l>
+                    <l><add type="alternate" extent="But">and</add>
+But March, forgive me - </l>
+                    <l>All those Hills you left<app type="division"><lem><lb/></lem></app>
+ for me to Hue -</l>
+                    <l>There was no Purple<app type="division"><lem><lb/></lem></app>
+ suitable - </l>
+                    <l>You took it all with you -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who knocks? That April - </l>
+                    <l>Lock the Door - </l>
+                    <l>I will not be pursued -</l>
+                    <l>He stayed away a Year<app type="division"><lem><lb/></lem></app>
+ to call </l>
+                    <l>When I am occupied - </l>
+                    <l>But trifles look so trivial </l>
+                    <l><add type="alternate" extent="As soon as">the instant that</add>
+As soon as you have come </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Blame is just as<app type="division"><lem><lb/></lem></app>
+ dear as Praise</l>
+                    <l>And Praise as mere<app type="division"><lem><lb/></lem></app>
+ as Blame - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

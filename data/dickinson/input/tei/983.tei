@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joy to have merited the pain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F739A">
+                <lg type="stanza">
+                    <l>Joy to have merited the Pain -</l>
+                    <l>To merit the Release - </l>
+                    <l>Joy to have perished every<app type="division"><lem><lb/></lem></app>
+ step - </l>
+                    <l>To Compass Paradise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pardon - to look opon thy<app type="division"><lem><lb/></lem></app>
+ face -</l>
+                    <l>With these old fashioned Eyes - </l>
+                    <l>Better than new - could be -<app type="division"><lem><lb/></lem></app>
+ for that - </l>
+                    <l>Though bought in Paradise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because they looked on thee<app type="division"><lem><lb/></lem></app>
+ before - </l>
+                    <l>And thou hast looked on them -</l>
+                    <l>Prove Me - My Hazel Witnesses </l>
+                    <l>The features are the same - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So fleet thou wert, when present - </l>
+                    <l>So infinite - when gone -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>An Orient's Apparition -</l>
+                    <l>Remanded of the Morn - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Hight I recollect - </l>
+                    <l>'Twas even with the Hills - </l>
+                    <l>The Depth opon my Soul<app type="division"><lem><lb/></lem></app>
+ was notched - </l>
+                    <l>As Floods - on Whites of<app type="division"><lem><lb/></lem></app>
+ Wheels -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Haunt - till Time have<app type="division"><lem><lb/></lem></app>
+ dropped </l>
+                    <l>His<add type="alternate" extent="last Decade away,">slow Decades away -</add>
+ last Decade away, </l>
+                    <l>And Haunting actualize -<app type="division"><lem><lb/></lem></app>
+ to last </l>
+                    <l>At least - Eternity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

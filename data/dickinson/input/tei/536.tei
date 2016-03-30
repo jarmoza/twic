@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My reward for being was this </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F375A">
+                <lg type="stanza">
+                    <l>My Reward for Being,<app type="division"><lem><lb/></lem></app>
+ was This -</l>
+                    <l>My premium - My Bliss - </l>
+                    <l>An Admiralty, less - </l>
+                    <l>A Sceptre - penniless - </l>
+                    <l>And Realms - just Dross -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Thrones accost my Hands - </l>
+                    <l>With &quot;Me, Miss, Me&quot; - </l>
+                    <l>I'll unroll Thee - </l>
+                    <l>Dominions dowerless - beside this Grace - </l>
+                    <l>Election - Vote -</l>
+                    <l>The Ballots of Eternity, will show just that.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

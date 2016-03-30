@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One Joy of so much anguish 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1420">
+                <lg type="stanza">
+                    <l>One Joy of so much anguish</l>
+                    <l>Sweet nature has for me</l>
+                    <l>I shun it as I do Despair</l>
+                    <l>Or dear iniquity --</l>
+                    <l>Why Birds, a Summer morning</l>
+                    <l>Before the Quick of Day</l>
+                    <l>Should stab my lavished spirit</l>
+                    <l>With Dirks of Melody</l>
+                    <l>Is part of an inquiry</l>
+                    <l>That will receive reply</l>
+                    <l>When Flesh and Spirit sunder</l>
+                    <l>In Death's Immediately --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

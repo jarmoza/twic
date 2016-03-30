@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>For this -- accepted Breath -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J195">
+                <lg type="stanza">
+                    <l>For this -- accepted Breath --</l>
+                    <l>Through it -- compete with Death --</l>
+                    <l>The fellow Cannot touch this Crown --</l>
+                    <l>By it -- my title take --</l>
+                    <l>Ah, what a royal sake</l>
+                    <l>To my nescessity -- stooped down!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Wilderness -- can be</l>
+                    <l>Where this attendeth me --</l>
+                    <l>No Desert Noon --</l>
+                    <l>No fear of frost to come</l>
+                    <l>Haunt the perennial bloom --</l>
+                    <l>But Certain June!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Get Gabriel -- to tell -- the royal syllable --</l>
+                    <l>Get Saints -- with new -- unsteady tongue --</l>
+                    <l>To say what trance below</l>
+                    <l>Most like their glory show --</l>
+                    <l>Fittest the Crown!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

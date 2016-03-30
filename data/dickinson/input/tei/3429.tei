@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He who in Himself believes -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J969">
+                <lg type="stanza">
+                    <l>He who in Himself believes --</l>
+                    <l><app type="revision"><lem>Lie</lem><rdg>Lie</rdg></app>
+Fraud cannot presume --</l>
+                    <l>Faith is Constancy's Result --</l>
+                    <l>And <app type="revision"><lem>infers</lem><rdg>infers</rdg></app>
+assumes -- from Home --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cannot perish, though it fail</l>
+                    <l>Every second time --</l>
+                    <l><app type="revision"><lem>if --</lem><rdg>if --</rdg></app>
+<app type="revision"><lem>When --</lem><rdg>When --</rdg></app>
+But defaced Vicariously --</l>
+                    <l>For <app type="revision"><lem>Another Shame --</lem><rdg>Another Shame --</rdg></app>
+Some Other Shame --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

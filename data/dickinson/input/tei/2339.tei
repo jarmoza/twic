@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Go thy great way! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1673B">
+                <lg type="stanza">
+                    <l>Go thy great<app type="division"><lem><lb/></lem></app>
+ way!  </l>
+                    <l>The Stars<app type="division"><lem><lb/></lem></app>
+ thou meetst </l>
+                    <l>Are even as<app type="division"><lem><lb/></lem></app>
+ Thyself - </l>
+                    <l>For what are<app type="division"><lem><lb/></lem></app>
+ Stars but<app type="division"><lem><lb/></lem></app>
+ Asterisks </l>
+                    <l>To point a<app type="division"><lem><lb/></lem></app>
+ human Life?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

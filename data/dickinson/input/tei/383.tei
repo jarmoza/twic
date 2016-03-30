@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ah, moon and star! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F262B">
+                <lg type="stanza">
+                    <l>Ah, Moon - and Star!</l>
+                    <l>You are very far - </l>
+                    <l>But - were no one farther<app type="division"><lem><lb/></lem></app>
+ than you - </l>
+                    <l>Do you think I'd stop for<app type="division"><lem><lb/></lem></app>
+ a firmament - </l>
+                    <l>Or a cubit - or so?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could borrow a Bonnet - of<app type="division"><lem><lb/></lem></app>
+ the Lark - </l>
+                    <l>And a Chamois' silver boot - </l>
+                    <l>And a stirrup of an Antelope - </l>
+                    <l>And leap to you - tonight!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But - Moon - and Star -</l>
+                    <l>Though you're very far - </l>
+                    <l>There is one - farther than you - </l>
+                    <l>He - is more than a<app type="division"><lem><lb/></lem></app>
+ firmament - from me - </l>
+                    <l>And I cannot go!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

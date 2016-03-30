@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Glass was the street in tinsel peril </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1518A">
+                <lg type="stanza">
+                    <l>Glass was<app type="division"><lem><lb/></lem></app>
+ the Street -<app type="division"><lem><lb/></lem></app>
+ in Tinsel<app type="division"><lem><lb/></lem></app>
+ Peril </l>
+                    <l>Tree and<app type="division"><lem><lb/></lem></app>
+ Traveller stood.  </l>
+                    <l>Filled was<app type="division"><lem><lb/></lem></app>
+ the Air with<app type="division"><lem><lb/></lem></app>
+ merry venture </l>
+                    <l>Hearty with<app type="division"><lem><lb/></lem></app>
+ Boys the<app type="division"><lem><lb/></lem></app>
+ Road.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Shot the lithe<app type="division"><lem><lb/></lem></app>
+ Sleds like<app type="division"><lem><lb/></lem></app>
+ Shod vibrations</l>
+                    <l><app type="emendation"><lem>Emphazized</lem><rdg>Emphacized</rdg></app>
+ and gone<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>It is the<app type="division"><lem><lb/></lem></app>
+ Past's supreme<app type="division"><lem><lb/></lem></app>
+ italic </l>
+                    <l>Makes the<app type="division"><lem><lb/></lem></app>
+ Present mean - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

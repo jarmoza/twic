@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The last Night that She lived 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1100">
+                <lg type="stanza">
+                    <l>The last Night that She lived</l>
+                    <l>It was a Common Night</l>
+                    <l>Except the Dying -- this to Us</l>
+                    <l>Made Nature different</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We noticed smallest things --</l>
+                    <l>Things overlooked before</l>
+                    <l>By this great light upon our Minds</l>
+                    <l>Italicized -- as 'twere.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As We went out and in</l>
+                    <l>Between Her final Room</l>
+                    <l>And Rooms where Those to be alive</l>
+                    <l>Tomorrow were, a Blame</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Others could exist</l>
+                    <l>While She must finish quite</l>
+                    <l>A Jealousy for Her arose</l>
+                    <l>So nearly infinite --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We waited while She passed --</l>
+                    <l>It was a narrow time --</l>
+                    <l>Too jostled were Our Souls to speak</l>
+                    <l>At length the notice came.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She mentioned, and forgot --</l>
+                    <l>Then <app type="revision"><lem>softly</lem><rdg>softly</rdg></app>
+lightly as a Reed</l>
+                    <l>Bent to the Water, struggled scarce --</l>
+                    <l>Consented, and was dead --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And We -- We placed the Hair --</l>
+                    <l>And drew the Head erect --</l>
+                    <l>And then an awful leisure was</l>
+                    <l>Belief to regulate --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

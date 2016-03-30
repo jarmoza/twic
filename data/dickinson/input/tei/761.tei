@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A house opon the hight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F555A">
+                <lg type="stanza">
+                    <l>A House opon the Hight -</l>
+                    <l>That Wagon never reached - </l>
+                    <l>No Dead, were ever carried down - </l>
+                    <l>No Peddler's Cart - approached - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whose Chimney never smoked -</l>
+                    <l>Whose Windows - Night and Morn - </l>
+                    <l>Caught Sunrise first - and<app type="division"><lem><lb/></lem></app>
+ Sunset - last - </l>
+                    <l>Then - held an Empty Pane - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whose fate - Conjecture knew - </l>
+                    <l>No other neighbor - did -</l>
+                    <l>And what <app type="emendation"><lem>is</lem><rdg>it</rdg></app>
+ was - we never<app type="division"><lem><lb/></lem></app>
+ lisped - </l>
+                    <l>Because He - never told - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

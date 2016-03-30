@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Opinion is a flitting thing, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1455">
+                <lg type="stanza">
+                    <l>Opinion is a flitting thing,</l>
+                    <l>But Truth, outlasts the Sun --</l>
+                    <l>If then we cannot own them both --</l>
+                    <l>Possess the oldest one --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

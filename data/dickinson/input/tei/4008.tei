@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Meeting by Accident,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1548">
+                <lg type="stanza">
+                    <l>Meeting by Accident,</l>
+                    <l>We hovered by design --</l>
+                    <l>As often as a Century</l>
+                    <l>An error so divine</l>
+                    <l>Is ratified by Destiny,</l>
+                    <l>But Destiny is old</l>
+                    <l>And economical of Bliss</l>
+                    <l>As Midas is of Go)d --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I felt a Cleaving in my Mind -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J937">
+                <lg type="stanza">
+                    <l>I felt a Cleaving in my Mind --</l>
+                    <l>As if my Brain had split --</l>
+                    <l>I tried to match it -- Seam by Seam --</l>
+                    <l>But could not make them fit.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The thought behind, I <app type="revision"><lem>tried</lem><rdg>tried</rdg></app>
+strove to join</l>
+                    <l>Unto the thought before --</l>
+                    <l>But Sequence ravelled out of <app type="revision"><lem>reach --</lem><rdg>reach --</rdg></app>
+Sound</l>
+                    <l>Like Balls -- upon a Floor.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

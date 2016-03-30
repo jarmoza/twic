@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis good -- the looking back on Grief -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J660">
+                <lg type="stanza">
+                    <l>'Tis good -- the looking back on Grief --</l>
+                    <l>To re-endure a Day --</l>
+                    <l>We thought the Mighty Funeral --</l>
+                    <l>Of All Conceived Joy --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To recollect how Busy Grass</l>
+                    <l>Did meddle -- one by one --</l>
+                    <l>Till all the Grief with Summer -- <app type="revision"><lem>blew --</lem><rdg>blew --</rdg></app>
+waved</l>
+                    <l>And none could see the stone.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And though the Wo you have Today</l>
+                    <l>Be larger -- As the Sea</l>
+                    <l>Exceeds it's <app type="revision"><lem>Undeveloped</lem><rdg>Undeveloped</rdg></app>
+Unremembered Drop --</l>
+                    <l><app type="revision"><lem>They prove One Chemistry --</lem><rdg>They prove One Chemistry --</rdg></app>
+They're Water -- equally --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>1.good] well</l>
+                    <l>3.Mighty] monstrous</l>
+                    <l>6.meddle] tamper</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

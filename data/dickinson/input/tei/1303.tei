@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The largest fire ever known </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F974B">
+                <lg type="stanza">
+                    <l>The largest Fire<app type="division"><lem><lb/></lem></app>
+ ever known </l>
+                    <l>Occurs each<app type="division"><lem><lb/></lem></app>
+ Afternoon - </l>
+                    <l>Discovered is<app type="division"><lem><lb/></lem></app>
+ without surprise </l>
+                    <l>Proceeds without<app type="division"><lem><lb/></lem></app>
+ concern - </l>
+                    <l>Consumes and<app type="division"><lem><lb/></lem></app>
+ no report to men</l>
+                    <l>An Occidental Town, </l>
+                    <l>Rebuilt another<app type="division"><lem><lb/></lem></app>
+ morning<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>To be burned<app type="division"><lem><lb/></lem></app>
+ down again </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

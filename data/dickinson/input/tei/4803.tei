@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Crisis is sweet and, set the Heart</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-121">
+                <lg type="stanza">
+                    <l>Crisis is sweet and, set the Heart</l>
+                    <l>Upon the hither side,</l>
+                    <l>Has dowers of prospective</l>
+                    <l>Surrendered by the Tried.</l>
+                    <l>Inquire of the closing Rose</l>
+                    <l>Which Rapture she preferred,</l>
+                    <l>And she will tell you, sighing,</l>
+                    <l>The transport of the Bud.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Because the Bee may blameless hum
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J869">
+                <lg type="stanza">
+                    <l>Because the Bee may blameless hum</l>
+                    <l>For Thee a Bee do I become</l>
+                    <l>List even unto Me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because the Flowers unafraid</l>
+                    <l>May lift a look on thine, a Maid</l>
+                    <l>Alway a Flower would be.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor Robins, Robins need not hide</l>
+                    <l>When Thou upon their Crypts intrude</l>
+                    <l>So Wings bestow on Me</l>
+                    <l>Or Petals, or a Dower of Buzz</l>
+                    <l>That Bee to ride, or Flower of Furze</l>
+                    <l>I that way worship Thee.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

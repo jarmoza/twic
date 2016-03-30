@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Truth -- is stirless -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J780">
+                <lg type="stanza">
+                    <l>The Truth -- is stirless --</l>
+                    <l>Other force -- may be presumed to move --</l>
+                    <l>This -- then -- is best for confidence --</l>
+                    <l>When oldest Cedars swerve --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Oaks untwist their fists --</l>
+                    <l>And Mountains -- feeble -- lean --</l>
+                    <l>How excellent a Body, that</l>
+                    <l>Stands without a Bone --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How vigorous a Force</l>
+                    <l>That holds without a Prop --</l>
+                    <l>Truth stays Herself -- and every man</l>
+                    <l>That trusts Her -- boldly up --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

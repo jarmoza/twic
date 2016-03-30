@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I heard as if I had no ear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F996A">
+                <lg type="stanza">
+                    <l>I <app type="division"><lem><lb/></lem></app>
+heard, as if I had no Ear</l>
+                    <l>Until a Vital Word </l>
+                    <l>Came all the way<app type="division"><lem><lb/></lem></app>
+ from Life to me </l>
+                    <l>And then I knew<app type="division"><lem><lb/></lem></app>
+ I heard - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I saw, as if my Eye<app type="division"><lem><lb/></lem></app>
+ were on</l>
+                    <l>Another, till a Thing </l>
+                    <l>And now I know<app type="division"><lem><lb/></lem></app>
+ 'twas Light, because </l>
+                    <l>It fitted them, came<app type="division"><lem><lb/></lem></app>
+ in.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I dwelt, as if Myself<app type="division"><lem><lb/></lem></app>
+ were out, </l>
+                    <l>My Body but within</l>
+                    <l>Until a Might detected me </l>
+                    <l>And set my Kernel in -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Spirit turned<app type="division"><lem><lb/></lem></app>
+ unto the Dust </l>
+                    <l>&quot;Old Friend, thou<app type="division"><lem><lb/></lem></app>
+ knowest Me&quot;, </l>
+                    <l>And Time went<app type="division"><lem><lb/></lem></app>
+ out to tell the News</l>
+                    <l>And met Eternity </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

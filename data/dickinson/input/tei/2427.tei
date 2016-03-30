@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Love can do all but raise the dead</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1758A">
+                <lg type="stanza">
+                    <l>Love can do all but raise the Dead</l>
+                    <l>I doubt if even that</l>
+                    <l>From such a giant were<app type="division"><lem><lb/></lem></app>
+ withheld</l>
+                    <l>Were<add type="alternate" extent="flesh">Dust -</add>
+ flesh equivalent</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But love is tired and must<app type="division"><lem><lb/></lem></app>
+ sleep,</l>
+                    <l>And hungry and must graze</l>
+                    <l>And so abets the shining Fleet</l>
+                    <l>Till it is out of gaze.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE BAT</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-99">
+                <lg type="stanza">
+                    <l>The bat is dun with wrinkled wings</l>
+                    <l>Like fallow article,</l>
+                    <l>And not a song pervades his lips,</l>
+                    <l>Or none perceptible.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His small umbrella, quaintly halved,</l>
+                    <l>Describing in the air</l>
+                    <l>An arc alike inscrutable, </l>
+                    <l>Elate philosopher!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Deputed from what firmament</l>
+                    <l>Of what astute abode,</l>
+                    <l>Empowered with what malevolence</l>
+                    <l>Auspiciously withheld.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To his adroit Creator</l>
+                    <l>Ascribe no less the praise;</l>
+                    <l>Beneficent, believe me,</l>
+                    <l>His eccentricities.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

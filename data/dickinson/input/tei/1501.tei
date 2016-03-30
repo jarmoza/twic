@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is another loneliness </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1138A">
+                <lg type="stanza">
+                    <l>There is another Loneliness </l>
+                    <l>That many die without - </l>
+                    <l>Not want of friend<app type="division"><lem><lb/></lem></app>
+ occasions it </l>
+                    <l>Or circumstance of Lot </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But nature, sometimes,<app type="division"><lem><lb/></lem></app>
+ sometimes thought</l>
+                    <l>And whoso it befall </l>
+                    <l>Is richer than could<app type="division"><lem><lb/></lem></app>
+ be revealed </l>
+                    <l>By mortal numeral - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To my quick ear the leaves conferred;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-87">
+                <lg type="stanza">
+                    <l>To my quick ear the leaves conferred;</l>
+                    <l>The bushes they were bells;</l>
+                    <l>I could not find a privacy</l>
+                    <l>From Nature's sentinels.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In cave if I presumed to hide,</l>
+                    <l>The walls began to tell;</l>
+                    <l>Creation seemed a mighty crack</l>
+                    <l>To make me visible.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

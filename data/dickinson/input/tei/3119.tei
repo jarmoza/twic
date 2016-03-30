@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>That first Day, when you praised Me, Sweet,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J659">
+                <lg type="stanza">
+                    <l>That first Day, when you praised Me, Sweet,</l>
+                    <l>And said that I was strong --</l>
+                    <l>And could be mighty, if I liked --</l>
+                    <l>That Day -- the Days among --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Glows Central -- like a Jewel</l>
+                    <l>Between Diverging Golds --</l>
+                    <l>The Minor One -- that gleamed behind --</l>
+                    <l>And <app type="revision"><lem>this One --</lem><rdg>this One --</rdg></app>
+<app type="revision"><lem>different --</lem><rdg>different --</rdg></app>
+Vaster -- of the World's.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>7.gleamed] shone</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No brigadier throughout the year </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1596A">
+                <lg type="stanza">
+                    <l>No Brigadier<app type="division"><lem><lb/></lem></app>
+ throughout the Year </l>
+                    <l>So civic as the Jay - </l>
+                    <l>A Neighbor and a<app type="division"><lem><lb/></lem></app>
+ Warrior too </l>
+                    <l>With shrill felicity </l>
+                    <l>Subduing Winds that<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="censure">sunder</add>
+ censure us</l>
+                    <l>A January Day - </l>
+                    <l>The Brother of the<app type="division"><lem><lb/></lem></app>
+ Universe </l>
+                    <l>Was never blown away - </l>
+                    <l>The Snow and he<app type="division"><lem><lb/></lem></app>
+ are intimate - </l>
+                    <l>I've often seen them<app type="division"><lem><lb/></lem></app>
+ play</l>
+                    <l>When Heaven looked<app type="division"><lem><lb/></lem></app>
+ upon us all </l>
+                    <l>With such severity<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>I felt apology were<app type="division"><lem><lb/></lem></app>
+ due </l>
+                    <l>To an insulted sky </l>
+                    <l>Whose pompous frown<app type="division"><lem><lb/></lem></app>
+ was Nutriment</l>
+                    <l>To their temerity - </l>
+                    <l>The Pillow of this<app type="division"><lem><lb/></lem></app>
+ daring Head </l>
+                    <l>Is pungent Evergreens - </l>
+                    <l>His Larder - terse<app type="division"><lem><lb/></lem></app>
+ and Militant </l>
+                    <l>Unknown - refreshing<app type="division"><lem><lb/></lem></app>
+ things -</l>
+                    <l>His character - a Tonic - </l>
+                    <l>His<add type="alternate" extent="Future a Dispute -">Chances a Redoubt - &amp;#x2022; Doctrines [a Redoubt</add>
+ Future a Dispute - </l>
+                    <l>Unfair an Immortality </l>
+                    <l>That leaves this<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Neighbor out">Major out</add>
+ Neighbor out - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

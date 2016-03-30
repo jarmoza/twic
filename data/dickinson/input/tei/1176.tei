@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Least bee that brew a honey&#x27;s weight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F878B">
+                <lg type="stanza">
+                    <l>Least Bee that brew -<app type="division"><lem><lb/></lem></app>
+ a Honey's Weight</l>
+                    <l>The Summer multiply - </l>
+                    <l>Content Her smallest<app type="division"><lem><lb/></lem></app>
+ fraction help </l>
+                    <l>The Amber Quantity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

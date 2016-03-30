@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It sifts from leaden sieves </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F291A">
+                <lg type="stanza">
+                    <l>It sifts from Leaden<app type="division"><lem><lb/></lem></app>
+ Sieves - </l>
+                    <l>It powders all the Wood.  </l>
+                    <l>It fills with Alabaster<app type="division"><lem><lb/></lem></app>
+ Wool </l>
+                    <l>The Wrinkles of the Road - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It makes an even<app type="division"><lem><lb/></lem></app>
+ Face</l>
+                    <l>Of Mountain, and of<app type="division"><lem><lb/></lem></app>
+ Plain - </l>
+                    <l>Unbroken Forehead<app type="division"><lem><lb/></lem></app>
+ from the East </l>
+                    <l>Unto the East again -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It reaches to the Fence - </l>
+                    <l>It wraps it Rail by Rail</l>
+                    <l>Till it is lost in Fleeces - </l>
+                    <l>It deals Celestial Vail </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Stump, and Stack -<app type="division"><lem><lb/></lem></app>
+ and Stem - </l>
+                    <l>A Summer's empty Room - </l>
+                    <l>Acres of Joints, where<app type="division"><lem><lb/></lem></app>
+ Harvests were,</l>
+                    <l>Recordless, but for them - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It Ruffles Wrists<app type="division"><lem><lb/></lem></app>
+ of Posts </l>
+                    <l>As Ankles of a<app type="division"><lem><lb/></lem></app>
+ Queen -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Then stills it's Artisans -<app type="division"><lem><lb/></lem></app>
+ like Ghosts - </l>
+                    <l>Denying they have been -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

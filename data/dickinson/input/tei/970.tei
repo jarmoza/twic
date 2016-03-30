@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The props assist the house </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F729B">
+                <lg type="stanza">
+                    <l>The Props assist the<app type="division"><lem><lb/></lem></app>
+ House </l>
+                    <l>Until the House is<app type="division"><lem><lb/></lem></app>
+ built </l>
+                    <l>And then the Props<app type="division"><lem><lb/></lem></app>
+ withdraw </l>
+                    <l>And adequate, erect, </l>
+                    <l>The House support<app type="division"><lem><lb/></lem></app>
+ itself</l>
+                    <l>And cease to recollect </l>
+                    <l>The Augur and the<app type="division"><lem><lb/></lem></app>
+ Carpenter - </l>
+                    <l>Just such a retrospect<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Hath the perfected<app type="division"><lem><lb/></lem></app>
+ Life - </l>
+                    <l>A Past of Plank<app type="division"><lem><lb/></lem></app>
+ and Nail</l>
+                    <l>And slowness - then<app type="division"><lem><lb/></lem></app>
+ the scaffolds drop </l>
+                    <l>Affirming it a Soul - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

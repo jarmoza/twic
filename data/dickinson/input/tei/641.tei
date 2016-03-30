@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She dealt her pretty words like blades </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F458A">
+                <lg type="stanza">
+                    <l>She dealt her pretty<app type="division"><lem><lb/></lem></app>
+ words like Blades -</l>
+                    <l>How glittering they shone - </l>
+                    <l>And every One unbared<app type="division"><lem><lb/></lem></app>
+ a Nerve </l>
+                    <l>Or wantoned with a Bone - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She never deemed - she hurt -</l>
+                    <l>That - is not Steel's<app type="division"><lem><lb/></lem></app>
+ Affair - </l>
+                    <l>A vulgar grimace in the<app type="division"><lem><lb/></lem></app>
+ Flesh - </l>
+                    <l>How ill the Creatures bear - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To Ache is human - not<app type="division"><lem><lb/></lem></app>
+ polite - </l>
+                    <l>The Film opon the eye</l>
+                    <l>Mortality's old Custom - </l>
+                    <l>Just locking up - to Die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

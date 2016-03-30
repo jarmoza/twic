@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Her Sweet turn to leave the Homestead 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J649">
+                <lg type="stanza">
+                    <l>Her Sweet turn to leave the Homestead</l>
+                    <l>Came the Darker Way --</l>
+                    <l>Carriages -- Be sure -- and Guests -- <app type="revision"><lem>too</lem><rdg>too</rdg></app>
+True --</l>
+                    <l>But for Holiday</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas more pitiful Endeavor</l>
+                    <l>Than did <app type="revision"><lem>Swelling</lem><rdg>Swelling</rdg></app>
+Loaded Sea</l>
+                    <l>O'er the Curls attempt to caper</l>
+                    <l>It had cast away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never Bride had such Assembling --</l>
+                    <l>Never kinsmen kneeled</l>
+                    <l>To salute so fair a Forehead --</l>
+                    <l>Garland be indeed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fitter Feet -- of Her before us --</l>
+                    <l>Than whatever Brow</l>
+                    <l>Art of Snow -- or Trick of Lily</l>
+                    <l><app type="revision"><lem>Ever could endow --</lem><rdg>Ever could endow --</rdg></app>
+Possibly bestow</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Her Father -- Whoso <app type="revision"><lem>claim</lem><rdg>claim</rdg></app>
+ask Her --</l>
+                    <l>He shall seek as high</l>
+                    <l>As the Palm -- that serve the Desert --</l>
+                    <l>To obtain the Sky --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Distance -- be Her only <app type="revision"><lem>Signal</lem><rdg>Signal</rdg></app>
+Motion --</l>
+                    <l>If 'tis Nay -- or Yes --</l>
+                    <l>Acquiescence -- or Demurral --</l>
+                    <l>Whosoever guess --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He -- must pass the Crystal <app type="revision"><lem>limit</lem><rdg>limit</rdg></app>
+Angle</l>
+                    <l>That <app type="revision"><lem>divide --</lem><rdg>divide --</rdg></app>
+obscure Her face --</l>
+                    <l>He -- must have achieved in person</l>
+                    <l>Equal Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

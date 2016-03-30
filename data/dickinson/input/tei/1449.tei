@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The last night that she lived </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1100A">
+                <lg type="stanza">
+                    <l>The last Night that<app type="division"><lem><lb/></lem></app>
+ She lived</l>
+                    <l>It was a Common Night </l>
+                    <l>Except the Dying -<app type="division"><lem><lb/></lem></app>
+ this to Us </l>
+                    <l>Made Nature different </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We noticed smallest<app type="division"><lem><lb/></lem></app>
+ things -</l>
+                    <l>Things overlooked before </l>
+                    <l>By this great light<app type="division"><lem><lb/></lem></app>
+ opon our minds </l>
+                    <l>Italicized - as 'twere.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As We went out and in </l>
+                    <l>Between Her final Room</l>
+                    <l>And Rooms where Those<app type="division"><lem><lb/></lem></app>
+ to be alive </l>
+                    <l>Tomorrow, were, a Blame<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That others could exist </l>
+                    <l>While She must finish<app type="division"><lem><lb/></lem></app>
+ quite </l>
+                    <l>A Jealousy for Her arose</l>
+                    <l>So nearly infinite - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We waited while She passed - </l>
+                    <l>It was a narrow time - </l>
+                    <l>Too jostled were Our Souls<app type="division"><lem><lb/></lem></app>
+ to speak </l>
+                    <l>At length the notice came.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She mentioned, and forgot - </l>
+                    <l>Then lightly as a Reed </l>
+                    <l>Bent to the Water,<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="struggled">shivered -</add>
+ struggled scarce - </l>
+                    <l>Consented, and was dead - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And We - We placed<app type="division"><lem><lb/></lem></app>
+ the Hair -</l>
+                    <l>And drew the Head erect -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And then an awful<app type="division"><lem><lb/></lem></app>
+ leisure was </l>
+                    <l><add type="alternate" extent="Belief to">With nought to - &amp;#x2022; Our faith to -</add>
+Belief to regulate - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

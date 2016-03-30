@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Three times we parted - breath and I </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F514A">
+                <lg type="stanza">
+                    <l>Three times - we parted -<app type="division"><lem><lb/></lem></app>
+ Breath - and I -</l>
+                    <l>Three times - He would not go - </l>
+                    <l>But strove to stir the<app type="division"><lem><lb/></lem></app>
+ lifeless Fan </l>
+                    <l>The Waters - strove to stay.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Three times - the Billows<add type="alternate" extent="threw">tossed</add>
+ threw<app type="division"><lem><lb/></lem></app>
+ me up -</l>
+                    <l>Then caught me - like a Ball - </l>
+                    <l>Then made Blue faces in my<app type="division"><lem><lb/></lem></app>
+ face - </l>
+                    <l>And pushed away a sail </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That crawled Leagues off -<app type="division"><lem><lb/></lem></app>
+ I liked to see - </l>
+                    <l>For thinking - While I die -</l>
+                    <l>How pleasant to behold a<app type="division"><lem><lb/></lem></app>
+ Thing </l>
+                    <l>Where Human faces - be -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="The Waves grew sleepy -">The Ocean - tired - &amp;#x2022; [The Ocean -</add>
+The Waves grew sleepy -<app type="division"><lem><lb/></lem></app>
+ Breath - did not - </l>
+                    <l>The Winds - like Children -<app type="division"><lem><lb/></lem></app>
+ lulled - </l>
+                    <l>Then Sunrise kissed my<app type="division"><lem><lb/></lem></app>
+ Chrysalis -</l>
+                    <l>And I stood up - and lived - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

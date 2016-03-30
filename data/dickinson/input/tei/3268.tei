@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So set it&#x27;s Sun in Thee 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J808">
+                <lg type="stanza">
+                    <l>So set it's Sun in Thee</l>
+                    <l>What Day be dark to me</l>
+                    <l>What Distance far</l>
+                    <l>So I the Ships may see</l>
+                    <l>That touch how seldomly</l>
+                    <l>Thy Shore?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

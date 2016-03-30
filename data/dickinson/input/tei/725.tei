@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My period had come for prayer </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F525A">
+                <lg type="stanza">
+                    <l>My period had come<app type="division"><lem><lb/></lem></app>
+ for Prayer -</l>
+                    <l>No other Art - would do - </l>
+                    <l>My Tactics missed a rudiment - </l>
+                    <l>Creator - Was it you?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>God grows above - so those who<app type="division"><lem><lb/></lem></app>
+ pray</l>
+                    <l>Horizons - must ascend - </l>
+                    <l>And so I stepped opon the<app type="division"><lem><lb/></lem></app>
+ North </l>
+                    <l>To <add type="alternate" extent="see">Reach - </add>
+<add type="alternate" extent="see">touch -</add>
+see this Curious Friend -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His House was not - no sign<app type="division"><lem><lb/></lem></app>
+ had He - </l>
+                    <l>By Chimney - nor by Door -</l>
+                    <l>Could I infer his Residence - </l>
+                    <l><add type="alternate" extent="Vast Prairies">Wide Prairies</add>
+Vast Prairies of Air </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unbroken by a Settler - </l>
+                    <l>Were all that I could see -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Infinitude - Had'st Thou no<app type="division"><lem><lb/></lem></app>
+ Face</l>
+                    <l>That I might look on Thee?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Silence condescended - </l>
+                    <l><add type="alternate" extent="Creation stopped -">The Heavens paused -</add>
+Creation stopped - for me - </l>
+                    <l>But awed beyond my errand - </l>
+                    <l>I worshipped - did not &quot;pray&quot; -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

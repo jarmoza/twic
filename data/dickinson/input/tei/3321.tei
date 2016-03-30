@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Split the Lark -- and you&#x27;ll find the Music -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J861">
+                <lg type="stanza">
+                    <l>Split the Lark -- and you'll find the Music --</l>
+                    <l>Bulb after Bulb, in Silver rolled --</l>
+                    <l>Scantily dealt to the Summer Morning</l>
+                    <l>Saved for your Ear when Lutes be old.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Loose the Flood -- you shall find it patent --</l>
+                    <l>Gush after Gush, reserved for you --</l>
+                    <l>Scarlet Experiment! Sceptic Thomas!</l>
+                    <l>Now, do you doubt that your Bird was true?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MOTHER NATURE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-74">
+                <lg type="stanza">
+                    <l>Nature, the gentlest mother,</l>
+                    <l>Impatient of no child,</l>
+                    <l>The feeblest or the waywardest, </l>
+                    <l>Her admonition mild</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In forest and the hill</l>
+                    <l>By traveller is heard,</l>
+                    <l>Restraining rampant squirrel</l>
+                    <l>Or too impetuous bird.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How fair her conversation,</l>
+                    <l>A summer afternoon, </l>
+                    <l>Her household, her assembly;</l>
+                    <l>And when the sun goes down</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her voice among the aisles</l>
+                    <l>Incites the timid prayer</l>
+                    <l>Of the minutest cricket,</l>
+                    <l>The most unworthy flower.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When all the children sleep</l>
+                    <l>She turns as long away</l>
+                    <l>As will suffice to light her lamps;</l>
+                    <l>Then, bending from the sky</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With infinite affection</l>
+                    <l>And infiniter care,</l>
+                    <l>Her golden finger on her lip,</l>
+                    <l>Wills silence everywhere.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

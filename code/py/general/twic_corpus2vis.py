@@ -13,7 +13,7 @@ from twic_malletscript import TWiC_MalletScript
 from twic_malletinterpret import TWiC_MalletInterpret
 from twic_text import TWiC_Text
 
-def CreateMallet():
+def CreateMallet(p_mallet_yaml_parameters):
 
     # Create a TWiC_MalletScript object
     mallet_script = TWiC_MalletScript()
@@ -25,84 +25,98 @@ def CreateMallet():
 
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Text.GatherTexts
-    mallet_script.user_source_dir = ""
+    mallet_script.user_source_dir = p_mallet_yaml_parameters["user_source_path"]
     mallet_script.corpus_source_dir = twic_relative_root + "data/input/txt/"
 
     # For RunMallet
-    mallet_script.corpus_name = "default corpus name"
+    mallet_script.corpus_name = p_mallet_yaml_parameters["corpus_short_name"]
     mallet_script.output_dir = twic_relative_root + "data/output/mallet/"
     mallet_script.stopwords_dir = twic_relative_root + "data/output/stopwords/"
     #mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
     mallet_script.lda_dir = twic_relative_root + "lib/mallet/"
     mallet_script.script_dir = os.getcwd()
-    mallet_script.num_topics = "100"
-    mallet_script.num_intervals = "100"
-    mallet_script.text_chunk_size_words = 5000
+    mallet_script.num_topics = str(p_mallet_yaml_parameters["num_topics"])
+    mallet_script.num_intervals = str(p_mallet_yaml_parameters["num_intervals"])
+    mallet_script.text_chunk_size_words = int(p_mallet_yaml_parameters["text_chunk_size_words"])
 
     # For InterpretMalletOutput
     mallet_script.BuildOutputNames()
-    mallet_script.corpus_title = "Default Corpus Title"
+    mallet_script.corpus_title = p_mallet_yaml_parameters["corpus_full_name"]
     mallet_script.InterpretMalletOutput = TWiC_MalletInterpret.InterpretMalletOutput
 
     # Return the now-configured TWiC_MalletScript object
     return mallet_script
 
 
-def ReadTWiCYAML(p_script_filename):
+def ReadTWiCYAML():
 
+    twic_relative_root = "../../../"
     twic_config_filename = "twic_config.yaml"
-    twic_config_path = p_os.path.abspath(os.path.dirname(p_script_filename))
+    twic_config_path = os.getcwd() + "/" + twic_relative_root
+
+    # Make sure YAML config file exists
+    if not os.path.isfile(twic_config_path + twic_config_filename):
+        return None
+
+    with open(twic_config_path + twic_config_filename, "rU") as yaml_file:
+        mallet_yaml_parameters = yaml.safe_load(yaml_file)
+
+    return mallet_yaml_parameters
 
 
-def Corpus2Vis(args):
+def Corpus2Vis(p_args):
 
-    if (len(args) < 2) or (len(args) and "--help" in args):
-        print "Usage: python twic_model2vis.py [gkcmi] [user_text_source_directory] [short_corpus_title] [full_corpus_title]"
-        print "Options: {0}".format("\ng - Gather texts from user source directory\n" +\
-                                    "k - Keep current txt files in corpus source directory" +\
-                                    "c - Clear recent MALLET output files\n" +\
-                                    "m - Run MALLET\n" +\
-                                    "i - Interpret MALLET's output\n")
+    # Check for proper arguments or "help" argument (p_args[0]: script name, p_args[1]: twic options)
+    if len(p_args) != 2 or (len(p_args) and "--help" in p_args):
+        print "Usage: python twic_corpus2vis.py [gkcmi]"
+        print "Options: {0}".format("\n\tg - Gather texts from user source directory\n" +\
+                                    "\tk - Keep current txt files in corpus source directory\n" +
+                                    "\t\t(only used if 'g' option is also used)\n" +\
+                                    "\tc - Clear recent MALLET output files\n" +\
+                                    "\tm - Run MALLET\n" +\
+                                    "\ti - Interpret MALLET's output\n")
         return
 
-    # Options: g - Gather texts, c - Clear recent MALLET output, m - Run MALLET, i - Interpret MALLET's output,
-    # k - Keep current txt files in corpus source directory
-    options_gather_texts = "g"
-    options_clear_oldoutput = "c"
-    options_run_mallet = "m"
-    options_interpret_output = "i"
-    options_keep_corpus_source = "k"
+    # Look for YAML configuration file
+    mallet_yaml_parameters = ReadTWiCYAML()
+    if None == mallet_yaml_parameters:
+        print "YAML file 'twic_config.yaml' not found in TWiC's root directory."
+        print "Please see README.md or github.com/jarmoza/twic/README.md for config file setup instructions."
+        return
 
     # Create a TWiC_MalletScript object
-    mallet_script = CreateMallet()
+    mallet_script = CreateMallet(mallet_yaml_parameters)
 
-    #options = [options_gather_texts, options_clear_oldoutput, options_run_mallet, options_interpret_output]
-    #options = [options_run_mallet, options_interpret_output]
-    options = [options_interpret_output]
-    if len(args):
-        options = args[0]
-        user_source_dir = args[1]
-        if len(args) > 2:
-            mallet_script.corpus_name = args[2]
-            if len(args) >= 3:
-                mallet_script.corpus_title = args[3]
-        mallet_script.user_source_dir = user_source_dir
-        mallet_script.BuildOutputNames()
+    # Build output file names based on the YAML parameters
+    mallet_script.BuildOutputNames()
+
+    # Save the supplied TWiC parameters
+    twic_options = p_args[1]
+
+    # Options dictionary
+    options_dict = { "gather_texts" : "g",
+                     "keep_corpus_source" : "k",
+                     "clear_oldoutput" : "c",
+                     "run_mallet" : "m",
+                     "interpret_output" : "i" }
 
     # Run parts of the corpus 2 visualization workflow
-    if options_gather_texts in options:
+    if options_dict["gather_texts"] in twic_options:
         # Clears previous files in the corpus source directory if not directed otherwise
-        if options_keep_corpus_source not in options:
+        if options_dict["keep_corpus_source"] not in twic_options:
             mallet_script.ClearCorpusSourceDirectory()
-        mallet_script.GatherTexts(mallet_script.user_source_dir, mallet_script.corpus_source_dir, True)
+        mallet_script.GatherTexts(mallet_script.tei_source, mallet_script.corpus_source_dir, True)
 
-    if options_clear_oldoutput in options:
+    # Clear MALLET's old output files
+    if options_dict["clear_oldoutput"] in twic_options:
         mallet_script.ClearOutputFiles()
 
-    if options_run_mallet in options:
+    # Run MALLET
+    if options_dict["run_mallet"] in twic_options:
         mallet_script.RunMallet()
 
-    if options_interpret_output in options:
+    # Interpret MALLET's output into TWiC's custom JSON files for its D3 visualization
+    if options_dict["interpret_output"] in twic_options:
         mallet_script.InterpretMalletOutput(mallet_script)
 
 
@@ -112,4 +126,4 @@ def main(args):
 
 
 if '__main__' == __name__:
-    main(sys.argv[1:])
+    main(sys.argv)

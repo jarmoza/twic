@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tell as a Marksman -- were forgotten 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1152">
+                <lg type="stanza">
+                    <l>Tell as a Marksman -- were forgotten</l>
+                    <l>Tell -- <app type="revision"><lem>till now</lem><rdg>till now</rdg></app>
+this Day endures</l>
+                    <l>Ruddy as that coeval Apple</l>
+                    <l><app type="revision"><lem>Heroism</lem><rdg>Heroism</rdg></app>
+The Tradition bears --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>New</lem><rdg>New</rdg></app>
+Fresh as Mankind that humble story</l>
+                    <l><app type="revision"><lem>While</lem><rdg>While</rdg></app>
+Though a statlier Tale</l>
+                    <l>Grown <app type="revision"><lem>by</lem><rdg>by</rdg></app>
+in the Repetition hoary</l>
+                    <l>Scarcely <app type="revision"><lem>could</lem><rdg>could</rdg></app>
+would prevail --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell had a son -- The ones that <app type="revision"><lem>heard</lem><rdg>heard</rdg></app>
+knew it</l>
+                    <l>Need not <app type="revision"><lem>tarry</lem><rdg>tarry</rdg></app>
+linger here --</l>
+                    <l>Those <app type="revision"><lem>that do</lem><rdg>that do</rdg></app>
+who did not to Human Nature</l>
+                    <l><app type="revision"><lem>Would</lem><rdg>Would</rdg></app>
+Will subscribe a Tear --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell would not bare his Head</l>
+                    <l>In Presence</l>
+                    <l>Of the Ducal Hat --</l>
+                    <l>Threatened for that with Death -- by Gessler --</l>
+                    <l>Tyranny bethought</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Make of his only Boy a Target</l>
+                    <l>That surpasses Death --</l>
+                    <l>Stolid to Love's <app type="revision"><lem>sublime</lem><rdg>sublime</rdg></app>
+supreme entreaty</l>
+                    <l>Not <app type="revision"><lem>forgot</lem><rdg>forgot</rdg></app>
+forsook of Faith --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>Power</lem><rdg>Power</rdg></app>
+Mercy of the Almighty <app type="revision"><lem>asking</lem><rdg>asking</rdg></app>
+begging --</l>
+                    <l>Tell his Arrow sent --</l>
+                    <l>God it is said replies in Person</l>
+                    <l>When the cry is meant</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

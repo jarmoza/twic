@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>POWER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-50">
+                <lg type="stanza">
+                    <l>You cannot put a fire out;</l>
+                    <l>A thing that can ignite</l>
+                    <l>Can go, itself, without a fan</l>
+                    <l>Upon the slowest night.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You cannot fold a flood</l>
+                    <l>And put it in a drawer, </l>
+                    <l>Because the winds would find it out,</l>
+                    <l>And tell your cedar floor.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

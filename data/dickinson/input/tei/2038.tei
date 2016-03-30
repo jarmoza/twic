@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Belshazzar had a letter </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1487C">
+                <lg type="stanza">
+                    <l>Belshazzar had<app type="division"><lem><lb/></lem></app>
+ a Letter - </l>
+                    <l>He never had<app type="division"><lem><lb/></lem></app>
+ but one - </l>
+                    <l>Belshazzar's <app type="division"><lem><lb/></lem></app>
+Correspondent </l>
+                    <l>Concluded and<app type="division"><lem><lb/></lem></app>
+ begun<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>In that immortal<app type="division"><lem><lb/></lem></app>
+ Copy</l>
+                    <l>The Conscience<app type="division"><lem><lb/></lem></app>
+ of us all </l>
+                    <l>Can read without<app type="division"><lem><lb/></lem></app>
+ it's Glasses </l>
+                    <l>On Revelation's<app type="division"><lem><lb/></lem></app>
+ Wall - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

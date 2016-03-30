@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE MOON</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-98">
+                <lg type="stanza">
+                    <l>The moon was but a chin of gold</l>
+                    <l>A night or two ago,</l>
+                    <l>And now she turns her perfect face</l>
+                    <l>Upon the world below.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her forehead is of amplest blond;</l>
+                    <l>Her cheek like beryl stone;</l>
+                    <l>Her eye unto the summer dew</l>
+                    <l>The likest I have known.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her lips of amber never part;</l>
+                    <l>But what must be the smile</l>
+                    <l>Upon her friend she could bestow</l>
+                    <l>Were such her silver will!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And what a privilege to be</l>
+                    <l>But the remotest star!</l>
+                    <l>For certainly her way might pass</l>
+                    <l>Beside your twinkling door.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her bonnet is the firmament,</l>
+                    <l>The universe her shoe,</l>
+                    <l>The stars the trinkets at her belt,</l>
+                    <l>Her dimities of blue.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

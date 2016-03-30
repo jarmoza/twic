@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Wild Nights -- Wild Nights!
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J249">
+                <lg type="stanza">
+                    <l>Wild Nights -- Wild Nights!</l>
+                    <l>Were I with thee</l>
+                    <l>Wild Nights should be</l>
+                    <l>Our luxury!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Futile -- the Winds</l>
+                    <l>To a Heart in port --</l>
+                    <l>Done with the Compass --</l>
+                    <l>Done with the Chart!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Rowing in Eden --</l>
+                    <l>Ah, the Sea!</l>
+                    <l>Might I but moor -- Tonight --</l>
+                    <l>In Thee!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

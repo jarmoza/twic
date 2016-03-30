@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>EVENING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-101">
+                <lg type="stanza">
+                    <l>The cricket sang,</l>
+                    <l>And set the sun,</l>
+                    <l>And workmen finished, one by one,</l>
+                    <l>Their seam the day upon.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The low grass loaded with the dew,</l>
+                    <l>The twilight stood as strangers do</l>
+                    <l>With hat in hand, polite and new,</l>
+                    <l>To stay as if, or go.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A vastness, as a neighbor, came, </l>
+                    <l>A wisdom without face or name,</l>
+                    <l>A peace, as hemispheres at home, </l>
+                    <l>And so the night became.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

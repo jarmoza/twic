@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Winters are so short --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J403">
+                <lg type="stanza">
+                    <l>The Winters are so short --</l>
+                    <l>I'm hardly justified</l>
+                    <l>In sending all the Birds away --</l>
+                    <l>And moving into Pod</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Myself -- for scarcely settled --</l>
+                    <l>The Phebes have begun --</l>
+                    <l>And then -- it's time to strike my Tent --</l>
+                    <l>And open House -- again --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's mostly, interruptions --</l>
+                    <l>My Summer -- is despoiled --</l>
+                    <l>Because there was a Winter -- once --</l>
+                    <l>And all the Cattle -- starved --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so there was a Deluge --</l>
+                    <l>And swept the World away --</l>
+                    <l>But Ararat's a Legend -- now --</l>
+                    <l>And no one credits Noah</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

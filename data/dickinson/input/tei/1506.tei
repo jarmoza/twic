@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A full fed rose on meals of tint </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1141B">
+                <lg type="stanza">
+                    <l>A <app type="emendation"><lem>full-fed</lem><rdg>full fed</rdg></app>
+ Rose </l>
+                    <l>On meals of Tint </l>
+                    <l>A dinner for a Bee </l>
+                    <l>In process of the noon became.  </l>
+                    <l>Each bright mortality -</l>
+                    <l>The Forfeit is of creature fair </l>
+                    <l>Itself adored before </l>
+                    <l>Submitting for our unknown sake </l>
+                    <l>To be Esteemed no more </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

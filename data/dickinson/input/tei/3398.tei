@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fairer through Fading -- as the Day 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J938">
+                <lg type="stanza">
+                    <l>Fairer through Fading -- as the Day</l>
+                    <l>Into the Darkness dips away --</l>
+                    <l>Half Her Complexion of the Sun --</l>
+                    <l>Hindering -- Haunting -- Perishing --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Rallies <app type="revision"><lem>The West</lem><rdg>The West</rdg></app>
+Her Glow, like a dying Friend --</l>
+                    <l><app type="revision"><lem>Taunting --</lem><rdg>Taunting --</rdg></app>
+Teazing with glittering Amend --</l>
+                    <l>Only to aggravate the Dark</l>
+                    <l><app type="revision"><lem>Nature's --</lem><rdg>Nature&#x27;s --</rdg></app>
+Through an expiring -- perfect -- look --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>2.Darkness] Twilight -- / Evening --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

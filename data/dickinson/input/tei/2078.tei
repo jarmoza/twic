@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis whiter than an Indian pipe </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1513A">
+                <lg type="stanza">
+                    <l>'Tis whiter than an Indian Pipe - </l>
+                    <l>'Tis dimmer than a Lace - </l>
+                    <l>No stature has it, like a Fog </l>
+                    <l>When you approach the place - </l>
+                    <l>Not any voice imply it here -</l>
+                    <l>Or<add type="alternate" extent="intimate">designate -</add>
+ intimate it there - </l>
+                    <l>A spirit - how doth it accost - </l>
+                    <l><add type="alternate" extent="What function">What customs -</add>
+What function hath the Air?  </l>
+                    <l>This limitless Hyperbole </l>
+                    <l>Each one of us shall be -</l>
+                    <l>'Tis Drama - if Hypothesis </l>
+                    <l>It be not Tragedy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

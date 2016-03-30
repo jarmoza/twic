@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To learn the transport by the pain,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-52">
+                <lg type="stanza">
+                    <l>To learn the transport by the pain,</l>
+                    <l>As blind men learn the sun;</l>
+                    <l>To die of thirst, suspecting</l>
+                    <l>That brooks in meadows run;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To stay the homesick, homesick feet</l>
+                    <l>Upon a foreign shore</l>
+                    <l>Haunted by native lands, the while,</l>
+                    <l>And blue, beloved air </l>
+                </lg>
+                <lg type="stanza">
+                    <l>This is the sovereign anguish,</l>
+                    <l>This, the signal woe!</l>
+                    <l>These are the patient laureates</l>
+                    <l>Whose voices, trained below,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ascend in ceaseless carol,</l>
+                    <l>Inaudible, indeed,</l>
+                    <l>To us, the duller scholars</l>
+                    <l>Of the mysterious bard!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

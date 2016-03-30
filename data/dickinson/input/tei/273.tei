@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A wife at daybreak I shall be </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F185A">
+                <lg type="stanza">
+                    <l>A wife - at Daybreak<app type="division"><lem><lb/></lem></app>
+ I shall be - </l>
+                    <l>Sunrise - hast thou a flag for me?  </l>
+                    <l>At midnight - I am yet a<app type="division"><lem><lb/></lem></app>
+ maid - </l>
+                    <l>How short it takes to make<app type="division"><lem><lb/></lem></app>
+ it Bride!  </l>
+                    <l>Then - Midnight - I have passed<app type="division"><lem><lb/></lem></app>
+ from thee</l>
+                    <l>Unto the East - and Victory - </l>
+                    <l>Midnight - Good night - I hear<app type="division"><lem><lb/></lem></app>
+ them call - </l>
+                    <l>The Angels bustle in the hall - </l>
+                    <l>Softly - my Future climbs the<app type="division"><lem><lb/></lem></app>
+ stair - </l>
+                    <l>I fumble at my Childhood's<app type="division"><lem><lb/></lem></app>
+ prayer -</l>
+                    <l>So soon to be a Child - no more - </l>
+                    <l>The Vision flutters in the door - </l>
+                    <l><add type="alternate" extent="Master - I&#x27;ve seen the face before">Eternity - I&#x27;m coming sir -</add>
+Master - I've seen the face before -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

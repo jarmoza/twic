@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Immortal is an ample word </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1223A">
+                <lg type="stanza">
+                    <l>Immortal is an<app type="division"><lem><lb/></lem></app>
+ ample word</l>
+                    <l>When what we<app type="division"><lem><lb/></lem></app>
+ need is by </l>
+                    <l>But when it<app type="division"><lem><lb/></lem></app>
+ leaves us for<app type="division"><lem><lb/></lem></app>
+ a time </l>
+                    <l>'Tis a nescessity.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Heaven above<app type="division"><lem><lb/></lem></app>
+ the firmest proof</l>
+                    <l>We fundamental<app type="division"><lem><lb/></lem></app>
+ know </l>
+                    <l>Except for it's<app type="division"><lem><lb/></lem></app>
+ marauding Hand </l>
+                    <l>It had been<app type="division"><lem><lb/></lem></app>
+ Heaven below - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

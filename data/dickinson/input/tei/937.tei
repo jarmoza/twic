@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The power to be true to you </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F699A">
+                <lg type="stanza">
+                    <l>The power to be true to You,</l>
+                    <l>Until opon my face </l>
+                    <l>The Judgment push His<app type="division"><lem><lb/></lem></app>
+ Picture - </l>
+                    <l>Presumptuous of Your Place - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of This - Could Man deprive Me -</l>
+                    <l>Himself - the Heaven excel - </l>
+                    <l>Whose invitation - Your's<app type="division"><lem><lb/></lem></app>
+ reduced </l>
+                    <l>Until it showed too small - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

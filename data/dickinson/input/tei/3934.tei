@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Estranged from Beauty -- none can be -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1474">
+                <lg type="stanza">
+                    <l>Estranged from Beauty -- none can be --</l>
+                    <l>For Beauty is Infinity --</l>
+                    <l>And power to be finite ceased</l>
+                    <l><app type="revision"><lem>When Fate incorporated us --</lem><rdg>When Fate incorporated us --</rdg></app>
+Before Identity was <app type="revision"><lem>leased --</lem><rdg>leased --</rdg></app>
+creased.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

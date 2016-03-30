@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When I hoped, I recollect 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J768">
+                <lg type="stanza">
+                    <l>When I hoped, I recollect</l>
+                    <l>Just the place I stood --</l>
+                    <l><app type="revision"><lem>In a Chamber</lem><rdg>In a Chamber</rdg></app>
+At a Window facing West --</l>
+                    <l>Roughest Air -- was good --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not a Sleet could bite me --</l>
+                    <l><app type="revision"><lem>No November cool</lem><rdg>No November cool</rdg></app>
+Not a frost could cool --</l>
+                    <l>Hope it was that kept me warm --</l>
+                    <l>Not Merino shawl --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When I feared -- I recollect</l>
+                    <l>Just the Day it was --</l>
+                    <l><app type="revision"><lem>Worlds were swimming in the</lem><rdg>Worlds were swimming in the</rdg></app>
+Worlds were lying Out to Sun --</l>
+                    <l>Yet how Nature froze --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Icicles upon my soul</l>
+                    <l>Prickled <app type="revision"><lem>Raw and Cool</lem><rdg>Raw and Cool</rdg></app>
+Blue and Cool --</l>
+                    <l>Bird went praising everywhere --</l>
+                    <l>Only Me -- was still --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And the Day that I despaired --</l>
+                    <l>This -- if I forget</l>
+                    <l>Nature will -- that it be Night</l>
+                    <l>After Sun has set --</l>
+                    <l>Darkness intersect her face --</l>
+                    <l>And put out her eye --</l>
+                    <l>Nature hesitate -- before</l>
+                    <l>Memory and I --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

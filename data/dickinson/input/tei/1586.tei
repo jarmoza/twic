@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We never know how high we are </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1197A">
+                <lg type="stanza">
+                    <l>We never know how<app type="division"><lem><lb/></lem></app>
+ high we are </l>
+                    <l>Till we are asked<app type="division"><lem><lb/></lem></app>
+ to rise </l>
+                    <l>And then if we are<app type="division"><lem><lb/></lem></app>
+ true to<add type="alternate" extent="plan">growth</add>
+ plan </l>
+                    <l>Our statures touch<app type="division"><lem><lb/></lem></app>
+ the skies - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heroism we recite</l>
+                    <l>would be a<add type="alternate" extent="normal">daily</add>
+ normal thing </l>
+                    <l>Did not ourselves<app type="division"><lem><lb/></lem></app>
+ the Cubits warp </l>
+                    <l>For fear to be a King - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

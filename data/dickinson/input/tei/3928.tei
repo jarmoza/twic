@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A winged spark doth soar about --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1468">
+                <lg type="stanza">
+                    <l>A winged spark doth soar about --</l>
+                    <l>I never met it near</l>
+                    <l>For Lightning it is oft mistook</l>
+                    <l>When nights are hot and sere --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's twinkling Travels it pursues</l>
+                    <l>Above the Haunts of men --</l>
+                    <l>A speck of Rapture -- first perceived</l>
+                    <l>By feeling it is gone --</l>
+                    <l>Rekindled by some action quaint</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

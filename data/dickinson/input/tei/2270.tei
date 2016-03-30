@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Circumference thou bride of awe </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1636A">
+                <lg type="stanza">
+                    <l>Circumference <app type="division"><lem><lb/></lem></app>
+thou Bride<app type="division"><lem><lb/></lem></app>
+ of Awe </l>
+                    <l>Possessing <app type="division"><lem><lb/></lem></app>
+thou shalt<app type="division"><lem><lb/></lem></app>
+ be </l>
+                    <l>Possessed by<app type="division"><lem><lb/></lem></app>
+ every hallowed<app type="division"><lem><lb/></lem></app>
+ Knight </l>
+                    <l>That<add type="alternate" extent="dares -">fears -</add>
+ <app type="division"><lem><lb/></lem></app>
+dares - to<app type="division"><lem><lb/></lem></app>
+ Covet thee </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

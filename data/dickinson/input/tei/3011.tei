@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is a Shame of Nobleness -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J551">
+                <lg type="stanza">
+                    <l>There is a Shame of Nobleness --</l>
+                    <l>Confronting Sudden Pelf --</l>
+                    <l>A finer Shame of Extasy --</l>
+                    <l>Convicted of Itself --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A best Disgrace -- a Brave Man feels --</l>
+                    <l>Acknowledged -- of the Brave --</l>
+                    <l>One More -- "Ye Blessed" -- to be told --</l>
+                    <l><app type="revision"><lem>But This -- involves the Grave --</lem><rdg>But This -- involves the Grave --</rdg></app>
+But that's -- Behind the Grave --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

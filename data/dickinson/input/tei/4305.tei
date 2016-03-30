@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;T was later when the summer went</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-70">
+                <lg type="stanza">
+                    <l>'T was later when the summer went</l>
+                    <l>Than when the cricket came,</l>
+                    <l>And yet we knew that gentle clock</l>
+                    <l>Meant nought but going home.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'T was sooner when the cricket went</l>
+                    <l>Than when the winter came,</l>
+                    <l>Yet that pathetic pendulum</l>
+                    <l>Keeps esoteric time.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

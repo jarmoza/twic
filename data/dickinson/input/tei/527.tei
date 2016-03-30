@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I tend my flowers for thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F367A">
+                <lg type="stanza">
+                    <l>I tend my flowers for thee -</l>
+                    <l>Bright Absentee!  </l>
+                    <l>My Fuschzia's Coral Seams </l>
+                    <l>Rip - while the Sower - dreams - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Geraniums - tint - and spot -</l>
+                    <l>Low Daisies - dot - </l>
+                    <l>My Cactus - splits her Beard </l>
+                    <l>To show her throat - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Carnations - tip their spice - </l>
+                    <l>And Bees - pick up -</l>
+                    <l>A Hyacinth - I hid - </l>
+                    <l>Puts out a Ruffled Head - </l>
+                    <l>And odors fall </l>
+                    <l>From flasks - so small - </l>
+                    <l>You marvel how they held -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Globe Roses - break their satin<app type="division"><lem><lb/></lem></app>
+ flake - </l>
+                    <l>Opon my Garden floor -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Yet - though - <add type="reading">n</add>
+not there -</l>
+                    <l>I had as lief they bore </l>
+                    <l>No crimson - more -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thy flower - be gay - </l>
+                    <l>Her Lord - away!  </l>
+                    <l>It ill becometh me - </l>
+                    <l>I'll dwell in Calyx - Gray - </l>
+                    <l>How modestly - alway -</l>
+                    <l>Thy Daisy - </l>
+                    <l>Draped for thee!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

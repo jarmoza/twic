@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Crickets sang
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1104">
+                <lg type="stanza">
+                    <l>The Crickets sang</l>
+                    <l>And set the Sun</l>
+                    <l>And Workmen finished one by one</l>
+                    <l>Their Seam the Day upon.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The low Grass loaded with the Dew</l>
+                    <l>The Twilight stood, as Strangers do</l>
+                    <l>With Hat in Hand, polite and new</l>
+                    <l>To stay as if, or go.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Vastness, as a Neighbor, came,</l>
+                    <l>A Wisdom, without Face, or Name,</l>
+                    <l>A Peace, as Hemispheres at Home</l>
+                    <l>And so the Night became.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

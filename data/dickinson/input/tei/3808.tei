@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lift it -- with the Feathers
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1348">
+                <lg type="stanza">
+                    <l>Lift it -- with the Feathers</l>
+                    <l>Not alone we fly --</l>
+                    <l>Launch it -- the aquatic</l>
+                    <l>Not the only sea --</l>
+                    <l>Advocate the Azure</l>
+                    <l>To the lower Eyes --</l>
+                    <l>He has obligation</l>
+                    <l>Who has Paradise --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

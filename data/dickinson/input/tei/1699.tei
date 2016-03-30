@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot see my soul but know &#x27;tis there </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1276A">
+                <lg type="stanza">
+                    <l>I <app type="emendation"><lem>can not</lem><rdg>cannot</rdg></app>
+ see my soul, but<app type="division"><lem><lb/></lem></app>
+ know 'tis there - </l>
+                    <l>Nor ever saw his house, nor<app type="division"><lem><lb/></lem></app>
+ furniture - </l>
+                    <l>Who has invited me with him<app type="division"><lem><lb/></lem></app>
+ to dwell; </l>
+                    <l>But a confiding guest, consult<app type="division"><lem><lb/></lem></app>
+ as well, </l>
+                    <l>What raiment honor him the<app type="division"><lem><lb/></lem></app>
+ most,</l>
+                    <l>That I be adequately dressed - </l>
+                    <l>For he insures to none </l>
+                    <l>Lest men specifical adorn - </l>
+                    <l>Procuring him perpetual drest </l>
+                    <l>By dating it a sudden feast.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

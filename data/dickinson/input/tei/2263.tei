@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A drunkard cannot meet a cork </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1630A">
+                <lg type="stanza">
+                    <l>A Drunkard<app type="division"><lem><lb/></lem></app>
+ cannot meet<app type="division"><lem><lb/></lem></app>
+ a Cork </l>
+                    <l>Without a Revery - </l>
+                    <l>And so <app type="emendation"><lem>en - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ countering</lem><rdg>encountering</rdg></app>
+ a Fly </l>
+                    <l>This January<app type="division"><lem><lb/></lem></app>
+ Day </l>
+                    <l>Jamaicas of<app type="division"><lem><lb/></lem></app>
+ Remembrance stir</l>
+                    <l>That send me<app type="division"><lem><lb/></lem></app>
+ reeling<add type="alternate" extent="in -">on -</add>
+ in - </l>
+                    <l>The moderate<app type="division"><lem><lb/></lem></app>
+ drinker of Delight </l>
+                    <l><add type="alternate" extent="">Has never tasted spring -</add>
+Does not deserve<app type="division"><lem><lb/></lem></app>
+ the Spring - </l>
+                    <l>Of Juleps, part are<app type="division"><lem><lb/></lem></app>
+ in the Jug </l>
+                    <l>And more are in the<app type="division"><lem><lb/></lem></app>
+ Joy -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Your connoisaeur<app type="division"><lem><lb/></lem></app>
+ in Liquors consults<app type="division"><lem><lb/></lem></app>
+ the Bumble Bee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

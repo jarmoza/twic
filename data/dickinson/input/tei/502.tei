@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He showed me hights I never saw</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F346B">
+                <lg type="stanza">
+                    <l>He showed me Hights I<app type="division"><lem><lb/></lem></app>
+ never saw -</l>
+                    <l>&quot;Would'st Climb&quot; - He said?  </l>
+                    <l>I said, &quot;Not so&quot; - </l>
+                    <l>&quot;With me -&quot; He said -<app type="division"><lem><lb/></lem></app>
+ &quot;With me&quot;?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He showed me secrets -<app type="division"><lem><lb/></lem></app>
+ Morning's Nest -</l>
+                    <l>The Rope the Nights were put<app type="division"><lem><lb/></lem></app>
+ across - </l>
+                    <l>&quot;And now, Would'st have me<app type="division"><lem><lb/></lem></app>
+ for a Guest&quot;?  </l>
+                    <l>I could not find my &quot;Yes&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then - He brake His Life -<app type="division"><lem><lb/></lem></app>
+ And lo,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A light for me, did<app type="division"><lem><lb/></lem></app>
+ solemn glow -</l>
+                    <l>The<add type="alternate" extent="steadier,">larger -</add>
+ steadier, as my<app type="division"><lem><lb/></lem></app>
+ face withdrew - </l>
+                    <l>And could I further<app type="division"><lem><lb/></lem></app>
+ &quot;No&quot;?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

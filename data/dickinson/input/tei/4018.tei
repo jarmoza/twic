@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Death I try to think like this -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1558">
+                <lg type="stanza">
+                    <l>Of Death I try to think like this --</l>
+                    <l>The Well in which they lay us</l>
+                    <l>Is but the Likeness of the Brook</l>
+                    <l>That menaced not to slay us,</l>
+                    <l>But to invite by that Dismay</l>
+                    <l>Which is the Zest of sweetness</l>
+                    <l>To the same Flower Hesperian,</l>
+                    <l>Decoying but to greet us --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I do remember when a Child</l>
+                    <l>With bolder Playmates straying</l>
+                    <l>To where a Brook that seemed a Sea</l>
+                    <l>Withheld us by it's roaring</l>
+                    <l>From just a Purple Flower beyond</l>
+                    <l>Until constrained to clutch it</l>
+                    <l><app type="revision"><lem>Were Doom itself the penalty --</lem><rdg>Were Doom itself the penalty --</rdg></app>
+If Doom itself were the result,</l>
+                    <l>The <app type="revision"><lem>bravest</lem><rdg>bravest</rdg></app>
+boldest leaped, and clutched it --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

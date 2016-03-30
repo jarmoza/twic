@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Empty my heart of thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F393A">
+                <lg type="stanza">
+                    <l>Empty my Heart, of Thee -</l>
+                    <l>It's single Artery - </l>
+                    <l>Begin, and leave Thee out - </l>
+                    <l>Simply Extinction's Date - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Much Billow hath the Sea -</l>
+                    <l>One Baltic - They - </l>
+                    <l>Subtract Thyself, in play, </l>
+                    <l>And not enough of me </l>
+                    <l>Is left - to put away - </l>
+                    <l>&quot;Myself&quot; meant Thee -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Erase the Root - no Tree - </l>
+                    <l>Thee - then - no me - </l>
+                    <l>The Heavens stripped - </l>
+                    <l><app type="emendation"><lem>Eternitys</lem><rdg>Eternity&#x27;s</rdg></app>
+<add type="alternate" extent="vast">wide</add>
+ vast pocket, picked.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

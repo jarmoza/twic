@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This quiet dust was gentlemen and ladies </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1090B">
+                <lg type="stanza">
+                    <l>This quiet Dust was<app type="division"><lem><lb/></lem></app>
+ Gentlemen and Ladies</l>
+                    <l>And Lads and Girls - </l>
+                    <l>Was laughter and<app type="division"><lem><lb/></lem></app>
+ ability and Sighing </l>
+                    <l>And Frocks and Curls.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>This Passive Place<app type="division"><lem><lb/></lem></app>
+ a Summer's nimble mansion</l>
+                    <l>Where Bloom and Bees </l>
+                    <l>Exist an Oriental<app type="division"><lem><lb/></lem></app>
+ Circuit </l>
+                    <l>Then cease, like these - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

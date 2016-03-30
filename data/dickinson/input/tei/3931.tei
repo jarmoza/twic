@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Their Barricade against the Sky 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1471">
+                <lg type="stanza">
+                    <l>Their Barricade against the Sky</l>
+                    <l>The martial Trees withdraw</l>
+                    <l>And with a Flag at every turn</l>
+                    <l>Their Armies are no more.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What Russet Halts in Nature's March</l>
+                    <l>They indicate or cause</l>
+                    <l>An inference of Mexico</l>
+                    <l>Effaces the Surmise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Recurrent to the After Mind</l>
+                    <l>That Massacre of Air --</l>
+                    <l>The Wound that was not Wound nor Scar --</l>
+                    <l>But Holidays of War --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

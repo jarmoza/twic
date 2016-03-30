@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Death&#x27;s Waylaying not the sharpest
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1296">
+                <lg type="stanza">
+                    <l>Death's Waylaying not the sharpest</l>
+                    <l>Of the thefts of Time --</l>
+                    <l>There Marauds a sorer Robber,</l>
+                    <l>Silence -- is his name --</l>
+                    <l>No Assault, nor any Menace</l>
+                    <l>Doth betoken him.</l>
+                    <l>But from Life's consummate Cluster --</l>
+                    <l>He supplants the Balm.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

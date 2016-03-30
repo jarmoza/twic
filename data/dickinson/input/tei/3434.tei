@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Soul&#x27;s distinct connection 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J974">
+                <lg type="stanza">
+                    <l>The Soul's distinct connection</l>
+                    <l>With immortality</l>
+                    <l>Is best disclosed by Danger</l>
+                    <l>Or quick Calamity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As Lightning on a Landscape</l>
+                    <l><app type="revision"><lem>Developes</lem><rdg>Developes</rdg></app>
+Exhibits Sheets of Place --</l>
+                    <l><app type="revision"><lem>Still unsuspected</lem><rdg>Still unsuspected</rdg></app>
+Not yet suspected -- but for <app type="revision"><lem>Fork</lem><rdg>Fork</rdg></app>
+Flash --</l>
+                    <l>And <app type="revision"><lem>Bolt --</lem><rdg>Bolt --</rdg></app>
+Click -- and Suddenness.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

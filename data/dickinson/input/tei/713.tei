@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The spider holds a silver ball </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F513A">
+                <lg type="stanza">
+                    <l>The Spider holds a Silver Ball</l>
+                    <l>In unperceived Hands - </l>
+                    <l>And dancing softly<add type="alternate" extent="to Himself">as He knits</add>
+ to Himself </l>
+                    <l><add type="alternate" extent="His Yarn of Pearl - unwinds -">Pursues his pearly strands -</add>
+His <add type="alternate" extent="Yarn">Coil</add>
+Yarn of Pearl - <add type="alternate" extent="unwinds -">expends -</add>
+unwinds -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He plies from nought to nought -</l>
+                    <l>In unsubstantial Trade - </l>
+                    <l>Supplants our Tapestries with His - </l>
+                    <l>In half the period - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>An Hour to rear supreme </l>
+                    <l>His<add type="alternate" extent="Continents">theories</add>
+ Continents of Light -</l>
+                    <l>Then<add type="alternate" extent="dangle from">perish by</add>
+ dangle from the Housewife's<app type="division"><lem><lb/></lem></app>
+ Broom - </l>
+                    <l>His<add type="alternate" extent="Boundaries -">sophistries -</add>
+ Boundaries - forgot - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It&#x27;s such a little thing to weep -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J189">
+                <lg type="stanza">
+                    <l>It's such a little thing to weep --</l>
+                    <l>So short a thing to sigh --</l>
+                    <l>And yet -- by Trades -- the size of these</l>
+                    <l>We men and women die!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

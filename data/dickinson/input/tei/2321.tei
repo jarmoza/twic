@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The farthest thunder that I heard </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1665C">
+                <lg type="stanza">
+                    <l>The farthest<app type="division"><lem><lb/></lem></app>
+ Thunder that<app type="division"><lem><lb/></lem></app>
+ I heard </l>
+                    <l>Was nearer<app type="division"><lem><lb/></lem></app>
+ than the Sky, </l>
+                    <l>And rumbles<app type="division"><lem><lb/></lem></app>
+ still, </l>
+                    <l>Though Torrid<app type="division"><lem><lb/></lem></app>
+ Noons<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Have lain<app type="division"><lem><lb/></lem></app>
+ their Missiles<app type="division"><lem><lb/></lem></app>
+ by -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

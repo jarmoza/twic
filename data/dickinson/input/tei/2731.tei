@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A solemn thing -- it was -- I said -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J271">
+                <lg type="stanza">
+                    <l>A solemn thing -- it was -- I said --</l>
+                    <l>A Woman -- white -- to be --</l>
+                    <l>And wear -- if God should count me fit --</l>
+                    <l>Her blameless mystery --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A timid thing -- to drop a life</l>
+                    <l>Into the mystic well --</l>
+                    <l>Too plummetless -- that it <app type="revision"><lem>return</lem><rdg>return</rdg></app>
+come back --</l>
+                    <l>Eternity -- until --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I pondered how the bliss would look --</l>
+                    <l>And would it feel as big --</l>
+                    <l>When I could take it in my hand --</l>
+                    <l>As <app type="revision"><lem>glimmering</lem><rdg>glimmering</rdg></app>
+hovering -- seen -- through fog --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then -- the size of this "small" life --</l>
+                    <l>The Sages -- call it small --</l>
+                    <l>Swelled -- like Horizons -- in my <app type="revision"><lem>vest</lem><rdg>vest</rdg></app>
+breast --</l>
+                    <l>And I sneered -- softly -- "small"!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>5.timid] hallowed</l>
+                    <l>6.mystic] purple</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

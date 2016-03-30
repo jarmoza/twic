@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kill your balm and it&#x27;s odors bless you </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F309A">
+                <lg type="stanza">
+                    <l>Kill your Balm - and it's<app type="division"><lem><lb/></lem></app>
+ Odors bless you -</l>
+                    <l>Bare your Jessamine - to<app type="division"><lem><lb/></lem></app>
+ the storm - </l>
+                    <l>And she will fling her<app type="division"><lem><lb/></lem></app>
+ maddest perfume - </l>
+                    <l>Haply - your Summer night<app type="division"><lem><lb/></lem></app>
+ to Charm - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Stab the Bird - that built<app type="division"><lem><lb/></lem></app>
+ in your bosom -</l>
+                    <l>Oh, could you catch her<app type="division"><lem><lb/></lem></app>
+ last Refrain - </l>
+                    <l>Bubble! &quot;forgive&quot; - &quot;Some better&quot; - Bubble!  </l>
+                    <l>&quot;Carol for Him - when I<app type="division"><lem><lb/></lem></app>
+ am gone&quot;!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

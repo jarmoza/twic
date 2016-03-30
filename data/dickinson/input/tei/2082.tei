@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One thing of it we borrow </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1516B">
+                <lg type="stanza">
+                    <l>One thing of it<app type="division"><lem><lb/></lem></app>
+ we borrow </l>
+                    <l>And promise to<app type="division"><lem><lb/></lem></app>
+ return -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Booty and<app type="division"><lem><lb/></lem></app>
+ the Sorrow </l>
+                    <l>It's Sweetness to<app type="division"><lem><lb/></lem></app>
+ have known - </l>
+                    <l>One thing of it<app type="division"><lem><lb/></lem></app>
+ we covet -</l>
+                    <l>The power to forget - </l>
+                    <l>The Anguish of<app type="division"><lem><lb/></lem></app>
+ the Avarice </l>
+                    <l>Defrays the<app type="division"><lem><lb/></lem></app>
+ Dross of it - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

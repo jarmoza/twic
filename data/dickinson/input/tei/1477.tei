@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Gratitude is not the mention </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1120C">
+                <lg type="stanza">
+                    <l>Gratitude - is not the<app type="division"><lem><lb/></lem></app>
+ mention</l>
+                    <l>Of a Tenderness, </l>
+                    <l>But it's still appreciation </l>
+                    <l>Out of Plumb of<app type="division"><lem><lb/></lem></app>
+ Speech - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When the Sea return<app type="division"><lem><lb/></lem></app>
+ no Answer</l>
+                    <l>By the Line and<app type="division"><lem><lb/></lem></app>
+ Lead </l>
+                    <l>Proves it there's no<app type="division"><lem><lb/></lem></app>
+ Sea, or rather </l>
+                    <l>A remoter Bed?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

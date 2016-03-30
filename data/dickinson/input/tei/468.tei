@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Blazing in gold and quenching in purple </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F321C">
+                <lg type="stanza">
+                    <l>Blazing in <app type="division"><lem><lb/></lem></app>
+Gold and<app type="division"><lem><lb/></lem></app>
+ quenching in<app type="division"><lem><lb/></lem></app>
+ Purple </l>
+                    <l>Leaping like<app type="division"><lem><lb/></lem></app>
+ Leopards to<app type="division"><lem><lb/></lem></app>
+ the Sky </l>
+                    <l>Then at the<app type="division"><lem><lb/></lem></app>
+ feet of the<app type="division"><lem><lb/></lem></app>
+ old Horizon </l>
+                    <l>Laying her<app type="division"><lem><pb/></lem></app>
+ Spotted Face<app type="division"><lem><lb/></lem></app>
+ to die </l>
+                    <l>Stooping as low<app type="division"><lem><lb/></lem></app>
+ as the Otter's<app type="division"><lem><lb/></lem></app>
+ Window</l>
+                    <l>Touching the <app type="division"><lem><lb/></lem></app>
+Roof and tinting<app type="division"><lem><lb/></lem></app>
+ the Barn </l>
+                    <l>Kissing her<app type="division"><lem><lb/></lem></app>
+ Bonnet to the<app type="division"><lem><lb/></lem></app>
+ Meadow </l>
+                    <l>And the Juggler<app type="division"><lem><lb/></lem></app>
+ of Day is gone </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

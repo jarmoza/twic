@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This me that walks and works must die </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1616D">
+                <lg type="stanza">
+                    <l>Adversity if it<app type="division"><lem><lb/></lem></app>
+ shall be </l>
+                    <l>Or Wild Prosperity, </l>
+                    <l>The Rumor's Gate<app type="division"><lem><lb/></lem></app>
+ was shut so<app type="division"><lem><lb/></lem></app>
+ tight<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Before my<app type="division"><lem><lb/></lem></app>
+ Mind was born - </l>
+                    <l>Not even a<app type="division"><lem><lb/></lem></app>
+ Prognostic's push</l>
+                    <l>Could make<app type="division"><lem><lb/></lem></app>
+ a Dent thereon - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How far is it to heaven? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F965A">
+                <lg type="stanza">
+                    <l>How far is it to Heaven?</l>
+                    <l>As far as Death<app type="division"><lem><lb/></lem></app>
+ this way - </l>
+                    <l>Of River or of Ridge<app type="division"><lem><lb/></lem></app>
+ beyond </l>
+                    <l>Was no discovery.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How far is it to Hell?</l>
+                    <l>As far as Death<app type="division"><lem><lb/></lem></app>
+ this way - </l>
+                    <l>How far left hand<app type="division"><lem><lb/></lem></app>
+ the Sepulchre </l>
+                    <l><add type="alternate" extent="">Forbid that any know -</add>
+Defies Topography.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The bone that has no marrow </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1218A">
+                <lg type="stanza">
+                    <l>The Bone that<app type="division"><lem><lb/></lem></app>
+ has no Marrow,</l>
+                    <l>What Ultimate<app type="division"><lem><lb/></lem></app>
+ for that?  </l>
+                    <l>It is not fit<app type="division"><lem><lb/></lem></app>
+ for Table </l>
+                    <l>For Beggar or<app type="division"><lem><lb/></lem></app>
+ for Cat - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Bone has<app type="division"><lem><lb/></lem></app>
+ obligations -</l>
+                    <l>A Being has the<app type="division"><lem><lb/></lem></app>
+ same - </l>
+                    <l>A Marrowless<app type="division"><lem><lb/></lem></app>
+ Assembly </l>
+                    <l>Is culpabler than<app type="division"><lem><lb/></lem></app>
+ shame - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But how shall<app type="division"><lem><lb/></lem></app>
+ finished Creatures<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A function fresh<app type="division"><lem><lb/></lem></app>
+ obtain?</l>
+                    <l>Old Nicodemus'<app type="division"><lem><lb/></lem></app>
+ Phantom </l>
+                    <l>Confronting us<app type="division"><lem><lb/></lem></app>
+ again!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

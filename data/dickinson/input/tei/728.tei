@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It is not dying hurts us so </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F528A">
+                <lg type="stanza">
+                    <l>It is not dying hurts us so - </l>
+                    <l>'Tis living hurts us more.  </l>
+                    <l>But dying is a different way, </l>
+                    <l>A kind, behind the door - </l>
+                    <l>The Southern custom of the bird</l>
+                    <l>That soon as frosts are due - </l>
+                    <l>Adopts a better latitude.  </l>
+                    <l>We are the birds that stay </l>
+                    <l>The shiverers round farmers' doors.  </l>
+                    <l>For whose reluctant crumb -</l>
+                    <l>We stipulate - till pitying snows </l>
+                    <l>Persuade our feathers Home.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

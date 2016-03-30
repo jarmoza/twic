@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Truth is as old as God </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F795A">
+                <lg type="stanza">
+                    <l>Truth - is as old<app type="division"><lem><lb/></lem></app>
+ as God - </l>
+                    <l>His Twin Identity - </l>
+                    <l>And will endure<app type="division"><lem><lb/></lem></app>
+ as long as He - </l>
+                    <l>A Co Eternity - </l>
+                    <l>And perish, on<app type="division"><lem><lb/></lem></app>
+ the Day</l>
+                    <l>That He is borne<app type="division"><lem><lb/></lem></app>
+ away </l>
+                    <l>From Mansion of<app type="division"><lem><lb/></lem></app>
+ the Universe -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A lifeless Deity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

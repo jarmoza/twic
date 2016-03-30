@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Wolfe demanded during dying </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F482C">
+                <lg type="stanza">
+                    <l>Wolfe demanded<app type="division"><lem><lb/></lem></app>
+ during dying </l>
+                    <l>&quot;Which obtain<app type="division"><lem><lb/></lem></app>
+ the Day&quot;?  </l>
+                    <l>&quot;General, the British&quot; - &quot;Easy&quot; </l>
+                    <l>Answered Wolfe<app type="division"><lem><lb/></lem></app>
+ &quot;to die&quot; </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Montcalm, his<app type="division"><lem><lb/></lem></app>
+ opposing Spirit<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Rendered with<app type="division"><lem><lb/></lem></app>
+ a smile </l>
+                    <l>&quot;Sweet&quot; said he<app type="division"><lem><lb/></lem></app>
+ &quot;my own Surrender </l>
+                    <l>Liberty's beguile&quot; </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

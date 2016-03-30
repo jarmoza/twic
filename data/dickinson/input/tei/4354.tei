@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We play at paste,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-4">
+                <lg type="stanza">
+                    <l>We play at paste,</l>
+                    <l>Till qualified for pearl,</l>
+                    <l>Then drop the paste,</l>
+                    <l>And deem ourself a fool.</l>
+                    <l>The shapes, though, were similar,</l>
+                    <l>And our new hands</l>
+                    <l>Learned gem-tactics</l>
+                    <l>Practising sands.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

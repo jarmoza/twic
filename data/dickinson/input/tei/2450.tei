@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The distance that the dead have gone</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1781A">
+                <lg type="stanza">
+                    <l>The distance that the dead have gone</l>
+                    <l>Does not at first appear;</l>
+                    <l>Their coming back seems possible</l>
+                    <l>For many an ardent year.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then, that we have followed them,</l>
+                    <l>We more than half suspect,</l>
+                    <l>So intimate have we become</l>
+                    <l>With their dear retrospect.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

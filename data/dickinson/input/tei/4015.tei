@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I groped for him before I knew
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1555">
+                <lg type="stanza">
+                    <l>I groped for him before I knew</l>
+                    <l>With solemn nameless need</l>
+                    <l>All other <app type="revision"><lem>Bounty nig-</lem><rdg>Bounty nig-</rdg></app>
+bounty sudden chaff</l>
+                    <l>For this foreshadowed Food</l>
+                    <l>Which others taste and spurn -- and <app type="revision"><lem>slight</lem><rdg>slight</rdg></app>
+sneer --</l>
+                    <l>Though I within suppose</l>
+                    <l>That consecrated it could be</l>
+                    <l>The only Food that grows</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

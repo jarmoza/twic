@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Come show thy Durham Breast 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1542">
+                <lg type="stanza">
+                    <l>Come show thy Durham Breast</l>
+                    <l>To her who loves thee best,</l>
+                    <l>Delicious Robin --</l>
+                    <l>And if it be not me</l>
+                    <l>At least within my Tree</l>
+                    <l>Do the avowing --</l>
+                    <l>Thy Nuptial so minute</l>
+                    <l>Perhaps is more astute</l>
+                    <l>Than vaster suing --</l>
+                    <l>For so to soar away</l>
+                    <l>Is our propensity</l>
+                    <l>The Day ensuing --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

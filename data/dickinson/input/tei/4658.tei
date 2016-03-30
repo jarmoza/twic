@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>FAREWELL</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-142">
+                <lg type="stanza">
+                    <l>Tie the strings to my life, my Lord,</l>
+                    <l>Then I am ready to go!</l>
+                    <l>Just a look at the horses </l>
+                    <l>Rapid! That will do!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Put me in on the firmest side,</l>
+                    <l>So I shall never fall;</l>
+                    <l>For we must ride to the Judgment,</l>
+                    <l>And it's partly down hill.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But never I mind the bridges,</l>
+                    <l>And never I mind the sea;</l>
+                    <l>Held fast in everlasting race</l>
+                    <l>By my own choice and thee.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Good-by to the life I used to live,</l>
+                    <l>And the world I used to know;</l>
+                    <l>And kiss the hills for me, just once;</l>
+                    <l>Now I am ready to go!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

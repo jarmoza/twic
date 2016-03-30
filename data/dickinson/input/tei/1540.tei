@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I bet with every wind that blew </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1167A">
+                <lg type="stanza">
+                    <l>I bet with every<app type="division"><lem><lb/></lem></app>
+ Wind that blew </l>
+                    <l>Till Nature<app type="division"><lem><lb/></lem></app>
+ in chagrin </l>
+                    <l>Employed a<app type="division"><lem><lb/></lem></app>
+ Fact to visit<app type="division"><lem><lb/></lem></app>
+ me </l>
+                    <l>And scuttle<app type="division"><lem><lb/></lem></app>
+ my Balloon - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

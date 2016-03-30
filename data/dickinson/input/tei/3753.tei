@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The things we thought that we should do 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1293">
+                <lg type="stanza">
+                    <l>The things we thought that we should do</l>
+                    <l>We other things have done</l>
+                    <l>But those peculiar industries</l>
+                    <l>Have never been begun --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Lands we thought that we should seek</l>
+                    <l>When large enough to run</l>
+                    <l>By Speculation ceded</l>
+                    <l>To Speculation's Son --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heaven, in which we hoped to pause</l>
+                    <l>When Discipline was done</l>
+                    <l>Untenable to Logic</l>
+                    <l>But possibly the one --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>As One does Sickness over 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J957">
+                <lg type="stanza">
+                    <l>As One does Sickness over</l>
+                    <l>In convalescent Mind,</l>
+                    <l>His scrutiny of Chances</l>
+                    <l>By blessed Health obscured --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As One rewalks a Precipice</l>
+                    <l>And whittles at the Twig</l>
+                    <l>That held Him from Perdition</l>
+                    <l>Sown sidewise in the Crag</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A <app type="revision"><lem>Habit</lem><rdg>Habit</rdg></app>
+Custom of the Soul</l>
+                    <l>Far after suffering</l>
+                    <l>Identity to <app type="revision"><lem>handle --</lem><rdg>handle --</rdg></app>
+question</l>
+                    <l>For evidence 't has been --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Bronze -- and Blaze -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J290">
+                <lg type="stanza">
+                    <l>Of Bronze -- and Blaze --</l>
+                    <l>The North -- Tonight --</l>
+                    <l>So adequate -- it forms --</l>
+                    <l>So preconcerted with itself</l>
+                    <l>So distant -- to alarms --</l>
+                    <l>An Unconcern so sovreign</l>
+                    <l>To Universe, or me --</l>
+                    <l>Infects my simple spirit</l>
+                    <l>With Taints of Majesty --</l>
+                    <l>Till I take vaster attitudes --</l>
+                    <l>And strut upon my stem --</l>
+                    <l>Disdaining Men, and Oxygen,</l>
+                    <l>For Arrogance of them --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Splendors, are Menagerie --</l>
+                    <l>But their Competeless Show</l>
+                    <l>Will entertain the Centuries</l>
+                    <l>When I, am long ago,</l>
+                    <l><app type="revision"><lem>Some --</lem><rdg>Some --</rdg></app>
+An Island in dishonored Grass --</l>
+                    <l>Whom none but <app type="revision"><lem>Beetles --</lem><rdg>Beetles --</rdg></app>
+Daisies, know.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>10.attitudes] manners</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

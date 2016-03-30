@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We can but follow to the sun </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F845A">
+                <lg type="stanza">
+                    <l>We can but follow to the<app type="division"><lem><lb/></lem></app>
+ Sun -</l>
+                    <l>As oft as He go down </l>
+                    <l>He leave Ourselves a<app type="division"><lem><lb/></lem></app>
+ Sphere behind - </l>
+                    <l>'Tis mostly - following - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We go no further with<app type="division"><lem><lb/></lem></app>
+ the Dust</l>
+                    <l>Than to the Earthen<app type="division"><lem><lb/></lem></app>
+ Door - </l>
+                    <l>And then the Panels<app type="division"><lem><lb/></lem></app>
+ are reversed - </l>
+                    <l>And we behold -<app type="division"><lem><lb/></lem></app>
+ no more </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

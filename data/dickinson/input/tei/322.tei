@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>You love me - you are sure </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F218A">
+                <lg type="stanza">
+                    <l>You love me - you are sure -</l>
+                    <l>I shall not fear mistake - </l>
+                    <l>I shall not <em>cheated</em> wake - </l>
+                    <l>Some grinning morn - </l>
+                    <l>To find the Sunrise left -</l>
+                    <l>And Orchards - unbereft - </l>
+                    <l>And Dollie - gone!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I need not start - you're sure - </l>
+                    <l>That night will never be - </l>
+                    <l>When frightened - home to Thee<app type="division"><lem><lb/></lem></app>
+ I run -</l>
+                    <l>To find the windows dark - </l>
+                    <l>And no more Dollie - mark - </l>
+                    <l>Quite none?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Be sure you're sure - you know - </l>
+                    <l>I'll bear it better now -</l>
+                    <l>If you'll just tell me so - </l>
+                    <l>Than when - a little dull<app type="division"><lem><lb/></lem></app>
+ Balm grown -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Over this pain of mine - </l>
+                    <l>You sting - again!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

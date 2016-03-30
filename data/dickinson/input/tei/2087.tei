@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The robin is a Gabriel </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1520B">
+                <lg type="stanza">
+                    <l>The Robin is<app type="division"><lem><lb/></lem></app>
+ a Gabriel </l>
+                    <l>In humble<app type="division"><lem><lb/></lem></app>
+ circumstances - </l>
+                    <l>His Dress denotes<app type="division"><lem><lb/></lem></app>
+ him socially, </l>
+                    <l>Of Transport's<app type="division"><lem><lb/></lem></app>
+ Working Classes - </l>
+                    <l>He has the<app type="division"><lem><lb/></lem></app>
+ punctuality</l>
+                    <l>Of the New England<app type="division"><lem><lb/></lem></app>
+ Farmer - </l>
+                    <l>The same oblique<app type="division"><lem><lb/></lem></app>
+ integrity, </l>
+                    <l>A Vista vastly<app type="division"><lem><lb/></lem></app>
+ warmer -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A small but<app type="division"><lem><lb/></lem></app>
+ sturdy Residence, </l>
+                    <l>A Self denying<app type="division"><lem><lb/></lem></app>
+ Household,</l>
+                    <l>The Guests of<app type="division"><lem><lb/></lem></app>
+ Perspicacity </l>
+                    <l>Are all that<app type="division"><lem><lb/></lem></app>
+ cross his Threshold - </l>
+                    <l>As covert as<app type="division"><lem><lb/></lem></app>
+ a Fugitive, </l>
+                    <l>Cajoling <app type="emendation"><lem>Conster - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ nation</lem><rdg>Consternation</rdg></app>
+ </l>
+                    <l>By Ditties to the<app type="division"><lem><lb/></lem></app>
+ Enemy</l>
+                    <l>And Silvan<app type="division"><lem><lb/></lem></app>
+ Punctuation - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

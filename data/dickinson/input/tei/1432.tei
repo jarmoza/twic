@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The opening and the close </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1089A">
+                <lg type="stanza">
+                    <l>The Opening and the<app type="division"><lem><lb/></lem></app>
+ Close</l>
+                    <l>Of Being, are alike </l>
+                    <l>Or differ, if they do, </l>
+                    <l>As Bloom opon<app type="division"><lem><lb/></lem></app>
+ a Stalk - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That from an equal<app type="division"><lem><lb/></lem></app>
+ Seed</l>
+                    <l>Unto an equal Bud </l>
+                    <l>Go parallel, perfected </l>
+                    <l>In that they have<app type="division"><lem><lb/></lem></app>
+ decayed - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

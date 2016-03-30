@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No bobolink reverse his singing </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F766A">
+                <lg type="stanza">
+                    <l>No Bobolink - reverse<app type="division"><lem><lb/></lem></app>
+ His Singing</l>
+                    <l>When the only Tree </l>
+                    <l>Ever He minded occupying </l>
+                    <l>By the Farmer be - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Clove to the Root -</l>
+                    <l>His Spacious Future - </l>
+                    <l><add type="alternate" extent="Best">All</add>
+Best Horizon -<add type="alternate" extent="gone -">known -</add>
+ gone - </l>
+                    <l>Brave Bobolink - </l>
+                    <l>Whose Music be His </l>
+                    <l>Only Anodyne -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

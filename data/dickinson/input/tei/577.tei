@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One need not be a chamber to be haunted </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F407B">
+                <lg type="stanza">
+                    <l>One need not be<app type="division"><lem><lb/></lem></app>
+ a Chamber - to be<app type="division"><lem><lb/></lem></app>
+ Haunted - </l>
+                    <l>One need not<app type="division"><lem><lb/></lem></app>
+ be a House - </l>
+                    <l>The Brain has<app type="division"><lem><lb/></lem></app>
+ Corridors - surpassing </l>
+                    <l>Material Place - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Far safer, of a<app type="division"><lem><lb/></lem></app>
+ midnight meeting</l>
+                    <l>External Ghost<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Than it's interior<app type="division"><lem><lb/></lem></app>
+ confronting - </l>
+                    <l>That cooler Host - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Far safer, through<app type="division"><lem><lb/></lem></app>
+ an Abbey gallop, </l>
+                    <l>The Stones a'chase -</l>
+                    <l>Than unarmed,<app type="division"><lem><lb/></lem></app>
+ one's a'self encounter - </l>
+                    <l>In lonesome Place - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Ourself behind<app type="division"><lem><lb/></lem></app>
+ ourself, concealed -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Should startle most - </l>
+                    <l>Assassin hid in<app type="division"><lem><lb/></lem></app>
+ our Apartment</l>
+                    <l>Be Horror's least - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Body - borrows<app type="division"><lem><lb/></lem></app>
+ a Revolver - </l>
+                    <l>He bolts the Door - </l>
+                    <l>O'erlooking a<app type="division"><lem><lb/></lem></app>
+ superior spectre - </l>
+                    <l>Or More -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

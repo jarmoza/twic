@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pigmy seraphs gone astray </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F96A">
+                <lg type="stanza">
+                    <l>Pigmy Seraphs - gone astray - </l>
+                    <l>Velvet people from Vevay - </l>
+                    <l>Belles from some lost summer<app type="division"><lem><lb/></lem></app>
+ day, </l>
+                    <l>Bees exclusive Coterie - </l>
+                    <l>Paris could not lay the fold</l>
+                    <l>Belted down with Emerald!  </l>
+                    <l>Venice could not show a cheek </l>
+                    <l>Of a tint more lustrous meek.  </l>
+                    <l>Never such an ambuscade </l>
+                    <l>As of briar and leaf displayed</l>
+                    <l>For my little damask maid.  </l>
+                    <l>I had rather wear her grace </l>
+                    <l>Than an <em>Earl's</em> distinguished<app type="division"><lem><lb/></lem></app>
+ face - </l>
+                    <l>I had rather dwell like her </l>
+                    <l>Than be Duke of Exeter -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Royalty eno' for me </l>
+                    <l>To subdue the <em>Bumblebee.</em> </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

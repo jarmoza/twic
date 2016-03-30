@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Publication -- is the Auction
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J709">
+                <lg type="stanza">
+                    <l>Publication -- is the Auction</l>
+                    <l>Of the Mind of Man --</l>
+                    <l>Poverty -- be justifying</l>
+                    <l>For so foul a thing</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Possibly -- but We -- would rather</l>
+                    <l>From Our Garret go</l>
+                    <l>White -- Unto the White Creator --</l>
+                    <l>Than invest -- Our Snow --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thought belong to Him who gave it --</l>
+                    <l>Then -- to Him Who bear</l>
+                    <l>It's Corporeal illustration -- Sell</l>
+                    <l>The Royal Air --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In the Parcel -- Be the Merchant</l>
+                    <l>Of the Heavenly Grace --</l>
+                    <l>But reduce no Human Spirit</l>
+                    <l>To Disgrace of Price --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

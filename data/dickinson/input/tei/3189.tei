@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Alter! When the Hills do -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J729">
+                <lg type="stanza">
+                    <l>Alter! When the Hills do --</l>
+                    <l>Falter! When the Sun</l>
+                    <l>Question if His Glory</l>
+                    <l>Be the Perfect One --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Surfeit! When the Daffodil</l>
+                    <l>Doth of the Dew --</l>
+                    <l>Even as Herself -- Sir --</l>
+                    <l>I will -- of You --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

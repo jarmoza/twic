@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My faith is larger than the hills </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F489A">
+                <lg type="stanza">
+                    <l>My Faith is larger than the<app type="division"><lem><lb/></lem></app>
+ Hills -</l>
+                    <l>So when the Hills decay - </l>
+                    <l>My Faith must take the<app type="division"><lem><lb/></lem></app>
+ Purple Wheel </l>
+                    <l>To show the Sun the way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis first He steps opon the<app type="division"><lem><lb/></lem></app>
+ Vane -</l>
+                    <l>And then - opon the Hill - </l>
+                    <l>And then abroad the<app type="division"><lem><lb/></lem></app>
+ World He go </l>
+                    <l>To do His Golden Will - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And if His Yellow feet should<app type="division"><lem><lb/></lem></app>
+ miss - </l>
+                    <l>The<add type="alternate" extent="Bird">Day</add>
+ Bird would not arise -</l>
+                    <l>The Flowers would<add type="alternate" extent="slumber on">sleep opon -</add>
+ slumber on<app type="division"><lem><lb/></lem></app>
+ their Stems - </l>
+                    <l>No Bells have Paradise -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How dare I, therefore, stint<app type="division"><lem><lb/></lem></app>
+ a faith </l>
+                    <l>On which so vast depends - </l>
+                    <l>Lest<add type="alternate" extent="Firmament">Universe - &amp;#x2022; Deity -</add>
+ Firmament should fail<app type="division"><lem><lb/></lem></app>
+ for me -</l>
+                    <l>The Rivet in the Bands </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

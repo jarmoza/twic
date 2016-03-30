@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Had this one Day not been,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1253">
+                <lg type="stanza">
+                    <l>Had this one Day not been,</l>
+                    <l>Or could it cease to be</l>
+                    <l>How smitten, how superfluous,</l>
+                    <l>Were every other Day!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Lest Love should value less</l>
+                    <l>What Loss would value more</l>
+                    <l>Had it the stricken privilege,</l>
+                    <l>It cherishes before.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

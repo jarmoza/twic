@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Presentiment -- is that long Shadow -- on the Lawn -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J764">
+                <lg type="stanza">
+                    <l>Presentiment -- is that long Shadow -- on the Lawn --</l>
+                    <l>Indicative that Suns go down --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>Monition --</lem><rdg>Monition --</rdg></app>
+The Notice to the startled Grass</l>
+                    <l>That Darkness -- is about to pass --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We learned the Whole of Love -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J568">
+                <lg type="stanza">
+                    <l>We learned the Whole of Love --</l>
+                    <l>The Alphabet -- the Words --</l>
+                    <l>A Chapter -- then the mighty Book --</l>
+                    <l>Then -- Revelation closed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But in Each Other's eyes</l>
+                    <l>An Ignorance beheld --</l>
+                    <l>Diviner than the Childhood's --</l>
+                    <l>And each to each, a Child --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>Did timidly expound --</lem><rdg>Did timidly expound --</rdg></app>
+Attempted to expound</l>
+                    <l>What Neither -- understood --</l>
+                    <l>Alas, that Wisdom is so large --</l>
+                    <l>And Truth -- so manifold!</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

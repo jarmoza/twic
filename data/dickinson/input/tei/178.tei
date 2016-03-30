@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These are the days when birds come back </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F122D">
+                <lg type="stanza">
+                    <l>These are the<app type="division"><lem><lb/></lem></app>
+ Days when Birds<app type="division"><lem><lb/></lem></app>
+ come back - </l>
+                    <l>A very few - a<app type="division"><lem><lb/></lem></app>
+ Bird or two - </l>
+                    <l>To take a<app type="division"><lem><lb/></lem></app>
+ parting look - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>These are the<app type="division"><lem><lb/></lem></app>
+ Days when Skies<app type="division"><lem><lb/></lem></app>
+ resume </l>
+                    <l>The old - old<app type="division"><lem><lb/></lem></app>
+ sophistries of June -</l>
+                    <l>A Blue and<app type="division"><lem><lb/></lem></app>
+ Gold Mistake - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

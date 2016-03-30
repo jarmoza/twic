@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We can but follow to the Sun -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J920">
+                <lg type="stanza">
+                    <l>We can but follow to the Sun --</l>
+                    <l>As oft as He go down</l>
+                    <l>He leave Ourselves a Sphere behind --</l>
+                    <l>'Tis mostly -- following --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We go no further with the Dust</l>
+                    <l>Than to the Earthen Door --</l>
+                    <l>And then the Panels are reversed --</l>
+                    <l>And we behold -- no more</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

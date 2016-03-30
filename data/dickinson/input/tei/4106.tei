@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why should we hurry -- why indeed
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1646">
+                <lg type="stanza">
+                    <l>Why should we hurry -- why indeed</l>
+                    <l>When every way we fly</l>
+                    <l>We are molested equally</l>
+                    <l>by immortality</l>
+                    <l>no respite from the inference</l>
+                    <l>that this which is begun</l>
+                    <l>though where it's labors lie</l>
+                    <l>A bland uncertainty</l>
+                    <l>Besets the sight</l>
+                    <l>This mighty night</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

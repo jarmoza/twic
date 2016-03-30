@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Great streets of silence led away </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1166C">
+                <lg type="stanza">
+                    <l>Great Streets of<app type="division"><lem><lb/></lem></app>
+ silence led away </l>
+                    <l>To Neighborhoods<app type="division"><lem><lb/></lem></app>
+ of Pause - </l>
+                    <l>Here was no<app type="division"><lem><lb/></lem></app>
+ Notice - no Dissent </l>
+                    <l>No Universe - no Laws - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>By Clocks, 'Twas<app type="division"><lem><lb/></lem></app>
+ Morning, and for<app type="division"><lem><lb/></lem></app>
+ Night</l>
+                    <l>The Bells at<app type="division"><lem><lb/></lem></app>
+ Distance called - </l>
+                    <l>But Epoch had<app type="division"><lem><lb/></lem></app>
+ no basis here </l>
+                    <l>For Period exhaled.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

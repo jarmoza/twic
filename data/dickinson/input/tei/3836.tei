@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dreams are the subtle Dower 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1376">
+                <lg type="stanza">
+                    <l>Dreams are the subtle Dower</l>
+                    <l>That make us rich an Hour --</l>
+                    <l>Then fling us poor</l>
+                    <l>Out of the Purple Door</l>
+                    <l>Into the Precinct raw</l>
+                    <l><app type="revision"><lem>Abhorred --</lem><rdg>Abhorred --</rdg></app>
+Possessed before --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

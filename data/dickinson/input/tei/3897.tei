@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Dew sufficed itself -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1437">
+                <lg type="stanza">
+                    <l>A Dew sufficed itself --</l>
+                    <l>And satisfied a Leaf</l>
+                    <l>And felt "how vast a destiny" --</l>
+                    <l>"How trivial is Life!"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun went out to work --</l>
+                    <l>The Day went out to play</l>
+                    <l>And not again that Dew be seen</l>
+                    <l>By Physiognomy</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whether by Day Abducted</l>
+                    <l>Or emptied by the Sun</l>
+                    <l>Into the Sea in passing</l>
+                    <l>Eternally unknown</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Attested to this Day</l>
+                    <l>That awful Tragedy</l>
+                    <l>By Transport's instability</l>
+                    <l>And Doom's celerity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

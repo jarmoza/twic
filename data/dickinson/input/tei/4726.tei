@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We spy the Forests and the Hills,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-44">
+                <lg type="stanza">
+                    <l>We spy the Forests and the Hills,</l>
+                    <l>The tents to Nature's Show,</l>
+                    <l>Mistake the outside for the in</l>
+                    <l>And mention what we saw.</l>
+                    <l>Could Commentators on the sign</l>
+                    <l>Of Nature's Caravan</l>
+                    <l>Obtain "admission," as a child,</l>
+                    <l>Some Wednesday afternoon?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

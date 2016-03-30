@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Still own thee -- still thou art 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1633">
+                <lg type="stanza">
+                    <l>Still own thee -- still thou art</l>
+                    <l>What surgeons call alive --</l>
+                    <l>Though slipping -- slipping I perceive</l>
+                    <l>To thy reportless Grave --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Which question shall I clutch --</l>
+                    <l>What <app type="revision"><lem>tidings --</lem><rdg>tidings --</rdg></app>
+answer wrest from thee</l>
+                    <l>Before thou dost <app type="revision"><lem>dissolve away -- in --</lem><rdg>dissolve away -- in --</rdg></app>
+exude away</l>
+                    <l>In the recallless sea?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

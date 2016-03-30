@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Teach him when he makes the names </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F198A">
+                <lg type="stanza">
+                    <l>Teach Him - when<app type="division"><lem><lb/></lem></app>
+ He makes the <em>names</em> - </l>
+                    <l>Such an one - to say - </l>
+                    <l>On his babbling - Berry -<app type="division"><lem><lb/></lem></app>
+ lips - </l>
+                    <l>As should sound - to me - </l>
+                    <l>Were my Ear - as<app type="division"><lem><lb/></lem></app>
+ near his nest -</l>
+                    <l>As my <em>thought</em> - today - </l>
+                    <l>As should sound - </l>
+                    <l>&quot;Forbid us not&quot; - </l>
+                    <l>Some like &quot;Emily.&quot; </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

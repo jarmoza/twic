@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pigmy seraphs -- gone astray --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J138">
+                <lg type="stanza">
+                    <l>Pigmy seraphs -- gone astray --</l>
+                    <l>Velvet people from Vevay --</l>
+                    <l>Belies from some lost summer day --</l>
+                    <l>Bees exclusive Coterie --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Paris could not lay the fold</l>
+                    <l>Belted down with Emerald --</l>
+                    <l>Venice could not show a cheek</l>
+                    <l>Of a tint so lustrous meek --</l>
+                    <l>Never such an Ambuscade</l>
+                    <l>As of briar and leaf displayed</l>
+                    <l>For my little damask maid --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I had rather wear her grace</l>
+                    <l>Than an Earl's distinguished face --</l>
+                    <l>I had rather dwell like her</l>
+                    <l>Than be "Duke of Exeter" --</l>
+                    <l>Royalty enough for me</l>
+                    <l>To subdue the Bumblebee.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

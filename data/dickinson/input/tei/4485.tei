@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some, too fragile for winter winds,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-135">
+                <lg type="stanza">
+                    <l>Some, too fragile for winter winds,</l>
+                    <l>The thoughtful grave encloses, </l>
+                    <l>Tenderly tucking them in from frost</l>
+                    <l>Before their feet are cold.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never the treasures in her nest</l>
+                    <l>The cautious grave exposes,</l>
+                    <l>Building where schoolboy dare not look</l>
+                    <l>And sportsman is not bold.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This covert have all the children</l>
+                    <l>Early aged, and often cold, </l>
+                    <l>Sparrows unnoticed by the Father;</l>
+                    <l>Lambs for whom time had not a fold.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

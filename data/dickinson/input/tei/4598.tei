@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TO MARCH</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-82">
+                <lg type="stanza">
+                    <l>Dear March, come in!</l>
+                    <l>How glad I am!</l>
+                    <l>I looked for you before.</l>
+                    <l>Put down your hat </l>
+                    <l>You must have walked </l>
+                    <l>How out of breath you are!</l>
+                    <l>Dear March, how are you?</l>
+                    <l>And the rest?</l>
+                    <l>Did you leave Nature well?</l>
+                    <l>Oh, March, come right upstairs with me,</l>
+                    <l>I have so much to tell!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got your letter, and the birds';</l>
+                    <l>The maples never knew</l>
+                    <l>That you were coming,  I declare,</l>
+                    <l>How red their faces grew!</l>
+                    <l>But, March, forgive me </l>
+                    <l>And all those hills</l>
+                    <l>You left for me to hue;</l>
+                    <l>There was no purple suitable,</l>
+                    <l>You took it all with you.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who knocks? That April!</l>
+                    <l>Lock the door!</l>
+                    <l>I will not be pursued!</l>
+                    <l>He stayed away a year, to call</l>
+                    <l>When I am occupied.</l>
+                    <l>But trifles look so trivial</l>
+                    <l>As soon as you have come,</l>
+                    <l>That blame is just as dear as praise</l>
+                    <l>And praise as mere as blame.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

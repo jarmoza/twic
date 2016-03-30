@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>WITH A FLOWER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-33">
+                <lg type="stanza">
+                    <l>I hide myself within my flower,</l>
+                    <l>That wearing on your breast,</l>
+                    <l>You, unsuspecting, wear me too </l>
+                    <l>And angels know the rest.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I hide myself within my flower,</l>
+                    <l>That, fading from your vase,</l>
+                    <l>You, unsuspecting, feel for me</l>
+                    <l>Almost a loneliness.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

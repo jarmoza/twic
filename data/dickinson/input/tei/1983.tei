@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She laid her docile crescent down </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1453A">
+                <lg type="stanza">
+                    <l>She laid her<app type="division"><lem><lb/></lem></app>
+ docile Crescent<app type="division"><lem><lb/></lem></app>
+ down </l>
+                    <l>And this mechanic<app type="division"><lem><lb/></lem></app>
+ Stone </l>
+                    <l>Still states to Dates<app type="division"><lem><lb/></lem></app>
+ that have forgot </l>
+                    <l>The News that<app type="division"><lem><lb/></lem></app>
+ she is gone - </l>
+                    <l>So constant to it's<app type="division"><lem><lb/></lem></app>
+ stolid Trust</l>
+                    <l>The shaft that<app type="division"><lem><lb/></lem></app>
+ never knew </l>
+                    <l>It shames the<app type="division"><lem><lb/></lem></app>
+ Constancy that fled </l>
+                    <l>Before it's<app type="division"><lem><lb/></lem></app>
+ Emblem flew - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

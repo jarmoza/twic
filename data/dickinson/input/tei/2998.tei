@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis true -- They shut me in the Cold -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J538">
+                <lg type="stanza">
+                    <l>'Tis true -- They shut me in the Cold --</l>
+                    <l>But then -- Themselves were warm</l>
+                    <l>And <app type="revision"><lem>did</lem><rdg>did</rdg></app>
+could not know the feeling 'twas --</l>
+                    <l>Forget it -- <app type="revision"><lem>Christ</lem><rdg>Christ</rdg></app>
+Lord -- of Them --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Let not my Witness <app type="revision"><lem>Them impair --</lem><rdg>Them impair --</rdg></app>
+hinder Them</l>
+                    <l>In Heavenly -- esteem --</l>
+                    <l>No Paradise could be -- Conferred</l>
+                    <l>Through Their beloved Blame</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Harm They did -- was <app type="revision"><lem>brief</lem><rdg>brief</rdg></app>
+short -- And since</l>
+                    <l>Myself -- who bore it -- do --</l>
+                    <l>Forgive Them -- Even as Myself --</l>
+                    <l><app type="revision"><lem>Else -- Savior -- banish Me --</lem><rdg>Else -- Savior -- banish Me --</rdg></app>
+Or else -- forgive not me --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The farthest thunder that I heard </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1665B">
+                <lg type="stanza">
+                    <l>The farthest<app type="division"><lem><lb/></lem></app>
+ Thunder that<app type="division"><lem><lb/></lem></app>
+ I heard </l>
+                    <l>Was nearer than<app type="division"><lem><lb/></lem></app>
+ the Sky </l>
+                    <l>And rumbles still,<app type="division"><lem><lb/></lem></app>
+ though torrid Noons </l>
+                    <l>Have lain their<app type="division"><lem><lb/></lem></app>
+ Missiles by - </l>
+                    <l>The Lightning that<app type="division"><lem><lb/></lem></app>
+ preceded it</l>
+                    <l>Struck no one but<app type="division"><lem><lb/></lem></app>
+ myself - </l>
+                    <l>But I would<app type="division"><lem><lb/></lem></app>
+ not exchange<app type="division"><lem><lb/></lem></app>
+ the Bolt </l>
+                    <l>For all the rest of<app type="division"><lem><lb/></lem></app>
+ Life -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Indebtedness to<app type="division"><lem><lb/></lem></app>
+ Oxygen </l>
+                    <l>The Happy may<app type="division"><lem><lb/></lem></app>
+ repay,</l>
+                    <l>But not the<app type="division"><lem><lb/></lem></app>
+ obligation </l>
+                    <l>To Electricity - </l>
+                    <l>It founds the<app type="division"><lem><lb/></lem></app>
+ Homes and decks<app type="division"><lem><lb/></lem></app>
+ the Days </l>
+                    <l>And every<app type="division"><lem><lb/></lem></app>
+ clamor bright </l>
+                    <l>Is but the<app type="division"><lem><lb/></lem></app>
+ gleam concomitant</l>
+                    <l>Of that waylaying<app type="division"><lem><lb/></lem></app>
+ Light - </l>
+                    <l>The Thought is<app type="division"><lem><pb/></lem></app>
+ quiet as a<app type="division"><lem><lb/></lem></app>
+ Flake - </l>
+                    <l>A Crash without<app type="division"><lem><lb/></lem></app>
+ a Sound, </l>
+                    <l>How Life's<app type="division"><lem><lb/></lem></app>
+ reverberation </l>
+                    <l>It's Explanation<app type="division"><lem><lb/></lem></app>
+ found -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

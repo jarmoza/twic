@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It knew no medicine </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F567A">
+                <lg type="stanza">
+                    <l>It knew no Medicine -</l>
+                    <l>It was not Sickness - then - </l>
+                    <l>Nor any need of Surgery - </l>
+                    <l>And therefore - 'twas not Pain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It moved away the Cheeks -</l>
+                    <l>A Dimple at a time - </l>
+                    <l>And left the Profile - plainer - </l>
+                    <l>And in the place of Bloom </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It left the little Tint </l>
+                    <l>That never had a Name -</l>
+                    <l>You've seen it on a Cast's<add type="alternate" extent="face">cheek</add>
+ face - </l>
+                    <l>Was Paradise - to blame - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If<add type="alternate" extent="momently ajar">Her sweet Door - ajar</add>
+ momently ajar - </l>
+                    <l>Temerity - drew near - </l>
+                    <l>And sickened - ever afterward</l>
+                    <l>For<add type="alternate" extent="Somewhat that">whatsoe&#x27;er -</add>
+ Somewhat that it saw?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

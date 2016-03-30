@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This Bauble was preferred of Bees -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J805">
+                <lg type="stanza">
+                    <l>This Bauble was preferred of Bees --</l>
+                    <l>By Butterflies <app type="revision"><lem>adored --</lem><rdg>adored --</rdg></app>
+<app type="revision"><lem>desired</lem><rdg>desired</rdg></app>
+admired</l>
+                    <l>At Heavenly -- Hopeless Distances --</l>
+                    <l><app type="revision"><lem>Of Bird -- was justified --</lem><rdg>Of Bird -- was justified --</rdg></app>
+Was justified of Bird --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Did Noon -- <app type="revision"><lem>enable --</lem><rdg>enable --</rdg></app>
+<app type="revision"><lem>embellish</lem><rdg>embellish</rdg></app>
+enamel -- in Herself</l>
+                    <l>Was Summer to a Score</l>
+                    <l>Who only knew of Universe --</l>
+                    <l>It had <app type="revision"><lem>afforded --</lem><rdg>afforded --</rdg></app>
+created Her.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

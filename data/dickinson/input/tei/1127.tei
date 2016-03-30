@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Love is that later thing than death </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F840A">
+                <lg type="stanza">
+                    <l>Love - is that later Thing<app type="division"><lem><lb/></lem></app>
+ than Death -</l>
+                    <l>More previous - than Life - </l>
+                    <l>Confirms it at it's entrance -<app type="division"><lem><lb/></lem></app>
+ And </l>
+                    <l>Usurps it - of itself - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tastes Death - the first -<app type="division"><lem><lb/></lem></app>
+ to hand the sting</l>
+                    <l>The Second - to it's friend - </l>
+                    <l>Disarms the little interval - </l>
+                    <l>Deposits Him with God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then hovers - an inferior<app type="division"><lem><lb/></lem></app>
+ Guard - </l>
+                    <l>Lest this Beloved Charge</l>
+                    <l><add type="alternate" extent="Need">Miss</add>
+Need - once in an Eternity - </l>
+                    <l>A<add type="alternate" extent="smaller">lesser -</add>
+ smaller than the Large - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

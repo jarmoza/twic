@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My portion is defeat today </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F704A">
+                <lg type="stanza">
+                    <l>My Portion is Defeat - today -</l>
+                    <l>A paler luck than Victory - </l>
+                    <l>Less Paeans - fewer Bells - </l>
+                    <l>The Drums dont follow Me -<app type="division"><lem><lb/></lem></app>
+ with tunes - </l>
+                    <l>Defeat - a somewhat slower -<app type="division"><lem><lb/></lem></app>
+ means -</l>
+                    <l>More<add type="alternate" extent="Arduous">difficult -</add>
+ Arduous than Balls - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="emendation"><lem>Tis</lem><rdg>&#x27;Tis</rdg></app>
+ populous with Bone<app type="division"><lem><lb/></lem></app>
+ and stain - </l>
+                    <l>And Men too straight to<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="stoop">bend</add>
+ stoop again - </l>
+                    <l>And Piles of solid Moan - </l>
+                    <l>And Chips of Blank - in<app type="division"><lem><lb/></lem></app>
+ Boyish Eyes -</l>
+                    <l>And<add type="alternate" extent="scraps">shreds</add>
+ scraps of Prayer - </l>
+                    <l>And Death's surprise, </l>
+                    <l>Stamped visible - in stone -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>There's<add type="alternate" extent="somewhat">something</add>
+ somewhat prouder,<app type="division"><lem><lb/></lem></app>
+ Over there - </l>
+                    <l>The Trumpets tell it to<app type="division"><lem><lb/></lem></app>
+ the Air -</l>
+                    <l>How different Victory </l>
+                    <l>To Him who has it - and<app type="division"><lem><lb/></lem></app>
+ the One </l>
+                    <l>Who to have had it,<app type="division"><lem><lb/></lem></app>
+ would have been </l>
+                    <l>Contenteder - to die - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

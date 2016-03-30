@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The skies cant keep their secret! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F213A">
+                <lg type="stanza">
+                    <l>The Skies cant keep their secret!</l>
+                    <l>They tell it to the Hills - </l>
+                    <l>The Hills just tell the Orchards - </l>
+                    <l>And they - the Daffodils!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Bird - by chance - that goes that<app type="division"><lem><lb/></lem></app>
+ way -</l>
+                    <l>Soft overhears the whole - </l>
+                    <l>If I should bribe the little Bird - </l>
+                    <l>Who knows but <em>she</em> would tell?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I think I wont - however - </l>
+                    <l>It's finer - not to know -</l>
+                    <l>If Summer were <em>an axiom</em> - </l>
+                    <l>What sorcery had <em>snow?</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So keep your secret - Father!  </l>
+                    <l>I would not - if I could - </l>
+                    <l>Know what the Sapphire Fellows, do,</l>
+                    <l>In your new-fashioned world!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>None who saw it ever told it
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1110">
+                <lg type="stanza">
+                    <l><app type="revision"><lem>They</lem><rdg>They</rdg></app>
+None who saw it ever told it</l>
+                    <l>'Tis as hid as Death</l>
+                    <l>Had for that specific treasure</l>
+                    <l>A departing breath --</l>
+                    <l>Surfaces <app type="revision"><lem>can</lem><rdg>can</rdg></app>
+may be <app type="revision"><lem>related</lem><rdg>related</rdg></app>
+invested</l>
+                    <l>Did the Diamond grow</l>
+                    <l>General as the Dandelion</l>
+                    <l>Would you <app type="revision"><lem>seek</lem><rdg>seek</rdg></app>
+serve it so?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

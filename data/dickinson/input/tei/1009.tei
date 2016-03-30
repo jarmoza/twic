@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pain has an element of blank </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F760A">
+                <lg type="stanza">
+                    <l>Pain - has an Element<app type="division"><lem><lb/></lem></app>
+ of Blank -</l>
+                    <l>It cannot recollect </l>
+                    <l>When it begun - Or if<app type="division"><lem><lb/></lem></app>
+ there were </l>
+                    <l>A time when it was not - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It has no Future - but itself -</l>
+                    <l>It's Infinite contain </l>
+                    <l>It's Past - enlightened to<app type="division"><lem><lb/></lem></app>
+ perceive </l>
+                    <l>New Periods - Of Pain.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

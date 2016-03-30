@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It ceased to hurt me, though so slow </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F421A">
+                <lg type="stanza">
+                    <l>It ceased to hurt me, though<app type="division"><lem><lb/></lem></app>
+ so slow</l>
+                    <l>I could not see the<add type="alternate" extent="trouble">Anguish -</add>
+ trouble go - </l>
+                    <l>But only knew by looking back - </l>
+                    <l>That something - had obscured <app type="division"><lem><lb/></lem></app>
+ the Track -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor when it altered, I could<app type="division"><lem><lb/></lem></app>
+ say,</l>
+                    <l>For I had worn it, every day, </l>
+                    <l>As constant as the Childish <add type="reading">frock -</add>
+</l>
+                    <l>I hung opon the Peg, at night.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But not the Grief - that<app type="division"><lem><lb/></lem></app>
+ nestled Close </l>
+                    <l>As Needles - ladies softly press</l>
+                    <l>To Cushions Cheeks - </l>
+                    <l>To keep their place -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor what consoled it, I could<app type="division"><lem><lb/></lem></app>
+ trace - </l>
+                    <l>Except, whereas 'twas Wilderness - </l>
+                    <l>It's better - almost Peace -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

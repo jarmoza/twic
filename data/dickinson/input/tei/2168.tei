@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He lived the life of ambush </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1571C">
+                <lg type="stanza">
+                    <l>Who abdicated<app type="division"><lem><lb/></lem></app>
+ Ambush </l>
+                    <l>And went the<app type="division"><lem><lb/></lem></app>
+ way of Dusk,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And now<app type="division"><lem><lb/></lem></app>
+ against his<app type="division"><lem><lb/></lem></app>
+ subtle name </l>
+                    <l>There stands<app type="division"><lem><lb/></lem></app>
+ an Asterisk </l>
+                    <l>As confident<app type="division"><lem><lb/></lem></app>
+ of him as we -</l>
+                    <l>Impregnable <app type="division"><lem><lb/></lem></app>
+we are - </l>
+                    <l>The whole<app type="division"><lem><lb/></lem></app>
+ of Immortality </l>
+                    <l>Secreted in<app type="division"><lem><lb/></lem></app>
+ a Star - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

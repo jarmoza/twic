@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Given in marriage unto thee,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-113">
+                <lg type="stanza">
+                    <l>Given in marriage unto thee,</l>
+                    <l>Oh, thou celestial host!</l>
+                    <l>Bride of the Father and the Son,</l>
+                    <l>Bride of the Holy Ghost!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Other betrothal shall dissolve,</l>
+                    <l>Wedlock of will decay;</l>
+                    <l>Only the keeper of this seal</l>
+                    <l>Conquers mortality.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

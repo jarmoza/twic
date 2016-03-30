@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Things that never can come back, are several --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1515">
+                <lg type="stanza">
+                    <l>The Things that never can come back, are several --</l>
+                    <l>Childhood -- some forms of Hope -- the Dead --</l>
+                    <l>Though Joys -- like Men -- may sometimes make a Journey --</l>
+                    <l>And still abide --</l>
+                    <l>We do not mourn for Traveler, or Sailor,</l>
+                    <l>Their Routes are fair --</l>
+                    <l>But think enlarged of all that they will tell us</l>
+                    <l>Returning here --</l>
+                    <l>"Here!" There are typic "Heres" --</l>
+                    <l>Foretold Locations --</l>
+                    <l>The Spirit does not stand --</l>
+                    <l>Himself -- at whatsoever Fathom</l>
+                    <l>His Native Land --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

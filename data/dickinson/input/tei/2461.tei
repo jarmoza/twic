@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There is another sky,
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J2">
+                <lg type="stanza">
+                    <l>There is another sky,</l>
+                    <l>Ever serene and fair,</l>
+                    <l>And there is another sunshine,</l>
+                    <l>Though it be darkness there;</l>
+                    <l>Never mind faded forests, Austin,</l>
+                    <l>Never mind silent fields --</l>
+                    <l>Here is a little forest,</l>
+                    <l>Whose leaf is ever green;</l>
+                    <l>Here is a brighter garden,</l>
+                    <l>Where not a frost has been;</l>
+                    <l>In its unfading flowers</l>
+                    <l>I hear the bright bee hum;</l>
+                    <l>Prithee, my brother,</l>
+                    <l>Into my garden come!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

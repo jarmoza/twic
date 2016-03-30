@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A bird came down the walk </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F359B">
+                <lg type="stanza">
+                    <l>A Bird came down<app type="division"><lem><lb/></lem></app>
+ the Walk - </l>
+                    <l>He did not know I<app type="division"><lem><lb/></lem></app>
+ saw - </l>
+                    <l>He bit an Angleworm<app type="division"><lem><lb/></lem></app>
+ in halves </l>
+                    <l>And ate the fellow, raw, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then he drank<app type="division"><lem><lb/></lem></app>
+ a Dew</l>
+                    <l>From a Convenient Grass - </l>
+                    <l>And then hopped sidewise<app type="division"><lem><lb/></lem></app>
+ to the Wall </l>
+                    <l>To let a Beetle pass -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He glanced with rapid<app type="division"><lem><lb/></lem></app>
+ eyes </l>
+                    <l>That hurried all around -</l>
+                    <l>They looked like frightened<app type="division"><lem><lb/></lem></app>
+ Beads, I thought - </l>
+                    <l>He stirred his Velvet<app type="division"><lem><lb/></lem></app>
+ Head </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Like One in danger, Cautious, </l>
+                    <l>I offered him a Crumb </l>
+                    <l>And he unrolled his<app type="division"><lem><lb/></lem></app>
+ feathers</l>
+                    <l>And rowed him softer<app type="division"><lem><lb/></lem></app>
+ home -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Than Oars divide the<app type="division"><lem><lb/></lem></app>
+ Ocean, </l>
+                    <l>Too silver for a seam - </l>
+                    <l>Or Butterflies, off Banks<app type="division"><lem><lb/></lem></app>
+ of Noon </l>
+                    <l>Leap, plashless as they<app type="division"><lem><lb/></lem></app>
+ swim.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She laid her docile Crescent down
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1396">
+                <lg type="stanza">
+                    <l>She laid her docile Crescent down</l>
+                    <l>And this confiding Stone</l>
+                    <l>Still states to Dates that have forgot</l>
+                    <l>The News that she is gone --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So constant to it's stolid trust,</l>
+                    <l>The Shaft that never knew --</l>
+                    <l>It shames the Constancy that fled</l>
+                    <l>Before it's emblem flew --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

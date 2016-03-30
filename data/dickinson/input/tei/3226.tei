@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My Faith is larger than the Hills -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J766">
+                <lg type="stanza">
+                    <l>My Faith is larger than the Hills --</l>
+                    <l>So when the Hills decay --</l>
+                    <l>My Faith must take the Purple Wheel</l>
+                    <l>To show the Sun the way --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis first He steps upon the Vane --</l>
+                    <l>And then -- upon the Hill --</l>
+                    <l>And then abroad the World He go</l>
+                    <l>To do His Golden Will --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And if His Yellow feet should miss --</l>
+                    <l>The Bird would not arise --</l>
+                    <l>The Flowers would <app type="revision"><lem>sleep upon --</lem><rdg>sleep upon --</rdg></app>
+slumber on their Stems --</l>
+                    <l>No Bells have Paradise --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How dare I, therefore, stint a faith</l>
+                    <l>On which so vast depends --</l>
+                    <l>Lest <app type="revision"><lem>Universe --</lem><rdg>Universe --</rdg></app>
+<app type="revision"><lem>Deity --</lem><rdg>Deity --</rdg></app>
+Firmament should fail for me --</l>
+                    <l>The Rivet in the Bands</l>
+                </lg>
+                <lg type="stanza">
+                    <l>5.'Tis first] You see</l>
+                    <l>10.Bird] Day</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

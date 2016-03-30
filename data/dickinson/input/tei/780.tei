@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A precious mouldering pleasure &#x27;tis </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F569B">
+                <lg type="stanza">
+                    <l>A precious - mouldering<app type="division"><lem><lb/></lem></app>
+ pleasure - 'tis -</l>
+                    <l>To meet an Antique Book - </l>
+                    <l>In just the Dress his<app type="division"><lem><lb/></lem></app>
+ Century wore - </l>
+                    <l>A privilege - I think - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His venerable Hand to take -</l>
+                    <l>And warming in our own - </l>
+                    <l>A passage back - or two - to<app type="division"><lem><lb/></lem></app>
+ make - </l>
+                    <l>To Times when he - was young - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His quaint opinions - to inspect - </l>
+                    <l>His thought to ascertain</l>
+                    <l>On <app type="emendation"><lem>Thems</lem><rdg>Themes</rdg></app>
+ concern our mutual<app type="division"><lem><lb/></lem></app>
+ mind - </l>
+                    <l>The Literature of Man - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What interested Scholars - most - </l>
+                    <l>What Competitions ran -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>When Plato - was a Certainty -</l>
+                    <l>And Sophocles - a Man - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Sappho - was a living<app type="division"><lem><lb/></lem></app>
+ Girl - </l>
+                    <l>And Beatrice wore </l>
+                    <l>The Gown that Dante - deified - </l>
+                    <l>Facts Centuries before</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He traverses - familiar - </l>
+                    <l>As One should come to Town - </l>
+                    <l>And tell you all your Dreams -<app type="division"><lem><lb/></lem></app>
+ were true - </l>
+                    <l>He lived - where Dreams were born - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His presence is enchantment -</l>
+                    <l>You beg him not to go - </l>
+                    <l>Old Volumes shake their<app type="division"><lem><lb/></lem></app>
+ Vellum Heads </l>
+                    <l>And tantalize - just so - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

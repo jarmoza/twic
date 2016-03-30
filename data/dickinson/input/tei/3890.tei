@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who never wanted -- maddest Joy
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1430">
+                <lg type="stanza">
+                    <l>Who never wanted -- maddest Joy</l>
+                    <l>Remains to him unknown --</l>
+                    <l>The Banquet of Abstemiousness</l>
+                    <l><app type="revision"><lem>surpasses</lem><rdg>surpasses</rdg></app>
+<app type="revision"><lem>debases</lem><rdg>debases</rdg></app>
+Defaces that of Wine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Within it's <app type="revision"><lem>hope</lem><rdg>hope</rdg></app>
+reach, <app type="revision"><lem>and just</lem><rdg>and just</rdg></app>
+though yet ungrasped</l>
+                    <l>Desire's perfect Goal --</l>
+                    <l>No nearer -- lest the Actual --</l>
+                    <l>Should disenthrall thy soul --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

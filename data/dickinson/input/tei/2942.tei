@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We Cover Thee -- Sweet Face -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J482">
+                <lg type="stanza">
+                    <l>We Cover Thee -- Sweet Face --</l>
+                    <l>Not that We tire of Thee --</l>
+                    <l>But that Thyself fatigue of Us --</l>
+                    <l>Remember -- as Thou go --</l>
+                    <l>We follow Thee until</l>
+                    <l>Thou notice Us -- no more --</l>
+                    <l>And then -- reluctant -- turn away</l>
+                    <l>To Con Thee oer and oer --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And blame the scanty love</l>
+                    <l>We were Content to show --</l>
+                    <l>Augmented -- Sweet -- a Hundred fold --</l>
+                    <l>If Thou would'st take it -- now --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

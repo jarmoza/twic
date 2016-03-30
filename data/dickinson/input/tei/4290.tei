@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SUMMER SHOWER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-55">
+                <lg type="stanza">
+                    <l>A drop fell on the apple tree,</l>
+                    <l>Another on the roof;</l>
+                    <l>A half a dozen kissed the eaves,</l>
+                    <l>And made the gables laugh.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A few went out to help the brook,</l>
+                    <l>That went to help the sea.</l>
+                    <l>Myself conjectured, Were they pearls,</l>
+                    <l>What necklaces could be!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The dust replaced in hoisted roads,</l>
+                    <l>The birds jocoser sung;</l>
+                    <l>The sunshine threw his hat away,</l>
+                    <l>The orchards spangles hung.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The breezes brought dejected lutes,</l>
+                    <l>And bathed them in the glee;</l>
+                    <l>The East put out a single flag,</l>
+                    <l>And signed the fete away.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

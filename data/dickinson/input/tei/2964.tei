@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>You know that Portrait in the Moon -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J504">
+                <lg type="stanza">
+                    <l>You know that Portrait in the Moon --</l>
+                    <l>So tell me who 'tis like --</l>
+                    <l>The very Brow -- the stooping eyes --</l>
+                    <l>A -- fog for -- Say -- Whose Sake?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The very Pattern of the Cheek --</l>
+                    <l>It varies -- in the Chin --</l>
+                    <l>But -- Ishmael -- since we met -- 'tis long --</l>
+                    <l>And fashions -- intervene --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When Moon's at full -- 'Tis Thou -- I say --</l>
+                    <l>My lips just hold the name --</l>
+                    <l>When crescent -- Thou art worn -- I <app type="revision"><lem>mind</lem><rdg>mind</rdg></app>
+note --</l>
+                    <l>But -- there -- the Golden Same --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when -- Some Night -- Bold -- slashing Clouds</l>
+                    <l>Cut Thee away from Me --</l>
+                    <l>That's easier -- than the other film</l>
+                    <l>That glazes Holiday --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>AT HOME</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-65">
+                <lg type="stanza">
+                    <l>The night was wide, and furnished scant</l>
+                    <l>With but a single star,</l>
+                    <l>That often as a cloud it met</l>
+                    <l>Blew out itself for fear.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wind pursued the little bush,</l>
+                    <l>And drove away the leaves</l>
+                    <l>November left; then clambered up</l>
+                    <l>And fretted in the eaves.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No squirrel went abroad;</l>
+                    <l>A dog's belated feet</l>
+                    <l>Like intermittent plush were heard</l>
+                    <l>Adown the empty street.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To feel if blinds be fast,</l>
+                    <l>And closer to the fire</l>
+                    <l>Her little rocking-chair to draw,</l>
+                    <l>And shiver for the poor,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The housewife's gentle task.</l>
+                    <l>"How pleasanter," said she</l>
+                    <l>Unto the sofa opposite,</l>
+                    <l>"The sleet than May  no thee!"</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

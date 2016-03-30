@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The luxury to apprehend </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F819B">
+                <lg type="stanza">
+                    <l>The luxury to<app type="division"><lem><lb/></lem></app>
+ apprehend </l>
+                    <l>The luxury 'twould<app type="division"><lem><lb/></lem></app>
+ be </l>
+                    <l>To look at thee<app type="division"><lem><lb/></lem></app>
+ a single time </l>
+                    <l>An Epicure of Me </l>
+                    <l>In whatsoever<app type="division"><lem><lb/></lem></app>
+ Presence makes</l>
+                    <l>Till for a further<app type="division"><lem><lb/></lem></app>
+ food </l>
+                    <l>I scarcely recollect<app type="division"><lem><lb/></lem></app>
+ to starve<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>So first am I<app type="division"><lem><lb/></lem></app>
+ supplied - </l>
+                    <l>The luxury to<app type="division"><lem><lb/></lem></app>
+ meditate </l>
+                    <l>The luxury it was</l>
+                    <l>To banquet on<app type="division"><lem><lb/></lem></app>
+ thy Countenance </l>
+                    <l>A Sumptuousness<app type="division"><lem><lb/></lem></app>
+ bestows </l>
+                    <l>On plainer Days, </l>
+                    <l>Whose Table, far<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>As Certainty - can see -</l>
+                    <l>Is laden with a<app type="division"><lem><lb/></lem></app>
+ single Crumb -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Consciousness -<app type="division"><lem><lb/></lem></app>
+ of Thee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

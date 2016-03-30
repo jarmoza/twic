@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It would not know if it were spurned </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1615A">
+                <lg type="stanza">
+                    <l>It would not<app type="division"><lem><lb/></lem></app>
+ know if it were<app type="division"><lem><lb/></lem></app>
+ spurned, </l>
+                    <l>This gallant<app type="division"><lem><lb/></lem></app>
+ little flower - </l>
+                    <l>How therefore<app type="division"><lem><lb/></lem></app>
+ safe to be a<app type="division"><lem><lb/></lem></app>
+ flower </l>
+                    <l>If one would<app type="division"><lem><lb/></lem></app>
+ tamper there.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To enter, it<app type="division"><lem><lb/></lem></app>
+ would not<app type="division"><lem><lb/></lem></app>
+ aspire -</l>
+                    <l>But may it<app type="division"><lem><lb/></lem></app>
+ not despair<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>That it is<app type="division"><lem><lb/></lem></app>
+ not a Cavalier, </l>
+                    <l>To dare and<app type="division"><lem><lb/></lem></app>
+ perish there?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

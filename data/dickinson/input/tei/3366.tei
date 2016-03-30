@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Admirations -- and Contempts -- of time -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J906">
+                <lg type="stanza">
+                    <l>The Admirations -- and Contempts -- of time --</l>
+                    <l>Show justest -- through an Open Tomb --</l>
+                    <l>The Dying -- as it were a Hight</l>
+                    <l>Reorganizes Estimate</l>
+                    <l>And what We saw not</l>
+                    <l>We distinguish clear --</l>
+                    <l>And mostly -- see not</l>
+                    <l>What We saw before --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Compound Vision --</l>
+                    <l>Light -- enabling Light --</l>
+                    <l>The Finite -- furnished</l>
+                    <l>With the Infinite --</l>
+                    <l>Convex -- and Concave Witness --</l>
+                    <l>Back -- toward Time --</l>
+                    <l>And forward --</l>
+                    <l>Toward the God of Him --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

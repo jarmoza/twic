@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I many times thought Peace had come 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J739">
+                <lg type="stanza">
+                    <l>I many times thought Peace had come</l>
+                    <l>When Peace was far away --</l>
+                    <l>As Wrecked Men -- deem they sight the Land --</l>
+                    <l>At Centre of the Sea --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And struggle slacker -- but to prove</l>
+                    <l>As hopelessly as I --</l>
+                    <l>How many the fictitious Shores --</l>
+                    <l><app type="revision"><lem>Before the Harbor be --</lem><rdg>Before the Harbor be --</rdg></app>
+Or any Harbor be --</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

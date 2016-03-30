@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The pedigree of Honey 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1627">
+                <lg type="stanza">
+                    <l>The pedigree of Honey</l>
+                    <l>Does not concern the Bee,</l>
+                    <l>Nor lineage of Ecstasy</l>
+                    <l>Delay the Butterfly</l>
+                    <l>On spangled journeys to the peak</l>
+                    <l>Of some perceiveless thing --</l>
+                    <l>The right of way to Tripoli</l>
+                    <l>A more essential thing.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>version I</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Pedigree of Honey</l>
+                    <l>Does not concern the Bee --</l>
+                    <l>A Clover, any time, to him,</l>
+                    <l>Is Aristocracy --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>version II</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

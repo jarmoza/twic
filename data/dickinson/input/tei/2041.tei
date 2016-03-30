@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One of the ones that Midas touched </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1488D">
+                <lg type="stanza">
+                    <l>One of the ones<app type="division"><lem><lb/></lem></app>
+ that Midas touched </l>
+                    <l>Who failed to<app type="division"><lem><lb/></lem></app>
+ touch us all </l>
+                    <l>Was that confiding<app type="division"><lem><lb/></lem></app>
+ Prodigal </l>
+                    <l>The reeling Oriole - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So drunk he<app type="division"><lem><lb/></lem></app>
+ disavows it</l>
+                    <l>With badinage<app type="division"><lem><lb/></lem></app>
+ divine - </l>
+                    <l>So dazzling we<app type="division"><lem><lb/></lem></app>
+ mistake him </l>
+                    <l>For an alighting<app type="division"><lem><lb/></lem></app>
+ Mine -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Pleader -<app type="division"><lem><lb/></lem></app>
+ a Dissembler - </l>
+                    <l>An Epicure - a<app type="division"><lem><lb/></lem></app>
+ Thief -</l>
+                    <l>Betimes an<app type="division"><lem><lb/></lem></app>
+ Oratorio - </l>
+                    <l>An Ecstasy<app type="division"><lem><lb/></lem></app>
+ in chief - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Jesuit of<app type="division"><lem><lb/></lem></app>
+ Orchards </l>
+                    <l>He cheats as<app type="division"><lem><lb/></lem></app>
+ he enchants </l>
+                    <l>Of an entire<app type="division"><lem><lb/></lem></app>
+ Attar</l>
+                    <l>For his decamping<app type="division"><lem><lb/></lem></app>
+ wants - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The splendor of<app type="division"><lem><lb/></lem></app>
+ a Burmah </l>
+                    <l>The Meteor of<app type="division"><lem><lb/></lem></app>
+ Birds, </l>
+                    <l>Departing like<app type="division"><lem><lb/></lem></app>
+ a Pageant </l>
+                    <l>Of Ballads and<app type="division"><lem><lb/></lem></app>
+ of Bards -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I never thought<app type="division"><lem><lb/></lem></app>
+ that Jason<app type="division"><lem><lb/></lem></app>
+ sought </l>
+                    <l>For any Golden<app type="division"><lem><lb/></lem></app>
+ Fleece </l>
+                    <l>But then I am<app type="division"><lem><lb/></lem></app>
+ a rural Man<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>With thoughts<app type="division"><lem><lb/></lem></app>
+ that make for<app type="division"><lem><lb/></lem></app>
+ Peace - </l>
+                    <l>But if there<app type="division"><lem><lb/></lem></app>
+ were a Jason,</l>
+                    <l>Tradition bear<app type="division"><lem><lb/></lem></app>
+ with me </l>
+                    <l>Behold his<app type="division"><lem><lb/></lem></app>
+ lost Aggrandizement </l>
+                    <l>Opon the<app type="division"><lem><lb/></lem></app>
+ Apple Tree - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

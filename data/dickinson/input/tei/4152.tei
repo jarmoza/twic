@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The right to perish might be tho&#x27;t
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1692">
+                <lg type="stanza">
+                    <l>The right to perish might be tho't</l>
+                    <l>An undisputed right</l>
+                    <l>Attempt it, and the Universe</l>
+                    <l>Upon the opposite</l>
+                    <l>Will concentrate it's officers --</l>
+                    <l>You cannot even die</l>
+                    <l>But nature and mankind must pause</l>
+                    <l>To pay you scrutiny --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

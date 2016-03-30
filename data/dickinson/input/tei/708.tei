@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A curious cloud surprised the sky </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F509A">
+                <lg type="stanza">
+                    <l>A curious Cloud surprised<app type="division"><lem><lb/></lem></app>
+ the Sky,</l>
+                    <l>'Twas like a sheet with<app type="division"><lem><lb/></lem></app>
+ Horns; </l>
+                    <l>The sheet was Blue - </l>
+                    <l>The Antlers Gray - </l>
+                    <l>It almost touched the<app type="division"><lem><lb/></lem></app>
+ Lawns.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So low it leaned - then<app type="division"><lem><lb/></lem></app>
+ statelier drew - </l>
+                    <l>And trailed like robes away; </l>
+                    <l>A Queen adown a satin<app type="division"><lem><lb/></lem></app>
+ aisle, </l>
+                    <l>Had not the majesty.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

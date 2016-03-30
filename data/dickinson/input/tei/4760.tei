@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Today or this noon</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-78">
+                <lg type="stanza">
+                    <l>Today or this noon</l>
+                    <l>She dwelt so close,</l>
+                    <l>I almost touched her;</l>
+                    <l>Tonight she lies</l>
+                    <l>Past neighborhood --</l>
+                    <l>And bough and steeple --</l>
+                    <l>Now past surmise.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

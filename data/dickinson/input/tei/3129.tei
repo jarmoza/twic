@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No Romance sold unto
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J669">
+                <lg type="stanza">
+                    <l>No Romance sold unto</l>
+                    <l>Could so enthrall a Man</l>
+                    <l>As the perusal of</l>
+                    <l>His Individual One --</l>
+                    <l>'Tis Fiction's -- to dilute to Plausibility</l>
+                    <l>Our Novel -- When 'tis small enough</l>
+                    <l>To Credit -- 'Tis'nt true!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

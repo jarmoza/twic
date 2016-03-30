@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He forgot and I remembered </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F232A">
+                <lg type="stanza">
+                    <l>He forgot - and I - remembered -</l>
+                    <l>'Twas an everyday affair - </l>
+                    <l>Long ago as Christ and Peter - </l>
+                    <l>&quot;Warmed them&quot; at the &quot;Temple fire&quot;.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Thou wert with him&quot; - quoth &quot;the Damsel&quot;?</l>
+                    <l><em>&quot;No&quot;</em> - said Peter - 'twas'nt me - </l>
+                    <l>Jesus merely &quot;looked&quot; at Peter - </l>
+                    <l>Could I do aught else - to Thee?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

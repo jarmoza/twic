@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We&#x27;ll pass without the parting
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J996">
+                <lg type="stanza">
+                    <l>We'll pass without the parting</l>
+                    <l>So to spare</l>
+                    <l>Certificate of Absence --</l>
+                    <l>Deeming where</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I left Her I could find Her</l>
+                    <l>If I tried --</l>
+                    <l>This way, I keep from missing</l>
+                    <l>Those that died.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We learn in the retreating</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-108">
+                <lg type="stanza">
+                    <l>We learn in the retreating</l>
+                    <l>How vast an one</l>
+                    <l>Was recently among us.</l>
+                    <l>A perished sun</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Endears in the departure</l>
+                    <l>How doubly more</l>
+                    <l>Than all the golden presence</l>
+                    <l>It was before!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

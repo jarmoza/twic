@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Should you but fail at sea </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F275A">
+                <lg type="stanza">
+                    <l>Should you but fail<app type="division"><lem><lb/></lem></app>
+ at - Sea - </l>
+                    <l>In sight of me - </l>
+                    <l>Or doomed lie - </l>
+                    <l>Next Sun - to die - </l>
+                    <l>Or rap - at Paradise -<app type="division"><lem><lb/></lem></app>
+ unheard -</l>
+                    <l>I'd <em>harass God</em> - </l>
+                    <l>Until He let you<app type="division"><lem><lb/></lem></app>
+ in!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

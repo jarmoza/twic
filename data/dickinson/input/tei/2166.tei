@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He lived the life of ambush </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1571A">
+                <lg type="stanza">
+                    <l>subtle name -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As confident of<app type="division"><lem><lb/></lem></app>
+ him as we</l>
+                    <l>Impregnable we<app type="division"><lem><lb/></lem></app>
+ are </l>
+                    <l>The whole of immortality </l>
+                    <l>Deputed to a star - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The whole of immortality</l>
+                    <l>Intrenched within a star - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In snow thou comest
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1669">
+                <lg type="stanza">
+                    <l>In snow thou comest</l>
+                    <l>Thou shalt go with the resuming ground</l>
+                    <l>The sweet derision of the crow</l>
+                    <l>And Glee's advancing sound</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In fear thou comest</l>
+                    <l>Thou shalt go at such a gait of joy</l>
+                    <l>That men anew embark to live</l>
+                    <l>Upon the depth of thee --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

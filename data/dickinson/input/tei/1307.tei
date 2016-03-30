@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Faith is the pierless bridge </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F978A">
+                <lg type="stanza">
+                    <l>Faith - is the Pierless<app type="division"><lem><lb/></lem></app>
+ Bridge</l>
+                    <l>Supporting what We see </l>
+                    <l>Unto the Scene that<app type="division"><lem><lb/></lem></app>
+ We do not - </l>
+                    <l>Too slender for the eye </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It bears the Soul as<app type="division"><lem><lb/></lem></app>
+ bold</l>
+                    <l>As it were rocked<app type="division"><lem><lb/></lem></app>
+ in Steel </l>
+                    <l>With Arms of steel<app type="division"><lem><lb/></lem></app>
+ at either side - </l>
+                    <l>It joins - behind the Vail </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To what, could We<app type="division"><lem><lb/></lem></app>
+ presume </l>
+                    <l>The Bridge would<app type="division"><lem><lb/></lem></app>
+ cease to be</l>
+                    <l>To Our far, vascillating Feet </l>
+                    <l>A first Nescessity.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

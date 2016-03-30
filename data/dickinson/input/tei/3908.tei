@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How soft a Caterpillar steps -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1448">
+                <lg type="stanza">
+                    <l>How soft a Caterpillar steps --</l>
+                    <l>I find one on my Hand</l>
+                    <l>From such a velvet world it <app type="revision"><lem>came</lem><rdg>came</rdg></app>
+comes</l>
+                    <l>Such plushes at command</l>
+                    <l>It's soundless travels just arrest</l>
+                    <l>My slow -- terrestrial eye</l>
+                    <l><app type="revision"><lem>Intent upon it's mission quaint</lem><rdg>Intent upon it&#x27;s mission quaint</rdg></app>
+Intent upon it's own career</l>
+                    <l>What use has it for me --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

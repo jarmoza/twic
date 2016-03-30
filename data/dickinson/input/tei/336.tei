@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My eye is fuller than my vase </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F228A">
+                <lg type="stanza">
+                    <l>My eye is fuller than my vase -</l>
+                    <l><em>Her</em> Cargo - is of Dew - </l>
+                    <l>And still - my Heart - my eye outweighs - </l>
+                    <l>East India - for you!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

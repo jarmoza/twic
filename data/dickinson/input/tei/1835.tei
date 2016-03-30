@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Crisis is sweet and yet the heart </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1365A">
+                <lg type="stanza">
+                    <l>Crisis is sweet and yet the Heart </l>
+                    <l>Opon the hither side </l>
+                    <l>Has Dowers of Prospective </l>
+                    <l>Surrendered by the Tried - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Inquire of the proudest Rose</l>
+                    <l>Which rapture - she preferred </l>
+                    <l>And she would<add type="alternate" extent="tell you">answer</add>
+ tell you sighing - </l>
+                    <l>The<add type="alternate" extent="transport">rapture</add>
+ transport of the Bud - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

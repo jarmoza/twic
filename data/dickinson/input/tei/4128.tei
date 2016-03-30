@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If I could tell how glad I was
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1668">
+                <lg type="stanza">
+                    <l>If I could tell how glad I was</l>
+                    <l>I should not be so glad --</l>
+                    <l>But when I cannot make the Force</l>
+                    <l>Nor mould it into Word</l>
+                    <l>I know it is a sign</l>
+                    <l>That new Dilemma be</l>
+                    <l>From mathematics further off</l>
+                    <l>Than from Eternity</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cried at pity - not at pain </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F394A">
+                <lg type="stanza">
+                    <l>I cried at Pity - not at Pain -</l>
+                    <l>I heard a Woman say </l>
+                    <l>&quot;Poor Child&quot; - and something<app type="division"><lem><lb/></lem></app>
+ in her voice </l>
+                    <l><add type="alternate" extent="Convinced">Convicted</add>
+Convinced <add type="reading">me</add>
+ <add type="reading">of me</add>
+of me -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So long I fainted, to myself</l>
+                    <l>It seemed the common way, </l>
+                    <l>And Health, and Laughter,<app type="division"><lem><lb/></lem></app>
+ curious things - </l>
+                    <l>To look at, like a Toy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To sometimes hear &quot;Rich people&quot; buy - </l>
+                    <l>And see the Parcel rolled -</l>
+                    <l>And carried, <add type="alternate" extent="we">I</add>
+we suppose<add type="reading">d</add>
+ - to Heaven,</l>
+                    <l>For children, made of Gold - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But not to touch, or wish for, </l>
+                    <l>Or think of, with a sigh -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>As so and so - had been to <add type="alternate" extent="us">me</add>
+us,</l>
+                    <l>Had God willed differently.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I wish I knew that Woman's<app type="division"><lem><lb/></lem></app>
+ name - </l>
+                    <l>So when she comes this way, </l>
+                    <l>To hold my life, and hold my<app type="division"><lem><lb/></lem></app>
+ ears </l>
+                    <l>For fear I hear her say</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She's &quot;sorry I am dead&quot; - again - </l>
+                    <l>Just when the Grave and I - </l>
+                    <l>Have sobbed ourselves almost<app type="division"><lem><lb/></lem></app>
+ to sleep, </l>
+                    <l>Our only Lullaby - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

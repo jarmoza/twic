@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The birds begun at four o&#x27;clock </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F504A">
+                <lg type="stanza">
+                    <l>The birds begun at four o'clock </l>
+                    <l>Their period for dawn </l>
+                    <l>A music numerous as space </l>
+                    <l>And neighboring as noon - </l>
+                    <l>I could not count their force</l>
+                    <l>Their numbers did expend </l>
+                    <l>As brook by brook bestows itself </l>
+                    <l>To multiply the pond </l>
+                    <l>Their listener was not </l>
+                    <l>Except occasional man</l>
+                    <l>In homely industry arrayed<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>To overtake the <add type="reading">morn.</add>
+</l>
+                    <l>Nor was it for applause </l>
+                    <l>That I could ascertain </l>
+                    <l>But independent extasy</l>
+                    <l>Of universe and men.  </l>
+                    <l>By six the flood had done </l>
+                    <l>No tumult there had been </l>
+                    <l>Of dressing, or departure - </l>
+                    <l>Yet all the band was gone.</l>
+                    <l>The sun engrossed the east - </l>
+                    <l>The day resumed the world - </l>
+                    <l>The miracle that introduced - </l>
+                    <l>Forgotten - as fulfilled.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These are the Nights that Beetles love -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1128">
+                <lg type="stanza">
+                    <l>These are the Nights that Beetles love --</l>
+                    <l>From Eminence remote</l>
+                    <l>Drives ponderous perpendicular</l>
+                    <l><app type="revision"><lem>This</lem><rdg>This</rdg></app>
+His figure intimate</l>
+                    <l>The <app type="revision"><lem>transport</lem><rdg>transport</rdg></app>
+terror of the Children</l>
+                    <l>The <app type="revision"><lem>jeopardy</lem><rdg>jeopardy</rdg></app>
+merriment of men</l>
+                    <l>Depositing his Thunder</l>
+                    <l>He hoists abroad again --</l>
+                    <l>A Bomb upon the Ceiling</l>
+                    <l>Is an improving thing --</l>
+                    <l>It keeps the nerves <app type="revision"><lem>progressive</lem><rdg>progressive</rdg></app>
+in progress</l>
+                    <l>Conjecture flourishing --</l>
+                    <l>Too dear the Summer evening</l>
+                    <l>Without discreet alarm --</l>
+                    <l>Supplied by Entomology</l>
+                    <l>With <app type="revision"><lem>a</lem><rdg>a</rdg></app>
+it's remaining charm</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

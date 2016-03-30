@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Those cattle smaller than a bee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1393A">
+                <lg type="stanza">
+                    <l>Those Cattle smaller<app type="division"><lem><lb/></lem></app>
+ than a Bee </l>
+                    <l>That herd opon<app type="division"><lem><lb/></lem></app>
+ the Eye - </l>
+                    <l>Whose tillage is<app type="division"><lem><lb/></lem></app>
+ the<add type="alternate" extent="passing">wandering</add>
+ passing Crumb - </l>
+                    <l>Those Cattle are<app type="division"><lem><lb/></lem></app>
+ the Fly - </l>
+                    <l>Of Barns for Winter -<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="blameless">ignorant</add>
+ blameless -</l>
+                    <l>Extemporaneous <app type="division"><lem><lb/></lem></app>
+stalls </l>
+                    <l>They found to our<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="objection">abhorrence</add>
+ objection - </l>
+                    <l>On Eligible Walls - </l>
+                    <l>Reserving the<app type="division"><lem><lb/></lem></app>
+ presumption </l>
+                    <l>To suddenly descend</l>
+                    <l>And gallop on the<app type="division"><lem><lb/></lem></app>
+ Furniture - </l>
+                    <l>Or<add type="alternate" extent="odiouser">otherwise &amp;#x2022; fataller -</add>
+ odiouser offend -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Of their peculiar<app type="division"><lem><lb/></lem></app>
+ calling </l>
+                    <l>Unqualified to judge </l>
+                    <l>To Nature we remand<app type="division"><lem><lb/></lem></app>
+ them</l>
+                    <l>To justify or scourge - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Father - I bring thee not myself </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F295B">
+                <lg type="stanza">
+                    <l>Father - I bring thee - not<app type="division"><lem><lb/></lem></app>
+ myself -</l>
+                    <l>That were the little load - </l>
+                    <l>I bring thee the departed<app type="division"><lem><lb/></lem></app>
+ Heart </l>
+                    <l>I had not<add type="alternate" extent="strength">power</add>
+ strength<app type="division"><lem><lb/></lem></app>
+ to hold - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Heart I cherished<app type="division"><lem><lb/></lem></app>
+ in my own</l>
+                    <l>Till mine - too heavy grew - </l>
+                    <l>Yet - strangest - heavier - <app type="division"><lem><lb/></lem></app>
+ since it went -</l>
+                    <l>Is it too large for you?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

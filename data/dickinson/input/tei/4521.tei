@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>FORBIDDEN FRUIT</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-5">
+                <lg type="stanza">
+                    <l>Heaven is what I cannot reach!</l>
+                    <l>The apple on the tree,</l>
+                    <l>Provided it do hopeless hang,</l>
+                    <l>That 'heaven' is, to me.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The color on the cruising cloud,</l>
+                    <l>The interdicted ground</l>
+                    <l>Behind the hill, the house behind, </l>
+                    <l>There Paradise is found!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

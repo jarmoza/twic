@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It bloomed and dropt, a Single Noon -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J978">
+                <lg type="stanza">
+                    <l>It bloomed and dropt, a Single Noon --</l>
+                    <l>The Flower -- distinct and Red --</l>
+                    <l>I, passing, thought another Noon</l>
+                    <l>Another in it's stead</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Will equal glow, and thought no More</l>
+                    <l>But came another Day</l>
+                    <l>To find the Species disappeared --</l>
+                    <l>The Same Locality --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sun in place -- no other fraud</l>
+                    <l>On Nature's <app type="revision"><lem>General Sum</lem><rdg>General Sum</rdg></app>
+perfect Sum --</l>
+                    <l>Had I but lingered Yesterday --</l>
+                    <l>Was my retrieveless blame --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>Much Flowers of this and further Zones</l>
+                    <l>Have perished in my Hands</l>
+                    <l>For seeking it's <app type="revision"><lem>similitude -- closed</lem><rdg>similitude -- closed</rdg></app>
+<app type="revision"><lem>My Opportunity</lem><rdg>My Opportunity</rdg></app>
+Resemblance --</l>
+                    <l>But unapproached it stands --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The single Flower of the Earth</l>
+                    <l>That I, in passing by</l>
+                    <l>Unconscious was -- Great Nature's Face</l>
+                    <l><app type="revision"><lem>Went infinite by Me --</lem><rdg>Went infinite by Me --</rdg></app>
+Passed infinite by Me --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

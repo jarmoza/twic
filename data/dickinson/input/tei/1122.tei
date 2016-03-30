@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He who in himself believes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F835A">
+                <lg type="stanza">
+                    <l>He who in Himself believes -</l>
+                    <l>Fraud cannot presume - </l>
+                    <l>Faith is Constancy's Result - </l>
+                    <l>And<add type="alternate" extent="assumes">infers</add>
+ assumes - from Home - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cannot perish, though<app type="division"><lem><lb/></lem></app>
+ it fail</l>
+                    <l>Every second time - </l>
+                    <l><add type="alternate" extent="But">When - &amp;#x2022; if -</add>
+But defaced Vicariously - </l>
+                    <l>For<add type="alternate" extent="Some Other Shame.">another shame -</add>
+ Some Other Shame.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

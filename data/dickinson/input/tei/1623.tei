@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mountains stood in haze </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1225A">
+                <lg type="stanza">
+                    <l>The Mountains<app type="division"><lem><lb/></lem></app>
+ stood in Haze -</l>
+                    <l>The Valleys<app type="division"><lem><lb/></lem></app>
+ stopped below </l>
+                    <l>And went or<app type="division"><lem><lb/></lem></app>
+ waited as they<app type="division"><lem><lb/></lem></app>
+ liked </l>
+                    <l>The River and<app type="division"><lem><lb/></lem></app>
+ the Sky.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>At leisure was<app type="division"><lem><lb/></lem></app>
+ the Sun -</l>
+                    <l>His interests<app type="division"><lem><lb/></lem></app>
+ of Fire </l>
+                    <l>A little from<app type="division"><lem><lb/></lem></app>
+ remark withdrawn - </l>
+                    <l>The Twilight<app type="division"><lem><lb/></lem></app>
+ spoke the Spire.<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>So soft opon<app type="division"><lem><lb/></lem></app>
+ the Scene </l>
+                    <l>The Act of evening<app type="division"><lem><lb/></lem></app>
+ fell</l>
+                    <l>We felt how<app type="division"><lem><lb/></lem></app>
+ neighborly a thing </l>
+                    <l>Was the<app type="division"><lem><lb/></lem></app>
+ Invisible.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A chilly Peace infests the Grass
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1443">
+                <lg type="stanza">
+                    <l>A <app type="revision"><lem>lonesome --</lem><rdg>lonesome --</rdg></app>
+<app type="revision"><lem>warning --</lem><rdg>warning --</rdg></app>
+chilly Peace infests the Grass</l>
+                    <l>The Sun respectful lies --</l>
+                    <l>Not any Trance of industry</l>
+                    <l><app type="revision"><lem>The</lem><rdg>The</rdg></app>
+These shadows scrutinize --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Whose Allies go no more <app type="revision"><lem>abroad --</lem><rdg>abroad --</rdg></app>
+astray</l>
+                    <l>For <app type="revision"><lem>Honor --</lem><rdg>Honor --</rdg></app>
+<app type="revision"><lem>welcome</lem><rdg>welcome</rdg></app>
+service or for Glee --</l>
+                    <l><app type="revision"><lem>though</lem><rdg>though</rdg></app>
+But all mankind deliver here</l>
+                    <l>From whatsoever sea --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

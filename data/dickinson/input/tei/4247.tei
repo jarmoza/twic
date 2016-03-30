@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I asked no other thing,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-12">
+                <lg type="stanza">
+                    <l>I asked no other thing,</l>
+                    <l>No other was denied.</l>
+                    <l>I offered Being for it;</l>
+                    <l>The mighty merchant smiled.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Brazil? He twirled a button,</l>
+                    <l>Without a glance my way:</l>
+                    <l>"But, madam, is there nothing else</l>
+                    <l>That we can show to-day?"</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

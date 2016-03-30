@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Whether my bark went down at sea,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-24">
+                <lg type="stanza">
+                    <l>Whether my bark went down at sea,</l>
+                    <l>Whether she met with gales,</l>
+                    <l>Whether to isles enchanted</l>
+                    <l>She bent her docile sails;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By what mystic mooring</l>
+                    <l>She is held to-day, </l>
+                    <l>This is the errand of the eye</l>
+                    <l>Out upon the bay.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

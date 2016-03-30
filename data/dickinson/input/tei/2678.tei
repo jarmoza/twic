@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Is it true, dear Sue? 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J218">
+                <lg type="stanza">
+                    <l>Is it true, dear Sue?</l>
+                    <l>Are there two?</l>
+                    <l>I should'nt like to come</l>
+                    <l>For fear of joggling Him!</l>
+                    <l>If I could shut him up</l>
+                    <l>In a Coffee Cup,</l>
+                    <l>Or tie him to a pin</l>
+                    <l>Till I got in --</l>
+                    <l>Or make him fast</l>
+                    <l>To "Toby's" fist --</l>
+                    <l>Hist! Whist! I'd come!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

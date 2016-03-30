@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We should not mind so small a flower,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-85">
+                <lg type="stanza">
+                    <l>We should not mind so small a flower,</l>
+                    <l>Except it quiet bring</l>
+                    <l>Our little garden that we lost</l>
+                    <l>Back to the lawn again.</l>
+                    <l>So spicy her Carnations red,</l>
+                    <l>So drunken reel her Bees,</l>
+                    <l>So silver steal a hundred Flutes</l>
+                    <l>From out a hundred trees,</l>
+                    <l>That whoso sees this little flower,</l>
+                    <l>By faith may clear behold</l>
+                    <l>The Bobolinks around the throne,</l>
+                    <l>And Dandelions gold.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

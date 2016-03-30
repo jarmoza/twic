@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To know just how he suffered would be dear </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F688A">
+                <lg type="stanza">
+                    <l>To know just how He <app type="emendation"><lem>suf - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ fered</lem><rdg>suffered</rdg></app>
+ - would be dear -</l>
+                    <l>To know if any Human eyes<app type="division"><lem><lb/></lem></app>
+ were near </l>
+                    <l>To whom He could entrust<app type="division"><lem><lb/></lem></app>
+ His wavering gaze - </l>
+                    <l>Until it settled broad - on<app type="division"><lem><lb/></lem></app>
+ Paradise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To know if He was patient -<app type="division"><lem><lb/></lem></app>
+ part content -</l>
+                    <l>Was Dying as He thought -<app type="division"><lem><lb/></lem></app>
+ or different - </l>
+                    <l>Was it a pleasant Day<app type="division"><lem><lb/></lem></app>
+ to die - </l>
+                    <l>And did the Sunshine<app type="division"><lem><lb/></lem></app>
+ face His way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What was His furthest mind -<app type="division"><lem><lb/></lem></app>
+ of Home - or God - </l>
+                    <l>Or What the Distant say -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>At News that He ceased<app type="division"><lem><lb/></lem></app>
+ Human Nature </l>
+                    <l>Such a Day - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And Wishes - Had He any - </l>
+                    <l>Just His Sigh - accented - </l>
+                    <l>Had been legible - to Me -</l>
+                    <l>And was He Confident<app type="division"><lem><lb/></lem></app>
+ until </l>
+                    <l>Ill fluttered out - in <app type="emendation"><lem>Ever - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ lasting</lem><rdg>Everlasting</rdg></app>
+ Well - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And if He spoke - What<app type="division"><lem><lb/></lem></app>
+ name was Best - </l>
+                    <l>What<add type="alternate" extent="last">first</add>
+ last </l>
+                    <l>What one broke off with</l>
+                    <l>At the Drowsiest - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Was he afraid - or tranquil - </l>
+                    <l>Might He know </l>
+                    <l>How Conscious Consciousness -<app type="division"><lem><pb/></lem></app>
+ could grow - </l>
+                    <l>Till Love that was - and<app type="division"><lem><lb/></lem></app>
+ Love too best to be -</l>
+                    <l>Meet - and the Junction<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="be">mean -</add>
+ be Eternity </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

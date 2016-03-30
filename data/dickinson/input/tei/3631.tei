@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On the World you colored
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1171">
+                <lg type="stanza">
+                    <l>On the World you colored</l>
+                    <l>Morning painted rose --</l>
+                    <l>Idle his Vermillion</l>
+                    <l>Aimless <app type="revision"><lem>stole</lem><rdg>stole</rdg></app>
+crept the Glows</l>
+                    <l>Over Realms of Orchards</l>
+                    <l>I the Day before</l>
+                    <l>Conquered with the Robin --</l>
+                    <l>Misery, how fair</l>
+                    <l>Till your wrinkled Finger</l>
+                    <l><app type="revision"><lem>pushed</lem><rdg>pushed</rdg></app>
+Shored the sun away</l>
+                    <l>Midnight's awful Pattern</l>
+                    <l>In the Goods of Day --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

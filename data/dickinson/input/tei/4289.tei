@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A little road not made of man,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-54">
+                <lg type="stanza">
+                    <l>A little road not made of man,</l>
+                    <l>Enabled of the eye,</l>
+                    <l>Accessible to thill of bee,</l>
+                    <l>Or cart of butterfly.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If town it have, beyond itself,</l>
+                    <l>'T is that I cannot say;</l>
+                    <l>I only sigh,  no vehicle</l>
+                    <l>Bears me along that way.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

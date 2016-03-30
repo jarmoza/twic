@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Given in marriage unto thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F818A">
+                <lg type="stanza">
+                    <l>Given in Marriage<app type="division"><lem><lb/></lem></app>
+ unto Thee </l>
+                    <l>Oh Thou Celestial<app type="division"><lem><lb/></lem></app>
+ Host - </l>
+                    <l>Bride of the<app type="division"><lem><lb/></lem></app>
+ Father and the<app type="division"><lem><lb/></lem></app>
+ Son, </l>
+                    <l>Bride of the<app type="division"><lem><lb/></lem></app>
+ Holy Ghost.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

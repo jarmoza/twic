@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The most triumphant bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1285A">
+                <lg type="stanza">
+                    <l>The most triumphant<app type="division"><lem><lb/></lem></app>
+ Bird </l>
+                    <l>I ever knew or met </l>
+                    <l>Embarked opon a Twig<app type="division"><lem><lb/></lem></app>
+ Today </l>
+                    <l>And till Dominion set </l>
+                    <l>I perish to behold<add type="alternate" extent="another such a might">so competent a sight</add>
+ another<app type="division"><lem><lb/></lem></app>
+ such a might</l>
+                    <l>And sang for nothing<app type="division"><lem><lb/></lem></app>
+ in the World </l>
+                    <l>But<add type="alternate" extent="competent">absolute &amp;#x2022; &lt;u&gt;impudent&lt;/u&gt;</add>
+ competent Delight - </l>
+                    <l>Retired and resumed </l>
+                    <l>His transitive estate </l>
+                    <l>To what delicious accident</l>
+                    <l>Does finest Glory fit - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

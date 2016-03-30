@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So large my Will
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1024">
+                <lg type="stanza">
+                    <l>So large my Will</l>
+                    <l>The little that I may</l>
+                    <l>Embarrasses</l>
+                    <l>Like gentle infamy --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Affront to Him</l>
+                    <l>For whom the Whole were small</l>
+                    <l>Affront to me</l>
+                    <l>Who know His Meed of all.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Earth at the best</l>
+                    <l>Is but a scanty Toy --</l>
+                    <l>Bought, carried Home</l>
+                    <l>To Immortality.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It looks so small</l>
+                    <l>We chiefly wonder then</l>
+                    <l>At our Conceit</l>
+                    <l>In purchasing.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It knew no lapse nor diminution </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F568B">
+                <lg type="stanza">
+                    <l>It knew no lapse,<app type="division"><lem><lb/></lem></app>
+ nor Diminution -</l>
+                    <l>But large - serene - </l>
+                    <l>Burned on - until through<app type="division"><lem><lb/></lem></app>
+ Dissolution - </l>
+                    <l>It failed from Men - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could not deem these<app type="division"><lem><lb/></lem></app>
+ Planetary forces</l>
+                    <l>Annulled - </l>
+                    <l>But<add type="alternate" extent="suffered an Exchange">Absent through Exchange -</add>
+ suffered an Exchange<app type="division"><lem><lb/></lem></app>
+ of Territory - </l>
+                    <l>Or World - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

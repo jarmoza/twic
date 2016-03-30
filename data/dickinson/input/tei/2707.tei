@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What would I give to see his face? 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J247">
+                <lg type="stanza">
+                    <l>What would I give to see his face?</l>
+                    <l>I'd give -- I'd give my life -- of course --</l>
+                    <l>But that is not enough!</l>
+                    <l>Stop just a minute -- let me think!</l>
+                    <l>I'd give my biggest Bobolink!</l>
+                    <l>That makes two -- Him -- and Life!</l>
+                    <l>You know who "June" is --</l>
+                    <l>I'd give her --</l>
+                    <l>Roses a day from Zenzibar --</l>
+                    <l>And Lily tubes -- like Wells --</l>
+                    <l>Bees -- by the furlong --</l>
+                    <l>Straits of Blue</l>
+                    <l>Navies of Butterflies -- sailed thro' --</l>
+                    <l>And dappled Cowslip Dells</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then I have "shares" in Primrose "Banks" --</l>
+                    <l>Daffodil Dowries -- spicy "Stocks" --</l>
+                    <l>Dominions -- broad as Dew --</l>
+                    <l>Bags of Doubloons -- adventurous Bees</l>
+                    <l>Brought me -- from firmamental seas --</l>
+                    <l>And Purple -- from Peru --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Now -- have I bought it --</l>
+                    <l>"Shylock"? Say!</l>
+                    <l>Sign me the Bond!</l>
+                    <l>"I vow to pay</l>
+                    <l>To Her -- who pledges this --</l>
+                    <l>One hour -- of her Sovreign's face"!</l>
+                    <l>Extatic Contract!</l>
+                    <l>Niggard Grace!</l>
+                    <l>My Kingdom's worth of Bliss!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

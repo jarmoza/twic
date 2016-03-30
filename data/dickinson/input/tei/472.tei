@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Put up my lute! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F324A">
+                <lg type="stanza">
+                    <l>Put up my lute!</l>
+                    <l>What of - my Music!  </l>
+                    <l>Since the sole ear I<app type="division"><lem><lb/></lem></app>
+ cared to charm - </l>
+                    <l>Passive - as Granite - laps<app type="division"><lem><lb/></lem></app>
+ my music - </l>
+                    <l>Sobbing - will suit - as well<app type="division"><lem><lb/></lem></app>
+ as psalm!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Would but the &quot;Memnon&quot; of the Desert - </l>
+                    <l>Teach me the strain </l>
+                    <l>That vanquished Him - </l>
+                    <l>When He - surrendered<app type="division"><lem><lb/></lem></app>
+ to the Sunrise - </l>
+                    <l>Maybe - that - would<app type="division"><lem><lb/></lem></app>
+ awaken - them!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

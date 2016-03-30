@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Remember me&quot; implored the thief! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1208A">
+                <lg type="stanza">
+                    <l>&quot;Remember me&quot; implored the Thief!</l>
+                    <l>Oh Hospitality!  </l>
+                    <l>My Guest &quot;Today in Paradise&quot; </l>
+                    <l>I give thee<app type="division"><lem><lb/></lem></app>
+ guaranty.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Courtesy<app type="division"><lem><lb/></lem></app>
+ will fair remain</l>
+                    <l>When the Delight<app type="division"><lem><lb/></lem></app>
+ is Dust </l>
+                    <l>With which we<app type="division"><lem><lb/></lem></app>
+ cite this mightiest<app type="division"><lem><lb/></lem></app>
+ case </l>
+                    <l>Of compensated<app type="division"><lem><lb/></lem></app>
+ trust.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of all we are<app type="division"><lem><lb/></lem></app>
+ allowed to hope<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>But Affidavit<app type="division"><lem><lb/></lem></app>
+ stands</l>
+                    <l>That this was<app type="division"><lem><lb/></lem></app>
+ due where most<app type="division"><lem><lb/></lem></app>
+ we fear </l>
+                    <l>Be unexpected<app type="division"><lem><lb/></lem></app>
+ Friends.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

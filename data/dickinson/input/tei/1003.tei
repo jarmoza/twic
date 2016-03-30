@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Let us play yesterday </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F754A">
+                <lg type="stanza">
+                    <l>Let Us play Yesterday -</l>
+                    <l>I - the Girl at School - </l>
+                    <l>You - and Eternity - the<app type="division"><lem><lb/></lem></app>
+ untold Tale - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Easing my famine </l>
+                    <l>At my Lexicon -</l>
+                    <l>Logarithm - had I - for Drink - </l>
+                    <l>'Twas a dry Wine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Somewhat different - must be - </l>
+                    <l>Dreams tint the Sleep - </l>
+                    <l>Cunning Reds of Morning</l>
+                    <l>Make the Blind - leap - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Still at the Egg-life - </l>
+                    <l>Chafing the Shell - </l>
+                    <l>When you troubled the Ellipse - </l>
+                    <l>And the Bird fell -<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Manacles be dim - they say - </l>
+                    <l>To the new Free - </l>
+                    <l>Liberty - commoner - </l>
+                    <l>Never could - to me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas my last gratitude</l>
+                    <l>When I slept - at night - </l>
+                    <l>'Twas the first Miracle </l>
+                    <l>Let in - with Light - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Can the Lark resume the Shell - </l>
+                    <l>Easier - for the Sky -</l>
+                    <l>Would'nt Bonds hurt more </l>
+                    <l>Than Yesterday?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Would'nt Dungeons sorer grate </l>
+                    <l>On the Man - free - </l>
+                    <l>Just long enough to taste -</l>
+                    <l>Then - doomed new -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>God of the Manacle </l>
+                    <l>As of the Free - </l>
+                    <l>Take not my Liberty </l>
+                    <l>Away from Me -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

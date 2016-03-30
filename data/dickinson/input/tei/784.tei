@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Two butterflies went out at noon </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F571C">
+                <lg type="stanza">
+                    <l>Two Butterflies went out at Noon </l>
+                    <l>And waltzed opon a Farm </l>
+                    <l>And then espied Circumference </l>
+                    <l>And caught a ride with him - </l>
+                    <l>Then lost themselves and found themselves</l>
+                    <l>In eddies of the sun </l>
+                    <l>Till Rapture missed Peninsula - </l>
+                    <l>And Both were wrecked in Noon - </l>
+                    <l>To all surviving Butterflies </l>
+                    <l>Be this Fatuity</l>
+                    <l>Example - and monition </l>
+                    <l>To entomology - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

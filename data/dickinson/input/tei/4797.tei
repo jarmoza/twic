@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The inundation of the Spring</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-115">
+                <lg type="stanza">
+                    <l>The inundation of the Spring</l>
+                    <l>Submerges every soul,</l>
+                    <l>It sweeps the tenement away</l>
+                    <l>But leaves the water whole.</l>
+                    <l>In which the Soul, at first alarmed,</l>
+                    <l>Seeks furtive for its shore,</l>
+                    <l>But acclimated, gropes no more</l>
+                    <l>For that Peninsular.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

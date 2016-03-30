@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Many a phrase has the English language </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F333A">
+                <lg type="stanza">
+                    <l>Many a phrase has the<app type="division"><lem><lb/></lem></app>
+ English language -</l>
+                    <l>I have heard but one - </l>
+                    <l>Low as the laughter of the<app type="division"><lem><lb/></lem></app>
+ Cricket, </l>
+                    <l>Loud, as the Thunder's Tongue - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Murmuring, like old Caspian<app type="division"><lem><lb/></lem></app>
+ Choirs,</l>
+                    <l>When the Tide's a'lull - </l>
+                    <l>Saying itself in new inflection - </l>
+                    <l>Like a Whippowil - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Breaking in bright <app type="emendation"><lem>Orthogra - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ phy</lem><rdg>Orthography</rdg></app>
+ </l>
+                    <l>On my simple sleep -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Thundering it's Prospective - </l>
+                    <l>Till I<add type="alternate" extent="stir,">Grope - &amp;#x2022; start -</add>
+ stir, and weep - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not for the Sorrow, done me - </l>
+                    <l>But the<add type="alternate" extent="push of Joy -">Pain of joy -</add>
+ push of Joy - </l>
+                    <l>Say it again, <add type="alternate" extent="Saxon"></add>
+Saxon!</l>
+                    <l>Hush - Only to me!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

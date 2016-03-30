@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To hang our head ostensibly,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-42">
+                <lg type="stanza">
+                    <l>To hang our head ostensibly,</l>
+                    <l>And subsequent to find</l>
+                    <l>That such was not the posture</l>
+                    <l>Of our immortal mind,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Affords the sly presumption</l>
+                    <l>That, in so dense a fuzz,</l>
+                    <l>You, too, take cobweb attitudes</l>
+                    <l>Upon a plane of gauze!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

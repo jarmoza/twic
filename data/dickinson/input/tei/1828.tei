@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Luck is not chance </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1360A">
+                <lg type="stanza">
+                    <l>Luck is not<app type="division"><lem><lb/></lem></app>
+ chance - </l>
+                    <l>It's Toil - </l>
+                    <l>Fortune's expensive<app type="division"><lem><lb/></lem></app>
+ smile </l>
+                    <l>Is earned - </l>
+                    <l>The Father of<app type="division"><lem><lb/></lem></app>
+ the Mine</l>
+                    <l>Is that <app type="emendation"><lem>old - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ fashioned</lem><rdg>old fashioned</rdg></app>
+ Coin </l>
+                    <l><add type="alternate" extent="We spurned -">Disowned -</add>
+We spurned - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

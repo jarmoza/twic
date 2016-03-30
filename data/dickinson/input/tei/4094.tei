@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Talk not to me of Summer Trees 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1634">
+                <lg type="stanza">
+                    <l>Talk not to me of Summer Trees</l>
+                    <l>The foliage of the mind</l>
+                    <l>A Tabernacle is for Birds</l>
+                    <l>Of no corporeal kind</l>
+                    <l>And winds do go that way at <app type="revision"><lem>Times</lem><rdg>Times</rdg></app>
+noon</l>
+                    <l>To their Etherial Homes</l>
+                    <l>Whose Bugles call the least of us</l>
+                    <l>To <app type="revision"><lem>unreported</lem><rdg>unreported</rdg></app>
+undepicted Realms</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

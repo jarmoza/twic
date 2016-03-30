@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A world made penniless by that departure </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1642B">
+                <lg type="stanza">
+                    <l>A World made<app type="division"><lem><lb/></lem></app>
+ <app type="emendation"><lem>pennineless</lem><rdg>penniless</rdg></app>
+ by that<app type="division"><lem><lb/></lem></app>
+ departure<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Of minor<app type="division"><lem><lb/></lem></app>
+ fabrics begs </l>
+                    <l>But <app type="emendation"><lem>sus - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ tenance</lem><rdg>sustenance</rdg></app>
+ is<app type="division"><lem><lb/></lem></app>
+ of the spirit </l>
+                    <l>The Gods<app type="division"><lem><lb/></lem></app>
+ but Dregs - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

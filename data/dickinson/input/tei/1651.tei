@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like brooms of steel </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1241A">
+                <lg type="stanza">
+                    <l>Like Brooms<app type="division"><lem><lb/></lem></app>
+ of Steel </l>
+                    <l>The Snow<app type="division"><lem><lb/></lem></app>
+ and Wind </l>
+                    <l>Had swept<app type="division"><lem><lb/></lem></app>
+ the Winter<app type="division"><lem><lb/></lem></app>
+ Street - </l>
+                    <l>The House<app type="division"><lem><lb/></lem></app>
+ was hooked </l>
+                    <l>The Sun<app type="division"><lem><lb/></lem></app>
+ sent out</l>
+                    <l>Faint Deputies<app type="division"><lem><lb/></lem></app>
+ of Heat - </l>
+                    <l>Where rode<app type="division"><lem><lb/></lem></app>
+ the Bird<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Silence<app type="division"><lem><lb/></lem></app>
+ tied </l>
+                    <l>His ample -<app type="division"><lem><lb/></lem></app>
+ plodding<app type="division"><lem><lb/></lem></app>
+ Steed </l>
+                    <l>The Apple<app type="division"><lem><lb/></lem></app>
+ in the<app type="division"><lem><lb/></lem></app>
+ Cellar snug</l>
+                    <l>Was all<app type="division"><lem><lb/></lem></app>
+ the one<app type="division"><lem><lb/></lem></app>
+ that played.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet to have had them lost </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F809A">
+                <lg type="stanza">
+                    <l>Sweet, to have had<app type="division"><lem><lb/></lem></app>
+ them lost </l>
+                    <l>For news that they<app type="division"><lem><lb/></lem></app>
+ be saved - </l>
+                    <l>The nearer they<app type="division"><lem><lb/></lem></app>
+ departed Us, </l>
+                    <l>The nearer they,<app type="division"><lem><lb/></lem></app>
+ restored, </l>
+                    <l>Shall stand to Our<app type="division"><lem><lb/></lem></app>
+ Right Hand -</l>
+                    <l><em>Most</em> precious, are<app type="division"><lem><lb/></lem></app>
+ the Dead - </l>
+                    <l>Next precious<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Those that rose<app type="division"><lem><lb/></lem></app>
+ to go - </l>
+                    <l>Then thought of<app type="division"><lem><lb/></lem></app>
+ Us, and stayed - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

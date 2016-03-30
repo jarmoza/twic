@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To make Routine a Stimulus 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1196">
+                <lg type="stanza">
+                    <l>To make Routine a Stimulus</l>
+                    <l>Remember it can cease --</l>
+                    <l>Capacity to Terminate</l>
+                    <l>Is a Specific Grace --</l>
+                    <l>Of Retrospect the Arrow</l>
+                    <l>That power to repair</l>
+                    <l>Departed with the Torment</l>
+                    <l>Become, alas, more fair --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

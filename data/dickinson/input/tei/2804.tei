@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas the old -- road -- through pain -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J344">
+                <lg type="stanza">
+                    <l>'Twas the old -- road -- through pain --</l>
+                    <l>That unfrequented -- one --</l>
+                    <l>With many a turn -- and thorn --</l>
+                    <l>That stops -- at Heaven --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This -- was the Town -- she passed --</l>
+                    <l>There -- where she -- rested -- last --</l>
+                    <l>Then -- stepped more fast --</l>
+                    <l>The little tracks -- close prest --</l>
+                    <l>Then -- not so swift --</l>
+                    <l>Slow -- slow -- as feet did weary -- grow --</l>
+                    <l>Then -- stopped -- no other track!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wait! Look! Her little Book --</l>
+                    <l>The leaf -- at love -- turned back --</l>
+                    <l>Her very Hat --</l>
+                    <l>And this worn shoe just fits the track --</l>
+                    <l>Herself -- though -- fled!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Another bed -- a short one --</l>
+                    <l>Women make -- tonight --</l>
+                    <l>In Chambers bright --</l>
+                    <l>Too out of sight -- though --</l>
+                    <l>For our hoarse Good Night --</l>
+                    <l>To touch her Head!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

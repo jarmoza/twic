@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Just so Jesus raps </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F263A">
+                <lg type="stanza">
+                    <l>Just so - Jesus - raps - </l>
+                    <l>He - does'nt weary - </l>
+                    <l>Last - at the Knocker - </l>
+                    <l>And first - at the Bell.  </l>
+                    <l>Then - on divinest tiptoe -<app type="division"><lem><lb/></lem></app>
+ standing -</l>
+                    <l>Might He but spy the<app type="division"><lem><lb/></lem></app>
+ lady's soul - </l>
+                    <l>When He - retires - </l>
+                    <l>Chilled - or weary - </l>
+                    <l>It will be ample time<app type="division"><lem><lb/></lem></app>
+ for - me - </l>
+                    <l>Patient - opon the steps -<app type="division"><lem><lb/></lem></app>
+ <em>until</em> then -</l>
+                    <l>Heart! I am knocking - low at thee.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

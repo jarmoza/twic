@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I see thee better in the dark </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F442C">
+                <lg type="stanza">
+                    <l>I see thee better - in the Dark -</l>
+                    <l>I do not need a Light - </l>
+                    <l>The Love of Thee - a Prism be - </l>
+                    <l>Excelling Violet - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I see thee better for the<app type="division"><lem><lb/></lem></app>
+ Years</l>
+                    <l>That hunch themselves between - </l>
+                    <l>The Miner's Lamp - sufficient be - </l>
+                    <l>To nullify the Mine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And in the Grave - I see Thee best - </l>
+                    <l>It's little Panels be</l>
+                    <l>A'glow - All ruddy - with the<app type="division"><lem><lb/></lem></app>
+ Light </l>
+                    <l>I held so high, for Thee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What need of Day - </l>
+                    <l>To Those whose Dark - hath so -<app type="division"><lem><lb/></lem></app>
+ surpassing Sun -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>It deem it be - Continually -</l>
+                    <l>At the Meridian?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

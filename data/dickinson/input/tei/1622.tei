@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Are friends delight or pain? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1224A">
+                <lg type="stanza">
+                    <l>Are Friends<app type="division"><lem><lb/></lem></app>
+ Delight or Pain?</l>
+                    <l>Could Bounty<app type="division"><lem><lb/></lem></app>
+ but remain </l>
+                    <l>Riches were good - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But if they<app type="division"><lem><lb/></lem></app>
+ only stay </l>
+                    <l>Ampler to<app type="division"><lem><lb/></lem></app>
+ fly away</l>
+                    <l>Riches are sad.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

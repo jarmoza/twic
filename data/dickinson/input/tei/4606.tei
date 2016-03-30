@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>COBWEBS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-90">
+                <lg type="stanza">
+                    <l>The spider as an artist</l>
+                    <l>Has never been employed</l>
+                    <l>Though his surpassing merit</l>
+                    <l>Is freely certified</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By every broom and Bridget</l>
+                    <l>Throughout a Christian land.</l>
+                    <l>Neglected son of genius,</l>
+                    <l>I take thee by the hand.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

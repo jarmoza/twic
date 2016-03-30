@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like Eyes that looked on Wastes -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J458">
+                <lg type="stanza">
+                    <l>Like Eyes that looked on Wastes --</l>
+                    <l>Incredulous of Ought</l>
+                    <l>But Blank -- and steady Wilderness --</l>
+                    <l>Diversified by Night --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Just Infinites of Nought --</l>
+                    <l>As far as it could see --</l>
+                    <l>So looked the face I looked upon --</l>
+                    <l>So looked itself -- on Me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I offered it no Help --</l>
+                    <l>Because the Cause was Mine --</l>
+                    <l>The Misery a Compact</l>
+                    <l>As hopeless -- as divine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Neither -- would be absolved --</l>
+                    <l>Neither would be a Queen</l>
+                    <l>Without the Other -- Therefore --</l>
+                    <l>We perish -- tho' We reign --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

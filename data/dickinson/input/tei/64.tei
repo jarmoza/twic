@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through lane it lay - thro&#x27; bramble </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F43B">
+                <lg type="stanza">
+                    <l>Through lane it lay - thro' bramble -</l>
+                    <l>Through clearing and thro' wood - </l>
+                    <l>Banditti often passed us </l>
+                    <l>Opon the lonely road.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wolf came peering curious -</l>
+                    <l>The Owl looked puzzled down - </l>
+                    <l>The serpent's satin figure </l>
+                    <l>Glid stealthily along, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The tempests touched our garments - </l>
+                    <l>The lightning's poinards gleamed -</l>
+                    <l>Fierce from the Crag above us </l>
+                    <l>The hungry Vulture screamed - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Satyrs fingers beckoned - </l>
+                    <l>The Valley murmured &quot;Come&quot; - </l>
+                    <l><em>These</em> were the mates -</l>
+                    <l><em>This</em> was the road </l>
+                    <l>These Children fluttered home.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

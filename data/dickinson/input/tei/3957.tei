@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Facts by our side are never sudden 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1497">
+                <lg type="stanza">
+                    <l>Facts by our side are never sudden</l>
+                    <l>Until they look around</l>
+                    <l><app type="revision"><lem>but</lem><rdg>but</rdg></app>
+And then they scare us like a spectre</l>
+                    <l>Protruding from the Ground --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The hight of our <app type="revision"><lem>unknowing</lem><rdg>unknowing</rdg></app>
+portentous Neighbor</l>
+                    <l>We never know --</l>
+                    <l>Till summoned to his recognition</l>
+                    <l>By an Adieu --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Adieu <app type="revision"><lem>till when</lem><rdg>till when</rdg></app>
+for whence</l>
+                    <l>The <app type="revision"><lem>wise</lem><rdg>wise</rdg></app>
+sage cannot conjecture</l>
+                    <l>The bravest die</l>
+                    <l>As ignorant of their resumption</l>
+                    <l>As <app type="revision"><lem>cowards do --</lem><rdg>cowards do --</rdg></app>
+you or I --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

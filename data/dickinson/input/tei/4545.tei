@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>FRIENDS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-29">
+                <lg type="stanza">
+                    <l>Are friends delight or pain?</l>
+                    <l>Could bounty but remain</l>
+                    <l>Riches were good.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But if they only stay</l>
+                    <l>Bolder to fly away,</l>
+                    <l>Riches are sad.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

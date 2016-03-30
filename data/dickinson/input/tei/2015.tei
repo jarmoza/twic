@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Death is the supple suitor </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1470A">
+                <lg type="stanza">
+                    <l>Death is the supple Suitor </l>
+                    <l>That wins at last - </l>
+                    <l>It is a stealthy Wooing </l>
+                    <l>Conducted first </l>
+                    <l>By pallid innuendoes</l>
+                    <l>And dim approach </l>
+                    <l>But brave at last with Bugles </l>
+                    <l>And a bisected Coach </l>
+                    <l>It bears away in triumph </l>
+                    <l>To Troth unknown</l>
+                    <l>And Kinsmen as divulgeless </l>
+                    <l>As throngs of Down - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

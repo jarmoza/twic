@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not when we know</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-94">
+                <lg type="stanza">
+                    <l>Not when we know</l>
+                    <l>The Power accosts,</l>
+                    <l>The garment of Surprise</l>
+                    <l>Was all our timid Mother wore</l>
+                    <l>At Home, in Paradise.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

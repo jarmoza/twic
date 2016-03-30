@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cocoon above! Cocoon below! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F142A">
+                <lg type="stanza">
+                    <l>Cocoon above! Cocoon below!</l>
+                    <l>Stealthy Cocoon, why hide you so </l>
+                    <l>What all the world suspect?  </l>
+                    <l>An hour, and gay on every tree </l>
+                    <l>Your secret, perched in extasy</l>
+                    <l>Defies imprisonment!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>An hour in chrysalis to pass - </l>
+                    <l>Then gay above receding grass </l>
+                    <l>A Butterfly to go!  </l>
+                    <l>A moment to interrogate,</l>
+                    <l>Then wiser than a &quot;Surrogate,&quot; </l>
+                    <l>The Universe to know!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

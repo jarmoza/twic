@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE BLUEBIRD</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-81">
+                <lg type="stanza">
+                    <l>Before you thought of spring,</l>
+                    <l>Except as a surmise,</l>
+                    <l>You see, God bless his suddenness,</l>
+                    <l>A fellow in the skies</l>
+                    <l>Of independent hues,</l>
+                    <l>A little weather-worn,</l>
+                    <l>Inspiriting habiliments</l>
+                    <l>Of indigo and brown.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>With specimens of song,</l>
+                    <l>As if for you to choose,</l>
+                    <l>Discretion in the interval,</l>
+                    <l>With gay delays he goes</l>
+                    <l>To some superior tree</l>
+                    <l>Without a single leaf,</l>
+                    <l>And shouts for joy to nobody</l>
+                    <l>But his seraphic self!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

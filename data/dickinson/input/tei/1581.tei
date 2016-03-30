@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We like March - his shoes are purple </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1194E">
+                <lg type="stanza">
+                    <l>We like March -<app type="division"><lem><lb/></lem></app>
+ his Shoes are<app type="division"><lem><lb/></lem></app>
+ Purple - </l>
+                    <l>He is new and<app type="division"><lem><lb/></lem></app>
+ high - </l>
+                    <l>Makes he Mud<app type="division"><lem><lb/></lem></app>
+ for Dog and<app type="division"><lem><lb/></lem></app>
+ Peddler - </l>
+                    <l>Makes he<app type="division"><lem><lb/></lem></app>
+ Forest dry - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Knows the<app type="division"><lem><lb/></lem></app>
+ Adder's Tongue<app type="division"><lem><pb/></lem></app>
+ his coming</l>
+                    <l>And begets<app type="division"><lem><lb/></lem></app>
+ her Spot - </l>
+                    <l>Stands the Sun<app type="division"><lem><lb/></lem></app>
+ so close and<app type="division"><lem><lb/></lem></app>
+ mighty </l>
+                    <l>That our Minds<app type="division"><lem><lb/></lem></app>
+ are hot - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>News is he<app type="division"><lem><lb/></lem></app>
+ of all the others - </l>
+                    <l>Bold it were<app type="division"><lem><lb/></lem></app>
+ to die</l>
+                    <l>With the Blue<app type="division"><lem><lb/></lem></app>
+ Birds buccaneering </l>
+                    <l>On his British<app type="division"><lem><lb/></lem></app>
+ Sky - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The most triumphant bird </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1285B">
+                <lg type="stanza">
+                    <l>The most triumphant bird </l>
+                    <l>I ever<app type="division"><lem><lb/></lem></app>
+ knew or met, </l>
+                    <l>embarked <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ a twig today, </l>
+                    <l>and till Dominion set, </l>
+                    <l>I <app type="division"><lem><lb/></lem></app>
+perish to behold</l>
+                    <l>so competent a sight, </l>
+                    <l>and sang for nothing scrutable, </l>
+                    <l>but impudent delight - </l>
+                    <l>Retired, and resumed </l>
+                    <l>his transitive estate,</l>
+                    <l>To what delicious accident </l>
+                    <l>does finest glory fit!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

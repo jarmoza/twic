@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We never know we go,  when we are going</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-155">
+                <lg type="stanza">
+                    <l>We never know we go,  when we are going</l>
+                    <l>We jest and shut the door;</l>
+                    <l>Fate following behind us bolts it,</l>
+                    <l>And we accost no more.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

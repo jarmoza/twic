@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Was not&quot; was all the Statement. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1342">
+                <lg type="stanza">
+                    <l>"Was not" was all the Statement.</l>
+                    <l>The Unpretension stuns --</l>
+                    <l>Perhaps -- the comprehension --</l>
+                    <l>They wore no Lexicons --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But lest our Speculation</l>
+                    <l>In inanition die</l>
+                    <l>Because "God took him" mention --</l>
+                    <l>That was Philology --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

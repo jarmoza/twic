@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The day undressed herself </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F495A">
+                <lg type="stanza">
+                    <l>The Day undressed -<app type="division"><lem><lb/></lem></app>
+ Herself - </l>
+                    <l>Her Garter - was of<app type="division"><lem><lb/></lem></app>
+ Gold - </l>
+                    <l>Her Petticoat - of<app type="division"><lem><lb/></lem></app>
+ Purple plain - </l>
+                    <l>Her Dimities - as old </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Exactly - as the<app type="division"><lem><lb/></lem></app>
+ World -</l>
+                    <l>And yet the newest<app type="division"><lem><lb/></lem></app>
+ star -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Enrolled opon the<app type="division"><lem><lb/></lem></app>
+ Hemisphere </l>
+                    <l>Be wrinkled - much<app type="division"><lem><lb/></lem></app>
+ as Her - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too near to God -<app type="division"><lem><lb/></lem></app>
+ to pray - </l>
+                    <l>Too near to Heaven -<app type="division"><lem><lb/></lem></app>
+ to fear -</l>
+                    <l>The Lady - of the<app type="division"><lem><lb/></lem></app>
+ Occident </l>
+                    <l>Retired without a<app type="division"><lem><lb/></lem></app>
+ care -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Candle so<app type="division"><lem><lb/></lem></app>
+ expire </l>
+                    <l>The flickering be seen </l>
+                    <l>On Ball of Mast<app type="division"><lem><lb/></lem></app>
+ in Bosporus -</l>
+                    <l>And Dome -<app type="division"><lem><lb/></lem></app>
+ and Window Pane - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

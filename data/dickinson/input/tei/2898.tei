@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Forget! The Lady with the Amulet
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J438">
+                <lg type="stanza">
+                    <l>Forget! The Lady with the Amulet</l>
+                    <l>Forgot she wore it at her Heart</l>
+                    <l>Because she breathed against</l>
+                    <l>Was Treason twixt?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Deny! Did Rose her Bee --</l>
+                    <l>For Privilege of Play</l>
+                    <l>Or Wile of Butterfly</l>
+                    <l>Or Opportunity -- Her Lord away?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The lady with the Amulet -- will fade --</l>
+                    <l>The Bee -- in Mausoleum laid --</l>
+                    <l>Discard his Bride --</l>
+                    <l>But longer than the little Rill --</l>
+                    <l>That cooled the Forehead of the Hill --</l>
+                    <l>While Other -- went the Sea to fill --</l>
+                    <l>And Other -- went to turn the Mill --</l>
+                    <l>I'll do thy Will --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

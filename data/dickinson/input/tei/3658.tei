@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A soft Sea washed around the House 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1198">
+                <lg type="stanza">
+                    <l>A soft Sea washed around the House</l>
+                    <l>A Sea of Summer Air</l>
+                    <l>And rose and fell the magic Planks</l>
+                    <l>That sailed without a care --</l>
+                    <l>For Captain was the Butterfly</l>
+                    <l>For <app type="revision"><lem>steersman</lem><rdg>steersman</rdg></app>
+Helmsman was the Bee</l>
+                    <l>And an entire universe</l>
+                    <l>For the delighted crew.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

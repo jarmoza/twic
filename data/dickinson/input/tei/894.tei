@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Endow the living with the tears </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F657A">
+                <lg type="stanza">
+                    <l>Endow the Living with the Tears </l>
+                    <l>You squander on the Dead, </l>
+                    <l>And they were men and women now, </l>
+                    <l>Around your fireside, </l>
+                    <l>Instead of passive creatures,</l>
+                    <l>Denied the cherishing </l>
+                    <l>Till they the cherishing deny </l>
+                    <l>With Death's <app type="emendation"><lem>ethereal</lem><rdg>etherial</rdg></app>
+ scorn.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If any sink, assure that this, now standing -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J358">
+                <lg type="stanza">
+                    <l>If any sink, assure that this, now standing --</l>
+                    <l>Failed like Themselves -- and conscious that it rose --</l>
+                    <l>Grew by the Fact, and not the Understanding</l>
+                    <l>How Weakness passed -- or Force -- arose --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tell that the Worst, is easy in a Moment --</l>
+                    <l>Dread, but the Whizzing, before the Ball --</l>
+                    <l>When the Ball enters, enters Silence --</l>
+                    <l>Dying -- annuls the power to kill.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A feather from the whippowil </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F208A">
+                <lg type="stanza">
+                    <l>A feather from the<app type="division"><lem><lb/></lem></app>
+ Whippowil </l>
+                    <l>That everlasting - sings!  </l>
+                    <l>Whose galleries - are<app type="division"><lem><lb/></lem></app>
+ Sunrise - </l>
+                    <l>Whose Opera - the<app type="division"><lem><lb/></lem></app>
+ Springs - </l>
+                    <l>Whose Emerald Nest<app type="division"><lem><lb/></lem></app>
+ the Ages spin</l>
+                    <l>Of mellow - murmuring<app type="division"><lem><lb/></lem></app>
+ thread - </l>
+                    <l>Whose Beryl Egg, what<app type="division"><lem><lb/></lem></app>
+ School Boys hunt </l>
+                    <l>In &quot;Recess -&quot; Overhead!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Those -- dying then, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1551">
+                <lg type="stanza">
+                    <l>Those -- dying then,</l>
+                    <l>Knew where they went --</l>
+                    <l>They went to God's Right Hand --</l>
+                    <l>That Hand is amputated now</l>
+                    <l>And God cannot be found --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The abdication of Belief</l>
+                    <l>Makes the Behavior small --</l>
+                    <l>Better an ignis fatuus</l>
+                    <l>Than no illume at all --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

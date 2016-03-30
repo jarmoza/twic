@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>HOPE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-6">
+                <lg type="stanza">
+                    <l>Hope is the thing with feathers</l>
+                    <l>That perches in the soul,</l>
+                    <l>And sings the tune without the words,</l>
+                    <l>And never stops at all,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And sweetest in the gale is heard;</l>
+                    <l>And sore must be the storm</l>
+                    <l>That could abash the little bird</l>
+                    <l>That kept so many warm.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I 've heard it in the chillest land,</l>
+                    <l>And on the strangest sea;</l>
+                    <l>Yet, never, in extremity,</l>
+                    <l>It asked a crumb of me.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Summer begins to have the look</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1693A">
+                <lg type="stanza">
+                    <l>Summer begins to have the look</l>
+                    <l>Peruser of enchanting Book</l>
+                    <l>Reluctantly but sure perceives</l>
+                    <l>A gain upon the backward leaves</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Autumn begins to be inferred</l>
+                    <l>By millinery of the cloud</l>
+                    <l>Or deeper color in the shawl</l>
+                    <l>That wraps the everlasting hill</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The eye begins it's avarice</l>
+                    <l>A meditation chastens speech</l>
+                    <l>Some Dyer of a distant tree</l>
+                    <l>Resumes his gaudy industry</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Conclusion is the course of all</l>
+                    <l><em>Almost</em> to be perennial</l>
+                    <l>And then elude stability</l>
+                    <l>Recalls to immortality -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

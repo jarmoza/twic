@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It would not know if it were spurned, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1579">
+                <lg type="stanza">
+                    <l>It would not know if it were spurned,</l>
+                    <l>This gallant little flower --</l>
+                    <l>How therefore safe to be a flower</l>
+                    <l>If one would tamper there.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To enter, it would not aspire --</l>
+                    <l>But may it not despair</l>
+                    <l>That it is not a Cavalier,</l>
+                    <l>To dare and perish there?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

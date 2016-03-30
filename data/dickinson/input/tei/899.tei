@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Some such butterfly be seen </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F661A">
+                <lg type="stanza">
+                    <l>Some such Butterfly be seen</l>
+                    <l>On Brazilian Pampas - </l>
+                    <l>Just at noon - no later -<app type="division"><lem><lb/></lem></app>
+ Sweet - </l>
+                    <l>Then - the<add type="alternate" extent="License">Vision - &amp;#x2022; Pageant</add>
+ License closes - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some such<add type="alternate" extent="Spice">Rose</add>
+ Spice - express<app type="division"><lem><lb/></lem></app>
+ - and pass -</l>
+                    <l><add type="alternate" extent="Subject">present</add>
+Subject to Your Plucking - </l>
+                    <l>As the Stars - You knew<app type="division"><lem><lb/></lem></app>
+ last Night - </l>
+                    <l><add type="alternate" extent="Foreigners -">Know not You -</add>
+Foreigners - This Morning - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

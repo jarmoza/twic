@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE BEE</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-59">
+                <lg type="stanza">
+                    <l>Like trains of cars on tracks of plush</l>
+                    <l>I hear the level bee:</l>
+                    <l>A jar across the flowers goes,</l>
+                    <l>Their velvet masonry</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Withstands until the sweet assault</l>
+                    <l>Their chivalry consumes,</l>
+                    <l>While he, victorious, tilts away</l>
+                    <l>To vanquish other blooms.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His feet are shod with gauze,</l>
+                    <l>His helmet is of gold;</l>
+                    <l>His breast, a single onyx</l>
+                    <l>With chrysoprase, inlaid.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His labor is a chant,</l>
+                    <l>His idleness a tune;</l>
+                    <l>Oh, for a bee's experience</l>
+                    <l>Of clovers and of noon!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

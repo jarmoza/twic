@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Malay -- took the Pearl -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J452">
+                <lg type="stanza">
+                    <l>The Malay -- took the Pearl --</l>
+                    <l>Not -- I -- the Earl --</l>
+                    <l>I -- feared the Sea -- too much</l>
+                    <l>Unsanctified -- to touch --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Praying that I might be</l>
+                    <l>Worthy -- the Destiny --</l>
+                    <l>The Swarthy fellow swam --</l>
+                    <l>And bore my Jewel -- Home --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Home to the Hut! What lot</l>
+                    <l>Had I -- the Jewel -- got --</l>
+                    <l>Borne on a Dusky Breast --</l>
+                    <l>I had not deemed a Vest</l>
+                    <l>Of Amber -- fit --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Negro never knew</l>
+                    <l>I -- wooed it -- too --</l>
+                    <l>To gain, or be undone --</l>
+                    <l>Alike to Him -- One --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

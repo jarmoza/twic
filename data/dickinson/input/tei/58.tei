@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I never lost as much but twice </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F39A">
+                <lg type="stanza">
+                    <l>I never lost as much but twice -</l>
+                    <l>And that was in the sod.  </l>
+                    <l>Twice have I stood a beggar </l>
+                    <l>Before the door of God!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Angels - twice descending</l>
+                    <l>Reimbursed my store - </l>
+                    <l>Burglar! Banker - Father!  </l>
+                    <l>I am poor once more!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

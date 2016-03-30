@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Too little way the House must lie 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J911">
+                <lg type="stanza">
+                    <l>Too little way the House must lie</l>
+                    <l>From every Human Heart</l>
+                    <l>That holds in undisputed Lease</l>
+                    <l>A white inhabitant --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too narrow is the Right between --</l>
+                    <l>Too imminent the chance --</l>
+                    <l>Each Consciousness must emigrate</l>
+                    <l>And lose it's neighbor once --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

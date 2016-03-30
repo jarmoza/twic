@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She could not live upon the past </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1535A">
+                <lg type="stanza">
+                    <l>She could not live<app type="division"><lem><lb/></lem></app>
+ upon the Past </l>
+                    <l>The Present did<app type="division"><lem><lb/></lem></app>
+ not know her </l>
+                    <l>And so she sought<app type="division"><lem><lb/></lem></app>
+ this sweet at<app type="division"><lem><lb/></lem></app>
+ last </l>
+                    <l>And nature gently<app type="division"><lem><lb/></lem></app>
+ owned her </l>
+                    <l>The mother that<app type="division"><lem><lb/></lem></app>
+ has not a Knell</l>
+                    <l>for either Duke<app type="division"><lem><lb/></lem></app>
+ or Robin </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

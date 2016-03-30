@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Had I presumed to hope -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J522">
+                <lg type="stanza">
+                    <l>Had I presumed to hope --</l>
+                    <l>The loss had been to Me</l>
+                    <l>A Value -- for the Greatness' Sake --</l>
+                    <l>As Giants -- <app type="revision"><lem>claimed</lem><rdg>claimed</rdg></app>
+gone away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had I presumed to gain</l>
+                    <l>A Favor so remote --</l>
+                    <l>The failure but confirm the Grace</l>
+                    <l>In further Infinite --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis failure -- not of Hope --</l>
+                    <l>But Confident Despair --</l>
+                    <l>Advancing on Celestial Lists --</l>
+                    <l>With faint -- Terrestrial power --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis Honor -- though I die --</l>
+                    <l>For That no Man obtain</l>
+                    <l>Till He be justified by Death --</l>
+                    <l>This -- is the Second Gain --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

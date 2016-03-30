@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Her face was in a bed of hair</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1755A">
+                <lg type="stanza">
+                    <l>Her face was in a bed of hair,</l>
+                    <l>Like flowers in a plot -</l>
+                    <l>Her hand was whiter than the sperm</l>
+                    <l>That feeds the sacred light.</l>
+                    <l>Her tongue more<add type="alternate" extent="tender">timid &amp;#x2022; magic</add>
+ tender than the<add type="alternate" extent="tune">tone</add>
+ tune</l>
+                    <l>That totters in the leaves -</l>
+                    <l>Who hears may be incredulous,</l>
+                    <l>Who witnesses, believes.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

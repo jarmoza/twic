@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>All these my banners be. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J22">
+                <lg type="stanza">
+                    <l>All these my banners be.</l>
+                    <l>I sow my pageantry In May --</l>
+                    <l>It rises train by train --</l>
+                    <l>Then sleeps in state again --</l>
+                    <l>My chancel -- all the plain</l>
+                    <l>Today.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To lose -- if one can find again --</l>
+                    <l>To miss -- if one shall meet --</l>
+                    <l>The Burglar cannot rob -- then --</l>
+                    <l>The Broker cannot cheat.</l>
+                    <l>So build the hillocks gaily</l>
+                    <l>Thou little spade of mine</l>
+                    <l>Leaving nooks for Daisy</l>
+                    <l>And for Columbine --</l>
+                    <l>You and I the secret</l>
+                    <l>Of the Crocus know --</l>
+                    <l>Let us chant it softly --</l>
+                    <l>"There is no more snow!"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To him who keeps an Orchis' heart --</l>
+                    <l>The swamps are pink with June.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

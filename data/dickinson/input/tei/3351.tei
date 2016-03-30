@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To my quick ear the Leaves -- conferred -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J891">
+                <lg type="stanza">
+                    <l>To my quick ear the Leaves -- conferred --</l>
+                    <l>The Bushes -- they were Bells --</l>
+                    <l>I could not find a Privacy</l>
+                    <l>From Nature's sentinels --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In Cave if I presumed to hide</l>
+                    <l>The Walls -- begun to tell --</l>
+                    <l>Creation seemed a mighty Crack --</l>
+                    <l>To make me visible --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

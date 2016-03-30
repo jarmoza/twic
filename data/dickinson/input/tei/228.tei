@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Papa above! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F151A">
+                <lg type="stanza">
+                    <l>Papa Above!  </l>
+                    <l>Regard a Mouse </l>
+                    <l>O'erpowered by the Cat!  </l>
+                    <l>Reserve within thy Kingdom </l>
+                    <l>A 'Mansion' for the Rat!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Snug in Seraphic Cupboards </l>
+                    <l>To nibble all the day, </l>
+                    <l>While unsuspecting Cycles </l>
+                    <l>Wheel pompously away!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

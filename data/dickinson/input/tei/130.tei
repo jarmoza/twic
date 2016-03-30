@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Flowers - Well - if anybody </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F95A">
+                <lg type="stanza">
+                    <l>Flowerswell, if anybody </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Can the <app type="emendation"><lem>ecstacy</lem><rdg>extasy</rdg></app>
+ define,</l>
+                    <l>Half a transport, half a trouble, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+With which flowers humble men--</l>
+                    <l>Anybody find the fountain,</l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+From which floods so contra flow,</l>
+                    <l>I will give him all the Daisies, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Which <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ the <app type="emendation"><lem>hell-side</lem><rdg>hillside</rdg></app>
+ blow!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Too much pathos in their faces, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+For a simple breast like mine!</l>
+                    <l>Butterflies from <app type="emendation"><lem>San</lem><rdg>St</rdg></app>
+ Domingo, </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Cruising round the purple line,</l>
+                    <l>Have a system of <app type="emendation"><lem>esthetics</lem><rdg>aesthetics</rdg></app>
+ </l>
+                    <l><app type="emendation"><lem></lem><rdg></rdg></app>
+Far superior to mine!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

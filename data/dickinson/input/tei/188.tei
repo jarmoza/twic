@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A poor - torn heart - a tattered heart </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F125A">
+                <lg type="stanza">
+                    <l>A poor - torn Heart - a tattered heart, </l>
+                    <l>That sat it down to rest - </l>
+                    <l>Nor noticed that the ebbing Day </l>
+                    <l>Flowed silver to the West; </l>
+                    <l>Nor noticed night did soft descend,</l>
+                    <l>Nor Constellation burn - </l>
+                    <l>Intent opon a vision </l>
+                    <l>Of Latitudes unknown - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Angels, happening that way </l>
+                    <l>This dusty heart espied -</l>
+                    <l>Tenderly took it up from toil - </l>
+                    <l>And carried it to God - </l>
+                    <l>There - sandals for the Barefoot - </l>
+                    <l>There - gathered from the gales </l>
+                    <l>Do the blue Havens - by the hand</l>
+                    <l>Lead the wandering sails - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

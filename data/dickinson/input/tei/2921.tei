@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Wife -- at Daybreak I shall be -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J461">
+                <lg type="stanza">
+                    <l>A Wife -- at Daybreak I shall be --</l>
+                    <l>Sunrise -- Hast thou a Flag for me?</l>
+                    <l>At Midnight, I am but a Maid,</l>
+                    <l>How short it takes to make it Bride --</l>
+                    <l>Then -- Midnight, I have passed from thee</l>
+                    <l>Unto the East, and Victory --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Midnight -- Good Night! I hear them call,</l>
+                    <l>The Angels bustle in the Hall --</l>
+                    <l>Softly my Future climbs the Stair,</l>
+                    <l>I fumble at my Childhood's prayer</l>
+                    <l>So soon to be a Child no more --</l>
+                    <l>Eternity, I'm coming -- Sir,</l>
+                    <l>Savior -- I've seen the face -- before!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

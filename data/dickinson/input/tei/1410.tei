@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The hollows round his eager eyes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1071A">
+                <lg type="stanza">
+                    <l>The Hollows round His<app type="division"><lem><lb/></lem></app>
+ eager Eyes</l>
+                    <l>Were Pages where to<app type="division"><lem><lb/></lem></app>
+ read </l>
+                    <l>Pathetic Histories -<app type="division"><lem><lb/></lem></app>
+ although </l>
+                    <l>Himself had not complained.  </l>
+                    <l>Biography to All who<app type="division"><lem><lb/></lem></app>
+ passed</l>
+                    <l>Of Unobtrusive Pain </l>
+                    <l>Except for the italic<app type="division"><lem><lb/></lem></app>
+ Face </l>
+                    <l>Endured,<add type="alternate" extent="unhelped -">resigned -</add>
+ unhelped -<app type="division"><lem><lb/></lem></app>
+ unknown - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

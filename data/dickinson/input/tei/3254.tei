@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Drop fell on the Apple Tree -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J794">
+                <lg type="stanza">
+                    <l>A Drop fell on the Apple Tree --</l>
+                    <l>Another -- on the Roof --</l>
+                    <l>A Half a Dozen kissed the Eaves --</l>
+                    <l>And made the Gables laugh --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A few went out to helP the Brook</l>
+                    <l><app type="revision"><lem>Who</lem><rdg>Who</rdg></app>
+That went to help the Sea --</l>
+                    <l>Myself Conjectured were they Pearls --</l>
+                    <l>What Necklaces could be --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Dust replaced, in Hoisted Roads --</l>
+                    <l>The Birds jocoser sung --</l>
+                    <l>The Sunshine threw his Hat away --</l>
+                    <l>The <app type="revision"><lem>Orchards --</lem><rdg>Orchards --</rdg></app>
+Bushes -- spangles flung --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Breezes brought dejected Lutes --</l>
+                    <l>And bathed them in the Glee --</l>
+                    <l><app type="revision"><lem>The East put out a single Flag</lem><rdg>The East put out a single Flag</rdg></app>
+Then Orient showed a single Flag,</l>
+                    <l>And signed the Fete away --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

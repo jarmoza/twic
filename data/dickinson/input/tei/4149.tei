@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The look of thee, what is it like 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1689">
+                <lg type="stanza">
+                    <l>The look of thee, what is it like</l>
+                    <l>Hast thou a hand or Foot</l>
+                    <l>Or Mansion of Identity</l>
+                    <l>And what is thy Pursuit</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Thy fellows are they realms or Themes</l>
+                    <l>Hast thou Delight or Fear</l>
+                    <l>Or Longing -- and is that for us</l>
+                    <l>Or values more severe --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Let change transfuse all other Traits</l>
+                    <l>Enact all other Blame</l>
+                    <l>But deign this least certificate</l>
+                    <l>That thou shalt be the same --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

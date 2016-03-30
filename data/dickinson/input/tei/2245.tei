@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To her derided home </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1617B">
+                <lg type="stanza">
+                    <l>To her<app type="division"><lem><lb/></lem></app>
+ derided Home </l>
+                    <l>A Weed of<app type="division"><lem><lb/></lem></app>
+ Summer came - </l>
+                    <l>She did not<app type="division"><lem><lb/></lem></app>
+ know her<app type="division"><lem><lb/></lem></app>
+ station low </l>
+                    <l>Nor Ignominy's<app type="division"><lem><lb/></lem></app>
+ name - </l>
+                    <l>Bestowed a<app type="division"><lem><lb/></lem></app>
+ summer long</l>
+                    <l>Upon a fameless<app type="division"><lem><lb/></lem></app>
+ flower,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Then swept as<app type="division"><lem><lb/></lem></app>
+ lightly from<app type="division"><lem><lb/></lem></app>
+ disdain </l>
+                    <l>As Lady<app type="division"><lem><lb/></lem></app>
+ from her Bower - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The implements<app type="division"><lem><lb/></lem></app>
+ of Bliss are<app type="division"><lem><lb/></lem></app>
+ few - </l>
+                    <l>As Jesus says<app type="division"><lem><lb/></lem></app>
+ of Him -</l>
+                    <l>&quot;Come unto me&quot; the Moiety </l>
+                    <l>That wafts<app type="division"><lem><lb/></lem></app>
+ the Seraphim - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

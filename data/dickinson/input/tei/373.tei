@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The drop that wrestles in the sea </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F255A">
+                <lg type="stanza">
+                    <l>The Drop, that<app type="division"><lem><lb/></lem></app>
+ wrestles in the Sea - </l>
+                    <l>Forgets her own locality - </l>
+                    <l>As I - toward Thee - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She knows herself an<app type="division"><lem><lb/></lem></app>
+ incense small - </l>
+                    <l>Yet <em>small</em> - she sighs -<app type="division"><lem><lb/></lem></app>
+ if <em>all</em> is <em>all</em> -</l>
+                    <l>How <em>larger</em> - be?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Ocean - smiles - at her Conceit - </l>
+                    <l>But <em>She,</em> forgetting Amphitrite - </l>
+                    <l>Pleads - &quot;Me&quot;?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

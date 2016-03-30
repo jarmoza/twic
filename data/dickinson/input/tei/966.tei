@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I could bring you jewels - had I a mind to </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F726A">
+                <lg type="stanza">
+                    <l>I could bring You Jewels -<app type="division"><lem><lb/></lem></app>
+ had I a mind to -</l>
+                    <l>But You have enough - of<app type="division"><lem><lb/></lem></app>
+ those - </l>
+                    <l>I could bring You Odors from<app type="division"><lem><lb/></lem></app>
+ St Domingo - </l>
+                    <l>Colors - from Vera Cruz - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Berries of the Bahamas -<app type="division"><lem><lb/></lem></app>
+ have I -</l>
+                    <l>But this little Blaze </l>
+                    <l>Flickering to itself - in the meadow - </l>
+                    <l>Suits me - more than those - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Never a Fellow matched this<app type="division"><lem><lb/></lem></app>
+ Topaz - </l>
+                    <l>And his Emerald Swing -</l>
+                    <l>Dower itself - for Bobadilo - </l>
+                    <l>Better - Could I bring?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These strangers in a foreign world </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F805A">
+                <lg type="stanza">
+                    <l>These Strangers,<app type="division"><lem><lb/></lem></app>
+ in a foreign World, </l>
+                    <l>Protection asked<app type="division"><lem><lb/></lem></app>
+ of me - </l>
+                    <l>Befriend them,<app type="division"><lem><lb/></lem></app>
+ lest yourself in<app type="division"><lem><lb/></lem></app>
+ Heaven </l>
+                    <l>Be found a<app type="division"><lem><lb/></lem></app>
+ Refugee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

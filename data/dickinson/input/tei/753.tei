@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The black berry wears a thorn in his side </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F548A">
+                <lg type="stanza">
+                    <l>The Black Berry - wears<app type="division"><lem><lb/></lem></app>
+ a Thorn in his side -</l>
+                    <l>But no Man heard Him cry - </l>
+                    <l>He offers His Berry, just<app type="division"><lem><lb/></lem></app>
+ the same </l>
+                    <l>To Partridge - and to Boy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He sometimes holds opon the<app type="division"><lem><lb/></lem></app>
+ Fence -</l>
+                    <l>Or struggles to a Tree - </l>
+                    <l>Or clasps a Rock, with<app type="division"><lem><lb/></lem></app>
+ both His Hands - </l>
+                    <l>But not for sympathy - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We - tell a Hurt - to cool it - </l>
+                    <l>This Mourner - to the Sky</l>
+                    <l>A little further reaches -<app type="division"><lem><lb/></lem></app>
+ instead - </l>
+                    <l>Brave Black Berry - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>So proud she was to die </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1278C">
+                <lg type="stanza">
+                    <l>So proud she<app type="division"><lem><lb/></lem></app>
+ was to die </l>
+                    <l>It made us<app type="division"><lem><lb/></lem></app>
+ all ashamed </l>
+                    <l>That what<app type="division"><lem><lb/></lem></app>
+ we cherished,<app type="division"><lem><lb/></lem></app>
+ so unknown </l>
+                    <l>To her desire<app type="division"><lem><lb/></lem></app>
+ seemed - </l>
+                    <l>So satisfied<app type="division"><lem><lb/></lem></app>
+ to go</l>
+                    <l>Where none<app type="division"><lem><lb/></lem></app>
+ of us should be </l>
+                    <l>Immediately - that<app type="division"><lem><pb/></lem></app>
+ Anguish stooped </l>
+                    <l>Almost to<app type="division"><lem><lb/></lem></app>
+ Jealousy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

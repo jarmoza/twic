@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of tolling bell I ask the cause? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F933B">
+                <lg type="stanza">
+                    <l>Of Tolling Bell I ask<app type="division"><lem><lb/></lem></app>
+ the cause?</l>
+                    <l>&quot;A Soul has gone to<app type="division"><lem><lb/></lem></app>
+ Heaven&quot; </l>
+                    <l>I'm answered in a<app type="division"><lem><lb/></lem></app>
+ lonesome tone - </l>
+                    <l>Is Heaven then a Prison?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Bells should ring<app type="division"><lem><lb/></lem></app>
+ till all should know</l>
+                    <l>A Soul had gone to<app type="division"><lem><lb/></lem></app>
+ Heaven </l>
+                    <l>Would seem to me - the<app type="division"><lem><lb/></lem></app>
+ more the way </l>
+                    <l>A Good News should be<app type="division"><lem><lb/></lem></app>
+ given - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

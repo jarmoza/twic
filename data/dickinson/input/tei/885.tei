@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ve seen a dying eye </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F648A">
+                <lg type="stanza">
+                    <l>I've seen a Dying Eye</l>
+                    <l>Run round and round a<app type="division"><lem><lb/></lem></app>
+ Room - </l>
+                    <l>In search of Something -<app type="division"><lem><lb/></lem></app>
+ as it seemed - </l>
+                    <l>Then Cloudier become - </l>
+                    <l>And then - obscure with Fog -</l>
+                    <l>And then - be soldered<app type="division"><lem><lb/></lem></app>
+ down </l>
+                    <l>Without disclosing what<app type="division"><lem><lb/></lem></app>
+ it be </l>
+                    <l>'Twere blessed to have<app type="division"><lem><lb/></lem></app>
+ seen - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

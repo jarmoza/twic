@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Red -- Blaze -- is the Morning -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J469">
+                <lg type="stanza">
+                    <l>The Red -- Blaze -- is the Morning --</l>
+                    <l>The Violet -- is Noon --</l>
+                    <l>The Yellow -- Day -- is falling --</l>
+                    <l>And after that -- is none --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But Miles of Sparks -- at Evening --</l>
+                    <l>Reveal the Width that burned --</l>
+                    <l>The Territory Argent -- that</l>
+                    <l>Never yet -- consumed --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

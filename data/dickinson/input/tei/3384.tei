@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Love -- is that later Thing than Death -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J924">
+                <lg type="stanza">
+                    <l>Love -- is that later Thing than Death --</l>
+                    <l>More previous -- than Life --</l>
+                    <l>Confirms it at it's entrance -- And</l>
+                    <l>Usurps it -- of itself --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tastes Death -- the first -- to <app type="revision"><lem>pass --</lem><rdg>pass --</rdg></app>
+<app type="revision"><lem>prove --</lem><rdg>prove --</rdg></app>
+hand the sting</l>
+                    <l>The Second -- to it's friend --</l>
+                    <l>Disarms the little interval --</l>
+                    <l>Deposits Him with God --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then hovers -- an inferior Guard --</l>
+                    <l>Lest this Beloved Charge</l>
+                    <l><app type="revision"><lem>Miss</lem><rdg>Miss</rdg></app>
+Need -- once in an Eternity --</l>
+                    <l>A <app type="revision"><lem>lesser --</lem><rdg>lesser --</rdg></app>
+smaller than the Large --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Heaven&quot; has different Signs -- to me -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J575">
+                <lg type="stanza">
+                    <l>"Heaven" has different Signs -- to me --</l>
+                    <l>Sometimes, I think that Noon</l>
+                    <l>Is but a symbol of the Place --</l>
+                    <l>And when again, at Dawn,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A mighty look runs round the World</l>
+                    <l>And settles in the Hills --</l>
+                    <l>An Awe if it should be like that</l>
+                    <l>Upon the Ignorance steals --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Orchard, when the Sun is on --</l>
+                    <l>The Triumph of the Birds</l>
+                    <l>When they together Victory make --</l>
+                    <l>Some Carnivals of Clouds --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Rapture of <app type="revision"><lem>Concluded Day --</lem><rdg>Concluded Day --</rdg></app>
+a finished Day --</l>
+                    <l>Returning to the West --</l>
+                    <l>All these -- remind us of the place</l>
+                    <l>That Men call "Paradise" --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Itself be fairer -- we suppose --</l>
+                    <l>But how Ourself, shall be</l>
+                    <l>Adorned, for a Superior Grace --</l>
+                    <l>Not yet, our eyes can see --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

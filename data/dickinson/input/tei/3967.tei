@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Pile of Years is not so high 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1507">
+                <lg type="stanza">
+                    <l>The Pile of Years is not so high</l>
+                    <l>As when you came before</l>
+                    <l>But it is <app type="revision"><lem>further</lem><rdg>further</rdg></app>
+<app type="revision"><lem>higher --</lem><rdg>higher --</rdg></app>
+rising every Day</l>
+                    <l>From recollection's Floor</l>
+                    <l>And while by stepping on my Heart</l>
+                    <l>I still can <app type="revision"><lem>touch</lem><rdg>touch</rdg></app>
+reach the top</l>
+                    <l>Efface the <app type="revision"><lem>monster</lem><rdg>monster</rdg></app>
+<app type="revision"><lem>stature</lem><rdg>stature</rdg></app>
+<app type="revision"><lem>spectre</lem><rdg>spectre</rdg></app>
+burden with your face</l>
+                    <l>And catch me <app type="revision"><lem>when</lem><rdg>when</rdg></app>
+<app type="revision"><lem>as</lem><rdg>as</rdg></app>
+ere I drop</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

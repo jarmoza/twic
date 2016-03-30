@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I see thee clearer for the grave</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1695A">
+                <lg type="stanza">
+                    <l>I see thee clearer for the Grave</l>
+                    <l>That took thy face between</l>
+                    <l>No mirror could illumine thee</l>
+                    <l>Like that impassive stone -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I know thee better for the act</l>
+                    <l>That made thee first unknown</l>
+                    <l>The stature of the empty nest</l>
+                    <l>Attests the Bird that's gone</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

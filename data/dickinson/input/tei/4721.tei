@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I can&#x27;t tell you, but you feel it --</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-39">
+                <lg type="stanza">
+                    <l>I can't tell you, but you feel it --</l>
+                    <l>Nor can you tell me,</l>
+                    <l>Saints with vanished slate and pencil</l>
+                    <l>Solve our April day.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sweeter than a vanished Frolic</l>
+                    <l>From a vanished Green!</l>
+                    <l>Swifter than the hoofs of Horsemen</l>
+                    <l>Round a ledge of Dream!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Modest, let us walk among it,</l>
+                    <l>With our "faces veiled,"</l>
+                    <l>As they say polite Archangels</l>
+                    <l>Do, in meeting God.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not for me to prate about it,</l>
+                    <l>Not for you to say</l>
+                    <l>To some fashionable Lady ---</l>
+                    <l>"Charming April Day!"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Rather Heaven's "Peter Parley,"</l>
+                    <l>By which, Children -- slow -- </l>
+                    <l>To sublimer recitations</l>
+                    <l>Are prepared to go!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

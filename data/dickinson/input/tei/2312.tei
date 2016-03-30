@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I held it so tight that I lost it </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1659A">
+                <lg type="stanza">
+                    <l>I held it so<app type="division"><lem><lb/></lem></app>
+ tight that I<app type="division"><lem><lb/></lem></app>
+ lost it </l>
+                    <l>Said the Child<app type="division"><lem><lb/></lem></app>
+ of the Butterfly </l>
+                    <l>Of many a<app type="division"><lem><lb/></lem></app>
+ vaster Capture </l>
+                    <l>That is the<app type="division"><lem><lb/></lem></app>
+ Elegy - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

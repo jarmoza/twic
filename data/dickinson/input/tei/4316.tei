@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>FROM THE CHRYSALIS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-81">
+                <lg type="stanza">
+                    <l>My cocoon tightens, colors tease,</l>
+                    <l>I'm feeling for the air;</l>
+                    <l>A dim capacity for wings</l>
+                    <l>Degrades the dress I wear.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A power of butterfly must be</l>
+                    <l>The aptitude to fly,</l>
+                    <l>Meadows of majesty concedes</l>
+                    <l>And easy sweeps of sky.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So I must baffle at the hint</l>
+                    <l>And cipher at the sign,</l>
+                    <l>And make much blunder, if at last</l>
+                    <l>I take the clew divine.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

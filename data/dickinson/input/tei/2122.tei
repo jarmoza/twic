@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Birthday of but a single pang </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1541A">
+                <lg type="stanza">
+                    <l>Birthday of<app type="division"><lem><lb/></lem></app>
+ but a single<app type="division"><lem><lb/></lem></app>
+ pang </l>
+                    <l>That there are<app type="division"><lem><lb/></lem></app>
+ less to come - </l>
+                    <l>Afflictive is<app type="division"><lem><lb/></lem></app>
+ the Adjective </l>
+                    <l>But affluent<app type="division"><lem><lb/></lem></app>
+ the doom - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

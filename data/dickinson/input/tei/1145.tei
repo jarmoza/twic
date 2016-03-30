@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She staked her feathers - gained an arc </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F853A">
+                <lg type="stanza">
+                    <l>She staked Her Feathers -<app type="division"><lem><lb/></lem></app>
+ Gained an Arc -</l>
+                    <l>Debated - Rose again - </l>
+                    <l>This time - beyond the<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="estimate">inference</add>
+ estimate </l>
+                    <l>Of Envy, or of Men - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And now, among<app type="division"><lem><lb/></lem></app>
+ Circumference -</l>
+                    <l>Her steady Boat be<app type="division"><lem><lb/></lem></app>
+ seen - </l>
+                    <l>At<add type="alternate" extent="home">ease</add>
+ home - among the<app type="division"><lem><lb/></lem></app>
+ Billows - As </l>
+                    <l>The Bough where she<app type="division"><lem><lb/></lem></app>
+ was born - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

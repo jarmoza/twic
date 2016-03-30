@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Delight is as the flight </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F317A">
+                <lg type="stanza">
+                    <l>Delight is as the flight -</l>
+                    <l>Or in the Ratio of it, </l>
+                    <l>As the Schools would say - </l>
+                    <l>The Rainbow's way - </l>
+                    <l>A Skein</l>
+                    <l>Flung colored, after Rain, </l>
+                    <l>Would suit as bright, </l>
+                    <l>Except that flight </l>
+                    <l>Were Aliment - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;If it would last&quot;</l>
+                    <l>I asked the East, </l>
+                    <l>When that Bent Stripe </l>
+                    <l>Struck up my childish </l>
+                    <l>Firmament - </l>
+                    <l>And I, for glee,</l>
+                    <l>Took Rainbows, as the common<app type="division"><lem><lb/></lem></app>
+ way, </l>
+                    <l>And empty skies </l>
+                    <l>The Eccentricity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so with Lives - </l>
+                    <l>And so with Butterflies -<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Seen magic - through the<app type="division"><lem><lb/></lem></app>
+ fright </l>
+                    <l>That they will cheat the sight - </l>
+                    <l>And Dower latitudes far on - </l>
+                    <l>Some sudden morn - </l>
+                    <l>Our portion - in the fashion -</l>
+                    <l>Done - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

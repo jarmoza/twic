@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sic transit gloria mundi </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F2A">
+                <lg type="stanza">
+                    <l>Sic transit gloria mundi </l>
+                    <l>&quot;How doth the busy bee&quot; </l>
+                    <l>Dum vivamus vivamus </l>
+                    <l>I stay mine enemy!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh veni vidi vici!</l>
+                    <l>Oh caput cap-a-pie!  </l>
+                    <l>And oh &quot;memento mori&quot; </l>
+                    <l>When I am far from thee </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Hurrah for Peter Parley </l>
+                    <l>Hurrah for Daniel Boone</l>
+                    <l>Three cheers sir, for the gentleman </l>
+                    <l>Who first observed the moon  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Peter put up the sunshine!  </l>
+                    <l>Pattie arrange the stars </l>
+                    <l>Tell Luna, tea is waiting</l>
+                    <l>And call your brother Mars  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Put down the apple Adam </l>
+                    <l>And come away with me </l>
+                    <l>So shal't thou have a pippin </l>
+                    <l>From off my Father's tree!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I climb the &quot;Hill of Science&quot; </l>
+                    <l>I &quot;view the Landscape o'er&quot; </l>
+                    <l>Such transcendental prospect </l>
+                    <l>I ne'er beheld before!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unto the Legislature</l>
+                    <l>My country bids me go, </l>
+                    <l>I'll take my india rubbers </l>
+                    <l>In case the wind should blow.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>During my education </l>
+                    <l>It was announced to me</l>
+                    <l>That gravitation stumbling </l>
+                    <l>Fell from an apple tree  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Earth <app type="emendation"><lem>upon</lem><rdg>opon</rdg></app>
+ <app type="emendation"><lem>its</lem><rdg>it&#x27;s</rdg></app>
+ axis</l>
+                    <l>Was once supposed to turn </l>
+                    <l>By way of a gymnastic</l>
+                    <l>In honor to the sun  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It was the brave Columbus </l>
+                    <l>A sailing o'er the tide </l>
+                    <l>Who notified the nations </l>
+                    <l>Of where I would reside</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mortality is fatal </l>
+                    <l>Gentility is fine </l>
+                    <l>Rascality, heroic </l>
+                    <l>Insolvency, sublime<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our Fathers being weary</l>
+                    <l>Laid down on Bunker Hill </l>
+                    <l>And though full many a morn'g </l>
+                    <l>Yet they are sleeping still </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The trumpet sir, shall wake them </l>
+                    <l>In streams I see them rise</l>
+                    <l>Each with a solemn musket </l>
+                    <l>A marching to the skies!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A coward will remain, Sir, </l>
+                    <l>Until the fight is done; </l>
+                    <l>But an immortal hero</l>
+                    <l>Will take his hat and run.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Good bye Sir, I am going </l>
+                    <l>My country calleth me </l>
+                    <l>Allow me Sir, at parting </l>
+                    <l>To wipe my weeping e'e</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In token of our friendship </l>
+                    <l>Accept this &quot;Bonnie Doon&quot; </l>
+                    <l>And when the hand that pluck'd it </l>
+                    <l>Hath passed beyond the moon </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The memory of my ashes</l>
+                    <l>Will consolation be </l>
+                    <l>Then farewell Tuscarora </l>
+                    <l>And farewell Sir, to thee.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

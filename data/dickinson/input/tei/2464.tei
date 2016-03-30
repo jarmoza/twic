@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I have a Bird in spring 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J5">
+                <lg type="stanza">
+                    <l>I have a Bird in spring</l>
+                    <l>Which for myself doth sing --</l>
+                    <l>The spring decoys.</l>
+                    <l>And as the summer nears --</l>
+                    <l>And as the Rose appears,</l>
+                    <l>Robin is gone.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet do I not repine</l>
+                    <l>Knowing that Bird of mine</l>
+                    <l>Though flown --</l>
+                    <l>Learneth beyond the sea</l>
+                    <l>Melody new for me</l>
+                    <l>And will return.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fast in a safer hand</l>
+                    <l>Held in a truer Land</l>
+                    <l>Are mine --</l>
+                    <l>And though they now depart,</l>
+                    <l>Tell I my doubting heart</l>
+                    <l>They're thine.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>In a serener Bright,</l>
+                    <l>In a more golden light</l>
+                    <l>I see</l>
+                    <l>Each little doubt and fear,</l>
+                    <l>Each little discord here</l>
+                    <l>Removed.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then will I not repine,</l>
+                    <l>Knowing that Bird of mine</l>
+                    <l>Though flown</l>
+                    <l>Shall in a distant tree</l>
+                    <l>Bright melody for me</l>
+                    <l>Return.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

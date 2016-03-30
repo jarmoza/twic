@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A drop fell on the apple tree </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F846A">
+                <lg type="stanza">
+                    <l>A Drop fell on the Apple Tree -</l>
+                    <l>Another - on the Roof - </l>
+                    <l>A Half a Dozen kissed the Eaves - </l>
+                    <l>And made the Gables laugh - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A few went out to help the Brook</l>
+                    <l>That went to help the Sea - </l>
+                    <l>Myself Conjectured were they Pearls - </l>
+                    <l>What Necklaces<add type="alternate" extent="could be -">for Me -</add>
+ could be - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Dust replaced, in Hoisted Roads - </l>
+                    <l>The Birds jocoser sung -</l>
+                    <l>The Sunshine threw his Hat away - </l>
+                    <l>The<add type="alternate" extent="Bushes -">Orchards - &amp;#x2022; Meadows -</add>
+ Bushes - spangles flung - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Breezes brought dejected Lutes - </l>
+                    <l>And bathed them in the Glee - </l>
+                    <l>Then Orient showed a single Flag,</l>
+                    <l>And signed the Fete away - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

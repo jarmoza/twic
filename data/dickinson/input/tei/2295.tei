@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The auctioneer of parting </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1646A">
+                <lg type="stanza">
+                    <l>The Auctioneer<app type="division"><lem><lb/></lem></app>
+ of Parting </l>
+                    <l>His &quot;Going, going, gone&quot; </l>
+                    <l>Shouts even<app type="division"><lem><lb/></lem></app>
+ from the <app type="emendation"><lem>Cru - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ cifix</lem><rdg>Crucifix</rdg></app>
+, </l>
+                    <l>And brings<app type="division"><lem><lb/></lem></app>
+ his Hammer<app type="division"><lem><lb/></lem></app>
+ down - </l>
+                    <l>He only sells<app type="division"><lem><lb/></lem></app>
+ the Wilderness,</l>
+                    <l>The prices<app type="division"><lem><lb/></lem></app>
+ of Despair </l>
+                    <l>Range from a<app type="division"><lem><lb/></lem></app>
+ single human<app type="division"><lem><pb/></lem></app>
+ Heart </l>
+                    <l>To Two - not<app type="division"><lem><lb/></lem></app>
+ any more - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

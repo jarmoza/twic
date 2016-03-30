@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I like to see it lap the Miles -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J585">
+                <lg type="stanza">
+                    <l>I like to <app type="revision"><lem>hear it --</lem><rdg>hear it --</rdg></app>
+see it lap the Miles --</l>
+                    <l>And lick the Valleys up --</l>
+                    <l>And stop to feed itself at Tanks --</l>
+                    <l>And then -- prodigious step</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Around a Pile of Mountains --</l>
+                    <l>And supercilious peer</l>
+                    <l>In Shanties -- by the sides of Roads --</l>
+                    <l>And then a Quarry pare</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To fit it's <app type="revision"><lem>Ribs --</lem><rdg>Ribs --</rdg></app>
+sides</l>
+                    <l>And crawl between</l>
+                    <l>Complaining all the while</l>
+                    <l>In horrid -- hooting stanza --</l>
+                    <l>Then chase itself down Hill --</l>
+                </lg>
+                <lg type="stanza">
+                    <l><app type="revision"><lem>And, or then --</lem><rdg>And, or then --</rdg></app>
+And neigh like Boanerges --</l>
+                    <l>Then -- <app type="revision"><lem>punctual as --</lem><rdg>punctual as --</rdg></app>
+prompter than a Star</l>
+                    <l>Stop -- docile and omnipotent</l>
+                    <l>At it's own stable door --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

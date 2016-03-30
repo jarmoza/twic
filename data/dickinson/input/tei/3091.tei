@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ourselves were wed one summer -- dear -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J631">
+                <lg type="stanza">
+                    <l>Ourselves were wed one summer -- dear --</l>
+                    <l>Your Vision -- was in June --</l>
+                    <l>And when Your little Lifetime failed,</l>
+                    <l>I wearied -- too -- of mine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And overtaken in the Dark --</l>
+                    <l>Where You had put me down --</l>
+                    <l>By Some one carrying a Light --</l>
+                    <l>I -- too -- received the Sign.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis true -- Our Futures different lay --</l>
+                    <l>Your Cottage -- faced the sun --</l>
+                    <l>While Oceans -- and the North <app type="revision"><lem>did play</lem><rdg>did play</rdg></app>
+must be --</l>
+                    <l>On every side of mine</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Tis true, Your Garden led the Bloom,</l>
+                    <l>For mine -- in Frosts -- was sown --</l>
+                    <l>And yet, one Summer, we were <app type="revision"><lem>wed --</lem><rdg>wed --</rdg></app>
+Queens</l>
+                    <l>But You -- were crowned in June --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

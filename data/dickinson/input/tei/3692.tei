@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Clover&#x27;s simple Fame 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1232">
+                <lg type="stanza">
+                    <l>The Clover's simple Fame</l>
+                    <l>Remembered of the Cow --</l>
+                    <l>Is better than enameled Realms</l>
+                    <l>Of notability.</l>
+                    <l>Renown perceives itself</l>
+                    <l>And that <app type="revision"><lem>profanes --</lem><rdg>profanes --</rdg></app>
+degrades the Flower --</l>
+                    <l>The Daisy that has looked behind</l>
+                    <l>Has compromised it's power --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Robin is the One
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J828">
+                <lg type="stanza">
+                    <l>The Robin is the One</l>
+                    <l>That interrupt the Morn</l>
+                    <l>With hurried -- few -- express Reports</l>
+                    <l>When March is scarcely on --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Robin is the One</l>
+                    <l>That overflow the Noon</l>
+                    <l>With her cherubic quantity --</l>
+                    <l>An April but begun --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Robin is the One</l>
+                    <l>That speechless from her Nest</l>
+                    <l>Submit that Home -- and Certainty</l>
+                    <l>And Sanctity, are best</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

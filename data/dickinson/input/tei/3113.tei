@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of Being is a Bird 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J653">
+                <lg type="stanza">
+                    <l>Of Being is a Bird</l>
+                    <l>The likest to the Down</l>
+                    <l>An Easy Breeze do put afloat</l>
+                    <l>The General Heavens -- upon --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It soars -- and shifts -- and whirls --</l>
+                    <l>And measures with the Clouds</l>
+                    <l>In easy -- even -- dazzling pace --</l>
+                    <l>No different the Birds --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Except a Wake of Music</l>
+                    <l>Accompany their feet --</l>
+                    <l>As <app type="revision"><lem>should</lem><rdg>should</rdg></app>
+did the Down emit a Tune --</l>
+                    <l>For Extasy -- of it</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

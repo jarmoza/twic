@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How lonesome the wind must feel nights </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1441B">
+                <lg type="stanza">
+                    <l>How lonesome the<app type="division"><lem><lb/></lem></app>
+ Wind must feel Nights - </l>
+                    <l>When People have put<app type="division"><lem><lb/></lem></app>
+ out the Lights </l>
+                    <l>And everything that<app type="division"><lem><lb/></lem></app>
+ has an Inn </l>
+                    <l>Closes the shutter and<app type="division"><lem><lb/></lem></app>
+ goes in - </l>
+                    <l>How pompous the Wind<app type="division"><lem><lb/></lem></app>
+ must feel Noons</l>
+                    <l>Stepping to incorporeal<app type="division"><lem><lb/></lem></app>
+ Tunes </l>
+                    <l>Correcting errors of<app type="division"><lem><lb/></lem></app>
+ the sky </l>
+                    <l>And clarifying scenery </l>
+                    <l>How mighty the Wind<app type="division"><lem><lb/></lem></app>
+ must feel Morns </l>
+                    <l>Encamping on a<app type="division"><lem><pb/></lem></app>
+ thousand Dawns -</l>
+                    <l>Espousing<add type="alternate" extent="each">one</add>
+ each and<app type="division"><lem><lb/></lem></app>
+ spurning all </l>
+                    <l>Then soaring to his<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Temple">Turret</add>
+ Temple Tall - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

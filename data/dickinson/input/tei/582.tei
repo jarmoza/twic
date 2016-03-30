@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How sick to wait in any place but thine </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F410A">
+                <lg type="stanza">
+                    <l>How sick - to wait - in any<app type="division"><lem><lb/></lem></app>
+ place - but thine -</l>
+                    <l>I knew last night - when<app type="division"><lem><lb/></lem></app>
+ some one tried to twine - </l>
+                    <l>Thinking - perhaps - that<app type="division"><lem><lb/></lem></app>
+ I looked tired - or alone - </l>
+                    <l>Or breaking - almost - with<app type="division"><lem><lb/></lem></app>
+ unspoken pain - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And I turned - ducal -</l>
+                    <l><em>That</em> right - was thine - </l>
+                    <l><em>One port</em> - suffices - for a<app type="division"><lem><lb/></lem></app>
+ Brig like <em>mine</em> - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our's be the tossing - wild<app type="division"><lem><lb/></lem></app>
+ though the sea - </l>
+                    <l>Rather than a mooring -<app type="division"><lem><lb/></lem></app>
+ unshared by thee.  </l>
+                    <l>Our's be the Cargo - <em>unladen</em> - <em>here</em> -</l>
+                    <l>Rather than the <em>&quot;spicy isles -&quot;</em> </l>
+                    <l>And thou - not there - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

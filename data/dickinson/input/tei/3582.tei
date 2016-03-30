@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis my first night beneath the Sun 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1122">
+                <lg type="stanza">
+                    <l>'Tis my first night beneath the Sun</l>
+                    <l>If I should spend it here --</l>
+                    <l>Above him is too low a hight</l>
+                    <l>For his Barometer</l>
+                    <l>Who Airs of expectation breathes</l>
+                    <l>And takes the Wind at prime --</l>
+                    <l>But Distance his Delights confides</l>
+                    <l>To those who visit him</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>EXCLUSION</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-13">
+                <lg type="stanza">
+                    <l>The soul selects her own society,</l>
+                    <l>Then shuts the door;</l>
+                    <l>On her divine majority</l>
+                    <l>Obtrude no more.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Unmoved, she notes the chariot's pausing</l>
+                    <l>At her low gate;</l>
+                    <l>Unmoved, an emperor is kneeling</l>
+                    <l>Upon her mat.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I've known her from an ample nation</l>
+                    <l>Choose one;</l>
+                    <l>Then close the valves of her attention</l>
+                    <l>Like stone.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>With sweetness unabated 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1709">
+                <lg type="stanza">
+                    <l>With sweetness unabated</l>
+                    <l>Informed the hour had come</l>
+                    <l>With no remiss of triumph</l>
+                    <l>The autumn started home --</l>
+                    <l>Her home to be with Nature</l>
+                    <l>As competition done</l>
+                    <l>By influential kinsmen</l>
+                    <l>Invited to return</l>
+                    <l>In supplements of Purple</l>
+                    <l>An adequate repast</l>
+                    <l>In heavenly reviewing</l>
+                    <l>Her residue be past --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

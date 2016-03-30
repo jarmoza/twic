@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I bring an unaccustomed wine</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-2">
+                <lg type="stanza">
+                    <l>I bring an unaccustomed wine</l>
+                    <l>To lips long parching, next to mine,</l>
+                    <l>And summon them to drink.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Crackling with fever, they essay;</l>
+                    <l>I turn my brimming eyes away,</l>
+                    <l>And come next hour to look.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The hands still hug the tardy glass;</l>
+                    <l>The lips I would have cooled, alas!</l>
+                    <l>Are so superfluous cold,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I would as soon attempt to warm</l>
+                    <l>The bosoms where the frost has lain</l>
+                    <l>Ages beneath the mould.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some other thirsty there may be</l>
+                    <l>To whom this would have pointed me</l>
+                    <l>Had it remained to speak.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so I always bear the cup</l>
+                    <l>If, haply, mine may be the drop</l>
+                    <l>Some pilgrim thirst to slake, </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If, haply, any say to me,</l>
+                    <l>"Unto the little, unto me,"</l>
+                    <l>When I at last awake.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

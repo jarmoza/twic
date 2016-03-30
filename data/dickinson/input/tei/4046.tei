@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To her derided Home
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1586">
+                <lg type="stanza">
+                    <l>To her derided Home</l>
+                    <l>A Weed of Summer came --</l>
+                    <l>She did not know her station low</l>
+                    <l>Nor Ignominy's Name --</l>
+                    <l>Bestowed a summer long</l>
+                    <l>Upon a fameless flower --</l>
+                    <l>Then swept as lightly from disdain</l>
+                    <l>As Lady from her Bower --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of Bliss the Codes are few --</l>
+                    <l>As Jesus cites of Him --</l>
+                    <l>"Come unto me" the moiety</l>
+                    <l>That wafts the Seraphim --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

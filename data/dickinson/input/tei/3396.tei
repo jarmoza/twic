@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This Dust, and it&#x27;s Feature -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J936">
+                <lg type="stanza">
+                    <l>This Dust, and it's Feature --</l>
+                    <l>Accredited -- Today --</l>
+                    <l>Will in a second <app type="revision"><lem>Being</lem><rdg>Being</rdg></app>
+Future --</l>
+                    <l>Cease to identify --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This Mind, and it's measure --</l>
+                    <l>A too minute Area</l>
+                    <l>For it's enlarged inspection's</l>
+                    <l>Comparison -- appear --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This World, and it's species</l>
+                    <l>A too concluded show</l>
+                    <l>For it's absorbed Attention's</l>
+                    <l><app type="revision"><lem>Memorial --</lem><rdg>Memorial --</rdg></app>
+Remotest scrutiny --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

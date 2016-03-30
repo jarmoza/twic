@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We play at paste </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F282A">
+                <lg type="stanza">
+                    <l>We play at Paste - </l>
+                    <l>Till qualified, for Pearl - </l>
+                    <l>Then, drop the Paste - </l>
+                    <l>And deem ourself a<app type="division"><lem><lb/></lem></app>
+ fool - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Shapes - though -<app type="division"><lem><lb/></lem></app>
+ were similar -</l>
+                    <l>And our new Hands </l>
+                    <l>Learned <em>Gem</em>-tactics - </l>
+                    <l>Practising <em>Sands</em> - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

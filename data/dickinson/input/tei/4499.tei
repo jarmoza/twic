@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Essential oils are wrung:</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-149">
+                <lg type="stanza">
+                    <l>Essential oils are wrung:</l>
+                    <l>The attar from the rose</l>
+                    <l>Is not expressed by suns alone,</l>
+                    <l>It is the gift of screws.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The general rose decays;</l>
+                    <l>But this, in lady's drawer,</l>
+                    <l>Makes summer when the lady lies</l>
+                    <l>In ceaseless rosemary.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

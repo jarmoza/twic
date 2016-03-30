@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Zeroes -- taught us -- Phosphorus -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J689">
+                <lg type="stanza">
+                    <l>The Zeroes -- taught us -- Phosphorus --</l>
+                    <l>We learned to like the Fire</l>
+                    <l>By playing Glaciers -- when a Boy --</l>
+                    <l>And Tinder -- guessed -- by power</l>
+                    <l>Of Opposite -- to balance Odd --</l>
+                    <l>If White -- a Red -- must be!</l>
+                    <l>Paralysis -- our Primer -- dumb --</l>
+                    <l>Unto Vitality!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

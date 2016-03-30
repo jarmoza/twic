@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Soul unto itself
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J683">
+                <lg type="stanza">
+                    <l>The Soul unto itself</l>
+                    <l>Is an imperial friend --</l>
+                    <l>Or the most agonizing Spy --</l>
+                    <l>An Enemy -- could send --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Secure against it's own --</l>
+                    <l>No treason it can fear --</l>
+                    <l>Itself -- it's Sovreign -- of itself</l>
+                    <l>The Soul should stand in Awe --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

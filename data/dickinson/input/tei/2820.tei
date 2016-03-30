@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Death sets a Thing significant
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J360">
+                <lg type="stanza">
+                    <l>Death sets a Thing significant</l>
+                    <l>The Eye had hurried by</l>
+                    <l>Except a perished Creature</l>
+                    <l>Entreat us tenderly</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To ponder little Workmanships</l>
+                    <l>In Crayon, or in Wool,</l>
+                    <l>With "This was last Her fingers did" --</l>
+                    <l>Industrious until --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Thimble weighed too heavy --</l>
+                    <l>The stitches stopped -- themselves --</l>
+                    <l>And then 'twas put among the Dust</l>
+                    <l>Upon the Closet shelves --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Book I have -- a friend gave --</l>
+                    <l>Whose Pencil -- here and there --</l>
+                    <l>Had notched the place that pleased Him --</l>
+                    <l>At Rest -- His fingers are --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Now -- when I read -- I read not --</l>
+                    <l>For interrupting Tears --</l>
+                    <l>Obliterate the Etchings</l>
+                    <l>Too Costly for Repairs.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

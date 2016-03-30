@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Moon is distant from the Sea -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J429">
+                <lg type="stanza">
+                    <l>The Moon is distant from the Sea --</l>
+                    <l>And yet, with Amber Hands --</l>
+                    <l>She leads Him -- docile as a Boy --</l>
+                    <l>Along appointed Sands</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He never misses a Degree --</l>
+                    <l>Obedient to Her Eye</l>
+                    <l>He comes just so far -- toward the Town --</l>
+                    <l>Just so far -- goes away --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh, Signor, Thine, the Amber Hand --</l>
+                    <l>And mine -- the distant Sea --</l>
+                    <l>Obedient to the least command</l>
+                    <l>Thine eye impose on me --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

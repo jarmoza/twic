@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I meant to find her when I came </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F881A">
+                <lg type="stanza">
+                    <l>I meant to find Her<app type="division"><lem><lb/></lem></app>
+ when I Came -</l>
+                    <l>Death - had the same<app type="division"><lem><lb/></lem></app>
+ design - </l>
+                    <l>But the Success - was<app type="division"><lem><lb/></lem></app>
+ His - it seems - </l>
+                    <l>And the Surrender -<app type="division"><lem><lb/></lem></app>
+ Mine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I meant to tell Her how<app type="division"><lem><lb/></lem></app>
+ I longed</l>
+                    <l>For just this single time - </l>
+                    <l>But Death had told<app type="division"><lem><lb/></lem></app>
+ Her so the first - </l>
+                    <l>And she had past, with Him - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To wander - now - is my Repose - </l>
+                    <l>To rest - To rest would be</l>
+                    <l>A privilege of Hurricane </l>
+                    <l>To Memory - and Me - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

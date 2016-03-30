@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This that would greet an hour ago </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F879A">
+                <lg type="stanza">
+                    <l>This that would greet -<app type="division"><lem><lb/></lem></app>
+ an hour ago -</l>
+                    <l>Is quaintest Distance -<app type="division"><lem><lb/></lem></app>
+ now - </l>
+                    <l>Had it a Guest from<app type="division"><lem><lb/></lem></app>
+ Paradise - </l>
+                    <l>Nor glow, would it,<app type="division"><lem><lb/></lem></app>
+ nor bow - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had it a<add type="alternate" extent="notice">summons</add>
+ notice from<app type="division"><lem><lb/></lem></app>
+ the Noon</l>
+                    <l>Nor beam, would it - nor<app type="division"><lem><lb/></lem></app>
+ Warm - </l>
+                    <l>Match me the<add type="alternate" extent="Silver">crystal</add>
+ Silver<app type="division"><lem><lb/></lem></app>
+ Reticence - </l>
+                    <l>Match me the Solid<app type="division"><lem><lb/></lem></app>
+ Calm - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

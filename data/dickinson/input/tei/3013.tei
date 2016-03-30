@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One Crucifixion is recorded -- only
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J553">
+                <lg type="stanza">
+                    <l>One Crucifixion is recorded -- only</l>
+                    <l>How many be</l>
+                    <l>Is not affirmed of Mathematics --</l>
+                    <l>Or History</l>
+                </lg>
+                <lg type="stanza">
+                    <l>One Calvary -- exhibited to Stranger --</l>
+                    <l>As many be</l>
+                    <l>As Persons -- or Peninsulas --</l>
+                    <l>Gethsemane --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is but a Province -- in the Being's Centre --</l>
+                    <l>Judea --</l>
+                    <l>For Journey -- or Crusade's Achieving --</l>
+                    <l>Too near --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our Lord -- indeed -- <app type="revision"><lem>bore --</lem><rdg>bore --</rdg></app>
+made Compound Witness --</l>
+                    <l>And yet --</l>
+                    <l>There's newer -- nearer Crucifixion</l>
+                    <l>Than That --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>9. Being's Centre] Human Centre</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

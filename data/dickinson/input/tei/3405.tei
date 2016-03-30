@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This is a Blossom of the Brain -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J945">
+                <lg type="stanza">
+                    <l>This is a Blossom of the Brain --</l>
+                    <l>A small -- italic Seed</l>
+                    <l>Lodged by Design or Happening</l>
+                    <l>The Spirit fructified --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Shy as the Wind of his <app type="revision"><lem>Lodgings</lem><rdg>Lodgings</rdg></app>
+Chambers</l>
+                    <l>Swift as a Freshet's Tongue</l>
+                    <l>So of the Flower of the Soul</l>
+                    <l>It's process is unknown.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When it is found, a few rejoice</l>
+                    <l>The Wise convey it Home</l>
+                    <l>Carefully cherishing the spot</l>
+                    <l>If other Flower become.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When it is lost, that Day shall be</l>
+                    <l>The Funeral of God,</l>
+                    <l>Upon his Breast, a closing Soul</l>
+                    <l>The Flower of our Lord.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

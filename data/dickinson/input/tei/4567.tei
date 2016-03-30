@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A modest lot, a fame petite,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-51">
+                <lg type="stanza">
+                    <l>A modest lot, a fame petite,</l>
+                    <l>A brief campaign of sting and sweet</l>
+                    <l>Is plenty! Is enough!</l>
+                    <l>A sailor's business is the shore,</l>
+                    <l>A soldier's  balls. Who asketh more</l>
+                    <l>Must seek the neighboring life!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

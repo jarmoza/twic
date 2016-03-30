@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ve none to tell me to but thee </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F929A">
+                <lg type="stanza">
+                    <l>I've none to tell me<app type="division"><lem><lb/></lem></app>
+ to but Thee</l>
+                    <l>So when Thou failest,<app type="division"><lem><lb/></lem></app>
+ nobody - </l>
+                    <l>It was a little tie - </l>
+                    <l>It just held Two, nor<app type="division"><lem><lb/></lem></app>
+ those it held </l>
+                    <l>Since Somewhere thy<app type="division"><lem><lb/></lem></app>
+ sweet Face has spilled</l>
+                    <l>Beyond my Boundary - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>If things were opposite -<app type="division"><lem><lb/></lem></app>
+ and Me </l>
+                    <l>And Me it were, that<app type="division"><lem><lb/></lem></app>
+ ebbed from Thee </l>
+                    <l>On some unanswering Shore - </l>
+                    <l>Would'st Thou seek so -<app type="division"><lem><lb/></lem></app>
+ just say</l>
+                    <l>That I the Answer may pursue </l>
+                    <l>Unto the lips it eddied through - </l>
+                    <l>So - overtaking Thee - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

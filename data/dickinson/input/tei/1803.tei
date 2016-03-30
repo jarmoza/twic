@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The mushroom is the elf of plants </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1350A">
+                <lg type="stanza">
+                    <l>As if it<app type="division"><lem><lb/></lem></app>
+ tarried always -</l>
+                    <l>And yet it's<app type="division"><lem><lb/></lem></app>
+ whole career </l>
+                    <l>Is shorter than<app type="division"><lem><lb/></lem></app>
+ a snake's<app type="division"><lem><lb/></lem></app>
+ delay </l>
+                    <l>And fleeter<app type="division"><lem><lb/></lem></app>
+ than a Tare - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

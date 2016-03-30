@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pink - small - and punctual </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1357C">
+                <lg type="stanza">
+                    <l>Pink - small -<app type="division"><lem><lb/></lem></app>
+ and punctual, </l>
+                    <l>Aromatic - <app type="division"><lem><lb/></lem></app>
+low - </l>
+                    <l>Covert in<app type="division"><lem><lb/></lem></app>
+ April - </l>
+                    <l>Candid in<app type="division"><lem><lb/></lem></app>
+ May - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Dear to the<app type="division"><lem><lb/></lem></app>
+ Moss -</l>
+                    <l>Known to the<app type="division"><lem><lb/></lem></app>
+ Knoll -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Next to the<app type="division"><lem><lb/></lem></app>
+ Robin </l>
+                    <l>In every<app type="division"><lem><lb/></lem></app>
+ human soul - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Bold little<app type="division"><lem><lb/></lem></app>
+ Beauty </l>
+                    <l>Bedecked <app type="division"><lem><lb/></lem></app>
+with thee</l>
+                    <l>Nature <app type="division"><lem><lb/></lem></app>
+forswears </l>
+                    <l>Antiquity - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

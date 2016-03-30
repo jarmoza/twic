@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The sun just touched the morning </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F246A">
+                <lg type="stanza">
+                    <l>The <em>Sun - just touched</em> the<app type="division"><lem><lb/></lem></app>
+ Morning</l>
+                    <l>The <em>Morning</em> - Happy thing - </l>
+                    <l>Supposed that He had come<app type="division"><lem><lb/></lem></app>
+ to <em>dwell</em> - </l>
+                    <l>And Life would all be <em>Spring!</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She felt herself <em>supremer</em> -</l>
+                    <l>A <em>Raised</em> - <em>Etherial Thing!</em> </l>
+                    <l>Henceforth - for Her - <em>what <app type="division"><lem><lb/></lem></app>
+Holiday!</em> </l>
+                    <l>Meanwhile - Her wheeling King - </l>
+                    <l>Trailed - slow - along the Orchards - </l>
+                    <l>His <em>haughty</em> - <em>spangled</em> Hems -</l>
+                    <l>Leaving a <em>new nescessity!</em> </l>
+                    <l>The <em>want</em> of <em>Diadems!</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Morning - <em>fluttered</em> - <em>staggered</em> - </l>
+                    <l><em>Felt feebly</em> - for Her <em>Crown</em> - </l>
+                    <l>Her <em>unannointed forehead</em> -</l>
+                    <l><em>Henceforth</em> - Her <em>only</em> One!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The angle of a landscape </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F578A">
+                <lg type="stanza">
+                    <l>The Angle of a Landscape -</l>
+                    <l>That every time I wake - </l>
+                    <l>Between my Curtain and<app type="division"><lem><lb/></lem></app>
+ the Wall </l>
+                    <l>Opon an ample Crack - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Like a Venetian - waiting -</l>
+                    <l>Accosts my open eye - </l>
+                    <l>Is just a Bough of Apples - </l>
+                    <l>Held slanting, in the Sky - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Pattern of a Chimney - </l>
+                    <l>The Forehead of a Hill -</l>
+                    <l>Sometimes - a Vane's<app type="division"><lem><lb/></lem></app>
+ Forefinger - </l>
+                    <l>But that's - Occasional - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Seasons - shift - my Picture - </l>
+                    <l>Opon my Emerald Bough, </l>
+                    <l>I wake - to find no - Emeralds -</l>
+                    <l>Then - Diamonds - which the Snow<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>From Polar Caskets - fetched<app type="division"><lem><lb/></lem></app>
+ me - </l>
+                    <l>The Chimney - and the Hill - </l>
+                    <l>And just the Steeple's finger - </l>
+                    <l>These - never stir at all -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

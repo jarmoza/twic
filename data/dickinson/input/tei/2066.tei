@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Their barricade against the sky </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1505A">
+                <lg type="stanza">
+                    <l>Their Barricade<app type="division"><lem><lb/></lem></app>
+ against the Sky </l>
+                    <l>The martial Trees<app type="division"><lem><lb/></lem></app>
+ withdraw </l>
+                    <l>And with a Flag<app type="division"><lem><lb/></lem></app>
+ at every turn </l>
+                    <l>Their Armies are no<app type="division"><lem><lb/></lem></app>
+ more - </l>
+                    <l>What Russet Halts in<app type="division"><lem><lb/></lem></app>
+ Nature's March</l>
+                    <l>They indicate or cause </l>
+                    <l>An inference of Mexico </l>
+                    <l>Effaces the Surmise - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Recurrent to the<app type="division"><lem><lb/></lem></app>
+ After Mind </l>
+                    <l>That Massacre of Air -</l>
+                    <l>The Wound that was<app type="division"><lem><lb/></lem></app>
+ not Wound nor Scar - </l>
+                    <l>But Holidays of War - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

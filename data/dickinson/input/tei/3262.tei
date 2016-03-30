@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Time feels so vast that were it not 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J802">
+                <lg type="stanza">
+                    <l>Time feels so vast that were it not</l>
+                    <l>For an Eternity --</l>
+                    <l>I fear me this Circumference</l>
+                    <l>Engross my Finity --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To His exclusion, who prepare</l>
+                    <l>By Processes of Size</l>
+                    <l>For the Stupendous Vision</l>
+                    <l>Of His Diameters --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>6.Processes] Rudiments [of size]/</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

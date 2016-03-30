@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot live with You -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J640">
+                <lg type="stanza">
+                    <l>I cannot live with You --</l>
+                    <l>It would be Life --</l>
+                    <l>And Life is over there --</l>
+                    <l>Behind the Shelf</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Sexton keeps the Key to --</l>
+                    <l>Putting up</l>
+                    <l>Our Life -- His Porcelain --</l>
+                    <l>Like a Cup --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Discarded of the Housewife --</l>
+                    <l>Quaint -- or Broke --</l>
+                    <l>A newer Sevres pleases --</l>
+                    <l>Old Ones crack --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I could not die -- with You --</l>
+                    <l>For One must wait</l>
+                    <l>To shut the Other's Gaze down --</l>
+                    <l>You -- could not --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And I -- Could I stand by</l>
+                    <l>And see You -- freeze --</l>
+                    <l>Without my Right of Frost --</l>
+                    <l>Death's privilege?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor could I rise -- with You --</l>
+                    <l>Because Your Face</l>
+                    <l>Would put out Jesus --</l>
+                    <l>That New Grace</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Glow plain -- and foreign</l>
+                    <l>On my homesick Eye --</l>
+                    <l>Except that You than He</l>
+                    <l>Shone closer by --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They'd judge Us -- How --</l>
+                    <l>For You -- served Heaven -- You know,</l>
+                    <l>Or sought to --</l>
+                    <l>I could not --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Because You saturated Sight --</l>
+                    <l>And I had no more Eyes</l>
+                    <l>For sordid excellence</l>
+                    <l>As Paradise</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And were You lost, I would be --</l>
+                    <l>Though My Name</l>
+                    <l>Rang loudest</l>
+                    <l>On the Heavenly fame --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And were You -- saved --</l>
+                    <l>And I -- condemned to be</l>
+                    <l>Where You were not --</l>
+                    <l>That self -- were Hell to Me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So We must meet apart --</l>
+                    <l>You there -- I -- here --</l>
+                    <l>With just the Door ajar</l>
+                    <l>That Oceans are -- and Prayer --</l>
+                    <l>And that White <app type="revision"><lem>exercise --</lem><rdg>exercise --</rdg></app>
+<app type="revision"><lem>privilege --</lem><rdg>privilege --</rdg></app>
+Sustenance --</l>
+                    <l>Despair --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>35.excellence] consequence</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

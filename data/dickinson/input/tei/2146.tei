@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>There comes a warning like a spy </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1560A">
+                <lg type="stanza">
+                    <l>There comes a<app type="division"><lem><lb/></lem></app>
+ warning like a<app type="division"><lem><lb/></lem></app>
+ spy </l>
+                    <l>A shorter breath<app type="division"><lem><lb/></lem></app>
+ of Day </l>
+                    <l>A<add type="alternate" extent="stealing that is not a stealth">symptom that is not a sound</add>
+ stealing that<app type="division"><lem><lb/></lem></app>
+ is not a<app type="division"><lem><lb/></lem></app>
+ stealth </l>
+                    <l><add type="alternate" extent="">&lt;u&gt;And Summers are away&lt;/u&gt;</add>
+And summer<add type="alternate" extent="is away">passed away</add>
+ is<app type="division"><lem><lb/></lem></app>
+ away - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

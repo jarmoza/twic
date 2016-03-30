@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Popular Heart is a Cannon first -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1226">
+                <lg type="stanza">
+                    <l>The Popular Heart is a Cannon first --</l>
+                    <l>Subsequent a Drum --</l>
+                    <l>Bells for an Auxiliary</l>
+                    <l>And an Afterward of Rum --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not a Tomorrow to know it's name</l>
+                    <l>Nor a Past to stare --</l>
+                    <l>Ditches for Realms and a Trip to Jail</l>
+                    <l>For a Souvenir</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Death is potential to that man </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F650A">
+                <lg type="stanza">
+                    <l>Death is potential to<app type="division"><lem><lb/></lem></app>
+ that Man</l>
+                    <l>Who dies - and to his<app type="division"><lem><lb/></lem></app>
+ friend - </l>
+                    <l>Beyond that - unconspicuous </l>
+                    <l>To Anyone but God - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of these Two - God <app type="emendation"><lem>remem - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ bers</lem><rdg>remembers</rdg></app>
+</l>
+                    <l>The longest - for the<app type="division"><lem><lb/></lem></app>
+ friend - </l>
+                    <l>Is integral - and therefore </l>
+                    <l>Itself dissolved - of God - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

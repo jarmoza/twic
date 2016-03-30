@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The color of the grave is green </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F424A">
+                <lg type="stanza">
+                    <l>The Color of the Grave is<app type="division"><lem><lb/></lem></app>
+ Green -</l>
+                    <l>The Outer Grave - I mean - </l>
+                    <l>You would not know it from<app type="division"><lem><lb/></lem></app>
+ the Field - </l>
+                    <l>Except it own a Stone - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To help the fond - to find it -</l>
+                    <l>Too infinite asleep </l>
+                    <l>To stop and tell them<app type="division"><lem><lb/></lem></app>
+ where it is - </l>
+                    <l>But just a Daisy - deep - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Color of the Grave is<app type="division"><lem><lb/></lem></app>
+ white - </l>
+                    <l>The outer Grave - I mean -</l>
+                    <l>You would not know it from<app type="division"><lem><lb/></lem></app>
+ the Drifts - </l>
+                    <l>In Winter - till the Sun -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Has furrowed out the Aisles - </l>
+                    <l>Then - higher than the Land </l>
+                    <l>The little Dwelling Houses<app type="division"><lem><lb/></lem></app>
+ rise</l>
+                    <l>Where Each - has left<app type="division"><lem><lb/></lem></app>
+ a friend - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Color of the Grave within - </l>
+                    <l>The Duplicate - I mean - </l>
+                    <l>Not all the snows c'd make it white - </l>
+                    <l>Not all the Summers - Green -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>You've seen the Color - maybe - </l>
+                    <l>Opon a Bonnet bound - </l>
+                    <l>When that you met it with before - </l>
+                    <l>The Ferret - Cannot find - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

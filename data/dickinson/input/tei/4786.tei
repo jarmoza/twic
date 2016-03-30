@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dust is the only secret,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-104">
+                <lg type="stanza">
+                    <l>Dust is the only secret,</l>
+                    <l>Death the only one</l>
+                    <l>You cannot find out all about</l>
+                    <l>In his native town:</l>
+                    <l>Nobody knew his father,</l>
+                    <l>Never was a boy,</l>
+                    <l>Hadn't any playmates</l>
+                    <l>Or early history.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Industrious, laconic,</l>
+                    <l>Punctual, sedate,</l>
+                    <l>Bolder than a Brigand,</l>
+                    <l>Swifter than a Fleet,</l>
+                    <l>Builds like a bird too,</l>
+                    <l>Christ robs the nest --</l>
+                    <l>Robin after robin</l>
+                    <l>Smuggled to rest!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Renunciation is a piercing virtue </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F782A">
+                <lg type="stanza">
+                    <l>Renunciation - is a piercing<app type="division"><lem><lb/></lem></app>
+ Virtue -</l>
+                    <l>The letting go </l>
+                    <l>A Presence - for an Expectation - </l>
+                    <l>Not now - </l>
+                    <l>The putting out of Eyes -</l>
+                    <l>Just Sunrise - </l>
+                    <l>Lest Day - </l>
+                    <l>Day's Great Progenitor - </l>
+                    <l>Outvie </l>
+                    <l>Renunciation - is the Choosing</l>
+                    <l>Against itself - </l>
+                    <l>Itself to justify </l>
+                    <l>Unto itself - </l>
+                    <l>When larger function - </l>
+                    <l>Make that appear -</l>
+                    <l>Smaller - that<add type="alternate" extent="Covered">flooded - &amp;#x2022; sated -</add>
+ Covered Vision - Here - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

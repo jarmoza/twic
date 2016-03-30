@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Daisy follows soft the Sun -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J106">
+                <lg type="stanza">
+                    <l>The Daisy follows soft the Sun --</l>
+                    <l>And when his golden walk is done --</l>
+                    <l>Sits shily at his feet --</l>
+                    <l>He -- waking -- finds the flower there --</l>
+                    <l>Wherefore -- Marauder -- art thou here?</l>
+                    <l>Because, Sir, love is sweet!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We are the Flower -- Thou the Sun!</l>
+                    <l>Forgive us, if as days decline --</l>
+                    <l>We nearer steal to Thee!</l>
+                    <l>Enamored of the parting West --</l>
+                    <l>The peace -- the flight -- the Amethyst --</l>
+                    <l>Night's possibility!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

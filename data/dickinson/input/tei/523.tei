@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I know a place where summer strives </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F363A">
+                <lg type="stanza">
+                    <l>I know a place where<app type="division"><lem><lb/></lem></app>
+ Summer strives</l>
+                    <l>With such a practised Frost - </l>
+                    <l>She - each year - leads her<app type="division"><lem><lb/></lem></app>
+ Daisies back - </l>
+                    <l>Recording briefly - &quot;Lost&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But when the South Wind<app type="division"><lem><lb/></lem></app>
+ stirs the Pools</l>
+                    <l>And struggles in the lanes - </l>
+                    <l>Her Heart misgives Her, for<app type="division"><lem><lb/></lem></app>
+ Her Vow - </l>
+                    <l>And she pours soft Refrains </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Into the lap of Adamant - </l>
+                    <l>And spices - and the Dew -</l>
+                    <l>That stiffens quietly to Quartz - </l>
+                    <l>Opon her Amber Shoe - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

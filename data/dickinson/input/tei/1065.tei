@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The spry arms of the wind </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F802A">
+                <lg type="stanza">
+                    <l>The spry Arms<app type="division"><lem><lb/></lem></app>
+ of the Wind </l>
+                    <l>If I could<app type="division"><lem><lb/></lem></app>
+ crawl between </l>
+                    <l>I have an errand<app type="division"><lem><lb/></lem></app>
+ imminent </l>
+                    <l>To an adjoining<app type="division"><lem><lb/></lem></app>
+ Zone - </l>
+                    <l>I should not<app type="division"><lem><lb/></lem></app>
+ care to stop,</l>
+                    <l>My Process is<app type="division"><lem><lb/></lem></app>
+ not long<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>The Wind could<app type="division"><lem><lb/></lem></app>
+ wait without the<app type="division"><lem><lb/></lem></app>
+ Gate </l>
+                    <l>Or stroll the<app type="division"><lem><lb/></lem></app>
+ Town among.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To ascertain<app type="division"><lem><lb/></lem></app>
+ the House </l>
+                    <l><add type="alternate" extent="">[And] if [the] soul&#x27;s within</add>
+And is the Soul<app type="division"><lem><lb/></lem></app>
+ at Home</l>
+                    <l>And hold the<app type="division"><lem><lb/></lem></app>
+ Wick of mine to<app type="division"><lem><lb/></lem></app>
+ it<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>To light, and<app type="division"><lem><lb/></lem></app>
+ then return - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

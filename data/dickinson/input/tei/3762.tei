@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I think that the Root of the Wind is Water -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1302">
+                <lg type="stanza">
+                    <l>I think that the Root of the Wind is Water --</l>
+                    <l>It would not sound so deep</l>
+                    <l>Were it a Firmamental Product --</l>
+                    <l>Airs no Oceans keep --</l>
+                    <l>Mediterranean intonations --</l>
+                    <l>To a Current's Ear ---</l>
+                    <l>There is a maritime conviction</l>
+                    <l>In the Atmosphere --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

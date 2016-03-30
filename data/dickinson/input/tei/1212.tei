@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Split the lark and you&#x27;ll find the music </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F905A">
+                <lg type="stanza">
+                    <l>Split the Lark - and<app type="division"><lem><lb/></lem></app>
+ you'll find the Music -</l>
+                    <l>Bulb after Bulb, in<app type="division"><lem><lb/></lem></app>
+ Silver rolled - </l>
+                    <l>Scantily dealt to the<app type="division"><lem><lb/></lem></app>
+ Summer Morning </l>
+                    <l>Saved for your Ear, when<app type="division"><lem><lb/></lem></app>
+ Lutes be old - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Loose the Flood -<app type="division"><lem><lb/></lem></app>
+ you shall find it patent -</l>
+                    <l>Gush after Gush,<app type="division"><lem><lb/></lem></app>
+ reserved for you - </l>
+                    <l>Scarlet Experiment!<app type="division"><lem><lb/></lem></app>
+ Sceptic Thomas!  </l>
+                    <l>Now, do you doubt<app type="division"><lem><lb/></lem></app>
+ that your Bird was<app type="division"><lem><lb/></lem></app>
+ true?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

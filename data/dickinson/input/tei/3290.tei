@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To this World she returned. 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J830">
+                <lg type="stanza">
+                    <l>To this World she returned.</l>
+                    <l>But with a tinge of that --</l>
+                    <l>A Compound manner,</l>
+                    <l>As a Sod</l>
+                    <l>Espoused a Violet,</l>
+                    <l>That chiefer to the Skies</l>
+                    <l>Than to Himself, allied,</l>
+                    <l>Dwelt hesitating, half of Dust,</l>
+                    <l>And half of Day, the Bride.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

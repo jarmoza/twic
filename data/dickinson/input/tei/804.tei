@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We dream - it is good we are dreaming </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F584A">
+                <lg type="stanza">
+                    <l>We dream - it is good<app type="division"><lem><lb/></lem></app>
+ we<add type="alternate" extent="are dreaming">should [dream</add>
+ are dreaming -</l>
+                    <l>It would hurt us - were<app type="division"><lem><lb/></lem></app>
+ we awake - </l>
+                    <l>But since<add type="alternate" extent="it is">They [are]</add>
+ it is playing - kill<app type="division"><lem><lb/></lem></app>
+ us, </l>
+                    <l>And we are playing - shriek - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>What harm? Men die - <app type="emendation"><lem>Exter - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ nally</lem><rdg>Externally</rdg></app>
+ -</l>
+                    <l>It is a<add type="alternate" extent="truth">Fact</add>
+ truth - of Blood - </l>
+                    <l>But we - are dying in Drama - </l>
+                    <l>And Drama - is<add type="alternate" extent="never">seldom -</add>
+ never dead - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cautious - We jar each other - </l>
+                    <l>And either - open<add type="alternate" extent="the">it&#x27;s</add>
+ the eyes -</l>
+                    <l>Lest the Phantasm - prove<add type="alternate" extent="the mistake -">just [mistake</add>
+ the<app type="division"><lem><lb/></lem></app>
+ mistake - </l>
+                    <l>And the livid Surprise<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Cool us to Shafts of Granite - </l>
+                    <l>With just an age - and name - </l>
+                    <l>And perhaps a<add type="alternate" extent="phrase in Egyptian -">latin inscription -</add>
+ phrase in<app type="division"><lem><lb/></lem></app>
+ Egyptian -</l>
+                    <l>It's prudenter - to dream - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

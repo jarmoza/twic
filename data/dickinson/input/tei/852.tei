@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The wind tapped like a tired man </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F621A">
+                <lg type="stanza">
+                    <l>The Wind - tapped like<app type="division"><lem><lb/></lem></app>
+ a tired Man -</l>
+                    <l>And like a Host - &quot;Come in&quot; </l>
+                    <l>I boldly answered - entered<app type="division"><lem><lb/></lem></app>
+ then </l>
+                    <l>My Residence within </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Rapid - footless Guest -</l>
+                    <l>To offer whom a Chair </l>
+                    <l>Were as impossible as<app type="division"><lem><lb/></lem></app>
+ hand </l>
+                    <l>A Sofa to the Air - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Bone had He to bind<app type="division"><lem><lb/></lem></app>
+ Him - </l>
+                    <l>His Speech was like the<app type="division"><lem><lb/></lem></app>
+ Push</l>
+                    <l>Of numerous Humming Birds<app type="division"><lem><lb/></lem></app>
+ at once </l>
+                    <l>From a superior Bush -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His Countenance - a Billow - </l>
+                    <l>His Fingers, as He passed </l>
+                    <l>Let go a music - as of tunes</l>
+                    <l>Blown tremulous in Glass - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>He visited - still flitting - </l>
+                    <l>Then like a timid Man </l>
+                    <l>Again, He tapped - 'twas<app type="division"><lem><lb/></lem></app>
+ flurriedly - </l>
+                    <l>And I became alone -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

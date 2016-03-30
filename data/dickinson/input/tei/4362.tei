@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE MARTYRS</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-12">
+                <lg type="stanza">
+                    <l>Through the straight pass of suffering</l>
+                    <l>The martyrs even trod,</l>
+                    <l>Their feet upon temptation,</l>
+                    <l>Their faces upon God.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A stately, shriven company;</l>
+                    <l>Convulsion playing round,</l>
+                    <l>Harmless as streaks of meteor</l>
+                    <l>Upon a planet's bound.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Their faith the everlasting troth;</l>
+                    <l>Their expectation fair;</l>
+                    <l>The needle to the north degree</l>
+                    <l>Wades so, through polar air.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

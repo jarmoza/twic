@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>You&#x27;re right - &quot;the way is narrow&quot; </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F249A">
+                <lg type="stanza">
+                    <l>You're right - &quot;the way <em>is<app type="division"><lem><lb/></lem></app>
+</em> narrow&quot; -</l>
+                    <l>And &quot;difficult the Gate&quot; - </l>
+                    <l>And &quot;few there be&quot; - Correct<app type="division"><lem><lb/></lem></app>
+ again - </l>
+                    <l>That &quot;enter in - thereat&quot; - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>'<em>Tis</em> Costly - So are <em>purples!</em></l>
+                    <l>'Tis just the price of <em>Breath</em> - </l>
+                    <l>With but the &quot;Discount&quot; of<app type="division"><lem><lb/></lem></app>
+ <em>the Grave</em> - </l>
+                    <l>Termed by the <em>Brokers</em> - <em>&quot;Death&quot;!</em> </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And after <em>that</em> - there's<app type="division"><lem><lb/></lem></app>
+ Heaven - </l>
+                    <l>The <em>Good</em> man's - <em>&quot;Dividend&quot;</em> -</l>
+                    <l>And <em>Bad</em> men - &quot;go to Jail&quot; - </l>
+                    <l>I guess - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

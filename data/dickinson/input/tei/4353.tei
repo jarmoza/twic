@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The nearest dream recedes, unrealized.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-3">
+                <lg type="stanza">
+                    <l>The nearest dream recedes, unrealized.</l>
+                    <l>The heaven we chase</l>
+                    <l>Like the June bee</l>
+                    <l>Before the school-boy</l>
+                    <l>Invites the race;</l>
+                    <l>Stoops to an easy clover </l>
+                    <l>Dips  evades  teases  deploys;</l>
+                    <l>Then to the royal clouds</l>
+                    <l>Lifts his light pinnace</l>
+                    <l>Heedless of the boy</l>
+                    <l>Staring, bewildered, at the mocking sky.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Homesick for steadfast honey,</l>
+                    <l>Ah! the bee flies not</l>
+                    <l>That brews that rare variety.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

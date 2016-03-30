@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Rehearsal to ourselves </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F664A">
+                <lg type="stanza">
+                    <l>Rehearsal to Ourselves</l>
+                    <l>Of a Withdrawn Delight - </l>
+                    <l>Affords a Bliss like Murder - </l>
+                    <l>Omnipotent - Acute - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We will not drop the<app type="division"><lem><lb/></lem></app>
+ Dirk -</l>
+                    <l>Because We love the Wound </l>
+                    <l>The Dirk Commemorate -<app type="division"><lem><lb/></lem></app>
+ Itself </l>
+                    <l>Remind Us that We died - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

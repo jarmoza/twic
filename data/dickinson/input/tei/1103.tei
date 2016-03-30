@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The luxury to apprehend </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F819D">
+                <lg type="stanza">
+                    <l>The Luxury<app type="division"><lem><lb/></lem></app>
+ to apprehend </l>
+                    <l>The Luxury<app type="division"><lem><lb/></lem></app>
+ 'twould be </l>
+                    <l>To look at thee<app type="division"><lem><lb/></lem></app>
+ a single time </l>
+                    <l>An Epicure of<app type="division"><lem><lb/></lem></app>
+ me </l>
+                    <l>In whatsoever<app type="division"><lem><lb/></lem></app>
+ Presence makes</l>
+                    <l>Till for a further<app type="division"><lem><lb/></lem></app>
+ Food<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>I scarcely<app type="division"><lem><lb/></lem></app>
+ recollect to starve </l>
+                    <l>So first am<app type="division"><lem><lb/></lem></app>
+ I supplied.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Luxury to<app type="division"><lem><lb/></lem></app>
+ meditate </l>
+                    <l>The Luxury<app type="division"><lem><lb/></lem></app>
+ it was</l>
+                    <l>To banquet on<app type="division"><lem><lb/></lem></app>
+ thy Countenance </l>
+                    <l>A Sumptuousness<app type="division"><lem><lb/></lem></app>
+ supplies<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>To plainer Days<app type="division"><lem><lb/></lem></app>
+ whose table far </l>
+                    <l>As Certainty can<app type="division"><lem><lb/></lem></app>
+ see </l>
+                    <l>Is laden with<app type="division"><lem><lb/></lem></app>
+ a single Crumb</l>
+                    <l>The Consciousness<app type="division"><lem><lb/></lem></app>
+ of thee </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The nearest Dream recedes -- unrealized -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J319">
+                <lg type="stanza">
+                    <l>The nearest Dream recedes -- unrealized --</l>
+                    <l>The Heaven we chase,</l>
+                    <l>Like the June Bee -- before the School Boy,</l>
+                    <l>Invites the Race --</l>
+                    <l>Stoops -- to an easy Clover --</l>
+                    <l>Dips -- evades -- teases -- deploys --</l>
+                    <l>Then -- to the Royal Clouds</l>
+                    <l>Lifts his light Pinnace --</l>
+                    <l>Heedless of the Boy --</l>
+                    <l>Staring -- bewildered -- at the mocking sky --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Homesick for steadfast Honey --</l>
+                    <l>Ah, the Bee flies not</l>
+                    <l>That brews that rare variety!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

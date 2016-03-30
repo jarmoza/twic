@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Hills erect their Purple Heads 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1688">
+                <lg type="stanza">
+                    <l>The Hills erect their Purple Heads</l>
+                    <l>The Rivers lean to see</l>
+                    <l>Yet Man has not of all the Throng</l>
+                    <l>A Curiosity</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

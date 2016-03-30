@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I found the phrase to every thought</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-5">
+                <lg type="stanza">
+                    <l>I found the phrase to every thought</l>
+                    <l>I ever had, but one;</l>
+                    <l>And that defies me,  as a hand</l>
+                    <l>Did try to chalk the sun</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To races nurtured in the dark; </l>
+                    <l>How would your own begin?</l>
+                    <l>Can blaze be done in cochineal,</l>
+                    <l>Or noon in mazarin?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

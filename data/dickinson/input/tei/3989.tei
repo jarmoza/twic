@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Tis Seasons since the Dimpled War 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1529">
+                <lg type="stanza">
+                    <l>'Tis Seasons since the Dimpled War</l>
+                    <l>In which we each were Conqueror</l>
+                    <l>And each of us were slain</l>
+                    <l>And Centuries 'twill be and more</l>
+                    <l>Another Massacre before</l>
+                    <l>So modest and so vain --</l>
+                    <l>Without a Formula we fought</l>
+                    <l>Each was to each the Pink Redoubt --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

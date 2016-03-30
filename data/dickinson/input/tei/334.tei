@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Two swimmers wrestled on the spar </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F227A">
+                <lg type="stanza">
+                    <l>Two swimmers wrestled<app type="division"><lem><lb/></lem></app>
+ on the spar </l>
+                    <l>Until the morning sun - </l>
+                    <l>When One turned, smiling,<app type="division"><lem><lb/></lem></app>
+ to the land - </l>
+                    <l>Oh God! the other One!  </l>
+                    <l>The stray ships - passing,<app type="division"><lem><lb/></lem></app>
+ spied a face</l>
+                    <l>Opon the waters borne, </l>
+                    <l>With eyes, in death, still<app type="division"><lem><lb/></lem></app>
+ begging - raised, </l>
+                    <l>And hands - beseeching - thrown!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

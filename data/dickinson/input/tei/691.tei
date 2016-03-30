@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Not &quot;Revelation&quot; &#x27;tis that waits </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F500A">
+                <lg type="stanza">
+                    <l>Not &quot;Revelation&quot; - 'tis -<app type="division"><lem><lb/></lem></app>
+ that waits,<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>But our unfurnished<app type="division"><lem><lb/></lem></app>
+ eyes - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

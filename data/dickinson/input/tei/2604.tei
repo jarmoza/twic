@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>She bore it till the simple veins 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J144">
+                <lg type="stanza">
+                    <l>She bore it till the simple veins</l>
+                    <l>Traced azure on her hand --</l>
+                    <l>Till pleading, round her quiet eyes</l>
+                    <l>The purple Crayons stand.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till Daffodils had come and gone</l>
+                    <l>I cannot tell the sum,</l>
+                    <l>And then she ceased to bear it --</l>
+                    <l>And with the Saints sat down.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No more her patient figure</l>
+                    <l>At twilight soft to meet --</l>
+                    <l>No more her timid bonnet</l>
+                    <l>Upon the village street --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>But Crowns instead, and Courtiers --</l>
+                    <l>And in the midst so fair,</l>
+                    <l>Whose but her shy -- immortal face</l>
+                    <l>Of whom we're whispering here?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

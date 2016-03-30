@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature can do no more</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1722A">
+                <lg type="stanza">
+                    <l>Nature can do no more</l>
+                    <l>She has fulfilled her Dyes</l>
+                    <l>Whatever Flower fail to come</l>
+                    <l>Of other Summer days</l>
+                    <l>Her crescent reimburse</l>
+                    <l>If other Summers be</l>
+                    <l>Nature's imposing negative</l>
+                    <l>Nulls opportunity -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE LETTER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-62">
+                <lg type="stanza">
+                    <l>"Going to him! Happy letter! Tell him </l>
+                    <l>Tell him the page I didn't write;</l>
+                    <l>Tell him I only said the syntax,</l>
+                    <l>And left the verb and the pronoun out.</l>
+                    <l>Tell him just how the fingers hurried,</l>
+                    <l>Then how they waded, slow, slow, slow;</l>
+                    <l>And then you wished you had eyes in your pages,</l>
+                    <l>So you could see what moved them so.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Tell him it wasn't a practised writer,</l>
+                    <l>You guessed, from the way the sentence toiled;</l>
+                    <l>You could hear the bodice tug, behind you,</l>
+                    <l>As if it held but the might of a child;</l>
+                    <l>You almost pitied it, you, it worked so.</l>
+                    <l>Tell him  No, you may quibble there,</l>
+                    <l>For it would split his heart to know it,</l>
+                    <l>And then you and I were silenter.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Tell him night finished before we finished,</l>
+                    <l>And the old clock kept neighing 'day!'</l>
+                    <l>And you got sleepy and begged to be ended </l>
+                    <l>What could it hinder so, to say?</l>
+                    <l>Tell him just how she sealed you, cautious,</l>
+                    <l>But if he ask where you are hid</l>
+                    <l>Until to-morrow,  happy letter!</l>
+                    <l>Gesture, coquette, and shake your head!"</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

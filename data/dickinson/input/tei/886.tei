@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No rack can torture me </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F649A">
+                <lg type="stanza">
+                    <l>No Rack can torture me -</l>
+                    <l>My Soul - at Liberty - </l>
+                    <l>Behind this mortal Bone </l>
+                    <l>There knits a bolder One - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>You cannot prick with<app type="division"><lem><lb/></lem></app>
+ Saw -</l>
+                    <l>Nor pierce with Cimitar - </l>
+                    <l>Two Bodies - therefore be - </l>
+                    <l>Bind One - The Other<app type="division"><lem><lb/></lem></app>
+ fly - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Eagle of his Nest </l>
+                    <l>No easier divest -</l>
+                    <l>And gain the Sky </l>
+                    <l>Than mayest Thou - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Except Thyself may be </l>
+                    <l>Thine Enemy - </l>
+                    <l>Captivity is Consciousness -</l>
+                    <l>So's Liberty - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If your Nerve, deny you -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J292">
+                <lg type="stanza">
+                    <l>If your Nerve, deny you --</l>
+                    <l>Go above your Nerve --</l>
+                    <l>He can lean against the Grave,</l>
+                    <l>If he fear to swerve --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That's a steady posture --</l>
+                    <l>Never any bend</l>
+                    <l>Held of those Brass arms --</l>
+                    <l>Best Giant made --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If your Soul <app type="revision"><lem>stagger</lem><rdg>stagger</rdg></app>
+seesaw --</l>
+                    <l>Lift the Flesh door --</l>
+                    <l>The Poltroon wants Oxygen --</l>
+                    <l>Nothing more --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>6.any] one --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

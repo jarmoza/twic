@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>He strained my faith </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F366A">
+                <lg type="stanza">
+                    <l>He strained my faith -</l>
+                    <l>Did he find it supple?  </l>
+                    <l>Shook my strong trust - </l>
+                    <l>Did it then - yield?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Hurled my belief -</l>
+                    <l>But - did he shatter - it?  </l>
+                    <l>Racked - with suspense - </l>
+                    <l>Not a nerve failed!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wrung me - with Anguish - </l>
+                    <l>But I never doubted him -</l>
+                    <l><app type="emendation"><lem>&#x27;Tho&#x27;</lem><rdg>Tho&#x27;</rdg></app>
+ for what wrong </l>
+                    <l>He did never say - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Stabbed - while I sued </l>
+                    <l>His sweet forgiveness - </l>
+                    <l>Jesus - it's your little &quot;John&quot;!</l>
+                    <l><add type="alternate" extent="Dont you know - me?">Why - Slay - Me?</add>
+Dont you know - me?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

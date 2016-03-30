@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It was given to me by the gods </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F455A">
+                <lg type="stanza">
+                    <l>It was given to me by<app type="division"><lem><lb/></lem></app>
+ the Gods -</l>
+                    <l>When I was a little Girl - </l>
+                    <l>They give us Presents most -<app type="division"><lem><lb/></lem></app>
+ you know - </l>
+                    <l>When we are new - and small.  </l>
+                    <l>I kept it in my Hand -</l>
+                    <l>I never put it down - </l>
+                    <l>I did not dare to eat -<app type="division"><lem><lb/></lem></app>
+ or sleep - </l>
+                    <l>For fear it would be gone - </l>
+                    <l>I heard such words as &quot;Rich&quot; - </l>
+                    <l>When hurrying to school -</l>
+                    <l>From lips at Corners of the Streets - </l>
+                    <l>And wrestled with a smile.<app type="division"><lem><pb/></lem></app>
+  </l>
+                    <l>Rich! 'Twas Myself - was<app type="division"><lem><lb/></lem></app>
+ rich - </l>
+                    <l>To take the name of Gold - </l>
+                    <l>And Gold to own - in solid<app type="division"><lem><lb/></lem></app>
+ Bars -</l>
+                    <l>The Difference - made me<app type="division"><lem><lb/></lem></app>
+ bold - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

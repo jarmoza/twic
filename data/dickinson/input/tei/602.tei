@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&#x27;Twas like a maelstrom with a notch </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F425A">
+                <lg type="stanza">
+                    <l>'Twas like a Maelstrom, with<app type="division"><lem><lb/></lem></app>
+ a notch,</l>
+                    <l>That nearer, every Day, </l>
+                    <l>Kept narrowing it's boiling<app type="division"><lem><lb/></lem></app>
+ Wheel </l>
+                    <l>Until the Agony </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Toyed coolly with the final<app type="division"><lem><lb/></lem></app>
+ inch</l>
+                    <l>Of your delirious Hem - </l>
+                    <l>And you dropt, lost, </l>
+                    <l>When something broke - </l>
+                    <l>And let you from a Dream - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if a Goblin with a<app type="division"><lem><lb/></lem></app>
+ Guage -</l>
+                    <l>Kept measuring the Hours - </l>
+                    <l>Until you felt your Second </l>
+                    <l>Weigh, helpless, in his Paws -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And not a Sinew - stirred -<app type="division"><lem><lb/></lem></app>
+ could help, </l>
+                    <l>And Sense was setting numb -</l>
+                    <l>When God - remembered - and<app type="division"><lem><lb/></lem></app>
+ the Fiend </l>
+                    <l>Let go, then, Overcome - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>As if your Sentence stood -<app type="division"><lem><lb/></lem></app>
+ pronounced - </l>
+                    <l>And you were frozen led </l>
+                    <l>From Dungeon's luxury of<app type="division"><lem><lb/></lem></app>
+ Doubt</l>
+                    <l>To Gibbets, and the Dead - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the Film had<app type="division"><lem><lb/></lem></app>
+ stitched your eyes </l>
+                    <l>A Creature gasped &quot;<app type="emendation"><lem>Repreive</lem><rdg>Reprieve</rdg></app>
+&quot;!  </l>
+                    <l>Which Anguish was the<app type="division"><lem><lb/></lem></app>
+ utterest - then - </l>
+                    <l>To perish, or to live?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

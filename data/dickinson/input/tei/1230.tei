@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The sun is gay or stark </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F922A">
+                <lg type="stanza">
+                    <l>The Sun is gay or<app type="division"><lem><lb/></lem></app>
+ stark</l>
+                    <l>According to Our Deed - </l>
+                    <l>If merry, He is merrier - </l>
+                    <l>If eager for the Dead </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or an expended Day</l>
+                    <l>He helped to make<app type="division"><lem><lb/></lem></app>
+ too bright </l>
+                    <l>His mighty pleasure<app type="division"><lem><lb/></lem></app>
+ suits Us not </l>
+                    <l>It magnifies Our<app type="division"><lem><lb/></lem></app>
+ Freight </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

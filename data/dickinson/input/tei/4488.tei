@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I went to heaven, </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-138">
+                <lg type="stanza">
+                    <l>I went to heaven, </l>
+                    <l>'T was a small town,</l>
+                    <l>Lit with a ruby,</l>
+                    <l>Lathed with down.</l>
+                    <l>Stiller than the fields</l>
+                    <l>At the full dew,</l>
+                    <l>Beautiful as pictures</l>
+                    <l>No man drew.</l>
+                    <l>People like the moth,</l>
+                    <l>Of mechlin, frames,</l>
+                    <l>Duties of gossamer,</l>
+                    <l>And eider names.</l>
+                    <l>Almost contented</l>
+                    <l>I could be</l>
+                    <l>'Mong such unique</l>
+                    <l>Society.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

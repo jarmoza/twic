@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Heart has narrow Banks
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J928">
+                <lg type="stanza">
+                    <l>The Heart has narrow Banks</l>
+                    <l>It <app type="revision"><lem>paces</lem><rdg>paces</rdg></app>
+measures like the Sea</l>
+                    <l>In mighty -- unremitting Bass</l>
+                    <l>And Blue Monotony</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till Hurricane bisect</l>
+                    <l>And as itself discerns</l>
+                    <l>It's insufficient Area</l>
+                    <l>The Heart convulsive learns</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Calm is but a Wall</l>
+                    <l>Of unattempted Gauze</l>
+                    <l>An instant's Push demolishes</l>
+                    <l>A Questioning -- dissolves.</l>
+                </lg>
+                <lg type="stanza">
+                    <l></l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

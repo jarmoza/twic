@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We thirst at first - &#x27;tis nature&#x27;s act </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F750A">
+                <lg type="stanza">
+                    <l>We thirst at first -<app type="division"><lem><lb/></lem></app>
+ 'tis Nature's Act -</l>
+                    <l>And later - when we die - </l>
+                    <l>A little Water supplicate - </l>
+                    <l>Of fingers going by - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It intimates the finer want -</l>
+                    <l>Whose adequate supply </l>
+                    <l>Is that Great Water in<app type="division"><lem><lb/></lem></app>
+ the West - </l>
+                    <l>Termed Immortality - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

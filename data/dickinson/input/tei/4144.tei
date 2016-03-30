@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Blunder is in estimate
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1684">
+                <lg type="stanza">
+                    <l>The Blunder is in estimate</l>
+                    <l>Eternity is there</l>
+                    <l>We say as of a Station</l>
+                    <l>Meanwhile he is so near</l>
+                    <l>He joins me in my Ramble</l>
+                    <l>Divides abode with me</l>
+                    <l>No Friend have I that so persists</l>
+                    <l>As this Eternity</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

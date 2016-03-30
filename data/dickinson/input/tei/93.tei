@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Baffled for just a day or two </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F66B">
+                <lg type="stanza">
+                    <l>Baffled for just a day or two -</l>
+                    <l>Embarrassed - not afraid - </l>
+                    <l>Encounter in my garden </l>
+                    <l>An unexpected Maid.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>She beckons, and the woods start -</l>
+                    <l>She nods, and all begin - </l>
+                    <l>Surely, such a country </l>
+                    <l>I was never in!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

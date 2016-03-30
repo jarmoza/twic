@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Were nature mortal lady
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1762">
+                <lg type="stanza">
+                    <l>Were nature mortal lady</l>
+                    <l>Who had so little time</l>
+                    <l>To pack her trunk and order</l>
+                    <l>The great exchange of clime --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How rapid, how momentous --</l>
+                    <l>What exigencies were --</l>
+                    <l>But nature will be ready</l>
+                    <l>And have an hour to spare.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To make some trifle fairer</l>
+                    <l>That was too fair before --</l>
+                    <l>Enchanting by remaining,</l>
+                    <l>And by departure more.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

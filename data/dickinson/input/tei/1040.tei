@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bloom opon the mountain stated </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F787B">
+                <lg type="stanza">
+                    <l>Bloom opon the<app type="division"><lem><lb/></lem></app>
+ Mountain - stated - </l>
+                    <l>Blameless of a Name - </l>
+                    <l>Efflorescence of<app type="division"><lem><lb/></lem></app>
+ a Sunset - </l>
+                    <l>Reproduced - the same - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Seed, had I, my<app type="division"><lem><lb/></lem></app>
+ Purple Sowing</l>
+                    <l>Should endow the<app type="division"><lem><lb/></lem></app>
+ Day - </l>
+                    <l>Not a Tropic of<app type="division"><lem><lb/></lem></app>
+ a Twilight -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Show itself away - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who for tilling -<app type="division"><lem><lb/></lem></app>
+ to the Mountain </l>
+                    <l>Come, and <app type="emendation"><lem>dis - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ appear</lem><rdg>disappear</rdg></app>
+ -</l>
+                    <l>Whose be Her<app type="division"><lem><lb/></lem></app>
+ Renown, or fading, </l>
+                    <l>Witness, is not<app type="division"><lem><lb/></lem></app>
+ here - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>While I state -<app type="division"><lem><pb/></lem></app>
+ the Solemn Petals - </l>
+                    <l>Far as North - and<app type="division"><lem><lb/></lem></app>
+ East, </l>
+                    <l>Far as South<app type="division"><lem><lb/></lem></app>
+ and West - <app type="emendation"><lem>expan - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ ding</lem><rdg>expanding</rdg></app>
+ -</l>
+                    <l>Culminate - in Rest - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And the Mountain<app type="division"><lem><lb/></lem></app>
+ to the evening </l>
+                    <l>Fit His Countenance - </l>
+                    <l>Indicating, by no Muscle - </l>
+                    <l>The Experience -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

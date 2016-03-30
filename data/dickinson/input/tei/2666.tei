@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Flower must not blame the Bee -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J206">
+                <lg type="stanza">
+                    <l>The Flower must not blame the Bee --</l>
+                    <l>That seeketh his felicity</l>
+                    <l>Too often at her door --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But teach the Footman from Vevay --</l>
+                    <l>Mistress is "not at home" -- to say --</l>
+                    <l>To people -- any more!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

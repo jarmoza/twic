@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who never wanted - maddest joy </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1447A">
+                <lg type="stanza">
+                    <l>Who never wanted -<app type="division"><lem><lb/></lem></app>
+ maddest Joy </l>
+                    <l>Remains to him<app type="division"><lem><lb/></lem></app>
+ unknown - </l>
+                    <l>The Banquet of<app type="division"><lem><lb/></lem></app>
+ Abstemiousness </l>
+                    <l>Defaces that of Wine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Within it's<add type="alternate" extent="reach">hope</add>
+ reach,<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="though yet">and - just</add>
+ though yet ungrasped</l>
+                    <l>Desire's perfect Goal - </l>
+                    <l>No nearer - lest<add type="alternate" extent="the Actual -">Reality - &amp;#x2022; it&#x27;s penury - &amp;#x2022; the possible &amp;#x2022; Vicinity -</add>
+ the<app type="division"><lem><lb/></lem></app>
+ Actual - </l>
+                    <l>Should disenthrall thy<app type="division"><lem><lb/></lem></app>
+ soul - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

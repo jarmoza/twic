@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The face I carry with me -- last -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J336">
+                <lg type="stanza">
+                    <l>The face I carry with me -- last --</l>
+                    <l>When I go out of Time --</l>
+                    <l>To take my Rank -- by -- in the West --</l>
+                    <l>That face -- will just be thine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll hand it to the Angel --</l>
+                    <l>That -- Sir -- was my Degree --</l>
+                    <l>In Kingdoms -- you have heard the Raised --</l>
+                    <l>Refer to -- possibly.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He'll take it -- scan it -- step aside --</l>
+                    <l>Return -- with such a crown</l>
+                    <l>As Gabriel -- never capered at --</l>
+                    <l>And beg me put it on --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then -- he'll turn me round and round --</l>
+                    <l>To an admiring sky --</l>
+                    <l>As one that bore her Master's name --</l>
+                    <l>Sufficient Royalty!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

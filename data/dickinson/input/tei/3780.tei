@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dear March -- Come in -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1320">
+                <lg type="stanza">
+                    <l>Dear March -- Come in --</l>
+                    <l>How glad I am --</l>
+                    <l>I <app type="revision"><lem>looked</lem><rdg>looked</rdg></app>
+hoped for you before --</l>
+                    <l>Put down your Hat --</l>
+                    <l>You must have walked --</l>
+                    <l>How out of Breath you are --</l>
+                    <l>Dear March, how are you, and the Rest --</l>
+                    <l>Did you leave Nature well --</l>
+                    <l>Oh March, Come right up stairs with me --</l>
+                    <l>I have so much to tell --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I got your Letter, and the Birds --</l>
+                    <l>The Maples never knew that you were coming -- till I called</l>
+                    <l>I declare -- how Red their Faces grew --</l>
+                    <l>But March, forgive me -- and</l>
+                    <l>All those Hills you left for me to Hue --</l>
+                    <l>There was no Purple suitable --</l>
+                    <l>You took it all with you --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who knocks? That April.</l>
+                    <l>Lock the Door --</l>
+                    <l>I will not be pursued --</l>
+                    <l>He stayed away a Year to call</l>
+                    <l>When I am occupied --</l>
+                    <l>But trifles look so trivial</l>
+                    <l><app type="revision"><lem>the instant that</lem><rdg>the instant that</rdg></app>
+As soon as you have come</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Blame is just as dear as Praise</l>
+                    <l>And Praise as mere as Blame --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

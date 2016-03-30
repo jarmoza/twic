@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Best Things dwell out of Sight 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J998">
+                <lg type="stanza">
+                    <l>Best Things dwell out of Sight</l>
+                    <l>The Pearl -- the Just -- Our Thought.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Most shun the Public Air</l>
+                    <l>Legitimate, and Rare --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Capsule of the Wind</l>
+                    <l>The Capsule of the Mind</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Exhibit here, as doth a Burr --</l>
+                    <l>Germ's Germ be where?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

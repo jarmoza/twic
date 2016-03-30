@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bound a trouble </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F240B">
+                <lg type="stanza">
+                    <l>Bound a Trouble - and<app type="division"><lem><lb/></lem></app>
+ Lives will bear it -</l>
+                    <l>Circumscription - enables Wo - </l>
+                    <l>Still to anticipate - Were<app type="division"><lem><lb/></lem></app>
+ no limit - </l>
+                    <l>Who<add type="alternate" extent="were sufficient to">could begin on -</add>
+ were sufficient to Misery?  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>State it the Ages - to a<app type="division"><lem><lb/></lem></app>
+ cipher -</l>
+                    <l>And it will ache <app type="emendation"><lem>con - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ tented</lem><rdg>contented</rdg></app>
+ on - </l>
+                    <l>Sing, at it's pain, as any<app type="division"><lem><lb/></lem></app>
+ Workman - </l>
+                    <l>Notching the fall of the<app type="division"><lem><lb/></lem></app>
+ even Sun - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

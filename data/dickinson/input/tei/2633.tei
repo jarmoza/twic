@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A fuzzy fellow, without feet, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J173">
+                <lg type="stanza">
+                    <l>A fuzzy fellow, without feet,</l>
+                    <l>Yet doth exceeding run!</l>
+                    <l>Of velvet, is his Countenance,</l>
+                    <l>And his Complexion, dun!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Sometime, he dwelleth in the grass!</l>
+                    <l>Sometime, upon a bough,</l>
+                    <l>From which he doth descend in plush</l>
+                    <l>Upon the Passer -- by!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>All this in summer.</l>
+                    <l>But when winds alarm the Forest Folk,</l>
+                    <l>He taketh Damask Residence --</l>
+                    <l>And struts in sewing silk!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then, finer than a Lady,</l>
+                    <l>Emerges in the spring!</l>
+                    <l>A Feather on each shoulder!</l>
+                    <l>You'd scarce recognize him!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By Men, yclept Caterpillar!</l>
+                    <l>By me! But who am I,</l>
+                    <l>To tell the pretty secret</l>
+                    <l>Of the Butterfly!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

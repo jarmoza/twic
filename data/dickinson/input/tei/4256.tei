@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A BOOK</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson, Todd and Higginson, 1890</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P90-21">
+                <lg type="stanza">
+                    <l>He ate and drank the precious words,</l>
+                    <l>His spirit grew robust;</l>
+                    <l>He knew no more that he was poor,</l>
+                    <l>Nor that his frame was dust.</l>
+                    <l>He danced along the dingy days,</l>
+                    <l>And this bequest of wings</l>
+                    <l>Was but a book. What liberty</l>
+                    <l>A loosened spirit brings!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

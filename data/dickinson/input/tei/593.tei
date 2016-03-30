@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A toad can die of light </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F419A">
+                <lg type="stanza">
+                    <l>A Toad, can die of Light -</l>
+                    <l>Death is the Common Right </l>
+                    <l>Of Toads and Men - </l>
+                    <l>Of Earl and Midge </l>
+                    <l>The privilege -</l>
+                    <l>Why swagger, then?  </l>
+                    <l>The Gnat's supremacy is<app type="division"><lem><lb/></lem></app>
+ large as Thine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Life - is<add type="alternate" extent="a different">Another</add>
+ a different Thing - </l>
+                    <l>So measure Wine - </l>
+                    <l>Naked of Flask - Naked of Cask -</l>
+                    <l>Bare Rhine - </l>
+                    <l>Which Ruby's mine?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who were &quot;the Father and the Son&quot; </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1280B">
+                <lg type="stanza">
+                    <l>Who were &quot;the Father and<app type="division"><lem><lb/></lem></app>
+ the Son&quot; </l>
+                    <l>We pondered when a<app type="division"><lem><lb/></lem></app>
+ child </l>
+                    <l>And what had they to do<app type="division"><lem><lb/></lem></app>
+ with us - </l>
+                    <l>And when portentous told </l>
+                </lg>
+                <lg type="stanza">
+                    <l>With Inference appalling -</l>
+                    <l>By Distance fortified </l>
+                    <l>We thought at least they<app type="division"><lem><lb/></lem></app>
+ are no worse </l>
+                    <l>Than they have been<app type="division"><lem><lb/></lem></app>
+ described.<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who are the Father and the<app type="division"><lem><lb/></lem></app>
+ Son </l>
+                    <l>Did we demand today -</l>
+                    <l>The Father and the Son<app type="division"><lem><lb/></lem></app>
+ himself </l>
+                    <l>Would doubtless specify </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But had they the felicity </l>
+                    <l>When we desired to know - </l>
+                    <l>We better Friends had<app type="division"><lem><lb/></lem></app>
+ been, perhaps,</l>
+                    <l>Than Time ensue - to be - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We start to find that we<app type="division"><lem><lb/></lem></app>
+ believe </l>
+                    <l>But once - entirely - </l>
+                    <l>Belief, it does not fit so<app type="division"><lem><lb/></lem></app>
+ well </l>
+                    <l>When altered frequently.<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We <app type="emendation"><lem>flush</lem><rdg>blush</rdg></app>
+ - that Heaven if<app type="division"><lem><lb/></lem></app>
+ we achieve - </l>
+                    <l>Event ineffable - </l>
+                    <l>We shall have shunned<app type="division"><lem><lb/></lem></app>
+ until ashamed </l>
+                    <l>To own the Miracle - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

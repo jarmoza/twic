@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bloom -- is Result -- to meet a Flower 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1058">
+                <lg type="stanza">
+                    <l>Bloom -- is Result -- to meet a Flower</l>
+                    <l>And casually glance</l>
+                    <l>Would cause one scarcely to suspect</l>
+                    <l>The minor Circumstance</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Assisting in the Bright Affair</l>
+                    <l>So intricately done</l>
+                    <l>Then offered as a Butterfly</l>
+                    <l>To the Meridian --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To pack the Bud -- oppose flu Worm --</l>
+                    <l>Obtain it's right of Dew --</l>
+                    <l>Adjust the Heat -- elude the Wind --</l>
+                    <l>Escape the prowling Bee</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Great Nature not to disappoint</l>
+                    <l>Awaiting Her that Day --</l>
+                    <l>To be a Flower, is profound</l>
+                    <l>Responsibility --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

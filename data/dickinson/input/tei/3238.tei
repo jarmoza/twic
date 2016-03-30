@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This that would greet -- an hour ago -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J778">
+                <lg type="stanza">
+                    <l>This that would greet -- an hour ago --</l>
+                    <l>Is quaintest <app type="revision"><lem>stiffness --</lem><rdg>stiffness --</rdg></app>
+Distance -- now --</l>
+                    <l>Had it a Guest from Paradise --</l>
+                    <l>Nor glow, would it, nor bow --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Had it a <app type="revision"><lem>summons</lem><rdg>summons</rdg></app>
+notice from the Noon</l>
+                    <l>Nor beam would it nor warm --</l>
+                    <l>Match me the <app type="revision"><lem>crystal</lem><rdg>crystal</rdg></app>
+Silver Reticence --</l>
+                    <l>Match me the Solid Calm --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>One crown that no one seeks 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1735">
+                <lg type="stanza">
+                    <l>One crown <app type="revision"><lem>not any seek</lem><rdg>not any seek</rdg></app>
+that no one seeks</l>
+                    <l><app type="revision"><lem>Although</lem><rdg>Although</rdg></app>
+And yet the highest head</l>
+                    <l>Its isolation coveted</l>
+                    <l>Its <app type="revision"><lem>forfeit</lem><rdg>forfeit</rdg></app>
+stigma deified</l>
+                </lg>
+                <lg type="stanza">
+                    <l>While Pontius Pilate lives</l>
+                    <l>In whatsoever hell</l>
+                    <l>That coronation pierces him</l>
+                    <l>He recollects it well.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

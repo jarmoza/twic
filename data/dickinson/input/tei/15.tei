@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Garlands for queens may be </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F10A">
+                <lg type="stanza">
+                    <l>Garlands for Queens, may be -</l>
+                    <l>Laurels - for rare degree </l>
+                    <l>Of soul or sword - </l>
+                    <l>Ah - but remembering me - </l>
+                    <l>Ah - but remembering thee -</l>
+                    <l>Nature in chivalry - </l>
+                    <l>Nature in charity - </l>
+                    <l>Nature in equity - </l>
+                    <l>The Rose ordained!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perhaps you think me stooping 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J833">
+                <lg type="stanza">
+                    <l>Perhaps you think me stooping</l>
+                    <l>I'm not ashamed of that</l>
+                    <l>Christ -- stooped until He touched the Grave --</l>
+                    <l>Do those at Sacrament</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Commemorate Dishonor</l>
+                    <l>Or love annealed of love</l>
+                    <l>Until it bend as low as Death</l>
+                    <l>Redignified, above?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>With Pinions of Disdain 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1431">
+                <lg type="stanza">
+                    <l>With Pinions of Disdain</l>
+                    <l>The soul can farther fly</l>
+                    <l>Than any feather <app type="revision"><lem>ratified</lem><rdg>ratified</rdg></app>
+<app type="revision"><lem>certified</lem><rdg>certified</rdg></app>
+specified</l>
+                    <l><app type="revision"><lem>by --</lem><rdg>by --</rdg></app>
+in Ornithology --</l>
+                    <l>It wafts this sordid Flesh</l>
+                    <l>Beyond it's <app type="revision"><lem>slow</lem><rdg>slow</rdg></app>
+dull -- control</l>
+                    <l>And during it's electric <app type="revision"><lem>spell</lem><rdg>spell</rdg></app>
+<app type="revision"><lem>stay --</lem><rdg>stay --</rdg></app>
+<app type="revision"><lem>might --</lem><rdg>might --</rdg></app>
+<app type="revision"><lem>act -- span</lem><rdg>act -- span</rdg></app>
+gale --</l>
+                    <l>The body is a soul --</l>
+                    <l>instructing by <app type="revision"><lem>itself</lem><rdg>itself</rdg></app>
+the same --</l>
+                    <l><app type="revision"><lem>What little act it be</lem><rdg>What little act it be</rdg></app>
+How little work it be --</l>
+                    <l>To put off filaments like this</l>
+                    <l>for immortality --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

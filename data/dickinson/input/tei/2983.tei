@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet --  You forgot -- but I remembered 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J523">
+                <lg type="stanza">
+                    <l>Sweet --  You forgot -- but I remembered</l>
+                    <l>Every time -- for Two --</l>
+                    <l>So that the <app type="revision"><lem>Love</lem><rdg>Love</rdg></app>
+Sum be never hindered</l>
+                    <l>Through <app type="revision"><lem>the Lapse --</lem><rdg>the Lapse --</rdg></app>
+<app type="revision"><lem>Fatigue --</lem><rdg>Fatigue --</rdg></app>
+Decay of You</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Say if I erred? Accuse my Farthings --</l>
+                    <l>Blame the <app type="revision"><lem>empty --</lem><rdg>empty --</rdg></app>
+<app type="revision"><lem>childish</lem><rdg>childish</rdg></app>
+little Hand</l>
+                    <l>Happy it be for You -- a Beggar's --</l>
+                    <l><app type="revision"><lem>Saving --</lem><rdg>Saving --</rdg></app>
+Seeking More -- to spend --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Just to be Rich -- to waste my Guineas</l>
+                    <l>On so Best a Heart --</l>
+                    <l>Just to be Poor -- for Barefoot Vision</l>
+                    <l>You -- Sweet -- Shut me out --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

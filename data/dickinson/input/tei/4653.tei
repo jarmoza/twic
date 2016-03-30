@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I meant to find her when I came;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-137">
+                <lg type="stanza">
+                    <l>I meant to find her when I came;</l>
+                    <l>Death had the same design;</l>
+                    <l>But the success was his, it seems,</l>
+                    <l>And the discomfit mine.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I meant to tell her how I longed</l>
+                    <l>For just this single time;</l>
+                    <l>But Death had told her so the first,</l>
+                    <l>And she had hearkened him.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To wander now is my abode;</l>
+                    <l>To rest,  to rest would be</l>
+                    <l>A privilege of hurricane</l>
+                    <l>To memory and me.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

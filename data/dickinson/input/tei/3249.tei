@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On a Columnar Self -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J789">
+                <lg type="stanza">
+                    <l>On a Columnar Self --</l>
+                    <l>How ample to rely</l>
+                    <l>In Tumult -- or Extremity --</l>
+                    <l>How good the Certainty</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That Lever cannot pry --</l>
+                    <l>And Wedge cannot divide</l>
+                    <l>Conviction -- That Granitic Base --</l>
+                    <l>Though None be on our Side --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Suffice Us -- for a Crowd --</l>
+                    <l>Ourself -- and Rectitude --</l>
+                    <l>And that Assembly -- not far off</l>
+                    <l>From furthest <app type="revision"><lem>Faithful</lem><rdg>Faithful</rdg></app>
+Spirit -- God --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

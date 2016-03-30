@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What mystery pervades a well! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1433C">
+                <lg type="stanza">
+                    <l>But Susan is<app type="division"><lem><lb/></lem></app>
+ a stranger yet - </l>
+                    <l>The ones who<app type="division"><lem><lb/></lem></app>
+ cite her most </l>
+                    <l>Have never scaled<app type="division"><lem><lb/></lem></app>
+ her Haunted House </l>
+                    <l>Nor compromised<app type="division"><lem><lb/></lem></app>
+ her Ghost - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To pity those who<app type="division"><lem><lb/></lem></app>
+ know her not</l>
+                    <l>Is helped by the<app type="division"><lem><lb/></lem></app>
+ regret </l>
+                    <l>That those who<app type="division"><lem><lb/></lem></app>
+ know her know<app type="division"><lem><lb/></lem></app>
+ her less </l>
+                    <l>The nearer her<app type="division"><lem><lb/></lem></app>
+ they get - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dare you see a soul at the &quot;White Heat&quot;? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F401C">
+                <lg type="stanza">
+                    <l>Dare you see a Soul at the<app type="division"><lem><lb/></lem></app>
+ &quot;White Heat&quot;?</l>
+                    <l>Then crouch within the door - </l>
+                    <l>Red - is the Fire's common tint - </l>
+                    <l>But when the quickened Ore </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Has<add type="alternate" extent="sated">vanquished</add>
+ sated Flame's conditions -</l>
+                    <l><add type="alternate" extent="She">it</add>
+She quivers from the Forge </l>
+                    <l>Without a color, but the Light </l>
+                    <l>Of unannointed Blaze - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Least Village, boasts it's <app type="emendation"><lem>Black - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ smith</lem><rdg>Blacksmith</rdg></app>
+ - </l>
+                    <l>Whose Anvil's even ring</l>
+                    <l>Stands symbol for the finer Forge </l>
+                    <l>That soundless tugs - within -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Refining these impatient Ores </l>
+                    <l>With Hammer, and with Blaze </l>
+                    <l>Until the designated Light</l>
+                    <l>Repudiate the Forge - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

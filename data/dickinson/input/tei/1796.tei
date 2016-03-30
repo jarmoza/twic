@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The infinite a sudden guest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1344A">
+                <lg type="stanza">
+                    <l>The Infinite a<app type="division"><lem><lb/></lem></app>
+ sudden Guest </l>
+                    <l>Has been assumed<app type="division"><lem><lb/></lem></app>
+ to be -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>But how can that<app type="division"><lem><lb/></lem></app>
+ stupendous come </l>
+                    <l>Which never went away?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

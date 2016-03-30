@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of silken speech and specious shoe </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1078B">
+                <lg type="stanza">
+                    <l>Of Silken Speech and<app type="division"><lem><lb/></lem></app>
+ Specious Shoe</l>
+                    <l>A Traitor is the Bee </l>
+                    <l>His service to the<app type="division"><lem><lb/></lem></app>
+ newest Grace </l>
+                    <l>Present continually </l>
+                </lg>
+                <lg type="stanza">
+                    <l>His Suit a chance</l>
+                    <l>His Troth a Term </l>
+                    <l>Protracted as the Breeze </l>
+                    <l>Continual Ban <app type="emendation"><lem>propoun - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ deth</lem><rdg>propoundeth</rdg></app>
+ He </l>
+                    <l>Continual Divorce.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

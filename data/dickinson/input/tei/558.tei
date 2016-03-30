@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Knows how to forget! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F391B">
+                <lg type="stanza">
+                    <l>Knows how to forget!</l>
+                    <l>But could It teach<app type="division"><lem><lb/></lem></app>
+ it?  </l>
+                    <l>Easiest of Arts, they<app type="division"><lem><lb/></lem></app>
+ say </l>
+                    <l>When one learn how </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Dull Hearts have died</l>
+                    <l>In the Acquisition </l>
+                    <l>Sacrifice for Science </l>
+                    <l>Is common, though, now - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I - went to School </l>
+                    <l>But was not wiser</l>
+                    <l>Globe did not teach<app type="division"><lem><lb/></lem></app>
+ it </l>
+                    <l>Nor Logarithm Show </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;How to forget&quot;!  </l>
+                    <l>Say some Philosopher!<app type="division"><lem><pb/></lem></app>
+  </l>
+                    <l>Ah, to be erudite</l>
+                    <l>Enough to know!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Is it in a Book?  </l>
+                    <l>So, I could buy it - </l>
+                    <l>Is it like a Planet?  </l>
+                    <l>Telescopes would know -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If it be invention </l>
+                    <l>It must have a Patent - </l>
+                    <l>Rabbi of the Wise<app type="division"><lem><lb/></lem></app>
+ Book </l>
+                    <l>Dont you know?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

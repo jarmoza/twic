@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Must be a wo </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F538A">
+                <lg type="stanza">
+                    <l>Must be a Wo -</l>
+                    <l>A loss or so - </l>
+                    <l>To bend the eye </l>
+                    <l>Best Beauty's way - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But - once aslant</l>
+                    <l>It notes Delight </l>
+                    <l><add type="alternate" extent="">as clarified</add>
+As <app type="emendation"><lem>difficult a</lem><rdg>difficult</rdg></app>
+ </l>
+                    <l>As<add type="alternate" extent="Stalactite -">Violet -</add>
+ Stalactite - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Common Bliss </l>
+                    <l>Were had for less -</l>
+                    <l>The price - is </l>
+                    <l>Even as the Grace - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Our Lord - thought no </l>
+                    <l>Extravagance </l>
+                    <l>To pay - a Cross -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

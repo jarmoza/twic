@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If Nature smiles -- the Mother must
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1085">
+                <lg type="stanza">
+                    <l>If Nature smiles -- the Mother must</l>
+                    <l>I'm sure, at many a whim</l>
+                    <l>Of Her eccentric Family --</l>
+                    <l>Is She so much to blame?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

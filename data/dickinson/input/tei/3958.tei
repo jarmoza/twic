@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Glass was the Street -- in tinsel Peril 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1498">
+                <lg type="stanza">
+                    <l>Glass was the Street -- in tinsel Peril</l>
+                    <l>Tree and Traveller stood --</l>
+                    <l>Filled was the Air with merry venture</l>
+                    <l>Hearty with Boys the Road --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Shot the lithe Sleds like shod vibrations</l>
+                    <l>Emphasized and gone</l>
+                    <l>It is the Past's supreme italic</l>
+                    <l>Makes <app type="revision"><lem>this</lem><rdg>this</rdg></app>
+the <app type="revision"><lem>next moment mean</lem><rdg>next moment mean</rdg></app>
+Present mean --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

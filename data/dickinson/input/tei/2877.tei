@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>It is dead -- Find it --  
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J417">
+                <lg type="stanza">
+                    <l>It is dead -- Find it --</l>
+                    <l>Out of sound -- Out of sight --</l>
+                    <l>"Happy"? Which is wiser --</l>
+                    <l>You, or the Wind?</l>
+                    <l>"Conscious"? Wont you ask that --</l>
+                    <l>Of the low Ground?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>"Homesick"? Many met it --</l>
+                    <l>Even through them -- This</l>
+                    <l>Cannot testify --</l>
+                    <l>Themself -- as dumb --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

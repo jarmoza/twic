@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SATURDAY AFTERNOON</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-20">
+                <lg type="stanza">
+                    <l>From all the jails the boys and girls</l>
+                    <l>Ecstatically leap, </l>
+                    <l>Beloved, only afternoon</l>
+                    <l>That prison doesn't keep.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>They storm the earth and stun the air,</l>
+                    <l>A mob of solid bliss.</l>
+                    <l>Alas! that frowns could lie in wait</l>
+                    <l>For such a foe as this!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ll tell you how the sun rose </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F204A">
+                <lg type="stanza">
+                    <l>I'll tell you how the Sun rose -</l>
+                    <l>A Ribbon at a time!  </l>
+                    <l>The Steeples swam in Amethyst!  </l>
+                    <l>The news like squirrels ran!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The hills untied their Bonnets!</l>
+                    <l>The Bobolinks begun!  </l>
+                    <l>Then I said softly to myself </l>
+                    <l>&quot;That must have been the sun&quot;!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But how he <em>set,</em> I know not!  </l>
+                    <l>There seemed a purple stile</l>
+                    <l>Which little yellow boys and girls </l>
+                    <l>Were Climbing all the while - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Till when they reached the other side, </l>
+                    <l>A Dominie in gray </l>
+                    <l>Put gently up the evening bars</l>
+                    <l>And led the flock away!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

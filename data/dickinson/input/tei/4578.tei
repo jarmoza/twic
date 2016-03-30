@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>LOYALTY</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-62">
+                <lg type="stanza">
+                    <l>Split the lark and you'll find the music,</l>
+                    <l>Bulb after bulb, in silver rolled,</l>
+                    <l>Scantily dealt to the summer morning,</l>
+                    <l>Saved for your ear when lutes be old.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Loose the flood, you shall find it patent,</l>
+                    <l>Gush after gush, reserved for you;</l>
+                    <l>Scarlet experiment! sceptic Thomas,</l>
+                    <l>Now, do you doubt that your bird was true?</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

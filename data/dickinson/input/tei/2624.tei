@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mama never forgets her birds, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J164">
+                <lg type="stanza">
+                    <l>Mama never forgets her birds,</l>
+                    <l>Though in another tree --</l>
+                    <l>She looks down just as often</l>
+                    <l>And just as tenderly</l>
+                    <l>As when her little mortal nest</l>
+                    <l>With cunning care she wove --</l>
+                    <l>If either of her "sparrows fall",</l>
+                    <l>She "notices," above.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

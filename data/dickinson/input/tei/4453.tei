@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE WlND&#x27;S VISIT.</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-103">
+                <lg type="stanza">
+                    <l>THE WlND'S VISIT.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The wind tapped like a tired man,</l>
+                    <l>And like a host, "Come in,"</l>
+                    <l>I boldly answered; entered then</l>
+                    <l>My residence within</l>
+                </lg>
+                <lg type="stanza">
+                    <l>A rapid, footless guest,</l>
+                    <l>To offer whom a chair</l>
+                    <l>Were as impossible as hand</l>
+                    <l>A sofa to the air.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No bone had he to bind him,</l>
+                    <l>His speech was like the push</l>
+                    <l>Of numerous humming-birds at once</l>
+                    <l>From a superior bush.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>His countenance a billow,</l>
+                    <l>His fingers, if he pass,</l>
+                    <l>Let go a music, as of tunes</l>
+                    <l>Blown tremulous in glass.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>He visited, still flitting;</l>
+                    <l>Then, like a timid man,</l>
+                    <l>Again he tapped  't was flurriedly </l>
+                    <l>And I became alone.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

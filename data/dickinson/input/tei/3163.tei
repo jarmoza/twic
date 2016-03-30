@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Out of sight? What of that? 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J703">
+                <lg type="stanza">
+                    <l>Out of sight? What of that?</l>
+                    <l>See the Bird -- reach it!</l>
+                    <l>Curve by Curve -- Sweep by Sweep --</l>
+                    <l>Round the Steep Air --</l>
+                    <l>Danger! What is that to Her?</l>
+                    <l>Better 'tis to fail -- there --</l>
+                    <l>Than debate -- here --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Blue is Blue -- the World through --</l>
+                    <l>Amber -- Amber -- Dew -- Dew --</l>
+                    <l>Seek -- Friend -- and see --</l>
+                    <l>Heaven is shy of Earth -- that's all --</l>
+                    <l>Bashful Heaven -- thy Lovers small --</l>
+                    <l>Hide -- too -- from thee --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

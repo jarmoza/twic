@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ll send the feather from my hat! </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F196A">
+                <lg type="stanza">
+                    <l>I'll send the feather<app type="division"><lem><lb/></lem></app>
+ from my Hat!  </l>
+                    <l>Who knows - but at<app type="division"><lem><lb/></lem></app>
+ the sight of <em>that</em> </l>
+                    <l>My Sovreign will relent?  </l>
+                    <l>As trinket - worn<app type="division"><lem><lb/></lem></app>
+ by faded Child - </l>
+                    <l>Confronting eyes long -<app type="division"><lem><lb/></lem></app>
+ comforted -</l>
+                    <l>Blisters the Adamant!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

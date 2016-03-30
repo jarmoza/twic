@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Beauty be not caused - It is </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F654A">
+                <lg type="stanza">
+                    <l>Beauty - be not caused -<app type="division"><lem><lb/></lem></app>
+ It Is -</l>
+                    <l>Chase it, and it ceases - </l>
+                    <l>Chase it not, and it abides -<app type="division"><lem><lb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Overtake the Creases </l>
+                </lg>
+                <lg type="stanza">
+                    <l>In the Meadow - when<app type="division"><lem><lb/></lem></app>
+ the Wind</l>
+                    <l><add type="alternate" extent="Runs">puts -</add>
+Runs his fingers thro' it - </l>
+                    <l>Deity will see to it </l>
+                    <l>That You never do it - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

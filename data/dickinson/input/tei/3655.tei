@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What we see we know somewhat 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1195">
+                <lg type="stanza">
+                    <l>What we see we know somewhat</l>
+                    <l>Be it but a little --</l>
+                    <l>What we dont surmise we do</l>
+                    <l>Though it shows so fickle</l>
+                    <l></l>
+                    <l>I shall vote for Lands with Locks</l>
+                    <l>Granted I can pick 'em --</l>
+                    <l>Transport's doubtful Dividend</l>
+                    <l>Patented by Adam.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

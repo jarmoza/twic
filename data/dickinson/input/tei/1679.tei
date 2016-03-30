@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Through what transports of patience </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1265A">
+                <lg type="stanza">
+                    <l>Through what<app type="division"><lem><lb/></lem></app>
+ transports of<app type="division"><lem><lb/></lem></app>
+ Patience </l>
+                    <l>I reached the<app type="division"><lem><lb/></lem></app>
+ stolid Bliss </l>
+                    <l>To breathe my<app type="division"><lem><lb/></lem></app>
+ Blank without<app type="division"><lem><lb/></lem></app>
+ thee </l>
+                    <l>Attest me this<app type="division"><lem><lb/></lem></app>
+ and this - </l>
+                    <l>By that bleak<app type="division"><lem><lb/></lem></app>
+ exultation</l>
+                    <l>I won as<app type="division"><lem><lb/></lem></app>
+ near as this </l>
+                    <l>Thy privilege<app type="division"><lem><lb/></lem></app>
+ of dying </l>
+                    <l>Abbreviate me<app type="division"><lem><lb/></lem></app>
+ this </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How fits his Umber Coat 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1371">
+                <lg type="stanza">
+                    <l>How fits his Umber Coat</l>
+                    <l>The Tailor of the Nut?</l>
+                    <l>Combined without a seam</l>
+                    <l>Like Raiment of a Dream --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Who spun the Auburn Cloth?</l>
+                    <l>Computed how the girth?</l>
+                    <l>The Chestnut aged grows I</l>
+                    <l>n those primeval Clothes --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We know that we are wise --</l>
+                    <l>Accomplished in Surprise --</l>
+                    <l>Yet by this Countryman --</l>
+                    <l>This nature -- how undone!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

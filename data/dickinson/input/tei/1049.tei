@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>From us she wandered now a year </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F794B">
+                <lg type="stanza">
+                    <l>From Us She wandered<app type="division"><lem><lb/></lem></app>
+ now a Year,</l>
+                    <l>Her tarrying, unknown, </l>
+                    <l>If Wilderness prevent<app type="division"><lem><lb/></lem></app>
+ her feet </l>
+                    <l>Or that Etherial Zone </l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Eye hath seen<app type="division"><lem><lb/></lem></app>
+ and lived</l>
+                    <l>We ignorant must be - </l>
+                    <l>We only know what<app type="division"><lem><lb/></lem></app>
+ time of Year </l>
+                    <l>We took the Mystery.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

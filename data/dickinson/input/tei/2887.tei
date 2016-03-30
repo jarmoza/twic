@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;ll clutch -- and clutch -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J427">
+                <lg type="stanza">
+                    <l>I'll clutch -- and clutch --</l>
+                    <l>Next -- One -- Might be the golden touch --</l>
+                    <l>Could take it --</l>
+                    <l>Diamonds -- Wait --</l>
+                    <l>I'm diving -- just a little late --</l>
+                    <l>But stars -- go slow -- for night --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll string you -- in fine Necklace --</l>
+                    <l>Tiaras -- make -- of some --</l>
+                    <l>Wear you on Hem --</l>
+                    <l>Loop up a Countess -- with you --</l>
+                    <l>Make -- a Diadem -- and mend my old One --</l>
+                    <l>Count -- Hoard -- then lose --</l>
+                    <l>And doubt that you are mine --</l>
+                    <l>To have the joy of feeling it -- again --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I'll show you at the Court --</l>
+                    <l>Bear you -- for Ornament</l>
+                    <l>Where Women breathe --</l>
+                    <l>That every sigh -- may lift you</l>
+                    <l>Just as high -- as I --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And -- when I die --</l>
+                    <l>In meek array -- display you --</l>
+                    <l>Still to show -- how rich I go --</l>
+                    <l>Lest Skies impeach a wealth so wonderful --</l>
+                    <l>And banish me --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

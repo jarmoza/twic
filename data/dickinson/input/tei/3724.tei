@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This is the place they hoped before, 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1264">
+                <lg type="stanza">
+                    <l>This is the place they hoped before,</l>
+                    <l>Where I am hoping now.</l>
+                    <l>The seed of disappointment grew</l>
+                    <l>Within a capsule gay,</l>
+                    <l>Too distant to arrest the feet</l>
+                    <l>That walk this plank of balm --</l>
+                    <l>Before them lies escapeless sea --</l>
+                    <l>The way is closed they came.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

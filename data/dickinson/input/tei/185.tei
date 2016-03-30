@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Safe in their alabaster chambers </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F124E">
+                <lg type="stanza">
+                    <l>Safe in their Alabaster chambers -</l>
+                    <l>Untouched by Morning - </l>
+                    <l>And untouched by Noon - </l>
+                    <l>Lie the meek members of the Resurrection - </l>
+                    <l>Rafter of Satin - and Roof of Stone!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Springs - shake the seals -</l>
+                    <l>But the silence - stiffens -</l>
+                    <l>Frost unhook - in the  Northern Zones -</l>
+                    <l>Icicles - crawl from polar  Caverns -</l>
+                    <l>Midnight in Marble -</l>
+                    <l>Refutes - the Suns -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

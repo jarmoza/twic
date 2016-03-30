@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>You&#x27;ll know it as you know &#x27;tis noon </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F429A">
+                <lg type="stanza">
+                    <l>You'll know it - as you know<app type="division"><lem><lb/></lem></app>
+ 'tis Noon -</l>
+                    <l>By Glory - </l>
+                    <l>As you do the Sun - </l>
+                    <l>By Glory - </l>
+                    <l>As you will in Heaven -</l>
+                    <l>Know God the Father - and the Son.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>By intuition, Mightiest Things </l>
+                    <l>Assert themselves - and not<app type="division"><lem><lb/></lem></app>
+ by terms - </l>
+                    <l>&quot;I'm Midnight&quot; - need the<app type="division"><lem><lb/></lem></app>
+ Midnight say - </l>
+                    <l>&quot;I'm Sunrise&quot; - Need the<app type="division"><lem><lb/></lem></app>
+ Majesty?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Omnipotence - had not a Tongue - </l>
+                    <l>His lisp - is Lightning - and the Sun - </l>
+                    <l>His Conversation - with the Sea - </l>
+                    <l>&quot;How shall you know&quot;?  </l>
+                    <l>Consult your Eye!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

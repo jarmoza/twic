@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No other can reduce </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F738B">
+                <lg type="stanza">
+                    <l>No Other can reduce </l>
+                    <l>Our mortal <app type="emendation"><lem>Con - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ sequence</lem><rdg>Consequence</rdg></app>
+ </l>
+                    <l>Like the remembering<app type="division"><lem><lb/></lem></app>
+ it be nought </l>
+                    <l>A Period from<app type="division"><lem><lb/></lem></app>
+ hence </l>
+                    <l>But Contemplation<app type="division"><lem><lb/></lem></app>
+ for</l>
+                    <l>Cotemporaneous <app type="division"><lem><lb/></lem></app>
+nought<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Our single<app type="division"><lem><lb/></lem></app>
+ Competition </l>
+                    <l>Jehovah's Estimate.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

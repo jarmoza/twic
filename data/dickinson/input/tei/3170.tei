@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sunrise runs for Both -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J710">
+                <lg type="stanza">
+                    <l>The Sunrise runs for Both --</l>
+                    <l>The East -- Her Purple Troth</l>
+                    <l>Keeps with the Hill --</l>
+                    <l>The Noon unwinds Her Blue</l>
+                    <l>Till One Breadth cover Two --</l>
+                    <l>Remotest -- still --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor does the Night forget</l>
+                    <l>A Lamp for Each -- to set --</l>
+                    <l>Wicks wide away -- The North --</l>
+                    <l>Her blazing Sign Erects in Iodine --</l>
+                    <l>Till Both -- can see --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Midnight's Dusky Arms</l>
+                    <l>Clasp Hemispheres, and Homes</l>
+                    <l>And so</l>
+                    <l>Upon Her Bosom -- One --</l>
+                    <l>And One upon Her Hem</l>
+                    <l>Both lie --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

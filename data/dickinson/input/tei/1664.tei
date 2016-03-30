@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Risk is the hair that holds the tun </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1253A">
+                <lg type="stanza">
+                    <l>Risk is the Hair<app type="division"><lem><lb/></lem></app>
+ that holds the Tun </l>
+                    <l>Seductive in the Air - </l>
+                    <l>That Tun is hollow -<app type="division"><lem><lb/></lem></app>
+ but the Tun - </l>
+                    <l>With Hundred<app type="division"><lem><lb/></lem></app>
+ Weights - to spare - </l>
+                    <l>Too ponderous to <app type="emendation"><lem>sus - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ pect</lem><rdg>suspect</rdg></app>
+ the snare</l>
+                    <l>Espies that fickle<app type="division"><lem><lb/></lem></app>
+ chair </l>
+                    <l>And<add type="alternate" extent="seats itself to be let go">mounts to be to atoms hurled -</add>
+ seats itself<app type="division"><lem><lb/></lem></app>
+ to be let go </l>
+                    <l>By that perfidious<app type="division"><lem><lb/></lem></app>
+ Hair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The &quot;foolish Tun&quot; the<app type="division"><lem><lb/></lem></app>
+ Critics say - </l>
+                    <l>While that<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="delusive">obliging - &amp;#x2022; enchanting -</add>
+ delusive<app type="division"><lem><lb/></lem></app>
+ Hair</l>
+                    <l><app type="emendation"><lem>Per &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ - suasive&lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ </lem><rdg>Persuasive</rdg></app>
+ as Perdition, </l>
+                    <l>Decoys <app type="division"><lem><lb/></lem></app>
+it's<add type="alternate" extent="Traveller">Passenger</add>
+ Traveller </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

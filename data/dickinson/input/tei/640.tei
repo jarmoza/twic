@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature sometimes sears a sapling </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F457B">
+                <lg type="stanza">
+                    <l>Nature - sometimes sears<app type="division"><lem><lb/></lem></app>
+ a Sapling -</l>
+                    <l>Sometimes - scalps a Tree - </l>
+                    <l>Her Green People recollect<app type="division"><lem><lb/></lem></app>
+ it </l>
+                    <l>When they do not die - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Fainter Leaves - to Further<app type="division"><lem><lb/></lem></app>
+ Seasons -</l>
+                    <l>Dumbly testify - </l>
+                    <l>We - who have the Souls - </l>
+                    <l>Die oftener - Not so<app type="division"><lem><lb/></lem></app>
+ vitally - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

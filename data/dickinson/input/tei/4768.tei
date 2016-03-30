@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>To the staunch Dust we safe commit thee;</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-86">
+                <lg type="stanza">
+                    <l>To the staunch Dust we safe commit thee;</l>
+                    <l>Tongue if it hath, inviolate to thee --</l>
+                    <l>Silence denote and Sanctity enforce thee,</l>
+                    <l>Passenger of Infinity!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

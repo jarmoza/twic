@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I fear a Man of frugal Speech -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J543">
+                <lg type="stanza">
+                    <l>I fear a Man of <app type="revision"><lem>scanty</lem><rdg>scanty</rdg></app>
+frugal Speech --</l>
+                    <l>I fear a Silent Man --</l>
+                    <l>Haranguer -- I can overtake --</l>
+                    <l>Or Babbler -- entertain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But He who weigheth -- While the Rest --</l>
+                    <l>Expend their <app type="revision"><lem>inmost --</lem><rdg>inmost --</rdg></app>
+furthest pound --</l>
+                    <l>Of this Man -- I am wary --</l>
+                    <l>I fear that He is Grand --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

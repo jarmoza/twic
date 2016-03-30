@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How firm eternity must look </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1397A">
+                <lg type="stanza">
+                    <l>How firm eternity<app type="division"><lem><lb/></lem></app>
+ must look </l>
+                    <l>To crumbling<app type="division"><lem><lb/></lem></app>
+ men like me - </l>
+                    <l>The only adamant<app type="division"><lem><lb/></lem></app>
+ Estate </l>
+                    <l>In all Identity - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="How mighty">momentous</add>
+How mighty to the<app type="division"><lem><lb/></lem></app>
+ insecure -</l>
+                    <l>Thy Physiognomy </l>
+                    <l>To whom not any<app type="division"><lem><lb/></lem></app>
+ Face<add type="alternate" extent="cohere -">present - &amp;#x2022; propound</add>
+ cohere -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Unless<add type="alternate" extent="concealed in thee">intrenched [in thee</add>
+ concealed<app type="division"><lem><lb/></lem></app>
+ in thee.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

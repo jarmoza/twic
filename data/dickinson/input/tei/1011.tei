@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Promise this - When you be dying </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F762A">
+                <lg type="stanza">
+                    <l>Promise This - When You be Dying -</l>
+                    <l><add type="alternate" extent="Some shall">Some one</add>
+Some shall summon Me - </l>
+                    <l>Mine belong Your latest Sighing - </l>
+                    <l>Mine - to Belt Your Eye - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not with Coins - though they be Minted</l>
+                    <l>From An Emperor's Hand - </l>
+                    <l>Be my lips - the only Buckle </l>
+                    <l>Your low Eyes - demand - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mine to stay - when all have wandered - </l>
+                    <l>To devise once more</l>
+                    <l>If the Life be too surrendered - </l>
+                    <l>Life of Mine - restore - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Poured like this - My<add type="alternate" extent="Whole">best</add>
+ Whole Libation - </l>
+                    <l>Just that You should see </l>
+                    <l>Bliss of Death - Life's Bliss extol thro'</l>
+                    <l>Imitating You - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mine - to guard Your Narrow Precinct - </l>
+                    <l>To<add type="alternate" extent="seduce">entice - &amp;#x2022; persuade</add>
+ seduce the Sun </l>
+                    <l><add type="alternate" extent="Longest">latest</add>
+Longest on Your South, to linger, </l>
+                    <l><add type="alternate" extent="Largest">newest - &amp;#x2022; freshest</add>
+Largest Dews of Morn</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To demand, in Your low favor - </l>
+                    <l>Lest the Jealous Grass </l>
+                    <l>Greener lean - Or<add type="alternate" extent="fonder cluster">later linger</add>
+ fonder cluster </l>
+                    <l>Round some other face - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Mine to supplicate Madonna -</l>
+                    <l>If Madonna be </l>
+                    <l>Could<add type="alternate" extent="behold">regard</add>
+ behold so<add type="alternate" extent="far">small - &amp;#x2022; dim</add>
+ far a Creature - </l>
+                    <l>Christ - omitted - Me - </l>
+                </lg>
+                <lg type="stanza">
+                    <l><add type="alternate" extent="Just">still</add>
+Just to follow Your dear feature - </l>
+                    <l>Ne'er so far behind -</l>
+                    <l>For My Heaven - </l>
+                    <l>Had I not been </l>
+                    <l>Most enough - denied?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

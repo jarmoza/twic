@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The murmuring of bees has ceased </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1142B">
+                <lg type="stanza">
+                    <l>The murmuring of<app type="division"><lem><lb/></lem></app>
+ Bees, has ceased </l>
+                    <l>But murmuring of<app type="division"><lem><lb/></lem></app>
+ some </l>
+                    <l>Posterior, prophetic, </l>
+                    <l>Has simultaneous come.  </l>
+                    <l>The lower metres<app type="division"><lem><lb/></lem></app>
+ of the Year</l>
+                    <l>When Nature's laugh<app type="division"><lem><lb/></lem></app>
+ is done </l>
+                    <l>The Revelations of<app type="division"><lem><lb/></lem></app>
+ the Book </l>
+                    <l>Whose Genesis was June.<app type="division"><lem><pb/></lem></app>
+  </l>
+                    <l>Appropriate Creatures<app type="division"><lem><lb/></lem></app>
+ to her change </l>
+                    <l>The Typic Mother<app type="division"><lem><lb/></lem></app>
+ sends</l>
+                    <l>As Accent fades<app type="division"><lem><lb/></lem></app>
+ to interval </l>
+                    <l>With separating<app type="division"><lem><lb/></lem></app>
+ Friends </l>
+                    <l>Till what we<app type="division"><lem><lb/></lem></app>
+ speculate, has been </l>
+                    <l>And thoughts we<app type="division"><lem><lb/></lem></app>
+ will not show </l>
+                    <l>More intimate with<app type="division"><lem><lb/></lem></app>
+ us become<app type="division"><lem><pb/></lem></app>
+</l>
+                    <l>Than Persons,<app type="division"><lem><lb/></lem></app>
+ that we know.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

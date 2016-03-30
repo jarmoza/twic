@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot dance opon my toes </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F381A">
+                <lg type="stanza">
+                    <l>I cannot dance opon<app type="division"><lem><lb/></lem></app>
+ my Toes - </l>
+                    <l>No Man instructed me - </l>
+                    <l>But oftentimes, among<app type="division"><lem><lb/></lem></app>
+ my mind </l>
+                    <l>A Glee possesseth me </l>
+                    <l>That had I <app type="emendation"><lem>Ballet - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ knowledge</lem><rdg>Ballet knowledge</rdg></app>
+ -</l>
+                    <l>Would put itself abroad </l>
+                    <l>In Pirouette to blanch<app type="division"><lem><lb/></lem></app>
+ a Troupe - </l>
+                    <l>Or lay a Prima - mad - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And though I had no<app type="division"><lem><lb/></lem></app>
+ Gown of Gauze -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>No Ringlet, to my Hair -</l>
+                    <l>Nor hopped to Audiences -<app type="division"><lem><lb/></lem></app>
+ like Birds - </l>
+                    <l>One Claw opon the Air - </l>
+                    <l>Nor tossed my shape<app type="division"><lem><lb/></lem></app>
+ in Eider Balls - </l>
+                    <l>Nor rolled on Wheels<app type="division"><lem><lb/></lem></app>
+ of Snow </l>
+                    <l>Till I was out of<app type="division"><lem><lb/></lem></app>
+ sight in sound -</l>
+                    <l>The House encore me<app type="division"><lem><lb/></lem></app>
+ so - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor any know I know<app type="division"><lem><lb/></lem></app>
+ the Art </l>
+                    <l>I mention easy - Here -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Nor any Placard boast<app type="division"><lem><lb/></lem></app>
+ me </l>
+                    <l>It's full as Opera -</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

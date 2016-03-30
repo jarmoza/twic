@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;And with what body do they come&quot;? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1537A">
+                <lg type="stanza">
+                    <l>&quot;And with what body do they come?&quot; </l>
+                    <l>Then they do &quot;come.&quot; Rejoice!  </l>
+                    <l>What door - what hour? Run, run, my soul, </l>
+                    <l>Illuminate the house.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Body&quot;! Then real! A face and eyes!</l>
+                    <l>Conviction it is them!  </l>
+                    <l>Paul knew the man that knew the news, </l>
+                    <l>He passed through Bethlehem.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

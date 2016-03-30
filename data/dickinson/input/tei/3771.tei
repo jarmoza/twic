@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>This dirty -- little Heart
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1311">
+                <lg type="stanza">
+                    <l>This dirty -- little Heart</l>
+                    <l>Is freely mine.</l>
+                    <l>I won it with a Bun --</l>
+                    <l>A Freckled shrine --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>But eligibly fair</l>
+                    <l>To him who sees</l>
+                    <l>The Visage of the Soul</l>
+                    <l>And not the knees.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

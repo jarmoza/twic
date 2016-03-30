@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I rose because he sank </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F454A">
+                <lg type="stanza">
+                    <l>I rose - because He sank -</l>
+                    <l>I thought it would be<app type="division"><lem><lb/></lem></app>
+ opposite - </l>
+                    <l>But when his power dropped - </l>
+                    <l>My Soul grew straight.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I cheered my fainting Prince -</l>
+                    <l>I sang firm - even - Chants - </l>
+                    <l>I helped his Film - with Hymn - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And when the Dews drew<app type="division"><lem><lb/></lem></app>
+ off </l>
+                    <l>That held his Forehead stiff - </l>
+                    <l><add type="alternate" extent="I met him">gave him -</add>
+I met him -</l>
+                    <l><add type="alternate" extent="Balm to Balm">Balm - for  Balm</add>
+Balm to Balm -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I told him Best - must pass </l>
+                    <l>Through this low Arch of<app type="division"><lem><lb/></lem></app>
+ Flesh - </l>
+                    <l>No Casque so brave </l>
+                    <l>It spurn the Grave -<app type="division"><lem><pb/></lem></app>
+</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I told him Worlds I knew </l>
+                    <l>Where Emperors grew - </l>
+                    <l>Who recollected us </l>
+                    <l>If we were true - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And so with Thews of Hymn -</l>
+                    <l>And Sinew from within - </l>
+                    <l>And ways I knew not that<app type="division"><lem><lb/></lem></app>
+ I knew - till then - </l>
+                    <l>I lifted Him - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I envy seas whereon he rides </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F368A">
+                <lg type="stanza">
+                    <l>I envy Seas, whereon He<app type="division"><lem><lb/></lem></app>
+ rides -</l>
+                    <l>I envy Spokes of Wheels </l>
+                    <l>Of Chariots, that Him convey - </l>
+                    <l>I envy <add type="alternate" extent="Crooked Hills">speechless  Hills</add>
+Crooked Hills</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That<add type="alternate" extent="gaze opon">grow along</add>
+ gaze opon His journey -</l>
+                    <l>How easy all can see </l>
+                    <l>What is<add type="alternate" extent="forbidden">denied</add>
+ forbidden utterly </l>
+                    <l><add type="alternate" extent="As Heaven">As Eden</add>
+As Heaven - unto me!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I envy Nests of Sparrows - </l>
+                    <l>That dot His distant Eaves;</l>
+                    <l>The <add type="alternate" extent="wealthy">happy</add>
+wealthy Fly, opon His Pane -</l>
+                    <l>The happy - happy Leaves - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That just abroad His Window </l>
+                    <l>Have Summer's leave to play - </l>
+                    <l>The Ear Rings of Pizarro</l>
+                    <l>Could not obtain for me -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I envy Light - that wakes Him - </l>
+                    <l>And Bells - that boldly<add type="alternate" extent="ring">Come</add>
+ ring </l>
+                    <l>To tell Him it is Noon,<app type="division"><lem><lb/></lem></app>
+ abroad - </l>
+                    <l>Myself - be Noon to Him -</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet interdict - my Blossom - </l>
+                    <l>And abrogate - my Bee - </l>
+                    <l>Lest Noon<add type="alternate" extent="in">down -</add>
+ in everlasting night - </l>
+                    <l>Drop Gabriel - and me - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

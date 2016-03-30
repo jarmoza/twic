@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Praise it - &#x27;tis dead </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1406A">
+                <lg type="stanza">
+                    <l>Praise it - 'tis dead - </l>
+                    <l>It cannot glow - </l>
+                    <l>Warm this inclement<app type="division"><lem><lb/></lem></app>
+ Ear </l>
+                    <l>With the encomium<app type="division"><lem><lb/></lem></app>
+ it earned </l>
+                    <l>Since it was<add type="alternate" extent="gathered">tethered -</add>
+ gathered<app type="division"><lem><lb/></lem></app>
+ here -</l>
+                    <l>Invest this alabaster<app type="division"><lem><lb/></lem></app>
+ Zest </l>
+                    <l>In the<add type="alternate" extent="Delights">Awards</add>
+ Delights of<app type="division"><lem><lb/></lem></app>
+ Dust - </l>
+                    <l>Remitted - since it<app type="division"><lem><lb/></lem></app>
+ flitted it<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>In recusance august.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

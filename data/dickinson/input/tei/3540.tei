@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When they come back -- if Blossoms do -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1080">
+                <lg type="stanza">
+                    <l>When they come back -- if Blossoms do --</l>
+                    <l>I always feel a doubt</l>
+                    <l>If Blossoms can be born again</l>
+                    <l>When once the Art is out --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When they begin, if Robins may,</l>
+                    <l>I always had a fear</l>
+                    <l>I did not tell, it was their last Experiment</l>
+                    <l>Last Year,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>When it is May, if May return,</l>
+                    <l>Had nobody a pang</l>
+                    <l>Lest in a Face so beautiful</l>
+                    <l>He might not look again?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>If I am there -- One does not know</l>
+                    <l>What Party -- One may be</l>
+                    <l>Tomorrow, but if I am there</l>
+                    <l>I take back all I say --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

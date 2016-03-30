@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spirit lasts -- but in what mode -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1576">
+                <lg type="stanza">
+                    <l>The Spirit lasts -- but in what mode --</l>
+                    <l>Below, the Body speaks,</l>
+                    <l>But as the Spirit furnishes --</l>
+                    <l>Apart, it never talks --</l>
+                    <l>The Music in the Violin</l>
+                    <l>Does not emerge alone</l>
+                    <l>But Arm in Arm with Touch, yet Touch</l>
+                    <l>Alone -- is not a Tune --</l>
+                    <l>The Spirit lurks within the Flesh</l>
+                    <l>Like Tides within the Sea</l>
+                    <l>That make the Water live, estranged</l>
+                    <l>What would the Either be?</l>
+                    <l>Does that know -- now -- or does it cease --</l>
+                    <l>That which to this is done,</l>
+                    <l>Resuming at a mutual date</l>
+                    <l>With every future one?</l>
+                    <l>Instinct pursues the Adamant,</l>
+                    <l>Exacting this Reply --</l>
+                    <l>Adversity if it may be, or</l>
+                    <l>Wild Prosperity,</l>
+                    <l>The Rumor's Gate was shut so tight</l>
+                    <l>Before my Mind was sown,</l>
+                    <l>Not even a Prognostic's Push</l>
+                    <l>Could make a Dent thereon --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

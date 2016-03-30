@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE SUN&#x27;S WOOING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-78">
+                <lg type="stanza">
+                    <l>The sun just touched the morning;</l>
+                    <l>The morning, happy thing,</l>
+                    <l>Supposed that he had come to dwell,</l>
+                    <l>And life would be all spring.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She felt herself supremer, </l>
+                    <l>A raised, ethereal thing;</l>
+                    <l>Henceforth for her what holiday!</l>
+                    <l>Meanwhile, her wheeling king</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Trailed slow along the orchards</l>
+                    <l>His haughty, spangled hems,</l>
+                    <l>Leaving a new necessity, </l>
+                    <l>The want of diadems!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The morning fluttered, staggered,</l>
+                    <l>Felt feebly for her crown, </l>
+                    <l>Her unanointed forehead</l>
+                    <l>Henceforth her only one.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

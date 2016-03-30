@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE PREACHER</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-38">
+                <lg type="stanza">
+                    <l>He preached upon "breadth" till it argued him narrow, </l>
+                    <l>The broad are too broad to define;</l>
+                    <l>And of "truth" until it proclaimed him a liar, </l>
+                    <l>The truth never flaunted a sign.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Simplicity fled from his counterfeit presence</l>
+                    <l>As gold the pyrites would shun.</l>
+                    <l>What confusion would cover the innocent Jesus</l>
+                    <l>To meet so enabled a man!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

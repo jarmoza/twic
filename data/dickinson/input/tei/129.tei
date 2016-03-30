@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Have you got a brook in your little heart </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F94A">
+                <lg type="stanza">
+                    <l>Have you got a Brook in your<app type="division"><lem><lb/></lem></app>
+ little heart,</l>
+                    <l>Where bashful flowers blow, </l>
+                    <l>And blushing birds go down to<app type="division"><lem><lb/></lem></app>
+ drink - </l>
+                    <l>And shadows tremble so - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And nobody knows, so still it flows,</l>
+                    <l>That any brook is there, </l>
+                    <l>And yet your little draught<app type="division"><lem><lb/></lem></app>
+ of life </l>
+                    <l>Is daily drunken there - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Why - look out for the little brook<app type="division"><lem><lb/></lem></app>
+ in March, </l>
+                    <l>When the rivers overflow,</l>
+                    <l>And the snows come hurrying<app type="division"><lem><lb/></lem></app>
+ from the hills, </l>
+                    <l>And the bridges often go -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And <em>later,</em> in <em>August</em> it may be, </l>
+                    <l>When the meadows parching lie, </l>
+                    <l>Beware, lest this little brook<app type="division"><lem><lb/></lem></app>
+ of life,</l>
+                    <l>Some burning noon go dry!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Oh what a grace is this </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1669A">
+                <lg type="stanza">
+                    <l>Oh what a Grace<app type="division"><lem><lb/></lem></app>
+ is this - </l>
+                    <l>What Majesties<app type="division"><lem><lb/></lem></app>
+ of Peace - </l>
+                    <l>That having<app type="division"><lem><lb/></lem></app>
+ breathed </l>
+                    <l>The fine - <app type="emendation"><lem>en - &lt;app type=&quot;division&quot;&gt;&lt;lem&gt;&lt;lb/&gt;&lt;/lem&gt;&lt;/app&gt;
+ suing</lem><rdg>ensuing</rdg></app>
+ Right </l>
+                    <l>Without Diminuet<app type="division"><lem><lb/></lem></app>
+ Proceed!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

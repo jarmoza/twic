@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Shall I take thee, the poet said </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1243A">
+                <lg type="stanza">
+                    <l>Shall I take thee, the<app type="division"><lem><lb/></lem></app>
+ Poet said </l>
+                    <l>To the propounded word?  </l>
+                    <l>Be stationed with the<app type="division"><lem><lb/></lem></app>
+ Candidates </l>
+                    <l>Till I have<add type="alternate" extent="finer">further &amp;#x2022; vainer</add>
+ finer<app type="division"><lem><lb/></lem></app>
+ tried - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Poet<add type="alternate" extent="searched">probed</add>
+ searched<app type="division"><lem><lb/></lem></app>
+ Philology</l>
+                    <l>And<add type="alternate" extent="was">just &amp;#x2022; when</add>
+ was about to ring </l>
+                    <l>for the suspended<app type="division"><lem><lb/></lem></app>
+ Candidate </l>
+                    <l><add type="alternate" extent="There came">Advanced</add>
+There came unsummoned<app type="division"><lem><lb/></lem></app>
+ in - </l>
+                    <l>That portion of the Vision </l>
+                    <l>The Word applied to<app type="division"><lem><lb/></lem></app>
+ fill</l>
+                    <l>Not unto nomination </l>
+                    <l>The Cherubim reveal - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I have no life but this,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-59">
+                <lg type="stanza">
+                    <l>I have no life but this,</l>
+                    <l>To lead it here;</l>
+                    <l>Nor any death, but lest</l>
+                    <l>Dispelled from there;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor tie to earths to come,</l>
+                    <l>Nor action new,</l>
+                    <l>Except through this extent,</l>
+                    <l>The realm of you.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

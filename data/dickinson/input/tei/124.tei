@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Soul, wilt thou toss again? </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F89A">
+                <lg type="stanza">
+                    <l>Soul, Wilt thou toss again?</l>
+                    <l>By just such a hazard </l>
+                    <l>Hundreds have lost indeed, </l>
+                    <l>But tens have won an all - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Angels' breathless ballot</l>
+                    <l>Lingers to record thee - </l>
+                    <l>Imps in eager caucus </l>
+                    <l>Raffle for my soul!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

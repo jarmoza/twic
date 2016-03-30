@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Strong draughts of their refreshing minds </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F770A">
+                <lg type="stanza">
+                    <l>Strong Draughts of Their<app type="division"><lem><lb/></lem></app>
+ Refreshing Minds</l>
+                    <l>To drink - enables Mine </l>
+                    <l>Through Desert or the<app type="division"><lem><lb/></lem></app>
+ Wilderness </l>
+                    <l>As bore it sealed Wine - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To go elastic - Or as One</l>
+                    <l>The Camel's trait - attained - </l>
+                    <l>How powerful the stimulus </l>
+                    <l>Of an Hermetic Mind - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Grief is a mouse </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F753A">
+                <lg type="stanza">
+                    <l>Grief is a Mouse -</l>
+                    <l>And chooses Wainscot in the Breast </l>
+                    <l>For His shy House - </l>
+                    <l>And baffles quest - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Grief is a Thief - quick startled -</l>
+                    <l>Pricks His Ear - report to hear </l>
+                    <l>Of that Vast Dark - </l>
+                    <l>That swept His Being - back - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Grief is a Juggler - boldest at the Play - </l>
+                    <l>Lest if He flinch - the eye that way</l>
+                    <l>Pounce on His Bruises - One - say - or Three - </l>
+                    <l>Grief is a Gourmand - spare His luxury - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Best Grief is Tongueless - before He'll tell - </l>
+                    <l>Burn Him in the Public square - </l>
+                    <l>His Ashes - will</l>
+                    <l>Possibly - if they refuse - How then know - </l>
+                    <l>Since a Rack could'nt coax<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="a syllable -">an answer -</add>
+ a syllable - now </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

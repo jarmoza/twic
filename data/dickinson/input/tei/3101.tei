@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Size circumscribes -- it has no room 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J641">
+                <lg type="stanza">
+                    <l>Size circumscribes -- it has no room</l>
+                    <l>For petty furniture --</l>
+                    <l>The Giant tolerates no Gnat</l>
+                    <l><app type="revision"><lem>Because of Gianture</lem><rdg>Because of Gianture</rdg></app>
+For Ease of Gianture --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Repudiates it, all the more --</l>
+                    <l>Because intrinsic size</l>
+                    <l><app type="revision"><lem>Excludes</lem><rdg>Excludes</rdg></app>
+Ignores the possibility</l>
+                    <l>Of <app type="revision"><lem>Jealousies --</lem><rdg>Jealousies --</rdg></app>
+Calumnies -- or Flies.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>3.tolerates] entertains</l>
+                    <l>4.Ease of Gianture] Simple Gianture --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

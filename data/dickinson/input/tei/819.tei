@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When I hoped I feared </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F594C">
+                <lg type="stanza">
+                    <l>When I <app type="division"><lem><lb/></lem></app>
+hoped I<app type="division"><lem><lb/></lem></app>
+ feared - </l>
+                    <l>Since I hoped<app type="division"><lem><lb/></lem></app>
+ I dared </l>
+                    <l>Everywhere <app type="division"><lem><lb/></lem></app>
+alone </l>
+                    <l>As a Church remain - </l>
+                    <l>Spectre <app type="division"><lem><lb/></lem></app>
+cannot harm -</l>
+                    <l>Serpent <app type="division"><lem><lb/></lem></app>
+cannot charm -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>He deposes<app type="division"><lem><lb/></lem></app>
+ Doom </l>
+                    <l>Who hath<app type="division"><lem><lb/></lem></app>
+ suffered<app type="division"><lem><lb/></lem></app>
+ him - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

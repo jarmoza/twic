@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Severer Service of myself
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J786">
+                <lg type="stanza">
+                    <l>Severer Service of myself</l>
+                    <l>I -- hastened to demand</l>
+                    <l>To fill the awful <app type="revision"><lem>Longitude --</lem><rdg>Longitude --</rdg></app>
+Vacuum</l>
+                    <l>Your life had left behind --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I worried Nature with my Wheels</l>
+                    <l>When Her's had ceased to run --</l>
+                    <l>When she had put away Her Work</l>
+                    <l>My own had just begun.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>I strove to weary Brain and Bone --</l>
+                    <l>To harass to fatigue</l>
+                    <l>The glittering Retinue of nerves --</l>
+                    <l>Vitality to clog</l>
+                </lg>
+                <lg type="stanza">
+                    <l>To some dull comfort Those obtain</l>
+                    <l>Who put a Head away</l>
+                    <l>They knew the Hair to --</l>
+                    <l>And forget the <app type="revision"><lem>figure --</lem><rdg>figure --</rdg></app>
+color of the Day --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Affliction would not be appeased --</l>
+                    <l>The <app type="revision"><lem>trouble --</lem><rdg>trouble --</rdg></app>
+Darkness braced as firm</l>
+                    <l>As all my strategem had been</l>
+                    <l>The Midnight to confirm --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Drug for Consciousness -- can be --</l>
+                    <l>Alternative to die</l>
+                    <l>Is Nature's only Pharmacy</l>
+                    <l>For Being's Malady --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

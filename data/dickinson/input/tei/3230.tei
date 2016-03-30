@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I lived on Dread -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J770">
+                <lg type="stanza">
+                    <l>I lived on Dread --</l>
+                    <l>To Those who know</l>
+                    <l>The Stimulus there is</l>
+                    <l>In Danger -- Other impetus</l>
+                    <l>Is numb -- and Vitalless --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As 'twere a Spur -- upon the Soul --</l>
+                    <l>A Fear will urge it where</l>
+                    <l>To go without the Spectre's <app type="revision"><lem>help --</lem><rdg>help --</rdg></app>
+aid</l>
+                    <l>Were Challenging Despair.</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

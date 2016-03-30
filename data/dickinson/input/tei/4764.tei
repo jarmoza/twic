@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I fit for them,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-82">
+                <lg type="stanza">
+                    <l>I fit for them,</l>
+                    <l>I seek the dark till I am thorough fit.</l>
+                    <l>The labor is a solemn one,</l>
+                    <l>With this sufficient sweet --</l>
+                    <l>That abstinence as mine produce</l>
+                    <l>A purer good for them,</l>
+                    <l>If I succeed, --</l>
+                    <l>If not, I had</l>
+                    <l>The transport of the Aim.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

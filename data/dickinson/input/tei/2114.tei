@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The savior must have been </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1538B">
+                <lg type="stanza">
+                    <l>The Savior<app type="division"><lem><lb/></lem></app>
+ must have been </l>
+                    <l>A docile Gentleman, </l>
+                    <l>To come so far,<app type="division"><lem><lb/></lem></app>
+ so cold a Day, </l>
+                    <l>For Little &quot;Fellow men.&quot; </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Road to<app type="division"><lem><lb/></lem></app>
+ Bethlehem</l>
+                    <l>Since he and<app type="division"><lem><lb/></lem></app>
+ I were Boys, </l>
+                    <l>Was leveled,<app type="division"><lem><lb/></lem></app>
+ but for that<app type="division"><lem><lb/></lem></app>
+ 'twould be<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>A rugged<app type="division"><lem><lb/></lem></app>
+ Billion Miles - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Of all the sounds despatched abroad </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F334B">
+                <lg type="stanza">
+                    <l>Of all the Sounds<app type="division"><lem><lb/></lem></app>
+ despatched abroad, </l>
+                    <l>There's not a Charge<app type="division"><lem><lb/></lem></app>
+ to me </l>
+                    <l>Like that old measure<app type="division"><lem><lb/></lem></app>
+ in the Boughs - </l>
+                    <l>That phraseless Melody - </l>
+                    <l>The Wind does - working<app type="division"><lem><lb/></lem></app>
+ like a Hand,</l>
+                    <l>Whose fingers Comb<app type="division"><lem><lb/></lem></app>
+ the Sky - </l>
+                    <l>Then quiver down - with<app type="division"><lem><lb/></lem></app>
+ tufts of Tune - </l>
+                    <l>Permitted Gods, and me -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Inheritance, it is,<app type="division"><lem><lb/></lem></app>
+ to us - </l>
+                    <l>Beyond the Art to<app type="division"><lem><lb/></lem></app>
+ earn -</l>
+                    <l>Beyond the trait to<app type="division"><lem><lb/></lem></app>
+ take away </l>
+                    <l>By Robber, since the<app type="division"><lem><lb/></lem></app>
+ Gain </l>
+                    <l>Is gotten not of fingers - </l>
+                    <l>And inner than the<app type="division"><lem><lb/></lem></app>
+ Bone - </l>
+                    <l>Hid golden, for the<app type="division"><lem><lb/></lem></app>
+ whole of Days,</l>
+                    <l>And even in the Urn, </l>
+                    <l>I cannot vouch the<app type="division"><lem><lb/></lem></app>
+ merry Dust<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Do not arise and<app type="division"><lem><lb/></lem></app>
+ play, </l>
+                    <l>In some odd fashion<app type="division"><lem><lb/></lem></app>
+ of it's own, </l>
+                    <l>Some quainter Holiday,</l>
+                    <l>When Winds go round<app type="division"><lem><lb/></lem></app>
+ and round in Bands - </l>
+                    <l>And thrum opon the<app type="division"><lem><lb/></lem></app>
+ door, </l>
+                    <l>And Birds take<app type="division"><lem><lb/></lem></app>
+ places, overhead, </l>
+                    <l>To bear them Orchestra.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I crave Him grace of<app type="division"><lem><lb/></lem></app>
+ Summer Boughs,</l>
+                    <l>If such an Outcast be -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Who never heard<app type="division"><lem><lb/></lem></app>
+ that fleshless Chant - </l>
+                    <l>Rise - solemn - on the<app type="division"><lem><lb/></lem></app>
+ Tree, </l>
+                    <l>As if some Caravan<app type="division"><lem><lb/></lem></app>
+ of Sound </l>
+                    <l>Off Deserts, in the<app type="division"><lem><lb/></lem></app>
+ Sky,</l>
+                    <l>Had parted Rank - </l>
+                    <l>Then knit, and swept - </l>
+                    <l>In Seamless Company - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

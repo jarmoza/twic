@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Wert Thou but ill -- that I might show thee 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J961">
+                <lg type="stanza">
+                    <l>Wert Thou but ill -- that I might show thee</l>
+                    <l>How long a Day I could endure</l>
+                    <l>Though thine attention stop not on me</l>
+                    <l>Nor the least signal, <app type="revision"><lem>Mine</lem><rdg>Mine</rdg></app>
+Me assure --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Wert Thou but Stranger in ungracious country --</l>
+                    <l>And Mine -- the Door</l>
+                    <l>Thou paused at, for a <app type="revision"><lem>doubtful</lem><rdg>doubtful</rdg></app>
+passing bounty --</l>
+                    <l>No More --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Accused -- wert Thou -- and Myself -- Tribunal --</l>
+                    <l>Convicted -- Sentenced -- Ermine -- not to Me</l>
+                    <l>Half the <app type="revision"><lem>distinction</lem><rdg>distinction</rdg></app>
+Condition, thy Reverse -- to follow --</l>
+                    <l>Just to partake -- the infamy --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Tenant of the Narrow Cottage, we'rt Thou --</l>
+                    <l>Permit to be</l>
+                    <l>The Housewife in thy low attendance</l>
+                    <l>Contenteth Me --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No Service hast Thou, I would not <app type="revision"><lem>attempt --</lem><rdg>attempt --</rdg></app>
+achieve it --</l>
+                    <l>To die -- or live --</l>
+                    <l>The first -- Sweet, <app type="revision"><lem>That was</lem><rdg>That was</rdg></app>
+proved I, ere I saw thee --</l>
+                    <l>For Life -- <app type="revision"><lem>is --</lem><rdg>is --</rdg></app>
+<app type="revision"><lem>means --</lem><rdg>means --</rdg></app>
+be Love --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

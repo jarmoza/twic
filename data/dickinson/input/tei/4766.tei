@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The feet of people walking home</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-84">
+                <lg type="stanza">
+                    <l>The feet of people walking home</l>
+                    <l>In gayer sandals go,</l>
+                    <l>The Crocus, till she rises,</l>
+                    <l>The Vassal of the Snow --</l>
+                    <l>The lips at Hallelujah!</l>
+                    <l>Long years of practice bore,</l>
+                    <l>Till bye and bye these Bargemen</l>
+                    <l>Walked singing on the shore.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pearls are the Diver's farthings</l>
+                    <l>Extorted from the Sea,</l>
+                    <l>Pinions the Seraph's wagon,</l>
+                    <l>Pedestrians once, as we --</l>
+                    <l>Night is the morning's canvas,</l>
+                    <l>Larceny, legacy,</l>
+                    <l>Death but our rapt attention</l>
+                    <l>To immortality.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My figures fail to tell me</l>
+                    <l>How far the village lies,</l>
+                    <l>Whose Peasants are the angels,</l>
+                    <l>Whose Cantons dot the skies,</l>
+                    <l>My Classics veil their faces,</l>
+                    <l>My Faith that dark adores,</l>
+                    <l>Which from its solemn Abbeys</l>
+                    <l>Such resurrection pours!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

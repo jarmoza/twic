@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We dont cry - Tim and I </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F231A">
+                <lg type="stanza">
+                    <l>We dont cry - Tim and I -</l>
+                    <l>We are far too grand - </l>
+                    <l>But we bolt the door tight </l>
+                    <l>To prevent a friend - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then we hide our brave face</l>
+                    <l>Deep in our hand - </l>
+                    <l>Not to cry - Tim and I - </l>
+                    <l>We are far too grand - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor to dream - he and me - </l>
+                    <l>Do we condescend -</l>
+                    <l>We just shut our brown eye </l>
+                    <l>To see to the end - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tim - see Cottages - </l>
+                    <l>But, Oh, so high!  </l>
+                    <l>Then - we shake - Tim and I -</l>
+                    <l>And lest I - cry - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Tim - reads a little Hymn -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And we both pray, </l>
+                    <l>Please, Sir, I and Tim - </l>
+                    <l>Always lost the way!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>We must die - by and by - </l>
+                    <l>Clergymen say - </l>
+                    <l>Tim - shall - if I - do - </l>
+                    <l>I - too - if he - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>How shall we arrange it -</l>
+                    <l>Tim - was - so - shy?  </l>
+                    <l>Take us simultaneous - Lord - </l>
+                    <l>I - &quot;Tim&quot; - and - me!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

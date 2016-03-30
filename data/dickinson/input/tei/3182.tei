@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sweet Mountains -- Ye tell Me no lie -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J722">
+                <lg type="stanza">
+                    <l>Sweet Mountains -- Ye tell Me no lie --</l>
+                    <l>Never deny Me -- Never fly --</l>
+                    <l>Those same unvarying Eyes</l>
+                    <l>Turn on Me -- when I fail -- or feign,</l>
+                    <l>Or take the Royal names in vain --</l>
+                    <l>Their far -- slow -- Violet Gaze --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My Strong Madonnas -- Cherish still --</l>
+                    <l>The Wayward Nun -- beneath the Hill --</l>
+                    <l>Whose service -- is to You --</l>
+                    <l>Her latest Worship -- When the Day</l>
+                    <l>Fades from the Firmament away --</l>
+                    <l>To lift Her Brows on You --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

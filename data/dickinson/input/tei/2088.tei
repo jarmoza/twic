@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The robin is a troubadour </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1520C">
+                <lg type="stanza">
+                    <l>The robin is a Gabriel </l>
+                    <l>In humble circumstances </l>
+                    <l>His dress denotes him socially </l>
+                    <l>Of <app type="emendation"><lem>transports&#x27;</lem><rdg>transport&#x27;s</rdg></app>
+ working classes - </l>
+                    <l>He has the punctuality</l>
+                    <l>Of the New England farmer </l>
+                    <l>The same oblique integrity </l>
+                    <l>A vista - vastly warmer.  </l>
+                    <l>A small, but sturdy residence </l>
+                    <l>A self denying household</l>
+                    <l>The guests of perspicacity </l>
+                    <l>Are all that cross his threshold </l>
+                    <l>As covert as a fugitive </l>
+                    <l>Cajoling consternation </l>
+                    <l>By ditties to the enemy</l>
+                    <l>And silvan punctuation - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

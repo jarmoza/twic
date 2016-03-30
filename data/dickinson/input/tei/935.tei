@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why make it doubt - it hurts it so </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F697A">
+                <lg type="stanza">
+                    <l>Why make it doubt - it<app type="division"><lem><lb/></lem></app>
+ hurts it so -</l>
+                    <l>So sick - to guess - </l>
+                    <l>So strong - to know - </l>
+                    <l>So brave - opon it's little<app type="division"><lem><lb/></lem></app>
+ Bed </l>
+                    <l>To tell the very last They<app type="division"><lem><lb/></lem></app>
+ said</l>
+                    <l>Unto Itself - and smile -<app type="division"><lem><lb/></lem></app>
+ And shake - </l>
+                    <l>For that dear - distant -<app type="division"><lem><lb/></lem></app>
+ dangerous - sake - </l>
+                    <l>But - the Instead -<app type="division"><lem><lb/></lem></app>
+ the Pinching fear </l>
+                    <l>That Something - it did<app type="division"><lem><lb/></lem></app>
+ do - or dare - </l>
+                    <l>Offend the Vision - and<app type="division"><lem><lb/></lem></app>
+ it flee -</l>
+                    <l>And They no more remember me - </l>
+                    <l>Nor ever turn to tell me why - </l>
+                    <l>Oh, Master, This is Misery - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

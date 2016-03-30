@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spider as an Artist
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1275">
+                <lg type="stanza">
+                    <l>The Spider as an Artist</l>
+                    <l>Has never been employed --</l>
+                    <l>Though his surpassing Merit</l>
+                    <l>Is freely certified</l>
+                    <l>By every Broom and Bridget</l>
+                    <l>Throughout a Christian Land --</l>
+                    <l>Neglected Son of Genius</l>
+                    <l>I take thee by the Hand --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

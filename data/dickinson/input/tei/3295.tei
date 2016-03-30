@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nature and God -- I neither knew 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J835">
+                <lg type="stanza">
+                    <l>Nature and God -- I neither knew</l>
+                    <l>Yet Both so well knew me</l>
+                    <l>They startled, like Executors</l>
+                    <l>Of My identity.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Yet Neither told -- that I could learn --</l>
+                    <l>My Secret as secure</l>
+                    <l>As Herschel's private interest</l>
+                    <l>Or Mercury's affair --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

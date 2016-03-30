@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lain in Nature -- so suffice us
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1288">
+                <lg type="stanza">
+                    <l>Lain in Nature -- so suffice us</l>
+                    <l>The enchantless Pod</l>
+                    <l>When we advertise existence</l>
+                    <l>For the missing Seed --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Maddest Heart that God created</l>
+                    <l>Cannot move a sod</l>
+                    <l>Pasted by the simple summer</l>
+                    <l>On the <app type="revision"><lem>soldered --</lem><rdg>soldered --</rdg></app>
+Longed for Dead</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

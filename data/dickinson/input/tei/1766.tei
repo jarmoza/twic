@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The notice that is called the spring </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1319A">
+                <lg type="stanza">
+                    <l>The Notice that is<app type="division"><lem><lb/></lem></app>
+ called the Spring </l>
+                    <l>Is but a month<app type="division"><lem><lb/></lem></app>
+ away - </l>
+                    <l>Put up my Heart<app type="division"><lem><lb/></lem></app>
+ thy Hoary work </l>
+                    <l>And take a Rosy<app type="division"><lem><lb/></lem></app>
+ Chair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not any House the<app type="division"><lem><lb/></lem></app>
+ Flowers keep -</l>
+                    <l>The Birds enamor<app type="division"><lem><lb/></lem></app>
+ Care - </l>
+                    <l>Our salary the<app type="division"><lem><lb/></lem></app>
+ longest Day </l>
+                    <l>Is nothing but a<app type="division"><lem><lb/></lem></app>
+ Bier - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

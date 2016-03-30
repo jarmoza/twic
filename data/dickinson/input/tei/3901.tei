@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>These Fevered Days -- to take them to the Forest 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1441">
+                <lg type="stanza">
+                    <l>These Fevered Days -- to take them to the Forest</l>
+                    <l>Where Waters cool around the mosses crawl --</l>
+                    <l>And shade is all that devastates the stillness</l>
+                    <l>Seems it sometimes this would be all --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How News must feel when travelling 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1319">
+                <lg type="stanza">
+                    <l>How News must feel when travelling</l>
+                    <l>If News have any Heart</l>
+                    <l>Alighting at the Dwelling</l>
+                    <l>'Twill enter like a Dart!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What News must think when pondering</l>
+                    <l>If News have any Thought</l>
+                    <l>Concerning the stupendousness</l>
+                    <l>Of it's perceiveless freight!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>What News will do when every Man</l>
+                    <l>Shall comprehend as one</l>
+                    <l>And not in all the Universe</l>
+                    <l>A thing to tell remain?</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

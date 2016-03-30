@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>ENDING</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-111">
+                <lg type="stanza">
+                    <l>That is solemn we have ended, </l>
+                    <l>Be it but a play,</l>
+                    <l>Or a glee among the garrets,</l>
+                    <l>Or a holiday,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or a leaving home; or later,</l>
+                    <l>Parting with a world</l>
+                    <l>We have understood, for better</l>
+                    <l>Still it be unfurled.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

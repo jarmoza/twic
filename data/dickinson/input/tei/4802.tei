@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How destitute is he</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-120">
+                <lg type="stanza">
+                    <l>How destitute is he</l>
+                    <l>Whose Gold is firm,</l>
+                    <l>Who finds it every time,</l>
+                    <l>The small stale sum --</l>
+                    <l>When Love, with but a pence</l>
+                    <l>Will so display,</l>
+                    <l>As is a disrespect to India!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>THE ORIOLE&#x27;S SECRET</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-85">
+                <lg type="stanza">
+                    <l>To hear an oriole sing</l>
+                    <l>May be a common thing,</l>
+                    <l>Or only a divine.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It is not of the bird</l>
+                    <l>Who sings the same, unheard,</l>
+                    <l>As unto crowd.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The fashion of the ear</l>
+                    <l>Attireth that it hear</l>
+                    <l>In dun or fair.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>So whether it be rune,</l>
+                    <l>Or whether it be none,</l>
+                    <l>Is of within;</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The "tune is in the tree,"</l>
+                    <l>The sceptic showeth me;</l>
+                    <l>"No, sir! In thee!"</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

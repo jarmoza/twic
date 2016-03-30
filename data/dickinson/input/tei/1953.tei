@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I have no life but this </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1432B">
+                <lg type="stanza">
+                    <l>I have no<app type="division"><lem><lb/></lem></app>
+ Life but this - </l>
+                    <l>To lead it<app type="division"><lem><lb/></lem></app>
+ here -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>Nor any Death -<app type="division"><lem><lb/></lem></app>
+ but lest </l>
+                    <l>Dispelled from<app type="division"><lem><lb/></lem></app>
+ there - </l>
+                    <l>Nor tie to<app type="division"><lem><lb/></lem></app>
+ Earths to<app type="division"><lem><lb/></lem></app>
+ come,</l>
+                    <l>Nor Action<app type="division"><lem><lb/></lem></app>
+ new </l>
+                    <l>Except through<app type="division"><lem><lb/></lem></app>
+ this Extent </l>
+                    <l>The love of<app type="division"><lem><lb/></lem></app>
+ you.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

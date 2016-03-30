@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I came to buy a smile today </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F258A">
+                <lg type="stanza">
+                    <l>I Came to buy<app type="division"><lem><lb/></lem></app>
+ a smile - today - </l>
+                    <l>But just a single<app type="division"><lem><lb/></lem></app>
+ smile - </l>
+                    <l>The smallest one opon<app type="division"><lem><lb/></lem></app>
+ your face </l>
+                    <l>Will suit me just<app type="division"><lem><lb/></lem></app>
+ as well - </l>
+                    <l>The one that no one<app type="division"><lem><lb/></lem></app>
+ else would miss</l>
+                    <l>It shone so very small - </l>
+                    <l>I'm pleading at <app type="division"><lem><lb/></lem></app>
+ the "counter" - Sir -</l>
+                    <l>Could you afford to sell -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I've <em>Diamonds</em> - on my fingers - </l>
+                    <l>You know what<app type="division"><lem><lb/></lem></app>
+ <em>Diamonds</em> are?</l>
+                    <l>I've Rubies - like<app type="division"><lem><lb/></lem></app>
+ the Evening Blood - </l>
+                    <l>And Topaz - like<app type="division"><lem><lb/></lem></app>
+ the star!  </l>
+                    <l>'Twould be "a Bargain" <app type="division"><lem><lb/></lem></app>
+ for a <em>Jew</em></l>
+                    <l><em>Say</em> - May I have<app type="division"><lem><lb/></lem></app>
+ it - Sir?  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Remorse is memory awake </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F781A">
+                <lg type="stanza">
+                    <l>Remorse - is Memory - awake -</l>
+                    <l>Her Parties all astir - </l>
+                    <l>A Presence of Departed<app type="division"><lem><lb/></lem></app>
+ Acts - </l>
+                    <l>At window - and at Door - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>It's Past - set down before<app type="division"><lem><lb/></lem></app>
+ the Soul</l>
+                    <l>And lighted with a match - </l>
+                    <l>Perusal - to facilitate - </l>
+                    <l><add type="alternate" extent="">Of it&#x27;s Condensed Despatch</add>
+And help Belief to<add type="alternate" extent="stretch">reach</add>
+ stretch - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Remorse is cureless - the<app type="division"><lem><lb/></lem></app>
+ Disease </l>
+                    <l>Not even God - can heal -</l>
+                    <l>For 'tis His institution -<app type="division"><lem><lb/></lem></app>
+ and </l>
+                    <l>The<add type="alternate" extent="Adequate">Complement -</add>
+ Adequate of Hell - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

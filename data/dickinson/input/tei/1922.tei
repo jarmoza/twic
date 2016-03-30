@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Trusty as the stars </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1415A">
+                <lg type="stanza">
+                    <l>Trusty as the stars </l>
+                    <l>Who quit their shining working </l>
+                    <l>Prompt as when I lit them </l>
+                    <l>In Genesis' new house, </l>
+                    <l>Durable as dawn</l>
+                    <l>Whose antiquated blossom </l>
+                    <l>Makes a world's suspense </l>
+                    <l>Perish and rejoice.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

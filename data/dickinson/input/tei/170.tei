@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If this is &quot;fading&quot; </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F119A">
+                <lg type="stanza">
+                    <l>If this is &quot;fading&quot;</l>
+                    <l>Oh let me immediately &quot;fade&quot;!  </l>
+                    <l>If this is &quot;dying&quot; </l>
+                    <l>Bury - me, in such a shroud of red!  </l>
+                    <l>If this is &quot;sleep,&quot;</l>
+                    <l>On such a night </l>
+                    <l>How proud to shut the eye!  </l>
+                    <l>Good evening, gentle Fellow men!  </l>
+                    <l><em>Peacock</em> presumes to die!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Remember me,&quot; implored the Thief --</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-96">
+                <lg type="stanza">
+                    <l>"Remember me," implored the Thief --</l>
+                    <l>Oh magnanimity!</l>
+                    <l>"My Visitor in Paradise</l>
+                    <l>I give thee Guaranty."</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That courtesy will fair remain,</l>
+                    <l>When the delight is dust,</l>
+                    <l>With which we cite this mightiest case</l>
+                    <l>Of compensated Trust.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Of All, we are allowed to hope,</l>
+                    <l>But Affidavit stands</l>
+                    <l>That this was due, where some, we fear,</l>
+                    <l>Are unexpected friends.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

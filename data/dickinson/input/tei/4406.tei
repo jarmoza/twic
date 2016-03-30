@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MELODIES UNHEARD</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Second Series, Higginson and Todd, 1891</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P91-56">
+                <lg type="stanza">
+                    <l>Musicians wrestle everywhere:</l>
+                    <l>All day, among the crowded air,</l>
+                    <l>I hear the silver strife;</l>
+                    <l>And  waking long before the dawn </l>
+                    <l>Such transport breaks upon the town</l>
+                    <l>I think it that "new life!"</l>
+                </lg>
+                <lg type="stanza">
+                    <l>It is not bird, it has no nest;</l>
+                    <l>Nor band, in brass and scarlet dressed,</l>
+                    <l>Nor tambourine, nor man;</l>
+                    <l>It is not hymn from pulpit read, </l>
+                    <l>The morning stars the treble led</l>
+                    <l>On time's first afternoon!</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some say it is the spheres at play!</l>
+                    <l>Some say that bright majority</l>
+                    <l>Of vanished dames and men!</l>
+                    <l>Some think it service in the place</l>
+                    <l>Where we, with late, celestial face,</l>
+                    <l>Please God, shall ascertain!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Distance is not the realm of fox </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1128A">
+                <lg type="stanza">
+                    <l>Distance - is not<app type="division"><lem><lb/></lem></app>
+ the Realm of Fox </l>
+                    <l>Nor by Relay of<app type="division"><lem><lb/></lem></app>
+ Bird </l>
+                    <l>Abated - Distance is </l>
+                    <l>Until thyself, Beloved.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

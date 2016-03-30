@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We send the wave to find the wave </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1643A">
+                <lg type="stanza">
+                    <l>We send the<app type="division"><lem><lb/></lem></app>
+ Wave to find<app type="division"><lem><lb/></lem></app>
+ the Wave - </l>
+                    <l>An Errand so<app type="division"><lem><lb/></lem></app>
+ divine, </l>
+                    <l>The Messenger<app type="division"><lem><lb/></lem></app>
+ enamored too, </l>
+                    <l>Forgetting to<app type="division"><lem><lb/></lem></app>
+ return, </l>
+                    <l>We make the<app type="division"><lem><lb/></lem></app>
+ wise distinction<app type="division"><lem><pb/></lem></app>
+ still,</l>
+                    <l>Soever made in<app type="division"><lem><lb/></lem></app>
+ vain, </l>
+                    <l>The sagest time<app type="division"><lem><lb/></lem></app>
+ to dam the sea </l>
+                    <l>is when the<app type="division"><lem><lb/></lem></app>
+ sea is gone - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

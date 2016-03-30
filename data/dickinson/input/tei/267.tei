@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>In ebon box when years have flown </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F180A">
+                <lg type="stanza">
+                    <l>In Ebon Box, when years have flown</l>
+                    <l>To reverently peer - </l>
+                    <l>Wiping away the velvet dust </l>
+                    <l>Summers have sprinkled there!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>To hold a letter to the light -</l>
+                    <l>Grown Tawny - now - with time - </l>
+                    <l>To con the faded syllables </l>
+                    <l>That quickened us like Wine!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Perhaps a Flower's shrivelled cheek </l>
+                    <l>Among it's stores to find -</l>
+                    <l>Plucked far away, some morning - </l>
+                    <l>By gallant - mouldering hand!<app type="division"><lem><pb/></lem></app>
+  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A curl, perhaps, from foreheads </l>
+                    <l>Our constancy forgot - </l>
+                    <l>Perhaps, an antique trinket -</l>
+                    <l>In vanished fashions set!  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>And then to lay them quiet back - </l>
+                    <l>And go about it's care - </l>
+                    <l>As if the little Ebon Box </l>
+                    <l>Were none of our affair!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

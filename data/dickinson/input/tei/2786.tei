@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I cannot dance upon my Toes -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J326">
+                <lg type="stanza">
+                    <l>I cannot dance upon my Toes --</l>
+                    <l>No Man instructed me --</l>
+                    <l>But oftentimes, among my mind,</l>
+                    <l>A Glee possesseth me,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>That had I Ballet knowledge --</l>
+                    <l>Would put itself abroad</l>
+                    <l>In Pirouette to blanch a Troupe --</l>
+                    <l>Or lay a Prima, mad,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And though I had no Gown of Gauze --</l>
+                    <l>No Ringlet, to my Hair,</l>
+                    <l>Nor hopped for Audiences -- like Birds,</l>
+                    <l>One Claw upon the Air,</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor tossed my shape in Eider Balls,</l>
+                    <l>Nor rolled on wheels of snow</l>
+                    <l>Till I was out of sight, in sound,</l>
+                    <l>The House encore me so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Nor any know I know the Art</l>
+                    <l>I mention -- easy -- Here --</l>
+                    <l>Nor any Placard boast me --</l>
+                    <l>It's full as Opera --</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Like some old fashioned miracle</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-60">
+                <lg type="stanza">
+                    <l>Like some old fashioned miracle</l>
+                    <l>When Summertime is done,</l>
+                    <l>Seems Summer's recollection</l>
+                    <l>And the affairs of June.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>As infinite tradition</l>
+                    <l>As Cinderella's bays,</l>
+                    <l>Or little John of Lincoln Green,</l>
+                    <l>Or Bluebeard's galleries.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Bees have a fictitious hum,</l>
+                    <l>Her Blossoms, like a dream,</l>
+                    <l>Elate -- until we almost weep</l>
+                    <l>So plausible they seem.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Her Memories like strains -- review --</l>
+                    <l>When Orchestra is dumb,</l>
+                    <l>The Violin in baize replaced</l>
+                    <l>And Ear and Heaven numb.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We talked as girls do </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F392A">
+                <lg type="stanza">
+                    <l>We talked as Girls do -</l>
+                    <l>Fond, and late - </l>
+                    <l>We speculated fair, on<app type="division"><lem><lb/></lem></app>
+ every subject, but the Grave - </l>
+                    <l>Of our's, none affair - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We handled Destinies, as cool -</l>
+                    <l>As we - Disposers - be - </l>
+                    <l>And God, a Quiet Party </l>
+                    <l>To our authority - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But fondest, dwelt opon<app type="division"><lem><lb/></lem></app>
+ Ourself </l>
+                    <l>As we eventual - be -</l>
+                    <l>When Girls, to Women, softly<app type="division"><lem><lb/></lem></app>
+ raised </l>
+                    <l>We - occupy - Degree - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>We parted with a contract </l>
+                    <l>To<add type="alternate" extent="cherish, and">recollect -</add>
+ cherish, and to write<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>But Heaven made both,<app type="division"><lem><lb/></lem></app>
+ impossible</l>
+                    <l>Before another night.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

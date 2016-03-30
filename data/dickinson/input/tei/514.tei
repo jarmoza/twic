@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I felt my life with both my hands </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F357A">
+                <lg type="stanza">
+                    <l>I felt my life with both<app type="division"><lem><lb/></lem></app>
+ my hands</l>
+                    <l>To see if it was there - </l>
+                    <l>I held my spirit to the Glass, </l>
+                    <l>To prove it possibler - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I turned my Being round<app type="division"><lem><lb/></lem></app>
+ and round</l>
+                    <l>And paused at every pound </l>
+                    <l>To ask the Owner's name - </l>
+                    <l>For doubt, that I should<app type="division"><lem><lb/></lem></app>
+ know the sound - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I judged my features - jarred<app type="division"><lem><lb/></lem></app>
+ my hair - </l>
+                    <l>I pushed my dimples by, and<app type="division"><lem><lb/></lem></app>
+ waited -</l>
+                    <l>If they - twinkled back - </l>
+                    <l>Conviction might, of me -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>I told myself, &quot;Take Courage,<app type="division"><lem><lb/></lem></app>
+ Friend - </l>
+                    <l>That - was a former time - </l>
+                    <l>But we might learn to<app type="division"><lem><lb/></lem></app>
+ like the Heaven,</l>
+                    <l>As well as our Old Home&quot;!  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

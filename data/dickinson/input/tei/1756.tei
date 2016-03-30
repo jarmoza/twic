@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>September&#x27;s baccalaureate </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1313A">
+                <lg type="stanza">
+                    <l>September's <app type="division"><lem><lb/></lem></app>
+Baccalaureate</l>
+                    <l>A combination<app type="division"><lem><lb/></lem></app>
+ is </l>
+                    <l>Of Crickets -<app type="division"><lem><lb/></lem></app>
+ Crows - and<app type="division"><lem><lb/></lem></app>
+ Retrospects </l>
+                    <l>And a dissembling<app type="division"><lem><lb/></lem></app>
+ Breeze </l>
+                </lg>
+                <lg type="stanza">
+                    <l>That hints<app type="division"><lem><lb/></lem></app>
+ without assuming -</l>
+                    <l>An Innuendo<app type="division"><lem><lb/></lem></app>
+ sear </l>
+                    <l>That makes the<app type="division"><lem><lb/></lem></app>
+ Heart put up it's<app type="division"><lem><lb/></lem></app>
+ Fun -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>And turn<app type="division"><lem><lb/></lem></app>
+ Philosopher.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

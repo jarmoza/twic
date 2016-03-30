@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>LOST FAITH</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Poems by Emily Dickinson: Third Series, Todd, 1896</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="P96-36">
+                <lg type="stanza">
+                    <l>To lose one's faith surpasses</l>
+                    <l>The loss of an estate,</l>
+                    <l>Because estates can be</l>
+                    <l>Replenished,  faith cannot.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Inherited with life,</l>
+                    <l>Belief but once can be;</l>
+                    <l>Annihilate a single clause,</l>
+                    <l>And Being's beggary.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

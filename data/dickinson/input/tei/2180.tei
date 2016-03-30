@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Bible is an untold volume </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1577C">
+                <lg type="stanza">
+                    <l>The Bible is an<app type="division"><lem><lb/></lem></app>
+ antique Volume - </l>
+                    <l>Written by faded<app type="division"><lem><lb/></lem></app>
+ Men </l>
+                    <l>At the suggestion<app type="division"><lem><lb/></lem></app>
+ of Holy Spectres - </l>
+                    <l>Subjects - Bethlehem - </l>
+                    <l>Eden - the ancient<app type="division"><lem><lb/></lem></app>
+ Homestead -</l>
+                    <l>Satan - the Brigadier - </l>
+                    <l>Judas - the Great<app type="division"><lem><lb/></lem></app>
+ Defaulter - </l>
+                    <l>David - the Troubadour - </l>
+                    <l>Sin - a distinguished<app type="division"><lem><pb/></lem></app>
+ Precipice </l>
+                    <l>Others must resist -</l>
+                    <l>Boys that &quot;believe&quot; are very lonesome - </l>
+                    <l>Other Boys are &quot;lost&quot; - </l>
+                    <l>Had but the Tale<app type="division"><lem><lb/></lem></app>
+ a warbling Teller - </l>
+                    <l>All the Boys would<app type="division"><lem><lb/></lem></app>
+ come - </l>
+                    <l>Orpheu's Sermon<app type="division"><lem><lb/></lem></app>
+ captivated -</l>
+                    <l>It did not<app type="division"><lem><lb/></lem></app>
+ condemn - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

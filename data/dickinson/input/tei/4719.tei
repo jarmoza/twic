@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>&quot;Morning&quot; means &quot;Milking&quot; to the Farmer,</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Single Hound,  Bianchi, 1914</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="SH14-37">
+                <lg type="stanza">
+                    <l>"Morning" means "Milking" to the Farmer,</l>
+                    <l>Dawn to the Apennines --</l>
+                    <l>Dice to the Maid.</l>
+                    <l>"Morning" means just Chance to the Lover --</l>
+                    <l>Just Revelation to the Beloved.</l>
+                    <l>Epicures date a breakfast by it!</l>
+                    <l>Heroes a battle,</l>
+                    <l>The Miller a flood,</l>
+                    <l>Faint-going eyes their lapse</l>
+                    <l>From sighing,</l>
+                    <l>Faith, the Experiment of our Lord!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

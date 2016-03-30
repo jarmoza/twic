@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>If I can stop one heart from breaking </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F982A">
+                <lg type="stanza">
+                    <l>If I can stop one<app type="division"><lem><lb/></lem></app>
+ Heart from breaking</l>
+                    <l>I shall not live<app type="division"><lem><lb/></lem></app>
+ in vain </l>
+                    <l>If I can ease one<app type="division"><lem><lb/></lem></app>
+ Life the Aching </l>
+                    <l>Or cool one Pain </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Or help one fainting<app type="division"><lem><lb/></lem></app>
+ Robin</l>
+                    <l>Unto his Nest again </l>
+                    <l>I shall not live<app type="division"><lem><lb/></lem></app>
+ in vain.  </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

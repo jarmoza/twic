@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Floss wont save you from an abyss </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1335A">
+                <lg type="stanza">
+                    <l>Floss wont save<app type="division"><lem><lb/></lem></app>
+ you from an<app type="division"><lem><lb/></lem></app>
+ Abyss </l>
+                    <l>But a Rope will - </l>
+                    <l>Notwithstanding a <app type="division"><lem><lb/></lem></app>
+Rope for a Souvenir </l>
+                    <l><add type="alternate" extent="">does not look as well -</add>
+Is not beautiful - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>But I tell you<app type="division"><lem><lb/></lem></app>
+ every step is a<app type="division"><lem><lb/></lem></app>
+<add type="alternate" extent="Trough">sluice</add>
+ Trough -</l>
+                    <l>And every stop<app type="division"><lem><lb/></lem></app>
+ a well - </l>
+                    <l>Now will you have<app type="division"><lem><lb/></lem></app>
+ the Rope or the<app type="division"><lem><lb/></lem></app>
+ Floss?  </l>
+                    <l><add type="alternate" extent="">Fate has both to sell -</add>
+Prices reasonable - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

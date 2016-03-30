@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>We shun because we prize her face </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1430A">
+                <lg type="stanza">
+                    <l>We shun because<app type="division"><lem><lb/></lem></app>
+ we prize her<app type="division"><lem><lb/></lem></app>
+ Face </l>
+                    <l>Lest sight's ineffable<app type="division"><lem><lb/></lem></app>
+ disgrace </l>
+                    <l>Our Adoration<add type="alternate" extent="stain">mar &amp;#x2022; flaw</add>
+ stain </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

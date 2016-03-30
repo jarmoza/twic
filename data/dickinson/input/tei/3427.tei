@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pain -- expands the Time -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J967">
+                <lg type="stanza">
+                    <l>Pain -- expands the Time --</l>
+                    <l>Ages <app type="revision"><lem>lurk</lem><rdg>lurk</rdg></app>
+coil within</l>
+                    <l>The minute Circumference</l>
+                    <l>Of a single Brain --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Pain contracts -- the Time --</l>
+                    <l>Occupied with Shot</l>
+                    <l><app type="revision"><lem>Triplets</lem><rdg>Triplets</rdg></app>
+Gammuts of Eternities</l>
+                    <l><app type="revision"><lem>flit --</lem><rdg>flit --</rdg></app>
+<app type="revision"><lem>Show --</lem><rdg>Show --</rdg></app>
+Are as they were not --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No man saw awe, nor to his house </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1342B">
+                <lg type="stanza">
+                    <l>No man saw awe, nor to his house </l>
+                    <l>Admitted he a man </l>
+                    <l>Though by his awful residence </l>
+                    <l>Has human nature been.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Not deeming of his dread abode</l>
+                    <l>Till laboring to flee </l>
+                    <l>A grasp on comprehension laid </l>
+                    <l>Detained vitality.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>Returning is a different route </l>
+                    <l>The Spirit could not show</l>
+                    <l>For breathing is the only work </l>
+                    <l>To be enacted now.  </l>
+                </lg>
+                <lg type="stanza">
+                    <l>&quot;Am not consumed,&quot; old Moses wrote, </l>
+                    <l>&quot;Yet saw Him face to face&quot; - </l>
+                    <l>That very physiognomy</l>
+                    <l>I am convinced was this </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

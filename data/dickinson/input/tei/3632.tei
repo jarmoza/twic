@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Clouds their Backs together laid 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1172">
+                <lg type="stanza">
+                    <l>The Clouds their Backs together laid</l>
+                    <l>The North begun to push</l>
+                    <l>The Forests galloped till they fell</l>
+                    <l>The Lightning <app type="revision"><lem>skipped</lem><rdg>skipped</rdg></app>
+played like mice</l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Thunder crumbled like a stuff</l>
+                    <l>How <app type="revision"><lem>safe</lem><rdg>safe</rdg></app>
+<app type="revision"><lem>firm</lem><rdg>firm</rdg></app>
+<app type="revision"><lem>calm</lem><rdg>calm</rdg></app>
+good to be in Tombs</l>
+                    <l>Where Nature's Temper cannot reach</l>
+                    <l>Nor <app type="revision"><lem>vengeance</lem><rdg>vengeance</rdg></app>
+missile ever comes</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

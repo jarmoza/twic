@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quite empty, quite at rest </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1632A">
+                <lg type="stanza">
+                    <l>Quite empty, quite<app type="division"><lem><lb/></lem></app>
+ at rest, </l>
+                    <l>The Robin locks<app type="division"><lem><lb/></lem></app>
+ her Nest, and<app type="division"><lem><lb/></lem></app>
+ tries her Wings - </l>
+                    <l>She does not<app type="division"><lem><lb/></lem></app>
+ know a Route </l>
+                    <l>But puts her<app type="division"><lem><lb/></lem></app>
+ Craft about </l>
+                    <l>For <em>rumored<app type="division"><lem><lb/></lem></app>
+</em> springs -</l>
+                    <l>She does not<app type="division"><lem><lb/></lem></app>
+ ask for Noon -<app type="division"><lem><pb/></lem></app>
+ </l>
+                    <l>She does not<app type="division"><lem><lb/></lem></app>
+ ask for Boon - </l>
+                    <l>Crumbless and<app type="division"><lem><lb/></lem></app>
+ homeless, of but<app type="division"><lem><lb/></lem></app>
+ one request - </l>
+                    <l>The Birds she<app type="division"><lem><lb/></lem></app>
+ lost - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

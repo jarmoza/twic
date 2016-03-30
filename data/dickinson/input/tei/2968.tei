@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;m ceded -- I&#x27;ve stopped being Their&#x27;s -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J508">
+                <lg type="stanza">
+                    <l>I'm ceded -- I've stopped being Their's --</l>
+                    <l>The name They dropped upon my face</l>
+                    <l>With water, in the country church</l>
+                    <l>Is finished using, now,</l>
+                    <l>And They can put it with my Dolls,</l>
+                    <l>My childhood, and the string of spools,</l>
+                    <l>I've finished threading -- too --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Baptized, before, without the choice,</l>
+                    <l>But this time, consciously, of Grace --</l>
+                    <l>Unto supremest <app type="revision"><lem>term</lem><rdg>term</rdg></app>
+name --</l>
+                    <l>Called to my Full -- The Crescent dropped --</l>
+                    <l>Existence's whole <app type="revision"><lem>Eye</lem><rdg>Eye</rdg></app>
+<app type="revision"><lem>Rim (crossed out)</lem><rdg>Rim (crossed out)</rdg></app>
+Arc, filled up,</l>
+                    <l>With <app type="revision"><lem>just one</lem><rdg>just one</rdg></app>
+one small Diadem.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>My second Rank -- too small the first --</l>
+                    <l>Crowned -- <app type="revision"><lem>whimpering</lem><rdg>whimpering</rdg></app>
+<app type="revision"><lem>dangling</lem><rdg>dangling</rdg></app>
+Crowing -- on my Father's breast --</l>
+                    <l><app type="revision"><lem>An insufficient Queen --</lem><rdg>An insufficient Queen --</rdg></app>
+A <app type="revision"><lem>too unconscious</lem><rdg>too unconscious</rdg></app>
+half unconscious Queen --</l>
+                    <l>But this time -- Adequate -- Erect,</l>
+                    <l>With <app type="revision"><lem>power</lem><rdg>power</rdg></app>
+Will to choose, or to reject,</l>
+                    <l>And I choose, just a <app type="revision"><lem>Throne</lem><rdg>Throne</rdg></app>
+Crown --</l>
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                </lg>
+                <lg type="stanza">
+                    <l>12.whole Arc] surmise (crossed out)</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

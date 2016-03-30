@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>After all Birds have been investigated and laid aside -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1395">
+                <lg type="stanza">
+                    <l>After all Birds have been investigated and laid aside --</l>
+                    <l>Nature imparts the little Blue -- Bird -- assured</l>
+                    <l>Her conscientious Voice will soar unmoved</l>
+                    <l>Above ostensible Vicissitude.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>First at the March -- competing with the Wind --</l>
+                    <l>Her panting note exalts us -- like a friend --</l>
+                    <l>Last to adhere when Summer cleaves away --</l>
+                    <l>Elegy of Integrity.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

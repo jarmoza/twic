@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The crickets sang </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Variorum Edition, Franklin, 1998</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="F1104B">
+                <lg type="stanza">
+                    <l>The Crickets sang</l>
+                    <l>And set the Sun </l>
+                    <l>And Workmen finished<app type="division"><lem><lb/></lem></app>
+ one by one </l>
+                    <l>Their Seam the Day opon - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The Bee had perished<app type="division"><lem><lb/></lem></app>
+ from the Scene</l>
+                    <l>And distant as an<app type="division"><lem><lb/></lem></app>
+ Order done </l>
+                    <l>And doubtful as Report<app type="division"><lem><lb/></lem></app>
+ opon </l>
+                    <l>The Multitudes of Noon - </l>
+                </lg>
+                <lg type="stanza">
+                    <l>The low Grass loaded<app type="division"><lem><lb/></lem></app>
+ with the Dew </l>
+                    <l>The Twilight leaned<app type="division"><lem><lb/></lem></app>
+ as Strangers do</l>
+                    <l>With Hat in Hand,<app type="division"><lem><lb/></lem></app>
+ polite and new </l>
+                    <l>To stay as if, or go -<app type="division"><lem><pb/></lem></app>
+ </l>
+                </lg>
+                <lg type="stanza">
+                    <l>A Vastness, as a<app type="division"><lem><lb/></lem></app>
+ Neighbor, came - </l>
+                    <l>A Wisdom without<app type="division"><lem><lb/></lem></app>
+ Face or Name - </l>
+                    <l>A Peace, as Hemispheres<app type="division"><lem><lb/></lem></app>
+ at Home</l>
+                    <l>And so, the Night<app type="division"><lem><lb/></lem></app>
+ became - </l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

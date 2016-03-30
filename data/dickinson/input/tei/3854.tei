@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Whose Pink career may have a close
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J1394">
+                <lg type="stanza">
+                    <l>Whose Pink career may have a close</l>
+                    <l>Portentous as our own, who knows?</l>
+                    <l>To imitate these Neighbors fleet</l>
+                    <l>In awe and innocence, were meet.</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>

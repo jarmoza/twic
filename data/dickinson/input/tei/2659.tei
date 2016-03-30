@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>I&#x27;m &quot;wife&quot; -- I&#x27;ve finished that -- 
+</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>The Poems of Emily Dickinson, Johnson, 1955</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Emily Dickinson Archive</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript" id="J199">
+                <lg type="stanza">
+                    <l>I'm "wife" -- I've finished that --</l>
+                    <l>That other state --</l>
+                    <l>I'm Czar -- I'm "Woman" now --</l>
+                    <l>It's safer so --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>How odd the Girl's life looks</l>
+                    <l>Behind this soft Eclipse --</l>
+                    <l>I think that Earth feels so</l>
+                    <l>To folks in Heaven -- now --</l>
+                </lg>
+                <lg type="stanza">
+                    <l>This being comfort -- then</l>
+                    <l>That other kind -- was pain --</l>
+                    <l>But why compare?</l>
+                    <l>I'm "Wife"! Stop there!</l>
+                </lg>
+
+            </div>     
+        </body>
+    </text>
+</TEI>
