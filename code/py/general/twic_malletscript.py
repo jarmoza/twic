@@ -157,7 +157,7 @@ class TWiC_MalletScript:
             '--remove-stopwords',
 
             #'--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
-            '--extra-stopwords {0}'.format(self.stopwords_dir + "added_stopwords_2016.txt")
+            #'--extra-stopwords {0}'.format(self.stopwords_dir + "added_stopwords_2016.txt")
         ]
         subprocess.check_call(args, stdout=sys.stdout)
 
