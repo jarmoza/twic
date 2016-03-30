@@ -173,6 +173,7 @@ Listed by panel/data shape, the Data Bar will reveal the following:
 
 For more on these panels and data shapes, click the links above or read on.
 
+<a name="panels_corpusview"></a>
 ###Corpus View
 
 <br/>
@@ -184,6 +185,7 @@ The [topic bullseye](#datashapes_topicbullseyes) at its center represents the av
 
 If you look at the contents of the ["Data Bar"](#panels_databar) when the panel's bullseye has been clicked, you will note a fairly even distribution in the topic weight percentages. The "Data Bar" will also show you the number of texts that have been modeled as well.
 
+<a name="panels_corpusclusterview"></a>
 ###Corpus Cluster View
 
 <br/>
@@ -202,6 +204,7 @@ When clicked, a cluster bullseye's average topic distribution will also be shown
 
 And when mousing/clicking over the bullseyes you will notice that other rings representing the same topic in other bullseyes in the panel will become highlighted along with their graph edges (with the color of the top topic of each cluster bullseye). Double clicking on any of these cluster bullseyes (sans the center one) will reveal the cluster of texts each represents in the ["Text Cluster View"](#panels_textclusterview).
 
+<a name="panels_textclusterview"></a>
 ###Text Cluster View
 
 <br/>
@@ -221,6 +224,7 @@ This panel contain a slightly different data shape, the ["topic rectangle"](#dat
 
 These shapes and the panel utilize the same data-spatial paradigms of the "Corpus Cluster View," with mouseover highlighting and clicking. Clicking on each topic rectangle will reveal the topic distribution of that text as well as its distance from the text cluster's average topic distribution in the ["Data Bar"](#panels_databar). Double clicking any of the topic rectangles will reveal the text itself in the panel "underneath" this one: the ["Text View"](#panels_textview). 
 
+<a name="panels_textview"></a>
 ###Text View
 
 <br/>
@@ -230,6 +234,7 @@ The "Text View" is TWiC's eponymous panel, and is one of its most important pane
 
 Mousing over topic words extends highlighting throughout all of TWiC's panels, but also highlights words of the same topic within a text. (Words not in that topic are lowered a shade to produce this highlighting effect.) Clicking functions similarly to other panels, freezing topic highlighting. However, clicking on each topic word will reveal the topic wordweight distribution in the ["Data Bar"](#panels_databar), revealing the relative importance (or weighting) for each word to the rest of the top-weighted words of topic.
 
+<a name="panels_publicationview"></a>
 ###Publication View
 
 ![](\docs/images/twic_panels_publicationview_medium.png)
