@@ -533,4 +533,4 @@ Provided with TWiC is an example corpus that models over 2000 of the available p
 
 ###Notes
 
-There could arise an instance where a user would like to re-model the Dickinson corpus – to change the number of topics, etc. In order to run the TWiC's main Python script for the Emily Dickinson corpus, as discussed in the [How to Use](#howtouse) section, users can locate a special custom version of TWiC's Python scripts located in the `twic/code/py/dickinson/` folder. They should run the `dickinson_twic_corpus2vis.py` script from that folder using the same options.
+There could arise an instance where a user would like to re-model the Dickinson corpus – to change the number of topics, etc. In order to run the TWiC's main Python script for the Emily Dickinson corpus, as discussed in the [How to Use](#howtouse) section, users can locate a special custom version of TWiC's Python scripts located in the `twic/code/py/dickinson/` folder. They should run the `dickinson_twic_corpus2vis.py` script from that folder using the same options. The Dickinson configuration file `dickinson_twic_config.yaml` is located in `twic/data/dickinson/input/yaml/`.
