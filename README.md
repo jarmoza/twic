@@ -293,7 +293,7 @@ Steps **1-3** below only need to be done when first setting up TWiC. Steps **4-5
 <a name="howtouse_python_notes"></a>
 ####Notes
 
-Sometimes there are issues building MALLET via the `make` command. This is usually attributable to the version of Java on your system. You may need to download the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Sometimes there are issues building MALLET via the `make` command. Sometimes this is attributable to something simple, like having spaces in the path where the `twic` folder is stored. However, build errors are usually attributable to the version of Java on your system. You may need to download the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
  
 Running `twic_corpus2vis.py` can take a considerable amount of time, depending on the size of the corpus you are asking MALLET to model. Once modeling is complete however, the script that reinterprets MALLET's outputs executes comparatively more quickly.
 
