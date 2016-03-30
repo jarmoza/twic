@@ -306,6 +306,8 @@ A detailed descriptions of the user options for TWiC's main Python script, `twic
  **'k' - Keep corpus source files** 
  
  This option can only be used in conjunction with option '_g_'. Using this option keeps current txt files in TWiC's corpus source folder, `data/input/txt`. Otherwise, using the '_g_' option will delete the current txt files that folder, and then copy files from the folder listed as `user_source_path` (in `twic_config.yaml`) to that folder.
+ 
+ **Note:** TWiC does not delete files from the supplied `user_source_path` field.
 
 **'c' - Clear old MALLET output files**
 
