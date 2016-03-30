@@ -285,7 +285,7 @@ Steps **1-3** below only need to be done when first setting up TWiC. Steps **4-5
 	
 	ii. Change directory (`cd`) to the `code/py/general` folder.
 	
-	iii. Run `python twic_corpus2vis.py mi`. All options for this script are described [below](#howtouse_python_options), but _m_ and _i_ tell the script to 'run _M_ALLET' and '_i_nterpret' its output files.
+	iii. Run `python twic_corpus2vis.py gmi`. All options for this script are described [below](#howtouse_python_options), but _g_ tells the script to copy texts from the YAML-supplied source folder, and _m_ and _i_ tell the script to 'run _M_ALLET' and '_i_nterpret' its output files, respectively.
   
 	
 **With that done, you are ready to launch TWiC in your web browser!** 
