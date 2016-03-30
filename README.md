@@ -60,9 +60,7 @@ In order to aid the exploration of the data of a topic model, TWiC uses colored 
 <a name="datashapes_topicbullseyes"></a>
 ###Topic Bullseyes
 <br/>
-<div style="text-align:center">
 ![](\docs/images/used/twic_datashapes_bullseye_medium.png)
-</div>
 
 The shape above is one of two primary means by which topic distribution is visualized in TWiC: a geometric abstraction of the top N topics of the texts being represented. In TWiC this is called a **"topic bullseye"**. The one above would represent the top ten topics of the average topic distribution of a cluster of texts or of the entire corpus. Each ring represents a topic and is given the unique color assigned to each topic of the topic model (as seen in the ["Topic Bar"](#panels_topicbar). Moving inward from the outside of the shape toward the center, higher weighted topics are represented, until one arrives at the center circle, or, the top topic of the topic distribution.
 
@@ -71,9 +69,7 @@ Mousing over each ring/center circle lowers the shade of the other rings of the 
 <a name="datashapes_topicrectangles"></a>
 ###Topic Rectangles
 <br/>
-<div style="text-align:center">
 ![](\docs/images/used/twic_datashapes_rectangle.png)
-</div>
 
 The other primary data shape in TWiC is the **"topic rectangle"**. It utilizes the same paradigm as the topic bullseye, where outer rings (in this case, outer rectangular rings) represent the top N topics of a topic distribution. In the case of a topic rectangle though, it represents the topic distribution for an individual text. This data shape is links topics with the texts they model. The rectangle above would represent the top five topics of one text. At the center of the topic rectangle is a miniature, programmatically-derived view of the first ten lines of the text itself. Its topic words are represented by small colored rectangles in the order in which they would appear in the actual text. Uncolored rectangles (in a light goldenrod) represent the stopwords which have not been considered for the topic model by MALLET.
 
