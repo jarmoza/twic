@@ -105,7 +105,7 @@ def Corpus2Vis(p_args):
         # Clears previous files in the corpus source directory if not directed otherwise
         if options_dict["keep_corpus_source"] not in twic_options:
             mallet_script.ClearCorpusSourceDirectory()
-        mallet_script.GatherTexts(mallet_script.tei_source, mallet_script.corpus_source_dir, True)
+        mallet_script.GatherTexts(mallet_script.user_source_dir, mallet_script.corpus_source_dir, True)
 
     # Clear MALLET's old output files
     if options_dict["clear_oldoutput"] in twic_options:

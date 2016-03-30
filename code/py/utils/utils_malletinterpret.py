@@ -147,6 +147,10 @@ class Utils_MalletInterpret:
                 current_lines.append(p_lines[line_index])
                 chunk_word_count += word_count
 
+        # For leftovers or small texts less than maximum chunk size
+        if len(current_lines):
+            chunks.append(current_lines)
+
         return chunks
 
 
