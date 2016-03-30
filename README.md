@@ -290,7 +290,7 @@ Don't worry though. This setup step just require a familiarity with how to acces
 
 ####Notes
  
- Below are advanced user options for TWiC's main Python script (gck):
+ Coming Soon: Advanced user options for TWiC's main Python script.
 
 <br/>
 <a name="howtouse_visualization"></a>
@@ -306,15 +306,26 @@ _It should be noted again that TWiC currently is best supported in Google's Chro
 
 2. That's it! You're off to explore your topic model with TWiC.
 
-
+####Notes
 
 If users are interested in understanding how TWiC breaks down and re-interprets MALLET's outputs (in `twic/data/output/mallet`), the specific JSON files being used are in `twic/data/input/json`: `twic_corpusmap.json`, `twic_corpusinfo.json`, `twic_corpus_wordweights.json`, and individual JSON files for each text in the collection.
 
 <br/>
 <a name="howtouse_publicationview"></a>
 ###Alternate Level - "Publication View"
+
+####Basic Steps
+
+1. Open your web browser and type in the browser bar: `localhost:8080/twic_publication.html`
+
+2. That's it! You're off to explore your publication with TWiC.
+
+####Notes
+
+Coming soon.
+
 <br/>
 <a name="howtouse_customlevels"></a>
 ###Custom Levels
 
-The script calls MALLET with a set of parameters and a topic model is produced. Once the modeller outputs its files (which represent the topic model), TWiC's Python script then outputs its own set of JSON files which describe the corpus under the model, its topics, and the word weights of those topics.
+Coming soon.
