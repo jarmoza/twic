@@ -253,7 +253,7 @@ Mousing over these rectangles highlights the common topic rings surrounding each
 <br/>
 Though the TWiC visualization primarily operates through the web browser, it must first be set up by running a Python script that topic models the user's text collection and then re-interprets the model into  intermediate JSON data files usable by TWiC.
 
-Don't worry though. This setup step just require a familiarity with how to access and use the terminal/command line on your computer. Any advanced options will be included after the basic steps for running TWiC.
+Don't worry though. This setup step just requires a familiarity with how to access and use the terminal/command line on your computer (and an installation of [Python](https://www.python.org/downloads/) – preferably version 2.7, which comes installed by default on OSX). Any advanced script options will be included after the basic steps for running TWiC.
 
 <a name="howtouse_python"></a>
 ###Server-side Python
@@ -264,7 +264,7 @@ Steps **1-3** below only need to be done when first setting up TWiC. Steps **4-5
 
 1. **Download** TWiC from github.com/jarmoza/twic.
 
-2. **Unzip** the download to where you want the TWiC folder.
+2. **Unzip** the download to where you want the TWiC folder. (This will unzip as a folder called `twic-master`. You can rename or place it wherever you would like. Just recall that whenever I refer to a folder named `twic` below, this is the folder I'm referring to.)
 
 3. **Make MALLET** 
 
