@@ -56,7 +56,7 @@ After TWiC's main Python script has been run once, there is generally no need to
 <a name="datashapes_introduction"></a>
 ###Introduction
 
-In order to aid the exploration of the data of a topic model, TWiC uses colored shapes and words in a visually suggestive ways to help users understand the relationships between words, texts, and topics. These **data shapes**
+In order to aid the exploration of the data of a topic model, TWiC uses colored shapes and words in a visually suggestive ways to help users understand the relationships between words, texts, and topics. These **data shapes** are described below.
 
 <a name="datashapes_topicbullseyes"></a>
 ###Topic Bullseyes
@@ -324,6 +324,8 @@ This option runs MALLET using the parameters set in `twic_config.yaml` in the `t
 
 Any additional MALLET parameters can be used however. Users can file a change request at github.com/jarmoza/twic/issues, or can be added in `twic_malletscript.y` found in the `twic/code/py/general/` folder – see methods `ImportDir()` and `TrainTopics()` in the `TWiC_MalletScript` class.
 
+Another alternative to altering TWiC's script, is to run MALLET separately using your own parameters. Users can place MALLET's output files in the `twic/data/output/mallet` folder, and then run `twic_corpus2vis.py` with the _i_ option. This will require some knowledge of MALLET's parameters (one could also look at TWiC's `ImportDir()` and `TrainTopics()` methods for examples), but in any case, TWiC requires the files output by these MALLET parameters: `--output-state`, `--output-doc-topics`, `--output-topic-keys`, and `--topic-word-weights-file`.
+
 **'i' - Interpret MALLET output files**
 
 This option runs the script to interpret MALLET's keys, topics, state, and word weight files into TWiC's intermediate JSON files used for the D3 visualization component.
@@ -538,4 +540,4 @@ Provided with TWiC is an example corpus that models over 2000 of the available p
 
 ###Notes
 
-There could arise an instance where a user would like to re-model the Dickinson corpus – to change the number of topics, etc. In order to run the TWiC's main Python script for the Emily Dickinson corpus, as discussed in the [How to Use](#howtouse) section, users can locate a special custom version of TWiC's Python scripts located in the `twic/code/py/dickinson/` folder. They should run the `dickinson_twic_corpus2vis.py` script from that folder using the same options. The Dickinson configuration file `dickinson_twic_config.yaml` is located in `twic/data/dickinson/input/yaml/`.
+There could arise an instance where a user would like to re-model the Dickinson corpus – to change the number of topics, etc. In order to run the TWiC's main Python script for the Emily Dickinson corpus, as discussed in the [How to Use](#howtouse) section, users can locate a custom version of TWiC's Python scripts located in the `twic/code/py/dickinson/` folder. They should run the `dickinson_twic_corpus2vis.py` script from that folder using the same options. The Dickinson configuration file `dickinson_twic_config.yaml` is located in `twic/data/dickinson/input/yaml/`.
