@@ -1,6 +1,7 @@
 import math
 from datetime import datetime
 import json
+import os
 #from decimal import Decimal
 
 # See here for description of Jensen-Shannon Divergence http://enterotype.embl.de/enterotypes.html
@@ -30,13 +31,16 @@ def load_src(name, fpath):
 # from lib.mpmath.libmp.libintmath import giant_steps, lshift, rshift
 # from lib.mpmath.libmp.backend import gmpy, MPZ
 
-load_src("libintmath", "../lib/mpmath/libmp/libintmath.py")
+# load_src("libintmath", "../lib/mpmath/libmp/libintmath.py")
+load_src("libintmath", os.path.join("..", "lib", "mpmath", "libmp", "libintmath.py"))
 from libintmath import giant_steps, lshift, rshift
 
-load_src("backend", "../lib/mpmath/libmp/backend.py")
+# load_src("backend", "../lib/mpmath/libmp/backend.py")
+load_src("backend", os.path.join("..", "lib", "mpmath", "libmp", "backend.py"))
 from backend import gmpy, MPZ
 
-load_src("twic_malletscript", "../general/twic_malletscript.py")
+# load_src("twic_malletscript", "../general/twic_malletscript.py")
+load_src("twic_malletscript", os.path.join("..", "general", "twic_malletscript.py"))
 from twic_malletscript import TWiC_MalletScript
 
 Mallet_FileTopicProportions = TWiC_MalletScript.Mallet_FileTopicProportions
@@ -139,7 +143,7 @@ def main():
         ftp = Mallet_FileTopicProportions()
         ftp.id = line_pieces[0]
         ftp.filename = line_pieces[1][5:]
-        ftp.fileid = ftp.filename[ftp.filename.rfind('/') + 1:ftp.filename.rfind('.')]
+        ftp.fileid = ftp.filename[ftp.filename.rfind(os.sep) + 1:ftp.filename.rfind('.')]
         for index in range(2, len(line_pieces) - 2):
 
             if index % 2 == 1:

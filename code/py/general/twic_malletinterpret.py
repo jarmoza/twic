@@ -8,16 +8,19 @@ def load_src(name, fpath):
     import os, imp
     return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-load_src("utils_jensen_shannon", "../utils/utils_jensen_shannon.py")
+# load_src("utils_jensen_shannon", "../utils/utils_jensen_shannon.py")
+load_src("utils_jensen_shannon", os.path.join("..", "utils", "utils_jensen_shannon.py"))
 import utils_jensen_shannon
 
-load_src("utils_color", "../utils/utils_color.py")
+# load_src("utils_color", "../utils/utils_color.py")
+load_src("utils_color", os.path.join("..", "utils", "utils_color.py"))
 from utils_color import Utils_Color
 
 from twic_malletscript import TWiC_MalletScript
 from twic_text import TWiC_Text
 
-load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+# load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+load_src("utils_malletinterpret", os.path.join("..", "utils", "utils_malletinterpret.py"))
 from utils_malletinterpret import Utils_MalletInterpret
 clean_word = Utils_MalletInterpret.CleanWord
 
@@ -647,7 +650,7 @@ class TWiC_MalletInterpret:
                 break
 
         # Retrieve json data of a line-word-topic map from ConvertTextToJSON
-        json_data = TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json/texts/", mallet_script, current_fwt, False)
+        json_data = TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json" + os.sep + "texts" + os.sep, mallet_script, current_fwt, False)
 
         if "No state file data" == json_data:
             print "Warning: No state file data for {0}".format(text.GetFilename())
@@ -690,7 +693,7 @@ class TWiC_MalletInterpret:
         #json_data["document"].pop("lines_and_colors", None)
 
         # Write the JSON file for this text
-        with open(output_dir + "json/texts/" + text.GetFilename() + ".json", 'w') as fileptr:
+        with open(output_dir + "json" + os.sep + "texts" + os.sep + text.GetFilename() + ".json", 'w') as fileptr:
             #print "Writing {0}".format(output_dir + "json/texts/" + text.GetFilename() + ".json")
             fileptr.write(json.dumps(json_data))
 
@@ -700,7 +703,7 @@ class TWiC_MalletInterpret:
         file_id = text.GetFilename()
         if split_filename:
             file_id = text.GetFilename().split("_")[0]
-        output_html = open(output_dir + "html/" + file_id + '.html', 'w')
+        output_html = open(output_dir + "html" + os.sep + file_id + '.html', 'w')
         output_html.write('<html>\n')
         output_html.write('\t<head>\n')
         output_html.write('\t\t<link rel="stylesheet" type="text/css" href="{0}">\n'.format(css_filename))
@@ -727,7 +730,7 @@ class TWiC_MalletInterpret:
                 break
 
         # Convert text to JSON readable by the high-level TWiC visualization
-        TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json/texts/", mallet_script, current_fwt)
+        TWiC_MalletInterpret.ConvertTextToJSON(text, output_dir + "json" + os.sep + "texts" + os.sep, mallet_script, current_fwt)
 
         # Read in the plain text file
         input_file = open(current_tp.filename, 'r')
@@ -909,7 +912,7 @@ class TWiC_MalletInterpret:
 
         print "Interpreting MALLET output for TWiC visualization..."
 
-        myoutput_dir = "../../../data/input/"
+        myoutput_dir = os.path.join("..", "..", "..", "data", "input" + os.sep)
 
         print "\tReading in MALLET output..."
 
@@ -981,7 +984,7 @@ class TWiC_MalletInterpret:
         print "\tBuilding corpus-level JSON map files..."
 
         # Build a json that shows the hierarchy of Corpus -> Text clusters -> Texts based on Jensen-Shannon Distance
-        TWiC_MalletInterpret.Build_CorpusMapJSON_Avg(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json/")
+        TWiC_MalletInterpret.Build_CorpusMapJSON_Avg(mallet_script.corpus_title, topic_keys.corpus_topic_proportions, tp_collection, myoutput_dir + "json" + os.sep)
 
         # Output a JSON of the topic-color list
         # TWiC_MalletInterpret.Build_TopicColorMapJSON(color_list, myoutput_dir + "json/")
@@ -990,10 +993,10 @@ class TWiC_MalletInterpret:
         # TWiC_MalletInterpret.Build_TopicWordsJSON(topic_keys, myoutput_dir + "json/")
 
         # New JSON format for client side
-        TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir + "json/")
+        TWiC_MalletInterpret.Build_CorpusInfoJSON(mallet_script.corpus_title, textobj_collection, tp_collection, topic_keys, color_list, myoutput_dir + "json" + os.sep)
 
         # Build a json that lists the distribution weights of words likely to appear in each topic
-        TWiC_MalletInterpret.Build_WordWeightJSON(ww_table, myoutput_dir + "json/")
+        TWiC_MalletInterpret.Build_WordWeightJSON(ww_table, myoutput_dir + "json" + os.sep)
 
         print "Finished processing {0} for TWiC.".format(mallet_script.corpus_title)
 

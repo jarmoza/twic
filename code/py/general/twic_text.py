@@ -8,10 +8,12 @@ def load_src(name, fpath):
     import os, imp
     return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+# load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+load_src("utils_malletinterpret", os.path.join("..", "utils", "utils_malletinterpret.py"))
 from utils_malletinterpret import Utils_MalletInterpret
 
-load_src("unidecode", "../lib/unidecode.py")
+# load_src("unidecode", "../lib/unidecode.py")
+load_src("unidecode", os.path.join("..", "lib", "unidecode.py"))
 from unidecode import unidecode
 
 

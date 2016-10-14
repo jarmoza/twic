@@ -6,7 +6,7 @@ def load_src(name, fpath):
     import os, imp
     return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+load_src("utils_malletinterpret", os.path.join("..", "utils", "utils_malletinterpret.py"))
 from utils_malletinterpret import Utils_MalletInterpret
 
 from twic_malletscript import TWiC_MalletScript
@@ -21,19 +21,19 @@ def CreateMallet(p_mallet_yaml_parameters):
     # Set up variables necessary for script run
     mallet_script.TextClass = TWiC_Text
 
-    twic_relative_root = "../../../"
+    twic_relative_root = os.path.join("..", "..", ".." + os.sep)
 
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Text.GatherTexts
     mallet_script.user_source_dir = p_mallet_yaml_parameters["user_source_path"]
-    mallet_script.corpus_source_dir = twic_relative_root + "data/input/txt/"
+    mallet_script.corpus_source_dir = twic_relative_root + os.path.join("data", "input", "txt" + os.sep)
 
     # For RunMallet
     mallet_script.corpus_name = p_mallet_yaml_parameters["corpus_short_name"]
-    mallet_script.output_dir = twic_relative_root + "data/output/mallet/"
-    mallet_script.stopwords_dir = twic_relative_root + "data/output/stopwords/"
+    mallet_script.output_dir = twic_relative_root + os.path.join("data", "output", "mallet" + os.sep)
+    mallet_script.stopwords_dir = twic_relative_root + os.path.join("data", "output", "stopwords" + os.sep)
     #mallet_script.lda_dir = twic_relative_root + "lib/mallet-2.0.7/"
-    mallet_script.lda_dir = twic_relative_root + "lib/mallet/"
+    mallet_script.lda_dir = twic_relative_root + os.path.join("lib", "mallet" + os.sep)
     mallet_script.script_dir = os.getcwd()
     mallet_script.num_topics = str(p_mallet_yaml_parameters["num_topics"])
     mallet_script.num_intervals = str(p_mallet_yaml_parameters["num_intervals"])
@@ -50,9 +50,9 @@ def CreateMallet(p_mallet_yaml_parameters):
 
 def ReadTWiCYAML():
 
-    twic_relative_root = "../../../"
+    twic_relative_root = os.path.join("..", "..", ".." + os.sep)
     twic_config_filename = "twic_config.yaml"
-    twic_config_path = os.getcwd() + "/" + twic_relative_root
+    twic_config_path = os.getcwd() + os.sep + twic_relative_root
 
     # Make sure YAML config file exists
     if not os.path.isfile(twic_config_path + twic_config_filename):

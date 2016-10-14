@@ -7,10 +7,12 @@ def load_src(name, fpath):
     import os, imp
     return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+# load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+load_src("utils_malletinterpret", os.path.join("..", "utils", "utils_malletinterpret.py"))
 from utils_malletinterpret import Utils_MalletInterpret
 
-load_src("twic_malletscript", "../general/twic_malletscript.py")
+# load_src("twic_malletscript", "../general/twic_malletscript.py")
+load_src("twic_malletscript", os.path.join("..", "general", "twic_malletscript.py"))
 from twic_malletscript import TWiC_MalletScript
 
 from dickinson_twic_poem import TWiC_Poem
@@ -27,18 +29,18 @@ def CreateMallet(p_mallet_yaml_parameters):
     mallet_script.TextClass = TWiC_Poem
 
     # Relative location of TWiC root directory
-    twic_relative_root = "../../../"
+    twic_relative_root = os.path.join("..", "..", ".." + os.sep)
 
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Poem.GatherPoems
-    mallet_script.tei_source = twic_relative_root + "data/dickinson/input/tei/"
-    mallet_script.corpus_source_dir = twic_relative_root + "data/dickinson/input/txt/"
+    mallet_script.tei_source = twic_relative_root + os.path.join("data", "dickinson", "input", "tei" + os.sep)
+    mallet_script.corpus_source_dir = twic_relative_root + os.path.join("data", "dickinson", "input", "txt" + os.sep)
 
     # For RunMallet
     mallet_script.corpus_name = p_mallet_yaml_parameters["corpus_short_name"]
-    mallet_script.output_dir = twic_relative_root + "data/dickinson/output/mallet/"
-    mallet_script.stopwords_dir = twic_relative_root + "data/dickinson/output/stopwords/"
-    mallet_script.lda_dir = twic_relative_root + "lib/mallet/"
+    mallet_script.output_dir = twic_relative_root + os.path.join("data", "dickinson", "output", "mallet" + os.sep)
+    mallet_script.stopwords_dir = twic_relative_root + os.path.join("data", "dickinson", "output", "stopwords" + os.sep)
+    mallet_script.lda_dir = twic_relative_root + os.path.join("lib", "mallet" + os.sep)
     mallet_script.script_dir = os.getcwd()
 
     # Default topic and interval count
@@ -57,9 +59,9 @@ def CreateMallet(p_mallet_yaml_parameters):
 
 def ReadTWiCYAML():
 
-    twic_relative_root = "../../../"
+    twic_relative_root = os.path.join("..", "..", ".." + os.sep)
     twic_config_filename = "dickinson_twic_config.yaml"
-    twic_config_path = os.getcwd() + "/" + twic_relative_root + "data/dickinson/input/yaml/"
+    twic_config_path = os.getcwd() + os.sep + twic_relative_root + os.path.join("data", "dickinson", "input", "yaml" + os.sep)
     print twic_config_filename
     print twic_config_path
 
@@ -90,7 +92,7 @@ def Corpus2Vis(p_args):
     # Look for YAML configuration file
     mallet_yaml_parameters = ReadTWiCYAML()
     if None == mallet_yaml_parameters:
-        print "YAML file 'dickinson_twic_config.yaml' not found in TWiC's 'data/dickinson/input/yaml' directory."
+        print "YAML file 'dickinson_twic_config.yaml' not found in TWiC's 'data{0}dickinson{1}input{2}yaml' directory.".format(os.sep, os.sep, os.sep)
         print "Please see README.md or github.com/jarmoza/twic/README.md for config file setup instructions."
         return
 

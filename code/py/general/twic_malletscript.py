@@ -6,13 +6,14 @@ import string
 import subprocess
 import sys
 
-from numpy.linalg import norm
+# from numpy.linalg import norm
 
 def load_src(name, fpath):
     import os, imp
     return imp.load_source(name, os.path.join(os.path.dirname(__file__), fpath))
 
-load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+# load_src("utils_malletinterpret", "../utils/utils_malletinterpret.py")
+load_src("utils_malletinterpret", os.path.join("..", "utils", "utils_malletinterpret.py"))
 from utils_malletinterpret import Utils_MalletInterpret
 clean_word = Utils_MalletInterpret.CleanWord
 
@@ -137,7 +138,7 @@ class TWiC_MalletScript:
         # bin/mallet import-dir --input ~/Documents/Programming/PythonPlayground/latest_poems/ --output ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.mallet --keep-sequence --remove-stopwords
 
         args = [
-            '{0}bin/mallet'.format(self.lda_dir),
+            '{0}bin{1}mallet'.format(self.lda_dir, os.sep),
             'import-dir',
             '--input',
             '{0}'.format(self.corpus_source_dir),
@@ -168,7 +169,7 @@ class TWiC_MalletScript:
         # bin/mallet train-topics --input ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.mallet --num-topics 100 --output-state ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.topic-state.tsv.gz --output-doc-topics ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.topics.tsv --output-topic-keys ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.keys.tsv --optimize-interval 100
 
         args = [
-            '{0}bin/mallet'.format(self.lda_dir),
+            '{0}bin{1}mallet'.format(self.lda_dir, os.sep),
             'train-topics',
             '--input',
             self.mallet_file,
@@ -278,7 +279,7 @@ class TWiC_MalletScript:
                     tp = TWiC_MalletScript.Mallet_FileTopicProportions()
                     tp.id = line_pieces[0]
                     tp.filename = line_pieces[1][5:]
-                    tp.fileid = tp.filename[tp.filename.rfind('/') + 1:tp.filename.rfind('.')]
+                    tp.fileid = tp.filename[tp.filename.rfind(os.sep) + 1:tp.filename.rfind('.')]
                     for index in range(2, len(line_pieces) - 2):
                         if index % 2 == 1:
                             continue
@@ -298,7 +299,7 @@ class TWiC_MalletScript:
                     tp = TWiC_MalletScript.Mallet_FileTopicProportions()
                     tp.id = line_pieces[0]
                     tp.filename = line_pieces[1][5:]
-                    tp.fileid = tp.filename[tp.filename.rfind('/') + 1:tp.filename.rfind('.')]
+                    tp.fileid = tp.filename[tp.filename.rfind(os.sep) + 1:tp.filename.rfind('.')]
                     for index in range(2, len(line_pieces)):
                         topic_id = str(index - 2)
                         topic_proportion = float(line_pieces[index])
@@ -382,8 +383,8 @@ class TWiC_MalletScript:
         def get_vector(self):
             return self.vector
 
-        def distance(self, other_mftp):
-            return norm(self.vector - other_mftp.vector)
+        # def distance(self, other_mftp):
+        #     return norm(self.vector - other_mftp.vector)
 
     class Mallet_TopicKeys:
 
