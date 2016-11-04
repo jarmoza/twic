@@ -138,28 +138,18 @@ class TWiC_MalletScript:
         # bin/mallet import-dir --input ~/Documents/Programming/PythonPlayground/latest_poems/ --output ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.mallet --keep-sequence --remove-stopwords
 
         args = [
-            '{0}bin{1}mallet'.format(self.lda_dir, os.sep),
+            '{0}bin{1}mallet{2}'.format(self.lda_dir, os.sep, "" if "/" == os.sep else ".bat"),
             'import-dir',
             '--input',
             '{0}'.format(self.corpus_source_dir),
             '--output',
             self.mallet_file,
-            #'--token-regex [\p{L}\p{P}]*\p{L}',
-            # Most recently used
-            #'--token-regex \p{L}+\p{P}*\p{L}+',
-
-            #'--token-regex \p{L}+[\p{P}\p{L}]*',
-
-            '--token-regex \p{L}[\p{L}\p{P}]*\p{L}',
-
-
-            #'--token-regex \p{L}+\p{P}*([[a-r][t-z][A-Z]]+|[s]{2,})',
+            '--token-regex',
+            '\p{L}[\p{L}\p{P}]*\p{L}',
             '--keep-sequence',
             '--remove-stopwords',
-
-            #'--extra-stopwords {0}'.format(self.stopwords_dir + self.extra_stopwords_file)
-            #'--extra-stopwords {0}'.format(self.stopwords_dir + "added_stopwords_2016.txt")
         ]
+
         subprocess.check_call(args, stdout=sys.stdout)
 
     def TrainTopics(self):
@@ -169,7 +159,7 @@ class TWiC_MalletScript:
         # bin/mallet train-topics --input ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.mallet --num-topics 100 --output-state ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.topic-state.tsv.gz --output-doc-topics ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.topics.tsv --output-topic-keys ~/Documents/Programming/PythonPlayground/dickinson_mallet_output/dickinson.keys.tsv --optimize-interval 100
 
         args = [
-            '{0}bin{1}mallet'.format(self.lda_dir, os.sep),
+            '{0}bin{1}mallet{2}'.format(self.lda_dir, os.sep, "" if "/" == os.sep else ".bat"),
             'train-topics',
             '--input',
             self.mallet_file,
@@ -248,13 +238,18 @@ class TWiC_MalletScript:
         fwt_collection = []
         for line in statefile_data:
             if not line.startswith(current_filenumber):
-                if current_filewordtopics:
+                if None != current_filewordtopics:
                     fwt_collection.append(current_filewordtopics)
+                    current_filewordtopics = None
                 current_filewordtopics = TWiC_MalletScript.Mallet_FileWordTopics.Create(line)
                 current_filenumber = current_filewordtopics.GetFilenumber()
                 current_filewordtopics.AddNextWord(line)
             else:
                 current_filewordtopics.AddNextWord(line)
+
+        # Make sure to add the last file word topics
+        if None != current_filewordtopics:
+            fwt_collection.append(current_filewordtopics)
 
         return fwt_collection
 

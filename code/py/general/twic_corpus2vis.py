@@ -26,6 +26,8 @@ def CreateMallet(p_mallet_yaml_parameters):
     # For GatherTexts
     mallet_script.GatherTexts = TWiC_Text.GatherTexts
     mallet_script.user_source_dir = p_mallet_yaml_parameters["user_source_path"]
+    if os.sep != mallet_script.user_source_dir[len(mallet_script.user_source_dir) - 1]:
+        mallet_script.user_source_dir += os.sep
     mallet_script.corpus_source_dir = twic_relative_root + os.path.join("data", "input", "txt" + os.sep)
 
     # For RunMallet

@@ -26,7 +26,7 @@ class TWiC_Text:
         self.__m_file_name, self.__m_file_ext = os.path.splitext(self.__m_file_path)
         self.__m_file_name = os.path.basename(self.__m_file_name)
         self.__full_text = self.__get_full_text()
-        self.PrepareForComparison(True)
+        self.PrepareForComparison(False)
 
 
     def __get_full_text(self):
@@ -71,7 +71,6 @@ class TWiC_Text:
         # Optional line chunking
         chunks = []
         if p_chunk:
-            # print "CHUNKING {0}".format(file_name)
             chunks = Utils_MalletInterpret.GetChunkedLines(output_lines, p_chunk_size)
         else:
             chunks.append(output_lines)
@@ -164,12 +163,66 @@ class TWiC_Text:
 
     def PrepareForComparison(self, p_keep_multinewline = False):
 
+        # Initially split lines by newlines characters present
         if p_keep_multinewline:
             self.__my_lines = self.GetFullText().split("\n")
         else:
             self.__my_lines = [re.sub(r'[\n]+', '\n', self.GetFullText()).split('\n')]
         #for index in range(len(self.__my_lines)):
         #    self.__my_lines[index].append(self.__my_lines[index][0].strip().split(' '))
+
+        # Keep lines to a maximum character length
+        # (improvement added for better visualization of texts)
+        max_line_length = 80
+        new_my_lines = []
+        for index in range(len(self.__my_lines)):
+            line_length = len(self.__my_lines[index])
+
+            # Split into multiple lines if the current one exceeds max allowable length
+            if line_length > max_line_length:
+
+                sublines = []
+                current_line = []
+                current_char = 0
+                end_line_flag = False
+
+                while current_char < line_length:
+
+                    # If we reached max_line_length and just found whitespace to break
+                    if end_line_flag and self.__my_lines[index][current_char] in string.whitespace:
+                        sublines.append("".join(current_line))
+                        current_line = []
+                        end_line_flag = False
+
+                    # Append the current character to the character list for the subline
+                    current_line.append(self.__my_lines[index][current_char])
+
+                    # If the subline has met the max_line_length
+                    if len(current_line) >= max_line_length:
+
+                        # Time to divide the line
+                        end_line_flag = True
+
+                        # If we have not yet reached the end of the full line
+                        if current_char + 1 <= line_length - 1:
+
+                            # Check for whitespace in the next character (if not keep appending)
+                            if self.__my_lines[index][current_char + 1] in string.whitespace:
+                                sublines.append("".join(current_line))
+                                current_line = []
+                                end_line_flag = False
+                        # End of line reached? Save the final piece
+                        else:
+                            sublines.append("".join(current_line))
+                            current_line = []
+                            end_line_flag = False
+                    current_char += 1
+                new_my_lines.extend(sublines)
+            else:
+                new_my_lines.append(self.__my_lines[index])
+
+        # Reassign my_lines now that they are of relatively uniform length
+        self.__my_lines = new_my_lines
 
 
     def PrintStats(self):
