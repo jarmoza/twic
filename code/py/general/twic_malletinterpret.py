@@ -638,19 +638,13 @@ class TWiC_MalletInterpret:
         file_id = text.GetFilename()
         if split_filename:
             file_id = text.GetFilename().split("_")[0]
-        if "102" in file_id:
-            print "Current file id: {0}".format(file_id)
 
         # Figure out the possible topics for each word based on the topic state file
         current_fwt = None
         for fwt in fwt_collection:
             fwt_file_id = Utils_MalletInterpret.GetFilename(fwt.GetFilename())
-            if "102" in file_id:
-                print "fwt_file_id: {0}".format(fwt_file_id)
             if split_filename:
                 fwt_file_id = Utils_MalletInterpret.GetFilenameWithUnderscore(fwt.GetFilename())
-            if "102" in file_id:
-                print "Post underscore split fwt_file_id: {0}".format(fwt_file_id)
             if fwt_file_id == file_id:
                 current_fwt = fwt
                 break
