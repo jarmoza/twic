@@ -167,7 +167,7 @@ class TWiC_Text:
         if p_keep_multinewline:
             self.__my_lines = self.GetFullText().split("\n")
         else:
-            self.__my_lines = [re.sub(r'[\n]+', '\n', self.GetFullText()).split('\n')]
+            self.__my_lines = re.sub(r'[\n]+', '\n', self.GetFullText()).split('\n')
         #for index in range(len(self.__my_lines)):
         #    self.__my_lines[index].append(self.__my_lines[index][0].strip().split(' '))
 
