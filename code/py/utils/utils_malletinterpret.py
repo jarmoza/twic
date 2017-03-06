@@ -113,7 +113,7 @@ class Utils_MalletInterpret:
 
                     # print "START INDEX: {0}\nEND INDEX: {1}\nLINE COUNT: {2}".format(start_index, end_index, len(p_lines))
                     # print "RANGE: {0}".format(range(start_index, end_index + 1))
-                    # print "LINES LEFT: {0} LOOK AHEAD ACTUAL: {1}".format(lines_left, look_ahead_actual)
+                    ## print "LINES LEFT: {0} LOOK AHEAD ACTUAL: {1}".format(lines_left, look_ahead_actual)
 
                     for line_index2 in range(start_index, end_index + 1):
 
