@@ -105,14 +105,15 @@ class Utils_MalletInterpret:
                     current_lines.append(p_lines[line_index])
 
                     # Determine how many lines we can actually look ahead
-                    lines_left = len(p_lines) - line_index
+                    lines_left = len(p_lines) - line_index - 1
                     look_ahead_actual = lines_left if lines_left < look_ahead_lines else look_ahead_lines
 
                     start_index = line_index + 1
                     end_index = line_index + look_ahead_actual
 
-                    #print "START INDEX: {0}\nEND INDEX: {1}\nLINE COUNT: {2}".format(start_index, end_index, len(p_lines))
-                    #print "RANGE: {0}".format(range(start_index, end_index + 1))
+                    # print "START INDEX: {0}\nEND INDEX: {1}\nLINE COUNT: {2}".format(start_index, end_index, len(p_lines))
+                    # print "RANGE: {0}".format(range(start_index, end_index + 1))
+                    # print "LINES LEFT: {0} LOOK AHEAD ACTUAL: {1}".format(lines_left, look_ahead_actual)
 
                     for line_index2 in range(start_index, end_index + 1):
 
