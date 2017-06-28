@@ -27,7 +27,9 @@
 * [The Emily Dickinson Corpus Example](#dickinson) 
 
 <br/>
-["overview"]
+<a name="overview">
+  
+</a>
 ## Overview
 
   Thanks for trying out **Topic Words in Context**, a.k.a. **TWiC**.
@@ -50,89 +52,105 @@
 After TWiC's main Python script has been run once, there is generally no need to run it again unless you wish to change the topic model. For more detailed instructions on how to use TWiC, see the [How to Use](#howtouse) section below.
 
 <br/>
-["datashapes"]
+<a name="datashapes">
+  
+</a>
 ## Data Shapes
 
-["datashapes_introduction"]
+<a name="datashapes_introduction">
+  
+</a>
 ### Introduction
 
 In order to aid the exploration of the data of a topic model, TWiC uses colored shapes and words in a visually suggestive ways to help users understand the relationships between words, texts, and topics. These **data shapes** are described below.
 
-["datashapes_topicbullseyes"]
+<a name="datashapes_topicbullseyes">
+  
+</a>
 ### Topic Bullseyes
 <br/>
-![](/docs/images/twic_datashapes_bullseye_medium.png)
+![Topic Bullseye](/docs/images/twic_datashapes_bullseye_medium.png)
 
 The shape above is one of two primary means by which topic distribution is visualized in TWiC: a geometric abstraction of the top N topics of the texts being represented. In TWiC this is called a **topic bullseye**. The one above would represent the top ten topics of the average topic distribution of a cluster of texts or of the entire corpus. Each ring represents a topic and is given the unique color assigned to each topic of the topic model (as seen in the [Topic Bar](#panels_topicbar). Moving inward from the outside of the shape toward the center, higher weighted topics are represented, until one arrives at the center circle, or, the top topic of the topic distribution.
 
 Mousing over each ring/center circle lowers the shade of the other rings of the bullseye, and triggers highlighting of shapes and words of that topic it represents throughout the rest of the open panels in TWiC. Clicking on a ring/center circle freezes highlighting for the topic it represents. To highlight another topic in the bullseye when highlighting is frozen, another ring can be clicked. To stop highlighting all together, just click in the panel outside of the shape entirely.
 
-["datashapes_topicrectangles"]
+<a name="datashapes_topicrectangles">
+  
+</a>
 ### Topic Rectangles
 <br/>
-![](/docs/images/twic_datashapes_rectangle.png)
+![Topic Rectangle](/docs/images/twic_datashapes_rectangle.png)
 
 The other primary data shape in TWiC is the **"topic rectangle"**. It utilizes the same paradigm as the topic bullseye, where outer rings (in this case, outer rectangular rings) represent the top N topics of a topic distribution. In the case of a topic rectangle though, it represents the topic distribution for an individual text. This data shape is links topics with the texts they model. The rectangle above would represent the top five topics of one text. At the center of the topic rectangle is a miniature, programmatically-derived view of the first ten lines of the text itself. Its topic words are represented by small colored rectangles in the order in which they would appear in the actual text. Uncolored rectangles (in a light goldenrod) represent the stopwords which have not been considered for the topic model by MALLET.
 
 Mouse interaction with topic rectangles functions the same way as it does for [topic bullseyes](#datashapes_topicbullseyes).
 
-["datashapes_topicwords"]
+<a name="datashapes_topicwords">
+  
+</a>
 ### Topic Words
 
 TWiC gives a unique color to each of the topics of a topic model. Each of those topics are given a weight per each of the texts of a collection being modeled. Topics themselves consist of words that are also assigned different weights – or in other words, a ranking of their importance to a particular topic. In the actual implementation of topic modeling, all words of the text collection being modeled are in every topic. However, words are more frequently featured together in those texts are given higher weights. (Other words that are not actually used in that topic are assigned an evenly split portion of a dummy weight, so as not to assign them a weight of zero.)
 
-![](/docs/images/twic_datashapes_topicwords_topic.png)
+![Topic Words](/docs/images/twic_datashapes_topicwords_topic.png)
 
 Topic words are featured in several places in TWiC. The top words of a topic appear in the topic word lists of the [Topic Bar](#panels_topicbar). This is the standard view in which prominent topic words are often seen when viewing the data outputs of a topic model. In the Topic Bar, topics can be clicked on, triggering and freezing highlighting of that topic throughout TWiC's panels. Clicking on the topic again unhighlights all.
 
-![](/docs/images/twic_datashapes_topicwords_textview.png)
+![Topic Bar](/docs/images/twic_datashapes_topicwords_textview.png)
 
 In TWiC however, topic words are seen in two other meaningful perspectives. They appear in their original textual contexts in the [Text View](#panels_textview). The point of this vantage, the eponymous view of the visualization, is to understand human conceptual models mesh with the more collection-comprehensive topic judgments made by the topic modeler. 
 
 Mousing over topic words will lower the color shade of the rest of the topic words not in that particular topic (as well as the stop words), highlighting all instances of words of topic in that text as well as data shapes of that topic in the other panels. Clicking on those words will freeze topic highlighting, and clicking on them again or outside of the text's words will unfreeze highlighting. Like topic bullseyes and rectangles, clicking on other topic words while highlighting is frozen will just switch the highlighting to the topic of that other word.
 
-![](/docs/images/twic_datashapes_topicwords_databar.png)
+![Data Bar](/docs/images/twic_datashapes_topicwords_databar.png)
 
 The other place where topic words are featured in TWiC is in its [Data Bar](#panels_databar). When a topic word is clicked on in that individual text view, the top 100 words of a topic appears in the "Data Bar." This takes users to a microscopic view of the model, and one less typically featured, especially in respect to the topic distribution of texts and the in-context author placements of those topic words. In essence, this other vantage of topic words allows users to understand how important those words are to the topics themselves. (Mouse interactions with topic word weights in the Data Bar are currently under development.)
 
 <br/>
-[panels]
+<a name=panels>
+  
+</a>
 ## Panels
 
-["panels_introduction"]
+<a name="panels_introduction">
+  
+</a>
 ### Introduction
-![](/docs/images/twic_panels_initialview_medium.png)
+![Initial View](/docs/images/twic_panels_initialview_medium.png)
 
 <br/>
   TWiC's initial view begins with its highest level panel, the [Corpus View](#panels_corpusview), alongside two information-oriented panels, the [Topic Bar](#panels_topicbar) and [Data Bar](#panels_databar). Double clicking shapes like the ["bullseye"](#datashapes_topicbullseyes) above will open new views until you arrive at TWiC's "lowest" view, the [Text View](#panels_textview) where topic words are seen as embedded in individual texts. As each new view is revealed, the current panels will be repositioned and resized as part of an initial set of animations meant to represent a sort of "drilling-down" into the topic model. Any panel however can always be repositioned and resized as you see fit. Each successive view is then considered part of the larger whole of the previous view, or to put it another way, a subset of texts "underneath" the previous view. Below is a view of TWiC with all panels open for viewing the topic model from its own perspective (see the [Publication View](#panels_publicationview) for more on TWiC's alternate perspective on topic models).
   
 <br/>
-![](/docs/images/twic_panels_allpanelsopen_medium.png)  
+![All Panels Open](/docs/images/twic_panels_allpanelsopen_medium.png)  
 
 <br/>
   TWiC also uses mouseover of its shapes to enact highlighting of topic-related objects across panels. Clicking on the highlighted portion of a shape or topic word list freezes highlighting so the topic relations can be viewed indefinitely. To "unclick" and resume mouseover highlighting, click in an open space outside of TWiC's data shapes.
   
 <br/>
-![](/docs/images/twic_panels_initialview_highlighted_medium.png)
+![Initial View Highlighted](/docs/images/twic_panels_initialview_highlighted_medium.png)
 
 
-![](/docs/images/twic_panels_allpanelsopen_highlighted_medium.png)
+<!-- ![](/docs/images/twic_panels_allpanelsopen_highlighted_medium.png) -->
 
 <br/>
   At the top left of each panel is an Mac OSX-like stoplight window control. These can be used to resize or hide panels. The red button hides and unhides panels, the yellow reduces panels to their smallest possible dimensions, and the green increases the window to the maximum size available in your web browser window. In addition, TWiC panels can be resized just like operating system windows from their edges and corners.
   TWiC panels may be freely dragged around the browser window. A JavaScript library called [Packery](http://packery.metafizzy.co/) reorganizes the other panels as this dragging action occurs to try and fill the available space with panels as best as possible. (**NOTE:** Dragging a panel off the screen and releasing the mouse will reorganize the panels if Packery's algorithm has set their positions too awry.)
 
 <br/>
-![](/docs/images/twic_panels_stoplight.png)
+![Panel Stoplight](/docs/images/twic_panels_stoplight.png)
 
 <br/>
   Panels are divided into two types: "graphical" and "informational." Before taking a look at TWiC's different graphical panels, let's take a look at its two informational panels.
 
 <br/>
-["panels_topicbar"]
+<a name="panels_topicbar">
+  
+</a>
 ### Topic Bar
 
-![](/docs/images/twic_panels_topicbar_medium.png)
+![Topic Bar Medium](/docs/images/twic_panels_topicbar_medium.png)
 
 The best place to understand why a tool like TWiC became necessary is to examine its **Topic Bar** panel. The Topic Bar simply lists what the majority of topic model users expect to see at the end of a modelling run: lists of correlated topic words known as "topics." Even with the known weightings for each topic in a collection of texts, the reason for topic word correlation can still be quite opaque, especially if one comes to a collections of texts with little advanced knowledge of it. 
 
@@ -143,10 +161,12 @@ Though mouseovers are disabled in this view to facilitate scrolling through the 
 The Topic Bar does not feature the OSX-like resize controls, but it can be resized via its edges and corners.
 
 <br/>
-["panels_databar"]
+<a name="panels_databar">
+  
+</a>
 ### Data Bar
 
-![](/docs/images/twic_panels_databar_small.png)
+![Data Bar Small](/docs/images/twic_panels_databar_small.png)
 
 The **Data Bar** panel is the first, new and integral integral concept TWiC introduces to its users, though it might not appear so at first the most visually distinguished of TWiC's panels. The Data Bar is a context sensitive view of the currently selected data shape. Clicking on [data shapes](#datashapes) will reveal new metadata in the Data Bar. It reveals the relative prevalence of the characteristics of data shapes in each panel.
 
@@ -173,11 +193,13 @@ Listed by panel/data shape, the Data Bar will reveal the following:
 
 For more on these panels and data shapes, click the links above or read on.
 
-["panels_corpusview"]
+<a name="panels_corpusview">
+  
+</a>
 ### Corpus View
 
 <br/>
-![](/docs/images/twic_panels_corpusview_small.png)
+![Corpus View](/docs/images/twic_panels_corpusview_small.png)
 
 The Corpus View is one of the simplest panels in TWiC, but it also represents the topic model weighting that is most readily available when one runs MALLET from the command line: the topic weights situated alongside the topics in the output topic keys file. 
 
@@ -185,11 +207,13 @@ The [topic bullseye](#datashapes_topicbullseyes) at its center represents the av
 
 If you look at the contents of the [Data Bar](#panels_databar) when the panel's bullseye has been clicked, you will note a fairly even distribution in the topic weight percentages. The Data Bar will also show you the number of texts that have been modeled as well.
 
-["panels_corpusclusterview"]
+<a name="panels_corpusclusterview">
+  
+</a>
 ### Corpus Cluster View
 
 <br/>
-![](/docs/images/twic_panels_corpusclusterview_medium.png)
+![Corpus Cluster View](/docs/images/twic_panels_corpusclusterview_medium.png)
 
 The Corpus Cluster View is where TWiC starts to separate pieces of the model so users can see a topic model from an entirely new perspective. Though this is not the only way to split up the texts of the model, TWiC currently clusters texts by their top weighted topics. 
 
@@ -200,22 +224,24 @@ The rest of the topic bullseyes are set at a distance from that center/corpus av
 When clicked, a cluster bullseye's average topic distribution will also be shown in the Data Bar as well. You will note that the average topic distributions shown in the Data Bar is expectedly skewed toward the topic the cluster bullseye represents. 
 
 <br/>
-![](/docs/images/twic_panels_corpusclusterview_highlighting_medium.png)
+![Corpus Cluster View Highlighted](/docs/images/twic_panels_corpusclusterview_highlighting_medium.png)
 
 And when mousing/clicking over the bullseyes you will notice that other rings representing the same topic in other bullseyes in the panel will become highlighted along with their graph edges (with the color of the top topic of each cluster bullseye). Double clicking on any of these cluster bullseyes (sans the center one) will reveal the cluster of texts each represents in the [Text Cluster View](#panels_textclusterview).
 
-["panels_textclusterview"]
+<a name="panels_textclusterview">
+  
+</a>
 ### Text Cluster View
 
 <br/>
-![](/docs/images/twic_panels_textclusterview_medium.png)
+![Text Cluster View](/docs/images/twic_panels_textclusterview_medium.png)
 
 The primary TWiC level takes the perspective of the topic model, but the Text Cluster View is the first panel which explicitly addresses the link between the topic model and its individual texts. Each text is represented as a graph node set at a distance from the average topic distribution of this group of texts. 
 
 In the previous panel, the [Corpus Cluster View](#panels_corpusclusterview), these texts were represented by a [topic bullseye](#datashapes_topicbullseyes). That bullseye is now at the center of this panel's graph, much like the corpus average topic distribution bullseye of the [Corpus View](#panels_corpusview) was at the center of the Corpus Cluster View panel. 
 
 <br/>
-![](/docs/images/twic_panels_textclusterview_highlighting_medium.png)
+![Text Cluster View Highlighted](/docs/images/twic_panels_textclusterview_highlighting_medium.png)
 
 
 The connections visualized by TWiC's highlighting however, now explicitly shows where the model feels texts are connected by their prevalent (or highly-weighted) topics.
@@ -224,20 +250,24 @@ This panel contain a slightly different data shape, the ["topic rectangle"](#dat
 
 These shapes and the panel utilize the same data-spatial paradigms of the "Corpus Cluster View," with mouseover highlighting and clicking. Clicking on each topic rectangle will reveal the topic distribution of that text as well as its distance from the text cluster's average topic distribution in the [Data Bar](#panels_databar). Double clicking any of the topic rectangles will reveal the text itself in the panel "underneath" this one: the [Text View](#panels_textview). 
 
-["panels_textview"]
+<a name="panels_textview">
+  
+</a>
 ### Text View
 
 <br/>
-![](/docs/images/twic_panels_textview.png)
+![Text View](/docs/images/twic_panels_textview.png)
 
 The Text View is TWiC's eponymous panel, and is one of its most important panels, particularly for those interested in the authorial contexts of topic words. This panel shows topic words and stopwords in the original order of the texts being modeled. Before one would sit with the topic word lists as seen in the [Topic Bar](#panels_topicbar) and try to determine a reasonable, general semantic association for these words. The Text View aids such a process, and really expands the view of such a experiential, human-conceptual model by showing where those topic words actually live.
 
 Mousing over topic words extends highlighting throughout all of TWiC's panels, but also highlights words of the same topic within a text. (Words not in that topic are lowered a shade to produce this highlighting effect.) Clicking functions similarly to other panels, freezing topic highlighting. However, clicking on each topic word will reveal the topic wordweight distribution in the [Data Bar](#panels_databar), revealing the relative importance (or weighting) for each word to the rest of the top-weighted words of topic.
 
-["panels_publicationview"]
+<a name="panels_publicationview">
+  
+</a>
 ### Publication View
 
-![](/docs/images/twic_panels_publicationview_medium.png)
+![Publication View](/docs/images/twic_panels_publicationview_medium.png)
 
 The Publication View panel (seen in the top left of the image above) exists in TWiC's alternate level. It utilizes a custom JSON file format built by users to re-situate topic model data into the original publication arrangements – or really, any arrangement the user sees fit. (See the ["How to Use" section](#howtouse_publicationview) for details on how to implement and access this view.)
 
@@ -247,7 +277,9 @@ Mousing over these rectangles highlights the common topic rings surrounding each
 
 
 <br/>
-["howtouse"]
+<a name="howtouse">
+  
+</a>
 ## How to Use
 
 <br/>
@@ -255,7 +287,9 @@ Though the TWiC visualization primarily operates through the web browser, it mus
 
 Don't worry though. This setup step just requires a familiarity with how to access and use the terminal/command line on your computer (and an installation of [Python](https://www.python.org/downloads/) – preferably version 2.7, which comes installed by default on OSX). Any advanced script options will be included after the basic steps for running TWiC.
 
-["howtouse_python"]
+<a name="howtouse_python">
+  
+</a>
 ### Server-side Python
 
 #### Basic Steps
@@ -295,7 +329,9 @@ Steps **1-3** below only need to be done when first setting up TWiC. Steps **4-5
 	
 **With that done, you are ready to launch TWiC in your web browser!** 
 
-["howtouse_python_notes"]
+<a name="howtouse_python_notes">
+  
+</a>
 #### Notes
 
 Sometimes there are issues building MALLET via the `make` command. Build errors are usually attributable to the version of Java on your system. You may need to download the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html). You can, however, generally ignore "warnings" generated from building MALLET.
@@ -334,7 +370,9 @@ If users are interested in understanding how TWiC breaks down and re-interprets 
 
 
 <br/>
-["howtouse_visualization"]
+<a name="howtouse_visualization">
+  
+</a>
 ### Client-side - D3 Visualization
 
 TWiC's primary component is a D3 JavaScript visualization accessible via a web browser. It uses data in the intermediate files output by TWiC's main Python script `twic_corpus2vis.py`. 
@@ -359,7 +397,9 @@ Though there are certainly other servers you could use to run TWiC, the suggeste
 
 
 <br/>
-["howtouse_publicationview"]
+<a name="howtouse_publicationview">
+  
+</a>
 ## Client-Side - Alternate D3 Visualization for Publication Arrangements
 
 Since the primary level of TWiC organizes a collection of texts chiefly by topic, another view was created for TWiC that instead features a user-provided arrangements of texts (see [Publication View](#panels_publicationview) for more details). 
@@ -368,7 +408,9 @@ An example of this can be accessed via `twic_publication.html`. It utilizes the 
 
 Currently setting up the Publication View for your own use is a manual process that requires some JavaScript and JSON knowledge – as well as knowledge of the arrangement in which you'd like to see the texts of your collection.
 
-["howtouse_publicationview_basicsteps"]
+<a name="howtouse_publicationview_basicsteps">
+  
+</a>
 #### Basic Steps
 
 1. **Start a local server** in the `twic` folder. (This is to prevent cross-site scripting (XSS) errors in the browser that stop TWiC from running.)
@@ -509,13 +551,17 @@ var publicationView =
 Two example publication JSON are included at `twic/data/dickinson/input/json`. They are the 8th and 21st fascicle booklets of Emily Dickinson's poetry. For more on the Emily Dickinson poetry corpus included with TWiC, see [below](#dickinson).
 
 <br/>
-["howtouse_customlevels"]
+<a name="howtouse_customlevels">
+  
+</a>
 ## Custom Levels
 
 TWiC houses all of its panels within a "level" object that also contains some code for the interoperation of windows, as well as the initial visualization resizing animation. Custom TWiC levels are ones where only certain panels are instantiated. This can be accomplished by editing `twic.js`. This takes some knowledge of JavaScript programming, however it is possible to only initially instantiate whichever of TWiC's panels you are interested in utilizing.
 
 <br/>
-["dickinson"]
+<a name="dickinson">
+  
+</a>
 ## The Emily Dickinson Corpus Example
 
 Provided with TWiC is an example corpus that models over 2000 of the available poems at ["The Emily Dickinson Archive"](http://www.edickinson.org). Its files are in the `twic/data/dickinson/` folder. In order to view this collection with TWiC's visualization, you will need to do the following.
