@@ -27,8 +27,9 @@
 * [The Emily Dickinson Corpus Example](#dickinson) 
 
 <a name="overview">
-## Overview 
+
 </a>
+## Overview
 
   Thanks for trying out **Topic Words in Context**, a.k.a. **TWiC**.
   
