@@ -86,6 +86,11 @@ def Corpus2Vis(p_args):
         print "Please see README.md or github.com/jarmoza/twic/README.md for config file setup instructions."
         return
 
+    print "\nTopic Words in Context (TWiC)"
+    print "\tby Jonathan Armoza (github.com/jarmoza), 2017.\n"
+    print "This work is licensed under the GNU General Public License, Version 3.0."
+    print "See https://www.gnu.org/licenses/gpl-3.0.en.html for details.\n"    
+
     # Create a TWiC_MalletScript object
     mallet_script = CreateMallet(mallet_yaml_parameters)
 
